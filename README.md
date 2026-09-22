@@ -2,4 +2,4 @@
 
 ## what i want to build with agents
 
-i dunno yet
+mainly things that i want to automate?
