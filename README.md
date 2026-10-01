@@ -4,4 +4,4 @@
 
 mainly things that i want to automate?
 
-므뉴아모ㅓㅏㅁ나옴ㄴ
+빠빠라바라
