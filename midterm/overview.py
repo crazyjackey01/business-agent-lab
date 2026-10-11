@@ -34,7 +34,11 @@ Rules:
   articles. Put the trend's exact search term in "term". If its articles do not explain it, skip it.
 - "themes": at most three short claims about what the trends have in common (for example several sports
   results, or one news story behind several searches). Each must cite at least two trends.
-- Headlines tell you what was reported, not the full story. Say "reported" when that matters.
+- Style: write like a Korean wire-news brief (연합뉴스 style). Short declarative sentences.
+  Lead with the concrete fact (who, what, number, date). No filler or hedging phrases such as
+  "~것으로 보입니다", "관심이 모였습니다", "주목받았습니다", "~라는 점에서", "다양한", "본격화".
+  Do not describe the data source in the sentence ("자동완성에서", "보도에 따르면") unless needed;
+  the citation already shows where it came from. Use "~했다/~이다" endings, not "~습니다".
 - Write in {language}.
 
 Reply with JSON only:
