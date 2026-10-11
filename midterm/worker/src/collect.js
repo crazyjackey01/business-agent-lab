@@ -2,6 +2,12 @@
 // Same sources, same output shape, so the dashboard template works for both.
 
 const HEADERS = { "User-Agent": "business-agent-lab-midterm/0.1 (student project)" };
+// Google News rejects unknown clients from data-center addresses, so it gets a browser's headers.
+const BROWSER_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36",
+  "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
+  "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+};
 const TRENDS_RSS = "https://trends.google.com/trending/rss?geo=";
 const SUGGEST_URL = "https://suggestqueries.google.com/complete/search";
 const NEWS_RSS = "https://news.google.com/rss/search";
@@ -48,10 +54,16 @@ function items(xml, name = "item") {
   return [...xml.matchAll(new RegExp(`<${name}>([\\s\\S]*?)</${name}>`, "g"))].map(m => m[1]);
 }
 
-async function getText(url) {
-  const response = await fetch(url, { headers: HEADERS });
-  if (!response.ok) throw new Error(`HTTP ${response.status} from ${new URL(url).host}`);
-  return response.text();
+// Google answers busy or unfamiliar clients with 503/429; wait a little and try again.
+async function getText(url, headers = HEADERS) {
+  let response;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    response = await fetch(url, { headers });
+    if (response.ok) return response.text();
+    if (![429, 503].includes(response.status)) break;
+    await new Promise(r => setTimeout(r, 800 * (attempt + 1)));
+  }
+  throw new Error(`HTTP ${response.status} from ${new URL(url).host}`);
 }
 
 // Google Trends "Trending Now" ------------------------------------------------
@@ -145,7 +157,7 @@ export async function relatedSearches(topic, lang, geo) {
 
 async function fetchNews(query, lang, geo) {
   const params = new URLSearchParams({ q: query, hl: lang, gl: geo, ceid: `${geo}:${lang}` });
-  const xml = await getText(`${NEWS_RSS}?${params}`);
+  const xml = await getText(`${NEWS_RSS}?${params}`, BROWSER_HEADERS);
   const articles = [];
   for (const item of items(xml)) {
     const source = tag(item, "source");
@@ -165,10 +177,13 @@ async function fetchNews(query, lang, geo) {
 export async function newsByDay(topic, lang, geo, days = 7) {
   const today = dayIn(new Date(), geo);
   const dayList = Array.from({ length: days }, (_, d) => addDays(today, -d));
-  const perDay = await Promise.all(dayList.map(async day => {
+  const oneDay = async day => {
     const query = `${topic} after:${addDays(day, -1)} before:${addDays(day, 1)}`;
     return (await fetchNews(query, lang, geo)).filter(a => dayIn(new Date(a.published), geo) === day);
-  }));
+  };
+  // Two days at a time: all seven at once gets refused by Google more often.
+  const perDay = [];
+  for (let i = 0; i < dayList.length; i += 2) perDay.push(...await Promise.all(dayList.slice(i, i + 2).map(oneDay)));
 
   const clean = perDay.map(list => list.filter(a => !isSpam(a.title, topic)));
   const spam = perDay.flat().length - clean.flat().length;
@@ -202,11 +217,20 @@ export function matchingTrends(trends, topic, extraWords = []) {
 }
 
 export async function collectTopic(topic, lang, geo) {
+  // A blocked source should not stop the search; the page shows which ones failed.
+  const sourceErrors = [];
   const [related, [news, perDay, spam], trends] = await Promise.all([
     relatedSearches(topic, lang, geo),
-    newsByDay(topic, lang, geo),
-    fetchGoogleTrends(geo).catch(() => []),
+    newsByDay(topic, lang, geo).catch(error => {
+      sourceErrors.push(`news: ${error.message}`);
+      return [[], [0, 0, 0, 0, 0, 0, 0], 0];
+    }),
+    fetchGoogleTrends(geo).catch(error => {
+      sourceErrors.push(`google trends: ${error.message}`);
+      return [];
+    }),
   ]);
+  if (!related.length) sourceErrors.push("autocomplete: no suggestions returned");
   return {
     topic, lang, geo,
     collected_at: new Date().toISOString().slice(0, 19) + "+00:00",
@@ -215,5 +239,6 @@ export async function collectTopic(topic, lang, geo) {
     news,
     news_spam_removed: spam,
     google_trends_matches: matchingTrends(trends, topic),
+    source_errors: sourceErrors,
   };
 }
