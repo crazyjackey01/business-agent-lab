@@ -39,8 +39,28 @@ python midterm/collect_trends.py --geo US --wiki en
 
 Each run saves a snapshot to `midterm/data/snapshots/`.
 
+### Topic mode: trends around a topic you choose
+
+```sh
+python midterm/topic_trends.py --topic "피지컬 AI"
+python midterm/topic_trends.py --topic "physical AI" --lang en --geo US --also humanoid robotics
+python midterm/topic_trends.py                 # runs every topic in midterm/topics.json
+```
+
+For the topic it reports:
+- **What people search with it**: Google autocomplete for the topic plus each
+  starting letter (ㄱ–ㅎ / a–z), e.g. `피지컬 ai 관련주`, `피지컬 ai 전망`.
+- **News momentum**: Google News articles counted per day for 7 days;
+  today ÷ previous daily average (above 1 = more coverage than usual).
+- **Google Trends matches**: current trending searches that mention the topic
+  or one of the `--also` words.
+
+Edit `topics.json` to change the watchlist. Results go to `midterm/data/topics/`.
+
 ## Data sources
 
-- Google Trends "Trending Now" RSS: `https://trends.google.com/trending/rss?geo=KR`
-- Wikipedia Pageviews API (most viewed articles per day)
+- Google Trends "Trending Now" RSS: `https://trends.google.com/trending/rss?geo=KR` (real-time, last ~24h)
+- Google News search RSS (real-time, per topic)
+- Google autocomplete (real-time, per topic)
+- Wikipedia Pageviews API (most viewed articles; daily, so the latest full day is yesterday)
 - Later: Naver DataLab API (needs a free key) to check whether a spike is real

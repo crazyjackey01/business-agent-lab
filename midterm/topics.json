@@ -1,0 +1,6 @@
+{
+  "topics": [
+    {"topic": "피지컬 AI", "lang": "ko", "geo": "KR", "also": ["physical ai", "휴머노이드"]},
+    {"topic": "physical AI", "lang": "en", "geo": "US", "also": ["humanoid", "robotics"]}
+  ]
+}

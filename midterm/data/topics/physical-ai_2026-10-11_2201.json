@@ -1,0 +1,2970 @@
+{
+  "topic": "physical AI",
+  "lang": "en",
+  "geo": "US",
+  "collected_at": "2026-10-11T13:00:51+00:00",
+  "related_searches": [
+    {
+      "phrase": "physical ai companies",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai stocks",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai toolchain on aws",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai meaning",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai etf",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai startups",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai toolchain",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai and robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai agents",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai assistant",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai applications",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai aws",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai and robotics stocks",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai a16z",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai anthropic",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai amd",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai and world models",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai blog",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai books",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai benchmarks",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bootcamp",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai boom",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bottleneck",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bcg",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bench",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai book pdf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai blackberry",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai companies stock",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai course",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai conference",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai conference 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai careers",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai companion",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai companies to invest in",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai certification",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai calculator",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai definition",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data collection",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai devices",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai dataset",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data factory",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data factory blueprint",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai dataset nvidia",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data collection companies",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai development",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai examples",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai engineer",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai events",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai etf reddit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai engineer salary",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai explained",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai engineer jobs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai embodied ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai expo",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai fellowship",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai funding",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai foundation model",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai future",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai fanuc",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai for manufacturing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai for robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai fujitsu",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai framework",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai founder",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai github",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai growth",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai google",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai gartner",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai garage",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai governance",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai gartner hype cycle",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai goldman sachs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai globalfoundries",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai healthcare",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hype",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hcltech",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hardware",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon hk",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai harness",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hitachi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai humanoid robot",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai in healthcare",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai in manufacturing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai investments",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai infrastructure",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai image",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai icon",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai is the next frontier",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai investors",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai is the future",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai intel",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jeff bezos",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jensen huang",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai japan",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs india",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jbnu",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs uk",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jensen",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai journal",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs germany",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai korea",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kpmg",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai keyboard",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kya hai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai key players",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kr",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kaist",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kddi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai south korea",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai lab",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai leaders",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai learning",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai living lab",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai learning path",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai là gì",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai layers",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai logo",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai linkedin",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai lotion",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai models",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market size",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market map",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai mckinsey",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai manufacturing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai meetup",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai mit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market forecast",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai news",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai note taker",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai newsletter",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia course",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia dataset",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nebius",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nexus japan",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai ntt data",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia cosmos",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai overview",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai orchestrator",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai open source",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai operating system",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai os",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai on aws",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai omniverse",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai open datasets",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai online course",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai openai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai products",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai public companies",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai pi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai projects",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai podcast",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai pdf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai platform",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai product manager",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai papers",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai purdue",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai qnx",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai qualcomm",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai quotes",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai que es",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai qiita",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai and quantum computing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "gartner physical ai quadrant",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "jensen huang physical ai quote",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data scientist quantumblack labs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "qualcomm physical ai initiatives",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics companies",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai reddit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai research",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics stocks",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai room",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai roles",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai report",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai reinforcement learning",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai summit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stocks to buy",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai summit 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai studio",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stack",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stocks etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stocks reddit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai safety institute",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tam",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai training",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tech stack",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai trends",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tools",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai training data",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai textbook",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tutorial",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai use cases",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai understanding and building the physical world",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai uses",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "is physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "udemy physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai uk",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai us stock",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai university",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai ux",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai uae",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs embodied ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs agentic ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs edge ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs generative ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs digital ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai valuation",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai venture capital",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs world model",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai world model",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai what is it",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workshop",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workbench",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai wiki",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai with raspberry pi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai what does it mean",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workshop eccv",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai warehouse",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workflow",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai xpeng",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai x",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai for all xpeng",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xai physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xtend physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xaba physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xiaomi physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai youtube",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai yann lecun",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai yc",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai y combinator",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai yandex",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai new york times",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "yaskawa physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "yandex physical ai conference",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai is coming for your car",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "yc physical ai startups",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai zinnov",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hack zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai eth zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai pi zero",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai developer night zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "zainar physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "zinnov physical ai report",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "zipline physical ai",
+      "times_suggested": 1
+    }
+  ],
+  "news_momentum": {
+    "today": 39,
+    "previous_daily_average": 46.8,
+    "momentum": 0.83,
+    "per_day": [
+      39,
+      49,
+      47,
+      59,
+      45,
+      50,
+      31
+    ],
+    "capped_days": 0
+  },
+  "news": [
+    {
+      "title": "Will ‘boring’ robots win in the real world? Why robotic form should follow workflow",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZTMxQ0Y3TW1MR2R2RnF2c3RVWjVRQlJXcEQtSmlITlV4WVhSek5mSldSX0FqWC1jaVJ4cTQ3cENydXM5aGEtQ3lzdTQ0Tk5IMFRUaE1ua2hBTjVTSnNtTnB4RXRjRW8tZWkyX255MzJEQ0czLV90cTluRU9FeGlHaGtTdXdVN1A0ZDduTGc0TnJ3MG9icFdRaExIT3pQUjl4N200RGN0Wk5odG9BRTN1ZHlB?oc=5",
+      "published": "2026-10-11T12:41:34+00:00"
+    },
+    {
+      "title": "Amon: AI companies want 100B-parameter models running on phones by 2028",
+      "source": "Dealroom",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdkxQWGxQQ3V0ZXpHLWI5MnF5WkRxQzJzRVBTZTNwTm5tbXdPM3M1OXgtT3psSUM0UFBqalhCclBBRE1uRHNRYjRrOGhqN2VhZGhtdTFpQzJmem10SEp4Nms2QVh6YThNYkNtdmNNdi1kLWVNQmhhRHRTSlhwcEJ2Z3VlbUI1ZFpsVWUyZWlycWlhbm1PWVlLQjRXWjVVRm1sSDVtMEtrMA?oc=5",
+      "published": "2026-10-11T11:33:26+00:00"
+    },
+    {
+      "title": "This Nvidia Partner Was My Top Pick for 2026, and It's Up 43%: Here's Why It's Still a Great Value Now",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYnNnOXRKRDNkYUJkd1ZUMXFvdVZnRGROaU05R21RX2RXd19tSTIxQW9iVkszWU44bl9JamptWkF6anZsTkgtdHRKaFRXNlZnVzhLTTRWaXJ3c292OEVEWWlJS3pRbjlFN19lVHkzVmVGUTBKNjh1Y1lCaVlUSjRKOTM0ZlB4MkJndkVlejZmV1pLSHhoazJVcw?oc=5",
+      "published": "2026-10-11T11:29:33+00:00"
+    },
+    {
+      "title": "Robots roll out, economies rewire",
+      "source": "Barclays Investment Bank",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNndXNmtzeFYxalNxOWlOWUt4dXJManU0NzhEYlFEQWZSS3ZJNkZkOHdTYVFKc1FpUTI4ZUEtUXE4YUN6eDhjZjMyWVpSeDlEM1I0TlJ1Y1hfcFhzMzFNSHN3Rk9VeUNaX0hJa1pVWmw4X2RVZDZKOEl4WFBhZk9wcUQxcDdOeGltZG5uQjVKOGpqRnZWUVNaeE5xcWJ3b3FDWXp0Z0JCSS1feld1Tl81UzZNX3FaaWM0ZXNqWGRKZlE0UEYtLWYtTGhnd1IzeWRzRlRJ?oc=5",
+      "published": "2026-10-11T10:43:17+00:00"
+    },
+    {
+      "title": "Tally's retail takeover: 3,000 robots proving physical AI pays",
+      "source": "Dealroom",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTWg5TjJCR2hxLTNHTFZnakp1NGV1d3dZU25TM2pHNDR1V1pVNGFLajlfcjY0dEphbmh5WkM2ZUc0c2xBeFhpTjBXUHg2RmEtM2JFTFpKa1dVOGFDQks5ZTJoSFE4dHZ0ZkphUy00YXM1cmEyZkczcWlyZjdYS0gzOWRPc3pRUDlEa2R6M0dXa1plb2NDcFBqaDlXNA?oc=5",
+      "published": "2026-10-11T10:21:12+00:00"
+    },
+    {
+      "title": "Korea’s SK Square backs Japanese physical AI startup Mujin to expand into robotics",
+      "source": "KED Global",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11MmVCemRFM1JRQ2FCc0xZRlBjZHVJNW82MHFhMGJYZUlZblZYdXVxOW9taFpXd2pyVUFJa2REbUpyaHJiVWtDOF9zYnlTZ3N2Qk13UlRSMFVENWlibzZHNmU2TWo5bkNWcG9RSnB3QjVuZkdsazRjSWFRWHpEWlk?oc=5",
+      "published": "2026-10-11T09:22:00+00:00"
+    },
+    {
+      "title": "Manfred Horstmann: GlobalFoundries Bets on FDX Fusion for Physical AI",
+      "source": "EE Times",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU2VWMGZsV285TVFaWDNTMjUtZ2dpSlJtQ1hRS2EwWVk0UW82cHBnVGhEQW5QeVBBNF94aWhrWk9OSHNvN1JrZzJmN1ZjQkNTUG4xdi1ObklfSlFHZTRXenFKMG5adloxTmQzUzhSTUFEWUtmckVjNGNaLW1PNHBTSi1vOGdDdjlxaGhYSWYybjhFbTh6bnc2ZQ?oc=5",
+      "published": "2026-10-11T09:13:12+00:00"
+    },
+    {
+      "title": "Lutech unveils L.u.c.a., a humanoid robot for Italian factories, as EU machinery rules near",
+      "source": "Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTWJwQlQ3RlY2V2owNWdjelQ0X3ZnWkxiZ0dlQXJtZ3NGLTlQbGZFcDExN2U2aHFVOUFqNTNNbm00UkptTUhHWU1kb3RzR0w0cHVNLXpMelp0eG9BOWJwRm5RUmhmam14S3BSUjBBQlVFUG10aFhmek5DeFRKN0dBcTNsS0RITmwyV015OFc2NlJjZUlUb0JpY0ZoTXprZw?oc=5",
+      "published": "2026-10-11T08:23:49+00:00"
+    },
+    {
+      "title": "He started with Physical Science. Now, IIT Madras student eyes AI research in Japan",
+      "source": "India Today",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNMFJUd25xWTk1MnhLcy1wSzlJMUhpemRGTVZYOHBxbkt3R3lwRGR2dHZaa2JNVmJvanJhcm5TTlA3YzFDU19vODJIOHBxS2QxNDVkS01oOU5sVndHTjQ3Q3B4VXNFSmJjaGtpb3VxajI4eXlLUHNYMHY5RHY0VnZtX1J4cVA1dktkTGZ0NmNOSUU4V0tZZHJoRFZ6amhhMWJDdGd6WGxXUXhCdWlPdTZWNGZqV3lFRlpBdTNrSDdOMUU0VWl2WVd6RWRzR25tcEk2a0lFRVJZcVZHVExiVWNXTHpYRk41aks0WWJPUUpPeWNDb1ZaZi0zVEVNVU8wYmxWQ2g40gGIAkFVX3lxTE1rRFNaUDhWVFJIUWdQVVlXVi16alRydlk4cmdYUklvS215ZklKNnVTcE9NYzRHeHA2eE52ZHRIcUMxQjVCN0s4ZGc2ZWN0akhJdUUtSFJqdmNsM3R3NGFHMnBOS2pMTjY0MllTNW9WTFpMaUIzU0tyaThlSzBkMnNxVlVUX2RkbTR0c0R3ZmNIWnpXNGktU3RvZmhrbm9ISjZLeng2ejgyekp6Q293cTdrWmdsSG52RzJTVm0xX1Y0QVB6TXlfZmFsazR0TF8xV3FSaEZrT2RreTBpb21uYUxFekltOW14bUpsb3RDT1hySDN1T0U1M1doTnhBTlRjYWN2TnV0OWhGZA?oc=5",
+      "published": "2026-10-11T07:03:48+00:00"
+    },
+    {
+      "title": "He began with Physical Science. Now, IIT Madras student explores AI research in Japan",
+      "source": "India Today",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNa0RTWlA4VlRSSFFnUFVZV1YtempUcnZZOHJnWFJJb0tteWZJSjZ1U3BPTWM0R3hwNnhOdmR0SHFDMUI1QjdLOGRnNmVjdGpISXVFLUhSanZjbDN0dzRhRzJwTktqTE42NDJZUzVvVkxaTGlCM1NLcmk4ZUswZDJzcVZVVF9kZG00dHNEd2ZjSFp6VzRpLVN0b2Zoa25vSEo2S3p4Nno4MnpKekNvd3E3a1pnbEhudkcyU1ZtMV9WNEFQek15X2ZhbGs0dExfMVdxUmhGa09ka3kwaW9tbmFMRXpJbTlteG1KbG90Q09YckgzdU9FNTNXaE54QU5UY2Fjdk51dDloRmTSAYgCQVVfeXFMTWtEU1pQOFZUUkhRZ1BVWVdWLXpqVHJ2WThyZ1hSSW9LbXlmSUo2dVNwT01jNEd4cDZ4TnZkdEhxQzFCNUI3SzhkZzZlY3RqSEl1RS1IUmp2Y2wzdHc0YUcycE5LakxONjQyWVM1b1ZMWkxpQjNTS3JpOGVLMGQyc3FWVVRfZGRtNHRzRHdmY0haelc0aS1TdG9maGtub0hKNkt6eDZ6ODJ6SnpDb3dxN2taZ2xIbnZHMlNWbTFfVjRBUHpNeV9mYWxrNHRMXzFXcVJoRmtPZGt5MGlvbW5hTEV6SW05bXhtSmxvdENPWHJIM3VPRTUzV2hOeEFOVGNhY3ZOdXQ5aEZk?oc=5",
+      "published": "2026-10-11T07:03:48+00:00"
+    },
+    {
+      "title": "The next AI race exposes the limits of language",
+      "source": "Qatar Tribune",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTWxsYWo0LUl3cldHWXg2T0RpN2c1MnMwX1hvQ2NVbDFwbzUxdUZtUFVzS1ZOb2tmZkNtbWRYRnI2R0d3Y1M0ek16c1FUYjlsTTE4aWc3SjFDVHhSTlRPdUwzcmhUdThMUjAxa1UzQktqaUZVbWJ2WGVMa2xxS0dyRzB3cVAzX3h3Vk9Ycm4zME5BU2RKdlhQWEZ2SEVVNkQ0NXVsVmpMRdIBpwFBVV95cUxNTWxsYWo0LUl3cldHWXg2T0RpN2c1MnMwX1hvQ2NVbDFwbzUxdUZtUFVzS1ZOb2tmZkNtbWRYRnI2R0d3Y1M0ek16c1FUYjlsTTE4aWc3SjFDVHhSTlRPdUwzcmhUdThMUjAxa1UzQktqaUZVbWJ2WGVMa2xxS0dyRzB3cVAzX3h3Vk9Ycm4zME5BU2RKdlhQWEZ2SEVVNkQ0NXVsVmpMRQ?oc=5",
+      "published": "2026-10-11T06:57:08+00:00"
+    },
+    {
+      "title": "What’s in a name? Trump calls it ‘SI’. China calls it ‘human-made’",
+      "source": "South China Morning Post",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR3Q2Q24yMkRrXzBZdjByVXl3VExfUDUyV3F5Y0FMNGFwUDlWdTRkcEk3YXQzejMzTTVxY1dJVlMtYUJXYXRvMFN6eE5uSEhrVHpLMUE2SE41RzZGSnJzWTBvYmlDaC1weFVWb2J3aGJnTzNRaDNVaXZGTWkzbE1WcVNxMGVseVNqb0xtVUx6MDlYcWZYVjhhVDBNelZ6RURrbWhUMWw0djZyc1MtU2dWR1o4YUdOeHZWMlRoZGV4R05ENUXSAcMBQVVfeXFMUEd0NkNuMjJEa18wWXYwclV5d1RMX1A1MldxeWNBTDRhcFA5VnU0ZHBJN2F0M3ozM001cWNXSVZTLWFCV2F0bzBTenhObkhIa1R6SzFBNkhONUc2Rkpyc1kwb2JpQ2gtcHhVVm9id2hiZ08zUWgzVWl2Rk1pM2xNVnFTcTBlbHlTam9MbVVMejA5WHFmWFY4YVQwTXpWekVEa21oVDFsNHY2cnNTLVNnVkdaOGFHTnh2VjJUaGRleEdORDVF?oc=5",
+      "published": "2026-10-11T06:00:06+00:00"
+    },
+    {
+      "title": "[Korean Startup Weekly News #139] Physical AI Reaches Orbit as Global AI Infrastructure Hits $2B",
+      "source": "Wowtale",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBTOXhvUnNjd0Y4ZFAwUi0xeHNIVXlkSW5BNUpuejZacE15dkh3OUtZdi00UWV5N2RzaVdyVENMUm1zYks4V1dZS3RyNFVodzFZVjk0?oc=5",
+      "published": "2026-10-11T05:46:35+00:00"
+    },
+    {
+      "title": "Robot Training-Data Firm Mecka Raises $60M Series B",
+      "source": "Wowtale",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE43MkFpZ0VtdDh0d21sZ0U2aVRpU3h0cG01YXhHckFUdWR2Y0F0elBrUFpYS3laRHZBTjNRdXpTdW5wZk8xbFJ2WU5fdXhhSkxKZmxZ?oc=5",
+      "published": "2026-10-11T05:29:40+00:00"
+    },
+    {
+      "title": "The Tech Download på CNBC ikväll 21:00",
+      "source": "TV.nu",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBRRzN1Y2ZsNW1BMHFYQWE4V2JKYjN6M0o5eVNyQmpPX1lCR0lON2JNLWg2WGxIV1daUzczNnhBRk4ydm52Ny00OA?oc=5",
+      "published": "2026-10-11T04:31:30+00:00"
+    },
+    {
+      "title": "The Tech Download på CNBC inatt 05:00",
+      "source": "TV.nu",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBoV2JfWWJzcExmclRjdzFrY1BoLWNSaW5XYjQxU0tQMlowTGpTTEJlcXZGb1hRNlhma056V0toQ1pBQ1lPN0Vzdw?oc=5",
+      "published": "2026-10-11T04:31:28+00:00"
+    },
+    {
+      "title": "South Korea's Physical AI Boom Brings Robot Baristas and K-pop Dancers to Public Venues",
+      "source": "news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmRZeXQ3QTMySy1DWVY1R2dTNU8tdGlRUHZ4NTZMMmxoX0ZPMTd0eXNIaEpNSG1uemZBUWRYYXdsZGVoN0MyZ3hIYVh2a205clJKQUJQNnFQSXczVUtnUnJjYUtPQl91WHE2R0Z6UGpSOUVXck04aHBKeW5ra1VLZG4xNV9aNkwzTmFQNG5aS09HLTBpM19YaEgxNGc2amZMbGpTZUxJbGNuRnpuRFFTdzF5b1FlR1U?oc=5",
+      "published": "2026-10-11T04:29:33+00:00"
+    },
+    {
+      "title": "KAIST Unveils 'Physical AI' Platform Strategy Beyond Humanoids",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE92b0dydkkyTHd3c1ZnUHBmVG5KSmZ3a092WENLaVU1Zl9PeFJUQkZoc2xsYlhlNU9tOWN2RDNhNmd0d2lONEdwZGZzTmRkV0pBWEZueEsyQ2Z4eUxwZk1Kb3hFTmZDMktVd0lDb0kwOF90MjFiMVE?oc=5",
+      "published": "2026-10-11T04:05:00+00:00"
+    },
+    {
+      "title": "Design, AI, impact: test your business creativity with Edition 253 of our weekly quiz!",
+      "source": "YourStory.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPekhpUjZxekg5QWdCTk15SFMyOFY4RHJ4OXBMNFJieGE2aTE3QlhIenJWNEhGMlNhY3BFUy1TWGQ3MzMzLXJ3Y2dMM2s5YTZpWEZ6R19XQUdZSHBhNjU1cXZ0YmNMaFlTanBPSnFWcVdTTEcxcjdHdWJwdTNMUkI4YXhvRmdLdlduX2NQOTh3?oc=5",
+      "published": "2026-10-11T03:35:05+00:00"
+    },
+    {
+      "title": "Inner Sky Labs Launches Physical AI Platform, Seeks ₹300 Cr Funding",
+      "source": "CIOL",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZVdPWEV6RGtzNUg4MUw5X0JpNnBiZExveDNqYmd0bTZGempYZ2VGUVY5UXdPeDdXMUd4ZFE5Y1kwNGc2WXYwd3BZcWxoNVc0RWNZdGV1RkZlakRzVi1uQ1hycEExdThOOXpnT3gwaS1EWDJxdVVTbnVDTkRaQ0NFSzlSbGVQdmZzQ3RoQk9aR3lCakNpTFlsUzZrVjlEdUVkOTU2WDRHanFOZ2hkRzdsX1ZsRm5kWkZaVjlFM0N30gG-AUFVX3lxTE9lV09YRXpEa3M1SDgxTDlfQmk2cGJkTG94M2piZ3RtNkZ6alhnZUZRVjlRd094N1cxR3hkUTljWTA0ZzZZdjB3cFlxbGg1VzRFY1l0ZXVGRmVqRHNWLW5DWHJwQTF1OE45emdPeDBpLURYMnF1VVNudUNORFpDQ0VLOVJsZVB2ZnNDdGhCT1pHeUJqQ2lMWWxTNmtWOUR1RWQ5NTZYNEdqcU5naGRHN2xfVmxGbmRaRlpWOUUzQ3c?oc=5",
+      "published": "2026-10-11T03:11:37+00:00"
+    },
+    {
+      "title": "KAIST Declares Physical AI Vision With President Demonstrating Wearable Robot",
+      "source": "DongA Science",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQMWNIT01ZX2JUbUJIUDBrMmpZdUl5bjQ1N3RpYWk2M3dDMkhDelIwQ2hDdW1iajBON1ZzOXhuckNtUjdQZFJidDgwcVVLYzNQd0xsRQ?oc=5",
+      "published": "2026-10-11T03:03:00+00:00"
+    },
+    {
+      "title": "KAIST targets physical AI beyond humanoids, unveils next-generation strategy",
+      "source": "디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYzM4WnlTN09pQVlHandlUWtCZ043M2otTU5vUjVwMjN3N3NrMlZnV1RfcnVzTXFlcW8wSkNJTmhpWTkxOXdleF84ekRKOVZDQWF1OERrZ085Njd3dngyLWdEeXFJWGxObE5PcWpsUXRqNVdpaURUVl94M3drdzBiLUVSaDBBbTRXMWRmczlaU3RFVHZ2TWlURzFfZGs5OXQ0Y1VyaVM3cGdDRHUzUUFGOXR6TXJ1dmNYOGVaWTl3?oc=5",
+      "published": "2026-10-11T03:00:00+00:00"
+    },
+    {
+      "title": "Six Years into Euisun Chung's Tenure... Hyundai Motor Group Moves Beyond the 'Global Big Three' Toward Physical AI",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qSWl5SS12dk8yVXMwandrR090TkZkdzZDaFladGpmOGNZZDNrMGxBQV9zSkV5TXpVeXIzWGhKd0FVYUQ0ZFdsT1pEWGxZNDV1UC14N0FsZmxVd0ZFOUVkamhoMWg?oc=5",
+      "published": "2026-10-11T02:59:15+00:00"
+    },
+    {
+      "title": "Startup Led by Ex-Nvidia GPU Architect Designs Y10 Chip to Close Robot Control Loops in 1 ms",
+      "source": "Pandaily",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOR3hYUWQtSWZ5ejNfWlk3bEVFMUhoNDJLTDBNRU1JRGxzZEhQa0owby1NRGZLd2llcmx6bGlPSmMxYjBPVWdYVkhFR2sxVVNqY1VvVmsyZXhpQlFNNWxIT3F0cDJpNnQzSV9aYS1mREtVT3h2UGFoamtqN3l2QUNMa0UtS241QzU3R0JtZUE5VFdHUGFFVnc?oc=5",
+      "published": "2026-10-11T01:52:02+00:00"
+    },
+    {
+      "title": "Robot baristas and K-pop dancers lead South Korea's physical AI boom",
+      "source": "Nikkei Asia",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcjIzUTNRVklIVGFoVVpEemctZ3pSYWtILU5FS2N1Y2JQb3dBMXFEbGJyUHpHaU12U3owMW1KbEJ5OWczbzlBQU5MSDc4NlhIVjR2NVJzakRJRm5DcHZFc29uRXpaelduSENJaEF1ZGllVEpWMlNadWdwZzc0cGhBdjBlV1hWQmxPSGQzRG8tYWlfaUFGcjZpN2RTakNxVGNvbVlDZWVhTGRSdEhyQ09OYlQ2OTlWTFlKM3JEXzZYeXpWOWtLUWYtdWNaYlJhZDhoamc?oc=5",
+      "published": "2026-10-11T01:43:00+00:00"
+    },
+    {
+      "title": "Physical AI Is Happening Now, but the Frontier Remains Wide, Says Tata Elxsi",
+      "source": "Tata Elxsi",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQS3g0UFpiaHN2ZWc1dVIydkphUV9fblMxbnMwNVZ1SUhJM3dfVVZ6Vm5adHUxMC1pRExVcFBTazFTYTNlUGRuVDhhLTBBRHJ6UG1JNTJYZTFOU1MtdnhzbVE2cTQyRG5Tb3RDQ3VSM2JyWWhqSjFqOUlzaVd0YVBPUHFaYkpHcjdYLTlPV2E4TjFRcXhSZXdweENZcW5mcndUMWVBS0pMRnZseGlJeHdydkxIc0hsT0tMWFYtLVZR?oc=5",
+      "published": "2026-10-11T01:01:33+00:00"
+    },
+    {
+      "title": "[Insight] Samsung SDS Connects AI Infrastructure with Manufacturing Operations",
+      "source": "Korea IT Times",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mTy12djc4TmotVVRmLTIwSHZiSi04X3gzZnRkcFc0N0VCMVV6T2szMG1sVlhpOWVNTGE1cUw4UGhVQUFPQTdETFFLdzFfZk01QnBheGZFRjNYMmh1a3l4V0h4VGpVanpvWll5XzVTX24?oc=5",
+      "published": "2026-10-11T00:43:24+00:00"
+    },
+    {
+      "title": "Tesla Stock Forecast: How Much Will TSLA Stock Be Worth in 2030? Can It Hit $3,000?",
+      "source": "TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNVFZibUlDdy02NU1WeTVUWEdZZzAtc1pOLW5HRFgyN2JQYmxIMlRhdTNFZHZUaU9zTFlSTllicUY4dlpCYTFlVXBBN00yeVpRUGVWRl93d3dQQkktRGZCc2lHVnpxUG5RbHFpcy14ZkdvRFVyWGxIajJUTHRSNDJ3c1dQeUxKS0ZaMDZtRlBHd2NEUG9CM01vS2ZhQVpubHo2WW1mYVdCRV8yUUhldWVZWE5MamY4SHBNVTdxM0FONFhqWlZvRXZkUWNZcXk0Q3p2WmRYZzY5RmxGMGI2VGFIZzlQQlE1VngxU0J5X3p5R3ptRDA?oc=5",
+      "published": "2026-10-10T23:34:07+00:00"
+    },
+    {
+      "title": "Does Smart Factory Launch Change The Bull Case For Belden Stock (BDC)?",
+      "source": "Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWWlwbVc2bXFvOFpVLU00WXhGbWpXNC1ZODAxN3RUN0VQbEs3d1I1dzJRQnlVZVVjNnh3dWZPMHhwZFVjNUJVWUxuT3VXRTBtdm9iNEhNWmdHd1Q3ZEtWVkNiclNMVm5KdlNlVGkxN3o1S3lfaEZxSFlydWdTOEYyYXJfQ1otVEpJUl9qTXlBTjlGZjJ5ZndOSTVhakRhZkRrdmZ1UktzczBOUXAtU3hrT1BVMFdFbWJCc2fSAb8BQVVfeXFMUEFHRFpUaDZ0RDgyUDM5Yjc1N19USGZzU2lsLXE2MWtQb3dYVnZINzFVN0ViT2ZqN2J1eW1PTk44Y25PWmhoYkpCNGJjVi1qdXI3Wno2bXFxYXc0akxUTlJGQjU5M3B2WFpIT1ZZczdqX1N6ZjZMWXBrTEprb1hKd1ZlLVhTNGpFTXlfT05MNTVQWmdPb1dHaG95VElhSzltWGlmWXBrWFNCeHpNLS1mdm5Sd2Q1NFVXQThGWE1HckU?oc=5",
+      "published": "2026-10-10T23:04:53+00:00"
+    },
+    {
+      "title": "GLOBALFOUNDRIES (GFS) Unveils FDX Fusion As Dresden And AI Packaging Plans Advance",
+      "source": "Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcE1yMlVDb055WV9keVZsVFdRcjNpbWNFbGVaSDdpMl9SNHNuZ3ppeHFmSmYzUVJGeTJ0a1VrM21SQWEyM0VtQXBJMlh5RHgyLTJSX1lMUGE2SXprYVRjNHlORmRhSXM0QWg3ZXUyZTlqdVpyVmFfVWxkM243Q3dNSkVxZlJFMFlUY2JRcEZnaWFoRjJsOVB4SzRQUWFVV2hoQ0QtUGRKbVczOFVXUFctclQta0puS29aQWJVM25HcldOY0dKYmV2WnBiVFFDSGw1ZjI3NUpn0gHbAUFVX3lxTFA4ejk1dEQyX1pwM0w3Ny0zZ2xwZFFxbFNxYnhrSnQzOUFHUFlETEg0dmdReVZkTGZGUTBNYTVtOFFfSWkwWWpVSG0zWXEtNjVEZ0x2T3M1ZGtRSnJOaTFQa0JJS3MxVlJRRWVsSVlTRnlXbF9wRnpoRkZ3YjNUdEx5dXVLZGxLZVlVZzBBX1Vzajl5TERjdEZTdENNd2dnN0Y1NFEtUnBTMk00MkhhQ1RSaWZWWkd0RVlzekZfdzJ6dGZoeEg0VXZXTzMxQzNMWHNuNXBWdHZTWmhUcw?oc=5",
+      "published": "2026-10-10T21:43:25+00:00"
+    },
+    {
+      "title": "AI Daily: Two Labs Report Models Taking Unintended Actions",
+      "source": "FourWeekMBA",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVlNKYWlld3pPX3REU3lsbjJ5c0dhTnJqWlJhZWVmTFBUa3BHV0hpTk5XT0otVDhVZnhQU0NVSnFTdVlFWWhkdkhPc3JSWFFmXzFoNGFBcWdzVEc4clJ3bFFpY3B6QTU0aXRxUFFVenlRbE9WemhzNC1HcUZXa2c3SlB1ODJzdVlNZEtRVA?oc=5",
+      "published": "2026-10-10T21:24:30+00:00"
+    },
+    {
+      "title": "Outsight Acquires GRASP Aviation Innovations to Bring Autonomous Control to Airport Checkpoints",
+      "source": "ACCESS Newswire",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQW12YnRQcFNQM200WjhfRDVVOHQxaDQzRzlqS3lLS0ZkS2JqSnlmakVyT1cxV3Rpb0NWc1l0REVSX0prQzcxXzEteUxHRS0wMEg0RXliZ3R2endlcWQ2cXRHU0FzenJQaUNmeU16VnpucjVIdjliQS1rclRvemt6b3hvUVlzLWtjTUlOUlptQU5jOXZzNzl0MDNCRUxwakJjcW9VY0cyWE1EamtFWkxrZkNVdzB5eE9pNC1YM0JuN0VqdWNiZzdRNjhGTGVFbW4xQS1FRmR6eUJzcjNuZmh0RWdEVTU?oc=5",
+      "published": "2026-10-10T21:16:59+00:00"
+    },
+    {
+      "title": "Choo Kyung-ho urges fair shot for TK in Korea’s chip and AI push - CHOSUNBIZ",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYm41LVM1ZUlTdDZYTHdmcGdidHJtT21PZHJMMi1Uckk1Ui0wTVg4d0l3ckZ6MndYVWFvVlViVVZsdldlOVh0Wm1RQ1R1bFUtWmdQZ1VNeGt2MWloN3FoTFluQlQ4SV9EODFpeTktSllCeXlUNV96VjZfajhXbzNpX25YTHFrSEFtazBiQ0ZLVWg3WFF10gGUAUFVX3lxTE5ibjUtUzVlSVN0NlhMd2ZwZ2J0cm1PbU9kckwyLVRySTVSLTBNWDh3SXdyRnoyd1hVYW9WVWJVVmx2V2U5WHRabVFDVHVsVS1aZ1BnVU14a3YxaWg3cWhMWW5CVDhJX0Q4MWl5OS1KWUJ5eVQ1X3pWNl9qOFdvM2lfblhMcWtIQW1rMGJDRktVaDdYUXU?oc=5",
+      "published": "2026-10-10T21:00:00+00:00"
+    },
+    {
+      "title": "The Bull Case For GLOBALFOUNDRIES (GFS) Could Change Following Its FDX Fusion Physical AI Bet - Learn Why",
+      "source": "Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONnVONlItR1VJdHNkUkRta0kzdEtaMmt4Y1FKeXhVQWM1cU52QTdHVEdLcFJKRU4wcFRCWXV2bzNuSG52dkZ5M1JVRlZlcFVKOUFoaUN4VEsxY0psWms5ZjQ0Qkx5eXB0STdPenZ6RlMybGhFOFlKdm1kUWJUb2M2UTJRTUZVczJJcXAwVg?oc=5",
+      "published": "2026-10-10T20:13:43+00:00"
+    },
+    {
+      "title": "IROS 2026|PaXini Showcases Full-Stack Tactile Strategy for Physical AI",
+      "source": "IRW-Press",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQlROczVqSWFtNGpFSWtDV0R5LVBNalNra1hzRmFoc2pFVktBeDFwTWJOOGtJcEx4dXFCUm1IblAtaUU4ZUp6UXlnMnVEMXByUHd1cjJabFpXZFUtd3N0UFpRaVctZGhSUEN2X3U0QVVWMGFVaGFVSl96TGlRdWVudjZGcXAxWW5VeVkzaUNobXpnOXBvaEc3SS1WNA?oc=5",
+      "published": "2026-10-10T17:39:47+00:00"
+    },
+    {
+      "title": "SoftBank Bets on Industrial AI Over Model Hype With Gulf Fund and Sarawak Platform",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNenVjMUpRZkhWNFlUQjlKQTVmajlkZlhGT2xmYmtGNlZ5NzIwbTdmS2MxUVhlSEdtSnFoNGJUREMxYmJRSlZBakNOQ3h3RzlQQUp2U0hnT1EySmxMeWVUaHNyUnhzVy1wWUNNc1d2V3EwekZoMElrRmxZM2NyemVaTVVkVTJsb1F3S25LODRrQWY2UzlJWU5lMl9ySEV4aE5QXzVUSW9RMjJaQU0xQVFKdVcteG9CdEVlRjlpS1FQeUxPX0pxRGpfRGR2cW11dWgxb1k2STFtcHpNM3RlR2Q1a25DMVg3NWNUN2c?oc=5",
+      "published": "2026-10-10T16:43:21+00:00"
+    },
+    {
+      "title": "CES 2027 Super Preview: Geely and XPeng Confirm Attendance, Mobility Has Become a Core Topic",
+      "source": "36氪",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA4Njl4M3R2ZFZfWDJGbkk0TjFPTVJWZzVKME1HdklEX3AzLVhSUEczU0o0RzNfSVB6SjRYcFBwYmVucF9LbHJuX1ZJMnVMWmVCWlJz?oc=5",
+      "published": "2026-10-10T15:30:57+00:00"
+    },
+    {
+      "title": "AMD Stock Is Set to Benefit From Both Physical and Agentic AI",
+      "source": "inkl",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZThfaG9qRkE5MHRLNUIzeGx0V0NEYXVDOGVhWFVMZnpURE5mQXdnNWVIS3Znc3pYcXFkNW51MGxYa05ybjBMR3pPbmNsVm9mU0lGZDFGVDNjRjVZVXhKUXI3NWJ1WUg2b29NNFBwdXRBZ3hXamh6NTVPU1hLaGh3SnlWTTRjNERnUlJLZUtORVI?oc=5",
+      "published": "2026-10-10T15:30:02+00:00"
+    },
+    {
+      "title": "GE Vernova, Snowflake Lead 5 AI Stocks With Accelerating Growth",
+      "source": "Investor's Business Daily",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMHhXS180Y0JUM181aW5aT1FXYXZ6TnhzTlpYRVNZaS1mRnpYSW1TOWVhTXN4RDFjdVFwM1ppVEl2OGI3dmYyQ3IzQl9xWlFoMnRvcUF2NjVNczllZnBVN0FJRTFlSHpKN2tzdVdVX1Zob05WM2ZMdkdQSVFNeUJEOGFkYzJ5dlN2YW9UM2tqcFF2ZWVGS05IQ1dra2c?oc=5",
+      "published": "2026-10-10T15:24:00+00:00"
+    },
+    {
+      "title": "Mecka AI Secures $60M Funding Led by Sequoia and NVIDIA",
+      "source": "n24.com.tr",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObGdIYWMwV2o2U1NTWHFBOU9pWWRGRkc4VTI4X1oyMkQ4MmFoUjlEZTVsWFE0UHVPX3pPd0R1Mm1wd29UNEFVX1IwTVU0NUxWaE92dTdtdkoyUEttdmxCRDVFd0hDWXJxVEFZSkIwQWNYdEp3eGhoM1pjd1c0Qk5Oa3ZvVUZ5bUdRM3hvT3NaX0g?oc=5",
+      "published": "2026-10-10T14:38:44+00:00"
+    },
+    {
+      "title": "European Startups Push AI From Screens to Factory Floors",
+      "source": "n24.com.tr",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdjR5YmdkbGVsMHNXZk5EMTNrUTFKWHVtLXNfVTIyaHB3eGFFNVVYNlk3QTUtM3Q2aVFpV255WGpxVUxXS2xUSkZheFpPOGc5NXItT2NQWE1TcXFjYWI5Wkc0R0FCLUpQT2dvSkFNVVRldllNU2VldU5zXzJ5aFg3TzZ6LUxGNGhmMmFyMzRnWDIwLUkyaVJTbw?oc=5",
+      "published": "2026-10-10T14:15:23+00:00"
+    },
+    {
+      "title": "Anyware Robotics Advances Physical AI Strategy With Data-Driven Warehouse Automation Push",
+      "source": "TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZDg2YVFKU2ROanFOTFZTZTc2RFM0bHRPcHBVU2Z2Q29vLUlYbWtmMEhHUmcwMlNGbVhMbzBuSEgxek1OSTVXRi1zTDlfMjlXNDNHSDQwakNIbXNKOEYwRnlYeHlWanJHcEVoQ3F3MURoUExjNGw3aGhqR05OaHozQkwxTTQ5VWtERXVXWmp3LVFBa3daRHp1T0hIOGNTbm1rakJLNTcwNm1ESVBZb0xVTHAyUTNCb0lZLXJSZ21QSGQxZ3pCYl9xM3ctN1ZhSnpmNnNr?oc=5",
+      "published": "2026-10-10T13:39:48+00:00"
+    },
+    {
+      "title": "Inner Sky Labs exits stealth with $30.9M round and Kavach safety layer for physical AI",
+      "source": "Dealroom",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObGpGUUhDUUtGa1hubDZTa1otUGRDdTN5Rk9IVkhodWNYN0JFY1kxbkZjUTRKdEw0bHkzQ1BQbGd4THJxMWxOOHFQNmRQckw2cVUyRnI2YWZZaldmUXg0Ny1mNGh3MjRZemJPdFFrN0RWem1yNlN3VTJ5SGlwT05IT0MtZFlkX1Z2cXdPaEE5T2x0TTFIZHhSNjBrdGMwQU1ubXlCOF9uQS0xQlFka2RZY0NMNC1yek0xRzVJ?oc=5",
+      "published": "2026-10-10T13:01:13+00:00"
+    },
+    {
+      "title": "Why dexterity is physical AI’s real bottleneck",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNN0JJWUlsVk12QkpQNkRhaXdJTVJBYkFFNGJLNFdRNlB0UHktdFN5Slp5SVRwanUtNnhYcHVCWlhSOHl1Tm5OV21LQzRoNGtpaWQ1WDAyV3JmamxrVUEwYmxmYWdwVElEZ01xVnU5SEhkaVVaZHVTZVhpX0R0UXJQaUxB?oc=5",
+      "published": "2026-10-10T12:51:33+00:00"
+    },
+    {
+      "title": "RLWRLD Highlights Progress in Physical AI and AWS-Backed Robotics Foundation Model",
+      "source": "TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYi05YU5EWHlOVUlJNFJOM3JGbVMxS3Z6NENvYzZEdVJ5VXZUR1l0Yy1Ya0laSnhGdUg4dDlJeTNRYnQxbUhBLW54ejJfakIwRDVDZ2EtaHRFZmRERnl5R2Y3aHRWXzV0U2huX0J5LTlXamczS2RkYjI0WE0yQjliRHlWbG1ZMDVrN0pDWldZMVhHZ1V5Z05fek44M1liSDV6OHhCQ1doNWlUZDRsaDRxWjQxSHNFYnFkeW5BRnVvVUVINlpYTnh1Z1hR?oc=5",
+      "published": "2026-10-10T12:41:37+00:00"
+    },
+    {
+      "title": "GOOGL Expands Gemini Into Robotics As Big Tech Races To Build Physical AI — New Robot AI Can Tap Google Search For Real-World Tasks",
+      "source": "Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMnZGcE1FLVVRWWpxMkkyVE5kcFlPSjhBbVFCaEstbjNwWF9BQXBaRDA3eEF5M29scEhLLVl4amNZRXI4VDQycHVVTVprQ3dPZFI3dEFmTkpVR0l6M0lsTVJhQkhyWDhpdWJWUEtrZ2VKdFM3SGs0VkdHRERkbmYtSWxaTjFYOEZrODZway02dXhKclh4S0Mxc0tEcHJiX1M1UnhtR3l2S09IUkwwN1paMFBNbmU0RlpwQUV0M0NtYXRMUWNqbklF?oc=5",
+      "published": "2026-10-10T12:12:27+00:00"
+    },
+    {
+      "title": "AWS Launches Open-Source Physical AI Toolchain to Accelerate Robotics Development",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNnRrT21HNERRZzZTWEdoVTFSQU5GYXRRYXRaZG4tN0g4ZDc3a1laVU9vLU14SEVNSmZwSDhHYjc1WjJhS05xZjNRaTlRbFpHcUFsbHgtYXNRNkdhd3hKelYyRWNzQ0dSdTVMQ3JEeEJvenBOMWhZaFYwRlY4cDRxeC1QZnoxRE1XMWV1NHNsMVBIbjlUQWhkNWFDRlp3eTJvVHVFdzl6MkY0REtOTUFJXy1TdEJuc0E?oc=5",
+      "published": "2026-10-10T12:06:07+00:00"
+    },
+    {
+      "title": "He studied Physical Science and had little experience with coding; how Shudhanshu Yadav found his way to",
+      "source": "The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQVVFRMXJrUkc0TzE0SEh5SXBjZFloVmxnRjFFSlI5dFNscFZrQkl2VXNubFh4ZE9YZkJpSDF0dVZzckh5VWVnY3pPRDl5Q3FJNVNKN3E3LTA0eUo3UF9QOVhIRnA1bG9WVG9RUkVZVXNud0dLNmE1bXFiUlk2N2t4YnVGdjNUcV96MEI4X3FCcFlMWTMxOHNvbThkSS1iTXd6TjVSb09OVUZzNXBUZk93andRZ0tEYy10TUdGRTlwcVRneVJIcnlQRGhLVzZRVUVlNURqTy02ZlpoTU5KV2Z6TmRtY2V1MmhjSlg1ZTlyTmc0RThoN0d5dDFDOEtSSUtwLW0zeF9pbVNXdUdwUlJBdmJack40OGs4UFZ2aDNhakFEb00zcWpGMkpXMWRMa191dURFUGFxRDliMkpVZXlUTl9n0gHHAkFVX3lxTFBEd2JOWk9YQVc4Q0RmTWl4cjdEN3NYTmU4UHhVcksxWVZkOC1Xd1dqc3FjSWREekJjSEFndWtWSm5uYzR0ZWNXa2Q5UV94RGpDQUVHZEdZblBNY3MzX21XWjJvRnlGa25kZ2hYay0zQW5VT2hWWTh4VVBPbFZCYzdJRXhJX3pzMnlmRDFoVUNwWTJ5QjMzdnVHY2YyZHR4Rl8yaVEzNzZRM290V0ZhdF80c1VrZ3ZDSHM2WXVRNmQ0X0dUUTBSb09EdFZ3SEhXQ0NrYmRWUXBCLWVtTWVVTlYzWGdsZkM3SzRQRXM2anVyS2dJMHdHaUtQQUhWaWpOMF9ReW9XeE1LOURHV1h4dFBNSW1TcElhUS03aUJPTE1veU9QMjBDOG9vVmsyQ1BkYVppNFBtbXhVUGdkT3h4a0R3cndnQk11QQ?oc=5",
+      "published": "2026-10-10T11:38:00+00:00"
+    },
+    {
+      "title": "Inner Sky Labs Introduces Physical AI Platform, Plans To Raise Rs 300 Cr",
+      "source": "BW Disrupt",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeWoxZFljWlBQekZZeXNycXdqMUpPMW0tVTJqTlBMdlB2LVpfTHIyNlpTNHhUcDBGVGFTY0Nma0JYamoyMFNXNmJYWUJfMzlmcnhydzRTY2VMeDg3aldtR2pyNHJqTlhKaDVrT2pINUw0VVBnNEk4TWJ5LVVscFVydGxXdEJkUkNXUWhDMl92c2xGajZwdDcwdWVMVUV2ME5lQjNmSnhOcVNqUkNQalgzVFJ3?oc=5",
+      "published": "2026-10-10T11:02:38+00:00"
+    },
+    {
+      "title": "A new approach to sustainable AI: Offloading part of the computational burden onto light",
+      "source": "Tech Xplore",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRVg2VklTMzhaNlZ3NmpKYmcwTld5aVkwX25OZlBSMTZCMDVzSGdzb2lKMFRCcE9zWWpwUndCQ3ZZTFhoV2h1SkVZMTFHX29lX0dLcHZicGNycThnaTkyVjBIcHNfaWNxbjc2SVhKOTl0SmM5RnhPNFB5ZC1PY1A2dmxwVFpaUEl0TWc?oc=5",
+      "published": "2026-10-10T10:55:27+00:00"
+    },
+    {
+      "title": "Striding AI Unveils H1 and C1 Robots for 24/7 Convenience Stores, Targets 2027 Service Launch",
+      "source": "Pandaily",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWU9xb19YVkVIdnRGUmlKZWFVYkZ4amNNSGJLZTV0WWo1WjE0Q2xsaFpkVm9pSDJzYlJyZzZrM1JyV244ZUk1VkFFNXdaS0FxLW85d3Bka2hUVll4QVgyTmh5VEpsSHR5MUI0cWdqOTNhb25QdXFCVUNkUEhEQkctajhhTkpiemdkQkZEUnNUaUpKVXppV1dkVFNuMG5XLU1XZkMtNw?oc=5",
+      "published": "2026-10-10T08:37:28+00:00"
+    },
+    {
+      "title": "Inner Sky Labs Builds AI Stack to Help Machines Act Safely",
+      "source": "SMEStreet",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNR19wNXBEdXR5XzU5R0tFZE50VUhfU09YZ0k3Nm1idWxOZ2NtMWkxNnU1QWIxRjBWZmJQcjl1TVJLR1IxaVlOU2NRdzhDanV1TTQ1Y2hoaDJRTExuaWR3WHdpcW1zdXNEcEpxbVJuWm9vQWlBdkoxenllZEdYY0pQYk5fa3FiaGgxSlVHRFZYTHFZVFp0WjJpWXY3S3VkbVpK0gGgAUFVX3lxTE1HX3A1cER1dHlfNTlHS0VkTnRVSF9TT1hnSTc2bWJ1bE5nY20xaTE2dTVBYjFGMFZmYlByOXVNUktHUjFpWU5TY1F3OENqdXVNNDVjaGhoMlFMTG5pZHdYd2lxbXN1c0RwSnFtUm5ab29BaUF2SjF6eWVkR1hjSlBiTl9rcWJoaDFKVUdEVlhMcVlUWnRaMmlZdjdLdWRtWko?oc=5",
+      "published": "2026-10-10T08:30:37+00:00"
+    },
+    {
+      "title": "Elon Musk Backs Nvidia, SpaceX Will Exclusively Adopt Its GPUs",
+      "source": "NAI500",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTnZoWTk4Yi1TVy1uY0Z4N2Yxb2I3MElYaHBxb1drRHJpWUlpaVdzS2EwTlg3Tl9ia1ZiTWkwS2xyYzd0RFVISGRZc2R0R24tWllMMkZmNUdrY3FhdzkwTTVuekItNGNpSjB0ZGg5dHU5UmliaFIzMTRvdkVxVXA4UWNzQ2tONnpLdlMyaEUwcjBydzk0MUtiMXdR?oc=5",
+      "published": "2026-10-10T07:54:46+00:00"
+    },
+    {
+      "title": "Maniformer Opens a Crowdsourcing Platform That Pays People to Record Everyday Tasks for Robots",
+      "source": "Pandaily",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLW5MZTlwcy0xVFFieGNUVk9ZWnAxR2pldkljRGhndVhUdFd1cGU0cWdONk9FRG9oZ0YwSmhjR041emlic25rNzRFLXFMQngwWE1NbmtyNUNGcHNjdWY1LVF2NEhOQWhILTFPdlZRX1Z0Z2dpb0EwUlBpeTR6d21sd01lY19BY2lMbmpkQVd6TnJhc3lx?oc=5",
+      "published": "2026-10-10T07:52:19+00:00"
+    },
+    {
+      "title": "India must tap physical AI to cut tech import reliance: KPMG | Tap to know more | Inshorts",
+      "source": "Inshorts",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcXdzUEJId05qR2NMa0FfVmJHUFFaeUQyWE1YNFAwdEdHRnh3ZzFUZTYzNllGMjNfTGkwR2QzOTNjeDExUE5qTGtqcGt2T2pxSXFncXZFQktPZ2lCX0g5dzR3UjZadWlRVGJ6ZV9IeWZNQlh2WHEzSTZXUW5lOUxYaEt3QWFZbjAzZXRmNFE0SS1mQ20wWU9HUjJVR0ZXQ2dwUEg5aEVUZGVZWlnSAasBQVVfeXFMUHF3c1BCSHdOakdjTGtBX1ZiR1BRWnlEMlhNWDRQMHRHR0Z4d2cxVGU2MzZZRjIzX0xpMEdkMzkzY3gxMVBOakxranBrdk9qcUlxZ3F2RUJLT2dpQl9IOXc0d1I2WnVpUVRiemVfSHlmTUJYdlhxM0k2V1FuZTlMWGhLd0FhWW4wM2V0ZjRRNEktZkNtMFlPR1IyVUdGV0NncFBIOWhFVGRlWVpZ?oc=5",
+      "published": "2026-10-10T06:16:58+00:00"
+    },
+    {
+      "title": "Tesla Rises as Analyst Argues Stock Is a Bet on 'Physical AI,' Not Just EVs",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1tU0NfakIzWE9KR3JpTmF3emY4RmlQMzN3NmdTd1VNR3JIeWgzTFVhMW5ELXpwUTZFS24xMlJnb0ZhMV9ad0JGY3MwaXBhVXlyRnBOV0tMR3NVcWdObE0xeTZCQXVpcnJPb09DaXFnRlB3ZFV2MWc?oc=5",
+      "published": "2026-10-10T04:55:00+00:00"
+    },
+    {
+      "title": "Robotics companies ramp up data collection as training bottleneck slows physical AI",
+      "source": "Traders Union",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbFhlYXRWYlg5SUxvUXN3N0dpSlFHVURzcHVMZWlldEN2RnR6b0VPaVJMYU0xa1pwRThnckswQms5NXRlNkxWYWdiMUdySnhfRGFHeDVTN0N1WFM3VEZveENLWlN4anVKZ3ZUSkFVTnBTb3p4OWFMeUd1ZGZpUU84MEtVMzhhejB1S2ZqWm9oQXBEaktoRjZ4eUVQaw?oc=5",
+      "published": "2026-10-10T04:40:23+00:00"
+    },
+    {
+      "title": "The Reality and Illusion of Physical AI: Unlocking Real-World Potential vs. Separating Hype from Truth",
+      "source": "eu.36kr.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQeS1yMnpWRW44Nm9Za2lPbkJFWGY0WnRiaTdQT2dfNjR5S25qckIyTGlDclN5U1VHLVdtZzlGM2dBUnd6SEE5XzczZGRGdHlIcVpN?oc=5",
+      "published": "2026-10-10T04:25:03+00:00"
+    },
+    {
+      "title": "Inside the ‘robot gyms’ training machines for the real world",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLU1pd1pSTGtQdHFiMzlxazZJaFVYVFhwTU5IU0tnMzJTeEVlZFhlUXotbmtNN0RSUnp4VHRfX1czbTJmQXAzcFFQeW1FOW5sWTFhSVBVb0Qyc1IxdmFYMXp6Mmo5cF9rbWNyX2dEMzlzR1YyY1RVU29SU2lTcGVWZTFRams?oc=5",
+      "published": "2026-10-10T04:00:34+00:00"
+    },
+    {
+      "title": "What Is Physical AI? Nvidia Is the Stock I'd Buy to Own It.",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWU1BR0kzclBiMlBNbWZ1bXFLT28yN2lJcW5UOGhBSlNTSnZDUE5YRVRrcWd6TXhSOXM0bldmUVhleS1ZYklSVXdodEdCaFpYWXg4NWVNQkNQQV9GY3J6UGxZU0l6VGZ1blJESjdGbU5odFRDaHFxUkQxWVY4NHR1cHpEb2tHR0pGeTdseVZib2xxeGdia3o5dVVQbmZXaDlHdlE?oc=5",
+      "published": "2026-10-10T00:41:00+00:00"
+    },
+    {
+      "title": "What Is Physical AI? Nvidia Is the Stock I'd Buy to Own It.",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQlQ0T2E4UjdmS1VsVEZuNTNaMnZxRjV0czJVRktJZENzTlZSTDFvdms3a1VKcG03V3cwZEpLdUt3LWkyWjI0eUJlMWprS25ac2w5NmJjTGZPTGxBV0RwQndOcS1uWUlsNkwtN3NwLVlUckUtUmhOQkdnRWpmNWxybUwxSEh0UTRrSjFnTjNKSFNCRE14ZEE?oc=5",
+      "published": "2026-10-10T00:01:00+00:00"
+    },
+    {
+      "title": "What Is Physical AI? Nvidia Is the Stock I'd Buy to Own It.",
+      "source": "AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAyWmFuQnZLUmNUZElfZEdnRTd5cFVtNVFaNC1FVmc0a1RHZkVkakJMSjN6RjZWWnQxaEhZcnZ5dWxiTHhjb3Q0MTdHVzNpVzlTZnY5Mkpqc0laQnVsdURFOVZWQ3BObEcyR01ZMER6ZHlrVGRwRUxidUkzaw?oc=5",
+      "published": "2026-10-10T00:01:00+00:00"
+    },
+    {
+      "title": "What Is Physical AI? Nvidia Is the Stock I'd Buy to Own It.",
+      "source": "AOL.ca",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ramMxR1o0UGlMQ1o0NUVGVWlEWFZtd0VVc0Nfb1VwR0FEYkFIcmRmdWlkXzZJbHdMR2RVbDRVMDM5Tk5MQlBmOTNlcEN5X19DNmRFa0dUOGhEUjlFWVVmaEVGMVE3UlRmY0lUWGdYRHktME5lUmdpNUtB?oc=5",
+      "published": "2026-10-10T00:01:00+00:00"
+    },
+    {
+      "title": "AWS Releases Open-Source Physical AI Toolchain for Robots",
+      "source": "FourWeekMBA",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ0tWR0xiVzhXS1RuSXIxazNYX1YyWXg2Sm9VeUVobE4tb3ZWeUdtV3hDa0otS1pOM0tHRWo3RDFsODBuemxzWGQ0UUlQV1pVcEl6ZnNzTGdTMVlFMmV0cWU0OGZFOVRYT0I2amFUSXNkLXJfcnBNVkFncFJ6Rm1HVjFycFFfcnJFUHpvUzJ3?oc=5",
+      "published": "2026-10-09T23:57:07+00:00"
+    },
+    {
+      "title": "Deloitte at NVIDIA GTC Berlin 2026",
+      "source": "Deloitte",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlWlVzejVIRms3bXUxUnp5ejRRTlJQNW9tcjhWNUI2Rm1BOUpVQmh1TkVXVmh2cGV2aDIxSGx6bjZNNm9mcHIzdWpJRW04Nm0zSExSVmtuTk1yaS02NGV1UVJEcHZfMW8tRDVDUmlLdU9XVlBUR0E?oc=5",
+      "published": "2026-10-09T23:51:17+00:00"
+    },
+    {
+      "title": "AWS launches open-source toolchain for physical AI development",
+      "source": "Engineering.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVm92X0dfbDRQaFluOTJlUXBjc0c4RzVRY3ZRNktiNWFOYnRXejRlVEtKeWZ2WnpaYVNYcFc4ZXNUVjNNMWMzTEl2WUZ1RzR2dDBRU1l3UVR3R2w5NlVBUmZTT25LU2x4a2I0aGh1R2lGaTNlb0FWQm41Wkw4WXptYkhpaVRnSkV4VmZERlZ0NXZubzdtZmc?oc=5",
+      "published": "2026-10-09T21:08:51+00:00"
+    },
+    {
+      "title": "GlobalFoundries Tops Out Dresden Fab Expansion and Unveils FDX Fusion",
+      "source": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYUY0djNCaE9pNExyWHZLeE40dWgtd2V1bFB2dzZtTS05OG0xMXQzYTdNaW53WmhybTVxRjExVDU1Z0tqdE9DTDBiUVFHRGpKaUh1a3pRbDRBeFBWTkVORXpZaXhzcEdqdHktUTF5bHlDLXl4YkVGTkplM0VPajg5amNpSWZPdUFER3IwWHFHbW5UdjNBblE?oc=5",
+      "published": "2026-10-09T21:07:01+00:00"
+    },
+    {
+      "title": "Physical AI in warehousing: closing the loop between perception, reasoning, and action",
+      "source": "Kearney",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNV0hiNmJ1cGJHclJCZGh6YWROWFNEbG5aT0RYOGRua1VGMW96Z24tVXlZaEpBNHY2ai1Za1NJeHFPZ01NQXdnVmtnTU4yRU9MS1d5OTdzZGxiZVRLNGI4NkwxYzROQk94VEdPMHk1Sk1XcER1WU83TDc4TFFMWjhuc0ppYlgzSXBLeFdLMU1jZjUyaVpzNnhiLVZlMzNZM3VSb2s5S05DZFFINl9fZl92V1I1bU5tRXVrRFRvOEtqR0E0bmduNC1TQ00yX2NjY1JXeFkwaDNEN18?oc=5",
+      "published": "2026-10-09T19:24:43+00:00"
+    },
+    {
+      "title": "Tesla is one of the ‘clearest ways to own physical AI,’ analyst says",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNWJSWjllWlBUb0owVjV2ZmdFYldGUVlJeFN3dFhnMzBZZzVURTVLQnVnaWpiYmczU01od0s3TzI2VWlPVjFTalJMbGwyM0o1MGtLY2pFVmxhRUxOaTR4VFotelVYQlRmVXdpaVdjU2tBOXRmbmtPdzRxbGx0WS01bzZNVEQ5ekhsMGxLdnlMTTY1dzBsZ1NHSzRRbFNkUlRQZ212Qy1QYkNtSkw3aVZyZjY5allHTnFMMjFZZlpnVQ?oc=5",
+      "published": "2026-10-09T19:22:23+00:00"
+    },
+    {
+      "title": "IREN's Kent Draper on AI Infrastructure, Demand and Physical AI",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOGNGOThTMzNzWlhaR2NjWXF3NU12SkRDcWpSN2Q2b2RudzNqRUgtMklPR3ZPejFfdE0zSUpfV0JYNTg3a1BWbGZjWU9ZYkVPdzBuREI4TkVVZTVPbjlXNUZVWnViUW5TN1AzekpDdExhTzlVakctSks4clhsUFhrNDJ1QmItek9vOWc?oc=5",
+      "published": "2026-10-09T18:40:59+00:00"
+    },
+    {
+      "title": "Inside the TFN x noa breakfast and why physical AI founders must own the operation in Europe",
+      "source": "Tech Funding News",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeXQ3V3VZTVc5ZW1oNGlkNFdwNzh1ak8tYVhVNi05VVRoVDVCV2ZqUnVQTHJJZEJkWWJUa3dySGJzNkpDZDR6c1F3cTl6QTZQb1ROeFMzZlpSZFdiUXBtbGJJZGdtYzJFU2M3SklUVDQ0aXNjaGlVcmVJT3hIZzNVN1RrUGRKQWJoUjY4MV9SeFRBQQ?oc=5",
+      "published": "2026-10-09T18:36:58+00:00"
+    },
+    {
+      "title": "A Bad AI Recommendation Can Cost You a Sale",
+      "source": "Newsweek",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVzlvM2lNUU1HNk45QVlUVjNYajBfanhPRmVZRF91VFJJYnhXbUxKOHk4WEs5alVqbXFtMTFscTJFRm1OXy1hMzl4TzlyTUVFUFVUaDV1QTBhVzBlYnR0VXdIRXdXNng5Sk5fRHVBLVN5Mk1vTjNMSl80YTBIRUlxbWhINA?oc=5",
+      "published": "2026-10-09T17:55:00+00:00"
+    },
+    {
+      "title": "GlobalFoundries Announces FDX Fusion Next-Generation Platform For Physical AI",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZGNPcEVaUzNmVkwxdFVGZWc0dTBSaDZWdkNIOTg5TUEtU1JjSjRnUWxIRDhLLS0zUEw1Vk1OZC11LWE4LWFWQ3FPcGpKYTdkNDRCZlVTdTlfcEsyOGZzaHVqRGRtNG9rLVp5T2FkQ0gzTjhGd1BCYkN5SzhLZTN4RDRiUWlJZkZCaF9sNEl0SFpNZXN6ZVZBelB6dW9VemhsQnRqdGxOZmZFYnRvQV9ycTVEOTNYdGliOTFzSzc3Nkp2S0pndEg5cnpR?oc=5",
+      "published": "2026-10-09T17:50:55+00:00"
+    },
+    {
+      "title": "TSLA Stock Hits Nearly 3-Week High: Nvidia Win Adds Muscle To ‘Physical AI’ Pivot Despite Optimus Delays",
+      "source": "Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcDFPQm5pcFd4aDEybHBvUkVjUEYwUk9TRWw4Rl9ITF81SzNpc04wdmZRN3ZxM2FESnlaWUNtWFpIbzZKdFhma1ZfdkhCN0VjZGt5ZGlTcTR5Z1pBRk5hZzk1aXl2LUJTZE9MeFpaQktLMVI2ZGtTMHg4emZLYU52VHd0SFJ4RU02Rmkzeld2MGdyVTJad1RrcUJ5ZnBRVk5Nc2x6RWtfSlRrSEYzTXpLbWJ5Qjg?oc=5",
+      "published": "2026-10-09T17:46:53+00:00"
+    },
+    {
+      "title": "Trump Announces $2.4B in AI Compute Pledges From Nvidia, OpenAI and Other Tech Giants for Federal Genesis Mission",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON1h4d1NKSm5zTzBrOGF2YVlIVnFsR0lqVmZGMWN4YmFtMXlaR0RhWlZTVlAyalNpaS0wZ25XNGUyRVZrb1kybEtZbEdZdUVqS2dMMlFuU3BTUWNFV241RnEtUFlqcmdySlllSFNYVl9jOXM2STg0SC0wbl9zNTN6b3M1MGdWaDNHcDhxY3F1dlVLS2E1dDJiX0JybDRkNDlvd0t1QXBDRk5NbjhMYnZrNDFOQTNEZ3c4RWpNM3V4NmxPN25TWlF5S19pMUs0UmJZT2N3RmNNSWtiNWJNbU5YRWNQQQ?oc=5",
+      "published": "2026-10-09T17:32:15+00:00"
+    },
+    {
+      "title": "SoftBank Seeks Up to $100B From Gulf Investors to Expand AI and Robotics Bets",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYjFyTFl6RzE5aFpNWnNWYkhlR1NyMkFQSFVLcTBIakRKSHNubjRhMWdHMDBjVGJFN1ZWbjdSNUdJVXRKVDA4dkQtUXhGRkRSZHRPeVM2Uzl4Q29adUlnc1pxT3plSHB0QXQ0NmdCeVRxWkJyb2g0Yzk0aTE1Qkd2d0dnYUJaM3NIdE9YX1ZTRmJDRzBvSjdHSmlDaTVBWHc2VTJkaEJrQWlWOGphc2dZYWlNa2c?oc=5",
+      "published": "2026-10-09T17:19:12+00:00"
+    },
+    {
+      "title": "Google Brings Unified Gemini Agent to Enterprises, Letting AI Act as a Workspace Co-Worker",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONW5EQ3ZfZ3NPbTk2ekI5R2lKYXZjenloektIWG0zbzVud212enVyNVpxX3FrMmdBcXprT3kxRG9qRW56OF9GbS0wY2YzTldwdzhpeWN2VGVTS3hjYzI1STQtVmtJcmxITzliUkdMZ3ZnTTVseWFWTUpXZ0ZIVmZNZmVfenV4NlRpcGM2cDlOc0lqcWlUc1MxRU54MGp3a29yU3JkVXNJeXo4dGN2aGFIZUgtOV9YcmFNNTJMMWlRdktHOVp4UVE?oc=5",
+      "published": "2026-10-09T17:10:20+00:00"
+    },
+    {
+      "title": "Abu Dhabi welcomes global AI industry at AI Everything event",
+      "source": "Latest news from Azerbaijan",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYjh6Wm1JZmVkcXhUTHNjVnBqcW5FVDdSczhGcDVsekFaN0FoZEVJLW9CblE3THVjeFQyOFFIWnJTVFNkV0xlb0p4SUpicG92LWktUWw0ZmJjTFF6TlBxVThLU29nQVRVUjZ0M3o4TnM1R1NXMDRzeHkxOTJpbHIzN3BGU3dtZWZ4?oc=5",
+      "published": "2026-10-09T16:45:39+00:00"
+    },
+    {
+      "title": "Tesla's China-Made EV Sales Hit 2026 High In September Yorkville Says TSLA Is One Of The Clearest Ways To Own 'Physical AI' In Public Markets",
+      "source": "Menafn",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPSG5od2M5MVl0VWZPcG9ZVVZtTEhkblU5X1dOYmJHQ1N3M1NsSjhoSS1iMHMwSEJRYzlXVFFVcGxtUG1ydDhuM1RJbnRQWkZQZnFuR1paWnU5MWlPS2Z6S1ZlNHo5d2NJWjlJR2h0WXFsY2NMazhEUUk4WGtPTzlDNEU0VDNVV2I1U1g5VHpMclhpSi12X3hTOHRwUEFWeDFzSzBidUFGWDNDX0MxY2NhcVJZNjI1QmJycEVFUE9NY2psLTdCWEhmQW9LOUhRR0FSakVYV2xTNTFvN1BUZm1iSGtBdnE1ZEFVSUczcGd5bXJISnZPSGZVWE10dDI?oc=5",
+      "published": "2026-10-09T16:45:28+00:00"
+    },
+    {
+      "title": "Vinci Closes $250M Series B at $1.5B Valuation to Expand AI Physics Platform Beyond Semiconductors",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORnB5RGFoUlJZNUM5US01aTR5b25TX2REemRoUzRpeWtBQzNLdUhtVlJqR2c5dG43eHkteTgyYmg4SGZyM3ZMVXBic0ZQTnkxMXU0Qmp0RFl2djlKSnVoVjZBcEd1elU5Q3loOWpjZFZnYzR5RC1sNER6RVl3VENvLWhzNy1KQ2FoOUp5aFI2S3Ywb0NnY1FQN0hPanduY1lDcVB6V1lBeWo0RWVIOFBTVnBCNEZqdHJZeUxjeUQtNEdrREl2c295RXExbG96SXM?oc=5",
+      "published": "2026-10-09T16:28:11+00:00"
+    },
+    {
+      "title": "Rein Security Raises $25M to Secure the AI Agents Enterprises Build and Stop the Ones That Attack Them",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMzNpR1BYbkYzcEJaUW5UbHlBNHdOR21sem9VWGZnR3dkMnc3UFFndTkzR2d5bE91TWE4c1JGdHhwODJ3YzNqS091OEJMdDFlVUp1LXFDYUlHV1BFSnBQUzJTMm51Qk5tREJySGw0b3N4clVJT0VSZUQwYzR3bXVTVVRaejZOMlRpekhWWEpHcEJwcDB1SnlIT0U1WWxxSXpUQ01qLXkwcHVlNzBRUGdEeEMwZm9wNGVBYWlsMnRYZ0gySFRwbWhVUUR1QW91VnZCTlJWS3Z3?oc=5",
+      "published": "2026-10-09T16:18:05+00:00"
+    },
+    {
+      "title": "Tesla’s China-Made EV Sales Hit 2026 High In September – Yorkville Says TSLA Is One Of The Clearest Ways To Own ‘Physical AI’ In Public Markets",
+      "source": "Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTGMtM1hxQ2xwbjZIMWs2dVlYY0NVNGhldHdWbzVGRHI2LUFHNkxzZE5qNFZjWTA2dV9YMXhWQ1hzUVVWZUFvREdaeFNsaVZQQkY3UlFrbFhBQXJGSlhkMndUOGllaG54bGNIRi1acEk4QnBWWC0zUF83SUppc3djMmlkaVNEV25YZUhmdllCa3FYTlJhVk9BYTliOW1CR1FkdGpYNjBDUkxWTDZJdHJ2bQ?oc=5",
+      "published": "2026-10-09T16:08:00+00:00"
+    },
+    {
+      "title": "AI sector gathers at Ai Everything event in Abu Dhabi",
+      "source": "Anadolu Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbXozRktaSXMydV96MGkxSTl4UkdtWnNBM2FqQi1xY21relJ2VjBvR1hXMktnUURlUnctcTFTN2YwYjItSE54eTZIak8zMllDTEZhUzFYMFJBS2ZRMVlLTEFQRmplcDNBNGZMRFpqeUZ2STB3RGZGcHIwRWt3dEI0a3EzczRZcUh0TmlYYzlNQXdQd2dTVFE?oc=5",
+      "published": "2026-10-09T16:06:59+00:00"
+    },
+    {
+      "title": "AI News: Agentic Frameworks Expand as Crypto AI Rebounds",
+      "source": "CoinMarketCap",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQ25sUS1WQXBKeGhoQTdPZ3JnTHMyYklyQzgtdHRGcDNIRnRiaHZldVYxZkZ3T2Vjd096cE90ZHE0bUpUWHlzRG5HSi1xQ0IxVFI0UGcxYW96WEhYdURtaHZGUlU5WVhFanRRNGNPRVFCQzJjODQwVE13akxmQk5pSjdKaG1uZDJJRUtOM1JKNFI2ZVhEbFV6TXJzbXllUQ?oc=5",
+      "published": "2026-10-09T16:03:27+00:00"
+    },
+    {
+      "title": "Microsoft Reveals Nvidia RTX Spark-Powered Surface Laptop Ultra Built to Run AI Agents Locally",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPM0s0X1JMRXZqTlo3cXJjYVl3MFIwdjNSbkR1NVFLNFl2RFc1WTlXZElTckJjNFF6UGJHX2NfV3Zva2RSNGlSdnlMazVqYzgtWlUyY1JIWm5uZmNSSVJMNlZnWHQ4emlCMEd5Q0k3b05LanQ5ZWlBbGxLZG9jWnNEcVZ3ZFdoNnNodjF6NWtDZEkzdktKTG93dVV4ZmQwLTZLSjk0dUhLN2VvczJQZDFHMXc1blotTE9Qd1kwOURKSlBRTjJsSzhneEJfSXk?oc=5",
+      "published": "2026-10-09T15:56:10+00:00"
+    },
+    {
+      "title": "Gallatin AI Announces $50M Series A to Accelerate Transformation of Military Logistics",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPa0ozdVhVeUtPNk1PSGE2UUQ5b29IUW9aMnNiT2MyRk9yUWR1Umg0cGdROG1jejcycGItbmJkZUQ2VzBWc2VrbGdweExUUVpoUmpIVUVvX3pOMm5kMWZyWXFWMWw2cjhRbGxuYXk1MlN2UmQ3dHVaLU5mTFVPemo1UFB6cko2R2g0Nl9jc2hVamx0VjdweXU5cWx3OTJOeVFzSmt2NXZSZkxLcXdKZlVZMGgzcFpoVTJFV2dRbTBrUjI?oc=5",
+      "published": "2026-10-09T15:46:31+00:00"
+    },
+    {
+      "title": "Dan Ives Calls Tesla a 'Physical AI' Play. Robotaxis Could Make or Break the $500 Case",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOGlZQzZyZm9JOG13TDlvQUhNV1RVYWIxUDNRcndLVG5wWkNZUUhua1RWVnU3TDZVemI0ZGdOR1otWHd5Nk5MNmRXT3A3VWQ4UnA1eWNjRml1U2lpT2pjbnBTYng2VURyYlNzdXVfZUdnU1ZzY0FyR0xROGd2TTZVWGJCRGNyLW5hN0hMNmdPZFFEVWRTVklxNkhSTkJxdjZWaUl0NkgtRE5TQk80ZWxKeWp6ZldydmJOUUdpVHFaeHF0Y1RaTW1jOWJ2V05aR1FDT0RfQU5pYUk?oc=5",
+      "published": "2026-10-09T15:27:43+00:00"
+    },
+    {
+      "title": "Dan Ives' $500 Tesla Target Hinges on Robotaxis - Tesla (NASDAQ:TSLA)",
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdE9sSE5nTDA0MnNlNmRPMFBZanBCT1g5c2REdm9BckZYbFpsYzA4ZmVQN1FiLWRLQXNla2RRNFNFa2hubGZVdVB5UlJqbE4yMnJVRXdCeWJqR2NaR2lob0ppTFRsUjFIU0F2aGx1b21aOVpCTWUxUExPVjFxeE1jclp0NWJMM2hPbmZDSEpwQU5VZw?oc=5",
+      "published": "2026-10-09T15:27:43+00:00"
+    },
+    {
+      "title": "Economist Estimates AI Buildout Would Need $3.55 Trillion in Annual Revenue",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLS1SS1ZFQWRqMUxPYVp1TW95amJ2VzhIOHlUVUxTQ1lEY0tadG8tWGxDR0JQQ3gyTldjRUFQYTBfaHZrcXAwU1Jjc001Mldyazh2dHo2Z2tSVW5UYzVrdzE4ZzZsd0ROcWRTRGVHZWhDd0psZ1JtM0t0amw4T0Q2NWRoT3A5UlcyaHdVRWN1b2lvdGt1NjU0RGU4aTZHTmo0N1JkemxyVkUzcTNTQVNONGl3?oc=5",
+      "published": "2026-10-09T14:30:08+00:00"
+    },
+    {
+      "title": "Grab & Others Ink AI-Related Deal: Is This a Growth Catalyst?",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPekdOVWFvSHNaQ2JCMWJiYzVEQmVSd29XbWhiZjBlbFlxWFhCLVR1SnpPWk8yeWNZalFOVzEySHpGQ2g5SDNYTWZKTmVNNFRrOUFFUDROT1pMbTJNMFRYUmxzU0RhSU9xZ2pRQUtYN0N6UGJGN2FuUWFwdVllUUNQZ1hQSVdxRk5fUXl1UVZJdWF1aFoyMlNTVHczVkg4LU9QOUpPZkQ4ZnBURzFRcEptdl9QTQ?oc=5",
+      "published": "2026-10-09T13:45:00+00:00"
+    },
+    {
+      "title": "GlobalFoundries launches FDX Fusion, a cutting-edge FD-SOI platform for Physical AI, starting production in 2028.",
+      "source": "Pluang",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ2cyUUM4WEl4VHNmOWgzeXMyU0hudDUwUUZlOW1DMDB4LS1jOVhwVjZjaFNxOEVISVdGVG1hWlI4ZzlVNXd6MmtXYWM3alZHRHJJem5DTzA5TWJINlByVjNMSXpOUjIweG1Lc2w3VDBrcXpNSnlZaF9vak9aUFRiNThBbGlwODdXdXZkREZkNi1ORzNGYXFCVzl3SQ?oc=5",
+      "published": "2026-10-09T13:08:31+00:00"
+    },
+    {
+      "title": "GlobalFoundries marks Dresden expansion milestone, announces next-generation platform for Physical AI",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxON21aVnlyX1lWZlJiTTZrZFY2dG5SODJZV2JuMlZDSkFVNUI3SzI4UnVPMk9KS2dZNUlzMEpxRHpjeWRfWFRzb1pwQndFbm43eXlveF9UVFBzQk1jbi1JRXJTd1lnQ2xOR0Jhc2xhSGczT3VEQi1KQ1lDenBOWXI5dWdIaGVzb3RMUGFETlpzdW54YnN3M0dfZkxubDNscXZRcnpFdnVhbkx6Ri0zdXVJS1U4THMxOS1tMC15OWtlSjdLUkdRRUxKNFNubDFRWjh0Yi1wU3Y5enZ3Q0dOY3VLOTV0aGg5endXazBpdXRXU1RGQjQ?oc=5",
+      "published": "2026-10-09T13:00:00+00:00"
+    },
+    {
+      "title": "Physitrack Expands Into AI-powered Physical Therapy Practice Management",
+      "source": "DirectorsTalk Interviews",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONWEyOFhJeXV1cmdCcl8xa0FnLVZsSHFZdXRDdy01d1pOcktrdVBkRDBTNmNKSEhZQi1tYjBYbjczTVU2R2NjWFJfMlZiUnU1QXBPakZaM3l0S3NieDZZLU5XRUYtMkV1bVdPSXViX3B3OW5Cc1JmSVFIa1VPQTV0czItZVpsampWemotUzNEZWlubERZcU9mSUw1cnJqakxVQ01ONlN5akJqYjB2SFBBRzNaWW5GdkcteFdha0FwSQ?oc=5",
+      "published": "2026-10-09T12:20:00+00:00"
+    },
+    {
+      "title": "Globalfoundries - Unveils Fdx Fusion FD-Soi Platform For Physical Ai",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcWdGc245WU1YRFhsRWI1MHlWMnYySlJ5eXRtZW1JdWVVRW9CNVZTRXhEaG93OXJrVWJWUzRPMGpZRUh3QVE3QlJLeWk0ZllETm9LVUZ3c1JQNHI1RTlkNWlDVnFPRzZ3ajZnTFFjcTJmZEkxc01TeURMMHJHcUd0allpNFp4YUozWDVEekFud3NPOXhMOGI1V3BfT29TTUJVaXp0MGxwVS1NQXZ5eEJmVXlNWHpyTXVJZktaeWZwbUdDZF9BMlRPZnE2bUJCUjJyTEE?oc=5",
+      "published": "2026-10-09T12:12:19+00:00"
+    },
+    {
+      "title": "How physical AI is changing construction execution",
+      "source": "Fast Company",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdmgwZllzd21PWDJDYkszMVpDREhTY2ZyWFdkbG9Ca1VGbkJERWtVaVFEYTNDTi1BYTZRRkZtcFFKWk51Z3h1NjRHTEFfUXFnV1JqMkJSZFBOQVRjX0hGYnd5cFNwcXBuM2w2b09EcERBQmVTREsycXVBT3dJcUZyN2ItTUk4SEl1NDNWZkJ6Y2E?oc=5",
+      "published": "2026-10-09T12:11:01+00:00"
+    },
+    {
+      "title": "GlobalFoundries marks Dresden expansion milestone, announces next-generation platform for Physical AI",
+      "source": "GlobalFoundries",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNa2hMSGxRVHhWVnBiQ0loZ3E2NHV0aGt1RGZRVno2cTNuaGIybXVfS0tuaGg1Tnc2TWdMck44N1R6cndTd1lVbEk3MlBPeHRPVzFjOVNiY01rUHFmU200TXI4QkZEQjRXVUhRTDRfMXVsbDlyQVpYTVRtdUFDZk9Ua01oU08wUTZYei1VZUx6Rk1obFhBZExOTXFTN2hrWW8yQkJ2YkpUdHRfWlF0eFVWeFU0NmQ1dTFvMjNLQ21uVjZjUk9ILXFXRWUzS0l4VE93MEhV?oc=5",
+      "published": "2026-10-09T12:02:00+00:00"
+    },
+    {
+      "title": "GF unveils roadmap to deliver the world’s most advanced FD-SOI platform for Physical AI",
+      "source": "GlobalFoundries",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXBCZ0NFaDA1aGxYd1ZYcWhHSlU0WkQyVGQ4eWxrT3FUb1hJdUJDTnFhT0RObkR4SjdQUzVJVWx0Q0RyMHpZcjNpRXNqbkt1d0VMTXRLMnZqRjNXOVQ1dUVoMmlrZG5Oenk1eFUyYXpJRWZ6Q0hQbVBvSDJ1eWNIbE9ZRU9yS1RxMElmQXFLVG9fUFdTeTZjTmdIZzZ0bGJZRnY5QjJHNUhxNGFEQmFNdnhR?oc=5",
+      "published": "2026-10-09T12:00:00+00:00"
+    },
+    {
+      "title": "A new chip technology is expected to pack over twice as much circuitry as its first version.",
+      "source": "Stock Titan",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNY09aTVBfV1dLQkVtQTZ2OW1DRjA1TTlYU2UzS1BOM1p1dlRwX3I3SXNCRWNiTTJOcVpwdWl0TmRkQjMwc1NtX1pXM3pHdVZSWkltdjZNcjJTMWpleXhHT1RaNzgwQlZEX1NzbzdxdXZqOXdCWVBRR2RhWVNFYmx6dzlwNGxFQ3FPd3dCcXJOQ3VWX1VGVzJuVkEyajZyZVdNSC1ZLXcwdDU4ZlZ0OEVrT1JRRlBRbkE?oc=5",
+      "published": "2026-10-09T12:00:00+00:00"
+    },
+    {
+      "title": "Inner Sky Labs Launches Physical AI Foundation Models Beyond Miko Robots",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVo3UnNuSkpKU1EzcURnNFpuaU1WNXlIRzhTUkR5S2pIVWlZejZlSnhkYnVaVmpZenVoNlhhN2JsbkQtQmozOFB4Tk5PdnItZUtxczdoY2NqMDJ3bUJieVBzMFBjaEYzVHFzSTR6QVRobkRwUGQ0RlhYZ0tLMzBLM2hwa3pCbEpwM1o3VFoxQ3kycjlNbzljOUV0cm9OdDA1b2dUWFRMdkNhcjQ?oc=5",
+      "published": "2026-10-09T11:41:50+00:00"
+    },
+    {
+      "title": "AI roundup: New products from Oracle, athenahealth, Suki and others",
+      "source": "Healthcare IT News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmZyX05UV0lIYWpLWnZ5ZnJ0U1NuYkpCYzB0RjM3UVdIaGRXeDA2dFozNmtWVndsVVFjWmxsY0hJbTdOR2txSlhJaVlLOWpuWG5PUEJfcmtMbk1IRGE3Sk81OGhoYjFjaTJvRnVOWFlrQWNXSVdsbFY0eXhUVGNtZ3JrREg4VjdTUFJVZkZFbm1CaEtUOWtJMU40azZWZw?oc=5",
+      "published": "2026-10-09T11:19:00+00:00"
+    },
+    {
+      "title": "Upstream brings automotive-scale intelligence to the physical AI era",
+      "source": "https://internationalsecurityjournal.com/",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPd0RwR2pnSTZ2ZnVIemFBRGRCal9LNlJSU2VaMkppaXBQYmMxWE5FUm9nM0ZsMHRDcFpHRGhyWnRwelZJZXpVejJtTXVtemJlOTBjS2YzUWZ5MHlYTFlWaU9RM3FfOG0yQXdZSmx4UzFTYmI4MW9sX2pycUxlOUFnMw?oc=5",
+      "published": "2026-10-09T11:12:47+00:00"
+    },
+    {
+      "title": "Ultra raises $62 million for fast-growing ‘robots as a service’ business, announces tie-up with AI research firm Physical Intelligence",
+      "source": "Fortune",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLVhxX3pmWk50WXQ5MzZ6QWpJMEJjMGZMLUMyUzJnNnNiT0RXd0JFUmVsNVJjYk84ZjdtendrRkZyRlpDUGF1TVBQQVJiaHVpX19pekR2S0lhN2RSWjZLaTBHVUJwbTJDU0lkQmd5NmRPNU9QN1NqaVFQSTZrLWFPcVB4MW1JZU5fVl93LWJuS0ZZMDR2VGswdERCc3BtVFFZQUJiOTlKUmRzYTBBR19qSXZDYTRxR1JNeFRYZWVjam5kbV9BY21xWQ?oc=5",
+      "published": "2026-10-09T10:33:00+00:00"
+    },
+    {
+      "title": "Physical AI Could Make Today’s Buildings Obsolete Tomorrow",
+      "source": "Connect CRE",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMDNjZmp1dzV5dWFNZVdza3BjUnZ0NXU5RUozU1pBSFMxWk5VRW9EZ3N5MTg2TFp3em9wWnNQYWEzbGFLNmN6QUgwdDhKdm9sNGFTbVJ4bXlQalZaNVVMenk4azdSTGJFeEd1S29Vdkl2TkNUWk94Q0x5Z0h5bWkwMDNraDlKVWhjT1VmX21nUmNmUVY0T3k4bQ?oc=5",
+      "published": "2026-10-09T10:09:22+00:00"
+    },
+    {
+      "title": "Physical AI & Pilots: How AWS Aims to Get Factories Ready",
+      "source": "Manufacturing Digital",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPT3ZCeHQwekp0ZTdKSWhQdE5KQUxOV1NWWTdBRjZHTE9ZdVRQVUdvd1FjYzRYOHZoUU15U3hvTlhvdFVJbzQyWUtobEpISWljUzgyY1o3YlBYRTRzWWtwajhKS3J3Q2Iyc3I4dURnVjhBLWJETTJYTEkxZmluN0FESm5ENHFZUFFyODhHSEZTVmE3WF9wMUQw?oc=5",
+      "published": "2026-10-09T08:53:09+00:00"
+    },
+    {
+      "title": "Mecka AI Raises $60 Million to Build Data Infrastructure for Physical AI",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdll4OGgyTnFBNW13WTVYS3BoS216bXFMSEMtTU9TNTlwcVpPVjg5NWZuYmFPLThjc0JzMmRDc1o2LWFjT05mNUpPWHdPU3Z5R0VIa2xJemRvb09nd3FKRUZQaGF3LVYtMDE5cTJWaEtOeDZLT3pLMkVYaGkwd2RlZTd2OXB1VWp3a2xRY3lkZi1WZVluN05zazlveWFSMUlpYkxNUjlsbkE1dw?oc=5",
+      "published": "2026-10-09T08:49:33+00:00"
+    },
+    {
+      "title": "Physical AI Needs a Neuromorphic Path from Sensor to Silicon",
+      "source": "EE Times",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORGgyV3FuZDFsXzM5OWRqZHpQdEZqaXVpTkJtQVlmRHNnWDZJYXV2Vk9MUzFpOUdncEJsX0lhR19GeFdKRXlpYXhUbDZWWnNUVUNYcHM2WG5sNGxsTnRKUW1FN0lvUWhaQjYzbExNMWI5Ri1pUUNhTmJrMjNseHo1aHRVYnJONk1RMEVVQTlR?oc=5",
+      "published": "2026-10-09T08:41:26+00:00"
+    },
+    {
+      "title": "How AT&T and T-Mobile are architecting networks to gain an AI advantage",
+      "source": "TMForum - Inform",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOFl6QVp0WWx2aEJsVWMwRlpxT0wwc1dRRno0eE9MOVdzR3NnSGV6M1hYaFQxQjJjVTdKWjNHblphUWdKZHZuUFVocnhIVmJfWXI3X2hDOVkyaUlXcmR4NEpHeU4xdTBSMTEtRFBOOWRxUDJOSUxZUkYxeDM4X2tXUExSTlFWcjhrRTF2bXRfbUx4MF9WVC1JMThpS1lvUDVYeVhrSFpjcm1SeXdOdE4wZzhaZkU5LWVTSlE?oc=5",
+      "published": "2026-10-09T08:09:04+00:00"
+    },
+    {
+      "title": "Why cybersecurity and physical autonomous AI must be governed together",
+      "source": "The World Economic Forum",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2pKb21MeFpSa0VhVmt1U0F0REFySXBKZTFEUDFkZi0wRGNPV2NqMWhkcGdEUzIybkdBY09rWnFxSXFlMkV0b0RKcHpyMHpzbk1FVmZqUDBGcW5mazdkMGJRUFg3Z2h2emtaU0JKMGpPXzlHZ19rd29SeDQ4bjRYYm91QmdraXZwdjBFS3E5UVQ2VGx3X1V2UndaMmhMSVFXQVlvNDBKMzBrSWl6MDRseg?oc=5",
+      "published": "2026-10-09T07:56:10+00:00"
+    },
+    {
+      "title": "KraneShares Global Humanoid Robotics and Physical AI Index UCITS ETF AccumUSD",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5CdERBRlNlTzM4cnpHRE04X2ZoZC11RXo1STM0ejVvUmZCbURfaE9FSmZWTDM3YW42VVQ1Qlk2NmhYLWFfTTl3eVRYMlo3ZmI4QVBBRFhTR2QwVlVHcWxfT3l3MjNmREU?oc=5",
+      "published": "2026-10-09T04:34:13+00:00"
+    },
+    {
+      "title": "FireDome Launches US Operations With California Wildfire Defense Test Site",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMUpnZ29RVHMtZUZnczlYbEI5MkVGcC11eVFWNzRYdVpTN2VjY21yenJPYTRUeW56Z2w4dGJCYy1HSEYxRTl4ajF5VjR3MVc1MzhQdUdYaWFSSHVMdFhnY3F4cGczbkdCQnZmV0FGYU5fRnVic19zSXRsT01KYnRPWU8tSnUyb0p0NUY3RE40RFRoMWJ2LUpqRlhadmVGSHpFU2NORHkwZ1U1NVllVHltZTFn?oc=5",
+      "published": "2026-10-09T04:00:00+00:00"
+    },
+    {
+      "title": "Meiyang Builds a Closed-Loop Physical AI Path: Transforming the Human Body into a Computable Real-World System",
+      "source": "eu.36kr.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YNk5XRHpMY2Z4ZUpVa1BRQTBSVXNVcVhtNENPU3BxNm5CVU9QaXkzVFZBVHJXRUtYVExBUUluQ3hHQ0pUelNfNGxUNmk3ZzhFUmQ0?oc=5",
+      "published": "2026-10-09T03:43:27+00:00"
+    },
+    {
+      "title": "Meiyang builds a closed-loop physical AI path: turning the human body into a computable real world",
+      "source": "36氪",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yMm9pT2dRUWRXQlpLdjE2QTBoRTgtTWxETTNLZ0tmRmdPQjFxZWQ1ME1XZlBMQWczaUYyNkVsa01yUlRIUUw4Q21DY2htUmh0MUNv?oc=5",
+      "published": "2026-10-09T03:43:27+00:00"
+    },
+    {
+      "title": "Deep Robotics Tests DR02 Humanoids in Hangzhou Traffic and Tourist Areas",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPa3EzeHNBcFBxQUdpZEtZUFU1S0dMQTVKaWRySWQ1Ni1uOE5HMXdGZm9MMWYwaTJhQ0s1VF9XV1dSNUlpN2JsY3FhdWlqeW5TdEZ3dE5xT21NTHNPMUtqS0JUaFVaQWVKY1VLSlQ5MkVjdDZSTHItTXd4V3I0OWhGNmg1NzVCT2V1eEtpQkY2Tm01V3piaUZtV0VfSmVCU3h5VElTLWZvX1l0cHNHM1Y4?oc=5",
+      "published": "2026-10-09T02:00:00+00:00"
+    },
+    {
+      "title": "Phyraxis AI lands early funding as $3B pours into physical AI for drug discovery",
+      "source": "Dealroom",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMUtoeG12RWNudWFMQ0pvXzk5UG9hS0FCQ2dHOTFSLTkzSnAxX25jbzFIby1EVkR1SmhRbFU2S0ZTN1pVZVo3elVUZU9aVmFHZ0NUYXNqNU52TkxXVVlidE1hZy05eHQ0NF9ZMGptcDk4MWNuQ2FQRC1idGxHRDMxd2p6TnJ4dVhEaFBEMWRheG0yNEkzYTMxekpUSC00b0FtczdHeW5iSzhNdklKZ3NRYzg5NA?oc=5",
+      "published": "2026-10-09T01:28:26+00:00"
+    },
+    {
+      "title": "Over $3B Floods Into Physics AI: Revolutionizing & Breaking the Ceiling of the AI Pharmaceutical Industry",
+      "source": "eu.36kr.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyVlo3N0h2OVJtZ25IVjl6R2xtTTlmM2kzcWZTTHVJLXNfU3hUVEw5NGlDQXZfZ2VrTl9PUWFra1VXR09ZWEMtN3BtY3ZQSHhfWFRJ?oc=5",
+      "published": "2026-10-09T01:13:14+00:00"
+    },
+    {
+      "title": "KDDI Launches Distributed Data Center Demonstration Using Retail Robots",
+      "source": "The Fast Mode",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV3FGdnVYRjgwT1pQSDF0cnBQTG9ieGNaTjJ1cTM3RjZwcEtyWEt4QUw1UHRFSkF5eHAzQ2Z6ZmpuYWszYUc3MjFEN1l1cEo1VVZrMXMzX1hVQVpKckh1cmVWdFlkS1JkaWVpZGRlMll3NEk4bFZhNUV5cW0tOC1NbWxrMXdPeFYtMGxyQnlrMG0yR1Z6T3NIWTRuRnpfaV9kOVdsbnBJeDRIcGdUekZqUjUycnNRQ2MtZzRlRTNwV2diNmlN?oc=5",
+      "published": "2026-10-09T01:06:08+00:00"
+    },
+    {
+      "title": "Kawasaki Develops ‘Home LEO’ Social Robot Prototype to Support Older Adults at Home",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMVZKZkFHOEdtUVRIcGkyZXBEU1JHT1pSNVVESnhHX3JUbGo3T2FraG1hQ2tNRWM5OXZfaEZrRk9PZUZ6dDRtMi1JRmFNZEJGcE41SERaQlhFaG9KUU9Eck9rSVZOZUJsVnRiRllrVC1LdDVIc1Vvc1pPMzVsQ0VJa1hxTm1EYmdvMVIxSjhzVEZCUnV5clB1UmZCeFdHcEVkZUEtQU0zY0FlUmwtVWc?oc=5",
+      "published": "2026-10-09T00:57:37+00:00"
+    },
+    {
+      "title": "Bloom Raises $3.6M in Seed Funding to Expand AI Marketplace for Hardware Supply Chains",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN2tCb1d6dXo2YXYyVnpEa0NjNGUxMmU4T29EZ0JVZ2djWFZIMmM0a1hxZEd3b0I2b1lSWV9IRktaQjNHZXJWc0x0MVdhZmpmVVJfTVRfeUZGYnRkMm1INlZrQW5ZQ2ktTTJBY2NlVExnNTlpbzBIY05MZXNwU1dXUzFuSUZabHhHa3A0RFpaVE5adVFDQVlhZWF0dFBHODNjd2haRFBnYnJUVkhUbE15dVMxdWU0ako3WDBlQktTTVc?oc=5",
+      "published": "2026-10-09T00:30:00+00:00"
+    },
+    {
+      "title": "A former Deere engineer’s bet on physical AI that works in orchard dust",
+      "source": "Future Nexus",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV2VSRXduTUJKSEtOY3pLNGJacUNvcUxuRTZKR1d3QkZNdldBRFlJRWRSZFkzdmUwSEdGc3ZrUUtybVIwZTRwNDlIb0pFS1pwV3ZxU0h2ejFIVjFzVGFTQmdoSnFOTFJhZG5hNFpJaUNqelZnQ0pfcVpva2p5cWZHM1R6MVB5UGZ6bEZqcGx3OU90OU42UDJhXzZXODNjLThpSWNOQTNucHFHYzA?oc=5",
+      "published": "2026-10-09T00:01:50+00:00"
+    },
+    {
+      "title": "Veir Raises $110M in Series C Funding to Scale Superconducting Power Systems for AI Data Centers",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObW82bHFHWWpYemI4Q3FqUEowdmFzeS1vQ215eGJXUE91R0VqYU42bWZoTmZjR3JIMFpmWDh6VjJ4VlR2RXZvYzdyZS1iRWwxQmJheTJKS3c5bGV2NWUwd1VJUkM5LXFjQkxLZzZkcFdYeVpERUYzN0JDcGZ1cVgwRHdMMWNTOFJMa19HUWg3OTRNR1Z0dVMzR3Vzd2kzaF9Eb1ZKc2pRN0QxQlFYV0dhMV9HSWpfQzlKSG5BQUE3Z1o1WENOWXMyWXhXX2w1QQ?oc=5",
+      "published": "2026-10-08T23:47:18+00:00"
+    },
+    {
+      "title": "Key Robotics Stocks for 2026 and Beyond",
+      "source": "Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbXJrdnhTaUVxVGlldnQ5X1VaTHg5emNDQmtKT1d3dzk5cWtYS0hYZ29ZTnlMTTdhbmQ4dDhlVXBBcktYMHJiZTJQUmxpN01fUmNLektxQ1J0Yzh3NnpjSEgzd0R5akZwMjlEWTlZYlE1SGtYV0hyeWE1RTc0aXZET0lQWUNjUXM?oc=5",
+      "published": "2026-10-08T21:20:56+00:00"
+    },
+    {
+      "title": "Tesla Stocks Fall 1.4% as AI Capex Gap Demands Optimus Proof",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOFVIUlpCOGhYcGlka3ZVaUM3Q254RnYtdjdoOTYxS29Dd3VLcVdyZjZueGlzRm5Qb2hNbkpKeHI3eHFkUC01bUdNVmpwa3llTXFuV3J5T19BNEFBcGRXY1lCQnFWQlpjTGtuZmxmRmhSTmIwSXh0UWluV2RGN2JXbHV1MkR1Z3F5X21JSHBVWGI5bExTQ1BTdV9xN0F6aFlWUzNfc01hUWcxQTExZkxldEdCa3FtUktGZ0pr?oc=5",
+      "published": "2026-10-08T20:46:45+00:00"
+    },
+    {
+      "title": "AI Is Leaving the Screen, Telnyx Is Building What Comes Next",
+      "source": "Grit Daily News",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaldxY0lHZnp0VnBUeFBFTElKc0wzcXQ0X184SjFtdFY5cEtyNXZjVEltM2N6UjNNOE9sSm1zaUsyMXZPdy03WnlMSzlYX2UzU1p1c01VSGZBdTFDbE9sSThzbzhjcW9IQm0zYXV4ZkgtdnlTU3BaTFpUTFoySURrRjh3ZVRwNGgwOWc?oc=5",
+      "published": "2026-10-08T19:44:03+00:00"
+    },
+    {
+      "title": "Cal AI Co-Founder Zach Yadegari Secures $10M for Persona, an AI Assistant With a Wearable Band",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbDRSOXV0RF9wOG42VUV3VFpWMDk2NkQ0X2U1Sndwb3dPeU4yNFJZM3BMYUlha04xV2VhdkZmYTl3Tkh3VDRYQnIyUG95bE01TkpxekxKcHRzWTU0Y1hfUHp5Szk0dlNnTnlVbEVqYnZKVjJ2OE1fNkRWajJZTjVvamJMWUh3N0ZsU1RPUUdzNS1MVW1kTjZNV3QzYlkxWXI3bkFleVZPQzJ5OVY1NGItV3RGay1ZYWFLc3A0djlyOWx3eWF0UGJCODNn?oc=5",
+      "published": "2026-10-08T19:34:05+00:00"
+    },
+    {
+      "title": "Gartner's top technology trends for 2026, explained",
+      "source": "qz.com",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9WcnV6NmQyWk83cnFpcDFBSUFENGlfMnNWMDRhamxxTnVnZlZjMTdKNmZGR09zd1JwdzQ4U0daYUp6OHc2V09Bd2JhWHpJdE9nUjdLNTY4TWVsOU5PMFE?oc=5",
+      "published": "2026-10-08T19:19:20+00:00"
+    },
+    {
+      "title": "Meta Deploys New AI Tools Against Child Exploitation as Muse Agent Expands to iPad",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVERRMGhLeXdtcTJDcHRpNDFyQm51eWhNVm55R0lSN2hEVzdGbEk2RThsbVY3a1hZbENhNzFsejRSODFOaEVaVlNnenNpVXMxblZwWW5zTGtSOEItLXhoRWdNYmpnY1VOM2ZYV3lsX25MMkNocDhkZnpCamRNZm16SVJJTFl5bzdYTUQ0akcyQ19VdW11YU0xRFVUZTJrVDR2WFVpT3hTMEpuNGRpUm5fX21LczFYZm1nU2NzWg?oc=5",
+      "published": "2026-10-08T19:09:24+00:00"
+    },
+    {
+      "title": "Phase Shift Ventures Invests in Florida-based Healthcare Robotics Company Rovex Technologies",
+      "source": "The Courier-Journal",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQaXFDYkFaMFBubmk3ekg2WGYzRnI3SGxzdjB1UWtURUF3UzBaT3dJbDUwZlRNQ0JUeGZWRlM3ekcybUtwcTgyYTNHd0QyRjVsNWVfT3dUNEdHMDZSQ3JTcnJiaDdTek1LVGI2RFZDQkZCNHRMbFJpMXZZQkFDVXUybU5kOUJCVTNfU1hySFR5VnE4S0hETmNRY1pyNmdCdWtBaGlHRDdCU2Q5VDVrV003VTFpUm80eFNsVlFmb1NyTXZWYU1qUzFDNVN5cW5oTGZ4eXRMalJQNDBUektBUVFZV2hFQkkxSmM?oc=5",
+      "published": "2026-10-08T18:41:55+00:00"
+    },
+    {
+      "title": "Aether AI Brings Causal Intelligence Into the Physical World",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZGpieFNSWW92a1E4YVdEZmJ0NU9CcUFQMWRiMHJJZ3BjRWE2cS1nTm9WR2JYNnN1Z21HSDBTRkl2a2hwQUU3NWRrNkczNG1pak9HdXBabjhjNllxek8ydkgtV18tZFVCcEpqYndJWHF6aTV2R3dtWjZtOUc3M01QanpuT1dEaFliRU13R2JrWnlTclpUQkZOUllhbHpMSG1YczRvSUtlMEVUamRZTHVCenRqUjZTcFps?oc=5",
+      "published": "2026-10-08T18:30:00+00:00"
+    },
+    {
+      "title": "New Transforma Insights study considers how IoT connectivity needs to evolve to support AI",
+      "source": "IoT For All",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUnVtSXZ6MmtLTENsQkFWdW1nMnl4WVd6UmJrT285T3ZQLWh3RzdkTC16aEtTR3JIXzVWNmljTXpJeHI5S1F4MEVjdHpSUFdPNTYwYTlLZTBVeTY5RnpVWDZrWmtPbEZqeTF6V0hxeE44U3JkNVRSeTdrS1hJejlTbnFTMHY0Z04zZ2RWYlo1azBOZ1ZHLWR1SUs0dGlEZ2FIY2dXTzdRcHplTmdSRU0w?oc=5",
+      "published": "2026-10-08T18:16:58+00:00"
+    },
+    {
+      "title": "Manus Parent Butterfly Effect Closes Over $500M in First Funding Since Collapsed $2B Meta Deal",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQ1hKSjRnejM2d1R5b0xHOUlOZjIwdmRXOHB3YlkzWjQ1SENPb3NjZnpHM1NWcTQ4RlJILVlGTmxuRHlpY3Q1WTlIQXhSWnUwNG1SbUo4VXBta3A2QTkwd1hKQzBVLU1BTndlaVJGUlZFaXdESjZGYlE1M25ObFZmU3hqSFhvVG9OVGdRdjNfeTFORDZkY2RUdzRLOHRyNWRkN3h4ZlhETHlpVFhXWXNrVzlUWDZyeUxWSmhaRElpd25JcGFTSjc3TVhn?oc=5",
+      "published": "2026-10-08T17:22:27+00:00"
+    },
+    {
+      "title": "Sereact, Zalando, and CEVA deploy AI to automate fashion returns",
+      "source": "STAT Times",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSUdLNFFDY0VQdWlUSk5LZUxIY1ZDRGtuN3JlUUNTc3BFWHRnNFh2LTFyOGtWTUZQemQyWDJVbnN4bXJPOGxfbHBaM0NkZy1GdmpwZkhqV1AxNUFzb1RpYkdwQWN1am14d2FxU2ROWERVd180LUZyYjY2TTZoSnVydnk5T2prSkp0ZWxaOGkwZGdodWkzX04wVHd5OXl4MjU3NXMtWThBdDhoVktD0gGyAUFVX3lxTE5yM1k4SERDc1MtbVJrYjcyeVZ3M1VlNExhYUJuLWxKdmZremZvNFhxR245elZ5aGhMY1BTRHRCYVF1TWh3bTRGb0dkelhBd1dsMjR1Z09felFjbmNDOFZzaFpMQWd0cW80TjFKeHcxc0ZRQzdpd3hOVW81azg1eWhNWHpVa2NmUWRtZHRkUVF1S2ZXOHRRVDZreTZhMzZuUFR6bTk3Q0F2OUp3S2pBcjdKMUE?oc=5",
+      "published": "2026-10-08T16:46:23+00:00"
+    },
+    {
+      "title": "Healthleap Announces $38M in Funding From Sequoia, First Round and Hummingbird to Flag Undiagnosed Hospital Conditions With AI",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMEVFQUVCSWpqX281eVlXakpnU3ZpZ041TE9sU1VILTVXU2RPT3JsSDd5R1NQMVNEMUhpQkswWGpkTGVFNU9tODFZTFloelF2YndQWVZlcWxqTUdSeWRFMEJBZXNZSk9aT0VCT3BNLUR3TmlYMElzbGt6cW9CZzVqdUtCR1RhSFpWeFBzM1hJOTVHTkhUNkdlVlB6Ty1FTDNHaUhpb0RCXzREWExIb1M0ZEhyd3l2TFMzT3hZc2FfdDlHVlN5WlBEZ1RsRkdmTnBubDVfaVpxZHREZWVVdmpxdmtwT2lrdlBEQ0RhOEg5ZDFOQUxH?oc=5",
+      "published": "2026-10-08T16:38:08+00:00"
+    },
+    {
+      "title": "Google Expands AI Push With Public SynthID Checker, Playground Game Builder and Offline Note-Taker Foresight",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPejc3VG1NVk05ak1raDFveURPMF9pRjM5SW9SU0NvUG4tbkZLRVhvYU9sTmR6MEJ0dG5nclI0NklhZkNsNXNGVGtJSm9WaHUzYnZMZEVwTWU3b1d6Qndpd1pOOUU0alByUmdndEgyM1JwNjFMVGRYQktWaVF3OUVMcHZnUUNaa3hFLWV0aU56d29HQlhrRXU4alNTYzc5b2VxTnNOcVdPUmRPLXN6NHJCSFU0aU83Y0pGUXFnWlJ1M1o2NDU2VW9kR3NGWWpFRDJNeU5RZHpjd0Z3UTZSdGc?oc=5",
+      "published": "2026-10-08T16:23:16+00:00"
+    },
+    {
+      "title": "Helm.ai reaches $70M in signed commercial contracts for its foundation models",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYjNVUzJTakMzc2lVSFVJcXBZdURxbldMTno1Z2FvMVhZb2EzcXg4SVl6MVZGQ20wcHdSUlZJUUxrbTIxaFphSmhBXzZtVGpPaDl1NEJwZlBJT2NxamhEMlNUd3lUTjdlbHVLU3BkYnoyNWZrRW5nclVrT2dhZUE1cU45dEJrMUl5OGhWbVNRb3l5cUhSYW04ZGMyWnpLZw?oc=5",
+      "published": "2026-10-08T16:10:17+00:00"
+    },
+    {
+      "title": "Helm.ai Signs $70 Million in Commercial Contracts as Its Foundation-Model Platform Expands Beyond Automotive into Industrial Automation and Robotics",
+      "source": "FinancialContent",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNYlFCUER4cTYzTGdLZkN6SHhXVXFGZEFkZ05jMDgtUEgwcTNiM0xMaXFuSE9PMXJZUFVISkEzMDdEbGg3VlRCSGlrUU5kaHFDSmttdU5EWTJVVGpRTWZXUjN2ZW9UMDRfckh4MzJra3hmSkhSYm51dHA2clduS2VSN1J1V1B5S0pYUjhwdkkzellqZXRLQTlmRkZ0Yl9aYVcyVnZRMlhrN1NqNG1KV2dKV29LMlRRZk9Hc3JBdlZ4OC1FNkswUGYxdzRCMnc0MTlfTVhYMGMyZ1dyWXcyR09JbUdESVBGemR4dmFuRlNmaE1ydTlmenFjTmtVNE9qTDBSakZ0RG1DRWVPdmE4VVc4OVZUMmxocHVyeG1sNWExbURMdzBlSldFOUtQWEtOdw?oc=5",
+      "published": "2026-10-08T16:00:00+00:00"
+    },
+    {
+      "title": "Odyssey Launches Odyssey-3, Its Most Powerful Foundation World Model Built to Power AI Across the Physical World",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPRHJVaWRGU21zTHRsYWd4dFdXOGdHcnZ5QkdxUGRfWkpwSERnWG1QbTdUeHVSVGIyamw2MnpDT095LUpyTzlSRDVubmxBaUFUQk5OdE9KUFVlbGZRa1ZyTHRBZkRxampYZVpoaGpJZ0NWVXB3V2JfX3pUWURVZF9VNXljNndBZTRuWmVLSHl0bkZhVzF3cnhfRlBsU24yQ2k3VGNWdF80M0lmdzNVVWx2ZHE2ell2d0U0Z0tMZGVSSERvQ2FPRms0a3JCZDFZUXg3Mm5DVFpYSVd3T2dsQW9MQ1VsNGpGLVJwbFlmSm42MDIzdENJQ1A1NWVDOGQ?oc=5",
+      "published": "2026-10-08T14:30:00+00:00"
+    },
+    {
+      "title": "1 Millionaire-Maker AI Cybersecurity Stock to Buy and Hold",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVTg0c1ZHcEtSMHpTa0FqSDI1V2h1OUNPR04tcnlGVGc5TGVYdGFka2RMZW9JYlRpTFVoUEtVQ3lNLUJXWTU0bnlvSEZpNnlhTXNWQU1oaTBEclQtaTV6TGZfY0Jsa0FlRkNtY1dhRlBtYzgzaG5udmd4UV9NM1ZZTzA0X19EVU01NHFKLXc0cXdmbVV5cmxN?oc=5",
+      "published": "2026-10-08T14:02:00+00:00"
+    },
+    {
+      "title": "XPeng (XPEV) Unveils G9L And Delivery Gains, Is The Stock Cheap?",
+      "source": "Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb3Yzd2NHT1l1N3ZCMVNHT0tDQTExVWNLbmNWbVY4dHNTN24wak4zWi1NNFNGTmRfTTJTeC00Yk1ZWWUxLV9kY3owUXUwbGF1bDNCQzl5VnZwWFNpQjVTQWtnMFh4S2lGY05RVU1MU3A2QWdDdUZBNEVOM1lpdFhEdnR2cFF4dUpWNXBpaFQ4eXRWZEd4Sjh5SWpKTjR0QzZ2TXJYUVUxRXlqcVFnUlg2NzROWnQxeDFlZ0JDV01ZczJfZGvSAcgBQVVfeXFMUGN4d0ZJS2JJRmthTTJiZ3JwMklybkhLTjhUYlVmdm9zWjVEZTEtem9sRjlYRlJUTGxtTHVZb0paTGhCQzd4VFF4SHhPX01lVUhBWGhHRThGV0k4clR3S0VaS3Y3MGFTT1I1dWc4dEs5ajFLSlZVRm1kbDZ0RE93OXN4SlN0Y195Rk13N0dkdjc5MWNOaHlHN3YwemZCOHg1ZThfY2dGcDNFNi00b0NPV21VdzM1clVaZW9LY3o3NEZQMkZoelpFQWY?oc=5",
+      "published": "2026-10-08T14:00:07+00:00"
+    },
+    {
+      "title": "Boston Dynamics Appoints Former Amazon AI Leader as CEO",
+      "source": "Business Chief",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLXJ6b0UwdWtyQzdMTG4wam56ckt2bkR1MXd0eHRjNUVDLWNzcE52MTdGVFNLaDRpSUVWMm5GLW9XRVEzb3BkZzVPcWpGc1puQktzWnZyNURFZFhfaURuX2FtdVhNVFN2bTVuYkZCWDBGMkJPWFZueE9CYzU5Tm5JU1VTXzl4NFRlMmo5MlB0SQ?oc=5",
+      "published": "2026-10-08T13:53:58+00:00"
+    },
+    {
+      "title": "AWS launches open-source Physical AI Toolchain for robotics",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONFJjZmtncTEyUG43UjRhdVRJLXowSXdJajRTUm1WbzBsakc0ZnN3SUYtVjF5TlliYmptakNpSk5RUUxCd3ptM0FlbUhlTFllOEJoZnQyYTNraWhobWJpMWpzUXJSSjYwRjJOaTdaNE9RN3V2REg3VVMzT1hoQ3ZGak53RVVmYV9YMmlUdlRUMVNmWkQ3TUE?oc=5",
+      "published": "2026-10-08T13:40:17+00:00"
+    },
+    {
+      "title": "AWS Launches Physical AI Toolchain for Smart Manufacturing",
+      "source": "The Tech Buzz",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcU0wZHpiTURSQURWREhuV0szWVFPTkFael92TUFvM29DYkZONkJsOVVlbUVfRndsRWF3ZEh4clVXOHlCcTFRbk1IWkVEdEhpd0htM19hR0owUllnZXExWDdLNmllZ1l5VkNQdVlqOHBjX3BrMkZURmQ4WTZ1ZlplTFRHWE51WWpCdHhvSmlGSG51YW5XUmc?oc=5",
+      "published": "2026-10-08T13:40:00+00:00"
+    },
+    {
+      "title": "1 Millionaire-Maker AI Cybersecurity Stock to Buy and Hold",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUG04MEhpVHNiSXlrdE5Ca3pIY09OaGVrNnB6S0IwTWp6aGJKenR4clF3MVNEX2JobUVLSFdKN2M0RlJ1aFFOVDZOZVljQjVpcW9hbnF5WGNneWlkZ01UYU5fYUNEV2E1U0pGZ3NQVFNkYUczX1J3V1lSZjdlRTMtSW91aDh1WXkzUzRKZWRkbnN3b0J2Vzk0eUY2QnRlc25BSkthMXdfcWVtOUJqaU1NR0VvV3I2S3J6MTF6YnhlU2R2bzlHSF95d1l6NGQtTERiN25XWFF6ZjV0XzA?oc=5",
+      "published": "2026-10-08T13:22:00+00:00"
+    },
+    {
+      "title": "AWS Launches Open-Source Physical AI Toolchain for Robotics Development",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUDJiN1NQVnk2anRnY3dTUzJmR0ZiWXJVZWRwandkRGQ4SUhEYzlMZjRYYTdSbUNTQVRXMFE1Y2QyaFlxOXJnWVpGRDhFejhUdERZb3ByMDFQSFFNbmNzX3JtYXVBcEQxZFVxd0d2cDB6ZXJBWkJRQWdIVEkwQWV3SFR2UnBsaDM4TmhaY3Yxd1FHdXZFbWZ4QkNQLU9MRndtVktsU0hmcVllZkVhNUE?oc=5",
+      "published": "2026-10-08T13:17:15+00:00"
+    },
+    {
+      "title": "Report: Physical AI Growing Faster Than Markets Are Ready to Deploy",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2dnMnpKZlpIVENDTU1NcUM3UmVoRlVOcHZzSTRCNGtqYUpQTS0tYlE1Y1NrbUt6VURfZXl1UEdLWm9JTWE0S1JnSW1fM1RBR3UxZjdfcnZpem1jNE45QTUtTnR5YnRqWmZmajMwNHJNRE51MDlEUENYS3diM0NSM1ppZmQwOXVoUHBCamZ3Y25pemxnTUNhcGFNZ284SUZITTVfZGx5MA?oc=5",
+      "published": "2026-10-08T13:16:00+00:00"
+    },
+    {
+      "title": "AWS Launches Physical AI Toolchain to Accelerate Industrial Robotics Development",
+      "source": "Assembly Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZW52S2dJZExkUTdlN0czeHpmNDlxNVN5SHNIMWhWemdkVm01LU5aeFdZdGlTby1Wb1VhYnNzakxEMnJVLTcxU2xyN1BDcjk1RmQ3VnZMbXcyeDF2czdIamdPbEV5UGgzdHNTUFVjeTY5aXVYdnpyckpIWmZkTDRmOXlEV255WUZ4RnJnb0E3ZVNPdjc4X20yU3VDNVFzT2EtUW9kcWZubEpwbEZ3RElmTnhyeThSZXhCS2J1dVJKNUlsdw?oc=5",
+      "published": "2026-10-08T13:15:00+00:00"
+    },
+    {
+      "title": "How AWS is helping companies build physical AI machines that think",
+      "source": "About Amazon",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPV09ac2QtTXFvV2dpMHNFZGJOM2xNd2RQUEVtZDYzX0dsM25GRG40V1U3TmFNR0ExUTlHaERpMlBtb1JaREtKYlZBVEcyMkNKX2FxNmdRcVEzTVZFNUpBSm9oNlVCelpGVDNmb080WDNVZkNqVDA2YzJCTF9kNWtPWGUycEE1QWxYNlJmLVpwNEtaSFU?oc=5",
+      "published": "2026-10-08T13:12:46+00:00"
+    },
+    {
+      "title": "Upstream Expands Live Digital Twins From Connected Vehicles to Robots and Physical AI",
+      "source": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHc3ZERXpseWdJMFE4SlYxYzdQc0xsTFo0dnhKUHZ4WHlJd2lReHM5VllRM0psbzJoanZtdnE1T2ZUaTNJRmMzZFdPTXRSdWVUUDFoZ2g3c1NSby1pSlBUeFZEVTRFNC1kUTVjNk1yNFlzWmNjODhz?oc=5",
+      "published": "2026-10-08T13:00:29+00:00"
+    },
+    {
+      "title": "GreyOrange Accelerates Physical AI Strategy With Acquisition of Site Bionics",
+      "source": "GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPd0F2QVFyTWVuRDRSaFJaUkM1QnBqeExHYktGUzZWWkJNX1RidERkT01TZFUzbThIa2pLTmd5enFHS2wtOHJPMUM2eTFpQW5JVHl5ZzJhOTE5OUhxQWhKYUJtNXgtbVctdDEyWU02eW1BZjdoZWcxbExtMGVDc0dMb1drZ1I3Nnh0ai0xYjBNanF5ZVh5dmZkZUZrbUR4ejNzR1QxU1FKSFhiN1F0anBQN21Db3h3TW9KbnRQUWhoLVozekZDQTZDOF9TXzlpYXdmYWVPU3RvOHoyd3AyTHhNMFBn?oc=5",
+      "published": "2026-10-08T13:00:00+00:00"
+    },
+    {
+      "title": "MBody AI's platform brings together seven kinds of self-operating equipment from three makers.",
+      "source": "Stock Titan",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWVRRb2JKTzBxaUNpNWZDd0JRUEgwT3g0T2RBR3ZDYk5BMnljWFJBT0dDZFNNUzFvWUU2QnZlbW9udHRHa0xuNFl2UTgwek4xYkh2UU9oN1B3ZWRBbm80TEQyOW0ySGN3UHFWSl91aVlJSkltU054R3JzdWVlQUk3WU9QMWp4YUM4QUJQU1FvdTBROXhuRV8zYjFoRXpNTEY5TkM0N1otSW1lM210WFBVeEpmRWRrS0JmQ3pB?oc=5",
+      "published": "2026-10-08T12:35:00+00:00"
+    },
+    {
+      "title": "MBody AI Adds 2 Patents Pending for Its Enterprise AI Workforce Platform",
+      "source": "GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNHVPVWlzRHVpYVkwdHllYnJCaHZvdWhfTGtrUjRDVWtXM0lrQ0N5OW9weHRjRUVuUGF5OWJHQ09mYnRnb2kycmtwal9Dejd0WUhlNG8ta1BiZjdKUWZnell6Qk0wVkU3dXJiY3hGUF9PY1lURWRiNTdWNFR2eERhSjlKb0x0WlpZQUlRYzFKMlp6c0EzTFN0MkstTVZqWGNpQ1BNVDhFSFRFSDBtRFgxa3psaGRnNUZqYzVXemZsNy1ZTzlzTzFUSTF6SjAwdnRGeEFpWXpZZTZ0Y2xJ?oc=5",
+      "published": "2026-10-08T12:35:00+00:00"
+    },
+    {
+      "title": "Syntiant to Participate at the Economist Enterprise Physical AI & Robotics Summit",
+      "source": "The Manila Times",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMDhNM1lRRDhfTktGQ2hXTWRmVmYwNnczWmRNWlpDZ1NjVUZTeS1xVGpDUk5YQTRudHVuNE1VVUc1aGh0QWZ3OHN2T0FJaEZ1LXplNWU0NDIzZ3NXME16Smo1R1lWbVBvc0owczRjVXhBRmx3V3hpR1E1cUlpRHlNN0RJM2Ixa3E3dmV4VzhLUkdPc2JzWm1vTkNxd1JXSC1ONWlQMVdSUjgwWXhjWUd4SnNESEJHVWlLemh1Y0xFclIybkZHdjVHbWwyZ3hnWXZUektfS1dreUplQzBOWUpuUG5Ma2NXVnRx0gHuAUFVX3lxTE4xUk1YZ1RTOG0xbEx3T0RPd0VFRjNsdWVpdFZON3dLWjdqNzNkV0NkakpNam1VRURLc3FTcFlNXzJwNDFZNFROblNEV3QxaVhBR3d5V2V2MTVGcEtPRlkteC0tY0Jkc3Vxd1pTdS1UNlNkY1BHaXVkVjFwX2RHSzlVRFJOektJQ1dlNmhhcWlDLXQwZXFFMjBCLW9ZT0lzMm9SbHc0ckRYLTNZWXFmakNjcDFHcFJZNFhIUE1pM25yQy0zal95cmlRRTA3MFZWWWlJcEVHazlCUHUxU0J2cXdMbmFicFVqWnNRZW5xblE?oc=5",
+      "published": "2026-10-08T12:28:24+00:00"
+    },
+    {
+      "title": "Miko Maker Inner Sky Labs Unveils Foundation Models For Physical AI",
+      "source": "Inc42",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVkVTUGlPZ1BnQ0FLamxBeUZKNW45YzRRSVBWTlZSU2ZZVFZTcVNZRkY0dk80UzJBckZMSmljNUxWRmYwNzRqQVBRQnMxM0E2dVE4RnVXcjM1VHpSYXZpMnpuWWwwSlJBOG9tVTgxSTl1NnhvQjcwUGUtR3RvQUJGbzRyTkpXUTBwbVNIckhCeFZudzlkRXc?oc=5",
+      "published": "2026-10-08T11:41:08+00:00"
+    },
+    {
+      "title": "Who is Rohit Prasad, Boston Dynamics’s New CEO?",
+      "source": "AI Magazine",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5jaDBTa2R5bEpZN1dQZUVmanJ3aUpHaFdMZ0pMVzZnWHVKWms1MHZvZ3o5Xy1vdHFqMk1pemNoOUNyejJOZEp0Tm94X0ZKQ3V6LVUxNUdlTngwd1otYzhLSnhsRS1WZ2hCRndPZFFtR2NBZ05ZU3R6SmRjWng?oc=5",
+      "published": "2026-10-08T11:19:46+00:00"
+    },
+    {
+      "title": "Nvidia’s big bet on physical AI aims for safer robotaxis, humanoid robots",
+      "source": "Ars Technica",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVFdGb2V6YWlNaUZ2Q0MzSzI1d3o5X0ZRa2xCckNpX3NnTk9pMnJWMTNwY1Z4STB0QTZaTFhCQVNnUjlFLXlNbUJOejJ1aEYtTVFlcE81QkJjbXdaQnIzVHdxZ3pQeEI5NGNXNE4wMzVuRjRpMC00cDlCUHRteWpyc2tidjRzSlFkaTJUakdIYnBGSGhsN3dZM2VXUGlOd1RzVEs3elhCS0NWSG8?oc=5",
+      "published": "2026-10-08T11:15:33+00:00"
+    },
+    {
+      "title": "Physical AI in the industrial metaverse: From connected digital twins to real-world validation",
+      "source": "Smart Industry",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPVW5aSThLSDFNVGNnN2EwUlNmcmo4VWh4cFRlVm81cTJFSGxnZDBtdUozVFREX2d5N2k3OG5rYTlDc295NnVkUlJXY3VFTVZtNS1Oa2tGc0doVTZvUDQwMVhSWUJ2WEdRVzlwTlRGYUNkdkRaT1l3VTJkYV9sMHN6RWdfemp1UHZYS3JGSDRITEs5dTB0SkhweXZaeGhReGFXUWczb01NOW5pMEtZWVI4NlFNT1ZXY0txZ1B3WlNwN1VSclZSM2ZPRExtMkRCZ3E2RDR2OTR6QjhNUTNzeGdQVkpnZW9TUXczN19Oc2FyU195b09lU1FJVm9lcU44Y1NLVFpQX0NR?oc=5",
+      "published": "2026-10-08T11:09:59+00:00"
+    },
+    {
+      "title": "The real test for physical AI starts after the pilot",
+      "source": "TechRadar",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONmJSb1RYUW9UalZzay1WcE9tQ3pfQTZXbWJwZzZ6Z0drYU1DUEk2TVlYUGdNY3dJNTQwZlFnR3lqbWU4eXNTNHFIN1VLNF95ZklUbEJsNDFvT2lUOF8wSnVtVVM0a3QzMlZEVVE3ampKM2pzaENtX3RuWGM0VUd4Z2VQMTlNWF9uSkE?oc=5",
+      "published": "2026-10-08T09:11:05+00:00"
+    },
+    {
+      "title": "Rino.ai completes $100 million Series C financing",
+      "source": "Gasgoo",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNnVTUjdYX3RuNGhCZEltQm93a3c5aEJ2WkVnaWY5NVhXcnFvbjQwWlBwd2VnSW5WZkFIeWFHV3Vzc0ktNlB2VVpwNTUyUmhtUkVldkJUUWNHbzNxVmhsNEdxMjFyend2UzJhaEp3NXp3eEhzZlRJcEZ3OTFYSm5FcDhrWGtuR09rNWpwTVdZMVVPd21halpWbzl3Rlg4QXNrX04xWGVWNzctYWZPUHc?oc=5",
+      "published": "2026-10-08T08:40:54+00:00"
+    },
+    {
+      "title": "The challenges of adopting AI in physical supply chains",
+      "source": "Global Sources",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaGZ5bVFZZ01XSGZyN1JWeXF3TnVQNHZseTdfVndodGJUVmltQnhHNFFfdGNJMXRpRDY2S3oxU0ZiMW1CRTlkZmNnbGxKN1Q1S1d0N1Z6U1ctS1g1TFJyQjJfdUJzWEhMUUhFTzczM3MxU0RjcnlCZVZoc1QwTHMzR3lEdnlDcmtsN0paUmJpZVRtdlBJUXRjZVo2UFpaS3UtUzlpNmdsY0N5cGttcUdIREZZQ2lNeGxTcmFQN0Z3SQ?oc=5",
+      "published": "2026-10-08T08:15:00+00:00"
+    },
+    {
+      "title": "Capgemini as Gartner’s “Market Shaper” in Physical AI",
+      "source": "Technology Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNGdtYm5FY3h4MDNxdklTZjZOVEJ3NmEzUi1JSzhJU2FuZFVMeVV3TE5QWGJ3ZkRvbXRGRUR1eEVBal9vVlM1NU9VZHFBMEFpanpNZFUxckpyZlU3bDJYcjJ1OEtKVERlcFMtNS1aaTZiVUZiQVd6cXU0aXRaT0F5UnVWWHpTWXU3cUdYRTkydmdVVEU3NVZuS2FfTTBfMFAtaXVXcElKQVg?oc=5",
+      "published": "2026-10-08T08:06:49+00:00"
+    },
+    {
+      "title": "The State of AI Report 2026",
+      "source": "Air Street Press",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE16enFaeDhNVU92Mk13eWR5QUtiQ0VYRjhPTVhOdXNtTk83RHBwWEJIYUdlTk90emV6TzZzUDdubldYc0dlbWZJQVktTXdaeFB1eEhwVU8zMjFtZw?oc=5",
+      "published": "2026-10-08T07:39:39+00:00"
+    },
+    {
+      "title": "TSLA Stock Heads For Weekly Win: Dan Ives Sees Over 30% Upside From AI, UBS Calls Setup ‘Tactically Favorable’",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOQV9DdW0wUkR0bllnbTB6WE1sTTByT2xPV2tJdjZHYl84NEZWTXlHQUYzRmhEM2tVV0xMbS1sdmVPeFFZRFRzR2xUbjBqSkZfYkw5WF9NRWZFVzVjd1lJbXNiUVBWV245RFRmYUlrUERCcDU1VjdBVzBtRU9yeVBOaExHV0I4NWl6Q3J2MVpTZXBPbUZXVWhoUEo3T3YwTlNKaF8tNFpkWkNxRURXWGdLQVpfWmMwa2NPU0RMTWl0LUoxbTJFVDFMNnhYdG5HWmYyQ21GLVJWZzBPcEJlRkRDc3l0Z1JrMXBCclZaNzQwLXBPc2dMekxaSm1B?oc=5",
+      "published": "2026-10-08T06:13:00+00:00"
+    },
+    {
+      "title": "Boston Dynamics Appoints Former Amazon AI Leader Rohit Prasad as CEO",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORl9TcVJnTGhuQVQ2Njlid1ItVzNpaVhQSEUzeVZra05adTBBMTdLdkdEUzhucVNUYkt6emE1Y0J4azJ3eWdRc05wRVhxS0thOHY3WWpycjFsbHZqOEdCZXpUcFJTU0hoVUMtLXV5ZUlILTRFa2UtV1ptWlZPV2NrMVZHT29UdC1FQnpRUm1RN1QxZzBmcmgxUlQ2bHZNVnM2OTM5QVNR?oc=5",
+      "published": "2026-10-08T05:24:31+00:00"
+    },
+    {
+      "title": "Lotte Innovate Unveils 'Physical AI' Experience Zone at AI Festa, Expands RaaS Business in South Korea",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wbUtKMWI3UTNXMzdaSk5yVHVqd0U3bDRQQ05EV1h6ektWRGM3QW9HTl9UdEpjZFZXSVpXaVd1amowTzg2MEZZVEtpMG9Ja2hwV1Nkd2hGWnFxMG1ZYzU2djVQNWVNOEhhSHRoUHVOZllMbTBteFE?oc=5",
+      "published": "2026-10-08T05:05:00+00:00"
+    },
+    {
+      "title": "Productive Robotics introduces cobot with physical AI",
+      "source": "Today's Medical Developments",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM1I2Tl9Oay1fLWJETG5MTXJSMnR0Sk13d2pBX3RSWDNPN2JqcE5UWW1GN3NjTks4bC0tRE5tQlFwSWNtSzU1QWJCVGdUekszYkFiNDZnLXRpVF9UN211Uzd3RWYyTkc2WXJDbEhzem1NRFA4WEo0SG5seW5vQXZUYXBhc19tZnotY19RbTBRdzdYdG5LUDBCd1R0VmxwQTJ5?oc=5",
+      "published": "2026-10-08T05:01:19+00:00"
+    },
+    {
+      "title": "South Korea's Xenon Prepares for KOSDAQ Listing, Plans Up to ₩26.8 Billion Investment in AI Infrastructure and Physical AI",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9WTzJXSkpjSnVHdWxMblc4STBsN0d0WHhiM1hTS3NtME13RjdrNzRLeS1TX3V6bDNBdkFVZ3hheTdqa3g2MGNRM2gzQldKMW41LWJ0eTI0TS1mUHhyaFh1X0cwTC1MWTAwdENPY2RpQXFaTXBTcEE?oc=5",
+      "published": "2026-10-08T04:35:00+00:00"
+    },
+    {
+      "title": "Physical AI Can Act. It Still Can’t Check Its Own Work.",
+      "source": "Quality Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTGVMdFhTdU1veTdWV2p1clN2MWVzeS0zeHdfVVkyd1ZtNHFUOXczSlMwUzFIR25iOWZEUHlLSlZqaFJMOHJNQnozVXp3aUxjNm9PWExtMl9BZE0zVmtCVEw4a3hrY3owMXR1RExCRW5RR1hkX3FXaG9IbnpjLWlEQTBXZ3pQYUpnR3dBcXA1MmgxLWZRS1RFbER3?oc=5",
+      "published": "2026-10-08T04:00:00+00:00"
+    },
+    {
+      "title": "Touro University Nevada professor uses AI to teach future physical therapists",
+      "source": "FOX5 Vegas",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSFFXQ1NMYlJXUThHdXVDaDl1UWt1THMzUUM5VVQxWkZGN1JEWUpFUDEzaUM4UDk2bnNKYlZ1TXNSNWpSeXAxZ2YtN2tUbEJLdnMwZnpPc2RKakJyRi16SVJDZlY0TWxlSzJtTXdtM1dGTE9XTE9FcWJKdWZPMmtjY0FPVzZ6NGRPUnl6ZDFJbGpPSk92a254VUhDbmNHQ2VCRlhJbUNVeDlsNlI0Z3IwSjd4VHpscG94emc?oc=5",
+      "published": "2026-10-08T02:50:00+00:00"
+    },
+    {
+      "title": "AI Is Pushing Advertising Back Into the Physical World",
+      "source": "ADWEEK",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5NaDg2b2dQNkZQdWpjeGVEaUxLeHhOUUJLcndZUkVRbmYwNDNYclp4MTFqQkdkdDdKVDVQTi00T0l2eFNwOG5Bdkd5TnZSRWtYcnM1b3hHNHdTUWdIa3BXc3RJaDVHNzVQNHNZ?oc=5",
+      "published": "2026-10-08T01:15:31+00:00"
+    },
+    {
+      "title": "Mecka Raises $60M Series B to Scale Robot Data and Deployment",
+      "source": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZzkxV21lcVhDbGdzTmtyRTJQQ3BHSVR1VVVHbFhpNjdCVmFDby1INGpRbV9OY3JabHJMUWI2Uk9RUE9OLTNudmxhOFROanZjRXdKMjQ1OF8xblRCamRFc3AxbE9vRjkzaW1oQno3eG5tWHpKZzFlam1ORE5VNVZnbFFRU2RBQzVQOEE?oc=5",
+      "published": "2026-10-08T00:55:03+00:00"
+    },
+    {
+      "title": "Mecka Raises $60M in Series B Funding to Build Data and Deployment Infrastructure for Robots",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY1NXTnRmX3FkOGM0MTR2TS1iQkl4ckhGUHhHMVU2NUZOS0RhaGxLMU9xUXEwZnFrbVBHY2NTMTNWUF9KbUM2SU91S2dZamlqN3hGZFYxTVg0djk5Z2xXQ0xlZ0R2WDIyV0FZbmpmcnIyRzZob09Nd0FJWTdPcl85NkF5RERrSnMwMDNFY1ZxZk52d2VNMXI2R3U0ZUdsSGI5SmxyMFpITVBiYmxfeGZRcl8tNHJ3M2REMzYtbVdINmNYcG1hUjZtVA?oc=5",
+      "published": "2026-10-08T00:31:34+00:00"
+    },
+    {
+      "title": "The Next Great Leap in Automation",
+      "source": "Brownstone Research",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcXF1QmlReWl5UHFvdXFJVEx1SGwxWVpJSGhMejlZdnZJUkt5VUx2aGlSbkpId2VnTGNuNTMyVGQ1MjhfWnFsWlFHV2dvWTR1OUpHaVhkdTM3VU40S0tKYWw1RVJyckdlbnVjREFJaDdqSWJDZmlGeTlkYmdGemROOE1qa1ZQaTd6MXhV?oc=5",
+      "published": "2026-10-07T23:26:05+00:00"
+    },
+    {
+      "title": "Hyundai’s physical AI unit Boston Dynamics names ex-Amazon executive Rohit Prasad new CEO",
+      "source": "KED Global",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zdUF1bmZ0NUowSnBoY3VROEJoLVVpZW9LZ1kzMDVSSFpMYldXVnNQNFI0ZWhNX0Y1aXpYSjBKRHduZ1NMYXotendWcHRqNmtZc0hzbTNaaTl0YmJ2UzhyTzd4TWpidFJzbTN2ZDh1TXNRWmYtNUE?oc=5",
+      "published": "2026-10-07T21:53:40+00:00"
+    },
+    {
+      "title": "University of Delaware launches ‘human-centered’ AI institute to help physical therapists treat patients",
+      "source": "WHYY",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWXUyRmx0OFVUc0k4MGJqcjBwQXFtMmxIQVR3bWx1WGRvU0VIRndlUlpxcGdDRlpBOW01cEh4RmRYdjJZeTdLb21OQjR6VHNNbXlJLU1hVW9CZ2pvWFdacTREdjJIbEcxWFBDSVJwMXU4c19rSGxHQm9yTzBMOFJQODBzeWNLblU?oc=5",
+      "published": "2026-10-07T21:26:37+00:00"
+    },
+    {
+      "title": "Introducing AWS Physical AI Toolchain",
+      "source": "Amazon Web Services (AWS)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZXZTTkd6aER0QnVIQVFQVkpPbWxDV0t5eTcyRUgyTWR0cG91MXRlTVFqYXBRYjFCMjNZNGtvYjBUN29leDZCY3dmMjRUM1M4YmxQTkVrSkV1Z3YycUlpZXpkdk16R3Z3ekxiaFNlWXpGLXo4ZlBiQ2V5N2dRbmFVSU4xUGh3Zw?oc=5",
+      "published": "2026-10-07T21:04:06+00:00"
+    },
+    {
+      "title": "Schneider Electric Nabs PTC for $22.6B to Drive Industrial AI",
+      "source": "Design News",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUkU0U2ZFY3dheUxvTm9CTzdYUVNVNU1QY1l1aURRd2Q3QlVKRWRrMEdUc3kwZHlfMHNHbTNYMllpM19MdUJtcEtIUDNYT091X3R4SWVvU21UeElfMTRoaTUyUHYxS2JEaU9Jd0FPc0hEam5sYUQ4WjB3ZXJycFhKZzlVSHdtVU5kcllIU2djRlNhVHJJbTFVM2lFZEN3NnM?oc=5",
+      "published": "2026-10-07T20:07:05+00:00"
+    },
+    {
+      "title": "Touro University Nevada professor uses AI to teach future physical therapists",
+      "source": "FOX5 Vegas",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeVhvZ0tfb2ZqR25BSC1ScXlybDF5dURkM0hXeG9YTl9QMEE5aGR0eFJ3TFUtRURUVHZHVkZBVnZDT1Y4aHVUMkkwX1VmOVU4LWV0cjB5RXhyNzNEZUxkMVNzUWZKdFVKcmJYMXJJNkxTR09KcmhWTGpnV0hadi0wZy0zaHBOQy0tWU5RU1lWVlJBdG5RcWt6UjFWQnc0TEhEMjZEYnBGN3BXT3FJU2wwSjdR0gHGAUFVX3lxTE9FaW80bjBYMU9aUVBEZTliSUpkOTBUd0RsSlY3Y2l5RzRFMGU4TUstTnpFSk9jeEtfYkt4ODVuV3Bob2R6bFdhNUxrMXhlM2l2bkFGSEc4STRwaU5xLVRDSnJfR0k1YzBBM3JPNnJCSm9NellZQUdKeExPanB2NktlZ1BiWkc0bmx0SXlwSXh2Ml94czYyU1VLbDRNc0cwb3lBUjZ6X2RMT1ptX01pQ0lNeGdYb1VNOXA0UTI1N1B0UDU3c1Budw?oc=5",
+      "published": "2026-10-07T19:55:00+00:00"
+    },
+    {
+      "title": "Physical AI and Robotics: The Robot Almanac",
+      "source": "Morgan Stanley",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUjZZd3ZCakU1SXdBUENBYy1ZbFlWRkhxRVZ1dDh6MlE4aVFucV9YT01wNGdjb2JkdXNIRnViT2FSc184dUJMclVGQzZfd0RCQ2dVQXNMcjNJQ09TVThYa0hjaFM3M3dlZzJzaHFVRmdHeksxSjUtLWJYVlluOTFPMnNxVkRCRWtFS3VWeGc0WHF4d2dKSEE?oc=5",
+      "published": "2026-10-07T18:16:00+00:00"
+    },
+    {
+      "title": "IEEE Report Predicts Tech That Will Transform Lives",
+      "source": "IEEE Spectrum",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9XY3JlNkFjaE52UE5LRi05Q3RCZ1otSjAtbzFhenBYdklwakFvQlU3NjNMa000R3BzVzZIV2RVWkJ6SVRTbzhVV3RPSDRoMFdPWHdYRTBlaC1RVlNiajZoYQ?oc=5",
+      "published": "2026-10-07T18:04:40+00:00"
+    },
+    {
+      "title": "Chef Robotics Builds Food-Manipulation Robots on NVIDIA Isaac Stack",
+      "source": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZkVQNlJLbUU5UU01dVRzR0pVYXBQcFhjQktrUnpZV0c1X3JjckZwd1ZwOWVNSXFnTUFjSXJpWUJCQ1BCamlTNm1SamdBNDUyVXdaQ2dqalVpMzh2UFpuZHc2TURBM0JxSFhKQWpkTWpjNUVJVVhCcHQ4OVJCNHh0Qm1HVzBxbFRONEZmbk1lWFRCeWM?oc=5",
+      "published": "2026-10-07T16:37:05+00:00"
+    },
+    {
+      "title": "Melius Secures $25M From CRV and General Catalyst to Build AI Agents for Ad Creative",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDdiN1hXM0dNMU41dzVNS2NnR1gwNjdZNmkxV25pYTZJSmw4c1c4cFVZa3FHanZJZ0xMb0VlWjhpTk1XSk1FeFJCMDdzRE1DdzB2VUN5Z0U5aWx4SkxvM3c0UHcwREdMajh0Tl93U1FNWUtpUDVVZmE4bW5OdUxBbU9EMTRHZHNQUjhLOENtZ042cHdtTXp3ZTlHRGhNRnhEX0o1QVNfdk00aGg1cUswTjNSOUp4MHJYWTZWUTJn?oc=5",
+      "published": "2026-10-07T16:36:21+00:00"
+    },
+    {
+      "title": "Physical AI in Manufacturing: Where Should You Invest Next?",
+      "source": "A3 Association for Advancing Automation",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdEZzZUxsckNvWVYwakdsOWpnYmRfclA0cmZVaWk5ODZ1Z0g1WU8tNkIweWR0bFVzQ0dWckFENEprZVpheWlWTFpUSnVfX0syTEJjMVVjNnBDOHlKZ2tjV3k3MXR3Y0JSMlc0aF93cXhkblV4eTA4dEJTUGt4azdDRk5MbU1nbEtIcndwWXhCLXR1S1FtRkZjUmdZTG54R1VMWFdrRUxMV1VEQQ?oc=5",
+      "published": "2026-10-07T16:26:37+00:00"
+    },
+    {
+      "title": "Boston Dynamics hires former Amazon AI leader as CEO",
+      "source": "Manufacturing Dive",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUk5IZGRybW5fSk1STVdKXzNYTC1fa2I3MTV5cnhqelpOVDYzT1lwLVpQVm85Nl9xR0o5TkZfNlM5YUs5U2paVXloQ0gwMWdIVUtwcmpJYVhLenVIdFB3Qzl5dWJBdWtOQ0VYODdENmY2X3luVVJBMXFVaWswNzl5dnZ5WVkxRlNQREpaWFZMRDBuMmVVc1pSWnp5MHhocTVpMWRPYw?oc=5",
+      "published": "2026-10-07T16:24:24+00:00"
+    },
+    {
+      "title": "Chef Robotics Advances Physical AI for Food Manipulation With the NVIDIA Isaac Platform",
+      "source": "Enidnews.com",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRFAxbWxTSnNuOFQybzNIRk04QTdILTRSTzhSZi1QajlYVmFoZFBIcWJ0aUdOaERkVmZyUC00VUZSb2dRcTJsVFdxVmFya2wyYWpJam1NLURKVnZVa2ZVT3RSU3RVbjFMRzlFRnA2WTFYOXh2a3ZkOUlmR2laSXRFSDlsbEJwMkx5QjdxV0NCMWJaUDdYQTJQWFAxT0NZMm1xdHJhcTAwd1RlT2VXOXJSTjR4dWo4MkxIZEo0S0Rxa1lLVGZvRWtKWjQ2QmVabEVaZDVPU2x4STREQzd2czVLVWUtenVheUdsazlUMGlMcGNUNlh5QkxtTU1TOGxpZw?oc=5",
+      "published": "2026-10-07T16:00:06+00:00"
+    },
+    {
+      "title": "Chef Robotics Advances Physical AI for Food Manipulation With the NVIDIA Isaac Platform",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNOEhZdEJDb2pFZGhRQmYxYkJOc1U1Z09Cb2xXUVJvSHVWdlhrcmhVOXVlUHNnZlFBbXl0XzRody1QdEIyckZSd1JLMXliOUZpdXNQWmtkTkFfWHJDU0l2VzgzRXBGTjlXeVlHQmZrMkFtUjRTd3V0VWVhcnduRnhJWU55X1h2UkhZT0V4MjNyZkJFZ291clFndkZLZWVlUm0taXVaQWttRWJsdXkwOVZlMDFLRkFWU2VzeWdaSkJPbkZJQXNRbzVUZDJHbzBwYmNscC02Y2gtMEdha245?oc=5",
+      "published": "2026-10-07T16:00:00+00:00"
+    },
+    {
+      "title": "1 Robotics Stock With the Kind of Setup That Built Amazon Millionaires",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLXVOUUNfUDhJZFZNamIzbXp4R3JnVVdTejlXUG5PU0Itb2JYRUhFSGRZQ0JqczlKb05JRjNJbVd6S3RyZ3FsR2g3NXJnWWoweUFLUzF2TXBIYmZDWlE5X01faTlqVUgwZVo0RlpXSlA2bXJhLVZ3WlBtZHFDb05QMVZZckE0YkpmSGd6SHNaam11TWkwRmhUQg?oc=5",
+      "published": "2026-10-07T16:00:00+00:00"
+    },
+    {
+      "title": "SiMa.ai And Wobot.ai Partner To Bring Reasoning-Based Video Analytics To Physical AI Platform",
+      "source": "Pulse 2.0",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbnk4cThvdkJaMXZjcTZIVEFQRVpodkFaM0hDOTZsb0lXMDNYa2d5UzVWaXU4RTh0eFZ6MzN4LVNwbjk0WUVrdFF1TjN1Y2lpSzdzUlVMa09SbzRaNGxMUjJkWTZkWlVQOUt0Y2pJYk9teUNEamF3dmZNM0FKOEdPZTAwckptMDBES2FyOHMxd3QzelpvdEFXWkRLR0ZqbGo4bEI2RmR3YUI0bVhhV0ZUTnZtONIBuAFBVV95cUxNTy1Ka2JmUk9vQUM4amtLUDlXemMzMXA0SENOSUJhbjZ0TjI4THhnNXFaeTFuMXVFYXR0Y2JGTnRvSTZoUDVHZGVqMjMwczF0aWN4dFlVeE5uckZWNUZtMUhfZElkNm9wbENQY3FSZ1lyM2wwNWQ2SmM0ZzJ0dXJFV1BKdXJGcHVLOHNBWU5rVC10eDZJVTM0R0lFM1Rvd3ZJM28taTZZclFwSVVZNGFYNG5BX2hiUUkw?oc=5",
+      "published": "2026-10-07T15:58:03+00:00"
+    },
+    {
+      "title": "Sereact, Zalando and CEVA Logistics start AI-powered, automated returns handling in Germany and Poland",
+      "source": "CEVA Logistics",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNT2JhMk4xMmZLY2k5Z3I1V2FTMWJGS1hGZzRja0RJQ0c2dTA1XzhzQ2c1Y0tRVE9OajlGU3BKdWd3WHJqUml6SjBEWFZuc0d2cVRBZVdVWC1MSVJWYVV3VkFWODFzdl9yUkVCSTJqaUNSRE1lRWhkN20tVVBOdGVkeUlMU2p4U2w1NHlDWWxWUWRXYUtVa0pRRUU0Y3R6emtQUkxlQS1BV3p0SFZ2WG5SVnZkS1JEYnJDMGJRRm1lOGJGOHZp?oc=5",
+      "published": "2026-10-07T15:54:14+00:00"
+    },
+    {
+      "title": "Hadrian Raises $40M to Tackle the AI Hacking Cyber Security Crisis",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS0YzampjLWR5U05MdUdUeFI3VVBzV3hFTEx3d2ZRR1FPQ1EydGtNYVZhNVhzQVFmZTZtUnpQYS13LWdOSlI3c2tzeHNkUlpHcTF1MmdJdThXVWNzTlpTT0hOSlNqM2dlc2RrRVFaUlh1T3NXcFpDNlkxZk5TRk45anB3S0JwQWVtLU1ySFc1Q1Q5eDFqNXJqQ0JkWUd2OHR5dl9aZEhn?oc=5",
+      "published": "2026-10-07T15:42:51+00:00"
+    },
+    {
+      "title": "Manufacturing Faces Ransomware Surge With Physical AI Growth",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV3lMczlQTm5JWGxmd1p3dnpibzlkQUtLTXpHTFc3S1hTQ1NJQTVWa2c1ODFzVU00Y2NuWFBmNVhrTDZDM2lWclJha3pjdk5udnduRUtJV2M1UW1YRU9wZjVveno1M1Ffb0ItTXpzclZjQWtiNFlyQ1JWOFRrUm5xWmM4VkpLamda?oc=5",
+      "published": "2026-10-07T15:40:16+00:00"
+    },
+    {
+      "title": "Torch Systems Closes $11.5M to Bring AI to the Physical Infrastructure the World Depends On",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQmVKeWZJYnJNTWhlOWRiUm1NSVdnRnRTZ2VwRzd6WTUzRmNFbEJ3ZUNlVVU5TGRGUEdWZjJKdUxEYklmeHpSYzRraGtpMFU3LXd2UU1lRnV5RnI4M2t6VDBQYm1aUVFCWUNzZDk2UThhY2tPV19RR3BtYXFSUk5VS3RTUmhveGVTMzVhcU01dklaY2ZZZHBsYUVkN0dBRUU1THBVaEI5Q3J6MDZVR3R0c0xPVTdTdGduWHZ1MllRNVUtc0dJVWpj?oc=5",
+      "published": "2026-10-07T15:32:17+00:00"
+    },
+    {
+      "title": "TikTok Introduces AI Shopping Assistant and One-Click Checkout Across Its App",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY1BxZndQM3V0ekQ1VUdRRDFDRjBsQ3dMcTUzNzUzSTFvd2xhVWVDdzlfYy11aHhVWGF6RldjZDZ0Y0R1c0JOZHU3eTJ0SXhFZG5YeW1yVFN3ZmhROF9mLXhESV9palkyV0k0Q3h1N1Z1LVRUNmxYYy1lUGlmdjZZZ3U3TVNsSURhVGR6TTZlZ0JsalEzZkdGSFlMamJYWkJtMGNhMTZ2SzYwYXZnOUFhOUVHazBTUQ?oc=5",
+      "published": "2026-10-07T15:23:17+00:00"
+    },
+    {
+      "title": "1 Robotics Stock With the Kind of Setup That Built Amazon Millionaires",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQT242NGdscDhmVlpVVFRET0stZGtDZ1NXZjJua25ldkN3MWJ4UHZmTmd2RG8wR1JaVklaS1c5eURZUE1OOTRDb1cxakw1czRHRFlPek8xWmxNOERlWTFleDFJSmt5bGUxaXhiT0VGd2RKLWx6dVBWMDhJcWk4N3RMUkowc0lBbTl2d09UMWdES3V6QjhNemxHUlJjNUpKQ0dBUUxIbTNqdnUwWVJGNHpNY1dVdzdpTUZSRXFEYk90cVVBT05RUkJNbzNud1N2eFJKVnhRNTBlbkxIZzYwclZHeS1QaFJhRG1zcXc?oc=5",
+      "published": "2026-10-07T15:20:00+00:00"
+    },
+    {
+      "title": "Netcracker Wins TM Forum Open Innovation Catalyst Award for Cutting-Edge Physical AI Monetization",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQcHk0ZklKTmYzbWdjSmtCTWxnWWtQY05YalFMUXJNRmdtYUVzQ3h1YkkwYUtwRVQyazQ4Z1Z2d3Y5VHRlVmRXT2hudVZjSDc1NHFxVTNQcmR6Qlo4MjJlMWVoRHgyMm1NUXNBWXhuN2w3TXFzTXYxYm4zWmFRWjJzUUNtamFseE1MWHJ2N3NBQzl2czJoUU9wTndCS3BTWGFld3B2NGtnRGhTd21yRFZ2RzNIN21hc2RHei1NbjgtVXR4ZWpJRzF6aWxhYzVqS0NPNG1oUzA5ZndfMm9rWmhiZHJpT051UkZMWVE?oc=5",
+      "published": "2026-10-07T15:19:00+00:00"
+    },
+    {
+      "title": "Valon Raises $150M Series D at a $2.3B Valuation to Deploy ValonOS and AI Agents into Mortgage",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONk9FQlltQlZzN21VV3BYeTlFLThoNUllMUctc2ZVZWRRX0tUZ19wZ3VUOTFERG5qV0ZmMl9HYmtiVnJNNXprY1lpMzZMRHZ4eGVERlk4T2xKcGJHLTZCNXFYUzVtYkQtMUlaajItQWNEWjVoZTBxek04T3lIdlJxN1gyMC1GWUVWVkRVa0htVWhCSHB5eElNRVF2YWJhOHd0VUtVYnoyRHlySHhiaFRKVU14ZzR0N1FtaE00eVFHc24tOHhTeDVhZ1dR?oc=5",
+      "published": "2026-10-07T15:05:11+00:00"
+    },
+    {
+      "title": "Boston Dynamics Appoints Rohit Prasad as Chief Executive Officer",
+      "source": "INDIA New England News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONEFPOWhkOWtSOUlLLTA0SDVVZlhRWHRKem9IUUFVUDVMa0gtMlVEeFJ5b1ZGS2FNcXhVXzRuRDRhOVQwTG1hUVBfN3FRYXZvSk1MSlBpX1dpOTMzTFFla0g0YWJlRmRBVGtmSWpyU3dGLUx5MF9hblA3VlV3ZHYtWnZjaXRDQkVucUxBeEZFOGhHODVjRTVtMA?oc=5",
+      "published": "2026-10-07T14:48:14+00:00"
+    },
+    {
+      "title": "Mistral AI Releases Trillion-Parameter Mistral Large 4 as Europe’s Alternative to US and Chinese Models",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZW43cTJBUDZleUhSeW5oeFktVFI1d1M4a1Y3cVR4NWVtQlZEWEltY01uTldtWVlCMmIwX0h4b3kxc0VfbS1WakVNbHU4MG9Wc18zQldnZFRCQ2ZjYTRhTVlrcWFTekVJUFh4ZlFLQm5GSnI3VThPdWc4ZzZlMU91eHp2WEl6OHJNd21XT0xSVW0xMVIwYWJtUGZxOXlTMklKSl9mVE1yN1A2VVZ6cmQwM2N4clV4N1U1QmZfSnpBNXZDOVZKQjZKV1IwaTM0QUphaFFZTTE0dw?oc=5",
+      "published": "2026-10-07T14:40:32+00:00"
+    },
+    {
+      "title": "Deepslate Secures €7.7M Seed Funding to Build European Speech-to-Speech AI Models",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNc29uUnlaQXlYZkxiRTJIeXV3T2tWTk5qM0V4M2htY0FrQ3YwYVVCSDRGWWo0bmszNV9ZYWFqVDdFVklzUWZ6RjlXbERfMGdicHAxTXQyTTJhZWdLbmk2Z3VzNm0xZUgyNVdqTTMtdERmVHdzMWI3MUlNbkhvUXEwdF9SbUZZMU1GeWF3UWRobXhDOEJta0VXdUNCamROWTRlLXJUQXdzUDhISTY2cWlYV3h4b2F1TEFfYjJB?oc=5",
+      "published": "2026-10-07T14:32:06+00:00"
+    },
+    {
+      "title": "Telescope Innovations Showcases Physical AI Growth at Cantech Conference",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV1lMQUUybXg5aG9Ta3NmY3ZfNUVyX19VNUJqRjM3Y0p2WWV3V2FyRnNjUHNKZXFmUUJvRWRMOWdvUy04a1M5eHJsc3VhV1hIeTRpSWFReWFiODdlTkd2OFQzdkRaNTJWWG5qWjBDV2xCQ1ZjTVlGTFpOMEJNcVRuenpZSFBOWWdsbXY5VWRxbGJkNVJvRnNFYVNMSmRjUXhNRUhFbkNxbVJoQ05HcWxoNHd2eXp6Vm5udHdPeG5HeFlVVFZkRHhDajB1aEZMZ0pXR2J6MnV5WGE5anFBWDhqY2RsYXlxV09QR01MYlBqMA?oc=5",
+      "published": "2026-10-07T14:01:00+00:00"
+    },
+    {
+      "title": "Boston Dynamics names Rohit Prasad as CEO to advance Physical AI and robotics",
+      "source": "EEHerald",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBoOVV1WmpuNUhhbUdqVEVGaGYxNDhDdUd1R3JkajNkdlVMRHNsSGNrbWRCSW15X1B4V2l6ZkFnUHE4ck5JNi1RREtMTU9ZRU1UQVl1b25keWpJbGpNX3lERzlJdXprOXhLSTFwQmVLY0xZMlNONjRR?oc=5",
+      "published": "2026-10-07T13:52:16+00:00"
+    },
+    {
+      "title": "The challenges of adopting AI in physical supply chains",
+      "source": "The Supply Chain Xchange",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSkJGWGZFcHNSV05rSFBZNTViSEpEaWMtaGVEdnhEOGpsMjd3cGlTTllCb2RyZW1XMHBNY2t1UEJva2RuV2s3eklrLUFNVHpwVXM0SlZRUEd6aXdfdUZpZ2JWN250bWxVek1LelJoX2lMOGhqZUNnNjMwYzE4RzZ3SU9DcXdWV0lrbC04Q2ZaX2RCcTFTMVVVcTZMdlVET21aN1I1M20tTk5XRTBJSUxhRVgtNzl4QQ?oc=5",
+      "published": "2026-10-07T13:30:47+00:00"
+    },
+    {
+      "title": "MBody AI Brings Physical AI Robotics Platform to ThinkEquity and Maxim Investors",
+      "source": "www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbjVVa1JGSm53QUF5M1NDU1RON05jUnM3Zm5zcmx4R0g4dmdMZ2lnTUZUZkwwWHFjVFlkYW91SHpmZEV6b2xWN2xtaEtlOU95aW90VGFLOFd0VE9Ca09iQ3laaXBOWVgtWTFEaHRWdjJnUWhzaG1PajNzT1NwQUgwUFBfbmxVLTFUc3ZLdFpjVHdLRlJ0RjRGT3pyeHZ3NEFROGVqQmdBWHEwcHpYODhxbVJvcWtBZzVMTVoxdVg1SHlfMmc3c2hVeUcxS0Vkdw?oc=5",
+      "published": "2026-10-07T13:02:09+00:00"
+    },
+    {
+      "title": "Powering Physical AI: How Flexible Semiconductors Are Connecting Intelligence With The Real World",
+      "source": "rfid journal",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTUxfZFFyV2lNY21ybjFaZW1jeDBiUjhSc3JvSGFYWlJPS2E0VlBxYXBGZWZ6ZXN1cnVndF9vclRFNld0WlJKa2Riek5fY19jbHlWcWhaRElmanJpUE8tdTFVblZfcHAxUmVKMWxrUjVGenVTeDlYUDF3djhRTUNtNUZab0RFTmV5MnlxRDhCNHl2Zk9CRklUZl9JTE01bktKbFhWakM0WHF2dk9jQWo3eUdGckQyNGVfMzl4WldHOEtyNU8yZ1U4UmRuc0UwTzhQMkFBbXBKdldSWnhSc0E?oc=5",
+      "published": "2026-10-07T13:01:25+00:00"
+    },
+    {
+      "title": "MBody AI Brings Physical AI Robotics Platform to ThinkEquity and Maxim Investors",
+      "source": "GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTzNyMUpNd19LSTBsNG11Rzk5NGZ3RG5sME5CYlFTRXZ4dnVOcV82N3V5cHBCVTBOWjN0Smx4Nk1uYVU2dmdaVDE2YkJycjBLclRqR09BZTdKUjhpR3lDVTcydzMxeW5nNDlsYmkxRU5fWjhhS1FxUU5hdkJLYmFockptRTVjOE5JQVdBZmVtajlRMkd5NmZ3OW9SMTlhcVZTdWdsbUl4elBqbzFWNEpwMWYwOGpZWlF1ai1rOUxfaHBrRDRCWWRLZG0zdVpFWWMwSnZNUkxGdm51QnAzS21aYXFDZTYxYUU?oc=5",
+      "published": "2026-10-07T13:00:00+00:00"
+    },
+    {
+      "title": "Arrive AI Introduces the AP3 Plus, Adding Edge Computing and On-Board Vision to the Arrive Point(TM)",
+      "source": "The Des Moines Register",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNY190OVBYN1k4YnZhd3BHOERmclc3WnlZcEtZcDktNHZycWdBUndCWU5Xa3ZNbC1JWjc2QkJhRmxONjhIdXAwUUZaVWswZEczWU0yZXp4UGQ1V0l2cGxlU3RRamFySlVuWUs5UnJDeHJZVklPSWhNandiLUJXWDIwVFZmLUMzS204LThvVU4zdWJsNTR1U2JOalFzc25Wa2QzVWw5TVlIQnpaWmhIZkVQQlpvV2lCZW4tc242UV92czRBd3pOMXFyV3did1B3VXdhT2ZfT3NoRnRpX2lUV1ZRMVk4TEI2d2tMNGFpN05JN28?oc=5",
+      "published": "2026-10-07T12:53:41+00:00"
+    },
+    {
+      "title": "Boston Dynamics Appoints Amazon AI Veteran Rohit Prasad as CEO",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaWRaUkRYZW9nZ0RNakR2NDAybmc3OGhkS1IxcVlZQWxSZUxSSTNiT01VV2VDQ3pRdURpZ3VjbldnNjFiVjVodkYyNnVLNjVaMUF4a1FoS1lWcGZFU0YxbDZuU0VENkNzd0pOdTU2MzI3SDBJc3VVN2FMMjZBTTc5Q1M4WWhxRVJKRklDVm5TWTJ6aFh0M1c2WV9GMlR4QQ?oc=5",
+      "published": "2026-10-07T12:34:53+00:00"
+    },
+    {
+      "title": "Xentara Targets the Runtime Layer for Physical AI in Industrial Automation",
+      "source": "ARC Advisory Group",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPd096TjVIMm1kSU1tUUkxX2ZIbXFmb2ptUWNydTBIbGx4VC1zZ2k0ZS16WVhlcFJ4OTI3RFJkUENZaUZ4dHE0V1RGRVhYTHBib3pjQUV5Q3NNd2tLRUIwdEdBUmhpWk9Zb3FrelBuQ241LTVGLXVXTjdhS0R0T1I1TS02QXBwYS1ycGl2bGgzOGE2VHpZR3c?oc=5",
+      "published": "2026-10-07T12:00:00+00:00"
+    },
+    {
+      "title": "Arrive AI Introduces the AP3 Plus, Adding Edge Computing and On-Board Vision to the Arrive Point(TM)",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQXVoVUY2OTdyUXd1NUN4Z0hORTlTNUNvZ0FmS01ucXM2eUJBUGcxMGh5Rk9kbzhrOTNkLTY4TEMtLTRTYmdqWXZaaXdab1VjeXRwQlU4Ykdub20xdmZMRDNlZHNmeHg3dmQ3dExRQkNhS3pkSjhhdGtTNml5WTc0OWpsaS1XTEVNUzl1VjZ6UnVUY2s1cGhyQWd5VXh5b3B5cHJrZ3Zia091SENKSHRTa1ktQVdIWXpzZFJtMlZFM002ejVtZDdyS1ZhZFl4NjZHUXVjd0poT1A5UnNwSVVpTVZyNG9KRHNXVnpQbmVybw?oc=5",
+      "published": "2026-10-07T11:30:00+00:00"
+    },
+    {
+      "title": "Forget Nvidia and AMD, This Under-the-Radar Chip Stock Could Win the AI Semiconductor Race",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdm5TazR3bS1MTHlDa2czclpsR1ViLTRiUHNyMWstRDBjMXdncTRBZmczbzF3LWhLTlA5YjBWdWN6TlRZekVyZ2lDOEpBOUZzYl9NcGp5UG00THN1QVYwTV9NNVEtUVJ0MEpSc1A3d09Jd0NVSGlzY0R6Z1RYMlhQTGltSU9OV1FOMFJaNV9WMA?oc=5",
+      "published": "2026-10-07T10:55:00+00:00"
+    },
+    {
+      "title": "Forget Nvidia and AMD, This Under-the-Radar Chip Stock Could Win the AI Semiconductor Race",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNLU1yZXlodXVnaUJocWpmRXUzcDllUy05eUNwTWlLN0FscHJXNm83VkJsMDU0aG1sS0MzRTRFdHBmdHhqRW9LbEJNVERSME5DbWN5UFRKLXpodGxudUNiTnRPNE5seTdSNDlPbWwtOEtvYWVUdEtSNVdZUm9fVkp2cXlTREtjRFlJWDR0VUpOTHNfNV84YlR4cDR2dGtkSFQ1UDFLUnl6S2NNdnd6RWoxSUZqMC1zSWRXSUtBZVJKbHc3a0xXNlY3Z2hWbVo2ZVRJckFLVTRJc2V6ck5EY1I4bExGelpPUXA1QUVLMi13VzQ3SHd5eVE1OGtSWDFOa1BRZGc?oc=5",
+      "published": "2026-10-07T10:15:00+00:00"
+    },
+    {
+      "title": "Forget Nvidia and AMD, This Under-the-Radar Chip Stock Could Win the AI Semiconductor Race",
+      "source": "AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PNG92WlkxckoxMTlLbXNGNm44OGc2QUNDVzdVN2VKbjgwcERGbTZhRmNNYlRWUnNYdmYwci1idXktRFV6cnFoclk1aC1jYVRKeDg5RFRNOEw0RDJHa3JQS2NfUnNsRkhlRzV0d2Zja29GSk9VNGZOWHJ5WmtRdw?oc=5",
+      "published": "2026-10-07T10:15:00+00:00"
+    },
+    {
+      "title": "Nearhuman Raises £350K for E-Scooter Physical AI",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZXBSX1pDYjJjTFVwbDc0c2IwY3lrb0VoZGllbzhENWc4bl9scVpsX1ZZUlJiWjJ5VERWWlZNclhTVkJaWExTZ3V5TGliQU5RVFFpa0J3MWxOVDF4T2FfWU5yR1Zrb3V5NjM2UlJvd2FITDE1aHpCZUNfOTJ4WEZnZDNJSFBRSXZ0SmhJUm1JLWYxcHRoMkM1LTl0U1FzeFlOV0lVVnFtTHgxdFl0YXJRSU9QUHpTV2I1bEhuQQ?oc=5",
+      "published": "2026-10-07T07:47:51+00:00"
+    },
+    {
+      "title": "Al Is Moving from the \"Brain\" to the \"Body\": The Evolution Towards Next-Generation Physical AI",
+      "source": "TDK Corporation",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd1lUcmxyWW1oeVQwNTF5dG9ONTdRWV9jY2NHbGRXOXpsNExZQjlDZ1pMU0FZNnNXRHl0dmZ3cklIZXRNU2VPSWt1TlpBWWtVcEFuOFlxT0hIbWZUcGtsdnRQNWNLYm82NEhfU0JkUjlxTDJMTjJBc0gtNERQY2dyZE53Z3lBS0xz?oc=5",
+      "published": "2026-10-07T07:00:00+00:00"
+    },
+    {
+      "title": "Sereact AI Robots Handle Zalando Returns",
+      "source": "Konsulteer",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUWxTSXhKSmtmTUh1emFsaXZCa3JPUjhYTkd4UzBKbGhINTlSRUFqMkxmWjRPRUJfQ3JrVWVoVmZEOXFxRE1VbGdmNXhLMGNqR0hCbE1iQUJ3V0UyWUhnOV9aWFhmRWp0NXlEeXIycTdGQTBUY0FmbklOSWpvYlcyV0FuNDE3NkhQbWJONjFZS3dLaXhxSnNZNW9lYVFLUFRrdHNaWFoyQnl0UkRjY2dSa0VTempjb1BrWHA0alhEZHN2aGZUamdmOE1TQQ?oc=5",
+      "published": "2026-10-07T06:32:28+00:00"
+    },
+    {
+      "title": "Boston Dynamics names Amazon AI veteran Rohit Prasad as CEO",
+      "source": "The Korea Herald",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1oaVpkSHRuUW80NS1NNmpuTkJLOU44b0pHemlLRUx2YUlkU3N2ZTJibEFFWU9Eem02UThFRTdYOHI0YWQyenlPb1R6dlh0MThYeTJWNFlscw?oc=5",
+      "published": "2026-10-07T06:01:03+00:00"
+    },
+    {
+      "title": "[Fast Company] From Video Games to Physical AI: Exploring the Future of Embodied AI",
+      "source": "크래프톤",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93LXY1ZHExNllhbFVJbWhVaUpNVXBpNlVKd2NSVkVWN3h6OEhUMjlDcnFqalFSYV9rZ2Zqbi1VRGI1VUktVkFTX1d4Q0pRTzVZejFpZDU5bDFnc05OcjVQS1JYQlVQN0x3QnFZOA?oc=5",
+      "published": "2026-10-07T04:11:11+00:00"
+    },
+    {
+      "title": "Beyond Chatbots: How Physical AI & Robotics Are Changing Real Work | AI Horizons Summit",
+      "source": "YouTube",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zM29aY1IyRjNPREVVUUJId2swSk9YOThUbnJkVGZGOXhiTjhvUUg4aWlsR2k3N3BhUVc0bllSLVlFOTh6S1JRM1JnNGdQX2dsOGFTTzZTdnNGZ0Ry?oc=5",
+      "published": "2026-10-07T04:00:18+00:00"
+    },
+    {
+      "title": "Boston Dynamics taps Amazon AI veteran to lead physical AI push",
+      "source": "The Korea Times",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPX1p0d25OVGFLWEstSkM0b083NlAwY1NCWjNRdm1NMW9BQU1waENEUVNYNmMtYVFPSnQtaDVxRElwLWQtNEs1T3lFd29sRGtpUDRjNEZEeVJveXNYVEtJZG5RT3RLNVZlb3podWxvY3N0YWRQUVZZdEJzZzFISG5lVkFIRFBqaU1yaDl3MVE0SmpxOFQ5T3ZSX3lLWENXc1BSS1JBcXBCN3JZX256T0ZISFdJTlR0MGhSMUw2adIBwgFBVV95cUxOUFFsQjRPdFEwaWVIdE9lNXlZeUdNdXZJeGFKTXdOM2M0bG9yNnBQajA3ZWxvb1BISHpoNDlLZGJrVDVvZC0yaldxblBYS3FhSVBiZVJidmh3T242c05yc2Z0YVZ5cmRmbHdVd0VnN2dYcUZCUmNBMXdjTlUzcnRCX0pFYzdGM250cmFVbk9KcHFqb1VwNk1jWmNvbF9QZng5QlVmcWcwUHJ1QjJhZFZyUWtTV3kwWDUycllyQ2Rsa0NIUQ?oc=5",
+      "published": "2026-10-07T03:31:03+00:00"
+    },
+    {
+      "title": "From Silicon to Steel: Taiwan Takes Its Physical AI Push to Silicon Valley",
+      "source": "The Manila Times",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVUNwVzJxWGl3bnk3M3paaGtoYkhpU01IVXRxb1ZQRDVuY0ZhTVFDMDN3YlVfZVhWejJUeGY0bGc3bzBIWlJtcVF2c3I1c0lOV3Y4SzJCU19adW9uRFVpTVJyV01Kc3huXzFndXZUQkFCWFVtMW1UYmxLVkFwREVDQzlQWF93eW11WVRiaXBjV1BSaThuVUVWUHZwb01IVWRaZXA1aXZxLUdxRGJ4MDJmeXRUUGhSajR0UnpRby1BZzFRVnBaMjVHNkdadGQwTkp0LUZoM3d1MzNRMElOdFHSAeMBQVVfeXFMT2ZtNVlOaVdVX2JFNUhndGU0VHExQS1qUzVIOHVMUEZYUTlKVHJHZ1FjTkI4elpvYU95ZjZPYnZ2dkxTV3dIbVhlWkRUdWtSWjRtLWo2MWFXWmxmZ1ZKY1hSVEcwU000bVcxdWVUOE9wcmVpeXp5ZWdRMTFqaW5YT2hDUTg4SUZieGNpV1VnU0FHX3BsTlZqMTYtOEw1WjFBeG1iMXo0LXYtc25Vang5ZzlFdmZXNnhFQzlNRUJ3d3ROSjByYVlEWFB4LW95UjNTYWZQNUo5VmpmZVFFR29EZXRuakU?oc=5",
+      "published": "2026-10-07T03:22:05+00:00"
+    },
+    {
+      "title": "Myongji Hospital, Lavoro AI to test robots for nonclinical hospital tasks",
+      "source": "Korea Biomedical Review",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80Vkw2Y0M1UUJuZHVzUEVNdmJvWVhzNFd6ckNkWlgtWjlxM2ZPc2gzX1B1TFBaTnpkdXcwRUJ3TFBJVGoyVVp3SjZuUG1OdmhXWUZuUE9ta3dSRmVoVGstdF9CUEE5YThhM1lVTWxR0gFyQVVfeXFMUHNfdnNQcWJ5YWRZcm00RElEbmhnVmhnOWdaa2VCVTg0RHNRQWJUbGJ5dG5jdkdJSEhKYU1pazdxcHZYMkV4c2tPWHlYOURyNUlQUk9jSGZoM2RUYXc5Q1ltNlpJekczalMzUzBDWC03YVNB?oc=5",
+      "published": "2026-10-07T02:36:52+00:00"
+    },
+    {
+      "title": "From Silicon to Steel: Taiwan Takes Its Physical AI Push to Silicon Valley",
+      "source": "PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQU1FyQi14dnRSOU0xSWlGU3VMLUI4ZklrNGhNSjZyazJ3QWV1UWh6X3gtM1pTS2ltUXNqN2c2VUhkS29KTzVVYXViU2czZkpWVVRVV0RDZmUzaW4xVzRfVG1Qd2lad0hSRTFLdjg0WmxHcC05OTg1ZC14N0lQNkhQQlZIckg1MUUtRFhYTmhNeWdwU2d0TTF4T3pMREttTzBQMjlCWHRKY1pQblVuc3FVREJWU3lseVlvVVhRbTgtd0ZqdzdOT0xfbkFheFBSLVE?oc=5",
+      "published": "2026-10-07T02:35:00+00:00"
+    },
+    {
+      "title": "Caterpillar and CoreWeave shorten the learning loop for physical AI",
+      "source": "SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZTkzMXNMOVlpVUhaWEhzdFNfVlJxQktYM09GWktnc1RWaXp1em05dXoyaF9vTUlFdi1hdE1MSFNFZWgyRVJJUVVyT255UU40azdvcEtLTHdlUkE1R0phRU80MUg3M3owQ3Vpa1hVUnpiUXc1U0RGbFBIQ0ZDcDVkTEVSbmdyNV9lVzI0OVBBcjFhLU1Ma0FEZm9aeEg1YmpoWVJoUEpqWE11Qlk?oc=5",
+      "published": "2026-10-07T02:13:00+00:00"
+    },
+    {
+      "title": "Boston Dynamics Taps Former Amazon AI Executive Prasad as CEO",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc1lnN0prWElueXJzRmtaamU1M2Z0Mkk3NVlNMEtDMndqc29uZHJGQThBYk8wdVdWX1lrMzJfQl9GQ05MV2I5R0RHQ0M3OGN2NXRya3N1eVBoWGZpa2FJMGc1YklVNlZETTBZV1RSTFFDci1ueUNIQTZKOTBVR2FNMHRYdDVoZHI0OW5DSTllcndRZURKSy1oRjhZNGZwSnozRXFJekJFLUlxZw?oc=5",
+      "published": "2026-10-07T01:41:06+00:00"
+    },
+    {
+      "title": "Boston Dynamics Taps Amazon AI Executive to Accelerate Physical AI",
+      "source": "Businesskorea",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9RWWpFQUlRam05blhFc2ZzZVY1ckRUZXVKTVZHM216X1RnQUVPamZFckdNRlFrNWVYRUJaMmc3Qk9XSDNWMEJ2VGVTUkNiaHFrejNtZExzLVJheE9PNmlUSkRsbVRUbGM0Y082UVkzUVdHS3ZG?oc=5",
+      "published": "2026-10-07T00:38:15+00:00"
+    },
+    {
+      "title": "Partnering with Mecka: Bringing AI to the Physical World",
+      "source": "Sequoia Capital",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84bDJKUTh2UGxZa0NDN1p2Qi1ERlFteVFtUFBCUkQ5NVhKQ214UkNJMk0tdUtYcnB6d29HZndBbVRQZDY4c3BvWGN0WjJLU3lvN2ZwZWZ1V1ZiN20zSTJsR0tn?oc=5",
+      "published": "2026-10-07T00:00:00+00:00"
+    },
+    {
+      "title": "AI Adoption Expands Security Vulnerabilities",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSjNmLTIxM2xCUGpsa0RnellmcU1wOGFTcjZ0ai1abGRmZnZ4UzhRbGE3Tk5meUdFV1FPQkViazZVcmZ0Smg5eVFJQXgxWXg0LTVnTzNrcjV0ZjFEMVhPemdLUlZCdDhpeF9Fb1RGZFJLUFltbHZtYWRWQWZnYnl2V0Jwb2hRQS1G?oc=5",
+      "published": "2026-10-06T23:45:11+00:00"
+    },
+    {
+      "title": "3D Gaussian Splatting in practice: Industry use cases",
+      "source": "Amazon Web Services (AWS)",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSVBhZVJrV2RlQUJkTG5vdkx5MGd6cnI3cGNJcFltOUt0OTV2N2xHUjlGbC1LdGM3Nzk2Zk9zUUxIV3ZWNXRTaFNqeWFOLTdGNGNoaGp1OENoRkF5Y1FSZUMyOWFtODhic1k2RnR6U2FmRVJ5NzNZSWRXamFrTmMwM01Hc2FSYUR3X0ZOZjB0Y0RmTHQ5ajJCZWZ3?oc=5",
+      "published": "2026-10-06T23:06:09+00:00"
+    },
+    {
+      "title": "What Buyers Now Diligence in AI and Autonomy Deals: Lessons from Apple's AI Acquisition",
+      "source": "The National Law Review",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVnZ4djZtWXFmbURlSXNHT3BlWjR2ZlpHLW9ja2E1VkF4OGRSWmdMeFJqVHBnVW55eGc3Vk1QaUhSSDhUTW9uTzNTSXBCYzRJMFVtT1l4aVdMMDA2NkR4eW9aa3FCZlNkYjl6NVF2WDNfajcyd21rWGFza2J0eFphYXFfYWJuYjdKZmVjckVXTUdSRnM3dVpCMEQzQUlDeE9MSm1CTGZqXzdaT0RrTnlZ0gG0AUFVX3lxTE1hTVJmTTJwSHF5cURfM2lRZ0JGUEttYmJxeUptYkNhcUNTbVBpSGtpU3BseHpORkV0Y1U4eU8zS18ybThva1NTSkl0SnZLZk1yUTVESk9UMS1fdE8yb213NWtFUHdRbWQxYWdNMkdEMmFCT3QyOEVaX1B5WHhST3YzMmNsQjZtS3ZHVzhvekRpZTlLZnI4Xzd1OWl1QXZfZU9ZWFdZR2FIRVFhU1ZkMTdpLUV1ZA?oc=5",
+      "published": "2026-10-06T22:35:57+00:00"
+    },
+    {
+      "title": "Boston Dynamics Appoints Rohit Prasad as Chief Executive Officer",
+      "source": "Boston Dynamics",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQW9oV1hQNUFUbXNQeVU3QjRKMVRqSnZKdnVGWmhnUE5QaEsyV09nWVB2NkFMd3pKaGN5ZFhXeDY4eDFyRUo3bnE1MG5Qd00tOEo0NngxVV8zQUo4OTkzTXRocmExbm9iZmROTXNJN3JSVVB3dkpZQzB1a1U3dDk2UHE5dERVSDZHZzFOM0I0WHlYOTJvMzRQMUUxUXNMdw?oc=5",
+      "published": "2026-10-06T22:05:31+00:00"
+    },
+    {
+      "title": "Pegasus 1.6 brings video understanding to physical AI, says TwelveLabs",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWQzSlI0MWdJdzItNHVLLVc0c2VJNkZsQUJIaDF3Sk1ZcFROQ2dEMm95dXdGZHRQYWFLN0ZtMWJlS0tCcFh3eWNFc250Ni1zREYzeG9TeGpITmZFWFI1V3lFZ1NMMTdvZTlJLVlmNHFaTllBbjN2Rlo2N3dBQmVxOW5xMmFoUmNFWmpDbjVCOUZKdGNtOFdONjJvcHo5LXM?oc=5",
+      "published": "2026-10-06T20:13:06+00:00"
+    },
+    {
+      "title": "Landlord sues Physical Intelligence to clear space for Anthropic",
+      "source": "The San Francisco Standard",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPc1dsSzVldkd5TXlTZ0I4Q3FPTnBnaHFXVDRxbXVaNm5Qb0YwMnJvMmFnTDUwZWFNZFA3Rlh1T2NCQldralZhNmdEYi1vamtyTmVYTlV3U2FPdlNsNnVob2wzUFcxQkhEVHpfVEJhTWhPWWQ1aHFzWHZaWEpUUE1NYzF2cWNyaE5MbHc?oc=5",
+      "published": "2026-10-06T19:36:37+00:00"
+    },
+    {
+      "title": "Slashing “Wrench Time”: How Agentic And Physical AI Are Accelerating Repairs",
+      "source": "Automation World",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeGdGMEVmVmx0bDZIbThZQWxlcEE1TTFCWHZwdFhNeElFYWY3YVZHYzFROXJmbzdaQnBFSkM4bHphSFhZYXROSGtSaHBnMTh6X3lLOFpHSFFPcGV3SjlEOG16TXpTRkRCdjFDN2JGSVVIM0lSZ0Ixa2tSRUdmOVBfb3NOUFJCOFFOTXZxU3VHWHRlY0RpNEFBUUJ1VUlQekFlU0xyUndpX1hYRUpEZGV5aFlYWkluQ0tuV2hiVlE1akdJZ01HS1RtSA?oc=5",
+      "published": "2026-10-06T18:54:04+00:00"
+    },
+    {
+      "title": "Sovereign AI, same landlord — thoughts on the physical AI race",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVk9ITHM3U3FlMThmZzY4VFZ4Tm5ObXJWakR0ZXhtVVhZMkFHRWtpb1JJSXZGV3lBRHd4Uk5XaG1PZ1g4MGFJTUltMmM0aXRsNUwtY0MxY2hCbWRVMHJfR0dtTl9SeUFFaGdjdEVQZkV3U29IVXFxU1hoeGY4ZERPb0VabzdkTW54UzA5Tg?oc=5",
+      "published": "2026-10-06T17:53:55+00:00"
+    },
+    {
+      "title": "AI-Robot Helps Rehabilitate Stroke Patients",
+      "source": "A3 Association for Advancing Automation",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaTRrQ0hPZ2FaT01kcXFDUDdmdFQwTFBCUmU2MEtxSDRVSzB4WllEUHoxWmU1d0dVVm1jY0FmQmI0MThpeDJaNmZBOV9vb1FIUXJ2MEdUVUJ6bnhvZDYzOXNfaTBfSW1OelZwanJOUkRRMmFKNnlyN0M5c3BVZnZ0OXpIMmtlSDJuSlFUUg?oc=5",
+      "published": "2026-10-06T16:26:36+00:00"
+    },
+    {
+      "title": "Archetype AI Builds Momentum in Physical AI with Fast Company Recognition and Major Industry Speaking Engagements",
+      "source": "Lelezard",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcGZPSmFpdWRsbW15UkdDUWpQekZQMURsSXdXa2VoZl9MLU5DYXg3cUo3YXhHekFjR3hiOWRZcnRabkxUT1FUTFdoNFVzbGpIcGVXdkNYSkZLUnFQX3hrcUdyUFlMRkpNQURKLTRIcFBDX1N0M0ExYWxlakMwRFlrWVRsRXhOd2Y3T1IyNjQ4X0tMOGVkNXl3bDBibXRJcTIxaU5yRVFYVlFCMmhULUNxWDdQd2FONmJ1S05aWWxrOC1PVExfQzhZLXdwMnkyVU5qWW9EZXJR?oc=5",
+      "published": "2026-10-06T16:01:36+00:00"
+    },
+    {
+      "title": "The Physical World Is AI’s Next Bottleneck",
+      "source": "3D Printing Industry",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTDlkWS04Vk5RVS1JRVJoLWJRenVQbWgyMjFwRWZrWkhtWUZXTlN4VGhVVDdfSTYyOWhDU0M5bzhUVkJpenZlQldudzZ6Nl9VNmYxdTVQWXB1STZRYXQyRlFzNEtneTZtN0VnbU0tLWU5MzR0THlYUTlTN2tLOHhYVl9DXzZwQlB4NzFjX0x3?oc=5",
+      "published": "2026-10-06T15:40:44+00:00"
+    },
+    {
+      "title": "Apple Tightens Consent Controls on Mac Full Disk Access as AI Agents Raise Privacy Risks",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeGptR2NlM09EcTlBWmpVYUcxdXNRUGRtWkIzZnB5X3NVTlVXSWNkRGl4U2o4dUtuMV9zX09HRWlmZlVUSk9OZHRVbF9HZC1nY2VnNWZSSU03OUkxTDN5eXR5dE9lSVdReVVGNXNmUTFwaUdJdHBMWGtGQlpnOVNSNFBSYjBxZUNBTzRkV1ZKbzhLTVFiMVZXMEd4Nk5jRTJaNmliZjBodE9Ya2tnVEFUejBtUlFpZWxzWkxMN0QwS1JwQV9x?oc=5",
+      "published": "2026-10-06T15:26:29+00:00"
+    },
+    {
+      "title": "Why onsemi’s Synaptics Pivot Could Be a Game Changer",
+      "source": "MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSV9OQldObXRyMVR4UGJ5RFJENXFmUExRT0lEZi1SUGg5ZW9nM09NR0FVd08zOFNDc3hhSDU0czdHQWVGdFF6TGxIVm4xakkteTV0dGNkbzUwRkxXaGhoZnFmM3hfT19zVHBuMnZST1QzWHZjWmhlZ2p0cjNBWWt2WHFpY3UxRk9meGphZHdFS3o4dw?oc=5",
+      "published": "2026-10-06T15:22:07+00:00"
+    },
+    {
+      "title": "Robo.ai Reports More Than $100M in September Revenue, Forecasts About $600M for 2026",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObEVOQy1Cd1o4cHJwdEtFWWo3aHMxR2YyNThwZmZyY2Z0MVFqOG9HM292X2E0emNZTDJLaHpqTURYWnlKUVBITTlnMTJxZDMxX3JiZ200Q3pVUXhqQXpOWklJdGlNMDh3X0k1U3RhVE52ak92eEgxaDBBeE8xNWQ2azZfT1d3eGFFTUk2QTlvM01WOWtyenpMc1lyYmw4UlRkT05PZ19Ecko4RXJKa2R1MDRiX0ZLZUd1aVB5ck5pVlNvSDZpQUVnT3AxLS1wZw?oc=5",
+      "published": "2026-10-06T15:00:03+00:00"
+    },
+    {
+      "title": "Physical AI in manufacturing: From intelligent machines to coordinated operations",
+      "source": "Microsoft",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOd0sycmc2a3hCTmpaOURaSUxuMHpDbGNYYTFYaFZMNERBWDNXNk80ZzVXVjZWLVJtdnc5TEo4RFpJYmU2bWF1cDFjZjNyWV9GNWFUbkZnWTVmak83Mk1XXzZfU1B1OGhSRjVsRVdqYXJITGtFRVpjSjJDOURwTE0yWUxVSUN4V3VxTUp4SzRpSzd3WDZQLVhsV0FQeW5rTlpnSHVGSWNTem1CZlFBWnFVOWR4aEE2a0ZWOTJtWldncG4xSzhEV0VuUGh0bHVONUFoQklzbUM2cXZRd0JMUFZCUm5XTWJEVjZhN01Wa0NSeVQ?oc=5",
+      "published": "2026-10-06T15:00:00+00:00"
+    },
+    {
+      "title": "Why Physical Edge Computing Could Be AI’s Next Frontier",
+      "source": "www.embedded.com",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeFlUMXFhTjJ6aHhETnNJYll4ZmY0cVB0eDJOWnZKZFpsN1pldlRPTDNxTl9wSk1yZkY4SDhJQW50bERMcjMwdVRPWFlsSWt6dF8yb09pZDJRWG13RVRFRkFMRWNTdGRaaTNCZGRINkViT2d6RGtUZ2I3MURjX3BQaXVtdHg0dWc?oc=5",
+      "published": "2026-10-06T14:52:42+00:00"
+    },
+    {
+      "title": "From algorithm to action: A framework for safe and secure physical AI",
+      "source": "kpmg.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPencyQjRFdmNRa0VWTWx0NzFPNHplS0hIbDljWlduY2Q0dWllV2xxdkpVTWdseFVuY3k4TFJ4TWtnR1U2VXI1ZFEwZzROaFdqZ050ajJxLW5yNUFXamRvd0VmOEtCS3BTRmtxMGFQaFZ3TEw0cnRtRGw0VGhITUxMdQ?oc=5",
+      "published": "2026-10-06T14:52:32+00:00"
+    },
+    {
+      "title": "FieldAI Raises $700 Million at $10 Billion Valuation - Meta Platforms (NASDAQ:META), Intel (NASDAQ:INTC)",
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTUUxRS01RlhRMTlndkpFS1JmTDJTLVBrU1oyNUNhRE5pNEROVWQ1cHl4M3M0a3o3WVBNaEQ5Zm5INWpCakI1cDVZcTJfcExwejNMVGRIeUxhYmdGdlBZNWVkSEtERWVJRDFJcEwwU2xndmg1QVgxVXE2d0kxdzZ5QXVhRDRLNWFIbTVVOFhGUGJWcUxNQzU5alZxZVQ2OWhQSVo2cUxKS0g?oc=5",
+      "published": "2026-10-06T14:26:00+00:00"
+    },
+    {
+      "title": "The full Disrupt 2026 breakout session agenda revealed",
+      "source": "TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPLXFlaWE0aFpzNVN6SlFLdDRqbkZHUWlxUThiM2tEb1R0S1lXcUh5dk9HdmVHajdMRVhJLVlDc2E1Zm9kTmVaSHNqbkUyRS1EQ2ZYRkpZX3NJWFd4djExMVppZjVndFlRazl0YW9iZmRRS2pVX2EyWURCWVpfZTRXZFZCTlV1STUtZFdRdjBHenRHd1pRRTNudzNLaEdIbHFwcEZPaFlITlM3bXB3eFFyamFQV2xCVFJ4WENnNUFTTHlKNlIyLUhyQzRYS2d0Y2N1?oc=5",
+      "published": "2026-10-06T14:00:00+00:00"
+    },
+    {
+      "title": "Around Physical AI, Engineering and Innovation: Armenia Engineering Week 2026 Brought Together Engineering Potential and International Expertise",
+      "source": "ARKA-Telecom",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPOV9MdDBCUkFCalVoOTdKMTg5RXNjaFpDMHNscHI1T1BVTE5sTWVvaHAtX2NmeTdjOFg1ci1qdHBXYzZBVEVjaGxsbWNfQ2xxZlBrWERNSlpvYzdBb3N3S2ZMZGJxV1lTdXQyc2NqYmFYM1Jja2NqZ0NNR3dnakJKeVBUTjV2alltUEZ2alFUcUExaS1xUUdLeURHTGdQTXMxM3k1TUpGbXdnN2lZMEhoeklPRjlCWnd3MDF1S3ZyODlUQmc2REtPNW1tVTZfTU1Tc0tSOXNWVQ?oc=5",
+      "published": "2026-10-06T13:51:26+00:00"
+    },
+    {
+      "title": "TwelveLabs Brings Video Understanding to Physical AI With Latest Launch",
+      "source": "The Manila Times",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOQUdQUUtnNzBfb19XY3p1Zm9tbC1laV9IYm1KX1o2cEZfVmdkVy1IZ0tZX0ttVnlHZWJvSktjQ2hGM1I2emxYRzBYQy1QLXd5dGxNZHRJQmRXa3pDSGk5YVBVclpiTmVrWlhYcTNpaEVjYmdyajJUcXlmUHhsSUJ2VnpzYXU4VnlPdHplMGJ1WXduVzZsOXd5MW9mNE9NUE5XNF9BekZRWlYtNnE2SW94T0Y2dVczVDk1cExHM1IxWEpzR2lHLWJqOVRhVzNXX3dySXV5V1FOZFlNRVlMN1HSAeMBQVVfeXFMTkVCa1pNdG5XdTctekEzT0lOaHAyMDNzM2NDRlVmTXZabWNRMTE0N2dMNmNhb2hIMnB1Nk9GM25ZYWdMTk11aW9NWUpNblhoTHNzaEhpMDdLX2NOQUdrRGc3VVFiWThlUnZncHhMTk93aVJqOXJpbllQblNrcXBOR3JQbmptM1h2azg0emNoVmJEVE04c0dSaXM3NV9jRi03VlFFZW5Mb25SSm81eWNsU3kzSzF0c2dveWVOeG4telgyS3JCeG1Edlo3bTJETGdyTkdqMDdFU0prNHhGSVZDLVdYb0E?oc=5",
+      "published": "2026-10-06T13:33:08+00:00"
+    },
+    {
+      "title": "Forget the AI labs: This is where hiring is actually booming",
+      "source": "www.easttexasnews.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSWNZcVVYM2phczRXY2lXY2I4MzFmQ21ZcEctbDhKazRRMGN3ejlTcmMwUC1Ib1NlM2xDbURya0M5d1NoOG9MSzNkcU0wY1BWVkNZWFJTNTM0dGVUdkpPX3BMckFsdnctbXdsVXNvUHhaTGdoRHZCMG5mU25DZnJuLWFIRFRFT2tzX3BGWmRMLWVRY1ZUem1iMjJYbEl1YVBnbHZKZTRDRVVvNXNyOGI5cHBqMDFKQV92RFE3aA?oc=5",
+      "published": "2026-10-06T13:30:04+00:00"
+    },
+    {
+      "title": "Forget the AI labs: This is where hiring is actually booming",
+      "source": "www.thejournal-news.net",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZS15S3RsQU54cHVtdkp2Yy1FYllFRHUzX09tN3RDSUVrM01QQjI4UXdDSTI1dkRrQ1RyTjg0U1JtNXJOTFN2TklGSjdUeTFyLVVnMHhYVW1MUjItbmZ0UUpGUFFQd25uX1pvX0ZTSlN5RUtSWWJRMXVTNHZGMzhacVo5SzlINWNrYzRLUUFkdkdhaVlQQkFvNkxUQ080ODVzR0ZzTjZZZkN1ZFFra1FBLTI4c2RidlpHbnFpZlIydw?oc=5",
+      "published": "2026-10-06T13:30:04+00:00"
+    },
+    {
+      "title": "Forget the AI labs: This is where hiring is actually booming",
+      "source": "North Country Now",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORW4yYnBiSGlHeUpoVEdJbzI2U2NVa2NVQWtGSHNDZGpXcTFPTENEYm5JUFlGTU05WTBqcmVOYjdEWkt1X0tuN1d0ajNMNjRnRGwyT2JWb1o1enVVcDYwQmJ0THhBcFNETWRpTE1oaC10WmNieVJqdEg0aVpVamYxVjhrZUctQWltMWNrWFlVazJYYkF5bXhfVWI0NWJPdmUyRGlSUlRHVzZTc3VPSmpkWGlTM2tDZFZPRzUw?oc=5",
+      "published": "2026-10-06T13:30:04+00:00"
+    },
+    {
+      "title": "Kawasaki bets on physical AI to make Kaleido humanoid fully autonomous",
+      "source": "Interesting Engineering",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMjRHQUVvWWIyaUFjNW4zQlpYV2t0ektWMTFtNFkxZ21mRnkwMEVnRnRJZkd2dDVLanVjYzlRMXFRSlBKd3V4UmpHQURpQnpVN2JpY3JyTm5wSUNUUWdyY2txeGhSQUJqblFDWnBjX3VlaE03anRJWndOaUhLWV9vZVJyOWo0X244QXNB?oc=5",
+      "published": "2026-10-06T13:30:00+00:00"
+    },
+    {
+      "title": "Torch Systems Raises $11.5 Million to Bring AI to the Physical Infrastructure the World Depends On",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT1lwaXVnanhkdTBpb25YUTE5ZE1rdWJCbzNzR1EtT2FSQmRtZjc5RWZibktqNjE0QkhiVGFFOVV4WVNSZEUzbkVGY3ZLNklJX1Y5OUN1N0Q3aEd2RVpPNXBHYU5HMzh4cWtpUFVEV25NRzE5M21FWHhFQlVuQ18zMlUzVjJFUzVBZ1FFTGdiUklyTUtWTS1kczFnRE90THl4QlJ1SjluNzc5X1Fkd2N5RzNfRFBzZk41d3MtZHFsM09INFVGcU53MngyajRfeXhzRDlQNEtWWnZIQmpZTmc4V3VPaGNpWDl5bFh3TnN3?oc=5",
+      "published": "2026-10-06T13:00:00+00:00"
+    },
+    {
+      "title": "Nearhuman raises £350,000 pre-seed to bring physical AI to e-scooters",
+      "source": "GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQV212Y2xDa0JFbzVHU0I5NkJCakF5QkRUMXlSX2lSQmRrM2FaMXBYeUZzdllGSlpMcHVKRTQ2ck02akI1ck1yR2VmY3ZLZTh5dm5xMUdlVERHdGxaRjNFZEl3YklmZFIzMDRYMUpSSER2R0FrUHViZU5zMEE0aXc0TVBmSDR1cDhMdVRNV3Q4WlhtLWNOOTBEdXNwbkU4RFJORnM2YjFkYmlqdUdraEhzX3pEX2tVeTNpaFZhM1V2bl9KX3o0S09ITGRPV21RUHBCVHE2NnRSSQ?oc=5",
+      "published": "2026-10-06T12:30:00+00:00"
+    },
+    {
+      "title": "Roze AI Expands Disaster Prevention and Physical AI",
+      "source": "GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNbEMwVm9SMlZZY2V6X2J5NjhWRENEUDZ1eXlydk1xa2FYdlpfMUJnTzZkYjl3alhTd09GdDNoeE9pRDJEVVZPRlcyU3NmUUhfSzAxU1B1VWl4T3hFN3h6VW9ScWtjQzdOM1YxNzZlWHRCTVJsT1NCZTRxdnZkd3BTTmlTM0Y2X0M3RXdIMlgtaW5ZM090Y3BDY1plYVM5bktyNVBtSjctMGdoTHJubTNHUi1ST25HUUtLQ1gwZ3NGSHdyQjZZbXg4V1I0ZkpmMkhlaUljRGtVN3czUU96YWZ4X2dybmU5VGY4c1lyc2QxUmlPRlBJTGxJQThHSjlrdzBNOUlvT0lKOTA2NEJRMlA2WHZJbGhYTzE3aURZUjA5c1g4Y0hqVzc4NmcwZTBraFhtYWltNmlNRG5nZTBTTE5HZW40cm1GZFljeTMxbnlQdw?oc=5",
+      "published": "2026-10-06T12:30:00+00:00"
+    },
+    {
+      "title": "Nvidia Rides AI Boom as World Bank Lifts East Asia Growth Forecast",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOa25UaVlBOHhkeVRRc09nUjhSWVVnTW5OSGRkWXhUNDI3bm9JcmNWaG1XRmVGbEZRR3FfVTFuRmhqSWRGTW50UkdqV29vaTVUaVNaNFBzMmdGN016Y0FVLTVZcGJZaUd6OVUwMnZ6VDlaNHhyMGFMa0NaZzhCUmdZSllpMTlpRnRGcXk5UGdsN0MyOXI5bTBDcFlCWDdxcl9KV2J1bUNQcTJkNjQwYzRHa1JNbWxTYTNlckVzX0xrSEk0cGlG?oc=5",
+      "published": "2026-10-06T12:04:48+00:00"
+    },
+    {
+      "title": "BMO Earns Top Recognition for Responsible AI Leadership in Global Banking",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdGZ3N0w5OUNwUmU4bXROc2IyakFSOUZUU3J0SUx5TXU5Ri05bW9ETng0UFRELXBWYmJZYUpTX2tXblNGVXhWOXRZM2pGU1BiUUlNajdYV1RxZzdTNU5uSzFOeFJfMjBYNG05ZTI2Z0EzeVNRaks3LWpRa2NvalVlQzJtQnBRMG5Od014MUp4dnpFRkY2dEZmWUl6cm9JTWlmZ1VWQjIzMU50dEZ3NjZiSw?oc=5",
+      "published": "2026-10-06T11:27:47+00:00"
+    },
+    {
+      "title": "Doosan Robotics to Develop Physical AI Collaborative Robots",
+      "source": "THE ELEC, Korea Electronics Industry Media",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDc3RLUW9MaWtDNFBWbXp0aXJTRTY2a2NXbElRcW5xMDlTYVQyOVA4MW5XVDZZN1IzYkptZTdnMDBSTk1pemtNSTR2T2Y1TVRGSWF1cHFrRXduZ3RrdnhwWE5ROENtX0k?oc=5",
+      "published": "2026-10-06T10:33:23+00:00"
+    },
+    {
+      "title": "Nearhuman raises £350K for on-vehicle e-bike safety AI",
+      "source": "Dealroom",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcWdfeVFudzEtb3RCUVk3UGJETklwQ2hnVmhSYzg3OV80dWIyZWEwUkRWLWRiUm9vTWNSek5YLVFjYlNDNy1iTE5RaExFcWFxUHN2NEFmSUtieEUzUUVTZjM5cVRqZXIzblB2Sm9jMnI3VGlPeVU3TnhLcGdJUWlnQ1U5aGlXMXdwUkhaMDZUWHE?oc=5",
+      "published": "2026-10-06T09:21:25+00:00"
+    },
+    {
+      "title": "Form Follows Function",
+      "source": "IFR International Federation of Robotics",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBRNkdTaHNGRTlTX2VzQ1RzbEtnWDB3N0J1Z0FMQ2ZIaXJmVjJFWUswdzRsSFZHdmNleS1HU2VqbTNlX0lBYXRFVEwyRVlsUDNVMmV3bg?oc=5",
+      "published": "2026-10-06T09:14:10+00:00"
+    },
+    {
+      "title": "“Robots to Ease Labor Shortages”: U.S. Manufacturing Automation Spreads to Shipbuilding and Defense, Putting Physical AI Commercialization to the Test",
+      "source": "https://economy.ac/",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBocFpVUVVkUXRDQThtZDZuYWVGeTItbzVpdmd4Zm04VTBxUDVqOTM1NmRoVVJLSkRnNHRrODNaaTNTdnM3eXExdGRfRHJZRncta3J0QXh5SQ?oc=5",
+      "published": "2026-10-06T08:44:01+00:00"
+    },
+    {
+      "title": "Techman Robot strengthens cybersecurity for trusted Physical AI deployment",
+      "source": "PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdzJnakM5c0VDcnp5VVM5ajZQVS1MZXFwem1lc2d5QnR2aXJDdWlQQWZ3VEdJcGdyeHQ0S3BYYm5Ldm9wQ0lmSTNjcUhVNWM0cWJ1Vzc1OTZFeTk3UXhFcTdIRGpSWkdUekhJTUp4OFpld3FTYndMd0huU1I2dm9jcW5wZ05QWXhfdVJZTzlncnpvQTczWFRpOGx5WXNOV1VERjhqVWc1QVNORXVnRlJRZTdpeGpCLXktUjM2c1dqOThaMVl0eTJtUk5R?oc=5",
+      "published": "2026-10-06T08:38:00+00:00"
+    },
+    {
+      "title": "Doosan Robotics Chosen for Two Government-Funded Physical AI Projects Worth KRW98.9 Billion",
+      "source": "www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUnItVWhUMEJKTC0wQ3FYOHRpaF9NczEtckVnbGlYZWUzTE1ueVBCeWVvaDlFc01fbXd6VV80dkFBbng4NVNwTzNqc1dpc3p2am5jQjhvR1pQV0M4Ykp6U05HeUl5S0c2RDh5WkZtazRJR2lvaGdoVmRaMDlPRFRqYy1KZjZWN3JSaXdiLWplRWRRVTlSdEY4NE9lWVdXQkRoZlg0aGNqVU5PNG1SbHZCWEdNRDZhQ0N1MFNZRHdZLTM5QlBtY3A3Mm1CcnBWVnZfMnl6SVZRUm1PQzZa?oc=5",
+      "published": "2026-10-06T07:51:42+00:00"
+    },
+    {
+      "title": "Doosan Robotics Chosen for Two Government-Funded Physical AI Projects Worth KRW98.9 Billion",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMThxU1B5QWZqZU13MFpwZHU0Z0p0Q2JVZEprenlZQ1B1OVdVSDljaXNKUzF0MU9qaUxTZHVXMjUwRm5iVUttR0JQcXk3bkF3YVR0LUVhR2hPM3A4NVAyODdZbkcwRWI4MVluY0ctVDhXelZwdGxjclVFc3QtbEJMZWZibmhrNE5ZeFlQdVBUbFRqclRjWmtQalItWW5hcXRsMmhKRDNVNFlzZ3VrRkd6VkRiQQ?oc=5",
+      "published": "2026-10-06T07:50:42+00:00"
+    },
+    {
+      "title": "Hermitage Capital Deploys over 200 Million Dollars in Physical AI Pivot",
+      "source": "Retail News Asia",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNU2J4NmpvU0dUU2NxcVNOdWFjSVhBRFhlbkpZTDVlQjcxczNiUTBISVJ4Y25xaUcyN0NmMzR3c0tlWEF5U0tVQkluUmFscnlFN0prOG5OeXBmWU5YZEk0R1dJLXFPU0ZzanBUTUZVUmR0OWEzSk43SlBiNnNOM0JmbVBMbVZOcl9DeEtkMGMwV000bk82YlBPQUdXYw?oc=5",
+      "published": "2026-10-06T07:00:00+00:00"
+    },
+    {
+      "title": "Aeris and Telna Partner to Eliminate Global IoT Connectivity Fragmentation, Expanding IoT Accelerator Coverage in Brazil",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNNFFOdTg3VnFpN0NCN01KSTVjMGlzQm1DR1gwLTJyM2JzWlc2N2VrMkZqVUhqS2JEVU1oOHA1X3YzODdjYk5Yd0V4cmlqUzRIdDdWbUIyREZfWXlCTzNuaGdsNEpmYUMza2lqV2dnVGVJTHh5d2xBMkdNcm04OHNuRGtOSXQ4SW9mQmNfMFp4NXh2d19BdTBZUUZ0T1BGRjZoWExtUDZSOFZDSzFQX2tQN0lURFEyYVpMeDdpS3h3UU9nQVd5VTdWQ1l3S0dZUTEzT3lwVGxveTQ0dEFkTVo4cVpGSDhmaDNNUzNRaC1GTURqZ2VGZ1UwcUttVUNuVm1iM2RVVXJnaw?oc=5",
+      "published": "2026-10-06T07:00:00+00:00"
+    },
+    {
+      "title": "Doosan to lead W98.9b AI robotics projects",
+      "source": "The Korea Herald",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA0bVVrTkhVelR4ZmtzOEJiSkxnWE93UGJwQlBRQmtQUlBrUkZKRXowS2FOaWxzY1F2WjkzMzVpMWc1UnFUZ1JUaWpLU0lHcW9jMk53RGJHbw?oc=5",
+      "published": "2026-10-06T04:58:23+00:00"
+    },
+    {
+      "title": "Chinese Humanoid Robots Appear at South Korea's Parliamentary Audit… Physical AI Investment 'Woefully Inadequate'",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB6ZGhTR3Qwa2hvWk9yTE5vN3hGZHRpMkNXcjVFYjl1bUZISTVnUVA2SFRUZzI2YlFxTklLVHVLTjg1dUNQaE53Q29IMHQ0cXVQTVFSX3AwVXZVUkhrZ1FRLW1SejZ0aEw0MUtuWE9rTUJPdHc2WWc?oc=5",
+      "published": "2026-10-06T04:05:00+00:00"
+    },
+    {
+      "title": "Physical AI Builder RobCo Doubles Valuation to $1 Billion",
+      "source": "PYMNTS.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZTUxaEdRaS02dVM2U2Y5Uy1fRmJFelN2N2lHYWNFOXNnWVpFcHp6VGJIYV9qSmNMaTc2RXE4UjVsRlpYQ2hlX2U3VkZZTWFEdVl2Sno5YUl0cWZxTkNrSnE5SWIyLUlqX24yd19FeVVGZFhPZjNsdUtEbzV4WEF0aU03c0pUMFRCMGpXX2lRSUIxMUJQM29Ga3NXZUhZa3E4MDREUDk3WVE3Z0J4cWlnV0NpYXdYR3lHQi13?oc=5",
+      "published": "2026-10-06T03:49:27+00:00"
+    },
+    {
+      "title": "Doosan Robotics Pushes ‘Korean Physical AI’ with Homegrown AI Chips",
+      "source": "Korea IT Times",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9lT1pPdjgybjNLTEt4cnIzcEMwaVZUNG5oNEkwMFNlSFUtcXlLN0YzT1hWM0dQN1lDRnBjc2RwT1RwaDFFMUlEZFJHcjJTUnd0Ml9pMW40Y1QxWTdQN29pUWlvWHVhdTFkNmdCSjVpcmY?oc=5",
+      "published": "2026-10-06T03:21:06+00:00"
+    },
+    {
+      "title": "‘One Chip In The World Fueling AI Revolution:’ Dan Ives Supports Nvidia Bull Case As Stock Hits Fresh High",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOVDNQQVBkNU9pdWlIaWRuWlBzM2VLb2ZWZUNCTV9EeEYyMGQ1S0FBbm9XdTgxQ1VTTEpMd0RmRjJaVExIckxWYnJ1RzI1QlRvYWhXTHRTbEdrN082UVROWmQyQ3JIeEJ3eVpZUFRuR3Z4Q0hXT2pjQV82eFZJYTdwU0xxWkxEdGpnTXVOWU5aaGlkWkxMeXR3bm1RVVdKbXdwSVlGYk16aDI0cWFyVGZrSFY4UFVqRVVMUEhfREVTSV9PZGdCdWtBdnBJZDFtOFJOcDB6T0dUM25vLU1nUGFSVXN3S0ZWem9TNUpNWk5TVE8zVFNjV1VV?oc=5",
+      "published": "2026-10-06T03:14:00+00:00"
+    },
+    {
+      "title": "Physical AI moves beyond traditional robotics",
+      "source": "TechTarget",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR3RVaXdzR3VMSG02OWhESl9zbTdpWDZhXzdZWHhaTzQ5YjJicGw3UkY1ZXdNakNCdTVoZHc0NzNQS00tLVBUQzFYdHI3dnpTS1JzN2ZqME5vb3l3eW9Ya2JZaEtDYk1WTmNPQzNISUhzZkhVWExQY0tZdVllNDZGYVZ5WHhDY1ZEM2h0MlZnalF3WTFM?oc=5",
+      "published": "2026-10-06T02:12:47+00:00"
+    },
+    {
+      "title": "South Korea's Physical AI Budget Set at ₩462.2 Billion for Next Year — Just 4.9% of Total AI Investment",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QemRrSXJkWDJIdUs5VnVWelhGVlNTUWJnemxzbWdkVWluU1lybXZ0UW9FNWhNalhGS3pXdmJCR3VUNzJWaWcwSE9MSFpQM1pyUDc4OXY5eE1Ba3RJbXlfX3RKYTdrRjZjeENRRmppVEtyd2FGQ2c?oc=5",
+      "published": "2026-10-06T02:05:00+00:00"
+    },
+    {
+      "title": "Doosan Robotics to develop physical AI robots with homegrown chips",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB0LXZCdENGbFZGLUNnRzU0U2VBMW8yRWpwWVI2S2NaQ0tvNk5vY01nQlllWmVDU0c1RnlzQmphTm9FNFFXQmVudVJDdXI4UWVGd0RweFpKOA?oc=5",
+      "published": "2026-10-06T01:47:27+00:00"
+    },
+    {
+      "title": "SiMa.ai and Wobot.ai Partner to Bring Reasoning-Based Video Analytics for Physical AI",
+      "source": "Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQc3dUS0VuMkdxZ2RhZHJHX0p0LWRFeWFKVUZQc245bGc3RTdBNHhma2duektVTWhzVlJ1MW1IR2xvMEFkamYxalUtRGRqVU1zSWkxeEVWS29hWUl0UUtuNm16OFhyZXZMbmFzaVYxaTQwdFZfdVNZMW9VS1Q1ZGROcUxlN211SHpGT1lPUHVTeGZjX2NGNV9lWHZtclFMalNQcUV4T1VlaDR1SlB2dzBOTmFKNzlRdzFuLXY2Z1NuTmlNdXlXaGlMdFl5RHhuT3lveV9Na2pZY3paUQ?oc=5",
+      "published": "2026-10-06T01:05:13+00:00"
+    },
+    {
+      "title": "Physical AI startups moot industry body to set data-collection standards",
+      "source": "The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTVlTaHB6alI4SHNzdWEyZmJPZG4tZGNZVkFkb1dZRGtENjk5MHFGckZCX0Nka0hramdMaFBfdW1uZFNJeE1FcEJRRkZoTkdmdHowcmhtS21wSVdrWXBrUldiSmt6NGFydTNrUmM5SVRjRmo5M0t5M24zNE1MTFBIcGNNSkR6TGVzdU44T3MyOVFGbTRROUZnLWoxUDRQTW0zSWRQMDRTTlpHQTZGMzdRc05tYlQzQzNGWXdDWlN6dzJ1TEV3RjRUanl1d1pGRV9VekllS1FEa9IB3AFBVV95cUxQSlZSZGd0WXNITXZ3czJVVjVGNDRXX0VDWTRKY2ItSzBwTW9fbHRNZHgtVXgtRl9aaVl4N0dKRWhiV1dLM1JGU2xTNjcyQUJkeTZ0cDY3V1dtVXBRQWhnWHgtTkRHNUd3MTl4WFNSMkNLM0xSaUJqMXJoWGdtbTR4Wl9ibUNoSjdGd1l0QUcxT3VTSXV5UGNEenBFam9Oa0ZzaUVXcHpGV191TWNCUEJPS2ZPcXJBbHlNSURMbFdIM2ZxcEh0Y3pPU3FEU25LY29US0ExSDdFbUZPd0tw?oc=5",
+      "published": "2026-10-06T00:30:00+00:00"
+    },
+    {
+      "title": "Venture Investments In Deep-Tech And Physical AI – Seed To Exit",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR0R6dmhoal9OSzJJZHhtSzk0T1RQc0dtbVRTTjR3Z0pITzhBVE9yWm5hUkZlVWYxbWZzcVVlM1RYQmhQODk5ZUdOR0p0Y19OMWdyekhhTzF0MU9wLTlJZTVWVFBOMjk5ZkxzWlljU3J5X3drRS1VZmwxYUVkSDR1aHVjeHlVN0Rmd1pYNWxPMEotNjB6RFdVZklSdEdFeEpwcG04YUg2OE1Tek1MbXdLWHExbnlHdUFsenc?oc=5",
+      "published": "2026-10-05T23:15:16+00:00"
+    },
+    {
+      "title": "South Korea's AI Budget Hits ₩9.4 Trillion Era, but Physical AI Remains Under 5% in 'Imbalance'",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yclNIcnRxVGRpeUpvNDB0bXNiajA3MFE2Vk1BMVg5VkwwNjdJLTRxb0tTaWNRZkZZUGt6ZWRHUkVVbG5zUVFvbUEtZnVSZjhXZ3QwYWxYMzI0LVJyeWZ2aV9uRDRuSS14cVFienRHdkR3OVF3NGc?oc=5",
+      "published": "2026-10-05T22:35:00+00:00"
+    },
+    {
+      "title": "NVIDIA Finalist WIM Targets the Gap Between AI Decisions and Robot Motion",
+      "source": "KoreaTechDesk",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBTSkdtVlhFNjRKakdXcktCUGhheUkzRmVYQ1JzaFFMdjN4REFOUTVZVzJpU1dBb00zMk5uSEloaGsyMUZsSXVVWlJsa1pJOGdaSzRJSUhwQlJ6MDk3clN5N252WWZLZy1YM0UyWTBIOENnd29HQnpLdkZEYw?oc=5",
+      "published": "2026-10-05T21:49:14+00:00"
+    },
+    {
+      "title": "SafeWorld Emerges from Stealth with $12.2M to Build the Safety Testing Layer for the Physical AI Era",
+      "source": "citybiz",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVHduOGJ0amhpY0F5QUhOdEdCZ3JIWTREVUJfblRhbXpwRENHcm11bXFKS0tSS0RmZlJDTmpTRDJMMnY2TUJwalEyLURzeV9zblE2cjVxdDNzNU9QVDdoOWFZUDk2RUNYVVIzcDBrUXhISWFtWDc1TmFBenQwTWNkTTZORko0aTBvMEV3UTJBUHJESGd1ajVkLTFWSE9ZU1ZZaFQ2b2NmV05yX21sV0F0MlVXWExKSklwRkF1aWt2YS1mWlJUYnZhSXhJSzFGeklUY3BCZw?oc=5",
+      "published": "2026-10-05T21:14:05+00:00"
+    },
+    {
+      "title": "Morgan Stanley Says Buy the Dip in Two AI Stocks",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMnUtS19QNkFMZFQwLTVxbWIzTTFtUmozdzFWY05oUktGS1pLWjByNW1BRDhyaGpWeF84bFZROGZ3MEF2ZnhUc3lWSkJrR29uUUNTUzQ4ZjFydjhxeEZvTldQbURleE5WaTlHTHBwbWdicm1YdzdmSWJYeXVlT0swQ3B0Sm1QZmhocGJTVWVFTkJNSFdLU2tSbkxibmh0WHdLLTJhQ1pzdnlQTVlM?oc=5",
+      "published": "2026-10-05T19:35:46+00:00"
+    },
+    {
+      "title": "The Million-Dollar Question: What Is Physical AI Going To Do?",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQXJJSTZTRFZwVFRsNThjYzVTRnRjb0dwQUxyM0xHTTBVZndNYkVxa2ZlTTJRbS1HY29KZUpISW5JeXFzVFF5N2g4WkQ4YzZXUXFUMlVyUkUzYjVlaTZNaGZoenQzM1JtZzVTZnpiUDZUZjlCNlFoU0FrZU9hbVVVbnRQWGhqaTlIdVZZZnh4cmNjZXJyUnlXOUhSbWNzWTY4bWp1VE9OUjY4VTJjajl5Tw?oc=5",
+      "published": "2026-10-05T19:32:48+00:00"
+    },
+    {
+      "title": "Why Cybersecurity Is the Most Overlooked AI Beneficiary",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdzhobHo0SFJxVkFQS0JNbVNRQzFFQi1rT2xPZnhOampEX0c4Qkw5VlhKSmtKYTk2aC1EQnlDNG16QmpPdkNsTmFVYjczYl9PVGFUT1MwdkhpLUlmb0ZlRjQ4MTVwYVlkb2dyclVRQ0hNLVNkU1lIVHVCN3FPcmFfYmN5Qlp5dC1WekE4djVEbzdQYjRxUlNFQTFQS2c4MUJsaUtyaXo4a0NyaE1IUnczYW92STVndExGcHhkYU1WQ0x5UE8xVlBNYVB0dHdYS0tMT0pYdWtuaw?oc=5",
+      "published": "2026-10-05T18:14:45+00:00"
+    },
+    {
+      "title": "AI moves into the physical world as insurance leaders gather to tackle emerging risks",
+      "source": "Intelligent Insurer",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNS3VVdnp4a3V2TmJpMF9mVm93WXZDSldXbUE5UmJvWTJncllLbzZCQlhEdndVSzBNamlJa0FLTkg5NmRBQV9POHY1YllJMHpDUXpha3BmckZra2xCUnQ1cGVsaTdMaGtJa2FIVEpmdktxS3pGVUk3d0lfb2RyRS1ISUxvV3ZveVpwX2tqUnU3LWxpN01KLTRaaV8zRDdzWllab29vc20wejZMZjJnaHNpa3JFWFRYYzhZMFc0cA?oc=5",
+      "published": "2026-10-05T18:11:37+00:00"
+    },
+    {
+      "title": "AMD Stock: The $8 Billion Bet That Could Redefine Its AI Strategy (NASDAQ:AMD)",
+      "source": "Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTjgzODlrWDhrWV9ZeTJ2bGlsVlQ3MUJ4aEhFSzN3UnNRWnZaZDhITkE4TlNVSzBUSHpYM2NMVk5hZXNwS2dScFIta25vTWlQa0duQ2tucVB1U3RkWmRHbFdhR3R4V2VsNk5WMkVzUWZZOE93UkVQaW5JQUpFTjQyTkV0eVRXNHZ1TnVWSzVENHh1SDVJRVV2NzFjQU1QYUNucGc?oc=5",
+      "published": "2026-10-05T18:11:09+00:00"
+    },
+    {
+      "title": "Why Cybersecurity Is the Most Overlooked AI Beneficiary",
+      "source": "AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZ2hDNHluQkU1UHNLb2hlYzRCUm5iRHJmbDdPdnR6SlJVOFA3amxuREJoZGdldnlkc1F0NEkwN1NNX0JGRVJPcDlFR25ZYy1PRVNhMmdmOWhzdXhiWmJvV2RGU3JmMV9mVFYxWWJ2U1VxRmlRUWlVMXk3MHp0Z1I5NlVxUFlfTzA?oc=5",
+      "published": "2026-10-05T18:05:00+00:00"
+    },
+    {
+      "title": "The A.I. Boom Is Creating a New Market for the Physical Economy",
+      "source": "Observer",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWOGZsV1pMUkJQdjBEbldLdlV5T1BkQ2pSUHhvb041SUxucjlrMEt6MDUtcUFQZG44OXd0ZlBCamVqOWw3b3duUEY5OFVoU1ZIdmxTT1phU3Y5eXEyXzdqdDhXem1qZFJBMTVRWWVyX0N5Xy1rT2dUa1h3?oc=5",
+      "published": "2026-10-05T17:31:35+00:00"
+    },
+    {
+      "title": "Agility Robotics CEO Peggy Johnson Joins DOW-Commissioned Project Meridian",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYTRqd2JoNHhhcGRPVlVQeVk2ZGdLMFVwMTFRVTE5Zm1uOFlJVmVoc3NyNnpNNU5JdmoxRDNRdDQ1MG9iLW9FbkJMMWdFR3dmY29lZ1VnZkE0QUhSV21zQ3JGTmgtQ2xTVkVnZ0xha3p4d09LZlBhYjYtN01WN1B1R1U3aDBDZ3dNYlY5Y1F3VGFaYjlZaDVBckVyeDkxNXNCb0V3VGMyT2F3WTkzdEJ6NHJ3?oc=5",
+      "published": "2026-10-05T17:25:57+00:00"
+    },
+    {
+      "title": "Armadin Hits $2.5B+ Valuation With $255.5M Series B for AI Hacker Agent Swarms",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc1FHc0lKRkR5N2pFN2VQTU9IU2NfbkRqazF2UHBaN1BwSTF6RE1Xdmw3c3BGRG9lLVhZV1FkVDFsM3JBeDFIbC1KcUFsY2w3dWJQUWNpSllKRThNOVNLX3JGZk85aXhCM1JKNTU0QmEzVjhObUFEUWNNZUVILVJ0WmF6clMyWHhELTF5YTU4V0pUWVNsMTZQUThfY1ZGa2NGTVIyV09vZlNWNEpFOGNTSFdYaw?oc=5",
+      "published": "2026-10-05T16:38:44+00:00"
+    },
+    {
+      "title": "Deepen Refinery Adds ROVR’s 90,000+ Hours of Multimodal Driving Data to Its Physical AI Data Marketplace",
+      "source": "EIN News",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNenpSM012QUc2QzFCY3ZMb1gyQ1c4QkQzank3dl9rWDVBUlNPaUJoYWdJc2pBaW5BLXZubjgxLW1KWWVjOTRsZ1BwSGNjdGF2ZXVBbWlqY0RTWUIyd0dIZWtySkdKUnF2N2NMdVdUQ3NoMi1IdWxBWjRjMlNfN2FwU3c5eUhYU09XSnktbnNrSWU4SnFTTHdVRnY0UDhTRC1jSHpIWkpjRmh3OU0tRENwbUFUWkVVbS1jX1BGNS1Hdm1NcVJPRHBCQXZNR09CMDJMbTM0OVZDTloxZXJjcnc?oc=5",
+      "published": "2026-10-05T16:00:00+00:00"
+    },
+    {
+      "title": "Google Bets on Gemini 4 Argon for Cyber Defense as AI Submissions Force Bug Bounty Pause",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbWtzRnJVWUdoMDdfNjBBcHhEamxLYXB1R3oyRWRIaFFlZlQwUnpidnJqXzg3VG1QZUVSRnhIZHgtSURqMGpwdG5lSmRvQl92MkZXeVhwR2MtWml1UjBnYjZhdTdobVpPalgzWHNxVng4S29ranhPdHg2UkJ4OWtYUW0zLS1ubW1jczhFQk13NU82dmtFYUtfVVJMeUtyT1F0cmY5bWR6ZmpRaHhGVmZxWXlPeEU0VUxtd2ZWUHN4Q0dYOEVF?oc=5",
+      "published": "2026-10-05T15:54:22+00:00"
+    },
+    {
+      "title": "AI on the shop floor: Manufacturing’s physical AI moment",
+      "source": "Manufacturing Dive",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQnp5SENpaW1MSlhvU3VfVWJ3ZVFWTXB4MHVfX0VCSDFDeGp6UGpKVU9seW5qLWFuWmhOUzRyd2ZjbWptekdxU3Y3NzItVERKRGNqbklkMUFBOUFOZW5rRDRVUzlwVmdUQk5CeFBMNVZFaU9IZFA3ajI2RTdqaTNUV3d0NWZIT2F0Wmw3Rzh3LXVsdlB0Qmh6c0ZDOWhrektrRnB6WA?oc=5",
+      "published": "2026-10-05T15:17:46+00:00"
+    },
+    {
+      "title": "Schneider to buy software designer PTC for $22.6B in cash",
+      "source": "Fierce Sensors",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWmQzdENRU0dhNnlEZ0NObVd1eXRzWFFpTTJmU3NodlhqMnVHT29OSmVEaVNaU0xtYnZnUmIzQ1BmVlp2OWZld0xIV3Z0ZXNwckcxeW5TODN6S1hJNUZBM3dsNmRwQWhmYjRfd2tpbFh3TlpQdzJmbkZlbTBaNTdwVk1vaGFFY0JxbTRTb3hGRkE?oc=5",
+      "published": "2026-10-05T13:33:47+00:00"
+    },
+    {
+      "title": "Serve Robotics to Host One-on-One Investor Meetings at Evercore ISI Automation Tech & Physical AI Conference",
+      "source": "Quiver Quantitative",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdElyRmExRGdIanRvdTFuc0t1b0lWbnJpY2VUREU0aHBLaHgxZUttZFB2cS00a1NGYmFFTGhXRkVLZlhXanNoMzVEdll3Q2E0ekpDLWx1U3FkY2t3Y3hJQXhjVjJsaWtmNzdUeGFfZFBfNnl6NlN4OTh1cEdiSXcwWG9TWTBSZmswN1dsaDRrbEV3ZmdCVkh1OG1pNlhKTDVCTGxVdEItMmdlMmc4OHRwYWJkd0o2THJHVl95SGdwbEFyZVR0YWdvRzIxOThFTi1jX053RjN6OUh5LW8?oc=5",
+      "published": "2026-10-05T13:30:00+00:00"
+    },
+    {
+      "title": "Physical AI could be an opportunity for Armenia: What the new wave of artificial intelligence could bring to the country",
+      "source": "NEWS.am TECH",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB1RkxuVEpQS1B3Tm11eExub1Z1RmFia0FJcFUyRjhpdGpHNG8zZmUyRGVhRnMzRS1NYzhpWXlTTkVzUTBPUUlteA?oc=5",
+      "published": "2026-10-05T13:30:00+00:00"
+    },
+    {
+      "title": "A robotics company's CEO and CFO will meet investors in New York on Oct. 7.",
+      "source": "Stock Titan",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWdsZkRIQ3FJTjlFUVFmSnZhVFlHVXlfSlMxbktNWGp6b3BWMXBtel9CYS1lZXVzaklESGh4X2tlblByWDB1WkpKelpGUERUMlZYcmRQVjBjcnVMRXdMUlExblhBdHY5X0NLMkRaRTc3SDJtYzBWVzFWYUVWaVNoWVVwZ0RXZnRSTGMzNHpWVzNvbHg4TU4wcEJUbTdISTFZQnl2UzlXS2QtLUhYaS1JTDJWUk1QMzhiWXFFbg?oc=5",
+      "published": "2026-10-05T13:26:00+00:00"
+    },
+    {
+      "title": "Siemens and TD SYNNEX embark on global partnership to accelerate I ...",
+      "source": "Siemens press",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQN2t1OUstcS1XeFBfTmFkdjloTUZDclNWbHFMVmRIM20zaGFyd1pkVy1kZ0s4YmVQdUdfZW1LcjV6aDZDRWlCa09ONjY5MS1kRlM2Y1VrSlM1bWFVY0lJSF9kWloyNFFsZHNwdndoOU1yNThXcVAtV3ZLMENiQmNJRHlGSTVpUUJteDhvNHFiRHdCVFJJWlA4SVN2bE43cWh6Snlld2RyYWtXdGlNOGJfZUdQR1VUUEVzdXI4NWlZNXVSUElvQ18w?oc=5",
+      "published": "2026-10-05T12:58:49+00:00"
+    },
+    {
+      "title": "Forward-deployed engineers help CoreWeave race the F1 clock",
+      "source": "SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdkdua0dtX3Fud2lCREpYSWlCVk1ROGVkUWY2NmJOQU9iN3NUTi04ZnZ2b3RoUjVPRUJ0YmJuaFc5b0RBREZrd0FTU1p4TmFMMlNZN3FlTURtb1A2LVRXYmNYZFZlUTMtUmRzSVlwUTNRbUVZY3RYTEdRbDU1QmRDVW1wTGlFcm96OWtXZ0E4ei1PdnJpQjRqWlkyRjctek5TUnQ1NndTNGJ0MXM?oc=5",
+      "published": "2026-10-05T12:58:00+00:00"
+    },
+    {
+      "title": "Data centers to factory floors: Walden robots learn on the job",
+      "source": "SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXc4ZHA1LUVmUWh1V213b1ZlZ1ozZ0hKMHZqb3dEQ0REWVoxTXJyZUZFaTkwbnhTOUxTcndxRHRXX2FLcHlMekZvQzlkV01yWTltdFE5UjVtR1cwQmNzVUNHV0tOdjAyd1VHSk9WU29jQ3cyWUJqeEUzejNnRWpPM3dwZVRIV1BqaDRfYl9McWpOQ3VoOHZLM05SSTR2ai14ZWxjYkJ3?oc=5",
+      "published": "2026-10-05T12:57:00+00:00"
+    },
+    {
+      "title": "Siemens AG - Siemens And TD SYNNEX Partner To Accelerate It/Ot Convergence And Physical Ai Adoption",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNbWVFTVpQTGtrSWhZODNoMVFJcXdOZWtpNFlfUzNPbTJ6UGRHdDdvX0xrZUt1ZldxNHRUc2VQU0o5VV8xTjk5WlJ3emREOUNyZGlYOVpWSEMxa2NENTlFUHc5R2lFZF9vUmdzM2JqUThsaENCTU5IZmc5SWVrVDRTMm4zVDNxTXRiTDV6WFhRdGpzTFNyakkzTzlBWnFwZDBXWnl4SGVOelB6UlRnd3BQem95M3k3c1hUUkNOQURmQXBxcnZwVjRpbmNzb3pHVHotZWNISGdmX3lkNXJBRV9iRG1zbUJEQVFSLUwybGhzMUFuSTR3MWJWczM3RQ?oc=5",
+      "published": "2026-10-05T12:56:45+00:00"
+    },
+    {
+      "title": "Top Arm-based innovations advancing AI infrastructure, on-device intelligence and physical AI in September 2026",
+      "source": "Arm Newsroom",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03ZmUxT0twV2ZSd1lrZE9PMzhyMEFkYlptXzRCc2MxdE1GeVZiS3JoLTZ0MlVOZV8wbDZidi1GSXc2V2VIZFNVVHJpWThDNUF1c0NyQVpqeFVLTHNtcTNSLW5MS1Qxc2tfbFJYWWZISkRKYWRINVFacFBpZm5sQQ?oc=5",
+      "published": "2026-10-05T12:54:26+00:00"
+    },
+    {
+      "title": "RobCo Highlights Unicorn Valuation and Focus on Physical AI Robotics",
+      "source": "TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNLTFhcnllVVc0dWVmSjZpdDBOY3ZNc1dxYXY1b0UxMkE1M0JXVnlrSUNzR0I0SnV3TlNCUG42bmZPejU3bnhDZjdiaHZoWFQ2UTJhZDZWLS1BdUJrV2NkSGZxU1ozcUxhajBhYkc5QjdHc0xURG5Obm5nLVQyOUthYnRlaFhfcEZQeTlNNlVXWGhtR3dyMGY2aFhVaDhpWUc2dms5MWtILTFCQmZCTThDOFU0eEtfUVE?oc=5",
+      "published": "2026-10-05T12:41:49+00:00"
+    },
+    {
+      "title": "The Week Ahead in AI: Trump Appoints AI Czar, Forms 'Super Intelligence Force', Musk to Rename SpaceXAI, Report of New Open Model, Plus Earnings & Events",
+      "source": "AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOYWdPeE5VOFg5RUNhNDhoQ3NsdDhCWVBCT2VxQXl4VWFPQmcydzlnS3JZZldhNWZHeVY2dUk3YUE4Z1FLQUh2NjJxLUxucFM4dDRWV05RZlZfVl9ydzNQSGkyZk4zTC05YXJmTWFodmpBN1FRbkFkZlB0b1ZfdklieVRJRndpdThIOV94OC1RRFphb3YxNWJ6TlpWVzYzYXEteEJUeUozb2ZxX1RWSTZtYWNraklIMTY3RFdIaFVMMi01Rl9DVDdMeDE0dWk2S1JLZkNmZTRNY3FUaW1lQmRqNFdzS05qSUhqNlR4cExsZVpmSVpSOF91STZreXk4aFRkYUlZLUUtR3YwNHRTdlNr?oc=5",
+      "published": "2026-10-05T12:00:00+00:00"
+    },
+    {
+      "title": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up",
+      "source": "Crunchbase News",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNkYwT0pLV0YtR3VHZ2lYX0ROa3B2N2V4Y09JZVVORkt2Q3dyRDhHY0dfOUZia2ptZWZraXRkQmxmTTFCQ1VhVkxHWllvNGpUZzg1UThKd3FVZ0JjVWItcXM3aC1uVURkWmJDdGZFTFZjcTJjWUFqRXdBdWVINzRmbjU1a1BmdFZuTVE5NHI1QVJKZnJRcDNjd3d1NFIxR3FNR1JlajNR?oc=5",
+      "published": "2026-10-05T11:00:13+00:00"
+    },
+    {
+      "title": "From Machines to Infrastructure: Agriculture's Shift to Physical AI",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNTlGSkh6Tk5kNXBabXpINGdocXU4VUd6Ym1lUk9rT3BVN2xHaDBCYnNWUktCU1RORFVKWGVXS2pUODBoTEQwdHZ1Y2g0QkF2Ui1Ic3lnQlVVWm9obnJNZ2thTWNtd05lU1RmVHAxU01yNzNBaWU2WTJmV1ByTkRYUTB3VlNVOW9wQjM2ZE1MUjFldG1CMjVKRW1WQlBNeUxYVGdQLUhFTllJQUZQbnp3RlJUQlNuQQ?oc=5",
+      "published": "2026-10-05T11:00:00+00:00"
+    },
+    {
+      "title": "Solinftec Calls for Agriculture to Shift Toward Physical AI Infrastructure Following Solix Expansion",
+      "source": "Fortune",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbUllZjV5U25nWFFuLWJwbS1NUjl0MUh3WUFydnFfLWZoNVVieERqcDgtMGpGZ0tlMnFVc1BXSnNwUTZGV2pGcExWb3htcFZxLTdqaUZBRW55VHFmc2dxelFWeGpleWRrdWdhc1h2by1RWHhnNklXbW1lb2N2U1VWZ2hZMERsYVVKbUI0YVNPOWZQUV9KbDIzMzRYdDNiSmZoWjVWTEZTWHJNdw?oc=5",
+      "published": "2026-10-05T11:00:00+00:00"
+    },
+    {
+      "title": "A chatbot can make a mistake, and a robot can break something: Why Physical AI turned out to be far more complex than conventional AI? Discussion at Armenia Engineering Week 2026",
+      "source": "NEWS.am TECH",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1OWUUzXzJMQmdjQUwzUmdTSDFSN2ZmTTJMQUROSUU3ejdCWldodDRIc0ZhTUx2MTliZjZrcm1SbmtEdHV4S3ZGZw?oc=5",
+      "published": "2026-10-05T11:00:00+00:00"
+    },
+    {
+      "title": "RobCo passes $1 billion valuation as investors pile into physical AI",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5HaUJDTS1LeG5CM0pNNksxZ2ZzV3lXVElnT19odVU1Z3dGazcyUVZvWlhDMzNGQ0E1SmNWRkt3WlVHV2lqbjJ1ZjBJRy1rM0UzSHJDLUtpbEk1WFhNc2ZuVDhrSzFzN2Q2UngwZGM0Y0M?oc=5",
+      "published": "2026-10-05T10:43:06+00:00"
+    },
+    {
+      "title": "Omdia identifies four forces set to reshape technology in 2027",
+      "source": "Technology For You",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdmRDaURIc0tWNTVJS3dJWmF2aWRjZFI4TU05YTlzY0FMR0VPZXpidlR4Yl9mTHN6STRXeVlnaGQtM1ZWdTNJUTB6QlVjd0lNLUxOTjRITVF4T1dRSFBsTEJVZGFpd2cyeEVUbG1vMnVVcy1DLUlfLVF1VElGbW13aFFyUVpzUm1SZ1M1ZFpEQmppNkF1QXBfblZqbDQ?oc=5",
+      "published": "2026-10-05T09:30:46+00:00"
+    },
+    {
+      "title": "Tata Elxsi uses physical AI across cars, healthcare and manufacturing",
+      "source": "NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTnJOSUhiT2JMM2cybXdfZ0g1Ul96UVp4bFJYZkU2bmZxdGNiYXFCUUNMSmFIWTVIWVJSYzRmekRURjNQZlB1ckFqZnA4YjVjeEEzMnBuSGFUb090NnVNSmQ2Tll3U0N3azVESGZZYXkwakNMazNFUEJyeThBX2ZUaDJkZXBEV2VVN2JTb1prUFEwZFpaM1ExVE5UT0h3c3RLeVNrNENXTno5MGJESk9fSm8zNXBNdw?oc=5",
+      "published": "2026-10-05T09:29:55+00:00"
+    },
+    {
+      "title": "Faraday Future Advances Strategic Transformation As FF EAI Robotics Moves Toward Standalone Nasdaq Platform",
+      "source": "Menafn",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTXFDdkxfYUtpdTdua2NyZ2FKWnhkLW5yU0ZiNXZtZDJkWkZlRDZpZVhXU3hBT3pJWmRac2s1MlV4Q081bnVMRTRUX3NaMF9jbGtDTklVQk5CdnZUR3ZsdEp2eFJ5TGZyTDJkd0lGQVg5VW9WWnkwUkZnZEVLdzZpTWtFa3BHQ3pYY0xkcHZZNDd6MUxQSTNDSlFiWE5KN01LNzRvS1FoZ0tmamlpMEw0SGtwTnRUUW5nN0JPbmEyWWd6VlVaeHN5MFZnZ0tZSUkyUVBr?oc=5",
+      "published": "2026-10-05T09:02:59+00:00"
+    },
+    {
+      "title": "Aeris extends IoT eSIM orchestration for the Physical AI era",
+      "source": "IoT Now",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRWNJZENPSmtCOEtnYUN0MlhNVXR1QlNnNFNSeEVtelBqX05iN0lxM2hydGVxb1hKQm15eVRtYWRyWXpqU2JRNzYzWE54NlVfV2tuc2tyNEpvbEk3WXVBakw1ajRDbl93bV9qdWUyeDZ1WmJkdG0tZUpCRFRmRDFGNHRTbW9nQTgzdkJmUHpR?oc=5",
+      "published": "2026-10-05T08:56:35+00:00"
+    },
+    {
+      "title": "CoreWeave launches field engineering service to build physical AI on customer data",
+      "source": "news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQR296WHppclUwWE81MUprS2hJRFFNSERyMmRYNzdmTGxQNzBCWURSOUtfRWJsdElHMHZLVHY4RXlYdTduTHYwQ0FQTm5qODNqWFotVERjcnd4N2lyQXZ4RjFUaExTMmxCUUROWTBfOGFaMnpSWEJwOTQ5OFNxY2pXa0lqLVpCeU55SjkzV2F3MDVyNXpNUVZVbmJKeTNwaW8tUC1yZFdFMGdHa1h1ZVlQNw?oc=5",
+      "published": "2026-10-05T08:48:25+00:00"
+    },
+    {
+      "title": "Behind China’s “Physical AI Rise”: Chinese Automakers Bet 43 Trillion Won",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9nc0VyQkpTSUxZdVJ6TGpQNUZOU05YeF9GX2k5aGxBVGR5YzNhR1BVZXNaSDVCb0JTb1pwdXdlbjhqajEwa3hoc2ZPSEhrZnkwTkNR?oc=5",
+      "published": "2026-10-05T08:34:41+00:00"
+    },
+    {
+      "title": "Physical AI is happening now, but the frontier remains wide, says Tata Elxsi",
+      "source": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPLXAxMzQ3SHNsWmRhbGNHWXdCb3pfeGwxLWJxU0JmYm1NQlE1eHJYN1l4elphVXl6TVJ3OWthdm5MVTlGeVdCd1JqLVRod2Fkd1h2empNeG5fdlZuZ3BZV2NpMzFHMnM5Y3hwdS00TENXUVNhMmYxRlo4cVpfS2dVUWg0MExMTFdheUl4Zm1MYzRxeWI2Y2FFMGl2Ml9CXzRUS0lSTEhhTlg0MGtBNW82dWNacDByV0RfN25pLXpWRW5CV3UwLTRVOEhjZTdZeTNndnfSAdcBQVVfeXFMTkpMMWJ4Tld3VjRDdF9mX1NGRE1vMGM3dFY1OS04dUFGSllrbEt0QzRVRGtWcXF0RG1aS3R1WTZrTlFlX040QnJlUFEzOTZnMHVCNmQyUlVFeHZTZ2N5Z2xCbjF1NEljd3BoUUJMVVJESnhlcXp3Szg0SWNzR29ZT1NESjlQLW9hNXdkeWFBYUJJU0g4d2w5XzJvODJ4LW9QMHhuNU1ySWJSVWh6bXl3UmRleGlXUUI1a2tVaXplR25FNXJmRmdUckFuWWxURDNJN29tTGJuU0k?oc=5",
+      "published": "2026-10-05T08:32:27+00:00"
+    },
+    {
+      "title": "Faraday Future advances strategic transformation as FF EAI Robotics moves toward standalone Nasdaq platform",
+      "source": "Zawya",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOUG4tSlJ3dVctdmFnaHdXTmpiNXRpSVNjV2RnS3ZMSGp4cWk5SXNDTHRfLVdoVlByOUUtWU9wYVZBMWlHNnVJaElISENvbXhhRXJ1VVEza3Mzd0xPY2VRRzBxczdSOTFDUnpTX0NIM3ZGSkcxM09feXppXzZFYk0tNy0tdWZQWWQyWldOY2p6QUw0N2RhYV9UWExnRXhIRW1SOVcwa0hKdndUdGJSeHFRU2RTTVRZME01bHBIWUdPRlNXSEZnN0RFOVBVUmtjTlFtTnJ2YWctZXl5dUJabGxWNklWZHNVUWRwUmNLakMwRzI2NTg4VWhBLVdoRXpxZw?oc=5",
+      "published": "2026-10-05T08:30:00+00:00"
+    },
+    {
+      "title": "AI learns to predict what scientists don’t understand: How is machine learning changing science and medicine? Artem Oganov explains",
+      "source": "NEWS.am TECH",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9nZVQ5VmFjd0pZdDJKaVQ2T1M2d05HM3BJLVplZldvRl9RNWJOR3AxQ2FlQzB3SmNFWlJ6czY4X3ZtdkZERjV5WA?oc=5",
+      "published": "2026-10-05T08:30:00+00:00"
+    },
+    {
+      "title": "Building the physical AI stack: Ecosystems that scale",
+      "source": "EY",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbG9SUnZ0ZWJhUWRCaDFmbTJsRlc2ek9KQnVTYnFSblZka0hFTmdWYmdjMWJuV3U1ekRuanE1Q01ydUxTNk9OTS1hV2FuYUtfZkEtbnpGcWROQ2xqeGZGcExVZnZ3VWZuTllpRmRZRGhFM3BUWTdlUnBVVVJ5SUVNakNXOGk3aV9rSC1yay1nOFFleFBNc2R2V0ljZnphTVBYTU9sWUxEZmJ2R0VfQkVF?oc=5",
+      "published": "2026-10-05T08:22:09+00:00"
+    },
+    {
+      "title": "Trump renames AI as “super intelligence”: Experts say new safety pact changes almost nothing",
+      "source": "NEWS.am TECH",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12NjYzN2hPcFBpbU81Z0UzVzM1OEVXekw3SEFWdFMxZW5sd1JHLXZ5cEExU1lUUzN4Y0V2QzE3RndxamJZN2dYdQ?oc=5",
+      "published": "2026-10-05T06:48:27+00:00"
+    },
+    {
+      "title": "South Korea's AI Festa 26 Opens Tomorrow at COEX, Showcasing Agents, Robots, and Semiconductors",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VMVpCZm9GTnM0MW1DS0w4cGVKNmdIRnpMM3dSS2dwX0htSnpOSkJZbHlhb1F6VmM0TW5sNFpabENfa1ZRMXYxaXBjWXFzNHJGMU1YaUdMaFcydEMzWGs2dUlTM1V3SWFBTDlQOTIwUmMySlluanc?oc=5",
+      "published": "2026-10-05T02:55:00+00:00"
+    },
+    {
+      "title": "Inside the AI Factory. Physical Stack Powering the Future #ai #video #youtubeshorts #stockmarket",
+      "source": "YouTube",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CR3h3MGFWMHktS19VUEViLTJ1MFhEanpMTUozcDd2VVJ6VVE1cWRLSHRSWXdCaDFmc0R5dXpGRzNxQWpBRkJHWGFlVHFrYjV1dmtMMGltdFphbWF2?oc=5",
+      "published": "2026-10-04T18:56:17+00:00"
+    },
+    {
+      "title": "AMD Buys World Labs for $8.2 Billion to Expand Physical AI",
+      "source": "Techiexpert.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObWptcTVNVEhsbXpEWk5OSkRkcFJaS0VEYngyNE9ianRUZ19KVk5EQ3ZEUl9NbHpIdWNsUzFmcG1DS3FRMjdHWUg4UzBhUEhULVktSi13am9xU051M3oxajZUc3o3N0hUT2xHMXl5MmtSV2t5TGRuVFlHb2lsbVZUOEd5TGNGTWFUZ3c?oc=5",
+      "published": "2026-10-04T18:54:45+00:00"
+    },
+    {
+      "title": "How robotics and physical AI can responsibly tackle key physical security challenges",
+      "source": "The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQR00wR01SRVJCWDhiZG40MlRFdld5dXY2cV9SNkRQRTlZbG9YbGpkMFVXZ25BNE5rN3RwdnBLUlNjNDNScjB6bGI4MFo0cUxMVlAzSDJGYVppRjFibUpEVjNGeU1CYlF4c2pTSlYwZnNkNFlqaExmN2ZEdF91Ym9tM0ljYnVHRGM3UVg4MS1nWUlEM3dTcTk0d1hEaVh3c2xCbnMxNnQ3REVBM0Y1MTQ3dVRB?oc=5",
+      "published": "2026-10-04T18:16:42+00:00"
+    }
+  ],
+  "google_trends_matches": []
+}

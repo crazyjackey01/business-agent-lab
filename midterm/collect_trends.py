@@ -106,7 +106,7 @@ def save_snapshot(snapshot):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser = argparse.ArgumentParser(description="Collect what people are searching for right now.")
     parser.add_argument("--geo", default="KR", help="Google Trends country code (KR, US, JP, ...)")
     parser.add_argument("--wiki", default="ko", help="Wikipedia language code (ko, en, ja, ...)")
     args = parser.parse_args()
