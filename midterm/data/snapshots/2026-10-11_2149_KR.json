@@ -1,0 +1,324 @@
+{
+  "collected_at": "2026-10-11T12:49:59+00:00",
+  "geo": "KR",
+  "wiki": "ko",
+  "wiki_day": "2026-10-10",
+  "google_trends": [
+    {
+      "term": "주가",
+      "traffic": 10000,
+      "traffic_text": "10000+",
+      "started": "Sun, 11 Oct 2026 04:30:00 -0700",
+      "news": [
+        {
+          "title": "삼성전자, 100조 벌고도 주가는 4.7% ↓…증권가 \"최고 63만원\"",
+          "url": "https://www.segye.com/newsView/20261010507308",
+          "source": "세계일보"
+        },
+        {
+          "title": "107조 역대급 영업익 삼성전자… 외국인 지분율은 금융위기 수준",
+          "url": "https://www.kyeongin.com/article/1772293",
+          "source": "경인일보"
+        },
+        {
+          "title": "삼성전자 영업이익 107조 실적에도 증시 '찬바람'",
+          "url": "http://incheonilbo.com/news/articleView.html?idxno=1333821",
+          "source": "인천일보"
+        }
+      ]
+    },
+    {
+      "term": "부부",
+      "traffic": 2000,
+      "traffic_text": "2000+",
+      "started": "Sun, 11 Oct 2026 04:10:00 -0700",
+      "news": [
+        {
+          "title": "\"부모 지원받은 신혼부부, 자가 거주 가능성 10% 높아\"",
+          "url": "https://www.newsis.com/view/NISX20261008_0003818586",
+          "source": "뉴시스"
+        },
+        {
+          "title": "보금자리론 풀어도 ‘6억원 벽’…신혼부부 내 집 마련 막막",
+          "url": "https://www.metroseoul.co.kr/article/20261011500024",
+          "source": "메트로신문"
+        },
+        {
+          "title": "[부동산 트렌드] 맞벌이해도 서울 집 멀어졌다…내 집 마련의 가혹한 현실",
+          "url": "http://www.sisacast.kr/news/articleView.html?idxno=100873",
+          "source": "시사캐스트"
+        }
+      ]
+    },
+    {
+      "term": "배추",
+      "traffic": 500,
+      "traffic_text": "500+",
+      "started": "Sun, 11 Oct 2026 04:40:00 -0700",
+      "news": [
+        {
+          "title": "농관원, 김장철 앞두고 배추·무 등 농산물 안전성 집중조사",
+          "url": "https://www.yna.co.kr/view/AKR20261009025200030",
+          "source": "연합뉴스"
+        },
+        {
+          "title": "농관원, 김장철 앞두고 배추·무 등 잔류농약 집중 검사…부적합 출하 차단",
+          "url": "https://www.kyeonggi.com/article/20261011580085",
+          "source": "경기일보"
+        },
+        {
+          "title": "김장철 다가온다…11월 30일까지 배추·무 등 잔류농약 조사",
+          "url": "https://www.news1.kr/economy/agri-food/6315643",
+          "source": "뉴스1"
+        }
+      ]
+    },
+    {
+      "term": "김정은",
+      "traffic": 500,
+      "traffic_text": "500+",
+      "started": "Sun, 11 Oct 2026 04:20:00 -0700",
+      "news": [
+        {
+          "title": "北, 당 창건 81주년 차분히 기념…김정은, 주애와 경축공연 관람(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20261011005951504",
+          "source": "연합뉴스"
+        },
+        {
+          "title": "북, ‘열병식 없이’ 노동당 창건 81주년 기념",
+          "url": "https://news.kbs.co.kr/news/view.do?ncd=8682493",
+          "source": "KBS 뉴스"
+        },
+        {
+          "title": "색깔로 튀는 北 주애, 검은 인파 속 흰색 정장 눈길",
+          "url": "https://www.nocutnews.co.kr/news/6589575",
+          "source": "노컷뉴스"
+        }
+      ]
+    },
+    {
+      "term": "손웅정",
+      "traffic": 200,
+      "traffic_text": "200+",
+      "started": "Sun, 11 Oct 2026 04:40:00 -0700",
+      "news": [
+        {
+          "title": "손흥민 父 손웅정, 신인 아이돌 직접 훈련…이 조합은 무슨 일?",
+          "url": "https://sports.donga.com/ent/article/all/20261011/134818518/1",
+          "source": "스포츠동아"
+        },
+        {
+          "title": "손흥민 父 손웅정 감독, WAYF BOYS(웨이프 보이즈)에 전한 ‘월드클래스’의 조건은?",
+          "url": "https://sports.khan.co.kr/article/202610111159003",
+          "source": "스포츠경향"
+        },
+        {
+          "title": "웨이프 보이즈, 손웅정 감독과 케미 \"월클 비결은 기본과 꾸준함\"",
+          "url": "https://m.enter.etoday.co.kr/view/news_view.php?varAtcId=303521",
+          "source": "비즈엔터"
+        }
+      ]
+    },
+    {
+      "term": "김포시",
+      "traffic": 200,
+      "traffic_text": "200+",
+      "started": "Sun, 11 Oct 2026 04:30:00 -0700",
+      "news": []
+    },
+    {
+      "term": "오만 만",
+      "traffic": 200,
+      "traffic_text": "200+",
+      "started": "Sun, 11 Oct 2026 04:20:00 -0700",
+      "news": [
+        {
+          "title": "미군, 오만만서 대이란 해상봉쇄 돌파 시도 상선 타격",
+          "url": "https://www.yna.co.kr/view/AKR20261011029100009",
+          "source": "연합뉴스"
+        },
+        {
+          "title": "미군, 오만만서 對이란 해상 봉쇄 돌파 시도 상선 공격 - 조선비즈",
+          "url": "https://biz.chosun.com/international/international_general/2026/10/11/47ERJ7BCGRG4NBJWG4CWASZWEI/",
+          "source": "Chosunbiz"
+        },
+        {
+          "title": "美 \"오만만서 이란 해상봉쇄 돌파하려던 화물선 타격해 무력화\"",
+          "url": "https://www.news1.kr/world/middleeast-africa/6315978",
+          "source": "뉴스1"
+        }
+      ]
+    },
+    {
+      "term": "아동 학대",
+      "traffic": 100,
+      "traffic_text": "100+",
+      "started": "Sun, 11 Oct 2026 04:40:00 -0700",
+      "news": [
+        {
+          "title": "초등학생에 “공부 못한다” 수차례 말한 교사, 벌금형 확정",
+          "url": "https://www.joongang.co.kr/article/25468642",
+          "source": "중앙일보"
+        },
+        {
+          "title": "9살 여아에 공부 못한다며 또래 앞에서 “바보냐”…교사 ‘아동학대’ 유죄",
+          "url": "https://www.munhwa.com/article/11622640",
+          "source": "문화일보"
+        },
+        {
+          "title": "\"공부 왜 그렇게 못해\"…교실서 9살 몰아세운 담임 결국",
+          "url": "https://www.hankyung.com/article/2026101139127",
+          "source": "한국경제"
+        }
+      ]
+    },
+    {
+      "term": "놀면뭐하니 서울가요제",
+      "traffic": 100,
+      "traffic_text": "100+",
+      "started": "Sun, 11 Oct 2026 04:40:00 -0700",
+      "news": [
+        {
+          "title": "'놀면 뭐하니?', 유PD와 하작가 깜짝 놀라게 할 전설 등장 예고 - 머니투데이",
+          "url": "https://www.mt.co.kr/entertainment/2026/10/10/2026101016007247021",
+          "source": "머니투데이"
+        },
+        {
+          "title": "유재석, 무명 시절 호프집 알바…\"개그맨 입사 후 일 잘 안 풀려\"",
+          "url": "https://www.newsis.com/view/NISX20261011_0003821049",
+          "source": "뉴시스"
+        },
+        {
+          "title": "'놀뭐?' '95 서울가요제, 반응 터졌다…土 예능 시청률 트리플 크라운 달성",
+          "url": "https://enews.imbc.com/News/RetrieveNewsInfo/520888",
+          "source": "iMBC 연예"
+        }
+      ]
+    },
+    {
+      "term": "sbs",
+      "traffic": 100,
+      "traffic_text": "100+",
+      "started": "Sun, 11 Oct 2026 04:20:00 -0700",
+      "news": [
+        {
+          "title": "Nationwide Rain Brings Sharp Temperature Drop by 14th",
+          "url": "https://www.chosun.com/english/national-en/2026/10/11/NWNXAKSR6BBETP335S2SLQ2N7U/",
+          "source": "조선일보"
+        },
+        {
+          "title": "Unseasonal Late-Summer Heat Reaches 30°C Today; Temperatures to Plummet After Rain Starting Day After Tomorrow",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008792097",
+          "source": "news.sbs.co.kr"
+        },
+        {
+          "title": "Clear, Mild Weather Makes Hangeul Day Ideal for Outings",
+          "url": "https://en.sedaily.com/society/2026/10/09/clear-mild-weather-makes-hangeul-day-ideal-for-outings",
+          "source": "Seoul Economic Daily"
+        }
+      ]
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "title": "문화방송",
+      "views": 13213
+    },
+    {
+      "title": "닥터X: 하얀 마피아의 시대",
+      "views": 12140
+    },
+    {
+      "title": "한국방송공사",
+      "views": 11679
+    },
+    {
+      "title": "한국교육방송공사",
+      "views": 5701
+    },
+    {
+      "title": "김지원 (배우)",
+      "views": 3341
+    },
+    {
+      "title": "휘성",
+      "views": 2957
+    },
+    {
+      "title": "육영수 저격 사건",
+      "views": 2328
+    },
+    {
+      "title": "리센느",
+      "views": 2316
+    },
+    {
+      "title": "최옥영",
+      "views": 2051
+    },
+    {
+      "title": "5·18 광주 민주화 운동",
+      "views": 1982
+    },
+    {
+      "title": "닥터-X~외과의·다이몬 미치코~",
+      "views": 1867
+    },
+    {
+      "title": "이진희 (배우)",
+      "views": 1810
+    },
+    {
+      "title": "장예원 (아나운서)",
+      "views": 1731
+    },
+    {
+      "title": "일루미나티",
+      "views": 1679
+    },
+    {
+      "title": "100일의 거짓말",
+      "views": 1547
+    },
+    {
+      "title": "박신정",
+      "views": 1419
+    },
+    {
+      "title": "인스타그램",
+      "views": 1408
+    },
+    {
+      "title": "강은철",
+      "views": 1349
+    },
+    {
+      "title": "여성 사정",
+      "views": 1267
+    },
+    {
+      "title": "박정희",
+      "views": 1250
+    },
+    {
+      "title": "코리아세일페스타",
+      "views": 1244
+    },
+    {
+      "title": "금성대군",
+      "views": 1225
+    },
+    {
+      "title": "대한민국",
+      "views": 1187
+    },
+    {
+      "title": "사랑이 온다 (드라마)",
+      "views": 1176
+    },
+    {
+      "title": "지셀르 리본느",
+      "views": 1173
+    }
+  ]
+}
