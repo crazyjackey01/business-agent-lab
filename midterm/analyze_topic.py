@@ -404,6 +404,7 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
     drivers, today_n = news_drivers(data["news"], topic)
     facts = {
         "coverage": data["news_momentum"],
+        "spam_removed": data.get("news_spam_removed", 0),
         "intent": search_intent(data["related_searches"], topic),
         "intent_method": "word lists, then the model for phrases they missed",
         "drivers": drivers,

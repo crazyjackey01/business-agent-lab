@@ -24,6 +24,13 @@ python midterm/build_dashboard.py --open                # write + open midterm/d
 python midterm/app.py                                   # local web app at localhost:8765: type any topic
 ```
 
+Cloudflare Worker (`midterm/worker/`, Node at `~/.local/node/bin`):
+
+```sh
+cd midterm/worker && npx wrangler dev      # local, reads secrets from .dev.vars (git-ignored)
+cd midterm/worker && npx wrangler deploy   # production
+```
+
 There is no test suite or linter yet.
 
 ## Notes
@@ -36,4 +43,7 @@ There is no test suite or linter yet.
   `app.py` serves the same template with `live: true`, which shows a search box that
   POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
 - Scripts import each other by module name, so run them by path (`python midterm/...`).
+- `midterm/worker/src/` is a JavaScript port of the Python pipeline (collect.js ≈
+  topic_trends + collect_trends, analyze.js ≈ analyze_topic). Keep both in sync when
+  changing the analysis logic. The worker imports `../dashboard_template.html` as text.
 - `midterm/model_api.py` is a copy of week-05's (week-05 is not committed).

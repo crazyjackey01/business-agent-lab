@@ -43,6 +43,25 @@ smart glasses, ...) and it collects fresh searches and news, measures the facts,
 shows the cited analysis (about 1-1.5 minutes per search). Korean topics are searched
 in Korea, others in the US, or pick the region. Each result is saved under `midterm/data/`.
 
+### On Cloudflare (public server)
+
+`midterm/worker/` is the same app as a Cloudflare Worker (JavaScript port of the
+pipeline, same page template). Analyses are stored in Workers KV; running a search
+needs the class password. Deploy:
+
+```sh
+cd midterm/worker
+npm install
+npx wrangler login                          # once, opens the browser
+npx wrangler kv namespace create ANALYSES   # once; put the id in wrangler.jsonc
+npx wrangler secret put OPENROUTER_API_KEY
+npx wrangler secret put SEARCH_PASSWORD
+npx wrangler deploy
+```
+
+Local test: put `OPENROUTER_API_KEY=...` and `SEARCH_PASSWORD=...` in
+`midterm/worker/.dev.vars` (git-ignored), then `npx wrangler dev`.
+
 ### Command line
 
 ```sh
@@ -88,6 +107,11 @@ Built so conclusions rest on facts, not speculation:
    nothing or nonexistent ids are dropped. Forecasts need a basis and a confidence.
 3. **Evidence check**: a second model call rates each claim against the exact
    evidence it cites. Unsupported claims are removed, "partly" ones are marked.
+
+Spam filter: gambling sites stuff unrelated keywords (토토, 카지노, betting, ...) into
+headlines to get into Google News. Those headlines are removed before counting and the
+number removed is shown. For 스마트 안경 on 2026-10-11 it was 72 of 180 results (40%),
+real-world evidence of how easily search results are gamed.
 
 Known limits: headlines only (no article bodies); English autocomplete has a long
 "other" tail; the check uses the same model, so it reduces but does not remove errors.

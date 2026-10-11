@@ -36,6 +36,10 @@ HERE = Path(__file__).resolve().parent
 TOPICS_FILE = HERE / "topics.json"
 RESULT_DIR = HERE / "data" / "topics"
 
+# Gambling spam sites stuff unrelated keywords into headlines to get into Google News.
+# Dropped unless the topic itself is about these words. The count is kept as a finding.
+SPAM_WORDS = ["토토", "카지노", "바카라", "슬롯", "베팅", "먹튀", "casino", "betting", "baccarat", "slots"]
+
 KOREAN_LETTERS = list("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ")
 ENGLISH_LETTERS = list("abcdefghijklmnopqrstuvwxyz")
 
@@ -105,12 +109,18 @@ def fetch_news(query, lang, geo):
     return articles
 
 
+def is_spam(title, topic):
+    title, topic = title.lower(), topic.lower()
+    return any(w in title and w not in topic for w in SPAM_WORDS)
+
+
 def news_by_day(topic, lang, geo, days=7):
     """Fetch the topic's news one day at a time.
 
     One query returns at most 100 articles, so a single 7-day query undercounts
     busy days. Asking per day (after:/before:) keeps each day's count accurate
-    up to 100. Returns (all articles newest first, count per day today first).
+    up to 100. Spam headlines are dropped before counting.
+    Returns (articles newest first, count per day today first, spam headlines removed).
     """
     today = datetime.now().date()
     day_list = [today - timedelta(days=d) for d in range(days)]
@@ -122,14 +132,16 @@ def news_by_day(topic, lang, geo, days=7):
             if datetime.fromisoformat(a["published"]).astimezone().date() == day
         ]
 
-    articles, counts = {}, []
+    articles, counts, spam = {}, [], 0
     with ThreadPoolExecutor(max_workers=4) as pool:
         for day_articles in pool.map(one_day, day_list):
-            counts.append(len(day_articles))
-            for a in day_articles:
+            clean = [a for a in day_articles if not is_spam(a["title"], topic)]
+            spam += len(day_articles) - len(clean)
+            counts.append(len(clean))
+            for a in clean:
                 articles[a["url"]] = a
     ordered = sorted(articles.values(), key=lambda a: a["published"], reverse=True)
-    return ordered, counts
+    return ordered, counts, spam
 
 
 def news_momentum(per_day):
@@ -172,7 +184,7 @@ def matching_trends(topic, geo, extra_words=()):
 # Run ------------------------------------------------------------------------
 
 def analyze_topic(topic, lang, geo, extra_words=()):
-    articles, per_day = news_by_day(topic, lang, geo)
+    articles, per_day, spam = news_by_day(topic, lang, geo)
     return {
         "topic": topic,
         "lang": lang,
@@ -181,6 +193,7 @@ def analyze_topic(topic, lang, geo, extra_words=()):
         "related_searches": related_searches(topic, lang, geo),
         "news_momentum": news_momentum(per_day),
         "news": articles,
+        "news_spam_removed": spam,
         "google_trends_matches": matching_trends(topic, geo, extra_words),
     }
 

@@ -79,6 +79,8 @@
     <form class="search" id="search" hidden>
       <input id="topic" name="topic" maxlength="60" required autocomplete="off"
              placeholder="Type a topic you want to know about (e.g. 피지컬 AI, 전기차, smart glasses)">
+      <input id="password" type="password" placeholder="Class password" autocomplete="current-password"
+             aria-label="Password" hidden style="flex: 0 1 170px">
       <select id="region" aria-label="Region">
         <option value="">Auto region</option><option value="KR">Korea</option><option value="US">US</option>
       </select>
@@ -166,6 +168,7 @@ function topicSection(a) {
           <div class="stat"><b class="${dir}">${m.momentum}×</b><span>momentum</span></div>
         </div>
         ${coverageBars(m.per_day)}
+        ${f.spam_removed ? `<p class="note">${f.spam_removed} spam headline(s) (gambling sites stuffing keywords) were removed before counting.</p>` : ""}
       </div>
       <div class="card"><h3>What searchers want</h3>${intents}<p class="note">From Google autocomplete phrases. Hover a row for examples.</p></div>
       <div class="card"><h3>What people type with it</h3><div class="chips">${searches}</div></div>
@@ -206,6 +209,12 @@ if (DATA.live) {
   const form = document.getElementById("search"), status = document.getElementById("status");
   const button = document.getElementById("go");
   form.hidden = false;
+  const passwordInput = document.getElementById("password");
+  if (DATA.needs_password) {
+    passwordInput.hidden = false;
+    passwordInput.required = true;
+    try { passwordInput.value = sessionStorage.getItem("searchPassword") || ""; } catch {}
+  }
   form.addEventListener("submit", async event => {
     event.preventDefault();
     const topic = document.getElementById("topic").value.trim();
@@ -220,10 +229,11 @@ if (DATA.live) {
     try {
       const response = await fetch("/api/analyze", {
         method: "POST", headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({topic, region: document.getElementById("region").value}),
+        body: JSON.stringify({topic, region: document.getElementById("region").value, password: passwordInput.value}),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || response.statusText);
+      try { if (DATA.needs_password) sessionStorage.setItem("searchPassword", passwordInput.value); } catch {}
       document.getElementById("result").innerHTML = topicSection(result);
       status.textContent = `Done in ${Math.round((Date.now() - started) / 1000)}s.`;
       document.getElementById("result").scrollIntoView({behavior: "smooth"});
