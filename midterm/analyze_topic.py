@@ -14,9 +14,11 @@ Two layers, so the conclusions rest on facts and not on guesses:
      The model gets only the facts above, each with an id ([D1], [S3], ...).
      Every claim it makes must cite ids. Claims that cite nothing, or cite ids
      that do not exist, are removed.
-  3. Check: a second model call reads each claim next to the evidence it cites
-     and rates it supported / partly / unsupported. Unsupported claims are removed;
-     "partly" claims stay but are marked.
+  3. Check: each claim is rated supported / partly / unsupported against the exact
+     evidence it cites. Jev (a decision model that can only pick one of those three
+     labels, with probabilities) does this when OPENCODE_API_KEY is set; otherwise
+     a second text-model call. Unsupported claims are removed; "partly" claims stay
+     but are marked, and low-confidence ratings are flagged.
 
 Usage:
     python midterm/analyze_topic.py --topic "피지컬 AI"
@@ -29,6 +31,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import jev_api
 from model_api import ModelRequestError, request_model
 from topic_trends import RESULT_DIR, analyze_topic, save_result
 
@@ -91,6 +94,41 @@ def classify_intent(phrase, topic):
     return "other"
 
 
+# What each intent means, so Jev knows what it is choosing between.
+INTENT_DESCRIPTIONS = {
+    "problems": "problems, risks, recalls, accidents, controversy, downsides",
+    "buying": "buying or using it: prices, reviews, comparisons, recommendations, subsidies, charging",
+    "investing": "stocks, ETFs, funds, investment opportunities",
+    "definition": "what it is: meaning, definition, examples, types",
+    "learning": "studying it: courses, papers, books, research, tutorials, projects",
+    "jobs": "jobs, careers, salaries, hiring",
+    "events": "conferences, competitions, expos, hackathons, forums",
+    "policy": "government policy, laws, regulation, national strategy, alliances",
+    "companies": "specific companies, brands, startups, key players",
+    "industries": "use in an industry or field: manufacturing, healthcare, logistics, cases",
+    "technology": "how it works: technology, models, hardware, data, platforms",
+    "outlook": "the future: outlook, market size, trends, forecasts, reports",
+    "news": "the latest news, blogs, forums, communities",
+    "other": "none of the above",
+}
+
+
+def classify_with_jev(phrases, topic):
+    """Jev picks one intent per phrase, with a probability. Returns {phrase: intent}."""
+    state = f"Search phrases people typed into Google about the topic: {topic}"
+    questions = {
+        f"p{n}": {
+            "type": "choice",
+            "instructions": f'What does someone who searches "{phrase}" want?',
+            "criteria": INTENT_DESCRIPTIONS,
+        }
+        for n, phrase in enumerate(phrases)
+    }
+    answers = jev_api.ask(state, questions)
+    return {phrase: answers[f"p{n}"]["choice"] for n, phrase in enumerate(phrases)
+            if answers.get(f"p{n}", {}).get("choice") in INTENT_DESCRIPTIONS}
+
+
 def classify_with_model(phrases, topic):
     """Sort phrases the word lists missed into the same fixed intents, in one model call.
 
@@ -120,11 +158,20 @@ def search_intent(related, topic, use_model=True):
     """Share of autocomplete phrases per intent, weighted by how often each was suggested.
 
     Word lists first (exact and explainable), then the model for what they miss.
-    "method" in each result says how many suggestions each way classified.
+    Returns (how the phrases were classified, list of intents with shares).
     """
     by_rule = {item["phrase"]: classify_intent(item["phrase"], topic) for item in related}
     leftovers = [p for p, intent in by_rule.items() if intent == "other"][:150]
-    by_model = classify_with_model(leftovers, topic) if use_model else {}
+    by_model, method = {}, "word lists only"
+    if use_model and leftovers and jev_api.available():
+        try:
+            by_model = classify_with_jev(leftovers, topic)
+            method = "word lists, then Jev for phrases they missed"
+        except jev_api.JevError:
+            by_model = {}
+    if use_model and leftovers and not by_model:
+        by_model = classify_with_model(leftovers, topic)
+        method = "word lists, then the text model for phrases they missed"
 
     totals, examples = Counter(), {}
     for item in related:
@@ -132,7 +179,7 @@ def search_intent(related, topic, use_model=True):
         totals[intent] += item["times_suggested"]
         examples.setdefault(intent, []).append(item["phrase"])
     all_count = sum(totals.values()) or 1
-    return [
+    return method, [
         {
             "intent": intent,
             "share": round(n / all_count, 2),
@@ -348,28 +395,79 @@ Reply with JSON only: {"checks": [{"id": 0, "rating": "supported", "reason": "..
 Write each reason in {language}, one short sentence."""
 
 
-def check_claims(result, evidence, language):
-    """Second pass: rate every claim against its cited evidence. Returns how many were removed."""
-    items = [(section, c) for section in ("why_people_search", "what_is_happening", "outlook")
-             for c in result[section]]
-    if not items:
-        return 0
-    lines = []
-    for n, (section, c) in enumerate(items):
-        cited = "\n".join(f"    [{x}] {evidence[x]}" for x in c["cites"])
-        claim = c["claim"] + (f" (basis: {c['basis']})" if c.get("basis") else "")
-        lines.append(f"Claim {n} ({section}): {claim}\n  Cited evidence:\n{cited}")
+CHECK_LABELS = {
+    "supported": "The cited evidence states the claim, or it follows directly.",
+    "partly": "The core is in the evidence, but the claim adds something it does not say "
+              "(an exaggeration, a cause, a trend measured only once).",
+    "unsupported": "The cited evidence does not say this, or is about something else.",
+}
+UNCERTAIN_BELOW = 0.6  # Jev confidence under this is shown as uncertain
+
+
+def claim_items(result):
+    return [(section, c) for section in ("why_people_search", "what_is_happening", "outlook")
+            for c in result[section]]
+
+
+def claim_text(n, section, c, evidence):
+    cited = "\n".join(f"    [{x}] {evidence[x]}" for x in c["cites"])
+    claim = c["claim"] + (f" (basis: {c['basis']})" if c.get("basis") else "")
+    return f"Claim {n} ({section}): {claim}\n  Cited evidence:\n{cited}"
+
+
+def ratings_from_jev(items, evidence):
+    """Jev rates every claim; each question names its claim in the shared state."""
+    state = "Claims written by an analyst, each with the exact evidence it cites:\n\n" + "\n\n".join(
+        claim_text(n, section, c, evidence) for n, (section, c) in enumerate(items))
+    questions = {
+        f"c{n}": {
+            "type": "choice",
+            "instructions": f"Does the cited evidence support Claim {n}? For a forecast, judge whether its "
+                            "basis is really in the evidence, not whether the future is certain.",
+            "criteria": CHECK_LABELS,
+        }
+        for n in range(len(items))
+    }
+    answers = jev_api.ask(state, questions)
+    ratings = {}
+    for n in range(len(items)):
+        a = answers.get(f"c{n}", {})
+        if a.get("choice") in CHECK_LABELS:
+            ratings[n] = {"rating": a["choice"], "confidence": a.get("confidence"),
+                          "probabilities": a.get("probabilities", {}), "by": "jev",
+                          "reason": ""}
+    return ratings
+
+
+def ratings_from_model(items, evidence, language):
     messages = [
         {"role": "system", "content": CHECK_PROMPT.replace("{language}", language)},
-        {"role": "user", "content": "\n\n".join(lines)},
+        {"role": "user", "content": "\n\n".join(
+            claim_text(n, section, c, evidence) for n, (section, c) in enumerate(items))},
     ]
-    try:
-        checks = parse_json_reply(request_model(messages).get("content"))["checks"]
-    except (ModelRequestError, ValueError, KeyError) as error:
-        result["check_error"] = str(error)
-        return 0
+    checks = parse_json_reply(request_model(messages).get("content"))["checks"]
+    return {int(c["id"]): {**c, "by": "model"} for c in checks if str(c.get("id", "")).isdigit()}
 
-    ratings = {int(c["id"]): c for c in checks if str(c.get("id", "")).isdigit()}
+
+def check_claims(result, evidence, language):
+    """Second pass: rate every claim against its cited evidence. Returns how many were removed."""
+    items = claim_items(result)
+    if not items:
+        return 0
+    ratings = None
+    if jev_api.available():
+        try:
+            ratings = ratings_from_jev(items, evidence)
+        except jev_api.JevError as error:
+            result["jev_error"] = str(error)
+    if not ratings:
+        try:
+            ratings = ratings_from_model(items, evidence, language)
+        except (ModelRequestError, ValueError, KeyError) as error:
+            result["check_error"] = str(error)
+            return 0
+    result["checked_by"] = next(iter(ratings.values()))["by"] if ratings else "none"
+
     removed = 0
     for section in ("why_people_search", "what_is_happening", "outlook"):
         kept = []
@@ -379,7 +477,10 @@ def check_claims(result, evidence, language):
             if check["rating"] == "unsupported":
                 removed += 1
                 continue
-            kept.append({**c, "check": check["rating"], "check_reason": check.get("reason", "")})
+            confidence = check.get("confidence")
+            kept.append({**c, "check": check["rating"], "check_reason": check.get("reason", ""),
+                         "check_confidence": confidence,
+                         "check_uncertain": confidence is not None and confidence < UNCERTAIN_BELOW})
         result[section] = kept
     return removed
 
@@ -402,11 +503,12 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
         save_result(data)
 
     drivers, today_n = news_drivers(data["news"], topic)
+    intent_method, intents = search_intent(data["related_searches"], topic)
     facts = {
         "coverage": data["news_momentum"],
         "spam_removed": data.get("news_spam_removed", 0),
-        "intent": search_intent(data["related_searches"], topic),
-        "intent_method": "word lists, then the model for phrases they missed",
+        "intent": intents,
+        "intent_method": intent_method,
         "drivers": drivers,
         "events": scheduled_events(data["news"]),
         "trends_matches": data["google_trends_matches"],
@@ -460,10 +562,13 @@ def print_analysis(a):
         print(f"\n{label}")
         for c in e[section]:
             extra = f" [{c.get('confidence', '')}] basis: {c.get('basis', '')}" if section == "outlook" else ""
-            mark = "" if c.get("check") == "supported" else f" <{c.get('check')}: {c.get('check_reason')}>"
+            conf = f" {int(c['check_confidence'] * 100)}%" if c.get("check_confidence") is not None else ""
+            mark = "" if c.get("check") == "supported" and not c.get("check_uncertain") else \
+                f" <{c.get('check')}{conf}{', uncertain' if c.get('check_uncertain') else ''}: {c.get('check_reason')}>"
             print(f"  - {c['claim']}  ({', '.join(c['cites'])}){extra}{mark}")
     if e["unsupported_claims_removed"]:
         print(f"\n({e['unsupported_claims_removed']} claim(s) without valid citations were removed)")
+    print(f"\n(claims checked by: {e.get('checked_by', 'none')})")
     if e.get("failed_check_removed"):
         print(f"({e['failed_check_removed']} claim(s) failed the evidence check and were removed)")
 

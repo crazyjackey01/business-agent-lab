@@ -112,10 +112,18 @@ function cites(ids, a) {
   }).join("");
 }
 
+function checkBadge(c) {
+  const pctText = c.check_confidence != null ? ` ${Math.round(c.check_confidence * 100)}%` : "";
+  const tip = c.check_reason || (c.check_confidence != null ? `Checker confidence${pctText}` : "");
+  if (c.check === "partly") return `<span class="conf partly" title="${esc(tip)}">partly supported${pctText}</span>`;
+  if (c.check_uncertain) return `<span class="conf partly" title="${esc(tip)}">uncertain${pctText}</span>`;
+  return "";
+}
+
 function claims(list, a, outlook) {
   if (!list || !list.length) return `<p class="empty">No supported claims.</p>`;
   return list.map(c => `<p class="claim">${esc(c.claim)}${cites(c.cites, a)}` +
-    (c.check === "partly" ? `<span class="conf partly" title="${esc(c.check_reason)}">partly supported</span>` : "") +
+    checkBadge(c) +
     (outlook ? `<span class="conf">${esc(c.confidence || "")}</span><span class="basis">${esc(c.basis || "")}</span>` : "") +
     `</p>`).join("");
 }
@@ -154,11 +162,13 @@ function topicSection(a) {
          ${e.caveats && e.caveats.length ? `<p class="note">Caveats: ${e.caveats.map(esc).join(" · ")}</p>` : ""}
          ${e.unsupported_claims_removed ? `<p class="note">${e.unsupported_claims_removed} claim(s) without valid citations were removed.</p>` : ""}
          ${e.failed_check_removed ? `<p class="note">${e.failed_check_removed} claim(s) failed the evidence check and were removed.</p>` : ""}
+         ${e.checked_by ? `<p class="note">Claims checked against their evidence by ${e.checked_by === "jev" ? "Jev (a decision model that can only answer supported / partly / unsupported, with a probability)" : "a second text-model pass"}.</p>` : ""}
        </div>`;
 
   return `<section>
     <h2>${esc(a.topic)}</h2>
     <p class="sub">${esc(a.geo)} · data collected ${esc(a.source_collected_at.slice(0, 16).replace("T", " "))} UTC</p>
+    ${a.source_errors && a.source_errors.length ? `<p class="note">Sources that failed this time: ${a.source_errors.map(esc).join(" · ")}</p>` : ""}
     <div class="grid">
       <div class="card">
         <h3>News coverage</h3>
@@ -167,7 +177,7 @@ function topicSection(a) {
           <div class="stat"><b>${m.previous_daily_average}</b><span>per day before</span></div>
           <div class="stat"><b class="${dir}">${m.momentum}×</b><span>momentum</span></div>
         </div>
-        ${coverageBars(m.per_day)}
+        ${f.news_unavailable ? `<p class="note">News could not be collected this time (the news source refused the request), so these numbers are not real.</p>` : coverageBars(m.per_day)}
         ${f.spam_removed ? `<p class="note">${f.spam_removed} spam headline(s) (gambling sites stuffing keywords) were removed before counting.</p>` : ""}
       </div>
       <div class="card"><h3>What searchers want</h3>${intents}<p class="note">From Google autocomplete phrases. Hover a row for examples.</p></div>

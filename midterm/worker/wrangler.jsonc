@@ -12,4 +12,5 @@
   "observability": { "enabled": true }
   // Secrets (never in this file): npx wrangler secret put OPENROUTER_API_KEY
   //                                npx wrangler secret put SEARCH_PASSWORD
+  //                                npx wrangler secret put OPENCODE_API_KEY   (Jev, optional)
 }

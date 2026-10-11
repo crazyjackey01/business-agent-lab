@@ -1,11 +1,43 @@
 // Fact-based analysis: the JavaScript port of analyze_topic.py.
 //   1. measured facts (plain code): search intent, news drivers, dated events, coverage
 //   2. explanation (language model): only from numbered evidence, every claim cites ids
-//   3. check: a second model call rates each claim against its cited evidence
+//   3. check: each claim is rated against its cited evidence, by Jev (a decision model that
+//      can only pick supported / partly / unsupported) when OPENCODE_API_KEY is set,
+//      otherwise by a second text-model call
 import { dayIn } from "./collect.js";
 
 const OPENROUTER = "https://openrouter.ai/api/v1/chat/completions";
 const DEFAULT_MODEL = "nvidia/nemotron-3-super-120b-a12b:free";
+const JEV_ENDPOINT = "https://opencode.ai/zen/v1/systemone";
+const JEV_MAX_QUESTIONS = 200; // one request per step when possible: the free tier allows few requests per minute
+
+// Jev writes no text: it answers questions whose possible answers we fix in advance.
+async function askJev(env, state, questions) {
+  const ids = Object.keys(questions), answers = {};
+  // One batch at a time, and wait on 429: the free tier rejects bursts.
+  for (let i = 0; i < ids.length; i += JEV_MAX_QUESTIONS) {
+    const batch = ids.slice(i, i + JEV_MAX_QUESTIONS);
+    for (let attempt = 0; ; attempt++) {
+      const response = await fetch(JEV_ENDPOINT, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${env.OPENCODE_API_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: env.JEV_MODEL || "jev-1.13-free", state,
+          questions: Object.fromEntries(batch.map(id => [id, questions[id]])),
+        }),
+      });
+      if (response.status === 429 && attempt < 3) {
+        await new Promise(r => setTimeout(r, 1500 * 2 ** attempt));
+        continue;
+      }
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || !data.answers) throw new Error(`Jev HTTP ${response.status}: ${data.error?.message || "no answers"}`);
+      Object.assign(answers, data.answers);
+      break;
+    }
+  }
+  return answers;
+}
 
 const isAscii = s => /^[\x00-\x7f]*$/.test(s);
 
@@ -46,6 +78,37 @@ export const INTENT_WORDS = {
   news: ["뉴스", "디시", "news", "newsletter", "blog", "podcast", "reddit", "linkedin"],
 };
 
+// What each intent means, so Jev knows what it is choosing between.
+const INTENT_DESCRIPTIONS = {
+  problems: "problems, risks, recalls, accidents, controversy, downsides",
+  buying: "buying or using it: prices, reviews, comparisons, recommendations, subsidies, charging",
+  investing: "stocks, ETFs, funds, investment opportunities",
+  definition: "what it is: meaning, definition, examples, types",
+  learning: "studying it: courses, papers, books, research, tutorials, projects",
+  jobs: "jobs, careers, salaries, hiring",
+  events: "conferences, competitions, expos, hackathons, forums",
+  policy: "government policy, laws, regulation, national strategy, alliances",
+  companies: "specific companies, brands, startups, key players",
+  industries: "use in an industry or field: manufacturing, healthcare, logistics, cases",
+  technology: "how it works: technology, models, hardware, data, platforms",
+  outlook: "the future: outlook, market size, trends, forecasts, reports",
+  news: "the latest news, blogs, forums, communities",
+  other: "none of the above",
+};
+
+async function classifyWithJev(env, phrases, topic) {
+  const questions = Object.fromEntries(phrases.map((phrase, n) => [`p${n}`, {
+    type: "choice", instructions: `What does someone who searches "${phrase}" want?`, criteria: INTENT_DESCRIPTIONS,
+  }]));
+  const answers = await askJev(env, `Search phrases people typed into Google about the topic: ${topic}`, questions);
+  const out = {};
+  phrases.forEach((phrase, n) => {
+    const choice = answers[`p${n}`]?.choice;
+    if (choice in INTENT_DESCRIPTIONS) out[phrase] = choice;
+  });
+  return out;
+}
+
 export function classifyIntent(phrase, topic) {
   const rest = phrase.toLowerCase().replace(topic.toLowerCase(), " ").trim();
   const words = new Set(rest.split(/\s+/));
@@ -82,7 +145,13 @@ async function classifyWithModel(env, phrases, topic) {
 export async function searchIntent(env, related, topic) {
   const byRule = Object.fromEntries(related.map(r => [r.phrase, classifyIntent(r.phrase, topic)]));
   const leftovers = Object.keys(byRule).filter(p => byRule[p] === "other").slice(0, 150);
-  const byModel = await classifyWithModel(env, leftovers, topic);
+  let byModel = {};
+  // Jev's free tier allows few requests from Cloudflare, so it is saved for the claim check
+  // unless JEV_FOR_INTENT is set.
+  if (leftovers.length && env.OPENCODE_API_KEY && env.JEV_FOR_INTENT) {
+    byModel = await classifyWithJev(env, leftovers, topic).catch(() => ({}));
+  }
+  if (leftovers.length && !Object.keys(byModel).length) byModel = await classifyWithModel(env, leftovers, topic);
 
   const totals = new Map(), examples = {};
   for (const r of related) {
@@ -227,7 +296,10 @@ const SECTIONS = ["why_people_search", "what_is_happening", "outlook"];
 export function buildEvidence(facts, news, maxHeadlines = 40) {
   const evidence = {}, links = {};
   const m = facts.coverage;
-  evidence.D1 = `News articles per day for the last ${m.per_day.length} days, today first: [${m.per_day.join(", ")}]. `
+  // A blocked news source must not read as "no news was published".
+  evidence.D1 = facts.news_unavailable
+    ? "News coverage could NOT be measured this time: the news source refused the request. Say nothing about news volume."
+    : `News articles per day for the last ${m.per_day.length} days, today first: [${m.per_day.join(", ")}]. `
     + `Today ${m.today} vs previous average ${m.previous_daily_average} -> momentum ${m.momentum}.`;
   evidence.D2 = "Search intent from Google autocomplete (share of suggestions): " + facts.intent.map(i =>
     `${i.intent} ${Math.round(i.share * 100)}% (e.g. ${i.examples.slice(0, 3).join(", ")})`).join("; ");
@@ -260,32 +332,76 @@ function keepSupported(claims, evidence) {
   return [kept, dropped];
 }
 
+const CHECK_LABELS = {
+  supported: "The cited evidence states the claim, or it follows directly.",
+  partly: "The core is in the evidence, but the claim adds something it does not say (an exaggeration, a cause, a trend measured only once).",
+  unsupported: "The cited evidence does not say this, or is about something else.",
+};
+const UNCERTAIN_BELOW = 0.6; // Jev confidence under this is shown as uncertain
+
+function claimText(n, section, c, evidence) {
+  const cited = c.cites.map(x => `    [${x}] ${evidence[x]}`).join("\n");
+  const claim = c.claim + (c.basis ? ` (basis: ${c.basis})` : "");
+  return `Claim ${n} (${section}): ${claim}\n  Cited evidence:\n${cited}`;
+}
+
+async function ratingsFromJev(env, items, evidence) {
+  const state = "Claims written by an analyst, each with the exact evidence it cites:\n\n"
+    + items.map(([section, c], n) => claimText(n, section, c, evidence)).join("\n\n");
+  const questions = Object.fromEntries(items.map((_, n) => [`c${n}`, {
+    type: "choice",
+    instructions: `Does the cited evidence support Claim ${n}? For a forecast, judge whether its basis is really in the evidence, not whether the future is certain.`,
+    criteria: CHECK_LABELS,
+  }]));
+  const answers = await askJev(env, state, questions);
+  const ratings = new Map();
+  items.forEach((_, n) => {
+    const a = answers[`c${n}`];
+    if (a?.choice in CHECK_LABELS) {
+      ratings.set(n, { rating: a.choice, confidence: a.confidence, probabilities: a.probabilities || {}, by: "jev", reason: "" });
+    }
+  });
+  return ratings;
+}
+
+async function ratingsFromModel(env, items, evidence, language) {
+  const checks = parseJsonReply(await requestModel(env, [
+    { role: "system", content: CHECK_PROMPT.replace("{language}", language) },
+    { role: "user", content: items.map(([section, c], n) => claimText(n, section, c, evidence)).join("\n\n") },
+  ])).checks;
+  return new Map(checks.filter(c => /^\d+$/.test(String(c.id))).map(c => [+c.id, { ...c, by: "model" }]));
+}
+
 async function checkClaims(env, result, evidence, language) {
   const items = SECTIONS.flatMap(section => result[section].map(c => [section, c]));
   if (!items.length) return 0;
-  const lines = items.map(([section, c], n) => {
-    const cited = c.cites.map(x => `    [${x}] ${evidence[x]}`).join("\n");
-    const claim = c.claim + (c.basis ? ` (basis: ${c.basis})` : "");
-    return `Claim ${n} (${section}): ${claim}\n  Cited evidence:\n${cited}`;
-  });
-  let checks;
-  try {
-    checks = parseJsonReply(await requestModel(env, [
-      { role: "system", content: CHECK_PROMPT.replace("{language}", language) },
-      { role: "user", content: lines.join("\n\n") },
-    ])).checks;
-  } catch (error) {
-    result.check_error = String(error.message || error);
-    return 0;
+  let ratings = null;
+  if (env.OPENCODE_API_KEY) {
+    try {
+      ratings = await ratingsFromJev(env, items, evidence);
+    } catch (error) {
+      result.jev_error = String(error.message || error);
+    }
   }
-  const ratings = new Map(checks.filter(c => /^\d+$/.test(String(c.id))).map(c => [+c.id, c]));
+  if (!ratings || !ratings.size) {
+    try {
+      ratings = await ratingsFromModel(env, items, evidence, language);
+    } catch (error) {
+      result.check_error = String(error.message || error);
+      return 0;
+    }
+  }
+  result.checked_by = ratings.size ? [...ratings.values()][0].by : "none";
+
   let removed = 0;
   for (const section of SECTIONS) {
     result[section] = result[section].flatMap(c => {
       const n = items.findIndex(([, item]) => item === c);
       const check = ratings.get(n) || { rating: "unchecked", reason: "" };
       if (check.rating === "unsupported") { removed++; return []; }
-      return [{ ...c, check: check.rating, check_reason: check.reason || "" }];
+      const confidence = check.confidence ?? null;
+      return [{ ...c, check: check.rating, check_reason: check.reason || "", check_confidence: confidence,
+        check_uncertain: confidence !== null && confidence < UNCERTAIN_BELOW }];
     });
   }
   return removed;
@@ -315,9 +431,10 @@ async function explain(env, topic, evidence, language) {
 export async function analyze(env, data) {
   const facts = {
     coverage: data.news_momentum,
+    news_unavailable: (data.source_errors || []).some(e => e.startsWith("news")),
     spam_removed: data.news_spam_removed || 0,
     intent: await searchIntent(env, data.related_searches, data.topic),
-    intent_method: "word lists, then the model for phrases they missed",
+    intent_method: `word lists, then ${env.OPENCODE_API_KEY && env.JEV_FOR_INTENT ? "Jev" : "the text model"} for phrases they missed`,
     drivers: newsDrivers(data.news, data.topic, data.geo),
     events: scheduledEvents(data.news),
     trends_matches: data.google_trends_matches,
@@ -334,6 +451,7 @@ export async function analyze(env, data) {
     topic: data.topic,
     geo: data.geo,
     source_collected_at: data.collected_at,
+    source_errors: data.source_errors || [],
     analyzed_at: new Date().toISOString().slice(0, 19) + "+00:00",
     facts, evidence, evidence_links: links,
     related_searches: data.related_searches,
