@@ -83,8 +83,11 @@ async function runSearch(request, env) {
   if (body.region === "US") [lang, geo] = ["en", "US"];
 
   try {
-    const data = await collectTopic(env, topic, lang, geo);
-    const result = await analyze(env, data);
+    // A per-search copy of env with a usage list that every model call adds to.
+    const ctx = { ...env, usage: [] };
+    const data = await collectTopic(ctx, topic, lang, geo);
+    const result = await analyze(ctx, data);
+    result.usage = ctx.usage;
     await env.ANALYSES.put(`analysis:${slug(topic)}:${geo}`, JSON.stringify(result), {
       metadata: { analyzed_at: result.analyzed_at },
     });

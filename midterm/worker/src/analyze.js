@@ -12,8 +12,16 @@ const DEFAULT_MODEL = "anthropic/claude-sonnet-5.5";
 const JEV_ENDPOINT = "https://opencode.ai/zen/v1/systemone";
 const JEV_MAX_QUESTIONS = 200; // one request per step when possible: the free tier allows few requests per minute
 
+const JEV_INPUT_PRICE = 0.042 / 1e6; // dollars per input token for paid jev-1.13; output is free
+
+// Every model call adds a row to env.usage (one list per search), so the page can show
+// what each step cost in tokens and dollars.
+function recordUsage(env, row) {
+  if (env.usage) env.usage.push(row);
+}
+
 // Jev writes no text: it answers questions whose possible answers we fix in advance.
-async function askJev(env, state, questions) {
+async function askJev(env, state, questions, step) {
   const ids = Object.keys(questions), answers = {};
   // One batch at a time, and wait on 429: the free tier rejects bursts.
   for (let i = 0; i < ids.length; i += JEV_MAX_QUESTIONS) {
@@ -34,6 +42,12 @@ async function askJev(env, state, questions) {
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data.answers) throw new Error(`Jev HTTP ${response.status}: ${data.error?.message || "no answers"}`);
       Object.assign(answers, data.answers);
+      const model = env.JEV_MODEL || "jev-1.13-free";
+      recordUsage(env, {
+        step, model, questions: batch.length,
+        input_tokens: data.usage?.input_tokens || 0, output_tokens: data.usage?.output_tokens || 0,
+        cost: model.endsWith("-free") ? 0 : (data.usage?.input_tokens || 0) * JEV_INPUT_PRICE,
+      });
       break;
     }
   }
@@ -101,7 +115,7 @@ async function classifyWithJev(env, phrases, topic) {
   const questions = Object.fromEntries(phrases.map((phrase, n) => [`p${n}`, {
     type: "choice", instructions: `What does someone who searches "${phrase}" want?`, criteria: INTENT_DESCRIPTIONS,
   }]));
-  const answers = await askJev(env, `Search phrases people typed into Google about the topic: ${topic}`, questions);
+  const answers = await askJev(env, `Search phrases people typed into Google about the topic: ${topic}`, questions, "intent");
   const out = {};
   phrases.forEach((phrase, n) => {
     const choice = answers[`p${n}`]?.choice;
@@ -132,7 +146,7 @@ async function classifyWithModel(env, phrases, topic) {
       { role: "system", content: "Classify what each search phrase's searcher wants. Pick exactly one label per phrase from: "
           + labels.join(", ") + '. Use other only if none fits. Reply with JSON only: {"labels": {"0": "buying", "1": "technology"}}' },
       { role: "user", content: `Topic: ${topic}\n\nSearch phrases:\n${numbered}` },
-    ]));
+    ], "intent"));
     const out = {};
     for (const [n, label] of Object.entries(reply.labels || {})) {
       if (/^\d+$/.test(n) && +n < phrases.length && labels.includes(label)) out[phrases[+n]] = label;
@@ -235,7 +249,7 @@ export function scheduledEvents(news, limit = 15) {
 
 // Model calls --------------------------------------------------------------------
 
-async function requestModel(env, messages) {
+async function requestModel(env, messages, step) {
   const body = JSON.stringify({ model: env.OPENROUTER_MODEL || DEFAULT_MODEL, messages });
   for (let attempt = 0; attempt < 3; attempt++) {
     const response = await fetch(OPENROUTER, {
@@ -249,6 +263,11 @@ async function requestModel(env, messages) {
     }
     const data = await response.json().catch(() => ({ error: { message: "not JSON" } }));
     if (!response.ok || data.error) throw new Error(`model HTTP ${response.status}: ${data.error?.message || "no message"}`);
+    recordUsage(env, {
+      step, model: data.model || env.OPENROUTER_MODEL || DEFAULT_MODEL,
+      input_tokens: data.usage?.prompt_tokens || 0, output_tokens: data.usage?.completion_tokens || 0,
+      cost: data.usage?.cost ?? null,
+    });
     return data.choices[0].message.content;
   }
 }
@@ -354,7 +373,7 @@ async function ratingsFromJev(env, items, evidence) {
     instructions: `Does the cited evidence support Claim ${n}? For a forecast, judge whether its basis is really in the evidence, not whether the future is certain.`,
     criteria: CHECK_LABELS,
   }]));
-  const answers = await askJev(env, state, questions);
+  const answers = await askJev(env, state, questions, "check");
   const ratings = new Map();
   items.forEach((_, n) => {
     const a = answers[`c${n}`];
@@ -369,7 +388,7 @@ async function ratingsFromModel(env, items, evidence, language) {
   const checks = parseJsonReply(await requestModel(env, [
     { role: "system", content: CHECK_PROMPT.replace("{language}", language) },
     { role: "user", content: items.map(([section, c], n) => claimText(n, section, c, evidence)).join("\n\n") },
-  ])).checks;
+  ], "check")).checks;
   return new Map(checks.filter(c => /^\d+$/.test(String(c.id))).map(c => [+c.id, { ...c, by: "model" }]));
 }
 
@@ -413,7 +432,7 @@ async function explain(env, topic, evidence, language) {
   const reply = parseJsonReply(await requestModel(env, [
     { role: "system", content: SYSTEM_PROMPT.replace("{language}", language) },
     { role: "user", content: `Topic: ${topic}\n\nEvidence:\n${evidenceText}` },
-  ]));
+  ], "write"));
   const result = {};
   let dropped = 0;
   for (const section of SECTIONS) {

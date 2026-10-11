@@ -192,6 +192,11 @@ function topicSection(a) {
         <div class="google-suggestions">${a.google_search.suggestions || ""}</div></div>` : ""}
       <div class="card wide"><h3>Scheduled events in the news</h3><ul class="clean">${events || '<li class="empty">None found</li>'}</ul></div>
       ${explanation}
+      ${a.usage && a.usage.length ? `<div class="card wide"><h3>What this search used</h3>
+        <ul class="clean">${a.usage.map(u => `<li>${esc(u.step)} · <b>${esc(u.model)}</b>${u.questions ? ` · ${u.questions} questions` : ""}
+          <span class="meta">· ${u.input_tokens.toLocaleString()} in / ${u.output_tokens.toLocaleString()} out tokens ·
+          ${u.cost == null ? "free tier / not reported" : "$" + u.cost.toFixed(4)}</span></li>`).join("")}</ul>
+        <p class="note">Total reported cost: $${a.usage.reduce((s, u) => s + (u.cost || 0), 0).toFixed(4)}. Jev only picks from fixed labels, and its output tokens are free.</p></div>` : ""}
       <div class="card wide"><details><summary>All evidence given to the model (${Object.keys(a.evidence).length} items)</summary>
         <ul class="clean evidence">${evidence}</ul></details></div>
     </div>

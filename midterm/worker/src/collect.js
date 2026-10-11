@@ -226,7 +226,11 @@ async function geminiSearch(env, input) {
         body: JSON.stringify({ model, input, tools: [{ type: "google_search" }] }),
       });
       const data = await response.json().catch(() => ({}));
-      if (response.ok && !data.error) return { ...data, model };
+      if (response.ok && !data.error) {
+        env.usage?.push({ step: "news search", model, input_tokens: data.usage?.total_input_tokens || 0,
+          output_tokens: data.usage?.total_output_tokens || 0, cost: null });
+        return { ...data, model };
+      }
       lastError = `Gemini ${model}: ${data.error?.message || response.status}`;
       if (response.status !== 503 && data.error?.code !== "service_unavailable") break; // only "busy" is worth retrying
       await new Promise(r => setTimeout(r, 3000));
