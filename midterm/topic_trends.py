@@ -18,9 +18,9 @@ Usage:
 import argparse
 import json
 import re
-import time
 import xml.etree.ElementTree as ET
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -54,14 +54,18 @@ def related_searches(topic, lang, geo):
     letters = KOREAN_LETTERS if lang == "ko" else ENGLISH_LETTERS
     queries = [topic] + [f"{topic} {letter}" for letter in letters]
 
-    counts = Counter()
-    for q in queries:
+    def suggest(q):
         try:
-            for phrase in fetch_suggestions(q, lang, geo):
-                counts[phrase.lower()] += 1
+            return fetch_suggestions(q, lang, geo)
         except requests.RequestException:
-            continue  # one failed letter should not stop the run
-        time.sleep(0.2)  # be polite to the endpoint
+            return []  # one failed letter should not stop the run
+
+    # A few requests at a time instead of one by one.
+    counts = Counter()
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        for phrases in pool.map(suggest, queries):
+            for phrase in phrases:
+                counts[phrase.lower()] += 1
 
     counts.pop(topic.lower(), None)
     # Drop phrases where the topic is only the start of another word
@@ -109,18 +113,21 @@ def news_by_day(topic, lang, geo, days=7):
     up to 100. Returns (all articles newest first, count per day today first).
     """
     today = datetime.now().date()
-    articles, counts = {}, []
-    for d in range(days):
-        day = today - timedelta(days=d)
+    day_list = [today - timedelta(days=d) for d in range(days)]
+
+    def one_day(day):
         query = f"{topic} after:{day - timedelta(days=1)} before:{day + timedelta(days=1)}"
-        day_articles = [
+        return [
             a for a in fetch_news(query, lang, geo)
             if datetime.fromisoformat(a["published"]).astimezone().date() == day
         ]
-        counts.append(len(day_articles))
-        for a in day_articles:
-            articles[a["url"]] = a
-        time.sleep(0.3)
+
+    articles, counts = {}, []
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for day_articles in pool.map(one_day, day_list):
+            counts.append(len(day_articles))
+            for a in day_articles:
+                articles[a["url"]] = a
     ordered = sorted(articles.values(), key=lambda a: a["published"], reverse=True)
     return ordered, counts
 

@@ -32,6 +32,19 @@ Deadline: ~2026-10-26 (started 2026-10-11)
 
 From the `business-agent-lab` folder, with the venv active:
 
+### Web app: type any topic
+
+```sh
+python midterm/app.py
+```
+
+Opens `http://localhost:8765` with a search box. Type any topic (전기차, 피지컬 AI,
+smart glasses, ...) and it collects fresh searches and news, measures the facts, and
+shows the cited analysis (about 1-1.5 minutes per search). Korean topics are searched
+in Korea, others in the US, or pick the region. Each result is saved under `midterm/data/`.
+
+### Command line
+
 ```sh
 python midterm/collect_trends.py               # Korea (Google Trends KR + Korean Wikipedia)
 python midterm/collect_trends.py --geo US --wiki en
@@ -67,8 +80,8 @@ python midterm/analyze_topic.py --topic "physical AI" --lang en --geo US
 
 Built so conclusions rest on facts, not speculation:
 
-1. **Measured facts (plain code, no AI)**: search intent shares (investing, definition,
-   technology, ...), today's news drivers (words far more common than in earlier
+1. **Measured facts (plain code)**: search intent shares (buying, investing, definition,
+   technology, ...; word lists first, the model only labels phrases the lists miss), today's news drivers (words far more common than in earlier
    headlines), headlines announcing dated events, coverage history across runs.
 2. **Explanation (LLM via OpenRouter)**: the model sees only those facts, each with an
    id (`[D1]` data, `[S4]` headline), and must cite ids for every claim. Claims citing

@@ -1,0 +1,1015 @@
+{
+  "topic": "전기차",
+  "geo": "KR",
+  "source_collected_at": "2026-10-11T13:20:06+00:00",
+  "analyzed_at": "2026-10-11T13:21:18+00:00",
+  "facts": {
+    "coverage": {
+      "today": 71,
+      "previous_daily_average": 41.5,
+      "momentum": 1.71,
+      "per_day": [
+        71,
+        38,
+        50,
+        68,
+        27,
+        50,
+        16
+      ],
+      "capped_days": 0
+    },
+    "intent": [
+      {
+        "intent": "other",
+        "share": 0.93,
+        "examples": [
+          "전기차 보조금",
+          "전기차 충전 요금",
+          "전기차 중고",
+          "전기차 가격",
+          "전기차 충전기"
+        ]
+      },
+      {
+        "intent": "definition",
+        "share": 0.04,
+        "examples": [
+          "전기차 단점",
+          "전기차 단점 디시",
+          "전기차 영어로",
+          "전기차 종류",
+          "전기차 종류 와 가격"
+        ]
+      },
+      {
+        "intent": "news",
+        "share": 0.03,
+        "examples": [
+          "전기차 디시",
+          "전기차 멀미 디시",
+          "전기차 중고 디시",
+          "전기차 티어 디시",
+          "전기차 vs 하이브리드 디시"
+        ]
+      }
+    ],
+    "drivers": [
+      {
+        "word": "카지노",
+        "headlines_today": 5,
+        "share_today": 0.07,
+        "share_before": 0.004,
+        "lift": 17.5
+      },
+      {
+        "word": "모델",
+        "headlines_today": 5,
+        "share_today": 0.07,
+        "share_before": 0.004,
+        "lift": 17.5
+      },
+      {
+        "word": "중국차",
+        "headlines_today": 4,
+        "share_today": 0.06,
+        "share_before": 0.004,
+        "lift": 14.0
+      },
+      {
+        "word": "해외",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.004,
+        "lift": 10.5
+      },
+      {
+        "word": "정보",
+        "headlines_today": 5,
+        "share_today": 0.07,
+        "share_before": 0.008,
+        "lift": 8.8
+      },
+      {
+        "word": "1대",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.008,
+        "lift": 5.3
+      },
+      {
+        "word": "수출",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.008,
+        "lift": 5.3
+      },
+      {
+        "word": "출시",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.012,
+        "lift": 3.5
+      },
+      {
+        "word": "브레이크",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.012,
+        "lift": 3.5
+      },
+      {
+        "word": "자동차",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.012,
+        "lift": 3.5
+      },
+      {
+        "word": "만에",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.012,
+        "lift": 3.5
+      },
+      {
+        "word": "게임",
+        "headlines_today": 3,
+        "share_today": 0.04,
+        "share_before": 0.016,
+        "lift": 2.6
+      }
+    ],
+    "events": [
+      {
+        "title": "렉서스 올 뉴 ES 13일 출시…전기차·하이브리드 9개 그레이드",
+        "source": "제주교통복지신문",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1obl9aNU80MlFydWlwN2lOc05MWFJzUnM0bUsxMFc1OWR0MnN6M1hiNVJ3cWhTOWg5WFltS0xQVzVVZG8tR1MxVHpjc29WRVJHcWFjNXlTanhqUm9DNFRJQg?oc=5",
+        "published": "2026-10-11T13:10:58+00:00",
+        "dates_mentioned": [
+          "13일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "[2026 파리모터쇼] 르노그룹, 전기차·콘셉트카 대거 공개…50대 규모",
+        "source": "카매거진 CAR MAGAZINE",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wN3FZRWtSUGJqUUJkLW1OdnN5SF8xakNFM3NKdUloUlhnbXRva1ZqVDc4ZkhrdjJlVF8tRGV1amx6VEdJN3FFN3QwZDZtRnhNSG4yd0VJZ2I1ZnVDY3pMcXhtRVYzZw?oc=5",
+        "published": "2026-10-11T02:30:00+00:00",
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "공개"
+        ]
+      }
+    ],
+    "trends_matches": [],
+    "history": [
+      {
+        "collected_at": "2026-10-11T13:20:06+00:00",
+        "today": 71,
+        "momentum": 1.71
+      }
+    ]
+  },
+  "evidence": {
+    "D1": "News articles per day for the last 7 days, today first: [71, 38, 50, 68, 27, 50, 16]. Today 71 vs previous average 41.5 -> momentum 1.71.",
+    "D2": "Search intent from Google autocomplete (share of suggestions): other 93% (e.g. 전기차 보조금, 전기차 충전 요금, 전기차 중고); definition 4% (e.g. 전기차 단점, 전기차 단점 디시, 전기차 영어로); news 3% (e.g. 전기차 디시, 전기차 멀미 디시, 전기차 중고 디시)",
+    "D3": "Words much more common in today's headlines than earlier (lift = times more common, new = absent before): 카지노 in 5 headlines (17.5x); 모델 in 5 headlines (17.5x); 중국차 in 4 headlines (14.0x); 해외 in 3 headlines (10.5x); 정보 in 5 headlines (8.8x); 1대 in 3 headlines (5.3x); 수출 in 3 headlines (5.3x); 출시 in 3 headlines (3.5x); 브레이크 in 3 headlines (3.5x); 자동차 in 3 headlines (3.5x); 만에 in 3 headlines (3.5x); 게임 in 3 headlines (2.6x)",
+    "S1": "2026-10-11 | 제주교통복지신문 | 렉서스 올 뉴 ES 13일 출시…전기차·하이브리드 9개 그레이드",
+    "S2": "2026-10-11 | 카매거진 CAR MAGAZINE | [2026 파리모터쇼] 르노그룹, 전기차·콘셉트카 대거 공개…50대 규모",
+    "S3": "2026-10-11 | 비건뉴스 | 전기차 충전 인증·결제 자동화…국가 PnC 2027년 2월 목표",
+    "S4": "2026-10-11 | 모터피디 | 부식·분진 대응하는 차세대 브레이크 솔루션 제시한 마일레",
+    "S5": "2026-10-11 | Calgary Roughnecks | 모바일과 PC의 설정이 같은지 확인하는 카지노와 소셜 스낵",
+    "S6": "2026-10-11 | 채널A | 2억짜리 전기차인데 장난감처럼 ‘뚝’",
+    "S7": "2026-10-11 | 이뉴스투데이 | 임현수 용인시의원, 전기차 화재 시범단지 논의",
+    "S8": "2026-10-11 | 이콘밍글 | \"일본 난공불락 시장 뚫었다\"… 대반전 일궈낸 현대 넥쏘의 '이 기술'",
+    "S9": "2026-10-11 | 매일일보 | 대전시, 수소전기차 50대 추가 보급에 16억2500만원 지원",
+    "S10": "2026-10-11 | 세종포스트 | 대전시 수소전기차 50대 추가 보급… 12일부터 접수",
+    "S11": "2026-10-11 | 경남일보 | 강민승 도의원 “전기차 충전기 늘었지만 관리엔 구멍”",
+    "S12": "2026-10-11 | 미주중앙일보 | 브레이크 부러진 2억원대 화웨이 럭셔리차…中전기차 안전성 도마에",
+    "S13": "2026-10-11 | 충청신문 | 대전시, 수소전기차 50대 추가 보급…대당 3250만원 지원",
+    "S14": "2026-10-11 | Vietnam.vn | 중국산 전기차 시제품, 3차례 시험 주행 중 브레이크 페달 고장 발생.",
+    "S15": "2026-10-11 | 충청도민일보 | 전기차 70만대분 리튬 확보… LG엔솔 북미 공략 가속",
+    "S16": "2026-10-11 | 메트로신문 | ESS가 끌고 유럽 전기차가 밀고…실적 회복 기대 커진 K배터리",
+    "S17": "2026-10-11 | 미주조선일보 | 포드, 전기차 머스탱 마하-E 최대 8000달러 인하",
+    "S18": "2026-10-11 | Naver Blog | “월 7만원대로 내 집에 충전소” 현대차·채비, 가정용 충전 구독 ‘마이홈차저’ 출시[재율 아빠 자동차 산업 업계 소식]",
+    "S19": "2026-10-11 | 오토트리뷴 | \"같은 친환경차가 아니네\".. 하이브리드vs전기차, 혜택이 이 만큼이나 달라?",
+    "S20": "2026-10-11 | 이콘밍글 | K-배터리 믿었는데… '이 시장'서 중국이 절반 넘은 반전 상황",
+    "S21": "2026-10-11 | 메트로신문 | 전기차 대신 엔진의 감성…람보르기니 1065마력에 숨은 전략",
+    "S22": "2026-10-11 | 오토놀로지 | \"G80 타는 아빠들도 이건 부러워해\"... 전 세계적으로 인전 받고 국내 출시 임박한 '프리미엄 세단'",
+    "S23": "2026-10-11 | Daum | “중국차가 이 가격?”…BYD 전기차, 국내 시장서 주목받는다",
+    "S24": "2026-10-11 | Vietnam.vn | VinFast India는 2026년 HT Auto Leaderboard Awards에서 \"올해의 전기차 제조업체\"로 선정되는 영예를 안았습니다.",
+    "S25": "2026-10-11 | IndexBox | 2035년 케이블 테스트 시장 전망: 스마트 제조와 전기차 하네스 수요로 성장 가속",
+    "S26": "2026-10-11 | Calgary Roughnecks | 장식 요소와 조작 요소를 구분하며 보는 바카라 가라머니",
+    "S27": "2026-10-11 | 오토트리뷴 | \"7천만 원대 렉서스 등장\"... G80 vs ES, 프리미엄 전기차 승자는? [차대차]",
+    "S28": "2026-10-11 | 유카포스트 | “BMW 6대 중 1대가 전동화” 국내서 1만 대 넘게 팔린 이유",
+    "S29": "2026-10-11 | 핀포인트뉴스 | 전기차 배터리 정보 공개…보험 활용은 접근성이 관건",
+    "S30": "2026-10-11 | 서울경제TV | 중국차, 전체 판매 중 수출 비중 38%…1년 새 두 배",
+    "S31": "2026-10-11 | 미디어펜 | \"전기차 배터리 정보 투명성 높인다…보험위험 분석에 활용해야\"",
+    "S32": "2026-10-11 | 오토카코리아 | 폭스바겐의 베스트셀러가 전기차로, 신형 ID. 티구안 공개",
+    "S33": "2026-10-11 | 카매거진 CAR MAGAZINE | [2026 파리모터쇼] 프랑스로 복귀한 벤츠…전기차부터 AMG까지 공세 이어간다",
+    "S34": "2026-10-11 | 뉴시스 | 8년 전 수소 '퍼스트무버' 꿈꾼 정의선 회장…뚝심 투자 성과 가시화",
+    "S35": "2026-10-11 | 굿모닝베트남미디어 | [인포그래픽] 빈패스트 전기차가 대세,,,9월 베트남 자동차 판매량 상위 10개 모델",
+    "S36": "2026-10-11 | Vietnam.vn | 도로에서 포착된 VinFast의 새로운 전기차는 VF Wild처럼 플러그인 하이브리드 시스템을 사용할 가능성이 있습니다.",
+    "S37": "2026-10-11 | 메트로신문 | 글로벌 車 업계, 유럽 전기차 시장 공략 고삐…파리모터쇼서 신차·고성능 모델 공개",
+    "S38": "2026-10-11 | Calgary Roughnecks | 실시간토토 : 흥미로운 사실과 통찰력 있는 분석",
+    "S39": "2026-10-11 | 지디넷코리아 | 폭스바겐 전기차 또 배터리 리콜…6개월 만에 재발",
+    "S40": "2026-10-11 | 생생비즈플러스 | 中 자동차, 해외 시장 영토 확장...전체 판매 10대 중 4대 수출"
+  },
+  "evidence_links": {
+    "S1": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1obl9aNU80MlFydWlwN2lOc05MWFJzUnM0bUsxMFc1OWR0MnN6M1hiNVJ3cWhTOWg5WFltS0xQVzVVZG8tR1MxVHpjc29WRVJHcWFjNXlTanhqUm9DNFRJQg?oc=5",
+    "S2": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wN3FZRWtSUGJqUUJkLW1OdnN5SF8xakNFM3NKdUloUlhnbXRva1ZqVDc4ZkhrdjJlVF8tRGV1amx6VEdJN3FFN3QwZDZtRnhNSG4yd0VJZ2I1ZnVDY3pMcXhtRVYzZw?oc=5",
+    "S3": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzdi1NVFg1azlPd1VBeUV4N05DZVp2ajNPVnBRNlU5d2JsMnVkRFUzb1g2LW5yS3VWWWpub2tPOE9LRDdZUTMtalNXSkNmbXd4NzU4QkxLSVFWOTJQMW5jMng4VTZCZw?oc=5",
+    "S4": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8tYTZNNk5qekdNRnM0WU1KYUZPNW1PYV9YOVIzME8xRGI1YzhmLUVnTjM1ODBQVXljcGlndnRlZXFqTGkwWVI3SFpUN1pWcHhuME1tTnNLN1MxQ0xLUGZSYnRzTHRIM01n?oc=5",
+    "S5": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcGVWSnJ5MVV1a3pTd2JQYzRJb0FKNm9jeGd0NU5IZEdnX1lWbzJZTGtoYnhhQ0FTdnVfa2dkb1MwZk9UZnFLaFo2a3JnNks0eVFreHJYM0E0YkJyeEVlaERxN0Q0S2lrSmhpZkI0eTBzU1pDaWcxODNpenE1STdMRVdWY1J6eW9sS1dJQk9OVXBMUkFuakVJOFVTNDVlMzhMQjRjZGdEbkxvOTB6enlGSUk2bEY0QmR5bUdJT281MXA?oc=5",
+    "S6": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oX0RMcVNEYTFHSzhmRWkwVUxXc1lWeV92bGFwMk5TVzFiMjJtN0xtUUl4b1lpV3ZWdTNCNS03M3hLNjQ0OXpLU01WOHJXME9FOUplazF1WnpSMnAwWmpBUmJSVdIBY0FVX3lxTE5oX0RMcVNEYTFHSzhmRWkwVUxXc1lWeV92bGFwMk5TVzFiMjJtN0xtUUl4b1lpV3ZWdTNCNS03M3hLNjQ0OXpLU01WOHJXME9FOUplazF1WnpSMnAwWmpBUmJSVQ?oc=5",
+    "S7": "https://news.google.com/rss/articles/CBMidEFVX3lxTE91OHliUXpzV3d2Vmo1c3A1QmVDX0VzT0FCVFBaa0dFV3hXWDNTb29uaFN0dkFyNEZjMnNNazluQkw2TU5xWDFtSS1yTTBKaFFiLXhBd2d4WXJWOTVkejNqNVp2ZGxFb0ZtaEl0RGpjTUZSRTNY0gF0QVVfeXFMT3U4eWJRenNXd3ZWajVzcDVCZUNfRXNPQUJUUFprR0VXeFdYM1Nvb25oU3R2QXI0RmMyc01rOW5CTDZNTnFYMW1JLXJNMEpoUWIteEF3Z3hZclY5NWR6M2o1WnZkbEVvRm1oSXREamNNRlJFM1g?oc=5",
+    "S8": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1jREpmU003QzVnVWFIT2g3eUtEWjA4VFJhYzRaS0kzbDl6Vm1WR1pfWUlZVEYwTnJLVUxkYjlJUjR2dXJJQks1NUFuWTVmWDNiRVczSlFsNC1ReXJfbWhEXy10YVl6eFhZb1BfSlpoUkJINktWRXBnb2Rfa9IBe0FVX3lxTE1jREpmU003QzVnVWFIT2g3eUtEWjA4VFJhYzRaS0kzbDl6Vm1WR1pfWUlZVEYwTnJLVUxkYjlJUjR2dXJJQks1NUFuWTVmWDNiRVczSlFsNC1ReXJfbWhEXy10YVl6eFhZb1BfSlpoUkJINktWRXBnb2Rfaw?oc=5",
+    "S9": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBrVUpMdGFWNkxTOG5tMGFrNkZqS192dDJfc1ZTMnB4U3lZVEE0dXA0bHJWV3M2a2JCVExmRTk3djVzdXZlcUJIaU1QWEpGSlFHSmxiV3F5RVFWS09lMFNxcm1WSVA?oc=5",
+    "S10": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBMNDRjSzgxVVhCVV9vNmNybFFtV3otQU9fckViVjd0enQ5bURYbEFKZEx5UEZMQ0xYdUNlajV0V1VidFhZd1Z6WGp6Y1c0NUtUVlJ1VnlDd2RlZDNkRWptUm1JSlYwclZB?oc=5",
+    "S11": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9peDdPSldaeHV1QXdfSllfcngwX1JWQktfZXJyUGFScUVheWFfTll2QndkM2ZYbjRja2ItUGptYVZyTFBVZU5MendvOEczME0xNDdfMVEtY0thRGk0ZlJDcmVUNzZOVlVFQzNR?oc=5",
+    "S12": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRZFdHS18wZGZKVlVQME5aTUhQMWR4VWhOMVNpbWczanV5ZDc1STk2TmNCdDExVzl0UGlTZUNTaGtfSC1uTkVqcWlqcmRCSHpFbElDVTZyQUY4VFcxRy1UaUV3?oc=5",
+    "S13": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXMnJmRXF4NzhIc0p3SFVydXBKaV9QS1dFWXlGbTlpQlpBcFJOa1NySE9RakhGV25JLWFoX05SdHFabDBDZ2V4eGwwVFA3di1Ma0owSkgtQnJWanhNNVAzRTdwaElFdG1jZTh2SUN30gFuQVVfeXFMUFcycmZFcXg3OEhzSndIVXJ1cEppX1BLV0VZeUZtOWlCWkFwUk5rU3JIT1FqSEZXbkktYWhfTlJ0cVpsMENnZXh4bDBUUDd2LUxrSjBKSC1CclZqeE01UDNFN3BoSUV0bWNlOHZJQ3c?oc=5",
+    "S14": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSTE5NEdXLWljVjRxOG9zY0hoVUxpYldoWERQQUluMXVINkhoQ3hoajlIb3lMbkZ0UjJ0U1NvMjluQVA1M0N2RFhhOUxPVXhKSmNMenlqOXRjS3R4a28yUjlINXBWemFydnRwYUN4ZDJCNnFFejkyM09wQWMtMFVkakNQd1JPTk54dEY0blBvWWVtVE0?oc=5",
+    "S15": "https://news.google.com/rss/articles/CBMibEFVX3lxTE53MU42X2RlTjFOSXJlSkFMay1GVTBER3BQa2Noa2lVWVhMZVZQMHNXSXRHbnB6alRXTHBTd3QtTzBvWDk3Nm05TFkzYzhPMzFFU1RBSlJhcks4elIzZmxUZDZpS2FpLUY1dURuaA?oc=5",
+    "S16": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB2d09md3lkaGd2d1gtOEd4Z1dSalludkZlc3E5djJGb0lZWEpKLXZSand1YkI0amlTcGFuZ2VFQWRZTnlKb3ZxY2xqa0R2TVRxRW15Q2ZiYjZrd3NrR1VCSQ?oc=5",
+    "S17": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNVFpabWV2b3ZJcUlDaktDcEkzd3N1ejItOXMtdjFTa2ZFRmctRmRDc1lvWkRpNDVHY0o2RlZVaUpkLVZ3cVlCSmtGVkJMMEpBWExNeE5pRDNsRmhUUW51QnVFbDkzbmdUYmpRbmVqODFHWkxlRC1oYnBaeGxSZFM5TkFWOFVNRExNOTQ1VDVlOXFXNDJqbEFNRnBCMEttaG9zWUhWbzVFOE00ZTBkc0FKc2RZdGlaNXRJYi1UNEdxOGFjdTdFWVpRbDRLNzIyLXkwdDMxNXFXN1AxbUNVd09R?oc=5",
+    "S18": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9jX0lOR0hDVjI0cGwwS2FhNHdxSUZOQV84WGV4VFplTnpUaG82aW51TV9qODhLOXV4a0RwZGhfM0oxaVlkUFpPdXh5eUpYTXd0TW8xMWxkN0ZpbTQtYUNFN2diX09GVEx5OWQzcy1vNjdmMVdnMWF6VlFn?oc=5",
+    "S19": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45cVZfamtYN1FrZ0hiN19XNkN6NUdhSWRSWU5YaFhvdDNUcml0WXpsZjVkbE9wTktBMTRwOEUtY2ZIdDN1Mzd5QWd6X3h4WFRTaVRFMU5TeG81ZzBiZGZRYnJiMFNKc21URHV3Z1dZNlc?oc=5",
+    "S20": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHcFZpLUc5aGpoVHV5NUV6Qk5uUlp6ZHhlMDdjbG9jcjF0SDl0VzJKSnNMN0lGS2pmRndQQW5ESEdMNWZzUFNNMDdVT1lOSlA2OHlSa1dWV1JkaC1Lc0d1QWhjRUI3QVBOcE1qbnpYS0EzQdIBekFVX3lxTFAtR2VOWXNxdkx3bTZpUy1aRjlNZ04tdU9id1FfNEZoR3VFM3lYVGJyMnhXSEJ2RzFDME80WTFlUjVoUTI1dHZ4WmN6T1FzVlZPbHZDbm1QaFRLV3VaNTNWTG5NSGQzRWowdTdEVkZuNnV5OFRqWmpfTmVR?oc=5",
+    "S21": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIb1RDa0tLZUxXWXZKcGxhSkhGb2t4Z2oydGwzQUVhR09fYWUzZ1NKbkdEbjA4MWZFWVdQRVRtb1VJSWxKZ25mTnZ5OUMyRHhHZ3RuTFVmbGNZRHBCckxuNg?oc=5",
+    "S22": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSTZLcGhzWHZEc0NrLW5nR0xLaGtOMUNHVWRtY0tFOUR3by1GY0psR1VKSFRDOGlWVEFDMzlKVFBYb0NXTkI3ZTJScVZtaVJoTnkwdDRjWmJYUVBVNE9fN25fLWV2dFpkRGRaRGhUXzIyLWRGS3FWRlNfUWJxc1pkbU5uaw?oc=5",
+    "S23": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1wNkF1dHY0dHEtZGh5dkxHWk4xSFRxU3BIQ1JQWW5HQWh1RWlDdWlWX0x5R2YxdmEtS24tY1JHTzctWDZWRnc?oc=5",
+    "S24": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeDRtbURhUHpHR0pXdUVIMzdtaFRDSzFoakI0ajFFbU50RFFpZjhuOXR2SDAwS1pfZlhtU1pVNkdsYmI0Q0F0eFUzNnNUak5FLVN6UjAyYldaRTNZVDkwblc1dENzbVFpSFpzcVI5WE5BOU44akxIUWtLMFZ4MHJoYU1CaGdwdndxWkpCQno5N2dROGs3MUJOU3NlUkdhOFJZenJVUFV3eHV6aTF4YW0zbTlqaWtjQjF3UjVV?oc=5",
+    "S25": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUENSeFBQZWlWT0gtUjdWOGx4NVY3bGxobWZOeXk4SzUxUEx6SzlzVlZEdzI0Z3BlN0YzdW50QnBrNk55TlVib3NKcmlCTjhzWlFwQkd3eUJ0SUtBYk1BY2VPaThhQkNfSTd3anUwd21vYUZaNTcteENraEhxNkhEV2hNOEVWRHNrM0ZtbkdYSkNUSGtVaUFLTEhVS1B3WWJ3Sy1QanEwcXlWLXZxLVpFUVRBTjM0empSaHhTejUyVGVpWWcza1BPcnJMNzhjZFU?oc=5",
+    "S26": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPNE9ma2V2MUZqSGh1Qi1LM3ZGQWVPVUxJbjVqblQyNkU4NEE4dXhHYzlGZVBTR2lxdUZpT2N3eGR4Vko1SnQ4M1Bwbmk3akhfTHowSmpnSDIxMnFnOXNRUE5iWmFoVUxLajJ2VGNmUXFGV1ppVG9KMjlYRmllTG9CdTF5aU9KSmhEQi1qN3dRNm1QTkRqWGFDSHBQRWR0RnZKWEFBZTlDR1IwYk1JemxudktjTkcxVnRfMncwUjdsc0szRXlSLVQ5VThwaDM1VlJuVFBKZExJODZPUHFVa2QzQTRfT2hjWU9RUVdySzU3YnJfbUJ1VEhVY3ZFOTREUDhkeHYzMHp2ZXVzekFhN3c?oc=5",
+    "S27": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9sRGxiMjRPc2FmLXFXQ2cyODFqeU5LSlY2MDNpY0FXLW9fSHdtM0FoVk55WS1Vd2hWdmc3UW9DMkpCeUlsVjZ5UnZtSkZHdmNqdV9OeTJEZzN5XzF3UjR6eG1yRGtoTmd6Qi1GeG1jdEs?oc=5",
+    "S28": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByc25WamhsUFJtc0NCQ1ROc0xhWlI1VVp4b3JlX2pwNFJtOW94LXFtM1hqTGtiQ1VVMXp1UkUzYlFtMG1oVVZrdDBJZ0I0WjRRNkpEcTFVXzVJWFAtai1xVDhvWW9nVERxUGNMX3RmUE1UbUF10gF0QVVfeXFMUHJzblZqaGxQUm1zQ0JDVE5zTGFaUjVVWnhvcmVfanA0Um05b3gtcW0zWGpMa2JDVVUxenVSRTNiUW0wbWhVVmt0MElnQjRaNFE2SkRxMVVfNUlYUC1qLXFUOG9Zb2dURHFQY0xfdGZQTVRtQXU?oc=5",
+    "S29": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1uMmd2LW0xX2dlMzM3dnV6QWdfU19OWGFWM09fR1Y0V3dBTlFIZzE4NUNHSjdqUEdNRnpkTWY0cUZTOHc0VXRhWU80bTNUWjByWE9pSnBVQk1EQ0ktNjlJV01jMnk3NkNuNFphSjg5LU5RQzNzS3E00gF3QVVfeXFMTW4yZ3YtbTFfZ2UzMzd2dXpBZ19TX05YYVYzT19HVjRXd0FOUUhnMTg1Q0dKN2pQR01GemRNZjRxRlM4dzRVdGFZTzRtM1RaMHJYT2lKcFVCTURDSS02OUlXTWMyeTc2Q240WmFKODktTlFDM3NLcTQ?oc=5",
+    "S30": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9hUUtLaDRZeDlJSHF2cG12ZFNZSmtwallxNnloTFd6RllVa3ctU2JBbHpBaEYzWEFYMUZiMUpnNFZLRXR3WDh2eFV5NUJfQTYyUldfeEtrenBRVmsyZ2ZRQmhIYWM?oc=5",
+    "S31": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1sM2NTd0U0UHU0VnpjcnNrc3JfUnNObkkyeVNzOFFGVU9pUWFGbUotYXdZVmJmaDlzMU5kQko3UUd4Y1QxekNNdzNEM29Mb2tKa1dqbk5vb0PSAVhBVV95cUxNbDNjU3dFNFB1NFZ6Y3Jza3NyX1JzTm5JMnlTczhRRlVPaVFhRm1KLWF3WVZiZmg5czFOZEJKN1FHeGNUMXpDTXczRDNvTG9rSmtXam5Ob29D?oc=5",
+    "S32": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBmeGdzYWNnWWd0V1FQanhBcHFITlhnVENFamlHOEdYTUQ4eFdXaUtyME96Z1JQd0hhdFR4dzR2VUtxUmZJV3luZWJIaC1MZl9qeW1UV2REOGhjU2hPSkF5dWp0dklBSWdnRTBpbdIBcEFVX3lxTFBWYldyR2xPU3Mwa3hWZE0ySnQ5R3JmNVI0ZkJabHZLWkJPS2F2b0xmVV9kd2JKb2hCV0o1SDI1cWNUbzJNQUxlWUJFQWI2UmVNNEJsWFZUNndjUkZsS3BCQlh1cnMtMU9fWDRNOEFTMkU?oc=5",
+    "S33": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBIRmRTYTNrTWhUb29hc3VoRTdnSl9GSHBmN3ZCTVNJWGtyOExWZlFMMGw5dUlvUVJhZ2hTOGVjU3EwN3hPb3V4Y3E0RW0tSy1HcGRTNGFXcWR1OW1qLUlraW5la0lTZw?oc=5",
+    "S34": "https://news.google.com/rss/articles/CBMieEFVX3lxTE00cUhTQmpVNjVhY3I0UjdvZkVfd3BMck5HZi1MZFc2c1c3T20tSlRKT0UxMEZiaVRINjVrbVVxdVdIcmJfY29PVEpmLXJVSmYwSTk2TlZuTjNMN1ZnRzg3OHNQWFN2S2lOYjJBVUc0U2p6bkloV2FredIBeEFVX3lxTE00cUhTQmpVNjVhY3I0UjdvZkVfd3BMck5HZi1MZFc2c1c3T20tSlRKT0UxMEZiaVRINjVrbVVxdVdIcmJfY29PVEpmLXJVSmYwSTk2TlZuTjNMN1ZnRzg3OHNQWFN2S2lOYjJBVUc0U2p6bkloV2FreQ?oc=5",
+    "S35": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxMm1ycTNYUkc2SUo2VlpmUng1YWhyclhha0FrcUxxTjJYVUlVS3p0Rklra1pKbWk5OGVMM0tGbENsN1NRa0EtMUtsdjBzOFN2UGxZOW9GaGhZdVhRMDNGMmM3MEtORWtBcGJpbUswMnU?oc=5",
+    "S36": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNjU2YW9LdENuRnpSeWhLcUlZeVZZM2t3czl6UF9sbXpCVDN2MkM1OE5IenhxOTBaZm5kdU92SmhVTW5kNFV2R01MMGltRnNoeW41ZGxOS2ctamtxVWZLa19hTlVEUUIxb0ZxZ2JaVFdoUWFpZkktQnhsTVhXcnNKVzdEV0t2aF9CUm1PZFM5bFQyVlZJZm5hSFFCM3l3NEg1ZDVrdlhfdlVtWU1YY3BB?oc=5",
+    "S37": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kX1hkYkNPcGQ3WV9FZXJfbkdJOWt4M2FzcnJmTER3dlVMeW1DY2FNZnRjV0Zhd1hnS3hZNERBZGpUVEtvbHdCU2ZMcG5WbkdqQTZaaHpBMWZaVUpwSS1iSA?oc=5",
+    "S38": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVmU1ZGVWRGd1SXlrS2JRVmZFVzNDUE9ZeWprTWlKSzhMNVpyVzBTc3p3cHZLVkJTSlNHOUZNR21Hc2ZNMDNMUTE3OUhySFlKa014QmJFR2lqeXVPRHo4dmF6cEhzdFpUSTNIekNya3JTVnNYYU1ZazhjR2cwV2hfQllfUGg3OVVxU3RZXzlRcjA5bmgyMU1MeVVlbHQ0ZkFqdlVpN0Qta2NFYW1XbjJzcEZ5NXZ2dw?oc=5",
+    "S39": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lYUgxN1MxLXlqLUxQQ01uSTdCZURFby1GYVdvVFlsb0pzV3VJWW44SGI4QmR0WjJyYjlOOG9jSXpOaHJqd09MMVYyNmVDcEdYRmM3OV9R?oc=5",
+    "S40": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5PcDMyVTU1MlMzZGpUS3VIeDRseDdoZXRKZzFKSjJkNUFFVldBaXlOVzl0Qk1xTlZWLWVabDZJSkFBbk1xQWlhWE5FRDBRR1FsZnM2cGt5NGtJbkc0Q0hFR1pBNzMzejZtNGpJLQ?oc=5"
+  },
+  "related_searches": [
+    {
+      "phrase": "전기차 보조금",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 충전 요금",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 중고",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 가격",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 충전기",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 누리집",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 배터리 수명",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 충전소",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 보조금 현황 사이트",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "전기차 고속도로 통행료 할인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 가격 순위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 경차",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 국고보조금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 공회전",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 급속충전 시간",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 개소세",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 가정용 충전기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 갤러리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 suv",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 냉각수",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 soh",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 누리집 홈페이지",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 suv 추천",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 suv 순위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 내연기관차 유지비 비교",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 soh 확인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 냉장고",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 다자녀 보조금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 돌핀",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 ev3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 단점 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 단기렌트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 동호회",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 ev5",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 ev",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 렌트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 리스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 렌트 비용",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 레이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 리스 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 리스 보조금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 로고",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 레이 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 렌트카",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 렌트 보조금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 멀미",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 멀미 이유",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 멀미 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 모터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 무선충전",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 무게",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 미션오일",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 미션",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 멀미 해결",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 마력",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 보조금 현황",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 보조금 계산기 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 배터리 교체 비용",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 배터리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 번호판",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 보험료",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 브랜드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 순위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 세금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 수명",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 소모품",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 순위 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 승차감",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 세단",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 수리비",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 세차",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 소모품 교환주기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 연비",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 유지비",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 엔진오일",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 영어로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 완속 충전요금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 완속 충전 시간",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 엔진",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 에어컨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 완충 비용",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 연비 계산",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 지원금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 종류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 종류 와 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 중고 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 장기렌트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 중고로 사면 안되는 이유",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 중고차",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 중고 시세",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 자동차세",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 추천",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 충전",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 충전카드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 취등록세",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 충전시간",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 충전소 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 충전기 설치",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 캐즘",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 카드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 캠핑카",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 카드 추천",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 캐즘 뜻",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 카드 환경부",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 캐스퍼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 캠핑",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 카페",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 키로수",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 톨비 할인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 타이어",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 통행료 할인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 타이어 교체 주기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 톨비",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 택시 멀미",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 택시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 통합누리집",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 타이어 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 티어 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 판매량 순위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 판매량",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 vs 하이브리드 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 판매순위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 폴스타",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 폭발",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 v2l",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 풀충전 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 픽업트럭",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 vs 하이브리드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 화재",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 하이패스 등록",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 회생제동",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 하이패스 할인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 환경부 카드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 한달 충전요금",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 혜택",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 하이패스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 하이패스 할인 등록",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "전기차 화재 통계",
+      "times_suggested": 1
+    }
+  ],
+  "explanation": {
+    "why_people_search": [
+      {
+        "claim": "사람들은 전기차 보조금, 충전 요금, 중고 시장 정보 등 실용적인 구매·운영 관련 정보를 찾으려 한다.",
+        "cites": [
+          "D2"
+        ],
+        "check": "supported",
+        "check_reason": "구글 자동완성에서 전기차 보조금·충전요금·중고가 다른 93%를 차지해 실용적 정보 탐색이 확인됨."
+      },
+      {
+        "claim": "최근 뉴스 기사 수가 급증하고 중국차·모델·출시·브레이크 등 키워드가 크게 늘면서 전기차에 대한 일반적인 관심이 높아지고 있다.",
+        "cites": [
+          "D1",
+          "D3"
+        ],
+        "check": "supported",
+        "check_reason": "최근 뉴스 기사 수가 71건으로 평균 대비 1.71배 증가하고 중국차·모델·출시·브레이크 등 키워드가 크게 늘었음."
+      }
+    ],
+    "what_is_happening": [
+      {
+        "claim": "렉서스가 올 뉴 ES를 13일에 출시하며 전기차·하이브리드 9개 그레이드를 선보였다.",
+        "cites": [
+          "S1"
+        ],
+        "check": "supported",
+        "check_reason": "제주교통복지신문에 렉서스 올 뉴 ES 13일 출시·전기차·하이브리드 9개 그레이드라고 명시됨."
+      },
+      {
+        "claim": "르노그룹이 2026 파리모터쇼에서 전기차·콘셉트카를 대거 공개했다.",
+        "cites": [
+          "S2"
+        ],
+        "check": "supported",
+        "check_reason": "카매거진에 르노그룹이 2026 파리모터쇼에서 전기차·콘셉트카를 대거 공개했다고 보도됨."
+      },
+      {
+        "claim": "국가 수준에서 전기차 충전 인증·결제 자동화(PnC)를 2027년 2월에 목표로 추진 중이다.",
+        "cites": [
+          "S3"
+        ],
+        "check": "supported",
+        "check_reason": "비건뉴스에서 국가 PnC 충전 인증·결제 자동화 목표를 2027년 2월이라고 제시함."
+      },
+      {
+        "claim": "마일레가 부식·분진에 강한 차세대 브레이크 솔루션을 제시했다.",
+        "cites": [
+          "S4"
+        ],
+        "check": "supported",
+        "check_reason": "모터피디에서 마일레가 부식·분진에 강한 차세대 브레이크 솔루션을 제시했다고 기록됨."
+      },
+      {
+        "claim": "대전시가 수소전기차 50대를 추가 보급하며 대당 3250만원 지원을 하고 10월 12일부터 접수를 시작한다.",
+        "cites": [
+          "S9",
+          "S10",
+          "S13"
+        ],
+        "check": "supported",
+        "check_reason": "세종포스트 등에서 대전시가 수소전기차 50대 추가 보급·대당 3250만원 지원·10월 12일 접수 시작이라고 명시됨."
+      },
+      {
+        "claim": "전기차 충전기의 수는 늘었지만 관리에 구멍이 있다는 지적이 제기되었다.",
+        "cites": [
+          "S11"
+        ],
+        "check": "supported",
+        "check_reason": "경남일보에서 도의원이 전기차 충전기 수는 늘었지만 관리에 구멍이 있다고 지적함."
+      },
+      {
+        "claim": "중국산 전기차 시제품에서 브레이크 페달 고장이 발견되었으며, 화웨이 럭셔리차 브레이크 부러짐 사고도 보고되었다.",
+        "cites": [
+          "S12",
+          "S14"
+        ],
+        "check": "supported",
+        "check_reason": "미주중앙일보와 Vietnam.vn에서 중국산 전기차 시제품 브레이크 페달 고장과 화웨이 럭셔리차 브레이크 부러짐 사고가 보고됨."
+      },
+      {
+        "claim": "LG엔솔이 전기차 70만대분 리튬을 확보해 북미 공략을 가속화하고 있다.",
+        "cites": [
+          "S15"
+        ],
+        "check": "supported",
+        "check_reason": "충청도민일보에서 LG엔솔이 전기차 70만대분 리튬을 확보하고 북미 공략을 가속한다고 보도됨."
+      },
+      {
+        "claim": "포드가 머스탱 마하-E 가격을 최대 8000달러 인하했다.",
+        "cites": [
+          "S17"
+        ],
+        "check": "supported",
+        "check_reason": "미주조선일보에서 포드가 머스탱 마하-E 가격을 최대 8000달러 인하했다고 발표함."
+      },
+      {
+        "claim": "현대차·채비가 가정용 충전 구독 서비스 ‘마이홈차저’를 출시했다.",
+        "cites": [
+          "S18"
+        ],
+        "check": "supported",
+        "check_reason": "네이버 블로그에서 현대차·채비가 월 7만원대 가정용 충전 구독 서비스 ‘마이홈차저’를 출시했다고 알림."
+      },
+      {
+        "claim": "배터리 정보 투명성과 보험 활용 논의가 활발하다.",
+        "cites": [
+          "S29",
+          "S31"
+        ],
+        "check": "supported",
+        "check_reason": "핀포인트뉴스와 미디어펜에서 전기차 배터리 정보 공개 및 보험 활용 논의가 활발하다고 언급됨."
+      },
+      {
+        "claim": "폭스바겐이 전기차 배터리 리콜을 6개월 만에 다시 실시했다.",
+        "cites": [
+          "S39"
+        ],
+        "check": "supported",
+        "check_reason": "지디넷코리아에서 폭스바겐이 전기차 배터리 리콜을 6개월 만에 다시 수행했다고 보도됨."
+      }
+    ],
+    "outlook": [
+      {
+        "claim": "국가 PnC 충전 인증·결제 자동화가 2027년 2월에 목표로 설정될 예정이다.",
+        "basis": "S3에서 국가 PnC 2027년 2월 목표라고 명시",
+        "confidence": "high",
+        "cites": [
+          "S3"
+        ],
+        "check": "supported",
+        "check_reason": "비건뉴스에 국가 PnC 2027년 2월 목표가 명시되어 outlook과 일치함."
+      },
+      {
+        "claim": "대전시가 10월 12일부터 수소전기차 50대 추가 보급을 위한 접수를 시작할 예정이다.",
+        "basis": "S10에서 12일부터 접수 시작이라고 언급",
+        "confidence": "high",
+        "cites": [
+          "S10"
+        ],
+        "check": "supported",
+        "check_reason": "세종포스트에서 대전시가 10월 12일부터 수소전기차 50대 추가 보급 접수를 시작한다고 언급됨."
+      },
+      {
+        "claim": "LG엔솔이 확보한 리튬을 바탕으로 북미 시장 공략을 가속화할 것으로 예상된다.",
+        "basis": "S15에서 전기차 70만대분 리튬 확보 및 북미 공략 가속 언급",
+        "confidence": "medium",
+        "cites": [
+          "S15"
+        ],
+        "check": "supported",
+        "check_reason": "충청도민일보에서 LG엔솔이 리튬 확보 후 북미 공략 가속을 밝혔다고 기록됨."
+      },
+      {
+        "claim": "중국 전기차의 글로벌 수출 비중이 최근 1년 새 두 배로 증가한 추세가 이어질 가능성이 있다.",
+        "basis": "S30에서 전체 판매 중 수출 비중 38%이고 1년 새 두 배 증가, S40에서 해외 시장 영토 확장 언급",
+        "confidence": "medium",
+        "cites": [
+          "S30",
+          "S40"
+        ],
+        "check": "partly",
+        "check_reason": "수출 비중이 1년 새 두 배 증가했고 해외 시장 영토 확장이 언급됐으나 지속 여부는 명시적으로 제시되지 않음."
+      }
+    ],
+    "caveats": [
+      {
+        "claim": "뉴스 기사 수 증가는 단기적인 변동일 수 있으며 지속적인 관심 증가를 보장하지 않는다.",
+        "cites": [
+          "D1"
+        ]
+      },
+      {
+        "claim": "검색意图의 'other' 범주는 구체적인 의도를 세분화하지 못해 보조금·충전 요금·중고 이외의 다양한 의도가 포함될 수 있다.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "헤드라인에 빈번히 등장한 '카지노', '게임' 등은 전기차와 직접 관련이 없을 수 있어 키워드 빈도 증가의 해석에 주의가 필요하다.",
+        "cites": [
+          "D3"
+        ]
+      }
+    ],
+    "unsupported_claims_removed": 0,
+    "failed_check_removed": 0
+  }
+}

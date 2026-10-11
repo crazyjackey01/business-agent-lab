@@ -38,18 +38,25 @@ def newest_file(folder):
     return json.loads(paths[-1].read_text(encoding="utf-8")) if paths else None
 
 
-def build():
+def payload():
     analyses = newest_per_topic(DATA / "analysis") if (DATA / "analysis").exists() else []
     analyses.sort(key=lambda a: a["facts"]["coverage"]["momentum"], reverse=True)  # hottest topic first
-    payload = {
+    return {
         "built_at": datetime.now().astimezone().isoformat(timespec="minutes"),
         "analyses": analyses,
         "snapshot": newest_file(DATA / "snapshots") if (DATA / "snapshots").exists() else None,
     }
+
+
+def render(data):
+    """The dashboard template filled with data. app.py serves this too."""
     # "</" inside the JSON would end the <script> tag early.
-    data_json = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
-    html = TEMPLATE.read_text(encoding="utf-8").replace("__DATA__", data_json)
-    OUTPUT.write_text(html, encoding="utf-8")
+    data_json = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    return TEMPLATE.read_text(encoding="utf-8").replace("__DATA__", data_json)
+
+
+def build():
+    OUTPUT.write_text(render(payload()), encoding="utf-8")
     return OUTPUT
 
 

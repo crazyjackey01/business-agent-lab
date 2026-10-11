@@ -41,10 +41,15 @@ ANALYSIS_DIR = HERE / "data" / "analysis"
 # Checked in this order; the first intent with a matching word wins.
 # Korean words match inside longer words ("로봇팔" counts as 로봇).
 INTENT_WORDS = {
+    "problems": ["화재", "리콜", "고장", "결함", "사고", "문제", "논란", "부작용", "위험", "단점", "recall",
+                 "problems", "issues", "fire", "lawsuit", "risks", "dangers", "complaints"],
+    "buying": ["가격", "보조금", "추천", "순위", "비교", "중고", "구매", "할인", "후기", "리뷰", "충전", "렌트",
+               "price", "prices", "cost", "best", "vs", "review", "reviews", "buy", "cheap", "deals",
+               "subsidy", "used", "charging", "rent"],
     "investing": ["관련주", "대장주", "주도주", "주가", "주식", "종목", "etf", "수혜주", "테마주", "투자",
                   "밸류체인", "stock", "stocks", "invest", "investments", "investors", "funding",
                   "shares", "price"],
-    "definition": ["뜻", "란", "이란", "개념", "의미", "정의", "뭐야", "특징", "종류", "단점", "영어로",
+    "definition": ["뜻", "란", "이란", "개념", "의미", "정의", "뭐야", "특징", "종류", "영어로",
                    "나무위키", "meaning", "what is", "definition", "explained", "overview", "wiki",
                    "que es", "là gì", "kya hai"],
     "learning": ["공부", "교육", "강의", "논문", "책", "자격증", "부트캠프", "대학원", "연구실", "랩실",
@@ -86,11 +91,44 @@ def classify_intent(phrase, topic):
     return "other"
 
 
-def search_intent(related, topic):
-    """Share of autocomplete phrases per intent, weighted by how often each was suggested."""
+def classify_with_model(phrases, topic):
+    """Sort phrases the word lists missed into the same fixed intents, in one model call.
+
+    The model only picks a label from INTENT_WORDS for each phrase; it adds no facts.
+    Returns {phrase: intent}; on any failure, an empty dict (phrases stay "other").
+    """
+    if not phrases:
+        return {}
+    labels = list(INTENT_WORDS) + ["other"]
+    numbered = "\n".join(f"{n}. {p}" for n, p in enumerate(phrases))
+    messages = [
+        {"role": "system", "content": (
+            "Classify what each search phrase's searcher wants. Pick exactly one label per phrase from: "
+            + ", ".join(labels) + ". Use other only if none fits. "
+            'Reply with JSON only: {"labels": {"0": "buying", "1": "technology"}}')},
+        {"role": "user", "content": f"Topic: {topic}\n\nSearch phrases:\n{numbered}"},
+    ]
+    try:
+        answer = parse_json_reply(request_model(messages).get("content"))["labels"]
+    except (ModelRequestError, ValueError, KeyError):
+        return {}
+    return {phrases[int(n)]: label for n, label in answer.items()
+            if str(n).isdigit() and int(n) < len(phrases) and label in labels}
+
+
+def search_intent(related, topic, use_model=True):
+    """Share of autocomplete phrases per intent, weighted by how often each was suggested.
+
+    Word lists first (exact and explainable), then the model for what they miss.
+    "method" in each result says how many suggestions each way classified.
+    """
+    by_rule = {item["phrase"]: classify_intent(item["phrase"], topic) for item in related}
+    leftovers = [p for p, intent in by_rule.items() if intent == "other"][:150]
+    by_model = classify_with_model(leftovers, topic) if use_model else {}
+
     totals, examples = Counter(), {}
     for item in related:
-        intent = classify_intent(item["phrase"], topic)
+        intent = by_model.get(item["phrase"], by_rule[item["phrase"]])
         totals[intent] += item["times_suggested"]
         examples.setdefault(intent, []).append(item["phrase"])
     all_count = sum(totals.values()) or 1
@@ -367,6 +405,7 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
     facts = {
         "coverage": data["news_momentum"],
         "intent": search_intent(data["related_searches"], topic),
+        "intent_method": "word lists, then the model for phrases they missed",
         "drivers": drivers,
         "events": scheduled_events(data["news"]),
         "trends_matches": data["google_trends_matches"],

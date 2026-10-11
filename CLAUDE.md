@@ -21,6 +21,7 @@ python midterm/topic_trends.py --topic "피지컬 AI"       # trends around one 
 python midterm/topic_trends.py                          # every topic in midterm/topics.json
 python midterm/analyze_topic.py --topic "피지컬 AI"      # fact-based, cited explanation (needs .env key)
 python midterm/build_dashboard.py --open                # write + open midterm/dashboard.html
+python midterm/app.py                                   # local web app at localhost:8765: type any topic
 ```
 
 There is no test suite or linter yet.
@@ -32,5 +33,7 @@ There is no test suite or linter yet.
 - Pipeline: `collect_trends.py` / `topic_trends.py` collect → `data/` JSON →
   `analyze_topic.py` (facts → cited LLM explanation → second-pass claim check) →
   `build_dashboard.py` fills `dashboard_template.html` with the newest files.
+  `app.py` serves the same template with `live: true`, which shows a search box that
+  POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
 - Scripts import each other by module name, so run them by path (`python midterm/...`).
 - `midterm/model_api.py` is a copy of week-05's (week-05 is not committed).

@@ -60,6 +60,15 @@
   .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
   a { color: var(--accent); }
   .empty { color: var(--muted); }
+  form.search { display: flex; gap: 8px; margin: 22px 0 0; flex-wrap: wrap; }
+  form.search input, form.search select, form.search button {
+    font: inherit; border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px;
+    background: var(--surface); color: var(--ink); }
+  form.search input { flex: 1 1 260px; min-width: 0; font-size: 16px; }
+  form.search button { background: var(--accent); color: #fff; border-color: var(--accent); cursor: pointer; font-weight: 600; }
+  form.search button:disabled { opacity: 0.6; cursor: wait; }
+  #status { margin: 10px 0 0; color: var(--muted); font-size: 14px; min-height: 1.4em; }
+  #status.error { color: var(--down); }
 </style>
 </head>
 <body>
@@ -67,7 +76,17 @@
   <header>
     <h1>Trend Signals</h1>
     <p id="built"></p>
+    <form class="search" id="search" hidden>
+      <input id="topic" name="topic" maxlength="60" required autocomplete="off"
+             placeholder="Type a topic you want to know about (e.g. 피지컬 AI, 전기차, smart glasses)">
+      <select id="region" aria-label="Region">
+        <option value="">Auto region</option><option value="KR">Korea</option><option value="US">US</option>
+      </select>
+      <button id="go" type="submit">Analyze</button>
+    </form>
+    <p id="status"></p>
   </header>
+  <div id="result"></div>
   <div id="topics"></div>
   <div id="general"></div>
 </main>
@@ -181,6 +200,42 @@ document.getElementById("topics").innerHTML = DATA.analyses.length
   ? DATA.analyses.map(topicSection).join("")
   : `<p class="empty">No analyses yet. Run analyze_topic.py first.</p>`;
 document.getElementById("general").innerHTML = generalSection(DATA.snapshot);
+
+// Live mode (served by app.py): search any topic.
+if (DATA.live) {
+  const form = document.getElementById("search"), status = document.getElementById("status");
+  const button = document.getElementById("go");
+  form.hidden = false;
+  form.addEventListener("submit", async event => {
+    event.preventDefault();
+    const topic = document.getElementById("topic").value.trim();
+    if (!topic) return;
+    button.disabled = true;
+    status.className = "";
+    const started = Date.now();
+    const tick = setInterval(() => {
+      const s = Math.round((Date.now() - started) / 1000);
+      status.textContent = `Collecting searches and news for "${topic}", then analyzing… ${s}s (usually 30-60s)`;
+    }, 500);
+    try {
+      const response = await fetch("/api/analyze", {
+        method: "POST", headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({topic, region: document.getElementById("region").value}),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || response.statusText);
+      document.getElementById("result").innerHTML = topicSection(result);
+      status.textContent = `Done in ${Math.round((Date.now() - started) / 1000)}s.`;
+      document.getElementById("result").scrollIntoView({behavior: "smooth"});
+    } catch (error) {
+      status.className = "error";
+      status.textContent = "Failed: " + error.message;
+    } finally {
+      clearInterval(tick);
+      button.disabled = false;
+    }
+  });
+}
 </script>
 </body>
 </html>
