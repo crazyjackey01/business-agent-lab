@@ -1,0 +1,1603 @@
+{
+  "topic": "physical AI",
+  "geo": "US",
+  "source_collected_at": "2026-10-11T13:00:51+00:00",
+  "analyzed_at": "2026-10-11T13:11:54+00:00",
+  "facts": {
+    "coverage": {
+      "today": 39,
+      "previous_daily_average": 46.8,
+      "momentum": 0.83,
+      "per_day": [
+        39,
+        49,
+        47,
+        59,
+        45,
+        50,
+        31
+      ],
+      "capped_days": 0
+    },
+    "intent": [
+      {
+        "intent": "other",
+        "share": 0.43,
+        "examples": [
+          "physical ai toolchain",
+          "physical ai agents",
+          "physical ai assistant",
+          "physical ai a16z",
+          "physical ai bottleneck"
+        ]
+      },
+      {
+        "intent": "companies",
+        "share": 0.11,
+        "examples": [
+          "physical ai companies",
+          "physical ai toolchain on aws",
+          "physical ai startups",
+          "physical ai aws",
+          "physical ai anthropic"
+        ]
+      },
+      {
+        "intent": "technology",
+        "share": 0.1,
+        "examples": [
+          "physical ai and robotics",
+          "physical ai and world models",
+          "physical ai benchmarks",
+          "physical ai data collection",
+          "physical ai dataset"
+        ]
+      },
+      {
+        "intent": "learning",
+        "share": 0.07,
+        "examples": [
+          "physical ai books",
+          "physical ai bootcamp",
+          "physical ai book pdf",
+          "physical ai course",
+          "physical ai certification"
+        ]
+      },
+      {
+        "intent": "investing",
+        "share": 0.06,
+        "examples": [
+          "physical ai stocks",
+          "physical ai etf",
+          "physical ai and robotics stocks",
+          "physical ai companies stock",
+          "physical ai companies to invest in"
+        ]
+      },
+      {
+        "intent": "outlook",
+        "share": 0.05,
+        "examples": [
+          "physical ai boom",
+          "physical ai future",
+          "physical ai growth",
+          "physical ai gartner hype cycle",
+          "physical ai hype"
+        ]
+      },
+      {
+        "intent": "events",
+        "share": 0.05,
+        "examples": [
+          "physical ai conference",
+          "physical ai conference 2026",
+          "physical ai events",
+          "physical ai expo",
+          "physical ai hackathon"
+        ]
+      },
+      {
+        "intent": "definition",
+        "share": 0.04,
+        "examples": [
+          "physical ai meaning",
+          "physical ai definition",
+          "physical ai explained",
+          "physical ai kya hai",
+          "physical ai là gì"
+        ]
+      },
+      {
+        "intent": "jobs",
+        "share": 0.04,
+        "examples": [
+          "physical ai careers",
+          "physical ai engineer",
+          "physical ai engineer salary",
+          "physical ai engineer jobs",
+          "physical ai fellowship"
+        ]
+      },
+      {
+        "intent": "industries",
+        "share": 0.03,
+        "examples": [
+          "physical ai applications",
+          "physical ai for manufacturing",
+          "physical ai for robotics",
+          "physical ai healthcare",
+          "physical ai in healthcare"
+        ]
+      },
+      {
+        "intent": "news",
+        "share": 0.02,
+        "examples": [
+          "physical ai blog",
+          "physical ai linkedin",
+          "physical ai news",
+          "physical ai newsletter",
+          "physical ai podcast"
+        ]
+      },
+      {
+        "intent": "policy",
+        "share": 0.0,
+        "examples": [
+          "physical ai governance"
+        ]
+      }
+    ],
+    "drivers": [
+      {
+        "word": "startup",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "kaist",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "now",
+        "headlines_today": 4,
+        "share_today": 0.1,
+        "share_before": 0.007,
+        "lift": 14.4
+      },
+      {
+        "word": "strategy",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.011,
+        "lift": 7.2
+      },
+      {
+        "word": "fdx",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.014,
+        "lift": 5.4
+      },
+      {
+        "word": "fusion",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.014,
+        "lift": 5.4
+      },
+      {
+        "word": "robot",
+        "headlines_today": 6,
+        "share_today": 0.15,
+        "share_before": 0.032,
+        "lift": 4.8
+      },
+      {
+        "word": "korea",
+        "headlines_today": 4,
+        "share_today": 0.1,
+        "share_before": 0.021,
+        "lift": 4.8
+      },
+      {
+        "word": "unveils",
+        "headlines_today": 4,
+        "share_today": 0.1,
+        "share_before": 0.025,
+        "lift": 4.1
+      },
+      {
+        "word": "it",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.021,
+        "lift": 3.6
+      },
+      {
+        "word": "globalfoundries",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.021,
+        "lift": 3.6
+      },
+      {
+        "word": "beyond",
+        "headlines_today": 3,
+        "share_today": 0.08,
+        "share_before": 0.021,
+        "lift": 3.6
+      }
+    ],
+    "events": [
+      {
+        "title": "Tesla Stock Forecast: How Much Will TSLA Stock Be Worth in 2030? Can It Hit $3,000?",
+        "source": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNVFZibUlDdy02NU1WeTVUWEdZZzAtc1pOLW5HRFgyN2JQYmxIMlRhdTNFZHZUaU9zTFlSTllicUY4dlpCYTFlVXBBN00yeVpRUGVWRl93d3dQQkktRGZCc2lHVnpxUG5RbHFpcy14ZkdvRFVyWGxIajJUTHRSNDJ3c1dQeUxKS0ZaMDZtRlBHd2NEUG9CM01vS2ZhQVpubHo2WW1mYVdCRV8yUUhldWVZWE5MamY4SHBNVTdxM0FONFhqWlZvRXZkUWNZcXk0Q3p2WmRYZzY5RmxGMGI2VGFIZzlQQlE1VngxU0J5X3p5R3ptRDA?oc=5",
+        "published": "2026-10-10T23:34:07+00:00",
+        "dates_mentioned": [
+          "2030"
+        ],
+        "event_words": [
+          "will"
+        ]
+      },
+      {
+        "title": "Striding AI Unveils H1 and C1 Robots for 24/7 Convenience Stores, Targets 2027 Service Launch",
+        "source": "Pandaily",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWU9xb19YVkVIdnRGUmlKZWFVYkZ4amNNSGJLZTV0WWo1WjE0Q2xsaFpkVm9pSDJzYlJyZzZrM1JyV244ZUk1VkFFNXdaS0FxLW85d3Bka2hUVll4QVgyTmh5VEpsSHR5MUI0cWdqOTNhb25QdXFCVUNkUEhEQkctajhhTkpiemdkQkZEUnNUaUpKVXppV1dkVFNuMG5XLU1XZkMtNw?oc=5",
+        "published": "2026-10-10T08:37:28+00:00",
+        "dates_mentioned": [
+          "24/7",
+          "2027"
+        ],
+        "event_words": [
+          "launch",
+          "unveil"
+        ]
+      },
+      {
+        "title": "GlobalFoundries launches FDX Fusion, a cutting-edge FD-SOI platform for Physical AI, starting production in 2028.",
+        "source": "Pluang",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ2cyUUM4WEl4VHNmOWgzeXMyU0hudDUwUUZlOW1DMDB4LS1jOVhwVjZjaFNxOEVISVdGVG1hWlI4ZzlVNXd6MmtXYWM3alZHRHJJem5DTzA5TWJINlByVjNMSXpOUjIweG1Lc2w3VDBrcXpNSnlZaF9vak9aUFRiNThBbGlwODdXdXZkREZkNi1ORzNGYXFCVzl3SQ?oc=5",
+        "published": "2026-10-09T13:08:31+00:00",
+        "dates_mentioned": [
+          "2028"
+        ],
+        "event_words": [
+          "launch"
+        ]
+      },
+      {
+        "title": "A robotics company's CEO and CFO will meet investors in New York on Oct. 7.",
+        "source": "Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWdsZkRIQ3FJTjlFUVFmSnZhVFlHVXlfSlMxbktNWGp6b3BWMXBtel9CYS1lZXVzaklESGh4X2tlblByWDB1WkpKelpGUERUMlZYcmRQVjBjcnVMRXdMUlExblhBdHY5X0NLMkRaRTc3SDJtYzBWVzFWYUVWaVNoWVVwZ0RXZnRSTGMzNHpWVzNvbHg4TU4wcEJUbTdISTFZQnl2UzlXS2QtLUhYaS1JTDJWUk1QMzhiWXFFbg?oc=5",
+        "published": "2026-10-05T13:26:00+00:00",
+        "dates_mentioned": [
+          "oct. 7"
+        ],
+        "event_words": [
+          "will"
+        ]
+      },
+      {
+        "title": "Omdia identifies four forces set to reshape technology in 2027",
+        "source": "Technology For You",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdmRDaURIc0tWNTVJS3dJWmF2aWRjZFI4TU05YTlzY0FMR0VPZXpidlR4Yl9mTHN6STRXeVlnaGQtM1ZWdTNJUTB6QlVjd0lNLUxOTjRITVF4T1dRSFBsTEJVZGFpd2cyeEVUbG1vMnVVcy1DLUlfLVF1VElGbW13aFFyUVpzUm1SZ1M1ZFpEQmppNkF1QXBfblZqbDQ?oc=5",
+        "published": "2026-10-05T09:30:46+00:00",
+        "dates_mentioned": [
+          "2027"
+        ],
+        "event_words": [
+          "set to"
+        ]
+      }
+    ],
+    "trends_matches": [],
+    "history": [
+      {
+        "collected_at": "2026-10-11T13:00:51+00:00",
+        "today": 39,
+        "momentum": 0.83
+      }
+    ]
+  },
+  "evidence": {
+    "D1": "News articles per day for the last 7 days, today first: [39, 49, 47, 59, 45, 50, 31]. Today 39 vs previous average 46.8 -> momentum 0.83.",
+    "D2": "Search intent from Google autocomplete (share of suggestions): other 43% (e.g. physical ai toolchain, physical ai agents, physical ai assistant); companies 11% (e.g. physical ai companies, physical ai toolchain on aws, physical ai startups); technology 10% (e.g. physical ai and robotics, physical ai and world models, physical ai benchmarks); learning 7% (e.g. physical ai books, physical ai bootcamp, physical ai book pdf); investing 6% (e.g. physical ai stocks, physical ai etf, physical ai and robotics stocks); outlook 5% (e.g. physical ai boom, physical ai future, physical ai growth); events 5% (e.g. physical ai conference, physical ai conference 2026, physical ai events); definition 4% (e.g. physical ai meaning, physical ai definition, physical ai explained); jobs 4% (e.g. physical ai careers, physical ai engineer, physical ai engineer salary); industries 3% (e.g. physical ai applications, physical ai for manufacturing, physical ai for robotics); news 2% (e.g. physical ai blog, physical ai linkedin, physical ai news); policy 0% (e.g. physical ai governance)",
+    "D3": "Words much more common in today's headlines than earlier (lift = times more common, new = absent before): startup in 3 headlines (new); kaist in 3 headlines (new); now in 4 headlines (14.4x); strategy in 3 headlines (7.2x); fdx in 3 headlines (5.4x); fusion in 3 headlines (5.4x); robot in 6 headlines (4.8x); korea in 4 headlines (4.8x); unveils in 4 headlines (4.1x); it in 3 headlines (3.6x); globalfoundries in 3 headlines (3.6x); beyond in 3 headlines (3.6x)",
+    "S1": "2026-10-10 | TradingKey | Tesla Stock Forecast: How Much Will TSLA Stock Be Worth in 2030? Can It Hit $3,000?",
+    "S2": "2026-10-10 | Pandaily | Striding AI Unveils H1 and C1 Robots for 24/7 Convenience Stores, Targets 2027 Service Launch",
+    "S3": "2026-10-09 | Pluang | GlobalFoundries launches FDX Fusion, a cutting-edge FD-SOI platform for Physical AI, starting production in 2028.",
+    "S4": "2026-10-05 | Stock Titan | A robotics company's CEO and CFO will meet investors in New York on Oct. 7.",
+    "S5": "2026-10-05 | Technology For You | Omdia identifies four forces set to reshape technology in 2027",
+    "S6": "2026-10-11 | The Robot Report | Will ‘boring’ robots win in the real world? Why robotic form should follow workflow",
+    "S7": "2026-10-11 | Dealroom | Amon: AI companies want 100B-parameter models running on phones by 2028",
+    "S8": "2026-10-11 | The Motley Fool | This Nvidia Partner Was My Top Pick for 2026, and It's Up 43%: Here's Why It's Still a Great Value Now",
+    "S9": "2026-10-11 | Barclays Investment Bank | Robots roll out, economies rewire",
+    "S10": "2026-10-11 | Dealroom | Tally's retail takeover: 3,000 robots proving physical AI pays",
+    "S11": "2026-10-11 | KED Global | Korea’s SK Square backs Japanese physical AI startup Mujin to expand into robotics",
+    "S12": "2026-10-11 | EE Times | Manfred Horstmann: GlobalFoundries Bets on FDX Fusion for Physical AI",
+    "S13": "2026-10-11 | Pasquale Pillitteri | Lutech unveils L.u.c.a., a humanoid robot for Italian factories, as EU machinery rules near",
+    "S14": "2026-10-11 | India Today | He started with Physical Science. Now, IIT Madras student eyes AI research in Japan",
+    "S15": "2026-10-11 | India Today | He began with Physical Science. Now, IIT Madras student explores AI research in Japan",
+    "S16": "2026-10-11 | Qatar Tribune | The next AI race exposes the limits of language",
+    "S17": "2026-10-11 | South China Morning Post | What’s in a name? Trump calls it ‘SI’. China calls it ‘human-made’",
+    "S18": "2026-10-11 | Wowtale | [Korean Startup Weekly News #139] Physical AI Reaches Orbit as Global AI Infrastructure Hits $2B",
+    "S19": "2026-10-11 | Wowtale | Robot Training-Data Firm Mecka Raises $60M Series B",
+    "S20": "2026-10-11 | TV.nu | The Tech Download på CNBC ikväll 21:00",
+    "S21": "2026-10-11 | TV.nu | The Tech Download på CNBC inatt 05:00",
+    "S22": "2026-10-11 | news.lavx.hu | South Korea's Physical AI Boom Brings Robot Baristas and K-pop Dancers to Public Venues",
+    "S23": "2026-10-11 | BigGo Finance | KAIST Unveils 'Physical AI' Platform Strategy Beyond Humanoids",
+    "S24": "2026-10-11 | YourStory.com | Design, AI, impact: test your business creativity with Edition 253 of our weekly quiz!",
+    "S25": "2026-10-11 | CIOL | Inner Sky Labs Launches Physical AI Platform, Seeks ₹300 Cr Funding",
+    "S26": "2026-10-11 | DongA Science | KAIST Declares Physical AI Vision With President Demonstrating Wearable Robot",
+    "S27": "2026-10-11 | 디지털투데이 | KAIST targets physical AI beyond humanoids, unveils next-generation strategy",
+    "S28": "2026-10-11 | 아시아경제 | Six Years into Euisun Chung's Tenure... Hyundai Motor Group Moves Beyond the 'Global Big Three' Toward Physical AI",
+    "S29": "2026-10-11 | Pandaily | Startup Led by Ex-Nvidia GPU Architect Designs Y10 Chip to Close Robot Control Loops in 1 ms",
+    "S30": "2026-10-11 | Nikkei Asia | Robot baristas and K-pop dancers lead South Korea's physical AI boom",
+    "S31": "2026-10-11 | Tata Elxsi | Physical AI Is Happening Now, but the Frontier Remains Wide, Says Tata Elxsi",
+    "S32": "2026-10-11 | Korea IT Times | [Insight] Samsung SDS Connects AI Infrastructure with Manufacturing Operations",
+    "S33": "2026-10-10 | Simply Wall Street | Does Smart Factory Launch Change The Bull Case For Belden Stock (BDC)?",
+    "S34": "2026-10-10 | Simply Wall Street | GLOBALFOUNDRIES (GFS) Unveils FDX Fusion As Dresden And AI Packaging Plans Advance",
+    "S35": "2026-10-10 | FourWeekMBA | AI Daily: Two Labs Report Models Taking Unintended Actions",
+    "S36": "2026-10-10 | ACCESS Newswire | Outsight Acquires GRASP Aviation Innovations to Bring Autonomous Control to Airport Checkpoints",
+    "S37": "2026-10-10 | Chosunbiz | Choo Kyung-ho urges fair shot for TK in Korea’s chip and AI push - CHOSUNBIZ",
+    "S38": "2026-10-10 | Yahoo Finance Singapore | The Bull Case For GLOBALFOUNDRIES (GFS) Could Change Following Its FDX Fusion Physical AI Bet - Learn Why",
+    "S39": "2026-10-10 | IRW-Press | IROS 2026|PaXini Showcases Full-Stack Tactile Strategy for Physical AI",
+    "S40": "2026-10-10 | ad-hoc-news.de | SoftBank Bets on Industrial AI Over Model Hype With Gulf Fund and Sarawak Platform"
+  },
+  "evidence_links": {
+    "S1": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNVFZibUlDdy02NU1WeTVUWEdZZzAtc1pOLW5HRFgyN2JQYmxIMlRhdTNFZHZUaU9zTFlSTllicUY4dlpCYTFlVXBBN00yeVpRUGVWRl93d3dQQkktRGZCc2lHVnpxUG5RbHFpcy14ZkdvRFVyWGxIajJUTHRSNDJ3c1dQeUxKS0ZaMDZtRlBHd2NEUG9CM01vS2ZhQVpubHo2WW1mYVdCRV8yUUhldWVZWE5MamY4SHBNVTdxM0FONFhqWlZvRXZkUWNZcXk0Q3p2WmRYZzY5RmxGMGI2VGFIZzlQQlE1VngxU0J5X3p5R3ptRDA?oc=5",
+    "S2": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWU9xb19YVkVIdnRGUmlKZWFVYkZ4amNNSGJLZTV0WWo1WjE0Q2xsaFpkVm9pSDJzYlJyZzZrM1JyV244ZUk1VkFFNXdaS0FxLW85d3Bka2hUVll4QVgyTmh5VEpsSHR5MUI0cWdqOTNhb25QdXFCVUNkUEhEQkctajhhTkpiemdkQkZEUnNUaUpKVXppV1dkVFNuMG5XLU1XZkMtNw?oc=5",
+    "S3": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ2cyUUM4WEl4VHNmOWgzeXMyU0hudDUwUUZlOW1DMDB4LS1jOVhwVjZjaFNxOEVISVdGVG1hWlI4ZzlVNXd6MmtXYWM3alZHRHJJem5DTzA5TWJINlByVjNMSXpOUjIweG1Lc2w3VDBrcXpNSnlZaF9vak9aUFRiNThBbGlwODdXdXZkREZkNi1ORzNGYXFCVzl3SQ?oc=5",
+    "S4": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWdsZkRIQ3FJTjlFUVFmSnZhVFlHVXlfSlMxbktNWGp6b3BWMXBtel9CYS1lZXVzaklESGh4X2tlblByWDB1WkpKelpGUERUMlZYcmRQVjBjcnVMRXdMUlExblhBdHY5X0NLMkRaRTc3SDJtYzBWVzFWYUVWaVNoWVVwZ0RXZnRSTGMzNHpWVzNvbHg4TU4wcEJUbTdISTFZQnl2UzlXS2QtLUhYaS1JTDJWUk1QMzhiWXFFbg?oc=5",
+    "S5": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdmRDaURIc0tWNTVJS3dJWmF2aWRjZFI4TU05YTlzY0FMR0VPZXpidlR4Yl9mTHN6STRXeVlnaGQtM1ZWdTNJUTB6QlVjd0lNLUxOTjRITVF4T1dRSFBsTEJVZGFpd2cyeEVUbG1vMnVVcy1DLUlfLVF1VElGbW13aFFyUVpzUm1SZ1M1ZFpEQmppNkF1QXBfblZqbDQ?oc=5",
+    "S6": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZTMxQ0Y3TW1MR2R2RnF2c3RVWjVRQlJXcEQtSmlITlV4WVhSek5mSldSX0FqWC1jaVJ4cTQ3cENydXM5aGEtQ3lzdTQ0Tk5IMFRUaE1ua2hBTjVTSnNtTnB4RXRjRW8tZWkyX255MzJEQ0czLV90cTluRU9FeGlHaGtTdXdVN1A0ZDduTGc0TnJ3MG9icFdRaExIT3pQUjl4N200RGN0Wk5odG9BRTN1ZHlB?oc=5",
+    "S7": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdkxQWGxQQ3V0ZXpHLWI5MnF5WkRxQzJzRVBTZTNwTm5tbXdPM3M1OXgtT3psSUM0UFBqalhCclBBRE1uRHNRYjRrOGhqN2VhZGhtdTFpQzJmem10SEp4Nms2QVh6YThNYkNtdmNNdi1kLWVNQmhhRHRTSlhwcEJ2Z3VlbUI1ZFpsVWUyZWlycWlhbm1PWVlLQjRXWjVVRm1sSDVtMEtrMA?oc=5",
+    "S8": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYnNnOXRKRDNkYUJkd1ZUMXFvdVZnRGROaU05R21RX2RXd19tSTIxQW9iVkszWU44bl9JamptWkF6anZsTkgtdHRKaFRXNlZnVzhLTTRWaXJ3c292OEVEWWlJS3pRbjlFN19lVHkzVmVGUTBKNjh1Y1lCaVlUSjRKOTM0ZlB4MkJndkVlejZmV1pLSHhoazJVcw?oc=5",
+    "S9": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNndXNmtzeFYxalNxOWlOWUt4dXJManU0NzhEYlFEQWZSS3ZJNkZkOHdTYVFKc1FpUTI4ZUEtUXE4YUN6eDhjZjMyWVpSeDlEM1I0TlJ1Y1hfcFhzMzFNSHN3Rk9VeUNaX0hJa1pVWmw4X2RVZDZKOEl4WFBhZk9wcUQxcDdOeGltZG5uQjVKOGpqRnZWUVNaeE5xcWJ3b3FDWXp0Z0JCSS1feld1Tl81UzZNX3FaaWM0ZXNqWGRKZlE0UEYtLWYtTGhnd1IzeWRzRlRJ?oc=5",
+    "S10": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTWg5TjJCR2hxLTNHTFZnakp1NGV1d3dZU25TM2pHNDR1V1pVNGFLajlfcjY0dEphbmh5WkM2ZUc0c2xBeFhpTjBXUHg2RmEtM2JFTFpKa1dVOGFDQks5ZTJoSFE4dHZ0ZkphUy00YXM1cmEyZkczcWlyZjdYS0gzOWRPc3pRUDlEa2R6M0dXa1plb2NDcFBqaDlXNA?oc=5",
+    "S11": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11MmVCemRFM1JRQ2FCc0xZRlBjZHVJNW82MHFhMGJYZUlZblZYdXVxOW9taFpXd2pyVUFJa2REbUpyaHJiVWtDOF9zYnlTZ3N2Qk13UlRSMFVENWlibzZHNmU2TWo5bkNWcG9RSnB3QjVuZkdsazRjSWFRWHpEWlk?oc=5",
+    "S12": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU2VWMGZsV285TVFaWDNTMjUtZ2dpSlJtQ1hRS2EwWVk0UW82cHBnVGhEQW5QeVBBNF94aWhrWk9OSHNvN1JrZzJmN1ZjQkNTUG4xdi1ObklfSlFHZTRXenFKMG5adloxTmQzUzhSTUFEWUtmckVjNGNaLW1PNHBTSi1vOGdDdjlxaGhYSWYybjhFbTh6bnc2ZQ?oc=5",
+    "S13": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTWJwQlQ3RlY2V2owNWdjelQ0X3ZnWkxiZ0dlQXJtZ3NGLTlQbGZFcDExN2U2aHFVOUFqNTNNbm00UkptTUhHWU1kb3RzR0w0cHVNLXpMelp0eG9BOWJwRm5RUmhmam14S3BSUjBBQlVFUG10aFhmek5DeFRKN0dBcTNsS0RITmwyV015OFc2NlJjZUlUb0JpY0ZoTXprZw?oc=5",
+    "S14": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNMFJUd25xWTk1MnhLcy1wSzlJMUhpemRGTVZYOHBxbkt3R3lwRGR2dHZaa2JNVmJvanJhcm5TTlA3YzFDU19vODJIOHBxS2QxNDVkS01oOU5sVndHTjQ3Q3B4VXNFSmJjaGtpb3VxajI4eXlLUHNYMHY5RHY0VnZtX1J4cVA1dktkTGZ0NmNOSUU4V0tZZHJoRFZ6amhhMWJDdGd6WGxXUXhCdWlPdTZWNGZqV3lFRlpBdTNrSDdOMUU0VWl2WVd6RWRzR25tcEk2a0lFRVJZcVZHVExiVWNXTHpYRk41aks0WWJPUUpPeWNDb1ZaZi0zVEVNVU8wYmxWQ2g40gGIAkFVX3lxTE1rRFNaUDhWVFJIUWdQVVlXVi16alRydlk4cmdYUklvS215ZklKNnVTcE9NYzRHeHA2eE52ZHRIcUMxQjVCN0s4ZGc2ZWN0akhJdUUtSFJqdmNsM3R3NGFHMnBOS2pMTjY0MllTNW9WTFpMaUIzU0tyaThlSzBkMnNxVlVUX2RkbTR0c0R3ZmNIWnpXNGktU3RvZmhrbm9ISjZLeng2ejgyekp6Q293cTdrWmdsSG52RzJTVm0xX1Y0QVB6TXlfZmFsazR0TF8xV3FSaEZrT2RreTBpb21uYUxFekltOW14bUpsb3RDT1hySDN1T0U1M1doTnhBTlRjYWN2TnV0OWhGZA?oc=5",
+    "S15": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNa0RTWlA4VlRSSFFnUFVZV1YtempUcnZZOHJnWFJJb0tteWZJSjZ1U3BPTWM0R3hwNnhOdmR0SHFDMUI1QjdLOGRnNmVjdGpISXVFLUhSanZjbDN0dzRhRzJwTktqTE42NDJZUzVvVkxaTGlCM1NLcmk4ZUswZDJzcVZVVF9kZG00dHNEd2ZjSFp6VzRpLVN0b2Zoa25vSEo2S3p4Nno4MnpKekNvd3E3a1pnbEhudkcyU1ZtMV9WNEFQek15X2ZhbGs0dExfMVdxUmhGa09ka3kwaW9tbmFMRXpJbTlteG1KbG90Q09YckgzdU9FNTNXaE54QU5UY2Fjdk51dDloRmTSAYgCQVVfeXFMTWtEU1pQOFZUUkhRZ1BVWVdWLXpqVHJ2WThyZ1hSSW9LbXlmSUo2dVNwT01jNEd4cDZ4TnZkdEhxQzFCNUI3SzhkZzZlY3RqSEl1RS1IUmp2Y2wzdHc0YUcycE5LakxONjQyWVM1b1ZMWkxpQjNTS3JpOGVLMGQyc3FWVVRfZGRtNHRzRHdmY0haelc0aS1TdG9maGtub0hKNkt6eDZ6ODJ6SnpDb3dxN2taZ2xIbnZHMlNWbTFfVjRBUHpNeV9mYWxrNHRMXzFXcVJoRmtPZGt5MGlvbW5hTEV6SW05bXhtSmxvdENPWHJIM3VPRTUzV2hOeEFOVGNhY3ZOdXQ5aEZk?oc=5",
+    "S16": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTWxsYWo0LUl3cldHWXg2T0RpN2c1MnMwX1hvQ2NVbDFwbzUxdUZtUFVzS1ZOb2tmZkNtbWRYRnI2R0d3Y1M0ek16c1FUYjlsTTE4aWc3SjFDVHhSTlRPdUwzcmhUdThMUjAxa1UzQktqaUZVbWJ2WGVMa2xxS0dyRzB3cVAzX3h3Vk9Ycm4zME5BU2RKdlhQWEZ2SEVVNkQ0NXVsVmpMRdIBpwFBVV95cUxNTWxsYWo0LUl3cldHWXg2T0RpN2c1MnMwX1hvQ2NVbDFwbzUxdUZtUFVzS1ZOb2tmZkNtbWRYRnI2R0d3Y1M0ek16c1FUYjlsTTE4aWc3SjFDVHhSTlRPdUwzcmhUdThMUjAxa1UzQktqaUZVbWJ2WGVMa2xxS0dyRzB3cVAzX3h3Vk9Ycm4zME5BU2RKdlhQWEZ2SEVVNkQ0NXVsVmpMRQ?oc=5",
+    "S17": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR3Q2Q24yMkRrXzBZdjByVXl3VExfUDUyV3F5Y0FMNGFwUDlWdTRkcEk3YXQzejMzTTVxY1dJVlMtYUJXYXRvMFN6eE5uSEhrVHpLMUE2SE41RzZGSnJzWTBvYmlDaC1weFVWb2J3aGJnTzNRaDNVaXZGTWkzbE1WcVNxMGVseVNqb0xtVUx6MDlYcWZYVjhhVDBNelZ6RURrbWhUMWw0djZyc1MtU2dWR1o4YUdOeHZWMlRoZGV4R05ENUXSAcMBQVVfeXFMUEd0NkNuMjJEa18wWXYwclV5d1RMX1A1MldxeWNBTDRhcFA5VnU0ZHBJN2F0M3ozM001cWNXSVZTLWFCV2F0bzBTenhObkhIa1R6SzFBNkhONUc2Rkpyc1kwb2JpQ2gtcHhVVm9id2hiZ08zUWgzVWl2Rk1pM2xNVnFTcTBlbHlTam9MbVVMejA5WHFmWFY4YVQwTXpWekVEa21oVDFsNHY2cnNTLVNnVkdaOGFHTnh2VjJUaGRleEdORDVF?oc=5",
+    "S18": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBTOXhvUnNjd0Y4ZFAwUi0xeHNIVXlkSW5BNUpuejZacE15dkh3OUtZdi00UWV5N2RzaVdyVENMUm1zYks4V1dZS3RyNFVodzFZVjk0?oc=5",
+    "S19": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE43MkFpZ0VtdDh0d21sZ0U2aVRpU3h0cG01YXhHckFUdWR2Y0F0elBrUFpYS3laRHZBTjNRdXpTdW5wZk8xbFJ2WU5fdXhhSkxKZmxZ?oc=5",
+    "S20": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBRRzN1Y2ZsNW1BMHFYQWE4V2JKYjN6M0o5eVNyQmpPX1lCR0lON2JNLWg2WGxIV1daUzczNnhBRk4ydm52Ny00OA?oc=5",
+    "S21": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBoV2JfWWJzcExmclRjdzFrY1BoLWNSaW5XYjQxU0tQMlowTGpTTEJlcXZGb1hRNlhma056V0toQ1pBQ1lPN0Vzdw?oc=5",
+    "S22": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmRZeXQ3QTMySy1DWVY1R2dTNU8tdGlRUHZ4NTZMMmxoX0ZPMTd0eXNIaEpNSG1uemZBUWRYYXdsZGVoN0MyZ3hIYVh2a205clJKQUJQNnFQSXczVUtnUnJjYUtPQl91WHE2R0Z6UGpSOUVXck04aHBKeW5ra1VLZG4xNV9aNkwzTmFQNG5aS09HLTBpM19YaEgxNGc2amZMbGpTZUxJbGNuRnpuRFFTdzF5b1FlR1U?oc=5",
+    "S23": "https://news.google.com/rss/articles/CBMidkFVX3lxTE92b0dydkkyTHd3c1ZnUHBmVG5KSmZ3a092WENLaVU1Zl9PeFJUQkZoc2xsYlhlNU9tOWN2RDNhNmd0d2lONEdwZGZzTmRkV0pBWEZueEsyQ2Z4eUxwZk1Kb3hFTmZDMktVd0lDb0kwOF90MjFiMVE?oc=5",
+    "S24": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPekhpUjZxekg5QWdCTk15SFMyOFY4RHJ4OXBMNFJieGE2aTE3QlhIenJWNEhGMlNhY3BFUy1TWGQ3MzMzLXJ3Y2dMM2s5YTZpWEZ6R19XQUdZSHBhNjU1cXZ0YmNMaFlTanBPSnFWcVdTTEcxcjdHdWJwdTNMUkI4YXhvRmdLdlduX2NQOTh3?oc=5",
+    "S25": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZVdPWEV6RGtzNUg4MUw5X0JpNnBiZExveDNqYmd0bTZGempYZ2VGUVY5UXdPeDdXMUd4ZFE5Y1kwNGc2WXYwd3BZcWxoNVc0RWNZdGV1RkZlakRzVi1uQ1hycEExdThOOXpnT3gwaS1EWDJxdVVTbnVDTkRaQ0NFSzlSbGVQdmZzQ3RoQk9aR3lCakNpTFlsUzZrVjlEdUVkOTU2WDRHanFOZ2hkRzdsX1ZsRm5kWkZaVjlFM0N30gG-AUFVX3lxTE9lV09YRXpEa3M1SDgxTDlfQmk2cGJkTG94M2piZ3RtNkZ6alhnZUZRVjlRd094N1cxR3hkUTljWTA0ZzZZdjB3cFlxbGg1VzRFY1l0ZXVGRmVqRHNWLW5DWHJwQTF1OE45emdPeDBpLURYMnF1VVNudUNORFpDQ0VLOVJsZVB2ZnNDdGhCT1pHeUJqQ2lMWWxTNmtWOUR1RWQ5NTZYNEdqcU5naGRHN2xfVmxGbmRaRlpWOUUzQ3c?oc=5",
+    "S26": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQMWNIT01ZX2JUbUJIUDBrMmpZdUl5bjQ1N3RpYWk2M3dDMkhDelIwQ2hDdW1iajBON1ZzOXhuckNtUjdQZFJidDgwcVVLYzNQd0xsRQ?oc=5",
+    "S27": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYzM4WnlTN09pQVlHandlUWtCZ043M2otTU5vUjVwMjN3N3NrMlZnV1RfcnVzTXFlcW8wSkNJTmhpWTkxOXdleF84ekRKOVZDQWF1OERrZ085Njd3dngyLWdEeXFJWGxObE5PcWpsUXRqNVdpaURUVl94M3drdzBiLUVSaDBBbTRXMWRmczlaU3RFVHZ2TWlURzFfZGs5OXQ0Y1VyaVM3cGdDRHUzUUFGOXR6TXJ1dmNYOGVaWTl3?oc=5",
+    "S28": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qSWl5SS12dk8yVXMwandrR090TkZkdzZDaFladGpmOGNZZDNrMGxBQV9zSkV5TXpVeXIzWGhKd0FVYUQ0ZFdsT1pEWGxZNDV1UC14N0FsZmxVd0ZFOUVkamhoMWg?oc=5",
+    "S29": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOR3hYUWQtSWZ5ejNfWlk3bEVFMUhoNDJLTDBNRU1JRGxzZEhQa0owby1NRGZLd2llcmx6bGlPSmMxYjBPVWdYVkhFR2sxVVNqY1VvVmsyZXhpQlFNNWxIT3F0cDJpNnQzSV9aYS1mREtVT3h2UGFoamtqN3l2QUNMa0UtS241QzU3R0JtZUE5VFdHUGFFVnc?oc=5",
+    "S30": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcjIzUTNRVklIVGFoVVpEemctZ3pSYWtILU5FS2N1Y2JQb3dBMXFEbGJyUHpHaU12U3owMW1KbEJ5OWczbzlBQU5MSDc4NlhIVjR2NVJzakRJRm5DcHZFc29uRXpaelduSENJaEF1ZGllVEpWMlNadWdwZzc0cGhBdjBlV1hWQmxPSGQzRG8tYWlfaUFGcjZpN2RTakNxVGNvbVlDZWVhTGRSdEhyQ09OYlQ2OTlWTFlKM3JEXzZYeXpWOWtLUWYtdWNaYlJhZDhoamc?oc=5",
+    "S31": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQS3g0UFpiaHN2ZWc1dVIydkphUV9fblMxbnMwNVZ1SUhJM3dfVVZ6Vm5adHUxMC1pRExVcFBTazFTYTNlUGRuVDhhLTBBRHJ6UG1JNTJYZTFOU1MtdnhzbVE2cTQyRG5Tb3RDQ3VSM2JyWWhqSjFqOUlzaVd0YVBPUHFaYkpHcjdYLTlPV2E4TjFRcXhSZXdweENZcW5mcndUMWVBS0pMRnZseGlJeHdydkxIc0hsT0tMWFYtLVZR?oc=5",
+    "S32": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mTy12djc4TmotVVRmLTIwSHZiSi04X3gzZnRkcFc0N0VCMVV6T2szMG1sVlhpOWVNTGE1cUw4UGhVQUFPQTdETFFLdzFfZk01QnBheGZFRjNYMmh1a3l4V0h4VGpVanpvWll5XzVTX24?oc=5",
+    "S33": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWWlwbVc2bXFvOFpVLU00WXhGbWpXNC1ZODAxN3RUN0VQbEs3d1I1dzJRQnlVZVVjNnh3dWZPMHhwZFVjNUJVWUxuT3VXRTBtdm9iNEhNWmdHd1Q3ZEtWVkNiclNMVm5KdlNlVGkxN3o1S3lfaEZxSFlydWdTOEYyYXJfQ1otVEpJUl9qTXlBTjlGZjJ5ZndOSTVhakRhZkRrdmZ1UktzczBOUXAtU3hrT1BVMFdFbWJCc2fSAb8BQVVfeXFMUEFHRFpUaDZ0RDgyUDM5Yjc1N19USGZzU2lsLXE2MWtQb3dYVnZINzFVN0ViT2ZqN2J1eW1PTk44Y25PWmhoYkpCNGJjVi1qdXI3Wno2bXFxYXc0akxUTlJGQjU5M3B2WFpIT1ZZczdqX1N6ZjZMWXBrTEprb1hKd1ZlLVhTNGpFTXlfT05MNTVQWmdPb1dHaG95VElhSzltWGlmWXBrWFNCeHpNLS1mdm5Sd2Q1NFVXQThGWE1HckU?oc=5",
+    "S34": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcE1yMlVDb055WV9keVZsVFdRcjNpbWNFbGVaSDdpMl9SNHNuZ3ppeHFmSmYzUVJGeTJ0a1VrM21SQWEyM0VtQXBJMlh5RHgyLTJSX1lMUGE2SXprYVRjNHlORmRhSXM0QWg3ZXUyZTlqdVpyVmFfVWxkM243Q3dNSkVxZlJFMFlUY2JRcEZnaWFoRjJsOVB4SzRQUWFVV2hoQ0QtUGRKbVczOFVXUFctclQta0puS29aQWJVM25HcldOY0dKYmV2WnBiVFFDSGw1ZjI3NUpn0gHbAUFVX3lxTFA4ejk1dEQyX1pwM0w3Ny0zZ2xwZFFxbFNxYnhrSnQzOUFHUFlETEg0dmdReVZkTGZGUTBNYTVtOFFfSWkwWWpVSG0zWXEtNjVEZ0x2T3M1ZGtRSnJOaTFQa0JJS3MxVlJRRWVsSVlTRnlXbF9wRnpoRkZ3YjNUdEx5dXVLZGxLZVlVZzBBX1Vzajl5TERjdEZTdENNd2dnN0Y1NFEtUnBTMk00MkhhQ1RSaWZWWkd0RVlzekZfdzJ6dGZoeEg0VXZXTzMxQzNMWHNuNXBWdHZTWmhUcw?oc=5",
+    "S35": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVlNKYWlld3pPX3REU3lsbjJ5c0dhTnJqWlJhZWVmTFBUa3BHV0hpTk5XT0otVDhVZnhQU0NVSnFTdVlFWWhkdkhPc3JSWFFmXzFoNGFBcWdzVEc4clJ3bFFpY3B6QTU0aXRxUFFVenlRbE9WemhzNC1HcUZXa2c3SlB1ODJzdVlNZEtRVA?oc=5",
+    "S36": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQW12YnRQcFNQM200WjhfRDVVOHQxaDQzRzlqS3lLS0ZkS2JqSnlmakVyT1cxV3Rpb0NWc1l0REVSX0prQzcxXzEteUxHRS0wMEg0RXliZ3R2endlcWQ2cXRHU0FzenJQaUNmeU16VnpucjVIdjliQS1rclRvemt6b3hvUVlzLWtjTUlOUlptQU5jOXZzNzl0MDNCRUxwakJjcW9VY0cyWE1EamtFWkxrZkNVdzB5eE9pNC1YM0JuN0VqdWNiZzdRNjhGTGVFbW4xQS1FRmR6eUJzcjNuZmh0RWdEVTU?oc=5",
+    "S37": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYm41LVM1ZUlTdDZYTHdmcGdidHJtT21PZHJMMi1Uckk1Ui0wTVg4d0l3ckZ6MndYVWFvVlViVVZsdldlOVh0Wm1RQ1R1bFUtWmdQZ1VNeGt2MWloN3FoTFluQlQ4SV9EODFpeTktSllCeXlUNV96VjZfajhXbzNpX25YTHFrSEFtazBiQ0ZLVWg3WFF10gGUAUFVX3lxTE5ibjUtUzVlSVN0NlhMd2ZwZ2J0cm1PbU9kckwyLVRySTVSLTBNWDh3SXdyRnoyd1hVYW9WVWJVVmx2V2U5WHRabVFDVHVsVS1aZ1BnVU14a3YxaWg3cWhMWW5CVDhJX0Q4MWl5OS1KWUJ5eVQ1X3pWNl9qOFdvM2lfblhMcWtIQW1rMGJDRktVaDdYUXU?oc=5",
+    "S38": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONnVONlItR1VJdHNkUkRta0kzdEtaMmt4Y1FKeXhVQWM1cU52QTdHVEdLcFJKRU4wcFRCWXV2bzNuSG52dkZ5M1JVRlZlcFVKOUFoaUN4VEsxY0psWms5ZjQ0Qkx5eXB0STdPenZ6RlMybGhFOFlKdm1kUWJUb2M2UTJRTUZVczJJcXAwVg?oc=5",
+    "S39": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQlROczVqSWFtNGpFSWtDV0R5LVBNalNra1hzRmFoc2pFVktBeDFwTWJOOGtJcEx4dXFCUm1IblAtaUU4ZUp6UXlnMnVEMXByUHd1cjJabFpXZFUtd3N0UFpRaVctZGhSUEN2X3U0QVVWMGFVaGFVSl96TGlRdWVudjZGcXAxWW5VeVkzaUNobXpnOXBvaEc3SS1WNA?oc=5",
+    "S40": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNenVjMUpRZkhWNFlUQjlKQTVmajlkZlhGT2xmYmtGNlZ5NzIwbTdmS2MxUVhlSEdtSnFoNGJUREMxYmJRSlZBakNOQ3h3RzlQQUp2U0hnT1EySmxMeWVUaHNyUnhzVy1wWUNNc1d2V3EwekZoMElrRmxZM2NyemVaTVVkVTJsb1F3S25LODRrQWY2UzlJWU5lMl9ySEV4aE5QXzVUSW9RMjJaQU0xQVFKdVcteG9CdEVlRjlpS1FQeUxPX0pxRGpfRGR2cW11dWgxb1k2STFtcHpNM3RlR2Q1a25DMVg3NWNUN2c?oc=5"
+  },
+  "related_searches": [
+    {
+      "phrase": "physical ai companies",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai stocks",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai toolchain on aws",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai meaning",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai etf",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai startups",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai toolchain",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "physical ai and robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai agents",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai assistant",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai applications",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai aws",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai and robotics stocks",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai a16z",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai anthropic",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai amd",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai and world models",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai blog",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai books",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai benchmarks",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bootcamp",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai boom",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bottleneck",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bcg",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai bench",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai book pdf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai blackberry",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai companies stock",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai course",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai conference",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai conference 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai careers",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai companion",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai companies to invest in",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai certification",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai calculator",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai definition",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data collection",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai devices",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai dataset",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data factory",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data factory blueprint",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai dataset nvidia",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data collection companies",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai development",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai examples",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai engineer",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai events",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai etf reddit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai engineer salary",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai explained",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai engineer jobs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai embodied ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai expo",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai fellowship",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai funding",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai foundation model",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai future",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai fanuc",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai for manufacturing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai for robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai fujitsu",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai framework",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai founder",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai github",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai growth",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai google",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai gartner",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai garage",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai governance",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai gartner hype cycle",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai goldman sachs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai globalfoundries",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai healthcare",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hype",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hcltech",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hardware",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon hk",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai harness",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hitachi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai humanoid robot",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai in healthcare",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai in manufacturing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai investments",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai infrastructure",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai image",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai icon",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai is the next frontier",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai investors",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai is the future",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai intel",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jeff bezos",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jensen huang",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai japan",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs india",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jbnu",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs uk",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jensen",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai journal",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai jobs germany",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai korea",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kpmg",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai keyboard",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kya hai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai key players",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kr",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kaist",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai kddi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai south korea",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai lab",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai leaders",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai learning",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai living lab",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai learning path",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai là gì",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai layers",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai logo",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai linkedin",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai lotion",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai models",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market size",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market map",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai mckinsey",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai manufacturing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai meetup",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai mit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai market forecast",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai news",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai note taker",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai newsletter",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia course",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia dataset",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nebius",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nexus japan",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai ntt data",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai nvidia cosmos",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai overview",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai orchestrator",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai open source",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai operating system",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai os",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai on aws",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai omniverse",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai open datasets",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai online course",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai openai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai products",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai public companies",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai pi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai projects",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai podcast",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai pdf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai platform",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai product manager",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai papers",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai purdue",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai qnx",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai qualcomm",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai quotes",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai que es",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai qiita",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai and quantum computing",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "gartner physical ai quadrant",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "jensen huang physical ai quote",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai data scientist quantumblack labs",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "qualcomm physical ai initiatives",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics companies",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai reddit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai research",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics stocks",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai room",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai robotics etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai roles",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai report",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai reinforcement learning",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai summit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stocks to buy",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai summit 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai studio",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stack",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stocks etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai stocks reddit",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai safety institute",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tam",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai training",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tech stack",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai trends",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tools",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai training data",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai textbook",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai tutorial",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai use cases",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai understanding and building the physical world",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai uses",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "is physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "udemy physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai uk",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai us stock",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai university",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai ux",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai uae",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs robotics",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs embodied ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs agentic ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs edge ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs generative ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs digital ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai valuation",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai venture capital",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai vs world model",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai world model",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai what is it",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workshop",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workbench",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai wiki",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai with raspberry pi",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai what does it mean",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workshop eccv",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai warehouse",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai workflow",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai xpeng",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai x",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai for all xpeng",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xai physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xtend physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xaba physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "xiaomi physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai youtube",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai yann lecun",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai yc",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai y combinator",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai yandex",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai new york times",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "yaskawa physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "yandex physical ai conference",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai is coming for your car",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "yc physical ai startups",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai zinnov",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hackathon zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai hack zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai eth zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai pi zero",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "physical ai developer night zurich",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "zainar physical ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "zinnov physical ai report",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "zipline physical ai",
+      "times_suggested": 1
+    }
+  ],
+  "explanation": {
+    "why_people_search": [
+      {
+        "claim": "Users seek to understand what physical AI is and its definition.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users look for job opportunities, career paths, and salary information in physical AI.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users invest or consider investing in physical AI‑related stocks, ETFs, or companies.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users explore technology trends, benchmarks, robotics applications, and world‑model research for physical AI.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users search for learning resources such as books, bootcamps, courses, or PDFs on physical AI.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users seek information about companies, startups, toolchains, and AWS offerings in the physical AI space.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users look for outlook, future growth, and market projections for physical AI.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "Users follow news and event coverage (conferences, announcements) about physical AI developments.",
+        "cites": [
+          "D2",
+          "D1"
+        ]
+      }
+    ],
+    "what_is_happening": [
+      {
+        "claim": "Striding AI unveiled H1 and C1 robots for 24/7 convenience stores, targeting a service launch in 2027.",
+        "cites": [
+          "S2"
+        ]
+      },
+      {
+        "claim": "GlobalFoundries announced FDX Fusion, an FD‑SOI platform for physical AI, with production slated for 2028.",
+        "cites": [
+          "S3",
+          "S12",
+          "S34"
+        ]
+      },
+      {
+        "claim": "KAIST disclosed a physical AI vision, demonstrating wearable robots and announcing a strategy beyond humanoids.",
+        "cites": [
+          "S26",
+          "S27",
+          "S23"
+        ]
+      },
+      {
+        "claim": "South Korea is experiencing a physical AI boom, with robot baristas and K‑pop dancers appearing in public venues.",
+        "cites": [
+          "S22",
+          "S30",
+          "S29"
+        ]
+      },
+      {
+        "claim": "A startup led by an ex‑Nvidia GPU architect released the Y10 chip designed to close robot control loops in 1 ms.",
+        "cites": [
+          "S29"
+        ]
+      },
+      {
+        "claim": "Inner Sky Labs launched a physical AI platform and is seeking ₹300 crore in funding.",
+        "cites": [
+          "S25"
+        ]
+      },
+      {
+        "claim": "Tata Elxsi observed that physical AI is already happening but the frontier remains wide.",
+        "cites": [
+          "S31"
+        ]
+      },
+      {
+        "claim": "Retailer Tally deployed 3,000 robots, demonstrating that physical AI can generate measurable business returns.",
+        "cites": [
+          "S10"
+        ]
+      },
+      {
+        "claim": "SK Square backed Japanese physical AI startup Mujin to expand its robotics capabilities.",
+        "cites": [
+          "S11"
+        ]
+      },
+      {
+        "claim": "Lutech unveiled a humanoid robot (L.u.c.a.) for Italian factories amid forthcoming EU machinery regulations.",
+        "cites": [
+          "S13"
+        ]
+      },
+      {
+        "claim": "IIT Madras students are pursuing AI research in Japan after beginning in physical science.",
+        "cites": [
+          "S14",
+          "S15"
+        ]
+      },
+      {
+        "claim": "Omdia identified four forces set to reshape technology in 2027, influencing physical AI development.",
+        "cites": [
+          "S5"
+        ]
+      },
+      {
+        "claim": "Barclays reported that robots are rolling out and economies are being rewired by physical AI.",
+        "cites": [
+          "S9"
+        ]
+      }
+    ],
+    "outlook": [
+      {
+        "claim": "Physical AI adoption in manufacturing and retail is expected to expand significantly by 2027‑2028.",
+        "basis": "GlobalFoundries’ FDX Fusion production start (2028) and Tally’s deployment of 3,000 robots proving business returns.",
+        "confidence": "medium",
+        "cites": [
+          "S3",
+          "S10"
+        ]
+      },
+      {
+        "claim": "Investment interest in physical AI is likely to grow through 2027 as reflected by rising search intent for investing and ongoing funding activities.",
+        "basis": "Investment‑related search share (6%) and recent funding rounds such as Inner Sky Labs’ seek for ₹300 crore and SK Square’s backing of Mujin.",
+        "confidence": "medium",
+        "cites": [
+          "D2",
+          "S25",
+          "S11"
+        ]
+      },
+      {
+        "claim": "Educational demand for physical AI learning resources will increase, driven by current learning‑related search share and university‑level initiatives.",
+        "basis": "Learning‑related search share (7%) and IIT Madras students pursuing AI research in Japan after a physical science background.",
+        "confidence": "medium",
+        "cites": [
+          "D2",
+          "S14",
+          "S15"
+        ]
+      }
+    ],
+    "caveats": [
+      "Search intent shares are based on a snapshot of Google autocomplete and may not reflect overall search volume or long‑term trends.",
+      "News article counts cover only the last seven days and may not capture broader media attention over longer periods.",
+      "Forward‑looking statements from companies, analysts, and outlook sources are subject to change and may not materialize as described.",
+      "The evidence emphasizes developments in South Korea, Europe, and specific companies; global trends may differ.",
+      "Some claims rely on headlines that summarize events without providing full methodological details."
+    ],
+    "unsupported_claims_removed": 0
+  }
+}

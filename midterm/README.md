@@ -57,6 +57,36 @@ For the topic it reports:
 
 Edit `topics.json` to change the watchlist. Results go to `midterm/data/topics/`.
 
+### Analysis: connect searches to what is happening and what is next
+
+```sh
+python midterm/analyze_topic.py --topic "피지컬 AI"            # uses the latest topic_trends result
+python midterm/analyze_topic.py --topic "피지컬 AI" --refresh  # collect fresh data first
+python midterm/analyze_topic.py --topic "physical AI" --lang en --geo US
+```
+
+Built so conclusions rest on facts, not speculation:
+
+1. **Measured facts (plain code, no AI)**: search intent shares (investing, definition,
+   technology, ...), today's news drivers (words far more common than in earlier
+   headlines), headlines announcing dated events, coverage history across runs.
+2. **Explanation (LLM via OpenRouter)**: the model sees only those facts, each with an
+   id (`[D1]` data, `[S4]` headline), and must cite ids for every claim. Claims citing
+   nothing or nonexistent ids are dropped. Forecasts need a basis and a confidence.
+3. **Evidence check**: a second model call rates each claim against the exact
+   evidence it cites. Unsupported claims are removed, "partly" ones are marked.
+
+Known limits: headlines only (no article bodies); English autocomplete has a long
+"other" tail; the check uses the same model, so it reduces but does not remove errors.
+
+### Dashboard
+
+```sh
+python midterm/build_dashboard.py --open
+```
+
+Writes `midterm/dashboard.html` (one self-contained file) from the newest data and opens it.
+
 ## Data sources
 
 - Google Trends "Trending Now" RSS: `https://trends.google.com/trending/rss?geo=KR` (real-time, last ~24h)

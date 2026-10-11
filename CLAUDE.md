@@ -19,6 +19,8 @@ pip install -r week-05/requirements.txt          # requests, python-dotenv
 python midterm/collect_trends.py [--geo KR --wiki ko]   # general trending searches
 python midterm/topic_trends.py --topic "피지컬 AI"       # trends around one topic
 python midterm/topic_trends.py                          # every topic in midterm/topics.json
+python midterm/analyze_topic.py --topic "피지컬 AI"      # fact-based, cited explanation (needs .env key)
+python midterm/build_dashboard.py --open                # write + open midterm/dashboard.html
 ```
 
 There is no test suite or linter yet.
@@ -27,5 +29,8 @@ There is no test suite or linter yet.
 
 - The API key lives only in `.env` (git-ignored). Never put keys in tracked files.
 - The professor grades the git history: commit after each meaningful change with a clear message.
-- `midterm/topic_trends.py` imports from `collect_trends.py`, so run the scripts by path
-  (`python midterm/...`), not as a package.
+- Pipeline: `collect_trends.py` / `topic_trends.py` collect → `data/` JSON →
+  `analyze_topic.py` (facts → cited LLM explanation → second-pass claim check) →
+  `build_dashboard.py` fills `dashboard_template.html` with the newest files.
+- Scripts import each other by module name, so run them by path (`python midterm/...`).
+- `midterm/model_api.py` is a copy of week-05's (week-05 is not committed).

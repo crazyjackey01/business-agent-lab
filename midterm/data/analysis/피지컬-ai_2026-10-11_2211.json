@@ -1,0 +1,1089 @@
+{
+  "topic": "피지컬 AI",
+  "geo": "KR",
+  "source_collected_at": "2026-10-11T13:00:34+00:00",
+  "analyzed_at": "2026-10-11T13:11:24+00:00",
+  "facts": {
+    "coverage": {
+      "today": 90,
+      "previous_daily_average": 41.5,
+      "momentum": 2.17,
+      "per_day": [
+        90,
+        21,
+        52,
+        66,
+        58,
+        43,
+        9
+      ],
+      "capped_days": 0
+    },
+    "intent": [
+      {
+        "intent": "investing",
+        "share": 0.17,
+        "examples": [
+          "피지컬 ai 관련주",
+          "피지컬 ai 대장주",
+          "피지컬 ai etf",
+          "피지컬 ai 관련주 한국",
+          "피지컬 ai 관련주 미국"
+        ]
+      },
+      {
+        "intent": "technology",
+        "share": 0.17,
+        "examples": [
+          "피지컬 ai 로봇",
+          "피지컬 ai 기술",
+          "피지컬 ai 데이터",
+          "피지컬 ai 드론",
+          "피지컬 ai 로보틱스"
+        ]
+      },
+      {
+        "intent": "learning",
+        "share": 0.11,
+        "examples": [
+          "피지컬 ai 교육",
+          "피지컬 ai 공부",
+          "피지컬 ai 논문",
+          "피지컬 ai 대학원",
+          "피지컬 ai 랩실"
+        ]
+      },
+      {
+        "intent": "other",
+        "share": 0.1,
+        "examples": [
+          "피지컬 ai 예시",
+          "피지컬 ai 리얼월드",
+          "피지컬 ai 메가프로젝트",
+          "피지컬 ai 반대",
+          "피지컬 ai 보안"
+        ]
+      },
+      {
+        "intent": "definition",
+        "share": 0.08,
+        "examples": [
+          "피지컬 ai 뜻",
+          "피지컬 ai 나무위키",
+          "피지컬 ai 단점",
+          "피지컬 ai 란",
+          "피지컬 ai 뭐야"
+        ]
+      },
+      {
+        "intent": "policy",
+        "share": 0.07,
+        "examples": [
+          "피지컬 ai 글로벌 얼라이언스",
+          "피지컬 ai 얼라이언스",
+          "피지컬 ai 얼라이언스 2기",
+          "피지컬 ai 특별법",
+          "피지컬 ai 패권 전쟁"
+        ]
+      },
+      {
+        "intent": "industries",
+        "share": 0.07,
+        "examples": [
+          "피지컬 ai 물류",
+          "피지컬 ai 분야",
+          "피지컬 ai 방산",
+          "피지컬 ai 사례",
+          "피지컬 ai 산업"
+        ]
+      },
+      {
+        "intent": "outlook",
+        "share": 0.07,
+        "examples": [
+          "피지컬 ai 전망",
+          "피지컬 ai 동향",
+          "피지컬 ai 메가 트렌드",
+          "피지컬 ai 미래",
+          "피지컬 ai 보고서"
+        ]
+      },
+      {
+        "intent": "events",
+        "share": 0.07,
+        "examples": [
+          "피지컬 ai 대회",
+          "피지컬 ai 세미나",
+          "피지컬 ai 챌린지",
+          "피지컬 ai 컨퍼런스",
+          "피지컬 ai 컨퍼런스 2026"
+        ]
+      },
+      {
+        "intent": "companies",
+        "share": 0.04,
+        "examples": [
+          "피지컬 ai 기업",
+          "피지컬 ai 스타트업",
+          "피지컬 ai 회사",
+          "피지컬 ai 현대차"
+        ]
+      },
+      {
+        "intent": "jobs",
+        "share": 0.03,
+        "examples": [
+          "피지컬 ai 신입사원이 되다",
+          "피지컬 ai 채용",
+          "피지컬 ai 취업",
+          "피지컬 ai 취업 디시"
+        ]
+      },
+      {
+        "intent": "news",
+        "share": 0.02,
+        "examples": [
+          "피지컬 ai 뉴스",
+          "피지컬 ai 디시"
+        ]
+      }
+    ],
+    "drivers": [
+      {
+        "word": "6주년",
+        "headlines_today": 8,
+        "share_today": 0.09,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "총장",
+        "headlines_today": 5,
+        "share_today": 0.06,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "카이스트",
+        "headlines_today": 4,
+        "share_today": 0.04,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "익산시",
+        "headlines_today": 4,
+        "share_today": 0.04,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "3위",
+        "headlines_today": 3,
+        "share_today": 0.03,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "발표",
+        "headlines_today": 3,
+        "share_today": 0.03,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "정의선",
+        "headlines_today": 22,
+        "share_today": 0.24,
+        "share_before": 0.004,
+        "lift": 60.9
+      },
+      {
+        "word": "취임",
+        "headlines_today": 16,
+        "share_today": 0.18,
+        "share_before": 0.004,
+        "lift": 44.3
+      },
+      {
+        "word": "6년",
+        "headlines_today": 11,
+        "share_today": 0.12,
+        "share_before": 0.004,
+        "lift": 30.4
+      },
+      {
+        "word": "현대차그룹",
+        "headlines_today": 9,
+        "share_today": 0.1,
+        "share_before": 0.004,
+        "lift": 24.9
+      },
+      {
+        "word": "전환",
+        "headlines_today": 11,
+        "share_today": 0.12,
+        "share_before": 0.008,
+        "lift": 15.2
+      },
+      {
+        "word": "기업",
+        "headlines_today": 5,
+        "share_today": 0.06,
+        "share_before": 0.004,
+        "lift": 13.8
+      }
+    ],
+    "events": [
+      {
+        "title": "'로봇을 움직인다'…카이스트, 13일 피지컬 AI 전략 선포",
+        "source": "대전일보",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yckc2VUdYSVhlelNwcU0taXR0WW5RaDdnUExudDdDb0ZYWDgtRVV1S0JCNklUU0NhRUVVcUFmUU1tWU1CQXc0S2hiR0tOYUNzY2NNWDZWQzdWQWp1MmdwdFpxTjUwN2ZORFlLY3pRdmxmZlXSAXNBVV95cUxPMnJHNlVHWElYZXpTcHFNLWl0dFluUWg3Z1BMbnQ3Q29GWFg4LUVVdUtCQjZJVFNDYUVFVXFBZlFNbVlNQkF3NEtoYkdLTmFDc2NjTVg2VkM3VkFqdTJncHRacU41MDdmTkRZS2N6UXZsZmZV?oc=5",
+        "published": "2026-10-11T08:52:03+00:00",
+        "dates_mentioned": [
+          "13일"
+        ],
+        "event_words": [
+          "선포"
+        ]
+      },
+      {
+        "title": "대구시 개최 올해 첫 '피지컬AI챌린지 2026', 전국 147개팀 참가…경북대 'Yard-X'팀 대상 수상",
+        "source": "전자신문",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ZWkFYeUlRN2RYZHAtUHZGNGZOaldqc25UMzh0aDZNZzkxQm9Oc0JoNWJuZUdRV2JsSWdkaGZmUkZVWTgxTWtNbE54Vk5HQQ?oc=5",
+        "published": "2026-10-11T06:34:10+00:00",
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "피지컬AI 어디까지 도달했나? KAIST 13일 기술시연 후 비전발표",
+        "source": "중도일보",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9jWm1sRHpPMXo4VmV2Y1MzMjZWalJvRDFyR3ZRbXJMYlZqcDlxM2h6UWMyWHZfSndwZlUwbWdkN1Q4eExyNFRscVFhamxDd3NiSkxtSEJfSE9CTjdlUEREWTNSNmg?oc=5",
+        "published": "2026-10-11T06:21:24+00:00",
+        "dates_mentioned": [
+          "13일"
+        ],
+        "event_words": [
+          "발표"
+        ]
+      },
+      {
+        "title": "KAIST, 13일 ‘Physical AI KOREA 2026’ 개최… 피지컬 AI 비전·전략 선포 예정",
+        "source": "충청게릴라뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmS0xhcWphMXdSdTZ6UTdYaVIyYXJnNnN2bWpGbkI5dFZHRE9BbkxocFJ6c1JZQ2UtSkJVZUUxYjAtT0d2TzNfemRrNkdtb2I0emp5emh5cHRQclNUWGNmZ250dEs4Zw?oc=5",
+        "published": "2026-10-11T05:22:19+00:00",
+        "dates_mentioned": [
+          "13일",
+          "2026"
+        ],
+        "event_words": [
+          "개최",
+          "선포",
+          "예정"
+        ]
+      },
+      {
+        "title": "KAIST, 피지컬 AI 코리아 2026 개최한다",
+        "source": "https://www.2news.co.kr/",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWE9GcEVZaVM4VFhDYUtZSlN3QUttVGI4MlBXLVFOR2pRcHBaWkxvdDRQalp4ZHlmT1VLUVJWREk4UG80eTNLdjFuOEpQX09EeDNXQUhzS2N5NXhJV0FmMTVKNUl2S2V1?oc=5",
+        "published": "2026-10-11T04:48:00+00:00",
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "KAIST, 휴머노이드 넘어 ‘피지컬 AI’ 새 판 짠다…13일 ‘피지컬 AI 코리아’ 개최",
+        "source": "로봇신문",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iUUZITVEyS3I3LUZmb3dxN3VsRGR3Q051a0FGQ0NINWVDcVI3NlBsRktnOVBtYmFPbU00dDZfd2hZUWhpZmpBY0FVT2hKVElhTlA1dHZlTkIyMElEbWRLMjVRUkN5bUI0bENSSQ?oc=5",
+        "published": "2026-10-11T04:11:38+00:00",
+        "dates_mentioned": [
+          "13일"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "휴머노이드 넘어 '피지컬 AI' 가속…KAIST 13일 기술·전략 발표",
+        "source": "뉴스1",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hTHdldFJvN3BUcnRPci0zSEpubWRnUTRuVHQtUWVmMkd4N3dkaXhlV3RGSHNPVHF2emdJRVFyb0N1M1FhdV9mOUtMVDhKVllrUnNwYjlOWFVQTkRjclNCZQ?oc=5",
+        "published": "2026-10-11T03:00:00+00:00",
+        "dates_mentioned": [
+          "13일"
+        ],
+        "event_words": [
+          "발표"
+        ]
+      },
+      {
+        "title": "카이스트, 피지컬 AI 산업화 추진…13일 전략 발표",
+        "source": "데일리안",
+        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNRDI5d1A3bzlkYklnOTBqdURMc0RBOFhZUkhZMEJzR2ZVNmtZVlJZTTJFNVhBcGNUTnV3ZlNHaHFyT1hYZ05fbEQwT1lOLUE2V0lJSzVjR1pFRnE3RXBtSWdoZktrOTl2dXZucEswOEs5YV95N3NYUTc2UzVBZWozSmJ5V0JXYnJnRHRlSFVoN3puUmNKemcycVJuamVJZE9SbWRlbC1OeGFKVHN1YUlQN01kazMzVkNZM191eVFjRkJOc016RURaYjJ3aHBDYmk2UVg4aWRVQmx4ajVtS2VuZDhLejNYbXRsTDVsOWVyS0hPZzIzakFhUQ?oc=5",
+        "published": "2026-10-11T03:00:00+00:00",
+        "dates_mentioned": [
+          "13일"
+        ],
+        "event_words": [
+          "발표"
+        ]
+      },
+      {
+        "title": "KAIST, 13일 ‘Physical AI KOREA 2026’ 개최… 피지컬 AI 비전·전략 선포 예정",
+        "source": "충남일보",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51LWNMYVRydndmazdGTXptdU03NHctdU9GWlZVbXA0d2VFaC1UVTUzM211SllBSTJRaWp1OVlUanNTamY4ekZ2d1pMVUw3dkNoSWZpemNlRDZXLVVYZ2taYTlDaktDcGFGdzd2ejkzdGRWdkk?oc=5",
+        "published": "2026-10-09T07:00:00+00:00",
+        "dates_mentioned": [
+          "13일",
+          "2026"
+        ],
+        "event_words": [
+          "개최",
+          "선포",
+          "예정"
+        ]
+      },
+      {
+        "title": "KAIST, 13일 ‘피지컬 AI 코리아 2026’ 개최… 제조·의료·물류 아우르는 플랫폼 기술 비전 선포",
+        "source": "스포트라이트유",
+        "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPLU9ROUFNUlZGcHFWZDhLYUsyaWMzcjlmcXo3d0g3VC1LVHM0MlMtdkVHdklUWUFKVVNaeWt6UzV4R3pJV1RkRTZWVHJlYkR6TkxQVjVaRWhDazNHNUFYYjFia0FpalJobk9POXVmbTkxSVg3RHhqQkYzczNCOUU5dDlDREgycUJzSXczZjBUYjV6OUJGZWtTWVZZTVBDYUFTSTFncWZDcDBFODJKTE5mc0NfVVp0QjNwUWctN01vZC0taVh5dHcxWHluM05IT1hjQmRIWHJEeUgzbFdjRVd0R2lPd3VHWko1a0k3cFRxM0F2Qkc3Y0RlR293QV9OMktvZUtXQ3FTNzhtS2ZmbnJsOHlmRG9tbi0zanQ0anFyaEw5ZDU0Z21vdHUtbDlFNmgyN080MkZVNktNdlM3LXc?oc=5",
+        "published": "2026-10-08T15:13:28+00:00",
+        "dates_mentioned": [
+          "13일",
+          "2026"
+        ],
+        "event_words": [
+          "개최",
+          "선포"
+        ]
+      },
+      {
+        "title": "KAIST '피지컬AI 코리아 2026' 개최…미래산업 비전 선포",
+        "source": "파이낸셜뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PaXNTMWhXWFVpcE82a2dQb1hZLUtqVDZ3Mm1FTWh6cE5WMXhiYnJtbXpSalB4RFhLRi0xal9IU1pvaHNucmpNbEF6a3dVN04tTnd1ejlxanpidw?oc=5",
+        "published": "2026-10-08T09:25:00+00:00",
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최",
+          "선포"
+        ]
+      },
+      {
+        "title": "휴머노이드 넘어 ‘피지컬 AI’새 판 짠다...KAIST, ‘Physical AI KOREA 2026’ 개최",
+        "source": "인공지능신문",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWSjV2bnEta1ZWLWkwa3dHVkNZVUZBdjlPUGhMRl90TlJ2OEtSTUFZY25nUlBZOGUwYndId0tvMFplY0huMGthN1Jabnozc3A5WHAzLVFXTldSUVd1Q1VCQUprNmlqOVU?oc=5",
+        "published": "2026-10-08T04:34:19+00:00",
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "인천시, 피지컬 AI 실증센터 구축 사업 착수··· 내년 4월 완공 예정",
+        "source": "인천투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xMjNzbVdja1JHNlA1N1BqcmlHSWJ1aDhMWVVkQlpVOVhRNUtmT1BMdVozejVSVXlLTG5KallwcWpuQ1oweFZQcW90b2RVdDYzY2t5RkxBYlBjZTRNMmU2dnRRajZSM3lzTVVUTTZ2Q3E?oc=5",
+        "published": "2026-10-06T23:47:02+00:00",
+        "dates_mentioned": [
+          "내년"
+        ],
+        "event_words": [
+          "예정"
+        ]
+      }
+    ],
+    "trends_matches": [],
+    "history": [
+      {
+        "collected_at": "2026-10-11T13:00:34+00:00",
+        "today": 90,
+        "momentum": 2.17
+      }
+    ]
+  },
+  "evidence": {
+    "D1": "News articles per day for the last 7 days, today first: [90, 21, 52, 66, 58, 43, 9]. Today 90 vs previous average 41.5 -> momentum 2.17.",
+    "D2": "Search intent from Google autocomplete (share of suggestions): investing 17% (e.g. 피지컬 ai 관련주, 피지컬 ai 대장주, 피지컬 ai etf); technology 17% (e.g. 피지컬 ai 로봇, 피지컬 ai 기술, 피지컬 ai 데이터); learning 11% (e.g. 피지컬 ai 교육, 피지컬 ai 공부, 피지컬 ai 논문); other 10% (e.g. 피지컬 ai 예시, 피지컬 ai 리얼월드, 피지컬 ai 메가프로젝트); definition 8% (e.g. 피지컬 ai 뜻, 피지컬 ai 나무위키, 피지컬 ai 단점); policy 7% (e.g. 피지컬 ai 글로벌 얼라이언스, 피지컬 ai 얼라이언스, 피지컬 ai 얼라이언스 2기); industries 7% (e.g. 피지컬 ai 물류, 피지컬 ai 분야, 피지컬 ai 방산); outlook 7% (e.g. 피지컬 ai 전망, 피지컬 ai 동향, 피지컬 ai 메가 트렌드); events 7% (e.g. 피지컬 ai 대회, 피지컬 ai 세미나, 피지컬 ai 챌린지); companies 4% (e.g. 피지컬 ai 기업, 피지컬 ai 스타트업, 피지컬 ai 회사); jobs 3% (e.g. 피지컬 ai 신입사원이 되다, 피지컬 ai 채용, 피지컬 ai 취업); news 2% (e.g. 피지컬 ai 뉴스, 피지컬 ai 디시)",
+    "D3": "Words much more common in today's headlines than earlier (lift = times more common, new = absent before): 6주년 in 8 headlines (new); 총장 in 5 headlines (new); 카이스트 in 4 headlines (new); 익산시 in 4 headlines (new); 3위 in 3 headlines (new); 발표 in 3 headlines (new); 정의선 in 22 headlines (60.9x); 취임 in 16 headlines (44.3x); 6년 in 11 headlines (30.4x); 현대차그룹 in 9 headlines (24.9x); 전환 in 11 headlines (15.2x); 기업 in 5 headlines (13.8x)",
+    "S1": "2026-10-11 | 대전일보 | '로봇을 움직인다'…카이스트, 13일 피지컬 AI 전략 선포",
+    "S2": "2026-10-11 | 전자신문 | 대구시 개최 올해 첫 '피지컬AI챌린지 2026', 전국 147개팀 참가…경북대 'Yard-X'팀 대상 수상",
+    "S3": "2026-10-11 | 중도일보 | 피지컬AI 어디까지 도달했나? KAIST 13일 기술시연 후 비전발표",
+    "S4": "2026-10-11 | 충청게릴라뉴스 | KAIST, 13일 ‘Physical AI KOREA 2026’ 개최… 피지컬 AI 비전·전략 선포 예정",
+    "S5": "2026-10-11 | https://www.2news.co.kr/ | KAIST, 피지컬 AI 코리아 2026 개최한다",
+    "S6": "2026-10-11 | 로봇신문 | KAIST, 휴머노이드 넘어 ‘피지컬 AI’ 새 판 짠다…13일 ‘피지컬 AI 코리아’ 개최",
+    "S7": "2026-10-11 | 뉴스1 | 휴머노이드 넘어 '피지컬 AI' 가속…KAIST 13일 기술·전략 발표",
+    "S8": "2026-10-11 | 데일리안 | 카이스트, 피지컬 AI 산업화 추진…13일 전략 발표",
+    "S9": "2026-10-09 | 충남일보 | KAIST, 13일 ‘Physical AI KOREA 2026’ 개최… 피지컬 AI 비전·전략 선포 예정",
+    "S10": "2026-10-08 | 스포트라이트유 | KAIST, 13일 ‘피지컬 AI 코리아 2026’ 개최… 제조·의료·물류 아우르는 플랫폼 기술 비전 선포",
+    "S11": "2026-10-08 | 파이낸셜뉴스 | KAIST '피지컬AI 코리아 2026' 개최…미래산업 비전 선포",
+    "S12": "2026-10-08 | 인공지능신문 | 휴머노이드 넘어 ‘피지컬 AI’새 판 짠다...KAIST, ‘Physical AI KOREA 2026’ 개최",
+    "S13": "2026-10-06 | 인천투데이 | 인천시, 피지컬 AI 실증센터 구축 사업 착수··· 내년 4월 완공 예정",
+    "S14": "2026-10-11 | 이뉴스투데이 | 피지컬AI·반도체부터 교통·문화까지 '익산 대전환 본격화'",
+    "S15": "2026-10-11 | 국제신문 | 발전설비 점검하고, 길 위 장애물 치우고…부산 기관 로봇들 맹활약",
+    "S16": "2026-10-11 | 누리일보 | 제조현장 해법 찾았다… 대구 피지컬 AI 챌린지 성료",
+    "S17": "2026-10-11 | 한국경제 | 정의선 \"실패 두려워 말고 도전\"…피지컬AI 전환 이끈 '해보자 정신'",
+    "S18": "2026-10-11 | 충청신문 | 로봇 넘어 일상 전반으로…KAIST, 피지컬 AI 산업화 시동",
+    "S19": "2026-10-11 | www.thecommoditiesnews.com | 취임 6주년 정의선 '피지컬 AI 전환' 가속",
+    "S20": "2026-10-11 | 티제이비 | 총장이 '피지컬 AI' 직접 입는다... KAIST, 비전·전략 선포",
+    "S21": "2026-10-11 | 한국경제 | 현대차그룹, 과감한 미래 투자…모빌리티 넘어 '피지컬AI'로 간다",
+    "S22": "2026-10-11 | 글로벌이코노믹 | 정의선 회장 취임 6주년…현대차그룹, '피지컬 AI' 전환 속도",
+    "S23": "2026-10-11 | 전북금강일보 | 익산시, 피지컬 AI 산업 육성 박차… ‘산·학·연’힘 모은다",
+    "S24": "2026-10-11 | 천지일보 | 정의선 취임 6주년…완성차 톱3 넘어 피지컬 AI 승부수",
+    "S25": "2026-10-11 | 한국경제 | 삼성SDS, AI 동맹 늘리고 제조로봇 전환 이끌어",
+    "S26": "2026-10-11 | 한국경제 | LG CNS, 모듈형 데이터센터 기반 AI 팩토리로 승부",
+    "S27": "2026-10-11 | 이데일리 | 피지컬AI 핵심 인프라라는데…‘공장 안 AIDC’ 공백",
+    "S28": "2026-10-11 | 전북금강일보 | 전북, ‘피지컬 AI·로봇’ 신산업 선점 총력",
+    "S29": "2026-10-11 | 대한투데이 | AI·로봇이 바꾸는 미래 치안을 한눈에,『2026 국제치안산업대전』10월 21일 송도컨벤시아서 개막",
+    "S30": "2026-10-11 | 중앙신문 | 취임 6년 정의선 회장, '글로벌 톱3·매출 300조' 넘어 '피지컬 AI' 속도 낸다",
+    "S31": "2026-10-11 | 아이뉴스24 | 취임 6년 정의선⋯'피지컬 AI' 수익성 입증 과제",
+    "S32": "2026-10-11 | 경북매일 | 대구 피지컬 AI 챌린지 성료… 경북대 Yard-X팀 대상",
+    "S33": "2026-10-11 | 뉴스토마토 | 정의선 취임 6주년…피지컬 AI로 체질 전환 속도",
+    "S34": "2026-10-11 | 전민일보 | 전북 제조현장 과제, 피지컬AI 국가사업으로 키운다",
+    "S35": "2026-10-11 | 전북제일신문 | 김동구 도의원, 로봇·피지컬AI·반도체산업 육성 조례 개정 추진",
+    "S36": "2026-10-11 | 한국경제 | [단독] SK스퀘어, 日 피지컬AI 스타트업 무진 투자... AI·반도체 밸류체인 확장",
+    "S37": "2026-10-11 | 금강일보 | K-로봇 새 판 짠다…KAIST, 피지컬 AI 비전·전략 선포",
+    "S38": "2026-10-11 | 연합뉴스 | 취임 6주년 맞은 정의선…피지컬 AI 설루션 기업 전환 속도(종합)",
+    "S39": "2026-10-11 | 한국경제TV | 취임 6주년 맞은 정의선…피지컬 AI 설루션 기업 전환 속도(종합)",
+    "S40": "2026-10-11 | Calgary Roughnecks | 규칙을 읽다가 막히는 부분, 더블에이포커 용어 풀이"
+  },
+  "evidence_links": {
+    "S1": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yckc2VUdYSVhlelNwcU0taXR0WW5RaDdnUExudDdDb0ZYWDgtRVV1S0JCNklUU0NhRUVVcUFmUU1tWU1CQXc0S2hiR0tOYUNzY2NNWDZWQzdWQWp1MmdwdFpxTjUwN2ZORFlLY3pRdmxmZlXSAXNBVV95cUxPMnJHNlVHWElYZXpTcHFNLWl0dFluUWg3Z1BMbnQ3Q29GWFg4LUVVdUtCQjZJVFNDYUVFVXFBZlFNbVlNQkF3NEtoYkdLTmFDc2NjTVg2VkM3VkFqdTJncHRacU41MDdmTkRZS2N6UXZsZmZV?oc=5",
+    "S2": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ZWkFYeUlRN2RYZHAtUHZGNGZOaldqc25UMzh0aDZNZzkxQm9Oc0JoNWJuZUdRV2JsSWdkaGZmUkZVWTgxTWtNbE54Vk5HQQ?oc=5",
+    "S3": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9jWm1sRHpPMXo4VmV2Y1MzMjZWalJvRDFyR3ZRbXJMYlZqcDlxM2h6UWMyWHZfSndwZlUwbWdkN1Q4eExyNFRscVFhamxDd3NiSkxtSEJfSE9CTjdlUEREWTNSNmg?oc=5",
+    "S4": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmS0xhcWphMXdSdTZ6UTdYaVIyYXJnNnN2bWpGbkI5dFZHRE9BbkxocFJ6c1JZQ2UtSkJVZUUxYjAtT0d2TzNfemRrNkdtb2I0emp5emh5cHRQclNUWGNmZ250dEs4Zw?oc=5",
+    "S5": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWE9GcEVZaVM4VFhDYUtZSlN3QUttVGI4MlBXLVFOR2pRcHBaWkxvdDRQalp4ZHlmT1VLUVJWREk4UG80eTNLdjFuOEpQX09EeDNXQUhzS2N5NXhJV0FmMTVKNUl2S2V1?oc=5",
+    "S6": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iUUZITVEyS3I3LUZmb3dxN3VsRGR3Q051a0FGQ0NINWVDcVI3NlBsRktnOVBtYmFPbU00dDZfd2hZUWhpZmpBY0FVT2hKVElhTlA1dHZlTkIyMElEbWRLMjVRUkN5bUI0bENSSQ?oc=5",
+    "S7": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hTHdldFJvN3BUcnRPci0zSEpubWRnUTRuVHQtUWVmMkd4N3dkaXhlV3RGSHNPVHF2emdJRVFyb0N1M1FhdV9mOUtMVDhKVllrUnNwYjlOWFVQTkRjclNCZQ?oc=5",
+    "S8": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNRDI5d1A3bzlkYklnOTBqdURMc0RBOFhZUkhZMEJzR2ZVNmtZVlJZTTJFNVhBcGNUTnV3ZlNHaHFyT1hYZ05fbEQwT1lOLUE2V0lJSzVjR1pFRnE3RXBtSWdoZktrOTl2dXZucEswOEs5YV95N3NYUTc2UzVBZWozSmJ5V0JXYnJnRHRlSFVoN3puUmNKemcycVJuamVJZE9SbWRlbC1OeGFKVHN1YUlQN01kazMzVkNZM191eVFjRkJOc016RURaYjJ3aHBDYmk2UVg4aWRVQmx4ajVtS2VuZDhLejNYbXRsTDVsOWVyS0hPZzIzakFhUQ?oc=5",
+    "S9": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51LWNMYVRydndmazdGTXptdU03NHctdU9GWlZVbXA0d2VFaC1UVTUzM211SllBSTJRaWp1OVlUanNTamY4ekZ2d1pMVUw3dkNoSWZpemNlRDZXLVVYZ2taYTlDaktDcGFGdzd2ejkzdGRWdkk?oc=5",
+    "S10": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPLU9ROUFNUlZGcHFWZDhLYUsyaWMzcjlmcXo3d0g3VC1LVHM0MlMtdkVHdklUWUFKVVNaeWt6UzV4R3pJV1RkRTZWVHJlYkR6TkxQVjVaRWhDazNHNUFYYjFia0FpalJobk9POXVmbTkxSVg3RHhqQkYzczNCOUU5dDlDREgycUJzSXczZjBUYjV6OUJGZWtTWVZZTVBDYUFTSTFncWZDcDBFODJKTE5mc0NfVVp0QjNwUWctN01vZC0taVh5dHcxWHluM05IT1hjQmRIWHJEeUgzbFdjRVd0R2lPd3VHWko1a0k3cFRxM0F2Qkc3Y0RlR293QV9OMktvZUtXQ3FTNzhtS2ZmbnJsOHlmRG9tbi0zanQ0anFyaEw5ZDU0Z21vdHUtbDlFNmgyN080MkZVNktNdlM3LXc?oc=5",
+    "S11": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PaXNTMWhXWFVpcE82a2dQb1hZLUtqVDZ3Mm1FTWh6cE5WMXhiYnJtbXpSalB4RFhLRi0xal9IU1pvaHNucmpNbEF6a3dVN04tTnd1ejlxanpidw?oc=5",
+    "S12": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWSjV2bnEta1ZWLWkwa3dHVkNZVUZBdjlPUGhMRl90TlJ2OEtSTUFZY25nUlBZOGUwYndId0tvMFplY0huMGthN1Jabnozc3A5WHAzLVFXTldSUVd1Q1VCQUprNmlqOVU?oc=5",
+    "S13": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xMjNzbVdja1JHNlA1N1BqcmlHSWJ1aDhMWVVkQlpVOVhRNUtmT1BMdVozejVSVXlLTG5KallwcWpuQ1oweFZQcW90b2RVdDYzY2t5RkxBYlBjZTRNMmU2dnRRajZSM3lzTVVUTTZ2Q3E?oc=5",
+    "S14": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0Q2FyeHFvbG5fUkVObjN1OXdfNjlWWF9ZUzlxOWNVVjNoYVJUX1hzb2F6Q0ZVM3h6bUxCTVA0a3haU3VKNzJjRml1YkdZcEp1dnpFTmdrczE0RW9WQVNrYmVPY0JwZnpIcmtCSDJIblnSAXRBVV95cUxPMkpfTHJjeHVQX2VQZkhlV21KSXc3cGFUYmVlVk9MSmxJOFd1Wkp1NE1sX2tiY0hNT2hWTHdmOUxNbVd4enM4UDhZTkhMckZyUmJJNzZwdmx3VThXYnVHcUtCc1BVVmg4OXNESlBtQ0NoTWhkNw?oc=5",
+    "S15": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUldCV0hNa2lCYVBIMnN5NExRdHhyOUFIWHRnNG8wM1M3ZXVzZ3ppcnZ1YXh3Yk1WNUJCVG00NWhvMGg1eEZxUGhsMEEzbHUxUUNnQkxxU0xxTFBjV1VtVVJiYXpkNDJzZGlXd3gwS0tMZVp0bkM3VThCakUtSDZ4V19XZWpnaFZMREVV?oc=5",
+    "S16": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VY1pzZ3E0QU5UWGlZRkRURHNtOFB6bDBGa1dBMGVuOU5kZy1Ed2wzNUgwMmhTRjZZenNHUDJleG9TOVZqaHZYSk82QjlwRW5HSDR6cnllc19PN3kz?oc=5",
+    "S17": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TLVFGS21LOEVIc2wyQV8yc1k4TUNLUmR2V2tSQzdUV2YyUTMwejN5VUZ4djRkYXpqSndHdVlUUDdDcVdHcmJmYTBPVVNfb29YY29aSE5sZHRKZw?oc=5",
+    "S18": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5RcjFmdUhaSGpQX00weEtVYVZvNmFELXB1ek5QRzZlY2hzWmtJQVBHdW1IalgtOXpsUGFFRThEQ0NjQTFnUFVoN0ZqUWQyaFpXZjRGcmFWb0pGWUIyZW1mS0NTaXpqZkl3Mjh5ckhn0gFuQVVfeXFMTlFyMWZ1SFpIalBfTTB4S1VhVm82YUQtcHV6TlBHNmVjaHNaa0lBUEd1bUhqWC05emxQYUVFOERDQ2NBMWdQVWg3RmpRZDJoWldmNEZyYVZvSkZZQjJlbWZLQ1NpempmSXcyOHlySGc?oc=5",
+    "S19": "https://news.google.com/rss/articles/CBMid0FVX3lxTE45b2N3UDRBdWhRY2x1OEFCblg5MWVNOFUwdk9Mci1LZUJnUHV4UDRLa2lrSG1aUXNWVG41dEswd1RhMi1Ld29EbElBcGkzWEcxc1RHNVRxdTVUWWRjSUZNbldNTUlkZEREN2VweTh0bmw2bEtNWHNF?oc=5",
+    "S20": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfZFhqVlE1RzlfYlBiY1BsckdwMGdrLUF4bnJST3ZmREE1cmtZWjBVNVNlOTdSdGpDbW5XdGk4SzhMa25FU05kNk9mSHV0OHl6UUNoQ0dpd2lTOU4y?oc=5",
+    "S21": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MRjlnendhX2lEbE9XbURka3E3MkJJVXlzUi16VFVTdnB6Y2hFVkNtUlJ1MXpRZWtLck1nMFFMMkkxM3NoTXBEdm5TY254V09EWDAzNmpaRXhndw?oc=5",
+    "S22": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQ3RYb1BJdFdmNXhHazNLQUVQYU0zZ19ESDUtekFmMUVlMXR2bnYtWVZqLU0yOGpHWGdyMUJNU3ZjU2NJamM1WGoxZ1NHby0tdGY3R1Rib2JNdGRFU3Z6YlNrYXR1WmV2Snd4OXM0cmtxallrRm8zZEVXWFhMQjJiRi1Kb1VtUQ?oc=5",
+    "S23": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE94bmxWelVGcVdOcVZDVC1FbGQ2bng0N1FoTFhuQVBBNXJ2ODBRTm1HTHUyUWVfbVZQZkEyNFNEUjI?oc=5",
+    "S24": "https://news.google.com/rss/articles/CBMiakFVX3lxTE81Rm9KRGM2WVBxY3I2bExUdTNxNFNKVG1MNG5ja3NiRy1KZVZFNk9ZODJfRjM1ZlFlbjdaUVhta3E1aEpqamJ2aDYzaTIwWWdpNVdPNWgwX3ZvbTVUTktmMkVWOVdpb0YyOHc?oc=5",
+    "S25": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE00b2RIRHF2TWY0TDFnLTFuYXJkN0Y4V1lJeHI2WFhEM3ZzLU1EV2NvaGc2clB5WG50STQ5VVZfR0JKZGVjV2d3LWxEX2J3ZFFoYlpvN2xic1VhQQ?oc=5",
+    "S26": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYdWlHLTF1VmNIMzdPSVdqN2JLTExMM0xJU3N4cTVIRmtJenpKanBpSGxrVjVQS2NCZlM3T2tlVDI5bEV5aTNGd1FRak1QUWQyM0dvY3ViR2JXZw?oc=5",
+    "S27": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPd3FYUWRhYXBxVVRmLWpuOFNoU1RWZ29iOF92UGNYTUZkZGxac193NHB1M2NWM1cwTkdweUtlelN2WEJ1RG9MaVN4andseWxKUnE4SzV3WS05VlJBUHhiQ3ViUmkxQlJpZk5oUklYd2VldXpwMWJ6ZllGd3dNT2RNdQ?oc=5",
+    "S28": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5HeWtrQmJWU2lkZ1JxcjlVWEs2ZFF5Zmh0cm1wRGxTNW5CT0tRNEpYdFczM1MzQkhOMGtzSGxYVWE?oc=5",
+    "S29": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xNW42S08zSjM5Ym1Pa0hBSUR2X01MRHU0WmhNOWRKekdwRl9fYU13ci14ZkFieVZDZWp6b2pya0RmWFlNYnRSOWVYbnB1SGxTNGNQMTZYbHpnemdkb1lKelo3Yy1XelJScGc?oc=5",
+    "S30": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UcEpXZElRZDFBM04xOGhVbHVSTlctWnNFc2ZlT3VmMTVhcF9qOWl5X2gzWDE4TmxIOWZNRmNnc2FLYXM4MjJ6czducUVMaXNYcHMyMVFMV3I4X1VXQ2NrXzFrcUdTbElq?oc=5",
+    "S31": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBiTHRtZjhMZDJVaVhVbzBwMXZZYUpUTE1FV0M2RWY2UzFUUVczSjJhcWVFOW9ESVRxQUotODlteTh1dFZWMHM0?oc=5",
+    "S32": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVF9LRzJJbm5ZbXc4R3hXQ0hLYVg2QnU3YVEyb0cxWkpMX1plUnU0SDNBM0lXVHd0enZKQjRUREloY0QyZUJyLTNUYUpCYlp2bVk1cnZubTl5QQ?oc=5",
+    "S33": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5TcmtsemY3ZElWM1hFcTVocTZnNnM4UG1hOGduZy1xd3RIQ0JHT1dDaURwTTNoSGUzWWxTMDJWYXFDd1lzY3IxRi0tOXFKdnhlelRuVFZKYk00UERtcVpNcg?oc=5",
+    "S34": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE94Q3VyOEFpLXI5V19kOHVFNl9oM2Jrbk94M0QzdUxlRlVXOFZwRGJFV0N4MGpRN29XMmJ6dFlJUGQ3RlBNYTgzeXp3VGdRWVh6R1VtTXRwWkZncmhtODFBaWY5bWQ0QQ?oc=5",
+    "S35": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAta3V2Y094RmZzOHQxWG1RRnU3T0diZTNXT1l6ejd4R3lTMjZ1SWNuT2tVTGFIN1FYTHc4Q1QwM2ZBci1lRjhxZVBROE9BVVlMcUt3MDVuelFiNlh4Q05EbERPaFMwU2NIS0E?oc=5",
+    "S36": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kalIzek11ekh6TFlLYzJzWXNKZFJJa1FNUjJJaHZnaTFBYWNQM0pqLXdXRWtVVFBTU3lzSkRscERwU3MzZjYzaEFfa3NXT1Rncjk5X2pzdDZNZw?oc=5",
+    "S37": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1mOW14NDM3dmxqR0RBTGZESjdJVlZaT05VRWV1V19RTmNBNFRvX3JsanFvR0x6aFRsYWYxanR2Wk9vMTB3MV9FTE1lWGRwVzF6MUVmTnV2ZXVFRzRMTjVYemM2S3ltUkthYnc?oc=5",
+    "S38": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84b0Z5SktVejJxeWF3R1ExMjJwejM1UmpFS1hNZkZqdjNkelZGTXpKc0J0dDBmYWZsQWxnRnh6TzBiQWhqSDBpRS1EbWY4LUdJSWJFUVF4Rlhmc3ljanR5WtIBYEFVX3lxTE84b0Z5SktVejJxeWF3R1ExMjJwejM1UmpFS1hNZkZqdjNkelZGTXpKc0J0dDBmYWZsQWxnRnh6TzBiQWhqSDBpRS1EbWY4LUdJSWJFUVF4Rlhmc3ljanR5Wg?oc=5",
+    "S39": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDTXJ1UTh4Nmd4b1hZSTFHSUtrV0pmMmNleHpVUFNKU2RLS3dMQjNSeFFuVklzQXNsZHZUVXIzOGtFWE4tRWVMeGY0dTc0WXF2T0llMU1uYkhOTXMyb01Lb0tDVmZRb3J6WnJFM2JzQjRTT05YdjA3YXdwWUw?oc=5",
+    "S40": "https://news.google.com/rss/articles/CBMikgNBVV95cUxNSnJMcDVhS2RyazdrLUphZmhhbEdvOUZpY2t4QzVFYm13YTQ5TUQxVng3cjhxbFhSSFF1Snl1ZXNUdU9nODEyS0d5ZzNmUXlqQjRpWUpkblBwQTNnSjhjbFZwZ2R4TkNjSzItOXdXNjdTLXN2MGR1cXU0NkZzdklsc093dzdzQlkwbXdCZVNKTXFMb1VZdkczTDBNdzhlME5QYldxb0hCNlRRQUZwWGZyUURtNmxhME9pMW5iNUNGTGpldVU1dE9wcVFHTG9jY2RhYTB0VlRnS05zcnctWVE5Y1VrUEhtQXA2bmdsX1RkVTNITHhpVWtwU3RKNm1EMUNMYmRGeHFoOTRhSVVMWG92Slp1SkgzUzBFc0Zqc3BCV09HUXJRc1JoOXdRVEZMY083N2hjY0F6a0RlSEt5TVVSMjRfcTZYcjJSZHNRNWowdlZabkNnUlBwUVhTSzZRcld4SW9EQjVVczhWV0gzbXU3ZDlNb0I0VzYydHZTdFVad2ZWdHFjdVRTa0JlRHBWNkpYNUE?oc=5"
+  },
+  "related_searches": [
+    {
+      "phrase": "피지컬 ai 관련주",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 대장주",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 전망",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai etf",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 로봇",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 기업",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 예시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 뜻",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 교육",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련주 한국",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련주 미국",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련주 etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 공부",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련 etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 기술",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 글로벌 얼라이언스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 나무위키",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 논문",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 뉴스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 대학원",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai etf 추천",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 동향",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 데이터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 대회",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 드론",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 란",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 관련주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 랩실",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로보틱스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 리얼월드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇팔",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 차이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 교육",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 메가 트렌드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 뭐야",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 미국 주식",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 미래",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 메모리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 모델 학습을 위한 월드 파운데이션 모델 기술개발",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 물류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 미국 대장주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 메가프로젝트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 부트캠프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 반대",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 보안",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 보고서",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 반도체",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 분야",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 밸류체인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 방산",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 시스템 설계",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 사례",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 세미나",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 시장 전망",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 스타트업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 시장 규모",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 수혜주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 산업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 사업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 신입사원이 되다",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 얼라이언스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 영어로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 얼라이언스 2기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 월드모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 액추에이터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 연구실",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 이미지",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 아이콘",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 의미",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 주식",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 정의",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 제조 ax 캠퍼스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 종류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 전북",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 주도주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 제조 ax 캠퍼스 후기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 자율주행",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 종목",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 책",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 채용",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 취업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 취업 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 챌린지",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 컨퍼런스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 컨퍼런스 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 키트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 코딩",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 특별법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 트레이닝 센터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 특징",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 투자",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 패권 전쟁",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 파운데이션 모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 포럼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai vla",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 플랫폼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 풀스택",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 프로젝트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 풀스택 체계",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 프론티어 강국 신기술 전략 포럼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 핵심 경쟁력 확보 전략",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 회사",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 휴머노이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 협회",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 항만 전략",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 활용 사례",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 현대차",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 해커톤",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 학습",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 핵심 경쟁력 확보 전략(안)",
+      "times_suggested": 1
+    }
+  ],
+  "explanation": {
+    "why_people_search": [
+      {
+        "claim": "투자 관련 정보를 찾는 사람들의 비중이 17%로 높으며, 피지컬 AI 관련주·대장주·ETF 등에 관심이 있음을 보여준다.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "기술 동향을 알아보려는 사람들도 17%로 상당 부분을 차지하며, 피지컬 AI 로봇·기술·데이터 등에 대한 검색이 활발하다.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "학습·교육 목적으로 검색하는 비중이 11%이며, 피지컬 AI 교육·공부·논문 등에 대한 수요가 존재한다.",
+        "cites": [
+          "D2"
+        ]
+      },
+      {
+        "claim": "최근 뉴스 기사 수가 급증(오늘 90건, 직전 평균 41.5건 → 모멘텀 2.17)하면서 관련 정보에 대한 전반적인 관심이 높아졌다.",
+        "cites": [
+          "D1"
+        ]
+      }
+    ],
+    "what_is_happening": [
+      {
+        "claim": "KAIST가 10월 13일에 ‘Physical AI KOREA 2026’ 행사를 개최하고 피지컬 AI 비전·전략을 선포할 예정이다.",
+        "cites": [
+          "S1",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S12",
+          "S20"
+        ]
+      },
+      {
+        "claim": "행사와 연계해 기술 시연 및 비전 발표가 진행되며, 휴머노이드를 넘어 피지컬 AI 영역을 확장하려는 움직임이 나타나고 있다.",
+        "cites": [
+          "S1",
+          "S3",
+          "S6",
+          "S7",
+          "S12"
+        ]
+      },
+      {
+        "claim": "대구에서 올해 첫 ‘피지컬AI챌린지 2026’이 개최되어 전국 147개팀이 참가했으며, 경북대 ‘Yard-X’팀이 대상을 수상하였다.",
+        "cites": [
+          "S2",
+          "S16",
+          "S32"
+        ]
+      },
+      {
+        "claim": "익산시·인천시 등 지방자치단체가 피지컬 AI 실증센터 구축 및 산업 육성에 박차를 가하고 있다.",
+        "cites": [
+          "S13",
+          "S14",
+          "S23",
+          "S28",
+          "S34",
+          "S35"
+        ]
+      },
+      {
+        "claim": "현대차그룹과 정의선 회장이 피지컬 AI 전환에 속도를 내며, 미래 산업에서의 투자와 협업을 확대하고 있다.",
+        "cites": [
+          "S17",
+          "S19",
+          "S21",
+          "S22",
+          "S24",
+          "S30",
+          "S31",
+          "S33",
+          "S38",
+          "S39"
+        ]
+      },
+      {
+        "claim": "삼성SDS, LG CNS, SK스퀘어 등 주요 기업들이 피지컬 AI와 관련된 AI 동맹, 데이터센터, 스타트업 투자 등을 추진하고 있다.",
+        "cites": [
+          "S25",
+          "S26",
+          "S27",
+          "S36"
+        ]
+      },
+      {
+        "claim": "피지컬 AI가 제조·의료·물류 등 다양한 산업에 적용될 플랫폼 기술 비전이 제시되고 있다.",
+        "cites": [
+          "S10",
+          "S18",
+          "S28"
+        ]
+      }
+    ],
+    "outlook": [
+      {
+        "claim": "오는 10월 13일 KAIST 행사를 계기로 피지컬 AI에 대한 투자·정책 지원 및 산업 적용이 단기적으로 확대될 것으로 예상된다.",
+        "basis": "예정된 행사(S1,S4,S5,S6,S7,S8,S9,S10,S11,S12)와 최근 뉴스 급증(D1) sowie 투자·기술 관심(D2)을 종합한 추세",
+        "confidence": "medium",
+        "cites": [
+          "D1",
+          "D2",
+          "S1",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S12"
+        ]
+      }
+    ],
+    "caveats": [
+      "분석은 주로 한국어 뉴스와 검색 자동완성 데이터에 기반하며, 글로벌 동향은 반영하지 못할 수 있음",
+      "뉴스 기사 수는 당일의 변동에 민감하여 단기적 스파イク이 장기적 추세를 과장할 수 있음",
+      "검색 의도 비중은 autocomplete 제안 비율을 이용한 추정치로 실제 검색량을 정확히 반영하지 않을 수 있음",
+      "행사나 발표 내용은 보도된 제목에 한정되어 구체적인 세부 계획이나 실행 여부는 확인되지 않음"
+    ],
+    "unsupported_claims_removed": 0
+  }
+}

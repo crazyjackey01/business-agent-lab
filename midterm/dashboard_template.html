@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trend Signals</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e3e1da;
+    --accent: #2f5bd3; --accent-soft: #e6ecfb; --up: #1f8a4c; --down: #b2452f; --bar: #2f5bd3; --bar-dim: #b9c6ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413; --surface: #1e1e1c; --ink: #ecebe6; --muted: #9c9a92; --line: #33322e;
+      --accent: #8aa8ff; --accent-soft: #24304f; --up: #5cc98a; --down: #ee8a72; --bar: #8aa8ff; --bar-dim: #3c4a72;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.55 system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h2 { font-size: 22px; margin: 40px 0 4px; letter-spacing: -0.01em; }
+  h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 10px; }
+  .sub { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; min-width: 0; }
+  .wide { grid-column: 1 / -1; }
+  .stats { display: flex; gap: 28px; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 30px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .up { color: var(--up); } .down { color: var(--down); }
+  .bars { display: flex; align-items: flex-end; gap: 8px; height: 120px; margin-top: 16px; }
+  .bars div { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+  .bars i { display: block; width: 100%; background: var(--bar-dim); border-radius: 4px 4px 0 0; min-height: 2px; }
+  .bars div:last-child i { background: var(--bar); }
+  .bars small { color: var(--muted); font-size: 11px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .bars em { font-style: normal; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .row { display: grid; grid-template-columns: 92px 1fr 40px; gap: 8px; align-items: center; margin: 5px 0; font-size: 14px; }
+  .track { background: var(--accent-soft); border-radius: 4px; height: 10px; overflow: hidden; }
+  .track i { display: block; height: 100%; background: var(--accent); }
+  .row .n { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: var(--accent-soft); color: var(--ink); border-radius: 999px; padding: 3px 10px; font-size: 13px; }
+  .chip b { color: var(--accent); font-weight: 600; margin-left: 4px; }
+  ul.clean { list-style: none; margin: 0; padding: 0; }
+  ul.clean li { padding: 8px 0; border-top: 1px solid var(--line); }
+  ul.clean li:first-child { border-top: 0; padding-top: 0; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .claim { margin: 0 0 10px; }
+  .cite { display: inline-block; font-size: 11px; color: var(--accent); text-decoration: none; background: var(--accent-soft);
+          border-radius: 4px; padding: 0 5px; margin-left: 3px; vertical-align: 1px; cursor: help; }
+  a.cite:hover { text-decoration: underline; }
+  .conf { font-size: 11px; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 6px; color: var(--muted); }
+  .partly { color: var(--down); border-color: var(--down); cursor: help; }
+  .basis { display: block; color: var(--muted); font-size: 13px; }
+  details { margin-top: 12px; } summary { cursor: pointer; color: var(--muted); font-size: 13px; }
+  .evidence li { font-size: 13px; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  a { color: var(--accent); }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Trend Signals</h1>
+    <p id="built"></p>
+  </header>
+  <div id="topics"></div>
+  <div id="general"></div>
+</main>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pct = x => Math.round(x * 100) + "%";
+
+document.getElementById("built").textContent =
+  "Built " + DATA.built_at.replace("T", " ") + " · every explanation cites measured data [D] or news headlines [S]";
+
+function cites(ids, a) {
+  return ids.map(id => {
+    const text = esc(a.evidence[id] || "");
+    const url = a.evidence_links && a.evidence_links[id];
+    return url
+      ? `<a class="cite" href="${esc(url)}" target="_blank" rel="noopener" title="${text}">${esc(id)}</a>`
+      : `<span class="cite" title="${text}">${esc(id)}</span>`;
+  }).join("");
+}
+
+function claims(list, a, outlook) {
+  if (!list || !list.length) return `<p class="empty">No supported claims.</p>`;
+  return list.map(c => `<p class="claim">${esc(c.claim)}${cites(c.cites, a)}` +
+    (c.check === "partly" ? `<span class="conf partly" title="${esc(c.check_reason)}">partly supported</span>` : "") +
+    (outlook ? `<span class="conf">${esc(c.confidence || "")}</span><span class="basis">${esc(c.basis || "")}</span>` : "") +
+    `</p>`).join("");
+}
+
+function coverageBars(perDay) {
+  const days = [...perDay].reverse();  // oldest first, today last
+  const max = Math.max(...days, 1);
+  return `<div class="bars">` + days.map((n, i) => {
+    const label = i === days.length - 1 ? "today" : `-${days.length - 1 - i}d`;
+    return `<div><em>${n}</em><i style="height:${(n / max) * 100}%"></i><small>${label}</small></div>`;
+  }).join("") + `</div>`;
+}
+
+function topicSection(a) {
+  const f = a.facts, e = a.explanation, m = f.coverage;
+  const dir = m.momentum >= 1.2 ? "up" : m.momentum <= 0.8 ? "down" : "";
+  const intents = f.intent.filter(i => i.share > 0).map(i =>
+    `<div class="row" title="${esc(i.examples.join(", "))}"><span>${esc(i.intent)}</span>
+     <span class="track"><i style="width:${pct(i.share)}"></i></span><span class="n">${pct(i.share)}</span></div>`).join("");
+  const drivers = f.drivers.map(d =>
+    `<span class="chip">${esc(d.word)}<b>${d.lift === null ? "new" : d.lift + "×"}</b></span>`).join("");
+  const events = f.events.slice(0, 6).map(ev =>
+    `<li><a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>
+     <div class="meta">${esc(ev.source)} · ${esc(ev.published.slice(0, 10))} · dates: ${esc(ev.dates_mentioned.join(", "))}</div></li>`).join("");
+  const searches = (a.related_searches || []).slice(0, 14).map(s => `<span class="chip">${esc(s.phrase)}</span>`).join("");
+  const evidence = Object.entries(a.evidence).map(([id, text]) => {
+    const url = a.evidence_links && a.evidence_links[id];
+    return `<li><b>${esc(id)}</b> ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>` : esc(text)}</li>`;
+  }).join("");
+
+  const explanation = e.error
+    ? `<div class="card wide"><p class="empty">Explanation failed: ${esc(e.error)}</p></div>`
+    : `<div class="card"><h3>Why people search it</h3>${claims(e.why_people_search, a)}</div>
+       <div class="card"><h3>What is happening</h3>${claims(e.what_is_happening, a)}</div>
+       <div class="card wide"><h3>What is likely next</h3>${claims(e.outlook, a, true)}
+         ${e.caveats && e.caveats.length ? `<p class="note">Caveats: ${e.caveats.map(esc).join(" · ")}</p>` : ""}
+         ${e.unsupported_claims_removed ? `<p class="note">${e.unsupported_claims_removed} claim(s) without valid citations were removed.</p>` : ""}
+         ${e.failed_check_removed ? `<p class="note">${e.failed_check_removed} claim(s) failed the evidence check and were removed.</p>` : ""}
+       </div>`;
+
+  return `<section>
+    <h2>${esc(a.topic)}</h2>
+    <p class="sub">${esc(a.geo)} · data collected ${esc(a.source_collected_at.slice(0, 16).replace("T", " "))} UTC</p>
+    <div class="grid">
+      <div class="card">
+        <h3>News coverage</h3>
+        <div class="stats">
+          <div class="stat"><b>${m.today}</b><span>articles today</span></div>
+          <div class="stat"><b>${m.previous_daily_average}</b><span>per day before</span></div>
+          <div class="stat"><b class="${dir}">${m.momentum}×</b><span>momentum</span></div>
+        </div>
+        ${coverageBars(m.per_day)}
+      </div>
+      <div class="card"><h3>What searchers want</h3>${intents}<p class="note">From Google autocomplete phrases. Hover a row for examples.</p></div>
+      <div class="card"><h3>What people type with it</h3><div class="chips">${searches}</div></div>
+      <div class="card"><h3>Today's news drivers</h3><div class="chips">${drivers || '<span class="empty">None</span>'}</div>
+        <p class="note">Words far more common in today's headlines than earlier.</p></div>
+      <div class="card wide"><h3>Scheduled events in the news</h3><ul class="clean">${events || '<li class="empty">None found</li>'}</ul></div>
+      ${explanation}
+      <div class="card wide"><details><summary>All evidence given to the model (${Object.keys(a.evidence).length} items)</summary>
+        <ul class="clean evidence">${evidence}</ul></details></div>
+    </div>
+  </section>`;
+}
+
+function generalSection(s) {
+  if (!s) return "";
+  const trends = s.google_trends.slice(0, 15).map(t =>
+    `<li><b>${esc(t.term)}</b> <span class="meta">${esc(t.traffic_text)}</span>
+     ${t.news[0] ? `<div class="meta"><a href="${esc(t.news[0].url)}" target="_blank" rel="noopener">${esc(t.news[0].title)}</a></div>` : ""}</li>`).join("");
+  const wiki = s.wikipedia_top.slice(0, 15).map(w =>
+    `<li>${esc(w.title)} <span class="meta">${w.views.toLocaleString()} views</span></li>`).join("");
+  return `<section>
+    <h2>Trending right now (${esc(s.geo)})</h2>
+    <p class="sub">Collected ${esc(s.collected_at.slice(0, 16).replace("T", " "))} UTC</p>
+    <div class="grid">
+      <div class="card"><h3>Google Trends</h3><ul class="clean">${trends}</ul></div>
+      <div class="card"><h3>Most-viewed Wikipedia (${esc(s.wiki_day)})</h3><ul class="clean">${wiki}</ul></div>
+    </div>
+  </section>`;
+}
+
+document.getElementById("topics").innerHTML = DATA.analyses.length
+  ? DATA.analyses.map(topicSection).join("")
+  : `<p class="empty">No analyses yet. Run analyze_topic.py first.</p>`;
+document.getElementById("general").innerHTML = generalSection(DATA.snapshot);
+</script>
+</body>
+</html>
