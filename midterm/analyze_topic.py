@@ -262,7 +262,8 @@ def scheduled_events(news, limit=15):
     """Headlines that announce something with a date or a future-event word."""
     events = []
     for a in news:
-        title = a["title"].lower()
+        # Headline plus summary, when the source gives one: summaries often carry the dates.
+        title = f"{a['title']} {a.get('summary', '')}".lower()
         dates = [m.group(0) for p in DATE_PATTERNS for m in re.finditer(p, title)]
         words = [w for w in EVENT_WORDS if w in title]
         if dates and words:

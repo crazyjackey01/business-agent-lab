@@ -173,12 +173,14 @@ function topicSection(a) {
     <div class="grid">
       <div class="card">
         <h3>News coverage</h3>
-        <div class="stats">
+        ${f.news_unavailable ? `<div class="stats">
+          <div class="stat"><b>${Object.keys(a.evidence).filter(k => k.startsWith("S")).length}</b><span>articles found with Google Search</span></div>
+        </div>` : `<div class="stats">
           <div class="stat"><b>${m.today}</b><span>articles today</span></div>
           <div class="stat"><b>${m.previous_daily_average}</b><span>per day before</span></div>
           <div class="stat"><b class="${dir}">${m.momentum}×</b><span>momentum</span></div>
-        </div>
-        ${f.news_unavailable ? `<p class="note">News could not be collected this time (the news source refused the request), so these numbers are not real.</p>` : coverageBars(m.per_day)}
+        </div>`}
+        ${f.news_unavailable ? `<p class="note">Daily article counts (momentum) need the Google News feed, which refuses Cloudflare's servers. They are available in the local version.</p>` : coverageBars(m.per_day)}
         ${f.spam_removed ? `<p class="note">${f.spam_removed} spam headline(s) (gambling sites stuffing keywords) were removed before counting.</p>` : ""}
       </div>
       <div class="card"><h3>What searchers want</h3>${intents}<p class="note">From Google autocomplete phrases. Hover a row for examples.</p></div>

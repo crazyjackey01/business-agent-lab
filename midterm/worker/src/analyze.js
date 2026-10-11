@@ -225,7 +225,8 @@ const EVENT_WORDS = ["개최", "출시", "공개", "발표", "선포", "착공",
 export function scheduledEvents(news, limit = 15) {
   const events = [];
   for (const a of news) {
-    const title = a.title.toLowerCase();
+    // Headline plus summary: Gemini's one-line summaries often carry the dates.
+    const title = `${a.title} ${a.summary || ""}`.toLowerCase();
     const dates = DATE_PATTERNS.flatMap(p => title.match(p) || []);
     const words = EVENT_WORDS.filter(w => title.includes(w));
     if (dates.length && words.length) events.push({ ...a, dates_mentioned: dates, event_words: words });
