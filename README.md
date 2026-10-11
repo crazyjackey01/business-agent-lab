@@ -4,4 +4,5 @@
 
 mainly things that i want to automate?
 
-빠빠라바라
+
+Run source .venv/bin/activate again each time you open a new terminal.
