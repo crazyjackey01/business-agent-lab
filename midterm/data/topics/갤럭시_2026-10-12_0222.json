@@ -1,0 +1,2405 @@
+{
+  "topic": "갤럭시",
+  "lang": "ko",
+  "geo": "KR",
+  "collected_at": "2026-10-11T17:22:20+00:00",
+  "related_searches": [
+    {
+      "phrase": "갤럭시 폴드8",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s26",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 워치",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s26 울트라",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 폴드",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s27",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 z 폴드8",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 캠퍼스",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 갤러리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 글래스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 갤",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 강제종료",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 굿락",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 강제 재부팅",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 개발자모드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 광고 차단 설정",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 글래스 출시일",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s25",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s24",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s23",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s26 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s25 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s26 울트라 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s22",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 데이터 옮기기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 esim 지원 모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디펜스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 다크모드 해제",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디펜스 공략",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 동영상 편집",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 esim 사용법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 동영상 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 돌비 애트모스 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 로보파크",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 망함",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 루틴",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 fe 차이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 레인저",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 기능",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a17",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a37",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a36",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 ai 구독클럽",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a57",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 맥세이프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a16",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a35",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 온",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈4 프로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 북 6",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈4",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 북",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈3 프로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스마트태그2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 사전예약",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 시리즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스크린타임 확인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어 쿠폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스마트태그",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 시리즈 총정리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스크린샷",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 실시간 번역",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치9",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 언팩",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 와이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치 울트라 2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 에어드랍",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 울트라 26",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프4",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프5",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 전원 끄기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 정장",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자급제",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자동완성 끄기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자동녹음",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 초기화 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신 폰 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전기를 꽂아 도 충전이 안되요",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 초기화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전 안됨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전 표시는 뜨는데 충전이 안됨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 출시일",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 커넥트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 캠퍼스 스토어",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 z 폴드8 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀6",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 z플립8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 캡쳐 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 카메라 셔터음 제거",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s11",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s9",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s12 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 트라이폴드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s10 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 12",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s12 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s11 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 태그",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 플립8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 와이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핏3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 플립",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핏",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드7",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 안꺼지게",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면분할",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 휴지통 열기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 데이터 옮기기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면녹화 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 학생 스토어",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 홈 미니",
+      "times_suggested": 1
+    }
+  ],
+  "news_momentum": {
+    "today": 37,
+    "previous_daily_average": 44.3,
+    "momentum": 0.83,
+    "per_day": [
+      37,
+      30,
+      30,
+      47,
+      42,
+      105,
+      12
+    ],
+    "capped_queries": 6
+  },
+  "news": [
+    {
+      "title": "삼성, 11년 만에 헤드폰 만든다… '갤럭시 스튜디오' 상표 출원, 에어팟 맥스 겨냥 [테크지식NOW]",
+      "source": "솔루션뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE03YzdfNS1jb3p1R3dja1pFTWRadndMTW9Fc1FBR1BvZ1FSZXpuS0VnY0xpNkFkMEpNVW9lQWZtZTZkZlduaHVRbXFTbzd4Slc1NHlRZUlyamJJTWtrQnJKRmFuTTdMUnN0SXBz?oc=5",
+      "published": "2026-10-11T15:09:54+00:00"
+    },
+    {
+      "title": "삼성 월렛 USDC, 갤럭시 8,200만 대는 잠재 규모일 뿐…실사용자와 구분해야",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5qLVpjbnRDY2F5WEJvZ3VQTTJNRWFEZWdwenRQd3MzVEUyeldhU0FxdklKRmdqeEQwdTlrenBGTExNUHR0MHBHYUFGcmFDYktQd0JTTW1n?oc=5",
+      "published": "2026-10-11T15:04:00+00:00"
+    },
+    {
+      "title": "갤럭시 S27 울트라는 업그레이드된 M16 OLED 디스플레이를 탑재했으며, 눈의 피로를 줄이기 위해 DC 디밍 기술을 적용했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeDdSSVdiOHI3cDNqaTRmRGU4Y25kTUJlWnN1cnRYQ1V2OFBZUzQ2bzgxLVh6VXVrdk9iQWhlaGJvbnFFUEhaNkotMm1oM2t1QnpZRDFGdmx2QTFBR1MwWmppNTJhU0hoU0xDdDR3LUVmMEdCdlBQTldYYW5KMnVEcFRUcmpnZ20xTVAxdzNIRlpsQW91WDY1NVhYMWh2ak93VW9HUTJDVXFiMlhBbXdQbjZSWjZYRTQ?oc=5",
+      "published": "2026-10-11T14:16:59+00:00"
+    },
+    {
+      "title": "갤럭시 워치9로 갈아탄 한 달, 배터리는 일반 사용 기준 하루…폴라 러닝워치는 약 일주일",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12d3lVV29HRmlsREtJc2JRWWozQzJubTBRSWQ4MXhQMkd4aWc0bFVDbEFWNGpIeFYzS2RTc2lwcGh1bHpLeHpjeS1XZ0psclViazhJTlRR?oc=5",
+      "published": "2026-10-11T14:02:00+00:00"
+    },
+    {
+      "title": "“200만원 삼성폰 역대급 대박” 불티나게 팔렸다더니…‘1조’ 충격적 적자, 어쩌다",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1zQlBYOVNGRWwyV0ZKQUFSdy16dzR4VW9Ielprc0xjZjk4aFZBMlYtcS13bm1WV3RvYXNaZG1RZllKNWtxODdfV0l6ZEQ2MFp1YlNON0RR?oc=5",
+      "published": "2026-10-11T12:40:00+00:00"
+    },
+    {
+      "title": "하하 포커 아이폰 플레이 중 뜨는 안내 메시지",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ObHpTeXRNYVlxU3BnSVdnMGtyRFFxaTFtd290dWROaUNpZWd5d1dfVnJVOXhvYlExNTBYUXhlMnN0QUh1TzM2UkVNeXhOdTJDWUowaEFHMXR6QmZEWXd2Z0kzNE5nSlp6ZUE?oc=5",
+      "published": "2026-10-11T12:36:07+00:00"
+    },
+    {
+      "title": "갤럭시로 코인 송금 시대…삼성, 미국서 8200만대에 '디지털 달러' 지갑 연다",
+      "source": "콕스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5naS1DenVWa0cwTjRLekU4a3BKOEdxREgyVklxd3NIb2ZPRXVmMHpxNkRueUV2MmdEanFwd2VDdzViOWk5dHktQ21OWXZzYXVFaUtDblhldVFYWXIzeENJamlSV05JWFV1Z1E?oc=5",
+      "published": "2026-10-11T11:32:56+00:00"
+    },
+    {
+      "title": "[포토] 대중문화 판도 바꿀 로봇 아이돌",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vNzVXdTcwVTRQdWg4OV9BT0NFMFphdU81RUR6NXJ3ZDZacm5PQ2dWUnJWLXE3TnYyWVRjS1VObjYxa09HNnFUTFpYS0V0cm54Mk8wRC04Ym15dw?oc=5",
+      "published": "2026-10-11T10:17:21+00:00"
+    },
+    {
+      "title": "영상·문서 동시에 열람 가능… 인파 속 일행 위치 확인 [IT 써보니]",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91YWJBcm15M1JIeE1RRi1GRWlyN3dnam1QOVJZVV9OUUwzSWJiQUV4RUhJYl9zUXU0OGF3Vng0b2ZIRzlsUDU2SVI4U3NQMUVMUmVXVlhCcFgxdw?oc=5",
+      "published": "2026-10-11T09:33:50+00:00"
+    },
+    {
+      "title": "갤럭시 S27 프로 및 S27 울트라 사양 분석: 카메라 변경 사항 및 하드웨어 순위",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT290UEgta2E1OEV4czcwdGxJOG5lTVU5QlpYcWJldUhleEhKSEhSNWQyanFabFhPN0FrQllJQVdCMlAwYkNFeW5Vd2V2UFV5dG9LaXM2VVpvbXFGMzRZNzFJMGdTNEUyWlVwU3F5d2ZNM09yUERCTGlUWEgtc1Fzem51RzYxM1Rqb3RSS0NlUV9SWkRLMFkzeDc4NkNIUTcyVjNVcE1vQkM4UzJ5ZXcxdlpNTQ?oc=5",
+      "published": "2026-10-11T08:20:04+00:00"
+    },
+    {
+      "title": "RAM 비용이 급등, 삼성은 휴대폰 생산을 30%까지 줄일 수 있습니다.",
+      "source": "VOI.ID",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9NRXhSUWNTQmpPQ0d1aFlCdTgtUHdoZHNGOXBLVHpWY2plZlRMZGZwbmFScVQtWi1NLVdwUG1odVJqZ9IBQkFVX3lxTE9NRXhSUWNTQmpPQ0d1aFlCdTgtUHdoZHNGOXBLVHpWY2plZlRMZGZwbmFScVQtWi1NLVdwUG1odVJqZw?oc=5",
+      "published": "2026-10-11T08:15:43+00:00"
+    },
+    {
+      "title": "애플 에어팟 4세대 vs 삼성전자 갤럭시 버즈3 선택 가이드 : 테크/과학",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MbC1QVzhicnZrdkRUUndnNXJyVjUzLVpJT0VLVEtNaVllX182cjk1d0ZMbEFMVFJjeXlKdHRlTWViOWZYUThwQUR3Zw?oc=5",
+      "published": "2026-10-11T07:23:00+00:00"
+    },
+    {
+      "title": "갤럭시·아이폰 출시 효과 본격화… SK텔레콤 실적 반등 이어간다",
+      "source": "핀포인트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KVkZtZ3BDNW1mQks4cTFReUpUZG1xaGFIR3BsRHlDcW5HZ2w5LU5ZREJ3N2lacFE2WHA3dXRqR3I0NlRWR24wSVlWaG4ydjkxRG9oR0VkaFdkdWV6cW9CUXBSU1N0NmFVRW5EZFI4VkxnZkh2WWRn0gF3QVVfeXFMTkpWRm1ncEM1bWZCSzhxMVF5SlRkbXFoYUhHcGxEeUNxbkdnbDktTllEQnc3aVpwUTZYcDd1dGpHcjQ2VFZHbjBJWVZobjJ2OTFEb2hHRWRoV2R1ZXpxb0JRcFJTU3Q2YVVFbkRkUjhWTGdmSHZZZGc?oc=5",
+      "published": "2026-10-11T06:48:23+00:00"
+    },
+    {
+      "title": "큰 화면에도 가벼운 갤럭시 탭 S12 울트라 여행 갈때도 '쏙'[IT 써보니]",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrREpGb1lUeWN2QzdkQy1TYnhtaFB4U1VpbzNmSEd2bnl4R3o3TE5QZ01HMjZqR0JhMURuaWFYTV9QZWVRMzdZS3AwelRQUm0xVW1NUFZFS3VaZw?oc=5",
+      "published": "2026-10-11T05:22:23+00:00"
+    },
+    {
+      "title": "갤럭시 S27 프로, 놀라운 카메라 기능 탑재 공개.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9uMHhsVkpFT2R2TEkwTENndFQ3ZDIyYXN3RS1rMWNiWTFCc2haRlJCYjJQaWRGYTRELXpYU2JSN1NlZUdPNFFUanp1RlJJejdOMEItUzlpWXducEc2R3NWVUFqY2ozR3g1SWNFeC1adFZFVFNO?oc=5",
+      "published": "2026-10-11T04:53:27+00:00"
+    },
+    {
+      "title": "삼성 기기 27종이 업데이트되었습니다. 여기에는 스마트워치, 퍼즐, 저가형 제품 등이 포함됩니다. Galaxy 그리고 모델들",
+      "source": "Samsung Magazine",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1vaFNOY19xa0ZfbURveUtxVGI3c1d6b3hCc0NDSnhvZzl5blk3Nm1ESThsb0RVQmZVN2ZReTM3U2NDQmRWRExhTW9TWjZzeEVwZUdIcDYzV3I2UjJGazVFRF9XUnExYUhFVXpCaE4wX3FLc3JjS2JuRnp4dDg?oc=5",
+      "published": "2026-10-11T03:58:04+00:00"
+    },
+    {
+      "title": "게임 속 알림창이 전하는 흥신소 마작 작가 진행 정보",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ2NMUnZDWER6TVR5Qzl6eTQtWEVZSjRkLVZsZ2ViSDJqVWZVSUVQbGZ6aHFXR1Zwakd1bUstS29PTUI3b0RPc2ZpWkhBWUhaTzFNWGNfd0lfMWZ5SF9Bb1gwMy1HcFFocGNqRkY0ZEV2NFo1ei1mUUlJSzJXM1Awcg?oc=5",
+      "published": "2026-10-11T03:43:08+00:00"
+    },
+    {
+      "title": "갤럭시 A04s 안드로이드 14 및 One UI 6.1 버전에서 지원 공식 종료와 2026년 사후 지원 정책 변동 사항 정리",
+      "source": "Mix Vale",
+      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPemFuQ3hCeGhLT2F4TWhoNWl3M19ZXzdjTHNzSjMtUVhILVVqOXFlTWN6bWdIX2V6VEZPbDVyWGFaNWhRWlBXajNORzN1SjNtQzJOYU9MdFZZN2RBa1hJMUVQTVdoZDd3UlNlbFJXM0d3X0JsU20wa0ZYZ1ctLVlLV2EwTTl0R2h3MV9SMEZDQjNtNXZTTnZxVTE2c0JEQTQ1TUNvelFYcE9KVldvMUhXMkFJRHBHYUVESGtUQTVJLWpUaGxpSUhaSExzRkJ5dmpkRk9fbUJoTy1IcXY5NGdGVVNSRlVMbmRCcW9XX1NfVmFNTlJBc0xpd0xOTmJLYXE4YmhjeUxaSkxSSnhUV3JTSHBzTnMyOHBaOHUxdnNJR1hMQ3JzS0h4WmlkaG9lM0RTTEFjV2ItaGVkWlA50gG8AkFVX3lxTE96YW5DeEJ4aEtPYXhNaGg1aXczX1lfN2NMc3NKMy1RWEgtVWo5cWVNY3ptZ0hfZXpURk9sNXJYYVo1aFFaUFdqM05HM3VKM21DMk5hT0x0Vlk3ZEFrWEkxRVBNV2hkN3dSU2VsUlczR3dfQmxTbTBrRlhnVy0tWUtXYTBNOXRHaHcxX1IwRkNCM201dlNOdnFVMTZzQkRBNDVNQ296UVhwT0pWV28xSFcyQUlEcEdhRURIa1RBNUktalRobGlJSFpITHNGQnl2amRGT19tQmhPLUhxdjk0Z0ZVU1JGVUxuZEJxb1dfU19WYU1OUkFzTGl3TE5OYkthcThiaGN5TFpKTFJKeFRXclNIcHNOczI4cFo4dTF2c0lHWExDcnNLSHhaaWRob2UzRFNMQWNXYi1oZWRaUDk?oc=5",
+      "published": "2026-10-11T03:40:45+00:00"
+    },
+    {
+      "title": "규칙 설명 속 최소 개수를 읽는 아마존 비트코인 판정 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPQ3lwa0Ztdlc1OTNEZWRtenJHaWNZSVg2eGVVOUVLQThkamRZUHhDd2tRX3U3aVdnaG9nbXlMcVk4OXg3MmhaY29KWktmSDhzbmUyTlp4akhrUmY4YkljOFEwX1JIcTJGNDFxemEyOG1uM01oNl9SY0x5b3RIenA1Vk9CTW9iWnIzaFhuREZpLVpMRUNhQ1RKeUtFd01GT3F3TWUyMW5MR0JHT1hLVUdwbWJlTlNrOVNCMzMtQ29JbUtyQlJnWXpIR1JSSTNCNmlQak9zVktId0plMG1tUkFfLU5QckpTOXRWR056SzNocEF2REpwdjVQWGZDSUVGVEd6b01TVUxB?oc=5",
+      "published": "2026-10-11T02:41:51+00:00"
+    },
+    {
+      "title": "게임 설명 속 변동성이라는 말, 바둑이 게임 잘하는 법 용어 풀이",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVWMxUDQ2NDF5VDdBc0dXNFFMS2MtS09PSjJCUkFwMjd2RlhsQk91ZERfRlZ3YmdBdWUtREU1dDV2ZU9Yd2t6QnZHNkx1c1RlNkhleDRPRGFnUjFLamxsSFVDOGxrOVRiQXMzWVd5YzhHenNVbWl4X19UZkJ2b1gwUjFNeDlyQ2xjcWJyaVVPWGE3Nzh0VmFmYXl4RUFON1kwZm9JeEJUMXdUdmZqQndqa3p4WUY3U1pKeVhUbmNjcU9mdGpR?oc=5",
+      "published": "2026-10-11T00:58:43+00:00"
+    },
+    {
+      "title": "[흔들리는 갤럭시 왕국③] 세계 1위라던 삼성의 불편한 성적표…스마트폰 매출 점유율, 애플의 3분의 1",
+      "source": "경인방송 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBTEkyOFR6RGRwakljZjJoTFVjSHdyd1NXeEl2anZqanVOb0FWQ0NZcjZIUFZ4ODBqcUQ5dmZ3Z09xdS1sZks0WTc4YmJSUVFOZF9Fc05ZZ3dFeVNIa2I3dDNVUETSAWhBVV95cUxQZkxxLV8wUFhoLS1nbkJiUFdaQ2h4RnRzcTFzXzhYTktUZVJ3VmV2UVlkRVhhSmZUNUF3YWhtUUZiT3hWQ0pzakRDOVNDN1F1OW16S2J0RjlkZ21fVmZMam5LdzF5X29fYw?oc=5",
+      "published": "2026-10-11T00:00:00+00:00"
+    },
+    {
+      "title": "터치 조작과 마우스 조작의 차이, 블록 체인 해외 송금 원리",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcFZTSzV0RUp1bWdXOTlTMGZPZWxSUlNLVG5FaW1tb3htRmtwUjdZV3ZEUHFDVUd5bjd1QzNMb3RXWkREZ3VTZ25DeURtT2FueWxRUE9DMkItcGVUS2ZiWS10YXd0bVRxT2xfNVJhc1Q4TVE1REZuY2J0TzdTZEdiSjFudnllZjg2VlZUSEdKYmdhdXdaak9kZ2JpV2doaVU4UWlqZ25vYjJWVmZPOHJYSDQyOXM?oc=5",
+      "published": "2026-10-10T22:18:31+00:00"
+    },
+    {
+      "title": "디코드 룰렛 : 고급 전략과 기술 - 최신 트렌드",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wZnpSajNoOXMxdEJQSjRXbkZFUlpsQ2w1dlFESlFLSzh3d0o3WkQ1MERqckE2RFZtNlFxbDNEN3ZnQUVDd1J6eTUzVm9vc2NLQlZXY0RWV2kwRXA0RzZPM1U1dXdfSFoyaVFWM2RTd0UzWW5f?oc=5",
+      "published": "2026-10-10T22:13:08+00:00"
+    },
+    {
+      "title": "새로운 기능이 추가됐는지 보는 친구 랑 고스톱 앱 변경 정보",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcDRvOEM0b2Y4RzJZcU1UMktpU2FYWEZ3QllCd0p0VWlic2dCNjV2djUwajZWeTZUQzJvLWI3YVRWU1hsMWNxRGxEbFZpVFBPNVR5TUppR1RueUYtcWNHVnpERk1IUV9pNjdROVgySUtUcFVrdmxucjlkdHhmOWVobzF2UkU5ejBnOVpPUmNfTF9yaFhJMHpDeXc3M1d5LWNKTWJJZ202T3lSSUFuSXFURlpjanNUd1Fpem50NVQtcVMtQ3hOS2lSSGhR?oc=5",
+      "published": "2026-10-10T21:50:11+00:00"
+    },
+    {
+      "title": "갤럭시Z 플립7, 접은 채 안드로이드 오토 쓰면 \"전화 안 걸린다\" 오류 보고",
+      "source": "KPI뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UdEZNQlU2SldVM2pZT0M0M19reTdfRjUxcVNyN1ZvMG92eDFITzkwamhfeXBxQ0N2Vzd3RTZ4TFFMYkhMVDR0bGx6SGlqT2p0SkV5MlFOZw?oc=5",
+      "published": "2026-10-10T21:37:52+00:00"
+    },
+    {
+      "title": "1주 만에 '불량 판정' 기준 달라진 삼성서비스센터, 갤럭시Z폴드8 '덜 닫힘' 증상에 \"3주 써봐라\"",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB2TUhQamVjQ2h0LTgtb3Y5THhtSTNIZXd5UjFUNkNHbjkxTmdhX3k2T1JEUHo4eXg2VTd6dWtPWDFlSVdPMEE3NFF1T0pFamt5QlBRUWI0SzVxRkJIdkRoeUQ4dUhCZEdXZlV2UU5YQ0FpaVU?oc=5",
+      "published": "2026-10-10T21:00:00+00:00"
+    },
+    {
+      "title": "AI가 ‘최애’를 끝까지 따라간다⋯갤럭시 Z의 새 영상 경험 ‘마이 팬캠’",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1nV0xwTGpPX0wydWFFMXVQeU9qMWlaaklHZFluWm53cUxjdzdUNFJRR25tY0xMS3h1MHNobEo5OHd0TTdIa0t0eFFZYTk0b1ctVTF3SQ?oc=5",
+      "published": "2026-10-10T21:00:00+00:00"
+    },
+    {
+      "title": "삼성전자 S27 가격 인상 검토…메모리값 급등에 수익성 압박",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5RYUt6OG1vTDN2ODZnZ1FuQ0lqRm5PLTdCVV9aZjVORzRQZ2tORTdMMDNXNzdUYkZVWnlzcXVqamhFYXdnUmpydkxhYmxOTEtaaXQ2cFFJelZ1eGkxNV9vcUZWWHVNbHM4RExfaVlWMlfSAXRBVV95cUxPOWdOZE5EQ1RsS3lqbllmZm8yLUpJWVJZNGc2UGl4M0ZmUW5Pa2dPNjBnYzIwTkw3VG93Tk81aFlBMktpckV5R293Y2FnWjJNYmo0dGVpQmNMRmh2SHlmQ3Bjd2kxYzZka1VZV0V5RTdWbFF4RQ?oc=5",
+      "published": "2026-10-10T21:00:00+00:00"
+    },
+    {
+      "title": "“200만원 삼성폰 역대급 대박” 불티나게 팔렸다더니…‘1조’ 충격적 적자, 어쩌다",
+      "source": "헤럴드경제 미주판",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aM1ZsaVUyU3p2cEJnWHNHNU5oMTI0WTZWOGV2anRMZjI2ZTJqcWl2dkw4X01zalhYRW5aTFBILTdDQ0xra3BxOHNXYl9LRzV0Unc1cnk3MVBQZnA3eU1JdA?oc=5",
+      "published": "2026-10-10T20:40:00+00:00"
+    },
+    {
+      "title": "첫 이용에 필요한 메뉴만 짚는 브롤스타즈 빙고게임 시작 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOMF9CWFJkTUg5dHY2c05BZ3hwczVpY3REdnptRUp1SHdweW5halhTWHZqeEh0aW5rM0dhb0s4cUN2RGdFVVhoUFJuVDdQR2NzUU45U0dYcnNncC1uN3MtRE5oVkQxZmF0aERiTHBaNGl1eTdaa3p3NWtR?oc=5",
+      "published": "2026-10-10T20:23:27+00:00"
+    },
+    {
+      "title": "가격 인상 Galaxy S26 이건 큰 경고입니다. 가격이 걱정되네요. Galaxy S27 천문학적일 것이다",
+      "source": "Samsung Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYVpaYzFXUFlKRGlQNU53TDcyNnpyTkpzbFR2T1ZETGN5aFlBRVZZLVlkV09mQk9uc1NjdUlpZ0Ffam1XdDl5cUQ3MENGR1d0UTRwUGFXT0Z5N2pTWmQ4djA1cHBobmdhS0RmTjF3TlduZjNCQ1U0M2taZm1yTDZkdUVJZXp2Z3g1T3NZ?oc=5",
+      "published": "2026-10-10T19:58:43+00:00"
+    },
+    {
+      "title": "초보자가 질문하기 쉬운 갤럭시 라이브 포커스 규칙 모음",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQnFQNWwwRGUxbDZSWVN4bV81QVBLMGJrdnpqcllaOGtzcDRYMl83T3lUdDhoTjMwel9rRmRBcUdkSHlzX3FleURlN0gzVHNrRzNHY3BqX3o0REY1d1ZQblF6R2hzcnptM190WDhTcFJ6dzZ4d1Vwa0xoUzdCUmwxdzFBYzgzZ3B5b21aMTFSXzlRNXI5ZUxKRWUtczFUd2FIVlJ5U19pdXN5Z2l0U0swUzh2MDI1ZE9o?oc=5",
+      "published": "2026-10-10T19:34:17+00:00"
+    },
+    {
+      "title": "여러 조건을 동시에 충족해야 하나요? 갤럭시 파워볼",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1PMENnaVRRNWhDeUJ4ZmZGYUFUZlhvN3pjUnFNVzEzdTRFcjRwV3RuMTk0WnRER3NXamJ2clFnUjEzS2ZIcjZhMkxVQTFpQ1lpd0theHhQY3pKYjV3RVhVbEJlUnNhU1ZKSldJNFJwSTU4ZDJrSEdVeDRDUmE?oc=5",
+      "published": "2026-10-10T19:31:59+00:00"
+    },
+    {
+      "title": "작은 화면에서 읽기 쉬운가? 재미로 온라인 블랙잭 모바일 점검",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxORWd3eXhwZExzbi1zeVFjaGhnSzZ4UUExNlpTRy12UTBhcmp5aE44S3pFendpTG8wSlBWTkRrdE1WcWloSXZzaFpBTHk4dHNnaTNmUGJJN3FoSHJQZk1JODBGdEtRMjA3VWs0TE82aFZzYXFSdWJGaHc4UF8xbGpCZFlDWE1MSGZqNnNYb1lfcXA3bHVWVG92M3ZDd1lXaXNHbGNBRGlqNk52T0dxejNVdVMyV3dRMXJ1VzZWM0UxcmVXNkl2dElxUDY5RnhkVUd4NUlaWENSMFFDaDF6VmtSZXN4QkI2dFBDemRTMkV0OGxWWm15aXhtMUpLTE1odXZubmM4aGl3?oc=5",
+      "published": "2026-10-10T19:07:00+00:00"
+    },
+    {
+      "title": "kb pay 룰렛 결과 표시와 이용 기록의 차이",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSWg3NVlueVVwV2VEWmQ0bWVySjJ3OFJWNjVIeTVlVzZYRlFucmVkSmdSb0ZDZkRWa1RhUVpEU3pjaU5HMXdXcmFUblJiam9DVkNhMWZuOERoMGVpZFozZXN6SjZCTl9QeWNfRjNHZUlDRlhjT3NQdEJCODZGYkl1eDY5SjdpcWlHYk9yWWVlQTBRNE9TbWR6QWhXemVtWlVlRUdISlEyQmZzQWJlY0FpSExMXzN2bVByYmFLTHZPZlRzU3NMdlJNcnBDa2ttUGJ0dTNTeDhTWQ?oc=5",
+      "published": "2026-10-10T18:48:31+00:00"
+    },
+    {
+      "title": "복잡한 보너스보다 기본 진행이 궁금한 라이브 포커스",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTUZ2dVFNTTZSM1hRMERhYnFwWFJLQzdqLVhITGRhUmxtRTBvRjVXQ2VIV3VwNC00RjNjemo3b1dlWGxpVDBLaDVSVkpCWDJnWWRheFRGQnlGMjBiNzV0RDlSeW5yakFEVXlhX0lJNG5RT2dWYVdWaWdaeUFyWXhxMVF6RXFIQTdpZUxzUUtIb2h0VjRyNDR0M0I0aUx5WGpfWldjWU1rRmZZU2ZJ?oc=5",
+      "published": "2026-10-10T18:36:46+00:00"
+    },
+    {
+      "title": "보너스 구매 옵션이 있다면 확인할 파워볼 번호 생성 비용 표시",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQckxKV205QlJzWXFGZEJhckcybHdOTnJlem5iQjhFUGNvZVE1em1CbHpJck9oTG0yd1Q2NFp2TXNDNTZGTDR2UTdwRFpZM0twRHdjUmJoLTUzWHhGNVNVdzktSG1YQ1JwLXVyMEJwMWNFWUctUUsxenNhdl9pX3BiOVhZcEo2YzcydTVaWm45Q2ViMXRaUGc?oc=5",
+      "published": "2026-10-10T18:04:21+00:00"
+    },
+    {
+      "title": "한 판이 끝나는 기준은? 블랙잭 검은 의사 2 진행 규칙",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNelJKMVhBWGNBMnRJVTlla1piaTd0SW9VeGxyc0xLaV9OVDlhQUhtdVM2eGxyRzRmR1h3MmpkZXhobjEyb0U1bDFiRTJoY1V1RktCWml3SkVqOVFzendTaDN3a05DUDdUbGFMZTdMNWEzTmwtZnl6eU1ZR0NiaVZJVlFIdW0tTGZDcjJNWFlmaW4wdkdIVHZQbWNBc05PLVJQZnhzNDN1ZlFwRWZzd01hbmcxdkpxTmozNWN0T2xZejlBSXJSa1dKclcyMXpOcWl0SUxPNkFCR0dJVGNGbEozQlZnUUhxcU4taXRHZEJMRHM2T0p4UVQxUlZYMG1aQnFqVDdaVW5EeEtvRGRsM3E2ZQ?oc=5",
+      "published": "2026-10-10T17:13:19+00:00"
+    },
+    {
+      "title": "처음 이용하기 전 읽는 카카오 도박 이용 제한 정보",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxObTB1SjVIMXNRRURBR2hhblV4MktyRVNzM0wxZUpLQWowb3NTNURmN0VHbDBGaXhQaGhqb19leElvRU5yaDdMY00zVVVHVFN6VXlFVXdVT0xXSUdDYWphV21pblN1Z2dBcWlnV0l1UkgtWHVVbmZXRWRCMEQyQ0E2TUVoUW9OZjJ3ZWRnNTdlUnJPQ2xzYTlxbmpON2lFdHNWNG1uRmtVbVh5WU12SVd1akZpSkk5UnZtcWg3NHdtdm5kVFI5emY5MVNtRVJUOV81bklEU0pYSXJaWnhCTGVhcTVURGJlTVliaTVaV0JTN1RVMDVEdDJKaW5rRm1CVWo1d09mVWFCS3U3TTh5U29XN2JUZ2M?oc=5",
+      "published": "2026-10-10T16:54:04+00:00"
+    },
+    {
+      "title": "입문자를 위한 온카츠 메뉴와 규칙 연결",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQm1oNUxNaXFpcnZ1NEIxeWFwQkE0WEMyb2tCZHdZSVFpa0JyeVBwV2ZXd2w1TU9xZGVIdDdqMGZVYURTZlNxeFBNUlIwZkNNWWZhQ19tM0RUeVhrQ1R3VUNYUkJkOTAtT2ZsaVVRS0FjWXZMdlk5X0xtTVpmUXVna1pJR3JmbXR2?oc=5",
+      "published": "2026-10-10T16:21:33+00:00"
+    },
+    {
+      "title": "첫 플레이 전에 읽는 파이썬 러시안 룰렛 체크리스트",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4taFpJVUQ4WUZiZE4xMUJUX0RxN3I3Q2l5eDRrM1p2WTAyTEVfNzRvemo3R2NPZ3F0eGdSVkU3dGQ3Q1hOV2lTenlZOHR1M29pZXEyTkVZXzJIRzY2a0tPZmZHWEpwdTZ5TzVMT1ZmUURESGxCWHJ4RHlB?oc=5",
+      "published": "2026-10-10T14:58:19+00:00"
+    },
+    {
+      "title": "구겨진 갤럭시S23, 40달러에 사 덱스 게이밍 PC로 부활…갓 오브 워 II까지 돌렸다",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YRkJzeVRjRDVWdmxHWU9BcklvMy1QaXhtMXdzeG84dE9GbHFkOE1QUUxUR1JHMzE2bWp1d0pkcEZDWlM1cmpKNXBoakIxZEdaYjBGa3dn?oc=5",
+      "published": "2026-10-10T14:05:00+00:00"
+    },
+    {
+      "title": "bet365 보너스 클러스터 방식 적용 여부",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPaDJIaWczVC1pQUtSOXJ0YUFscjhxNmEtM004QVc5TnNfZklnOUxFenVpNkFnWE9fYmtZZWlSeGI5ZjRfZDdOT1hUXzhnbDVJOVI4YTR6dHF1WXBIRmUzd1ZmaW9MLTNTTVJlRXJhaEw0R0U1UVRtWDNXNHV3M213bTcxc25OS1B4a3ZUNjdSX2hGSE42dERHcXNHdEU4cDhZNzVkTThJVkwyeU9obmI0R3J2dF84VlExU0pORW5NWHk1bFgtdmwxaFoxY3FoZUxLc0pWX0hucnVYVzB3b2p0MmhPRWR0NjdlMkZuamRQb1JWZw?oc=5",
+      "published": "2026-10-10T13:53:44+00:00"
+    },
+    {
+      "title": "MARA, 8,113만 달러 비트코인 996개 갤럭시 디지털로 옮겼다…매각 여부는 불투명",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3a25KbWN4U1RDX0I3N0ljMFlsV0NEV1FEUTJpMmVBZ1ZXYUtNT0I0Vjl0UkdJTjktZTI3YlA1LXhhZERFbVp6MUxBUFZDV1pvc1B1emNR?oc=5",
+      "published": "2026-10-10T13:02:00+00:00"
+    },
+    {
+      "title": "처음 접하는 기능을 하나씩 읽는 삼성 블록 체인 월렛 사용법 입문 해설",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE91U2xaaEo1TkhMSmN6OGw0V3RwQm9HUXhMemZaY0FUMExkQmM2eTRkRTlRVVlnWEg0dkJJc0lqWGtuelFmbEQtRHY2RVNqTUVzUFNfQW81TmJjblQwYVBwXzVsUVBGQWNWZFM2dWJMUTU0aVVaM1Q2QjFR?oc=5",
+      "published": "2026-10-10T12:58:09+00:00"
+    },
+    {
+      "title": "고윤정 설마 했는데…“결국 갈아탔다” 손에 든 ‘폰’ 뭔가 했더니",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95MEtyekJ0RGN6ejQ5Z09LVmVTS2ttenpaZTJYUmY1RmtXbmwwZXZySXFsRzRFNGJqVUpheExjUm4zSC00d1EyWEN4UmxJM0gyamRNcmdn?oc=5",
+      "published": "2026-10-10T12:40:00+00:00"
+    },
+    {
+      "title": "고윤정 설마 했는데…“결국 갈아탔다” 손에 든 ‘이것’ 뭔가 했더니",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wd2RjQkNoUWZDbXE0UE9zUXhCR3VTbW94RlpvcF8tTENENHc1MzNDRU1MbjMzWjM4Z1pELU1RMngxYjd1SW1tTjlQTG1hRzRzLTlXazBBNA?oc=5",
+      "published": "2026-10-10T12:40:00+00:00"
+    },
+    {
+      "title": "테마 설명과 기능 설명을 구별하며 읽는 문명정복 게임 라운지",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeEN3TDVUMXJlTFZTNTNMSHBEMVd3NldiSDM1VDROUnZXTTlLNzRjeEwySjZVN19fdFBEbTRSUnI4VmQtMVREU3FvN3JBeXhBZkpHZUtNWkdfLWhSVzctTEVNSjZPS3l6ekQ3VzhrVC1vSW5aYkQ1ZC1vajhoMklTc0FqTFJCUWs4aW83SmpZQ3FBVkpxRDNvaElqN0ZfSzBGWkhuamo0dE91V3lsbWdBLWxJQzBtaXppQjdtQWdFUjhoRW9L?oc=5",
+      "published": "2026-10-10T10:07:34+00:00"
+    },
+    {
+      "title": "장식 요소와 조작 요소를 구분하며 보는 블랙잭",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeGEtQ21XQ0J2N0ZnQ2d2Z0FadTF2Ry01NHhNaWp0UTRyd1VWSUVHd2hGZmZheGpVOFFoUzJkSFlfSU5aemVFcFA3SnI4MDlGRnFjcy1xX05qTUcyMjh6T2d4TXRYUHAzbHdPcUsyWU5kRk1KcDhTaEVvUmNacDV3MTBpRlZvTm5fTk5vTGlwTEJEV1VKbndqUFVkTGZkcHBxdEduamRhbDhZUXR0WXVSS25SUFdzOS1hZmkzU3d6QQ?oc=5",
+      "published": "2026-10-10T07:05:31+00:00"
+    },
+    {
+      "title": "배당표에 없는 심벌이 보이면? 해피포인트 룰렛 기능 확인",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTnZTMXhNT1RuVFNFWDNhYllJc29SUHBvWk4xUGRScXVZTnQybTV1WXZCal90UWFtOVZqVHdMVEk2OHhZdnJvd18yd3dNRHZLN1p5UEh0MkxWazQwUWVGcTd3aDVvRUFZSUF1dGZ3bzVWNUFZMWFyMU90R1pxTGhReWhSRnJLNTA2S0xyZTJKRE1xX0NIS1ItMjJxRU0wck9RS1E2Z05VWQ?oc=5",
+      "published": "2026-10-10T07:05:25+00:00"
+    },
+    {
+      "title": "결국 이변은 없었다... S27에는 엑시노스, 울트라는 스냅드래곤 유력",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5CUkw3endvelR4MElzeUhWOXVmOFlzSUFIdVdfMUQ4TDJFb0Rnd3hXeE9aOUx5T2R1dXFfUXVfLS0tSDUzcmEyTFZMaE5PcHdVaHY5Yml3S0s0RVlHRGxZNUMtRGs?oc=5",
+      "published": "2026-10-10T03:44:23+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 스튜디오: 10년 만에 프리미엄 오버이어 헤드폰 시장 재진출 계획.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZzVuZWFZcHIwVkNOOFA1RzI1WHFlQjFoTnFiUmRTY2ozSlowVW1fWWxlTi1QbW96TlVpdEtpbnFJUmlSSnlZRjZkZ2NRbnRFQTB1QjYyNW44OWIySW9lRTdaR25zNUNZRERQZEs1YnNVLUF5V2oxS3lrckFSNXB4Qk4ydGlzSFF5WnBwMU15OUstaGQzUkhSaTAwYlVBOU8zZTQ0OGR5ZlJGelJyd3hFUDZfYw?oc=5",
+      "published": "2026-10-10T03:31:01+00:00"
+    },
+    {
+      "title": "놀라운 세상! 박살난 S23이 덱스 게이밍PC로 재탄생!!",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5PZWxUU0pNRThYZkN1VDNjOURZQVQyUEtvbG9TcTg0dVQxaGZnVkF2bEcwd0tCNzl3ZURKbUotRUUwNVJRRGNHR2JnczhWRjNMWkRHUy1XenBtYWRuQ1JxSi00SQ?oc=5",
+      "published": "2026-10-10T03:27:44+00:00"
+    },
+    {
+      "title": "더 얇아지고 60W 충전·UDC 부활... 갤럭시Z 폴드9 이렇게 나온다",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53NkdJb21TbmY1Mnhxb0YycldCb3E5blVMaWlTakhKM2t3RHVTYmdoUWNOdElZYnlnUUxNbWVxVHU0RzV3NlhyUEFid282ai1jVjdERV90d1pnbU5TN3VBQ3U2WHA?oc=5",
+      "published": "2026-10-10T03:12:01+00:00"
+    },
+    {
+      "title": "갤럭시S27 울트라 핵심 CPU '스냅드래곤8 EE 6세대' 드디어 공개",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FYWt1bENmY1I3dVZYWUs2bzVfS19SU0U0MFNqSTM3eV9IY195N0UyblJ6M1c0OGFIbjZTQS00VE1WT0k5S2NlVzFwb2NDeGlaOGNuSGtjSFhOR1RIanJyWnFad2E?oc=5",
+      "published": "2026-10-10T03:00:31+00:00"
+    },
+    {
+      "title": "갤럭시 사용자 체크! 삼성 Always On Display 업데이트로 작동 안정성 개선",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfaVowXzdndm9OZmJwZEhzTXNELVM5bmx5bVdLV3dRRFJRb1hSSWMxS2RBdDlMSnlmeThhYlBXZHN3bmJSa3JjUDhIZFlpWmRDM1QzeEk4Q09UdnZuODlUdW1nbW8?oc=5",
+      "published": "2026-10-10T02:45:49+00:00"
+    },
+    {
+      "title": "플래그십 이어 보급형까지... 삼성 원UI 9.5 설치될 저가폰은 '이것'",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpRTFURFZkaXA0UTQtOE5taWpwQmJTMTVxUUh1VWljMWRQb0pKaER5SjExNkN1RE1xaXphMk9JQjlIVVc2SWU3dVBFeUhhMFFYTjJmNDk2YkMxQmZfakNoZV9nZUM?oc=5",
+      "published": "2026-10-10T02:24:01+00:00"
+    },
+    {
+      "title": "갤럭시 Z 폴드8과 갤럭시 Z 플립8 모두 ​​가격이 인하되었습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKT1JZVFFVNjZUN2R5bGZhMzFDbzZMb3VlT1JheFg2eFBwM1NqUGhyS1pCRGZycTAtbmlBaG9kaXg0aVJQVEl4T1pLcXBjTFBIZnBwYTIzTVVGdnUwQ01ISFJBMmplQ0lMUGl3SzFjV2pjZ2VrMXN3X18tRWdPMzA?oc=5",
+      "published": "2026-10-10T00:57:13+00:00"
+    },
+    {
+      "title": "\"에어팟 맥스 맞수 뜬다\"…삼성전자, 무선 헤드폰 `갤럭시 스튜디오` 포착",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1KcjRnVWh1UnFDNW9ySXlTa3lmSlJtbXRiQWZrZ01KSlNIVExOX19nb2wyMXlnU3JDa1R3WEttZUxWeGlERW4zRExsYWh1X1VlRW9odEFseGI1a3hYci1oNS1GeGo?oc=5",
+      "published": "2026-10-10T00:55:28+00:00"
+    },
+    {
+      "title": "[흔들리는 갤럭시 왕국②] 3년간 1위 지켰지만…유럽서 좁혀지는 삼성·애플 경쟁 구도",
+      "source": "경인방송 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBOWkzZXZQVXp0alZYLXR1TnNabENsMFBSblhIN3lEWldDTlRTamw2SW1PSTNsaE8zZmx0MHkycFBPUEZVMFV0b3k1Wk9pNURBVEs2NzlLbEo1eXBQNXRsVzJ4NjfSAWhBVV95cUxQeFFTN0xmV25wd3ZNenY3SlR4dXU3NzM4NVZDaDctdmF5RHB5eFBmMXNqYlVBWEYtWUlqVHVJMkdIcnFpOWYzTDRHcmlyaXlOc2RsNGtjdmpSZk5hM1ptR0NrRXVVMXhqZA?oc=5",
+      "published": "2026-10-10T00:00:00+00:00"
+    },
+    {
+      "title": "갤럭시북6·그램북으로 만나는 최신 보급형 CPU ‘와일드캣 레이크’ [권용만의 긱랩]",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHZ1pYUXdIWlJWS0NSaG1tLVNaWHBHZzBlVHUzOWo5bUFndDZudGZQWVIxR0Fmc0owV0wyWDNfTHBVelpmOERMR1VtSG1IeFNFOVFmb1pYd1hZSW55eTRvSzRUblJ5bEhEdHgwV2FTZURZc2I50gF0QVVfeXFMUEdnWlhRd0haUlZLQ1JobW0tU1pYcEdnMGVUdTM5ajltQWd0Nm50ZlBZUjFHQWZzSjBXTDJYM19McFV6WmY4RExHVW1IbUh4U0U5UWZvWlh3WFlJbnl5NG9LNFRuUnlsSER0eDBXYVNlRFlzYjk?oc=5",
+      "published": "2026-10-09T23:08:04+00:00"
+    },
+    {
+      "title": "프리스핀 중 남은 횟수는 어디에? 온라인 사이트 신고",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPM01wSjRPMHliQXpMZzhGTmx1X3RSSmFJVmhjMTQ1clVXcFhGYVZnRXc0NXFEM1c3R19WQzBBejlGbTlEYkFwU3l3emVaeUVHVXdRMnoyck1aVjBrOVEycGFhMTdQWjA5NTVQU3p4M19EMHlJdnhYV1ZTcW1seFNqRy1SX2doSzVVck9kX0dzVi16aHhyem0taDFWbGN6aGZ6VWl1NkFLWFBiOVUyZjBmdWZob0RWcHhrWGNjOGE4YWRVSlgz?oc=5",
+      "published": "2026-10-09T22:53:28+00:00"
+    },
+    {
+      "title": "\"고윤정도 갈아탔다” ...20대 아이폰서 삼성 갤럭시로 바꾼다",
+      "source": "헤럴드경제 미주판",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIZ3UtWnZkUkhaQlhmNjIwN2thVlgtMlF2dkJRLTY4UE5Ubi1DdUc3OFNlZFZQdnZFVkIwbDRSTmFPeHpBa2FuYW9pMzRiRlJ6b0hfNnlTNzBXR0NnbWVLcg?oc=5",
+      "published": "2026-10-09T20:40:00+00:00"
+    },
+    {
+      "title": "[이슈&논란] 삼성 오버이어 헤드폰 이름은 '갤럭시 스튜디오' 유출에 애플·소니 '긴장'…가격·사양·출시일은 미확정",
+      "source": "뉴스스페이스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zWkE3Uy1nYXUyRTVTTXF0SWxHbWtBUEg3VWRaenZtTWVzQW1VRWJTaTBqYU0wVy1vc09TRzRCd1lZSkVyUEg5Qkplb2Z4REJfeEN6d1hYV21pa1FEUkVKWQ?oc=5",
+      "published": "2026-10-09T20:00:00+00:00"
+    },
+    {
+      "title": "게임 소개 문구와 실제 기능을 대조하는 한국로또연구소",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQWZSV05uakxlSHlmT3RQeFEwSEJmUzhmaU1WOEVzU3FXNmJ1eWl5ZFZENENFOVlmR2o3a1pGelpBcExzaXVZeWtkUkpNcFFLZFY4Z3FOZVIwbTljOUMtMmh3ME81eThHZGZLcTFzejZla2d2OFVYV19nUVdpV2pZdTZmaGdteUl5ckZQQlJHalZ4WXJHM2FoakVKczg5V0Fnd1A3UGVhbTlMdzJxSl9QandPUGtxRWJVQ185SlczOTQ3VlBoNWdObXdLSmEwcmZiSy1iN2pTWEI0OVpQTjdXbHJ2WQ?oc=5",
+      "published": "2026-10-09T19:33:56+00:00"
+    },
+    {
+      "title": "보너스 진행 막대가 있다면 보는 홀덤칩 가격 표시 의미",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdU1jeGZidW1QdWU1TmpDNk1NaW42SER6dkhRR21vVWk5dm1UUmpnSzQ0a1JnZ24xdDM4SHBoQ29tY05JbEthRTFaQWJkZUQycWtVQXJURVp2QjhqeDNSc3lRMEtrN1c1SWtMY1JuU09ITGJLMXNBTzM1NXdyeW5TWU5pU2gzQW5RZWJPcUpEQnZDWDc4SGx3b09rUTFGMzZTZVNFWDhYalJxV3VCbG53SDVsMFh4Qi1NRGNTSVNGSEM4a3p0ekZ2RTZRTVRqZ25mMEdLZnpR?oc=5",
+      "published": "2026-10-09T18:23:54+00:00"
+    },
+    {
+      "title": "PC 브라우저에서 확인하는 파워볼 유튜브 실행 정보",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUnROaDhidGd0eVExbmlHc0JrakdfQUtlZ0J6eTBrV2o1R3Z2Rl8yNk1OODZFaDJnbzVvLUUzenpZa2wyUTZSWE56QXdZZHdkRGltSHNZcWUtQldRdVF1WUN4TTRXWWdvYTZfZFFLSE5OdHB4ZEd5Z0Y3c3RGdzQ0NDBUclUwOFFJSkZ2eFJpN2xXaEZhYVluQUl0dEw2N1NfOGhXVTZidzd0YTQ?oc=5",
+      "published": "2026-10-09T17:29:27+00:00"
+    },
+    {
+      "title": "짧은 라운드 설명으로 시작하는 헥사 꼬치게임 기초",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVGYzV0lHZ2owZTU1Wk9rakVBNGtULVJNaUwzd3lDeVljbDgyWG5CVWI3S1lpdXdCWkNPVDZEZ1hrY3VSUjhLZEU4ZEkzZV9jRGlVWkV1Z2VrZUwtb3FqSVdtUVd5UVR3NTNJZ2NjanFFNXNWY3RLRmUtd0VZNWltcng2bl9pU3pPZXZ0NGtsZDk0Z0VGR2l5aTNCN1g5U1d3eVhPNnNLU3ppQmV3d28xY1I3WW1fWUxJUFlRMmltRFhfLUYyYTZ4cG5maENrWHY4TnROTWZ3cDc2RFJv?oc=5",
+      "published": "2026-10-09T17:21:57+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 F70 5G, 플레이 콘솔·BIS에 등장…A17 이름만 바꾼 모델 가능성",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA4X09uM3BncTdZMzUteXZmTnVyMXd6T3daRThkU0RRWGhQaFVvUWJ6aGx6enpZZkNrSURPV2pJamtrY244NW82TFFxWGV6UTYzN05WZl93?oc=5",
+      "published": "2026-10-09T17:01:00+00:00"
+    },
+    {
+      "title": "배당선 방식인지 확인하는 코인투자 코인공부 구조 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdmNFZWQ1bE84aGw2YlI5QjAxd1B0SnI1ZUV0eEM0OWpwR2h6cDhldmxlNUFNVXBSd3NpRktNRGd0cUtncnRCQkcyeUgzV2htM05LUFRFQUcyMHJneWJQaHo0RzZpaXlwZkZCUVlJcFlMMkNQWllFOUVranM3dkNYVkRuTnpGS202bV9kZGU3eFVRcV9LY1RRbUZEcERseFZGaXl6UVAtcF9sVGZoSlhBM0tFNFRsZFEwZm5jRnFzbkJ3UQ?oc=5",
+      "published": "2026-10-09T16:11:40+00:00"
+    },
+    {
+      "title": "체험 모드와 일반 모드의 조건을 비교하는 올리브 맞고",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeG5YN2UwNlk0M1BvOTNSblVqVHltMzBUZk5GQXJHUE41OGZybFZhYlpkdjhwY05XRnV3Y25ZZGJQdUFIaEdpNVpsZmtuNnJUekRNcWViOFRaT3pacDhEME1NS3ZINjhJRm5TTElLamNKczNMTVRveVM3SlMwLUlFS0t6VWQ3cDY3bTladEtYM3N2c0owbkIxTVhSWG0ySWNfb19wd3RnUUFvZ01Wc0lEbDYwdkhvcmNtUmZncg?oc=5",
+      "published": "2026-10-09T15:54:18+00:00"
+    },
+    {
+      "title": "One UI 9.5가 보급형 갤럭시 폰에도 적용됩니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaGxmNkpWYWtGNktrUlR4S1ctMG5YbHUycHRTVkJIamFjeE9fVnFjdzI2dExvUG1EMEczYWx6MXlERkNEXzMwYlp6cGJxSEVaU3lKSnI3VG9rZXdIZWdPX1ZWbTZWRkNzc2JoWktiUzJyLU0xamctdnZoNUh1VTRIbg?oc=5",
+      "published": "2026-10-09T11:45:05+00:00"
+    },
+    {
+      "title": "삼성, 10년 만에 헤드폰 재도전…'갤럭시 스튜디오'로 에어팟 맥스 겨냥",
+      "source": "콕스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oYkRKQk1CTllUZXpiakI1YkRNeDlrWE1VTG5paDN3REtlTlhjYjJodTdzR0x3NTQ3WjJQSk5HZUQxdW45aGd0a0Z0T0tJSU11TjhwdnBlLVFITzdXWUZwX0VhelZkbS1pRUE?oc=5",
+      "published": "2026-10-09T10:34:12+00:00"
+    },
+    {
+      "title": "MARA, 전략을 AI로 전환하며 비트코인(BTC) 8,110만 달러를 갤럭시 디지털에 이체",
+      "source": "CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMGdGVmlBVVJVRFdzQ3JoeS1vdTNSTDY5dTMwYkNYQTloeHdOSTJPUnh4UHU3ekdTMFMwYnBNS0hIVVdnNVQxN1Q5enFlU1M5OTI0ZWhXVVpTQ0ttY1d0dnhMUVhuSE51T2gta1lNZ0hqM0VXaHJJUzZjeS1CdFhoNmV3VjVncmZMb0FIX1A0V2lMZGF5cWFHQXR6ZFI3MWpNSC1MMEhEYnA4NXZSUXQ2b0c0YXlyVnExTUVjcWEzMWZMTUNZS2FVVmpScw?oc=5",
+      "published": "2026-10-09T09:08:09+00:00"
+    },
+    {
+      "title": "서울대 이병영 교수팀, 갤럭시·픽셀도 영향 가능한 리눅스 커널 취약점 발견",
+      "source": "https://www.sisakoreanews.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1pRm80V050SnhwQTBONTgxUV9nN2ZPX3l1dFlLcGd2REh4OGN5Y1JHU3ZOb0tRQWhqRzcwc3ZRX2RyU05VbU11VlpB?oc=5",
+      "published": "2026-10-09T08:57:00+00:00"
+    },
+    {
+      "title": "'갤럭시폰 성능 제한' GOS 논란… 4년만에 공정위 전원회의 논의",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1pdjdTVVFpMlpXMEc1bTNhWU9JblVPSHgtYjRaTXdwcXg4amQ3UmwyelJseXdkOGpXU0RUeGNPZzlHQ3dlUHpNOC1NR3REZw?oc=5",
+      "published": "2026-10-09T08:34:30+00:00"
+    },
+    {
+      "title": "갤럭시 S27 울트라가 애플의 20주년 기념 행사에서 아이폰 20 프로의 주목을 빼앗을 수 있을까요?",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeEVjdGE5aFo0UkxOWVppXzdYb25iY3gwVjh3Rk9SWXJTbEJYTHNhdkdEelNBMlFUR3VPR19MYmt4OF84V3I5VlhYQkJMYWdpajh6YlJTdjRVWVUtOFRIRGFjSVo1LVpha0YyQVdmZmt2cjM0SzlvdHk2a011NWZIRUVHZVJCMG1TWC1vN196aGtZeHE1dTRQdTFmN1dSVEZmc2c?oc=5",
+      "published": "2026-10-09T07:00:32+00:00"
+    },
+    {
+      "title": "게임 내 숫자가 갱신되는 시점은? 조합배팅",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9qOUVFQTZFckhqQS1TOUlNSGhLdDFxLXhGMUE5dWVtT1JPSWdrMWQyOVUwaFQwaFl6WHpTeHg4U0ZmTUFIVGV6TExhRHBMMG4yM2pDTm9yeTd3SnA2SUFwRUFNaTVsaGNqU2NDempNX29ucGxVYVFkdHRRVQ?oc=5",
+      "published": "2026-10-09T06:47:01+00:00"
+    },
+    {
+      "title": "기능 설명의 빠진 부분을 점검하는 갤럭시 유료 앱 추천 정보 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcFNRNjdrVmhEbVR4RUJCU0JERVhmV3dpNHQ2eDRWbDF2Uno2Rlc3b2dSeDVSdlNBWWxSQkZ5U20yQm0tT2RncnBTNjdLbGZyZlNzbUMxQl9KOW9vSWxKOTREQURTaWVRc3BFZHBvcVJXRjRPY1lYb2RaZmVRM2s0enhKR2t3TlJxTjNEdS1YNDBZNjRIbFlhVFR5YS1HMDV5aDBmaEZSMjVOUGIzUGZN?oc=5",
+      "published": "2026-10-09T06:41:43+00:00"
+    },
+    {
+      "title": "삼성, 갤럭시 A57에 원 UI 9.5 예상치 못한 테스트 실시: 새로운 소프트웨어 전략의 변화.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYnNDclZZU1lzcTV3M3RHeGI1OUplLWwzcWEtZ2taeEVyWTVTVXB3OGNTWnAzU1ZBR2hIZHh4TTRROExmTEp5ajZNRzhOY2ZSUjVZQk1TN1MyYklrTmVOclV4Wnd6VmNrX0JTazRTQVlVUlJkRk5LVzN0d294eTZSakw3QUhMcHJzRDRvLUZfUWRIVEpYUDNWOVlPVy1SWkswQk5heWpKTHdqS1pMMUJ3MUdFM0xjQQ?oc=5",
+      "published": "2026-10-09T06:41:22+00:00"
+    },
+    {
+      "title": "삼성 갤럭시·픽셀 비상! 안드로이드·리눅스 뚫는 'Bad Epoll' 발견",
+      "source": "대한청년일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLck1tanltWUo4YlJPRFlfWTdFck5LMTJIY3RWWUVSVG1DQmYtY0dxeUxkYnhrRndPNGpGMmZrWWxhc1BUOEY1Rmd6RkhnLVBvSURIX3lR?oc=5",
+      "published": "2026-10-09T05:05:33+00:00"
+    },
+    {
+      "title": "이틀 만에 6번 뚫린 갤럭시 S26∙∙∙늦어지는 보안 패치 약점 드러나",
+      "source": "한국신용신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wRmFkcVlKZTBwUll3R09SajktbTZndjRJbkZqczgyRVNZR2l0OW9za1VrSko5S25VT2p4NzJWYUFibkF5WHk2ZWtaWl9UeDl3MFZLRWZ2cU5MdGtJeFlJOEhSMkE3YW1kMmxZ?oc=5",
+      "published": "2026-10-09T05:02:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 A08: 충전 케이블이 필요 없고, 친숙한 사양을 갖추고 있으며, 일반 사용자를 겨냥한 제품입니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQTVrYmc1UUZWeWNXaDhQcnV6LUY5WG5CMUs2QmtpYVNPY0RmcUF4XzJfNDBrR2dYNWRVbEZLSGdlcnVrczRvcmNXMEpneVJfWXoxejZVNTVxTnVEZFV1OVZSbk5HSzFjbVFjS09WWDd6TWs5ZFNrSzR2dUR3VmxpYlU0X1hBanBOQlJERkRDWW00cDJrdGl1UnJreFBmZnNPTS1ROXZUVWtyQQ?oc=5",
+      "published": "2026-10-09T04:14:26+00:00"
+    },
+    {
+      "title": "다시 열어볼 만한 블랙잭 카운팅 도움말 항목",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYmpYMXJ2dGx0WnFVNkVHSndkSVVzeGdfOVIxMzRyci04VkF4UkxCdUs4RTNOdVVWZTVUcGtOX0ExenFRVktVeXhCQTdNVVFib2pMWXpRYkhBeWV5dkVEeUk5dFJrRVEySmtKYzFvQTdZOWlVTkJUUUtSeWpVWUpENDViUU03UTFsaHoxOHR3ZnJ4LXlCRm1xZVpqOERuc25tTkVFeHU2c0V6YThHX0k1VzRheHJyUnF3?oc=5",
+      "published": "2026-10-09T03:27:41+00:00"
+    },
+    {
+      "title": "삼성전자, 올해 스마트폰 출하 목표 2.4억대→2.3억대 하향",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mc096bENYZGZuNlEySGY4QnFqTWJyS3lHc0luVGlBRnNDTG52MWNNTENPYkN3SWl6dmVZSXpWV0tsUmxMUzBzYzg1YmxsOVlZX3FYREVB?oc=5",
+      "published": "2026-10-09T03:07:51+00:00"
+    },
+    {
+      "title": "다음 단계가 무엇인지 알려주는 임요환 포커 누적 상금 진행 표시",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNVld2TE5iRWVZb20xWkhveDMyZnZNMS1aLVpnYV93bzQxS3N4WjQ2bkVQOVF0M2dTU1pONjNSb0k3THFLQUp2MlA1b1ZGT2xpdzJZMl9hS09zeWREd2pyVFN4b0VENjkyMzk3NUNrTGQwNncwZTVsMlRPenZURm5CNVNlZVdpSmZrRTN0V21pOU4zV0tBcU94N2daQTR3eFpMUnNsYmJ6aklLeEt2OWppeS1XTFBiTVBNTnVJcXliLWFqc24xeERTWHJpSzBUT1NOb1NjN2Zuc3VjWDJDdkl6eWRfd1VlNEg1cGJjak9uUzBOcDRTb3NXSFd2MGM0ZGV2b29NSDRPRTlKMzFmSzN3?oc=5",
+      "published": "2026-10-09T02:40:34+00:00"
+    },
+    {
+      "title": "고정되는 심벌이 있다면? 비트코인 체인 작동 원리",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQT1lOOHBnMGJCUUNXd0pqalo5S2kyQnl3SU42aHFNSFZrd1ZoeFczUEFnWVcwYTVLbklQMEd5Z01NTnh1YjIzcUNNaE9sQ2ZCc1ZMa084YnVld2tfcDBRNTRRcmtnc0ZId3JXZDBNeG94dFQwbG93aFNsaXJXWHNXTDBhbkJSWGNvVXRiRXc2all2dzhwZ3FBVEZWcVhmZFhlNGMxajdKdTFKNXJhUHJjRURkWlZvU2RhRncwbnZLUnVZWkNrTVgyLVJTZVVRX0RtTmFBM1Zwb0VQZm9DLWlpODg1ZnVFc0I0Y2oyTm1RRTVJOGtIdHk4SmV1WFhVM29uVnF4bE42bUpzaV9nX1FZTGhDN2tkX2pPWFptRzBfV1FSZmg3Qjlz?oc=5",
+      "published": "2026-10-09T02:27:10+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 Z 폴드8의 내구성이 엄격한 굽힘 및 긁힘 테스트를 통해 검증되었습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHBQVk9tMTlndG9qQlZGYkdqdjhmQVhjbElBNGt1Sl9GTXZwSlhNTmtnSGdkd2hPaFJJaFVWeWNqOUR3SXczX2tlUkZzWHl0bmYyY0JrZllwTGdudmZQY0w3dUhYaER4ZWJtYlZvYmE1ZHMzTVhIb200dmRObGVoNm9fZE56eVZGamNzVnpiejYzNmdsUTRIMDFDeWhOUWdMcmVRMndWUjc5REJHcFc5RzdiMA?oc=5",
+      "published": "2026-10-09T02:24:43+00:00"
+    },
+    {
+      "title": "어떤 구형 삼성 갤럭시 폰들이 아직도 업데이트를 받고 있나요?",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcUI2dWxNZ1ZwR3ZuMG45bEpSQzU2ME56NEZ3bTk3bGkyVkhNd08zMWpGU3htTjFqSnAtd3ZablNvMVVKRDA5cUg2a3pQektQREROUkpjZms3NS1HbFRwOENxRUx4Qi1jd2lKUzY2UUY2RUZmM3BjdmlhU254bElveGVFbWpleWk5dTRUXw?oc=5",
+      "published": "2026-10-09T02:16:40+00:00"
+    },
+    {
+      "title": "[흔들리는 갤럭시 왕국①] 삼성, 유럽 고가폰 격전지서 애플에 1위 내줬다…프리미엄 전략 '흔들'",
+      "source": "경인방송 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvclRWWC1lNmh0OHAtWGR5TzF6c0hIZUdaSVhXRFVXOW8yVElDanF4ODY5Sk9XX3BsbUVKU29KTURlWUdEQVpBRVJYMC04ai16ZXZ1dVFkdnpEQjFZTFZwU2dGSFrSAWhBVV95cUxNM1ZlaDVnZ3BmS0FJVHZlMVg4b0pHYUgwNThEZEMtdHJXSjRjdFFCMXRTMTRveUY2MmFUR3RyMjFqQ3cxdnZMMV9OalRRbU03WWlZV3hEQUZWWFZOcWxkYWpMUlFmMy1ILQ?oc=5",
+      "published": "2026-10-09T01:59:39+00:00"
+    },
+    {
+      "title": "특수 화면에서 달라지는 갤럭시 게임최적화 버튼 위치",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWkhGTXFQbjlOMzl2YzM4ZDcwT05tUVhDYm9MeHM1YnNfN0t0bDltay1zRVJkZHhweGNrRmV4MUd3bFhSZmlkM1dIRXdtOVdDWXMtY09kVzliZ2paVTFFZmRMZjV4THFmbl9Edi1nMy1uMm8xbzFCc2Zma2EyaUVpX1NRU1dQRGdKU0RoMEc3REw?oc=5",
+      "published": "2026-10-09T01:30:12+00:00"
+    },
+    {
+      "title": "모바일 브라우저에서 점검하는 원신 캐릭터 룰렛 표시 상태",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWWRncHdXNjl1ZllLS290bFJkSEpNMVdUWE0yV1NqNXpOREd4Wm0xNFlRTHhtZHlVcXJBdE5kQlBHNmRoWFNyWjVHQW9WdjNlajBUYTJtQ2hyVzRVSjZTMWNIdGtCbmhvQWFUc3FMZ1lDa01sa0tfX296RG9aa0hMRFNILUUtczNYS0I1cWxmR3dBVGxNendORndhY1ZHT0RoMG9LZGJ3TWZfbkFSa3lUTE5TdzVIeG01WWU5T0stLXkzbEpuTE9JaVJSaEV1R0tsaDlfZ2pFZ0NhVmQ1VmxxMGFDQnk?oc=5",
+      "published": "2026-10-08T23:38:36+00:00"
+    },
+    {
+      "title": "“AI 홈 넘어 AI 리빙”…삼성전자, IFA서 TV·가전·갤럭시 연결 선보여",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5lTW04cEQwMTdnZXlGckVfYng5cEFaaXhSci04aWhGSldXOV9ad3hNcVlhOFVjWmdWUUMzN2ttNnBreG1iUmo0Um1UalFjcGRsNjRPSFpZY0RLTUJia0pfWkRsUQ?oc=5",
+      "published": "2026-10-08T23:33:37+00:00"
+    },
+    {
+      "title": "단말기 넘어 ‘생태계’ 전쟁…삼성·애플, 기기 연동 주도권 싸움",
+      "source": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yOFprXzh5UGxwRjdwWWZQcFNyMmVUWmdFY09YckV0cndCSDRUYndlWFlTeWd5VXE0Y3RNLVhlckZ5SHVhbnF4MFhRSmoyVVZwRThsWE1GN0lxVTBwSDI4T3JNYkg?oc=5",
+      "published": "2026-10-08T23:00:04+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 S27 울트라는 독특한 보라색으로 출시될 수도 있습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYkljZ0VXZnBrY1ZRTEI5UmxIZGFxaGRkeUFIUWxzb0lTM2pqbjFCVXBvenVoTjdNNm0tVGFOMWcteVZIZ1B6UFJHaWgzRHlDZl9xSHJmS3JhU3lYZXJCWjRab3JZRFdvd3JKRHVHTS0zTjZ4SGJVTGNXMVctNFJzVHF4Y1FhTjA3cmdpbklvemc?oc=5",
+      "published": "2026-10-08T20:45:00+00:00"
+    },
+    {
+      "title": "플레이 화면과 홍보 이미지를 구분해 보는 마작 스지 카운팅",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVDFhV2dGaDd6NGpXR2h4YkhGOWR6bFRrNEM1OExHZ3lJc0lBVkpwQ0JOM0NLWF9QRkFOYUtvNUxzemNKYTdXY0ZFQkN0Zzl4OEtTQzBaOVM0UHQ1Y1AxNFZzMFdZUWJJWDN1WXkwOWZONnlmbW1uMFRYaVNwVGJEd3hGd2Z4blZjMEZST19pUG1VdlI4ckh4YzlVd1k4QVpQ?oc=5",
+      "published": "2026-10-08T20:17:38+00:00"
+    },
+    {
+      "title": "삼성은 갤럭시 S27 울트라의 고속 충전 기능 업그레이드 방향을 공개했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcEpSSjNHTnBSLVJybHVfa1dHQkk1T3FGZlNoN3Z5eVlySGRhT0g0X29YcjVYcWFCaDlmdTlQc2FWSk82MEFMTFpJak5sc2RoNDZEVUtRNTRjYXJpdGUyeTUwd1VXVy1fcDZJaXVoNlhUX19nVnRnU2NteDVOR01oeFpxVm9NNWFSWGptRWt3?oc=5",
+      "published": "2026-10-08T19:26:09+00:00"
+    },
+    {
+      "title": "설정 항목의 많고 적음을 비교하는 크림 사이트 시간",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUGh6M0FWbEJlUHA5WnQzMFRLU0d4bHd5aFhJbDF2VkdfbzFvR1dPWXRlVHl0MVd2elQtX3RrS3h1MlpCcDgtN3hObUVCVFdhN1VReE5tOTA5QWxtX1d4d01aS3pIZG85WE84RF9OdlBEdlg0T193RFdUanVaNDR5eU93QUNTdkF6bmtZSkNiVFJXNE9XRVh3QVBQejZQcHFNcjQxVFc3TnFaZzhVOWg3TFZJSXBlZnpnMFlRNjBaZWVTQXBhQ01BalQ5OUs?oc=5",
+      "published": "2026-10-08T16:36:03+00:00"
+    },
+    {
+      "title": "디자인과 조작성을 함께 보는 베트맨 모바일 구매 게임 선택",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJTXF2YVhwbVFfNWZoakhjcVhKS3Y0b19xTmNoWWlHTmtvTzY3emsyVTVjcE12ZXROeF9iN2pRYkFwZ0ZjcEd6a29iMDRsNDJGZlYwWVRGUG5sWU5fc2FMbWk4ekw?oc=5",
+      "published": "2026-10-08T15:34:07+00:00"
+    },
+    {
+      "title": "입문 전에 알아둘 pbg파워볼 더블유놀이터 조작 범위",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNk1xdGFGVGpDRGZ6MG9PaDNTMjlCOXNNSVVuZnhDcVhTMDVLNnJoVnNYUU96ZTZwMnFEMm00ajRndWhQdTk1dEM4YngxMkZYU2Rva0RKUDh5WndDSGltNWhKcmtaalZRVXRyNTJkNjZpeTlheWNuVld0a296aVRaNGpn?oc=5",
+      "published": "2026-10-08T15:23:51+00:00"
+    },
+    {
+      "title": "공간이 좁은 화면에서 읽는 에볼루션 분석 사이트 정보 영역",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tbjZJNDNMMTU3R2llZ2tqSXQ5eUZVWURTTEVMN1pELWlyUHVuYmhybVJNX2NYSmFHTmRHVFI5RnJlV2E0UWg4UWtjbFg3U0NJaUU3bENkT0dtZEJfdkdEWnN3U0xfdw?oc=5",
+      "published": "2026-10-08T15:04:30+00:00"
+    },
+    {
+      "title": "갤럭시 유료 앱 추천 멀티플라이어 용어 설명",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOcGIzNUlDZmdINU1Ga29SazlPY0EzQVl2ZnRtRzhJVk92bXFkU25qUkpVMG9fYjFWY01ZV1d6dUxSQ0t3ZVVXVGlqOGFLX2MySmpOc25vVHRlNWp2aVNhcC1Ha3pic1JLSDhjcmVlWFUtYjRxZ2ppUjZZckU5R3I4WjJ5SThyZnliMkRSMUctWTgtSU5kNy1YblpkNGdaSzNCekh6NUpZZ2JCamFpZkNPTmp3cDF1MFdDT2lhZzV2MzFvTFJaYWVEY0RNRVZrUFRUM3RaMVFscG9PV2ZEY2tJUnAzRjVzczFTdmctNnFTZ01rSzRqbUY3RTdPa3l5dFFVOUJhQ2pqeFpGRTU0RjZaLWJScmd2VjB3YVNYcFdB?oc=5",
+      "published": "2026-10-08T14:02:52+00:00"
+    },
+    {
+      "title": "삼성, 솔라나 및 수이를 활용해 8,200만 대 휴대폰에서 수수료 없는 USDC 글로벌 송금 서비스 출시",
+      "source": "CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMDdGanZmMEpQMG4yVjZFdmcwUUdGR2syNE1EME0zdlFGY1Q2R1ZNdXdBdnhTdXpvQkJMUGQ4QnlGOXc2Tk1DNFpVTmlMSzljd2pZeFpnLTlvX1c3eExSeVI4N2lrakZsZ3lyOEVnV1BGUjcycEx4c3FVS0wtTnplTWhXdzl3anhWaEZzUkZxaW1Ud1JRQlRxMm85OGFsUE41NjlFNXVSYmpFcS1QaTdxNA?oc=5",
+      "published": "2026-10-08T13:53:35+00:00"
+    },
+    {
+      "title": "블록 체인 기술 동향 규칙 페이지를 찾는 경로",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxNZVRxbVVfelg0VnYzT0xnZXZhSnBweHZoRGRhSHY5OEdlZHBEWXBhWkVpSl9aTzdkZ1NCN1FhZnA2Zk5nbFZYem9ZNVJacFp5RXdERXBqQ29zNkpad21WU0xUVzRJLTFOSEVaN0ZTVzUwajE1TlFKbzNiRVVDWkJFT0NuMkx3YTVGSlVJYzRwZjkyeGdHdzdvYTc3bnFQZFkzLVgtaFFQQTdNQ2ZoNUlsWHMxMG94RUk3czZacEE1UENYU3J0VUh5TVNqTHl5c1Zaa2xhWTFSamdOc1JlazRQTk0xWlV3XzNtM3oySklHaTZEOF9ubEJpQzllVy1hSUd4azNuaTBlSmZLMldCTDdJSjBhbnFHbW94ZnpyT3hlcEo4eHd2M09idVNYLWpoaUVyaE1laElKWTJYd3YwX2theWwzbWhqR19BV2lEdVlTNk9uZ2dNS2sxc1F5Yw?oc=5",
+      "published": "2026-10-08T11:17:40+00:00"
+    },
+    {
+      "title": "스마트폰에서 글자가 잘 보이는지 보는 플레임 마작",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYjF6UFFXT1lxOXpSS0ttTUs1R2hUN3BXVUZBcjcwN1RxTXlMZDVnTmdDTjVkLVFDWEcwcmdNd2FyLVhKdTFabzR5ZEowMmZfNXFQXzJXNnRHTnNWaWNpVlNualQ1cldvc3l3eXBRWFNfNHczVHBVV3V6RXRMWWlrME1fWXRmZw?oc=5",
+      "published": "2026-10-08T11:07:30+00:00"
+    },
+    {
+      "title": "삼성전자 분기 영업이익 엔비디아 넘었다…갤럭시 S26 출고가 14만9600원 인상",
+      "source": "Martin Cid Magazine",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX0Rwa2h1eV9IZ1U3Y1FvQjdYcXhPOUVXcnVDVmdGdGExaUt4ajJXZnNCV1hudjhlUUYxWUlTYTAwZTVZb2lWekxkRDlvTDJoOFB2Qk4wVGdmOGZLTXp1X25KeDJIMk0yalp3aFE3emh3MHNOWFlRc0Y5ZjFDOXpORGJOS25nNEVtSlBMNnJXUUVDLXRLUDBrVzVpWmxlRl9NSUFlY1I3djkxZ3hpZnJuTjNZNFVCeFZYZ3FRaHBNd1k4UzRtTy1aV3M3bnM3NW9YTWRGVU1Hb211c2xjRmpKaFhlRmptazBURk5DSkxXdnh3Y2NRZTAzbTN1UQ?oc=5",
+      "published": "2026-10-08T10:58:25+00:00"
+    },
+    {
+      "title": "삼성은 2022년에 출시된 갤럭시 A 시리즈 두 모델에 대한 보안 지원을 중단했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdzhhaVMxSm0wMHJPMm9Qb0I4X3NVY2dxR3NrWjVBTmVLWXowSC1uaVVLVDdSRDhPVVBvQXNYRjlqdFRNZmNNdHlRQXFHbmNyVmxLek9YNm43S0FUenRWbjBvc2lFanl0bUMydUtnckt3Q3dqdDc4bl85a2tjb1JkRDhXc2VKcjlobWtqX1MtWWJMeGFjZ0tTSGV4SktwNms?oc=5",
+      "published": "2026-10-08T09:49:14+00:00"
+    },
+    {
+      "title": "한글과 영문 용어를 함께 읽는 갤럭시 유료 앱 참고 자료",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9mQm12OUo1YXUxaEtZemVfR1FYYTlwV3BTYm5lYjBLRnYwalFRdFE1bTJVTWdjOHhtMXhlVzVDYjVwZXZfNXYzbVJhZ3lJRmd4RERBSnlQeFFZT3NpQWNLRXFpZDdlZ0VJM0piRWpEbktIYjI0TTV4Zw?oc=5",
+      "published": "2026-10-08T09:14:19+00:00"
+    },
+    {
+      "title": "8200만 美 갤럭시 유저, 이달부터 삼성월렛서 스테이블코인 쓴다 [크립토360]",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB2RGFvWlRPbW9aUXF2UWxMcmtrOHdUekktZ21fdXFPdGpBSjNOal9nNUMwd0FIa2dxV09vaTcyanFhLTIxNVUtc3BWOUZ2SGl0UFZfZU93?oc=5",
+      "published": "2026-10-08T09:07:47+00:00"
+    },
+    {
+      "title": "[포커스] 삼성월렛, 스테이블코인 품는다…美 갤럭시 8200만대서 해외 송금",
+      "source": "오늘경제",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4OXZsWHg4UUV2aC0tRjV3bzB4Mjgtb1oxeGs0a3ZHbDJTR19wSTdwUEs4c1Zhc2N4WWxxM3NtY2ZTOHk2a3YxTHctSmZ0dVA4WThLMDVUT3V2ZURQS3NmV1ZkZkNNYkhGVnpJOTFaX2ZXNzA?oc=5",
+      "published": "2026-10-08T09:00:00+00:00"
+    },
+    {
+      "title": "게임 설명과 실제 화면을 맞춰 보는 갤럭시 24 게임",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBaN0FjakROQ254RmRTeVFVZDAxc0JkQndjUUtWMmwtYmdOb0xmZW5saHF3ZUFUckNHNmZLaFJ6aE9uX1pjZmg4U0ZWU1ZTX19WM1llQWpHd0RYaUlXbV9aY2xSWjloWDNHX1NCRA?oc=5",
+      "published": "2026-10-08T08:02:31+00:00"
+    },
+    {
+      "title": "“7년 지원한다더니 구형 갤럭시는 외면”…삼성전자의 두 얼굴 소프트웨어 정책",
+      "source": "경인방송 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE91Q0VVcFg5Y3FRcVFVVENIdnBDUy1nblhPaG0xQ3NJdDRlaWZ3ZlRnT2owd1hYTDM2NHpVMWEtTXpFR1loYnI5cUthY2I3QjdyNFphTmV2STM3RV9BT0tUMi0xR3jSAWhBVV95cUxOUUNmeFRodTlXMks5R0lELUQxdWUwTDE5NkVHX3JYX2RvaENaazhXS3N1ZVVnSHp5Y2lTZ0Qybm1tVWxiYWZtUTVpdXRLZXllTTZtNVhtWHRVN1FsdDVSSlNaaGF5OTFkVA?oc=5",
+      "published": "2026-10-08T08:02:30+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 버즈' 과열되면 자동으로 꺼진다? 새로운 안전 기능 포착",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5vbWlGMV9yQWVRTE1PSm1ESS10dmxKTkl0RjF2THVGMzA5Ml9NYWdSazRWNjJBRXJrbWxUNEp2WmhkZHQtN2tURg?oc=5",
+      "published": "2026-10-08T07:37:49+00:00"
+    },
+    {
+      "title": "삼성월렛, 美서 스테이블코인 송금 시작 … 갤럭시 8200만대 대상",
+      "source": "뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9nUTFFRnZqeGxnRzBzQ0lfWjBVbUpMYmpFUGtPSVRIeWlnbmlLNllhRGZmUkRJT05HamtoN25kdDdSZ3g1TEhQQ3ZkWHA3TXdFRFk2QUQ4cVVQc25EOFhyNmZrU3F2S09qNG51bkhtNG1yRHJKYkFBOTAyZ9IBgAFBVV95cUxQVzNkTzI1TXBRNnVYV2RtYUhnaEdtWDBJLXQwRHJGMDVFN1djcloyNVFHdGtwZm0yR0RKXzZWNm1jR0JWTDVycGhTOENkT3JnU2pOT3VybVljUGgta1RVVjRXcml5Rm9aVTJpSG9yQkxILUk3aHJMQUI0dlpJZk1GVQ?oc=5",
+      "published": "2026-10-08T07:12:30+00:00"
+    },
+    {
+      "title": "갤럭시 게임최적화 메뉴 아이콘 뜻풀이",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOUkJ6LW9meC1LV0M3bFJkUUJqd0djanJzekp0cTdPVWJkeGduODJtWE16WWxFdjNxd2hQYkI2S0VEaTFPMFFIcW9sN3UyT1p4aXAyS1VtaVc3Wk04RDZ3aWt1OHJVdWJyZUoxRmhad2JPczF4?oc=5",
+      "published": "2026-10-08T07:06:22+00:00"
+    },
+    {
+      "title": "게임 화면의 작은 문구까지 읽는 갤럭시 24 게임 정보 탐색",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9zMEVzNnAzSU5aVlVYQnU4WWFab0VvSk1YSkoyZERGYlp3clJJR0g1RFlqeVJLYU1wdjV1SEY3bkFsSGw4cElvN293aDdPRERQTnROOXljNzdmZ3psaVJUcEl3c1ZhV0xTZ3V1UVdTWm9JR1dYYnB3elhR?oc=5",
+      "published": "2026-10-08T07:00:00+00:00"
+    },
+    {
+      "title": "갤럭시S27 울트라 카메라, AI로 고질적인 '렌즈 플레어' 해결하나",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE52RFI1aFhlN0lGRjR2dHJYM1VKd3Z6cHU3SFl6Y3RLZzMyZzdlYmtnTjVkNDduU29jLWFIYnFYRXU0MnVmTnNLUg?oc=5",
+      "published": "2026-10-08T06:51:41+00:00"
+    },
+    {
+      "title": "미국서 갤럭시로 '스테이블코인'도 송금 가능하다고",
+      "source": "이코노미스트",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9hTzgzS0hUbkJZYVNXUFpJckhyOTkydWpoR2xkUjB4eWZEdV8tb3ZPb1hrZlJ4clNYNnVubThsV0REREwyMndfeUFVSWltNUpJM3lTazFrQkhtSmN2YmhTT1B3?oc=5",
+      "published": "2026-10-08T06:44:00+00:00"
+    },
+    {
+      "title": "삼성전자, 솔라나와 손잡고 갤럭시 8,200만 대에 코인 결제 도입…가격은 왜 하락하나?",
+      "source": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9tMDdqbVRPMGxQMXFzVDY1aXdUYmk0S2dYSTRmRnlTc1RVVnFOeEJtSHdDM0lWN2JfaThPdVFPOHRWMGZY?oc=5",
+      "published": "2026-10-08T06:11:00+00:00"
+    },
+    {
+      "title": "삼성 월렛, 미국 갤럭시 사용자 스테이블코인 서비스 출시",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BZldkUmg4cFVIMUxuamNCeDItZjBBbWdpaElmSW1zNW5hdlI1M2NXdUYtdlBkMGdQMU5PekttSDkyNHdVZmVpbXRXM2dRZWtBcTdvdTNHYmVoSnpo?oc=5",
+      "published": "2026-10-08T06:02:00+00:00"
+    },
+    {
+      "title": "갤럭시 Z폴드8 잘 팔려도 적자 신세… 삼성전자 MX, 2개 분기 연속 영업손실 전망 - 조선비즈",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMDkxU19LS1c4bFFtaml0RVgyOF9KTWxyNVdlRGRPR3JUMFRVaWZESXhWbUVseUtTTUVOOEpKQnpZMWxyeXNCandUbldEZGVqTzJsVWdtS2NHSzMzR0dUQXN2c3FhY2E3ek92WnppQ1luQmoyZzlrTy0tanZpRUV5N3Rn0gGWAUFVX3lxTE9Da0V2QTFNOXAwbG9RMDV5UURPN3JqQmRDLTVqZ2Q3bDVLTU1DZmQ1WXJFeGctSHBXeEdaZTE4a3FHLW5aYlV1RVF0ZVRzd2pEY2RvUTNfVjh4ekpORkNTX1VLdHRoS2FtS3RFWHFzQ0Uza3ZTMEFSa1dMaE5pdzVKV0xDblpNck5WWnktbURaVUVHb1h3dw?oc=5",
+      "published": "2026-10-08T05:09:00+00:00"
+    },
+    {
+      "title": "수이, 삼성 월렛 파트너로 참여...갤럭시 사용자에 수이 기반 USDC 송금 지원",
+      "source": "디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE42bU5vaGtxcUFRTlNGVW8tU3VLd1hZMUpjbjlWQW5Cc21ZMFQxekdfTmRpNVVHUXNsVEpNSG9pUE5uVkRuYnBGWWQ0SExJYXlQZlNYaV9tX3lBVzdEVWY0OVdUSU93WmJ2RmFiSXBseHFBbmM?oc=5",
+      "published": "2026-10-08T04:51:50+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’ 공개 > 뉴스/신제품",
+      "source": "쿨엔조이",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RcHc2U0l6YnZuLTZOV01ycUJTZlhKYUE3QVV5bVhCY2lZSnF1MGJBSG1BV1JVdUJWYXJkcFZlNHpiU1lObXV2MWhlRVg?oc=5",
+      "published": "2026-10-08T04:24:40+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 최초 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 공개",
+      "source": "국민기자뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBhY2Z5bEtKT0J6eVBuTk5rRUdONHgtX1hjSzcweC1UblJYRDVJSXZnWGVnVHJaTHpaMWU1MTBHV2ROV0FTbFBxVlJJR05yS0tJVk53RFdoYldQRmxqZ0VLeU1Md9IBZ0FVX3lxTE9KdURrQ2JPZWFxTGtsRk44WjFyZjRDc2ZwSjdweVF1ZXFNQ2ZsdVBMNVh4bnNDcjVwSzYxeWI5d0plUzBkZXIyNFFpWE1jbkJOYkUtcTZFdEtSS19ncGhoUmNZaHVrRzQ?oc=5",
+      "published": "2026-10-08T04:00:00+00:00"
+    },
+    {
+      "title": "플레이 기록이 궁금할 때 찾는 fc온라인 스쿼드메이커 정보",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTEMyeEJEc3loWkk2NjJ1ZmNVQVRQamlFWWJzLW12d2owbzZLTzR0bldaaV9iYndlczJzTWg5bmlpTUVZRWsydFB1a29ONHZGZGwybE1wNVFKZFJ3MlFCRmFRUUpKX3luNUVpUUVCSjQ2Q1hNaU1MbllXaGRqeGsyUG81YnJ3NnI0M0JjSmZwR1pqQXRBQmNHZjUzOTQ4dkU4WVhxZFJLTUVydllUWlJwdkhuRFU?oc=5",
+      "published": "2026-10-08T03:52:42+00:00"
+    },
+    {
+      "title": "삼성은 최근 구형 플래그십 모델들에 One UI 9 업데이트를 출시했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTkR4bXVkNnVEd3FDYmxXSnU5ZnBKOHdhYTJ6SnlDMVlmNlQtQjNDcVI1RG51YnAtNFNPR2V4NmNjTjduMWFJWHNXZkJzUG5LVXJEUXUwWWgyQlVWbTQ3SkZTRTY5WGtTOFRzb3pkYms1bXVBQXp1TFY0TFp5YmpMMUJNZi1RTGhj?oc=5",
+      "published": "2026-10-08T03:26:02+00:00"
+    },
+    {
+      "title": "갤럭시·구글 픽셀도 뚫리는 해킹 구멍, 서울대 연구진이 발견했다",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE92QnBZYkxmR09tM01pQ1FPamdKSzZQTFM4RlUySENFbTlpbE96YWxZWjJZNjdINjBTWm96TnZJbEJfaE9ZTkZUZER0Ri1fUmdCdTRoNGZ1N285UQ?oc=5",
+      "published": "2026-10-08T02:42:45+00:00"
+    },
+    {
+      "title": "시작 화면과 진행 화면이 다른 갤럭시 사다리 사이트 구성 이해",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaUMyS3NzTk5fLWJjMGRYVnVvRkpzaVQ2U1VjTzRtcUstemFnYTNXSzZiNHFhM2RrRWg5LUtXTXhGeUVrRENUY2ZkLVZiTEdIcUNQQmdSRHNMSXRxbGFkWmlEQXkyQVlWZGhjSnlCRl9MZW9BUkNMUmdTY1JOeFA2TEN5eU9YQXg5cll6cmhvOUQwaEdWVF9pSzZDSmJWanVCN1VhbnJFRE1Ma2pWemh4RjZhVXF4cWN2U0NkWEZyNA?oc=5",
+      "published": "2026-10-08T02:34:51+00:00"
+    },
+    {
+      "title": "가격 오른데서 서둘렀는데…오히려 \"10만원 돌려드려요\" 휴대폰 성지 무슨일?",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQ05QSVR6NTkxcTJJSlJFTTBxdDZxZ2xkSHg3elNxRUlGanRBSmxWd05pSFA3OVREa04tQmFiRjVPdWE0cFA2VWxDc0tDQ2U3WHB6TXJHT2pxWUhZSHRvdEtHSk5GS2pkSGtZNFBuRkl6MVI4RkdDSnZpUm9xaFFHd1ZB?oc=5",
+      "published": "2026-10-08T01:16:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 스마트태그3, 아이폰은 되지만 안드로이드폰은 갤럭시만 지원",
+      "source": "보드나라",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9nSXNuWDZvN2xrb0pDMVF2c2lOd2RiMXU4ZG83blpBZnlidldGMmxRQkhxNlo0VnlZclJ2VlF4cS10cFc4YU5TUGdCVjN3ZXE0ejlhMjZubk1YZzRyZHZqTHp1OA?oc=5",
+      "published": "2026-10-08T01:09:42+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 F70 5G' 출시 임박? 구글 플레이 목록에 등장",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1ZWGZybnV1SGdIdzF5NTBOSng0cjFSNVgwelNsNUtkUTZXSVlJbVJNTk1PUnJCVkNadFY2QTE2Sk9CaUxnX3drbw?oc=5",
+      "published": "2026-10-08T01:08:55+00:00"
+    },
+    {
+      "title": "갤럭시 Z 폴드 8 울트라의 새롭고 매우 인기 있는 색상이 삼성 팬들을 사로잡고 있습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWi13U0U5dWs0bGg1OFBweHE5SzJYdXNIMTZtM2hlWWpWQk53bXhWZzkxRllyQl80RmhES1JqS3FiSTIta2JjRGpsb2dUXzNqd0FYOWhCOXVKaWNkMUZDWEUwd2haVE5CandscWJ1bVVweWt2UzJDVTZINXZWbU56OXo1MkxoYlBtVzdR?oc=5",
+      "published": "2026-10-08T01:02:17+00:00"
+    },
+    {
+      "title": "갤럭시 A57, 벌써 One UI 9.5 테스트…내부 베타 빌드 포착",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBJVU5yMzNYd2EyUEV2MTVJR0F1SEItMDJ5VlJSOEV6R0piUmZHTjlSRk9NcHZYWXpuRFQ3amUwRk9UYmZvSmptNg?oc=5",
+      "published": "2026-10-08T00:56:09+00:00"
+    },
+    {
+      "title": "모바일 피망포커 현금화 배당표 숫자의 기준 단위",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOa3N1S1dWLVItblprMTdzaWNIanpkbGRLTHJwcmxXY3djR3hGNVZObXoxUjQ5X2lLMUFVTXdNaFpRcnAyVC03c0ZDbk9oMXpUZTBpU3cxcERfeUVlbkRlZFlKcXowbk9LZzA2VDFPSkEtVHlkSUFQU1JETEQzMHktdDJ6bU9xNUhOVVJZaG5aRWZZTjZEOGY1X2Z3bDFQVElLZjBYa2tsTDdEbktCclZpaWpSYnNnUUQ1ZG9QM1dTRDF5Wk5Sb0RCN1RIaTU?oc=5",
+      "published": "2026-10-08T00:53:56+00:00"
+    },
+    {
+      "title": "[써보니] 갤럭시 10년차가 써본 아이폰18 프로 맥스",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1lTVdZdEpXTXptRUlJZ3FlbTBFUkQ1cWVxYUJJX2pHSEg5VFBVdmdoQzFhdW4ya3FBYmx0NllUSHB6Tm9CbHI0dno3b01iYWNhd1pGcjdiUzctTUt2UG8wZ3N0bWMzbnR6d2lESmt4dWV4U05tb0JUWmlicw?oc=5",
+      "published": "2026-10-08T00:14:06+00:00"
+    },
+    {
+      "title": "'갤럭시 스마트태그3' 알고 보니 갤럭시폰 전용…픽셀·샤오미폰에서는 못 쓴다",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBURWhIdUhSMDhBVzA4SnhmUmNkd3pMOFFUcDZWbHNhV1QtYUVJTUdhNnRsendnLVVqd2R1QVYyVWxZUGZLOU0tUA?oc=5",
+      "published": "2026-10-08T00:12:22+00:00"
+    },
+    {
+      "title": "서울대 이병영 교수팀, 갤럭시/픽셀도 영향 가능한 리눅스 커널 취약점 발견",
+      "source": "베리타스알파",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hbW5pOEhjTnRVekh3NVF3QlNDWWZtcERSSHhFMDV2bkJEWGx5cnY4Z0lsYzVWRThqdWFTS2lheVVOUnltSnBuN0N4OTJmSmFTTVExTmM0YlNUNlZLRjdvSXdZMUNIcDBfQ202WA?oc=5",
+      "published": "2026-10-08T00:03:15+00:00"
+    },
+    {
+      "title": "서울대 이병영 교수팀, 갤럭시·픽셀도 영향 가능한 리눅스 커널 취약점 발견",
+      "source": "뉴스와이어",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE82b1dmbzdhZGY3RTZITXNqazV6YlprT1NlVGxIV1c3b3pFMmhkRUlHVEEtX0tmQ3duZWR4eHFXZUZpSl90S1pxWlQ2c05kc2w2Q2J3NmNFRnFtZUFqb3Ew?oc=5",
+      "published": "2026-10-07T23:55:00+00:00"
+    },
+    {
+      "title": "삼성전자 107조 '역대급 실적'에도…갤럭시는 1조 적자 전망 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOTXhaTVVXLVJoN1RZR0dkcUhvWmxfMnZZdE9ndjhrYm1RUGxXYUpHQS1vNzQ5VXBJeUJSNVZ5Mkc4YlpEWjhlNXdxZWpJcHR3N0ZsMWNORGdTLWJ3UDY2cEdyZ0pYVzTSAWxBVV95cUxOSHdzaVBMWnBxdm45LTZOdDljdW83RHBha0NzNE1HX242bERXMG96VE9hM2doa0txemdZMWFiN05PZ2hINTN2X2Q5NFVLSXpEMXR1X0hyeWZZSUwwVmZGWDJLeXQ2SXBvVDZBT2I?oc=5",
+      "published": "2026-10-07T23:21:03+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’·‘갤럭시 스마트태그3’ 출시..어도비 포토샵 탑재",
+      "source": "데일리카",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLY3NjRkpDRmc0RTZzaC1zLVZubDFfVHgtaVYtNTVJX044SVM5enprdFVINGdlcWpuMUZhOS05bGthQ0F5dkc2b2IyZ2VFVnZsamdYUHFOSUdOeGRhMk0yUGFCbE5zRzBFNmI4aUEyNFhfT1JCSmc?oc=5",
+      "published": "2026-10-07T22:26:36+00:00"
+    },
+    {
+      "title": "실시간 배팅사이트 승부벳 디자이너를 위한 반응형 디자인 실전 핸드북",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQWFIN2NnZjU2a1BOMkkwY1dFbDd2a1dKOHVITHZfQTBSdkFmelFJTGRkTG56bU02RXcwbFhlZ05UZmI3UFVUQjIwTDNoNkFsaDhqV2hGcVFUcUxQZm82NzdlR1BJSDJ6dzN6bmdhRzhXZkZmUG93aEppN2tqMU1WLTNDRUZiZHRlOERQMHBydWsycnpGVnZfMGRCa0c5ZVh3SmJWTnNSUFlwRVI3MDV5T19GSk1rX3IyM0FZTmo1ekFkaENLbmFKQnNVZ1h5MGd6Q2FLeDRSNzk2SjExekFQVElIV20tZw?oc=5",
+      "published": "2026-10-07T20:45:03+00:00"
+    },
+    {
+      "title": "[단독]\"팔아도 남는 게 없다\"…삼성, 스마트폰 생산량 30% 줄인다 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsY3k3aF9va2hpaWdJdnFQTlAxZXB5ME0wUW5fWkhLSmtCYWxfN2RfNXU1NXBBa2hMRFMxcjhKcnBuOGk0eGdVUEVWV2RGc09VX1J1dmhLX3pWZll3WFpsRGREXzBqaHfSAWxBVV95cUxORWRCNUFxS2tNQkRETVgtc3p2OXRhYkFRY2QxMzhRX2RoNUNIczJuWF92aFF0dkJETldqNlpVVW9YS25WUGRsdlRYNHBrSG9Jdl9QMEdFYkkzUlhjb2RmSS0zVXJ6OGFhb1lybzk?oc=5",
+      "published": "2026-10-07T19:00:00+00:00"
+    },
+    {
+      "title": "기본 설명이 충분한지 따져보는 갤럭시 유료 앱",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5xX0hKYzduMEJWT3VESzV1bHQwQkpqOWZ4NG0yMFB4MGlxM2RoX1ZjVXNhMDg3S0FYMnRrMWE5UGgzbHRDMXhFSnh3cUVxbHN5dXJ4UTNTakl2WjJEYTR0X2lmTlYtbkJNcW15R1oyX2VOR0pJYjFz?oc=5",
+      "published": "2026-10-07T18:49:11+00:00"
+    },
+    {
+      "title": "[정옥재의 스마트 라이프] ‘심장관리 함 해보까’...갤럭시워치 9 리뷰",
+      "source": "국제신문",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZTUxcjRiZ2tzc0t6SGVGRVczSDFwRER2SFFMcG1fb0JQYjY3M0dUajVKLXl5M05QSDF5SGZIaFRLM1paM0VQNHh0eHRBUGpwSEZSOUZvMHlFUTE4WWNmTU8tUnBLanZScU1qR25wVmJYZFU0Q0ZFblc0T01IVnBOZzVJa2VVWS1sbF9kS0lB?oc=5",
+      "published": "2026-10-07T17:35:00+00:00"
+    },
+    {
+      "title": "게임 정보에서 달라진 부분을 찾는 갤럭시 파워볼 업데이트 읽기",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR3BZUjE0V1dHWE9kWERNNWNmRWZYSDM5ck9jQjhXN2c2cnEwempZME5kVUh4d2xnYkptdGNCdzl4VE5ZdVBIX0VwdUNFQ1dFUEdBa1UtVURGQ1Z0TFRTX1BEamZKUE9SbGMtaC14azZEZ254R29XWElUU2YtVFZxNG1zNXh6SEZJajY2RkJ3SVFXLUlhd3FmSndpWkUtRDZqWHFwSFBRd2thdTFFSndIU0VoR1pHT09YT05EX2RsRnZaWmM?oc=5",
+      "published": "2026-10-07T17:00:39+00:00"
+    },
+    {
+      "title": "갤럭시 탭 S12 울트라·플러스 판매 시작…시작가 1,199.99달러·최대 650달러 할인",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93QWtSSVhSWVgxR1hQckhzbWlLQWVXa01ZclRncGJtd1VlMUYybVpGdUkyR3J6eWI2RF9jdkI5bkZoNUJMYmpuM213M1FDMXlBb3pnNEhn?oc=5",
+      "published": "2026-10-07T17:00:00+00:00"
+    },
+    {
+      "title": "쿠팡, 삼성 ‘갤럭시 탭 S12’ 로켓배송 … 최대 9% 구매 혜택",
+      "source": "워크투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rTjc3dmhqUl9ZVVNEUmwyYnJQSG5NTlZCX3ZpR2dHbXkwUW5nU1RISTJSM0Z0Q2NlSVdmZ1lxb1o3b0VvcGJhQWhBYUJiVmwzbmFRMzRvSW5GT2Q3Z082U0hUem0xZmQxV3JqWA?oc=5",
+      "published": "2026-10-07T13:47:31+00:00"
+    },
+    {
+      "title": "[보도자료] 쿠팡, 삼성전자 ‘갤럭시 탭 S12 시리즈’ 판매 시작…와우회원 최대 9% 혜택",
+      "source": "쿠팡 뉴스룸",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1kcW5CcFFqUkd0LThRaTlkeGpPcTdsZ3QwdkJ4enQzVnQ4VVB4WGxlTDZiOTJSWVZRaWV0MWdrbUNfaFJONmoxTE9wVVc5TjRvWTBiVGVHZ2dmeTZJcjlUVVRn?oc=5",
+      "published": "2026-10-07T09:59:43+00:00"
+    },
+    {
+      "title": "[숏폼] 누구보다 빠르게 잠금해제 하는 법",
+      "source": "IT동아",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE41YWJLYkpocFNhc1BtbWRMQkJuTG82N05CTmlEY095aG1WdmdTbkhoYWhPN2pBVjB6LTlVeGhCYXJNdw?oc=5",
+      "published": "2026-10-07T09:28:25+00:00"
+    },
+    {
+      "title": "갤럭시워치6, 원UI 9 워치 3차 베타 배포, 센서·헬스·AOD 오류 개선",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1TTVZkQjdWQUJxRHNnU2dIUFJWUTFZSndSV3J4S2tKT1dCX3dnVTNLQXlyUDJVYlB4RXhpb05BYWJnaXJnYnVOS2JFaXYzbmFQRjlKdkVOQy02MG9RY3hId3NnZm8?oc=5",
+      "published": "2026-10-07T08:48:53+00:00"
+    },
+    {
+      "title": "쿠팡, 갤럭시 탭 S12 시리즈 로켓배송 개시…와우회원 최대 9% 혜택",
+      "source": "데일리포스트",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1VVc5b190SVpkTVd1Vk11UERoYUh3UnJBTEZfQ1Jld0lDdTJJUFBCTDB4SmpWVEFkeDJJVXJFdWxkNGlnUVEyM29UeXQ0bkx4VjZOZDZLM21HT1V3eXVnNGMtcUYxcTVTSGdtbEZGONIBc0FVX3lxTE93WS1HVERVWnF1TE0tS0ExOVlvRFRaZVlTeHMwX2pSMlFDVUxXcjNuWkM1NTRMckFIRjdveFhpZERnOXB6amtXbE5BR2ROSUlQajg1Tkt4Y3hXSDRuVV9jdUVRM0dXSEhqSnREcS1acUpKcU0?oc=5",
+      "published": "2026-10-07T08:46:11+00:00"
+    },
+    {
+      "title": "쿠팡, 삼성 ‘갤럭시 탭 S12’ 판매 돌입…로켓배송에 할인·할부 혜택도",
+      "source": "팝콘뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43Yk50SDBiLWpxRUhqdWZGUTAzUkR3U1lsTnFyM0c1N1YwWExxNUhxMkZBb2NWVFZGeEd4UjZlVG5Ybnc2VmhqaTh5Umd1RHBOVTNET2JSQnBKeHIxM05uYWEza2x1a2ZtV2ZnaEV30gFyQVVfeXFMUDQxUFVlU1ctTGZEck5LZ1ppVlRmcDlYVVBzLU1nRHhOSUxSVmxXUmZYSXhxRmE4MEt4cHF1ekZQRXpZWFhIVlY3ajhQcWtQdW12bTlBRHNreTBnLWp4SW9LYUJQZzk2T0dUektDTXZxQ21B?oc=5",
+      "published": "2026-10-07T08:36:26+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12' 국내 출시…스마트태그3 첫 iOS 호환",
+      "source": "비즈트리뷴",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE52T21MWUVtazJTQ01laUwtZ3VnSVBjZG45N1BCUE1tVHJZd21obG9UM3ZiNlRpMGVuRmJzNjRFZHotSlM3Wlk1cHJJT1ByZzk4eU93elVEVzNyUE0wYmRrbEo5UnBNNVNLTVB3RXlSaWk?oc=5",
+      "published": "2026-10-07T08:21:17+00:00"
+    },
+    {
+      "title": "갤럭시26 가격 올린 삼성, S27은 더 비싸질까",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE4zZVhoLWxZZ19fdm5VRnd2ZjltYVpmUlcxeHhvdGNkSW9COTFmSGJIOE5vM3owRGJJdmdzYUhpRG0wVTd1VVVoVA?oc=5",
+      "published": "2026-10-07T08:21:12+00:00"
+    },
+    {
+      "title": "음악과 화면 분위기로 읽는 갤럭시 스토어 유료 앱 추천 테마 소개",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WVHdQZzVpNzg2bDJySmEwbTRDclRkWWRBdFA2emxoclJndUF3WXdXQ2xaZDBmZ0tMUzlqZkN6d0dVMFgyRHdNRnh4aXVzeGxsVHAzd3Fuc1dSWmdqdTY2UU44Tk95a1RwMGpzWXlqV0FBSWtF?oc=5",
+      "published": "2026-10-07T08:18:17+00:00"
+    },
+    {
+      "title": "삼성, '갤럭시 워치6' One UI 9 워치 베타 3 배포…헬스 앱·AOD 오류 수정",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBiSWtxaXZseGhmYW4wbFZEZFdRR240ZGUzN0oxUHVoUDU4MEpWMUlhZTlIWnZLMXBIcXBJOU9TcVZLcVIxTXRNVg?oc=5",
+      "published": "2026-10-07T07:31:42+00:00"
+    },
+    {
+      "title": "갤럭시 내게임 보너스 화면 진입 전 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORko5NXNtME1pQkZoczNVOGZTVVR3bGt4R0lMai1uZ2JndGZBODJVa1Z6T3IwVTdELTIxM0JzdEI0NmxXZU5KYVZTQTFKbmh2eXlGc1FoRE9fWGFkb3FPU0hReW1ac0ZfWWExcW9yZkhRbWpVemxXN2JnSlczLXVVMF9ZcnVzNVFm?oc=5",
+      "published": "2026-10-07T06:41:17+00:00"
+    },
+    {
+      "title": "알림음과 배경 음악을 구분하는 홀덤 무료 체험 사운드 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdWJ0Y3dZX2lVTVJmalE4OTBuNUtfNEgwRVFCTGRlTFhkLU5rbWFlVVN3S3dNbkdIY1pJS2ZKM3ZqVTU4T01GYWpMOElYNDB1b2M1bXgzeVZpX1RtLTU5RkZjbElrN3J2UTFyVVNmcU0xWG1DUUJsRDRaTlVUU3JkMDNfTDFHTVRqaktERzNIdWJacXBUa2VOeXU0ek9iRTR4ZUVEY29KZUVVZHh2MGk5R3p6VHhhNlJUSGc?oc=5",
+      "published": "2026-10-07T06:34:33+00:00"
+    },
+    {
+      "title": "쿠팡, 삼성 '갤럭시 탭 S12' 판매…와우회원 최대 9% 혜택",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96ZGhuVEJoZ3NNeEN0ZnBPZWhGcUNPZTVJVjNMYy1TMUVTdjhlRUZlT0o4TGRBT3lLRFBMRGt4UmpNMHRrakoxVHVHQjV2V3lUeW9lWG9YeDFWVDZIX2lN?oc=5",
+      "published": "2026-10-07T05:56:43+00:00"
+    },
+    {
+      "title": "고윤정, 광고모델도 아닌데 갈아탔다…손에 든 '이것' 뭐길래 [테크로그]",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1udkpKWUtwdVVwZGNqNE82X3B6ZU1lUlRXbFdXX2N3QTFOSmFVTGZyaG5VUzJXb2ZNZVRCNUNQanF3VW5ScDBRcVJMVmhxVzlPSzNaT0ZSSy03QQ?oc=5",
+      "published": "2026-10-07T05:55:19+00:00"
+    },
+    {
+      "title": "쿠팡, '갤럭시 탭 S12' 로켓배송 판매…최대 9% 혜택",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1sZEZZZWdSc1ZZN2UwVGtlaEdBTEVWLV95SWp3OWcweE9TSWtJN3dreTBmdXE3WWhFZnJxWk5pMjRwR29LdjJ5LUVQazZSaEE?oc=5",
+      "published": "2026-10-07T05:44:00+00:00"
+    },
+    {
+      "title": "쿠팡, 삼성전자 ‘갤럭시 탭 S12 시리즈’ 판매 시작…와우회원 최대 9% 혜택",
+      "source": "시사뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16LW1ycWltaFQ4d05fS0lBU2FXNFFMM1ExTDNSSmJuTnFMZEJsSWNoUlJoMlh2TFgwelh5YTBxTms4N2FoUkZuc1dJN2U0dXJXZy13V3Zaa0VQSFVCTHlZWDRtbw?oc=5",
+      "published": "2026-10-07T05:40:44+00:00"
+    },
+    {
+      "title": "쿠팡, ‘갤럭시 탭 S12 시리즈’ 로켓배송 판매…최대 9% 할인 혜택",
+      "source": "인더뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MNVdIb0I4MGtQS25DUndCYzJSWVJyYkd2c1FLZFBpdjBrREdVVzN5Mk5RTS1Wd2FkUm9sUGo2dnZWTTVYQi1sSm9CTjRXYV82cklZRm1IUUt5U241RGh5YmI5My0?oc=5",
+      "published": "2026-10-07T05:38:12+00:00"
+    },
+    {
+      "title": "쿠팡, 갤럭시 탭 S12 판매…와우회원 최대 9% 혜택",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8tQUpHdmRNS0tkRnZXN0ZsYjI0WHNXOHoxdlRDZ0c4UDZoMDJYekc0dVVpRXduZHN5VllMa1V4X1NwSDYwVjJ4ZTN2R1ZiWkFkUkN0WVlzMzJ0cXQz?oc=5",
+      "published": "2026-10-07T05:15:00+00:00"
+    },
+    {
+      "title": "쿠팡, '갤럭시 탭 S12 시리즈' 판매 시작",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1rQlBsVlo4d0VRbVg3N2liNVV4ZWsxcnBmWjdYSHFTRFJnT0lFbFZFVmJOLXhaLUVEU0pDN3A1ZjdWVnBQbF9xaGFwSDYtWTljeURxRXRmTFhqTWlyQnVIbTJxYXR6WE9TSm1V?oc=5",
+      "published": "2026-10-07T05:13:33+00:00"
+    },
+    {
+      "title": "'갤럭시 퀀텀7' 갤럭시 A 시리즈 최초 One UI 9 업데이트 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5tT2hDZ3FqMkRYUjJHNEFrLWg3N0JtSFh2MnVQZGE0NHgwLTlJRU8tWjcwUlh2ZXhQUnd5M0VyY0lSWnF1RUptQQ?oc=5",
+      "published": "2026-10-07T04:55:42+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 S27 울트라는 스냅드래곤 8 엘리트 익스트림 칩 덕분에 부드러운 PC 게임 환경을 제공합니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTzJidHpnRENRdTFyMGhsVGwyODdGS2wySWo2YTByR1NKRFZpSzlWMDdTRUx0RXZYbjN3c1ZlZGZfMkd0OGpPZURiUExHUkh5MEpCQWsxaEQzc19Vc1hmN0hXMVNVNWwyRmtKTGZFOUE3NXlDRDRjbUthRE9maVV0cFhONVJwd2pJRHJHTmMwUDdBdkRic1gzampXZUMxQ3NzSERIMzZ0ODVjRjNRUjdSZGdn?oc=5",
+      "published": "2026-10-07T04:53:23+00:00"
+    },
+    {
+      "title": "\"최장 14개월 무이자\"…쿠팡, ‘갤럭시 탭 S12’ 시리즈 로켓배송",
+      "source": "파이낸셜포스트",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9JajZqeVhPWjFEMlVRZ0pIeXpoSjB6TDZMd3VEdmZndjFRVGxZa1Q4NWgybEk2c1hMLTRxVTN3TG91Y2UzRjNSTzRLbmxLdlFmaEM4S1hTZ3psLUhqSGN4T0FlUXYwTDUzZXVEQ1JpYkd6VTVn?oc=5",
+      "published": "2026-10-07T04:39:01+00:00"
+    },
+    {
+      "title": "쿠팡, ‘갤럭시 탭 S12’ 로켓배송 판매…최대 14개월 무이자 할부",
+      "source": "스마트경제",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ncTlEekpYYXd4OVBoZXlkTENMVDZ4RTRRdnlZOXBZNjhoN0lpbzFQMVNtLVpFQm84X0RBb1lGSmJYcHM0c0NxeW5BVXQ4bzBDUHVqWjhKMVRCUGlHbk4tWWRMX1pWejdKY0stcGZPa1Y?oc=5",
+      "published": "2026-10-07T04:34:32+00:00"
+    },
+    {
+      "title": "갤럭시 S26 FE가 중급 스마트폰 시장에서 돋보이는 3가지 이유.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamZSelI2T1F0TERDVlVreDZqekdzdC1hLXJDRERPTktoYm5kbHRtRTVGYzkxZVBfdjRBNGE4amdDc1diZ0RHS3k5VVRwcXJoaFdIbzUxZjI0aXlYYlBjb1dlNzhkbVMwZzdveVk2eEM2STA1TVdKMWcyTXktVHZYZDRyd2xqaEFMMEJjZWU0ME1Ob1k?oc=5",
+      "published": "2026-10-07T04:28:28+00:00"
+    },
+    {
+      "title": "갤럭시S27 울트라, 충전 속도 개선되나…\"5700mAh 배터리 탑재\"",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZR1VINEpZR0M0UzNCNzllRnNmTTdMT2FoRWNKbXZpek1IcWdNd08xZVMxWWdHVHVnVklpTTM4emhKamE0RUtCOHRQNVZGRDJhY2JRSWZR?oc=5",
+      "published": "2026-10-07T04:21:36+00:00"
+    },
+    {
+      "title": "뉴욕타임즈, 서울 '갤럭시 로봇파크' 현장 취재…휴머노이드 가능성·한계 조명",
+      "source": "로봇신문",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAta2pyQ2hnUkxtcmZNbldmREtwM1pqcUZFQ00tVnlxMm5YeURrMUlscXZCTHhVVVZ4TFpTMV9kQTdkQkozTVlMcEtfZ0JDbDVVbUZrYW84Z2JtNl9uMGRIaEt1OFlaamFXWUMyag?oc=5",
+      "published": "2026-10-07T04:07:35+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
+      "source": "디지털비즈온",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03SFllTU9zRUt4S1phOUVsR1VnRXBoNXh1ODFoRmxLUWg4Q1dqWDhPOW82QnJ6dk5DOWhHMlFfVW1WSU0wRUMwLXZNODgxX3NyYWxlVUt1Y25PYXhxVVd3aTBTVUZaMU42TW9MRGFrMUXSAXRBVV95cUxPSHlwUXJEVTVrbktaZHdFYTlJTlkzN0VqaFo4OXFKMHpaNi1VTVlJYi1fam9vZi1xeF9ueS1EMVBtRndDYzU4R2lEZG1fNTIxS1JUTXIxVklUTXJXT3hKMmR1YnNiUDVMcDMxV19jblQ1a0NrSA?oc=5",
+      "published": "2026-10-07T03:18:15+00:00"
+    },
+    {
+      "title": "한 화면씩 넘기며 읽는 게임 설명, 갤럭시 스토어 유료 앱",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORHhDTkRnVU1weDBtTmtTRHdBa1l4TXFod04ySVZsYWhHYTd1aTFuSzlmaURXU0RlVU1lRXBaSzhTelc1a0xEWFJYc2lkTVJiRUNxQTdwOW9ZUWZpNHZ1UUFVR0Y2U0taSDZ1X2lzTzV2Ym9fMUFZU2ZfRHJtVkczWXhEeXNWcEZ2SXNpelJUN1BUNmJQQXlXc1FDbWpLVGZOQVJPX0wtOUlHWDRWYzlnWkNpSjFxYmVORWF0dF9KUlNCcDJURkY5OEJpeldtLWJOaXJDRHln?oc=5",
+      "published": "2026-10-07T03:03:06+00:00"
+    },
+    {
+      "title": "롤 mmr 사이트 2023 2026년 애자일 개발: 현상, 본질 및 법칙",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfampTUGlNUGJPVzR3aUZwYnpCQ1gtajE0SFVxeVJRRTlSbTlveF9pVncxc2taa2JMVldudlBjRGY5NXZJS0J2d2ZGQ2tXaS1SaUpTUFltUGphLWc0bWQ5aXQ3NHYxNGc?oc=5",
+      "published": "2026-10-07T01:55:30+00:00"
+    },
+    {
+      "title": "'갤럭시Z 폴드6·플립6' One UI 9 정식 업데이트 배포…새로운 갤럭시 AI 기능 추가",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9aMms3MEdTa0FhMENRRzgyOWlZclJxQ3YzTkV5UHd5MXpOcTVuTkRSdGVnMEFILW1CLXZUZ2h6NW9SWHlQSmM4SA?oc=5",
+      "published": "2026-10-07T01:10:33+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시 탭 S12 출시…스마트태그3도 출격",
+      "source": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5reTh5bGU3d0xKaGdoR1ZaMVlsQjVVYVRaamZydmtOTlplMkUxNFZfR00tZnJyQUtiemJ2aVNkWEJNZFRJTi13U0JVVzhnLUxsdkdtVUdxM0tkSWpVcXgzU1JQUk9LVlk?oc=5",
+      "published": "2026-10-07T01:10:00+00:00"
+    },
+    {
+      "title": "게임 목록에서 상세 정보로 넘어가는 츠나데 도박 탐색",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPS0FvdUtIajJPX3loalJBaUJfZGZCSEtMSC0zOWFCdDJsbU1EWHduZ2JYam5qcGZGak1ZVEhqY2hPR0s3R3BNS2VxNTdUOFNGN25zMlhSTG9vcWFQYm84ZnZHMFB1V1dNdExpU1lSTk52MTlJUkdLcmZpMC16MzNubnJrWENMT2d0WWpNcGxsaF92VTIyOVo3V1QxZTN0U3BJNVZ3WWdtOGFQd3BNYlU4?oc=5",
+      "published": "2026-10-07T00:40:35+00:00"
+    },
+    {
+      "title": "결과 창을 닫은 뒤 어디로 가나요? 갤럭시 유료 앱 추천",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNzdNOXlZQXFLTXQ3RkkxcnhEdGRpQmF1QW5yR2tmWEl0SXJUME9iQml2YnB4TzJIZDN0TjhoU0FOYzRnSm1KMUZvNkROWDJMbk9mUEN6TGdnYmRocU5KNHZKcFlNX1YtSVE4NGJScXZLM01wNng5R1pacGdpa1NZeDRtVHVoc2t5NnRCR2lKT2hmbGsxSmh1VjdFalZRejBqS2o2TzZ5blJyVFRpZXJFTlZidVdDdE01WWFjZTNBam85VzNPTm95ZEhubWFPb0FaNWl4N2RKR0toQnBHanpBVzhydVRXSmc?oc=5",
+      "published": "2026-10-07T00:36:52+00:00"
+    },
+    {
+      "title": "대용량 배터리를 탑재했음에도 불구하고 삼성 갤럭시 S27 울트라를 더 빠르게 충전하는 비결은 무엇일까요?",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTE1RSDNpLVpnblRITm1QZ0VucTVHVWNaZGxtS0M4b2hmeml6bnNqVmVoeWg5eVpUX0ZMYk1Vb1p2WDBNQmpoNUVUb09hSWFOV05BQnI1amc0RjkydmxVcTN3T19yMEFpWHVBM3EzQmkwSGdGWDNKSmI2c0xqRF9Mc0hoOE0zUmdUN3F3akdpaFdWUlBjdkFsZ0NLWms?oc=5",
+      "published": "2026-10-07T00:28:35+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 A23 5G' 출시 4년 만에 업데이트 지원 종료",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5UWkJiNFJUMC1rOFVCWlkwYW44Zjlxdm9CQ1JiM1JlLUgyUDAzVmJkLTU2X3ZreVpkd19tMDZDWF9OemZiY25WOA?oc=5",
+      "published": "2026-10-07T00:08:47+00:00"
+    },
+    {
+      "title": "'갤럭시S27' 시리즈 4종 보호필름 유출…크기 비교해보니",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE92ZFREbnUwWmFVWmFNa1ZjOEhpUUUtOVBrUE5vVHFYc25FUnlOSVdoRVpJU2pkaHUyS0hEcDBHRDAtZDcwbHZhZg?oc=5",
+      "published": "2026-10-06T23:32:29+00:00"
+    },
+    {
+      "title": "삼성, 독창적인 전략으로 갤럭시 S27 울트라 배터리 기록 경신?",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV1I0bVFkdzVsalB6QmY5akNjdTd4LWo5eVU5SXJDaHF1MlVpZlRtUXZjZFpuQlRQeVd3WlRUTjk2S3dLRzIxbHE5Y1dQMWlYcFVpQ3V4S0dPd2NxRElib2dPUVZSamZMZmlUZ0UtczR0ZE5DSzNwWXlGcjNGdFVIU0REbHpBVnc?oc=5",
+      "published": "2026-10-06T23:27:14+00:00"
+    },
+    {
+      "title": "[가봤다] '지구를 위한 갤럭시'는 왜 필요한가...美국립자연사박물관",
+      "source": "테크M",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1udUdxS2puSjFVa3lid1hSZXptb2JCd29iMW4xVk9nOXRFelNKTzg3Z1lIZEFsVmV4NUhZWnF0RDlmbGZaZHVpWnFzajIwNVlrX0pRZkhiSk5keUNQaTFuaHk1Z1BzZ9IBakFVX3lxTE9jN2RJOUNQOFZJTnZidDh1Nm0tbnRTUlNBUVF4SEZsQzZweTVOYTFvX1Q5TlVrVWtQTXJZZE5aVEhsVHpUMnlnclRDTVlla095Qk1BeTFuUEJORzJBNHIyXy1yd2w5WnptR2c?oc=5",
+      "published": "2026-10-06T21:32:33+00:00"
+    },
+    {
+      "title": "\"비싸서 안 팔린다\"… 삼성전자 인도, 갤럭시 S26 '30개월 무이자 할부' 승부수",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVU5BS0JkU3JYUXlDaUZURVE0Z09YQy1BY2FqYW9rSmNQMlVpeWY2bFV4UkxvXzBadlpIZUsxVFpHZ0pGMXR3cjJSbFRSUFI4aFhQbmZuWk1TUzFZTEgtSDl3TjRldm9DbmlEa0thV2dWLWw0aEV0emZKZWhOd1NlX2UwX09pSW5X?oc=5",
+      "published": "2026-10-06T21:05:00+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 출시",
+      "source": "위클리포스트",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44WVBReEstcXhteFg0NTlRVlJKS1VwREhzOWg3YzgtNlJnbEVwNHFHV2dpRkx4azVwM3RNUXhIa0RaYmt3T05UbHVnSjM3eEtEUWVIYjRNRjlRNmRMaTREZE9wU1F5QQ?oc=5",
+      "published": "2026-10-06T19:35:43+00:00"
+    },
+    {
+      "title": "삼성, ‘갤럭시탭 S12’ 출시… 안드로이드 첫 포토샵 탑재",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5PV1pUTXY5alc1YmVyeUYxTUFjelM4MTl0aUZBRzZKNVYwWFlpaUlWVUI2NG55M1doVm1Oeml6OEtSOGkzNmFoWm8tNExfNW9Xc1pNOA?oc=5",
+      "published": "2026-10-06T15:32:09+00:00"
+    },
+    {
+      "title": "갤럭시 탭 S12·스마트태그3 출시",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzdktpSGxtMG9ldl9sdDFZZWN5TnFPS1N6OURvcTVpQUd0MWxmbnVDbTNsSG5sMjBxSWFOTWlfeGs1M2JpUDBFS0lZSDQzXzY0VVdEMUJWOGPSAVRBVV95cUxQLXFJRXdjc1FIM2NKbUU5Ny1JQ1RFdlE0R3BySmlTV1M5SkdKYnd4ZVV3di02azJNbFphR2RDQU91ODMtOFh6SHpzX2FnZXBSMHZvWE0?oc=5",
+      "published": "2026-10-06T14:04:19+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "마일드경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLY1pFZmd0MktKQ21ORHo0NmNUSzJCVnAzTERRT1c1WFJOdzMxQWRYY0xxTS1EOTV1eHdHaGlBSElXMV9fWDhyYUlOYXBLN3lMRDVDWVpBa1laMXZROVZCb2t5dGN3ME9ZSXZn?oc=5",
+      "published": "2026-10-06T10:46:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12' 시리즈 국내 출시···'스마트태그3'도 출격",
+      "source": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE55dVlYYVM5ejJnc3JFNUMzb3ZyV1JzVmFMNms3NXg3ZEt1cV9Zak8yYmNDaXRrMzUwR3VrRzhPVk5BWEI1VjZ3TjBxR1lxREl5ZDRhNjJBSFROQ3B3aXFMcldWN1dWdElWaFE?oc=5",
+      "published": "2026-10-06T08:19:24+00:00"
+    },
+    {
+      "title": "태블릿·이어폰·위치추적기까지…‘갤럭시 생태계’ 힘주는 삼성전자",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE04a2RoeXc2blpPdFlIaHl3ZGJxZ3BkQ3pOS1JJUW4zc1pTb29OeWlXYnRHU1lpS3lCeF9qLXlBQ2ltMWo4N29fcm50SGotX3I2WTZjcw?oc=5",
+      "published": "2026-10-06T08:18:07+00:00"
+    },
+    {
+      "title": "태블릿·이어폰·위치추적기까지…‘갤럭시 생태계’ 힘주는 삼성전자",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UMndhekptaGJtaU8wUW1wbGhhMVd0cmZyRElhZTVpbEY2RHRRYnhTVTB2R0luNXBGaGYwSzBOTE10bk81TW51OEl2bw?oc=5",
+      "published": "2026-10-06T08:18:07+00:00"
+    },
+    {
+      "title": "태블릿·이어폰·위치추적기까지…‘갤럭시 생태계’ 힘주는 삼성전자",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBna25zanJRWm9qbUtoNEdYY293OTFzbDhrX1pKZmpXMGt1Q0gydXhBSXlEZVNTQ2FsdlVIYnlRdDRHWVQzV1JpeGc5ODZxenR0aWlnSDhB?oc=5",
+      "published": "2026-10-06T08:15:22+00:00"
+    },
+    {
+      "title": "더 얇아진 '갤럭시 탭 S12' 7일 출시…최대 23시간 사용",
+      "source": "한경매거진&북",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1yUHkxb1FBY0RmR3AxXzJSUjBCWTg3aWxHcVZZWUp1S1daMk9jRzNSVTcxM1ZIU2JtTy0ydnZRdjJpSlh2c29vV2FHWlJvdFFGRHlmcHVqdzV1MHV0V043WHVwVl9wbXRO?oc=5",
+      "published": "2026-10-06T07:42:00+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’·‘스마트태그3’ 국내 출시",
+      "source": "중부일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aSmh3UkVZS016Y0R6aTdYb1h5VDZfREZZUkxzQkFhaEMxR29jNVUtS1E1SVB6Z3lsaS1EQjQ1Qk11RjhNcmdzTkhPUW5IRVd6ckZmSFBiRUU2SWNXLWlWRGxZbFQ1Z3BrZXNiV1pKUQ?oc=5",
+      "published": "2026-10-06T07:35:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 출시…AI·호환성 강화",
+      "source": "경기신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IdWRxWlpQSFQ1TTRETm0xNXFZMm12eUMycllVZFFURXpSQ09WTkJ6dGxGd0plenJSelNQUjNYVW1WQ1FranIwWi16RTBKc2hNOFhGdTFHUkNZdEVQUk9FSWVR?oc=5",
+      "published": "2026-10-06T07:33:47+00:00"
+    },
+    {
+      "title": "갤럭시S25 시리즈, One UI 9 업데이트 유럽으로 확대",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE4zTlNNUk9kNUx2MzBQUFJwOWR5Y0luc0xISk4xVFN3SERMZ252XzR2QkNCZGFfM1JUQUJoMFpHNlh5eUZTdDlzcg?oc=5",
+      "published": "2026-10-06T07:28:11+00:00"
+    },
+    {
+      "title": "\"갤럭시S27 울트라, 4가지 기본색상으로 출시\"",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DQWlDd0prZHZSRmtGM29WcXk3MktmOFBpalBfNnNNcWZCLXVZYTFlUTFPRDhjdFRUN3E4NFNUb2RZaThsVDRxc3JsUmtISTNvQk9neUJR?oc=5",
+      "published": "2026-10-06T07:27:20+00:00"
+    },
+    {
+      "title": "삼성전자, AI·위치 확인 '투트랙'…갤럭시 활용폭 넓힌다",
+      "source": "매일일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBleF82UWxDWC1tN3VVblJQS2NCREtjTjVTa2kydDNSX1NyNUdDTURidGdhUGpKTC1qNTB1b0FDVUdIR3VsV3J0el85Mk9VY1pXMTRxb1pNUGFXNDdUQzcxUXhYbFM?oc=5",
+      "published": "2026-10-06T06:49:57+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시탭S12·스마트태그3’ 출격···AI·기기간 연결 강화",
+      "source": "이뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TZWJrUXlKb2hqUnR5S1IyaDJMOHpfbzYya3dNdUhhOWJ3NDJfUXQ3VVhCYlVPdXdEN3k2LW9QaFVxV0FyUFAtZTI1b2FoWmxOWXVGN0xxOWg3VWNyN21pQW95djJETVBPaVhkNUpKVGjSAXRBVV95cUxObEo0eVNMb2I1UjNyUFF0QnJMbXV0NEJuQ0pqUnhjVTN2MDlmRHd0QzlOaERHbFc0aDVlSlhSQ3JvZVZLTkNXZ1paX2hQZnIwTVdLOXBRc0RMelRmMW5SSjRDWVhQcms1bTJtaUpBazVlcnBBOQ?oc=5",
+      "published": "2026-10-06T06:44:30+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·‘스마트태그3’ 7일 국내 출시",
+      "source": "K뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9RbENwTUZWcDhydnJPTnVYOHctcjBVVzgwU1pmaElmbGVzTXFqaV95dk5EUHEzTHVqVHhRQzMxUU5neHVUUy1SOGVOQUVlcWZwZFZRSElHUHV3bEdZcjRkQUFrUVlQM2fSAWtBVV95cUxNZm52Y3hFOUlaQThKX0F0VnNraTJRZHdWQTk2RHJnQU9wVXVFTjYwQ2tyTmVyRnpTNEJpSGhteGgtbDJHQllDTE93NEtacGo4Q2o2bEpickMyUnNTQ2JWVDBYT0lJUmt4LXJKYw?oc=5",
+      "published": "2026-10-06T06:38:36+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 출시…AI 태블릿과 위치추적 강화",
+      "source": "CNET Korea",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA1MTZaa1pPYXNxaklfX29MYXhoM1gzZ0lnRTROMjFsdDhucFo5SExKeVF3SXJ6MFh3SXc3NG9qaXpVMGVmT0ZaSEtRVFMyelNOZHRXYnNkRQ?oc=5",
+      "published": "2026-10-06T06:23:00+00:00"
+    },
+    {
+      "title": "안드로이드 첫 '포토샵' 태블릿… 삼성전자, 갤럭시 탭 S12·스마트태그3 출시",
+      "source": "더퍼블릭",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00YWotUzd6ZzhJRjUwS21URFJCQTJMb3lNdi1mV3ZPQVZtOERpeVM3WFZXTDFqalM1dU5iRFpXNUwyREE4OWZTWkRxa1ZyUG44SGpWM0ZhaVU4MjU2c1hHVVR6ZzVwbXM0Qmp30gFvQVVfeXFMTUxxSnZfNXpBTTFTaGtHaUpmeXJvWEd2NzlZSmFIaVpXYlIyTGdYT3NRU3JBSHhXaHdUYzlLRjR2ZTljd1BFTS16Nk1JR01NUm9YelBXOWc4VXBva2pjdlJma2l5ZEtfeVpJNmtMbVNR?oc=5",
+      "published": "2026-10-06T06:19:44+00:00"
+    },
+    {
+      "title": "삼성 갤럭시탭 S12 내일 출시…동영상 최대 23시간 재생",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB2XzZzODdkRG9iakdLTGs4OTBIZ3UyWjNyZkJEeEQyZmFFS1VqdGtjWk9yQU5HS3hLN2JyZkJBQ3pROVdDdUExQkZJUQ?oc=5",
+      "published": "2026-10-06T06:13:58+00:00"
+    },
+    {
+      "title": "[산업 뉴스브리핑] 삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "아시아타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5kcXVXV0Z0TnNRekR6MEREUC1DVmczeHpqNS1KdzlPT2pfMFZPT3EzSHhrME1sLXNEQy1LYkxWMDFvWTlVZ3V3QzMyMU9PUms4S1FOekFxeHJxNGhpOWc?oc=5",
+      "published": "2026-10-06T06:12:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시탭 S12 내일 출시…동영상 최대 23시간 재생",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE03cVIwUTVERFlZUTJUNHBIVXM2UG1GWlpvSURsMThBRFVCNWhZXzRDb0RDM29JbFhTcF9SMkk4ZTJWeHA4MGhncU9XZWYzdjU2SFRHaGQzYkkxQ2dLdW1mazlmYzI4YkNxQTJLTVh5dmFGM29VZnfSAWZBVV95cUxNcVR6dzIxUHFpbFEta2MyMTBPX0JrbS1veVVoeDlMbDU5azJDRWE3RHhwTEZFTkc1NjBpWTJ4d0phYTVRU2U3cExDOGJyaGlReXJkZ2JsMUt1dl9kM1pETENTeWlSV3c?oc=5",
+      "published": "2026-10-06T06:11:00+00:00"
+    },
+    {
+      "title": "갤럭시Z 플립7·폴드7, One UI 9 안정버전 글로벌 배포 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBkWi1vZUlLWVMzaUgzMG8xZ09IalF3WHhGckRMSXVlZnU2b1NyTmVGdUNFckdWZVU3QXp6TmlCVWd4aXJETDQ3Nw?oc=5",
+      "published": "2026-10-06T06:07:41+00:00"
+    },
+    {
+      "title": "[포토] 갤럭시 XR 보는 오세훈 서울시장",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5WX1FCWU4wclNYbktLNzFLVjZtakxfLXNITF94eVM3T3hiVjlKZHhsTVE0d1B0YmNwTjhtRmpyQ1ZyMDlnNDd6Q2FCT3hkQQ?oc=5",
+      "published": "2026-10-06T05:52:18+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤탭 S12·스마트태그3’ 국내 출시… AI 생산성·연결성 정조준",
+      "source": "매일산업뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8yak9DdUVmWTZoRFNlUl82SU95MzRrbTVnTXVSTGVGZzAtYWwxeUtSRUZpSmx1OENjcEduWjJ3eXBTaGU2YzVTUG1kNXZiMVFRWm51elZpNUI3VjRSYlMtTlB2dw?oc=5",
+      "published": "2026-10-06T05:39:48+00:00"
+    },
+    {
+      "title": "갤럭시, 6개월 만 가격 인상…고가 전략 아이폰에 '맞불' 놓나",
+      "source": "SR타임스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5CNTF6dURNMVJBeWhocF93aFJYcWstLUdnWUZtVV9uVVNMSzYyblJKVFNMa2c5c28tUlA1RlI2SE1kN0xmQi1USU5zODNFR0FvQkFpb3UwVVB4ZEFGMjBhaGwwZlM4NnPSAWtBVV95cUxPVWpfQ1lCRE1HMVA5RUc1YWt5X2dlRjRvY1lqV0VsU0tjME1NR2d5RlNhenhZZGpLaU5xdUlvYzNtSG4taV9KajZsOUlHTlN0RmlNWUxDNTdnR3BNV2U4ZXlJamdVOTA5aDJYYw?oc=5",
+      "published": "2026-10-06T05:13:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈'·'스마트태그3' 국내 선봬",
+      "source": "한국재난안전뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DNmhta2dXTmc3amxaTHo0Qm5VTGFiWVBHaWpXclNnYkhISTkxbjRjcjNCSWtjOWNobnZlZ0hJQ3JhQ0htdEFvMlZCbVFQSDBrbXJqcHBHWDR5YU9nVUE?oc=5",
+      "published": "2026-10-06T05:06:30+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12 시리즈 7일 출시…스마트태그3도 선봬",
+      "source": "비욘드포스트",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4zc0xfamFCRldFbmc3MjZsY0tHLW5NOVBBMm9oU2FBUFp5M3RTSHRtTVR1dVhvNDdHcHhkWm02N3h6aXl5Y1k0aEk2bERWdzlEVVFiYkp2dFhfczFfd3pxMUZaQ3FuU29wM2ZpZTB0ZERnbjVzaDZVUDFsS2g?oc=5",
+      "published": "2026-10-06T05:03:37+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12·스마트태그3' 국내 출시",
+      "source": "포인트데일리",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1VYTAzOXNVNXpILWctQVR3Y21MUng2c1FkN2drLXBOZ3BmQXhpVGpMRmE0WmpFSUlQbDU2NnlFbDI0TFNMUHpZM3luRnVYYkI4cV85cTI5NG15RWlpSWtLYmZGQXg5dEEtRTREWVpFVVbSAXRBVV95cUxPOXZELVNHdEluRVpReFpYYnkyajFSbm1BRHlnc09HZ1VUY2hTMDBidzFDYmYtWXVtU1YyOWl1enhDSWpBWVJNZTItWUZFZlRlcGxGaTFPRUhOdEdEQkhMcE5kMm5ORFNaMS1zbzg3X1ZjOUN4Vw?oc=5",
+      "published": "2026-10-06T04:33:31+00:00"
+    },
+    {
+      "title": "One UI 9은 5가지 새로운 기능으로 삼성 갤럭시 스마트폰의 보안을 강화합니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVnRDTFgzWW5VcHBVTEFodC05RC1TQ01Hc3hPeGVia3d4c2IyX1hYNjQ4ZUdER1FPOVd4Mm16LWtDZkZpQy0wbnRLNXZQX3ViZmFDdFhMcUI4Z3h2OUduQXhqTEVoREl1SDVZNGdzYnJ3TnpRcUxJX1lJNGg3dXlfUHNzWnpwSTlZNWdBNGdaR2Q1blhLY29KN3pIaVRUZw?oc=5",
+      "published": "2026-10-06T03:58:16+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·스마트태그3 국내 출시 … AI·생태계 강화",
+      "source": "워크투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jaDBvdkNpWm1sNElxTzNvQi1RblEtQ1UyRzVFQ3RSSjRsSm1iREhONGlXUUVfbk5TS1dmZUY0R09GVDFjeUdSODcxTDNCdXRVQkM3eS1YM3RqdmVoN2hHV1p1TkRnb0p3MW0zUQ?oc=5",
+      "published": "2026-10-06T03:51:48+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 7일 국내 출시",
+      "source": "아이티데일리",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vc3hFOWJiQUVOQ0pEZHlVOV9nX0Njcll5bzBqZmdVUWFocmVEXy1MdVNoOG10eWRMRVZ3VFNVSWxjZnFOUHFkWXN1VF9hcmNuZG96TWJ4cU5DMkk4X04ySFBPRTBJcUtK?oc=5",
+      "published": "2026-10-06T03:31:25+00:00"
+    },
+    {
+      "title": "삼성전자 대화면 AI갤럭시탭 출시,위치추적 가능 갤 스마트태그3도 출시",
+      "source": "피치원미디어",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1mci1jQU54T3Z1THJQT043VXlpS0ZvQzgxa09QYi1PeV92YmV4WUhLWXRabDZGU2ZlY0FIa0FKWkp4YTZDR1ln?oc=5",
+      "published": "2026-10-06T03:17:07+00:00"
+    },
+    {
+      "title": "‘AI 기능’ 강화한 갤럭시 탭 S12 출시…가격 300만원 돌파",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1rVXlldzFNdS1Rc09Sel9QUVlOejRkMG13UUYwTDBZVXhjWFdFbmVXY055SlI4SlRqaUgwWFBwSkVzandsNlBrZ0lVaTJfcUp3RlFlLTNUV1VHd9IBX0FVX3lxTE1zTzFMVGZWRF9yWGthU1V0ODcwQjRhZ1RPM3RpamZNV0ktMGpkSzNHN056OW9sYUNIbDVDMzJ5ZkxYOGtEQVliMVN5UTZmY2w5YTZrNzQ3VmpMRUp1RXZB?oc=5",
+      "published": "2026-10-06T02:57:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12 시리즈와 스마트태그3 7일 출시",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnNlRGTG1DY1lnNnM3cWRlTkYxMUhzVjluQ3pyU05leHRnSDlTcFpNUHVXNGxhNTNVNHNaYTRBV2NJWXBXMlVKbTJvV1dhOUZoUUVTU1pVWENjcE5nTjI2cFR1MTFoeldiNF81TTY0ZEdLSVk?oc=5",
+      "published": "2026-10-06T02:42:01+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈'·'스마트태그3' 국내 출시… 프리미엄 에코시스템 강화",
+      "source": "livesnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBOakxNV1lyR0xyNG5fWUE5MkRfeTRia1FyYVZlMmw0LWxtRmdTSV9HbnpsRnhLSTluYXN1dTZwci1FYUJnZWp4S3VzeHJ0SVdtZ3N6UUZtczcxRFNjSWk5UmNQZkQ?oc=5",
+      "published": "2026-10-06T02:35:11+00:00"
+    },
+    {
+      "title": "‘갤럭시 탭 S12·스마트태그3’ 국내 출시",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VTkFGc0pRRXpaUmZrUzg2SzlyZUM2dHB6RUZBTTJXOGFTbldLQ2ZXeHZXLUYwdFcxX25GdE12cHR2Nkk5bGJNVS1TS0dQRjJZbU5hbll3?oc=5",
+      "published": "2026-10-06T02:24:49+00:00"
+    },
+    {
+      "title": "삼성, ‘갤럭시 탭 S12·스마트태그3’ 7일 출격⋯AI 태블릿·위치추적 시장 동시 공략",
+      "source": "엠투데이",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE96bjJfcnZINzJQT0ZLRHJKSmVtRzVmSDEyb2RlLWdVMVduUzZNRWlPVEIzY3JmcDF1NnVOV0V1S3NfUVdZZXZoTDlKMHVwMUMxdlFDVEFtMG44dnhDa2h2Q01VdWxLVW82LUZSXzZCUQ?oc=5",
+      "published": "2026-10-06T02:08:54+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·‘스마트태그3’ 국내 출시",
+      "source": "디지틀조선TV",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1zNG1Ub3gxZjF3WUhMbG5XWC1nT09XaGNvdkVLcDBOWi1yOHY1Z3p3S3NSdzhodDIxd0J4VGNvQTNZV2JLbDVjOEYwZEFFNnRBR0NZeXdmN0tvU2hQRUtkLUtHQmo5S2p2RHd2OEhvZWduZENpQXRaVzNrdEY?oc=5",
+      "published": "2026-10-06T02:02:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 7일 국내 출시",
+      "source": "스트레이트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52TjlWR01PUWVGZy1ZbDhhQVNCMVVZZi1DQ3pua1VzRk5CWHJpTzZXdTdSb1h3dnBhb25XTlJNd0RQV2NoTlNXX3ptVXVEa0w1aVdrRmQzLWg4OURWNDlUcS1xUDRLNk5tc3JmRlkzWnctcknSAXdBVV95cUxOanF4V09LUVNLUkZxX3Y0UEVNRmE4OFM4LXF4ODNmS2tlel85eHdudkhwLXNJSy1ieTR3SmRGQVBRVFlEcUpqQzlFTWJ4Um9RVnQ2UzRxNUd2ckhTUkI3RFh2UG5lN1k1TUxxb1RGRFJLVFFpUzFBRQ?oc=5",
+      "published": "2026-10-06T02:01:21+00:00"
+    },
+    {
+      "title": "탭S12·스마트태그3 출시…삼성전자 AI 생태계 확장",
+      "source": "경제타임스",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE92Y2p4OU55OVZkSExDQ3E5QWVpdUE2LUVxaVBlUFlhcGEwc0xXRVQ2RzZyajFUZUhLTU0yNFQ5YTFEU3NrV1RnWkdVNU5fQzV5TXIw?oc=5",
+      "published": "2026-10-06T02:01:15+00:00"
+    },
+    {
+      "title": "삼성전자, AI 태블릿 ‘갤럭시 탭 S12’ 출격…포토샵 첫 탑재",
+      "source": "중소기업투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pTjhsdmpGZ2x3aTVlS05zS0hUMS03Wkc2VE9sSHcteWxnZFVnWS1zTEk1NWJtWjBwOTh4aVBQZlJpMFc3dUFtbzVRX0ZRbjVhZHpid1gxVzRoYy12M1BLeDE3TlJrSk5O?oc=5",
+      "published": "2026-10-06T01:48:28+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 국내 출시",
+      "source": "폴리뉴스 Polinews",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OSkFaeHRnNFRCQnN4ejJrUnA4cUR0emtlZWs4aU5idXZGTG9WMnZzemhMMFdkY3R3Wk0tTkZjQWJQWnlpYWd5NnVKMXl5WnFMRXhmWUZCOVNGOW1yOUxHRzc4T2xwZUJLelhSLXdR?oc=5",
+      "published": "2026-10-06T01:43:08+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12·스마트태그3' 국내 출시",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE51MlVmT3BNbzZpUDAwWjZFWU9QYU1NMlc3dURBQ3pfUVBYYUdRWEkzLTlpbjVoamFoX3pEQUk5N01uU0R2X1hHZE1xRWVUQ2s?oc=5",
+      "published": "2026-10-06T01:39:01+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시…AI·위치 탐색 강화",
+      "source": "뉴스퀘스트",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1tM2NkWk43dFl5cHJEYTd3dWIxbGR1Z3BSVUwzY1ZNODJ1OWVkNERmUUZqUTIyUmlIX1NEMks0TWlZOU0zZm9iYl9GWGV6SkVKdi04WDFzclFWR3oxd2ZQOXZlalNxcHFtQjJsVGJMdw?oc=5",
+      "published": "2026-10-06T01:38:01+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 국내 출시",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qQ1pQZlY1OVhuc0czakJaTy0xZGxPbzBNNktHc01aeHdBbHZEa1pRRV9RNmZrczNWOXNSNW1qOUJrbzl6cDdPdWp4ZmVwZ3lwbVHSAVNBVV95cUxQQ29GMWZhcXNWNWkxSG5jX09MdURxQXFEX3g3Q2hkYmR4amM4RkNPNm9rYlhuT1JnN1B5eTRZTUFyNVRuRXN0RzU3X0tDOUUzbUpUSQ?oc=5",
+      "published": "2026-10-06T01:27:46+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12 시리즈 국내 출시… 스마트태그3도 선보여 - 조선비즈",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeFdrT2tLTF9OZ1JWZ0FoaWRwS083WXZLOXY2Zk13MHV4U1N2T0hJRzhrRHlqU0pTd0JtaW1ueUhGREh6YmRfU0oweHU2LW4xaVhjb0tJbjJBQ1pkYkY4YTJaemxKdW5TYXNGTVhXNHlCd19wNFpmNVdNdWFQa1FBU0lR0gGWAUFVX3lxTE9taXNlQVhCZXAxTjJ1OUNFYVg4VTRGbm5XVXJMOFdiRTFnNGp6ZWdEcFNMUzFObDVhWERCdWlLODVwT3hZVG5FSThDVjRqOWJWci1RSHdkYnRqcnFHQ3F0NlB6QVc0OFowQUVoT3k1bUZmY2dVXzE1LVB0VnEtWWZpQkhrb2hMWXF0RjJDeU5Ndm9EOVNSUQ?oc=5",
+      "published": "2026-10-06T01:27:00+00:00"
+    },
+    {
+      "title": "'갤럭시S27 울트라' 색상 유출…기본 4종에 '보라색' 스페셜 컬러 추가 전망",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuLW92NlJaRGxZOTlkMHZsSi0zOWhnNlRLTTl0WTBLdkJhQUxzVGFIb2g5WXltQVQwa1ZxYmI1YlduX2RzcEcxMg?oc=5",
+      "published": "2026-10-06T01:24:55+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "빅데이터뉴스",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZYXpmTG90RndNLTJvX0JUVkdQdTFtWG1wWkxTTjU1QURma0c2c0hVZ1IzWVNyU0pWVDVrWElqZlVzWDRZeE1JMDE5dFNnS3llZURWRHNqUF9wd2d1azlKU001bjhheUxkLTU4UkVCOGJ4LVFxR1dpalZ4TQ?oc=5",
+      "published": "2026-10-06T01:12:33+00:00"
+    },
+    {
+      "title": "삼성, 포토샵 품은 ‘갤탭 S12’·아이폰 찾는 ‘스마트태그3’ 출격",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VSjF4aXBLWlBWNThQSzh0VXJIaHk4Q282TVR3dWFDdG9sbkJTUDl2aVlIdWVLcmhWakRvUS1DZDZuVWFuWm5LZF8taWhoSHZFSktrUHBlUWNhWW5JWnRocWlYdTc3cVlScWpranFPNGfSAXRBVV95cUxOdzFxaWdJUDU1NUc0cnc3QVVoc0NxenNaYzFPZTh4bkJ1c01hbjF1VnNHaG1td2tLa1JENnVyWk5UVHFaRU5VdzVSdG9UUzQzWWdoVEpsMUJNOXpPWWNwcVdfaU9SVUQ3UlpjWDFPUHhyWGh4Tw?oc=5",
+      "published": "2026-10-06T01:02:37+00:00"
+    },
+    {
+      "title": "삼성전자·LG전자 ‘갤럭시 탭 S12 시리즈-스마트태그3’ 국내 출시·유럽 첫 상용 SDV에 통합 콕핏 솔루션 공급",
+      "source": "여성소비자신문",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13Zk9BZHgtWTA4aFpPd0szMW83Q1Y2ckQwRHZZWmpmUVF0U3U3Q183a1J4aXFBMGJTZkc2VURuakZjcnBISVRSTHRra1lXaU1vdEVkOHFkaGJuMkREb0l2XzVtSmxfZw?oc=5",
+      "published": "2026-10-06T01:00:46+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 국내 출시…AI·위치 탐색 강화",
+      "source": "테크월드",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5VMzVNNjc2QUFvVWEyWFVSU1JmU2tpOTB6d2xCWG03eUVpaG1iZXNFOFh0MXhrV2prRWNmTkl0S29SbnNjUm1XZUZEY1VsazZJVnZLenRmTHVKZGhvbmVyNW1MQ1JxdUcw?oc=5",
+      "published": "2026-10-06T00:56:06+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·‘스마트태그3’ 국내 출시",
+      "source": "강소기업뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4ySFp6OS1PM0IxNnVBakF2YkFHTjRvdGszLWNVX0c5WFVsenBxd0NhcnN3SVk5VzlMTHNHazVSR1U5SXRBVnV1YW9aYXE2UC1uQm1J?oc=5",
+      "published": "2026-10-06T00:54:30+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 출시…AI 생태계·구독 접점 확대",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBoTHo1ZXpGNUZtV3B0NUtPRWhzT2NXT2xfN2hqZWJZbm91bjB5aElleHRPVFMydFVxMC1vZXRtb29iNDY3aVlYRE1rZW4yN0dVdmFaTG9jR19hdnNiMFAxTkI1QXNFN0VYWTFj?oc=5",
+      "published": "2026-10-06T00:54:15+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "SR타임스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OZkZyWndFRTNfelpEaGZEUExySF9LSVQ3aUduOWFldVFiTm9RemRmYnVlQnU1VEpZTEVzVkluSS1HbWl4bGhJSzBUc0hFRjc0WnFrTW5pR0ljbm1vWXhfbmxEQm9Ja29U0gFrQVVfeXFMUGpxLWNhY3dibklFaFE1YnllN3Y0SmVQQnI0dWE1S2R2RzdRZF93S0dTd1N6c1l4UWllQ294aXJ0ZE84THNIaXdBSlk3a2dINmFucXNGMVNqRkxBUTYwcEsxOVVaNU9pN0s0Skk?oc=5",
+      "published": "2026-10-06T00:48:51+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 7일부터 국내 출시",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE44WFYtam9GUThBZlgxQmZBQ1JCSUttT3VEbHBMYmZSeXEta2hKU25fdFlRRk9WQ1djaHlxTjZRU2E1UmtMT2c?oc=5",
+      "published": "2026-10-06T00:48:17+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 7일부터 국내 출시",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Ya21aa0dqUmxkblpFaUdvQ2JxeElwbnU5a3lBaFFQZzVMd1RhSGJ4ck1nNF9UQVdaWjctcGxHc1BlajUwQVkwa24zSmlHeUdWdGc0Vg?oc=5",
+      "published": "2026-10-06T00:48:17+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 7일부터 국내 출시",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Dcm9sbXRFbkRYeDZqWU9kMjJoZGhvaHN0eHZoR0NsZlMxX3Y5dDU1RlZqOENoSkZucEJBQUVrenFsSmYtMVFCVkZ6ZVdSYlh0bXhHejFNSFZ6UQ?oc=5",
+      "published": "2026-10-06T00:47:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 탭 S12·스마트태그3 국내 출시",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1aWWpPSjZEQjA3X2h4b3dtM2NPV084MW1ZclV0UnM5M0lTRS1WNy1uTjJFTlNibFRZZ0FUckRtZk16QWJZZkdmblZHMEM1Zw?oc=5",
+      "published": "2026-10-06T00:46:43+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 7일 출시…AI·기기 호환성 강화",
+      "source": "PRESS9",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLYkpFMEI3Nm9nNUlxdHhWc1l6Y3hGQUl2Q1VoVjAtYnRvOXdnYUR3TXFTSV9iRVdEcUs5QXNnejUxWWJ0WVdZOWV4NVFqZkJYeHFJdldBWEI2NVJRMFpsTHZRNVk?oc=5",
+      "published": "2026-10-06T00:46:41+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 7일 국내 출시",
+      "source": "인더뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pUzJoV3ZzY3dmSFZkLWVEaVVKMldEZzZVakZNak9tMTA3ZVZ1eGRNNjJMeUd5MDgyaEVWSmxfNnNxZjBsZ2hJSkQwNFNJc2RTSHFGbjRWaXFzNm9ndi1ZXzlxRmI?oc=5",
+      "published": "2026-10-06T00:46:16+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 탭 S12' 7일 출시…스마트태그3도 나온다",
+      "source": "SBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDb2k1RzJnNk9vYXJ4ckFyU1l0cEVIc245MTRvNE4wQ05saUJEZXk1cVBXRmhtaTI4dmFVUzJiNnVMYlRQY3lQNXRkVDlpRVZ4YlJIQmpGSGc3a2VnNUZzN211WU1OUEVCSVE?oc=5",
+      "published": "2026-10-06T00:46:14+00:00"
+    },
+    {
+      "title": "삼성전자, 대화면 갤럭시 AI 지원 ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
+      "source": "우먼타임스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5IdXFMamxNdDhHVHkwNW0ycWF2a3dNTHdzLVFkY0tXWUVoNl9Ic1BMU25YOHkyYXFXeldOUVo4RlRsQjhINlUzY2N4OWI3Zy1oU1ZNQjJpeGFuelFqNnlsX0ZCTHU5T0dETHVsM3pQeWPSAXRBVV95cUxNVVBiUmpXTHRvM0NhOXhxY3NGdDI1OWdFazl6c3VsUmFITXVpaS1SbFFvVFZJY3FqcU8welZtZW9TZ2xIVHNneVV5dVNQZzFqdDVYSlpoU3dFOW81anYyU0NZRWR5MnVaSlQ3WlJ3VTFrOWVoaQ?oc=5",
+      "published": "2026-10-06T00:46:07+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 국내 출시",
+      "source": "네이트",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5xZjFOTVMwdEREdG1IWFNoXzdyWDV0S3VyZjRlSHJjZkJGUk5TQ3habzF1UlVQMG1nYWZMcnh5NVhtNDJnNkRfTXZOS0dadnZYY204?oc=5",
+      "published": "2026-10-06T00:36:00+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’와 ‘갤럭시 스마트태그3’ 국내 출시",
+      "source": "이슈투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PckN0MGJ5bTFweG9jMi1MTXNQdk01YV9RZnM0Tk9BR3dWNlVNOTFmcndtQXRPMTMwalNjRFRvVFBOOERLYlVNbmgzby1Cc04wa19Zc29jbUlQVFVWWmFHRUxObjBTZw?oc=5",
+      "published": "2026-10-06T00:35:32+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 국내 출시",
+      "source": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTeG4zMzNCSkdLZ0Jra1RSQ21MSnNKeDdoV0lGTWp0dWhycWhjVWszRXJra2NxMnRWSUVnbEo2c1Z4emRXdm9Mc0lYZGNLQ2xfM1hHekJ2Y1NaMFhRTERmaXk4UEszVE82Y2UyeFB3?oc=5",
+      "published": "2026-10-06T00:35:15+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00cGlIaE5wYUQzVUFuMDdlVWN0M3daVGcyLTV3NDJHTkNza0RiS2NSSDlMbmNnQkFXM0xWSDNjalpiamZaOUZvQWtaOVlod08wQ3RHLVMyUFbSAVRBVV95cUxPN1NMaExvbTF4SzBvQXZJb25TNlFzaFdIZkZmVGJ1dHRaNGdsel82OHJMT01jU3FISzZhZGpGNGIza2lOMzdqLTJucHIyLUNLVXhyUzM?oc=5",
+      "published": "2026-10-06T00:34:31+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 내일 국내 출시",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00T1hVZEtJVEpxc29QZDBFbnhEUllmWWZjczN0WWwyeFREMVV0d05Ic2g5MUFMMVR1aEF0UDVCLVRyT3lMLTlDdmE4TTd1MmtMWGdfYUxRellmdmEz?oc=5",
+      "published": "2026-10-06T00:29:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iMktlZmxqQzVqR21keWVQS1NZUjJGcVlQSk0tdG9iXzdQbmF6NWZ2aWN1NkE0eHBPbXc4ejUwRVZmX1BHZkVBV29TM0l5Nm9BWDNYRGRZdUlaRjU0WFA0R21kNG1felVHV2NPcVB5ZzdRZTg?oc=5",
+      "published": "2026-10-06T00:24:21+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12·스마트태그3' 7일 국내 출시",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzQmdSdnFjZ0F1ZDltaDZzT0VoZnBNT01JUU1mMUVnOXFRSVJLV01DUjBLaGRtNDZQUVcwZVY3czcwSGtPQVpnNEwzYUg1RGc?oc=5",
+      "published": "2026-10-06T00:23:13+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 7일 국내 출시",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51WHhJSnUtNFFsRzc4V0g4eHh3Tk5SeU1pTm1VQTRHZXBQM1VJMXNsem9jTW5MNFk4V0VQQmV0RnlCdEZUamJMOVRYQjZOem1kc3FuN2tTR2paMnhTbmFFbV9NSHgwRlk3cVRpWWt4V2U?oc=5",
+      "published": "2026-10-06T00:22:04+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12 시리즈·스마트태그3 국내 출시",
+      "source": "e4ds news",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfajcxdWJDTTdhcnBZOHVrQjQwaXhwWlpweTQ4VE9jaDhSdEljaE15b2ZQYW9jRm0wMlExazd3QXR0dWl4djhsX0RWNm5FQVBOcDZuM1VR?oc=5",
+      "published": "2026-10-06T00:22:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12·스마트태그3' 7일 국내 출시",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAtZ1pJME02b0ZrRklaTk1IXzNzSjR5TnYxeFlVLWp1TzFEaTZ2NDNzT09sVjF3UnJqN0RSLWQwcjdCWDFRQ2c?oc=5",
+      "published": "2026-10-06T00:21:30+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12' 국내 출시…AI·휴대성 강화",
+      "source": "더트래커",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1RTWRqVDlXc280ckVSaTBCVlk3LUdibTQ4S0NNbEM5MVZvd3duejIxTjhpWFFiLUk2RHV0cXJmNjB1cnNvNFAwazlTX19zNnJTY0Q2OVBJdEM?oc=5",
+      "published": "2026-10-06T00:18:33+00:00"
+    },
+    {
+      "title": "삼성, ‘갤럭시 탭 S12·스마트태그3’ 7일 출시",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaEdxaUc5UGJvRVNtUXVJaUF4ZllKWGlaeERoLXpKdVlhemJLVEhmck1SY0k3UjlUUVNsMHh2TkxMeWtLTXdaNF9xZGVWMzlKbTE4ai1xczUwWUZiMUw1em5qaHV2ZW5NM2FJUUNzbk5ZdkV2RTRvV1FRMEY1MzlTYw?oc=5",
+      "published": "2026-10-06T00:08:54+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12'·'스마트태그3' 출시…AI 구독 혜택 강화",
+      "source": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rNHBDaXF0cTZjeGZaMFozRmczWl9Yd0NfbW5lOFR3RlZ4QWkteHdGYlhSaDZRaU1GOVEwdVpVbXhGRHNMdWR4bXFCdl90VDFNc1U1X3ItWFl2SzBPZ0VlLW4tQW4?oc=5",
+      "published": "2026-10-06T00:07:01+00:00"
+    },
+    {
+      "title": "삼성전자, ‘탭 S12·스마트태그3’ 국내 출격…갤럭시 생태계 강화",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9BVDRicHZ1aDlCSzEydG04dGFadDItdDV1WlFkUzFCa3lZUVJDY1dpMl9pVzNPWmZKZG5Mb0tFUzg4dE1wanM2cDVSQjE5bGpjMW9qNWln?oc=5",
+      "published": "2026-10-06T00:05:20+00:00"
+    },
+    {
+      "title": "삼성, 7일 갤럭시 탭 S12 시리·스마트태그3 출시",
+      "source": "기호일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBMRmFSMGJHamJUcGZGN3F5RENteFBkMUw3VmpPMjFqczF2eVFvZXZDWkZGMXBOVXB0SWllSTl5NGk4NW5SYjFsS2JFX3hFT3F0Zm9GR1kyYVlUdndZNktJNDdtQ2ZyaUc0aWl3QjBYbw?oc=5",
+      "published": "2026-10-06T00:02:44+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "데일리e뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FUGxPelhmVWE1a3EyQ1JQc2N0a0R3QUFJMVFqaTNoUmRRU2U3SWxmQ1VHS3czMGRxWFJvX2JXMC1QNDlhdEd3TFVrV1ZMQnRQLWJ4YUVJSVhoUFNldm5xUjRSOHk5VEFxak95NjFQZw?oc=5",
+      "published": "2026-10-06T00:01:48+00:00"
+    },
+    {
+      "title": "삼성전자, 포토샵 품은 '갤럭시 탭 S12' 공개…스마트태그3 출격",
+      "source": "www.ebn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56Si14OTN5YlVjdmFyUFdPeVRETXFEdUxmQkpsbElDTXlJN3FGenJTUTJIOUJRSUd6Rmtxa1J2Wl9TZ3IwY0VkRVRISE9hRTdFOUVONl9hT1FpYllZMDdBanA4MU9mMEFE?oc=5",
+      "published": "2026-10-06T00:01:29+00:00"
+    },
+    {
+      "title": "[뉴템] 삼성전자, 포토샵 탑재 `갤럭시 탭 S12`·`스마트태그3` 출시",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qQk5rdzlOSzJjVkNRTUthcUU3THEyWFVYMG14anhGX1QzSHZZVENmaTAtdHA5ZUZFRmVNTkdYWGVQOG5pZVJNU3pUd0xua2lqQU9vblN4MGMwZXN3b1RLWGJR?oc=5",
+      "published": "2026-10-06T00:01:26+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjclJWN3d0Wl83Wmp4NU8zZDBKRmc2UmVhVktwRF9MOHFONE9IbnZ1bWl3VWxaWDZ2WG9tV3lELUdGVHZwRjBET1lXSGVHNnF1YVdCV2Zn?oc=5",
+      "published": "2026-10-05T23:59:34+00:00"
+    },
+    {
+      "title": "삼성전자, 7일 '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "한국아이닷컴",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBXaS02TmxTUWJCcWdOMWM5MEdVd1RmYjlXeGdyOEZlcnhqQnI1SndhZDZRT3hnZHVMNzRHSWdQUGxyNlp4LXNNUHJfb1J0UDl1aFZ0M1dtSEFxcFdfWXVabU9EZ2dtb3JiNTdr0gFvQVVfeXFMT0dRbGFidFlBV2xVYWE3aDdmeDc1N25VUGxtYlNmM0k2R09KWUoyT3pjOGZadzRWNE96UlMzODVtVV9XdHJST3FJSmtEMUVNbkl2MGxGWF9hSmplV1FBY0FmLWhoUjlhd1FGeUVYWVJj?oc=5",
+      "published": "2026-10-05T23:55:03+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·스마트태그3 7일 국내 출시…최대 301만원",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxOGtiUGRvMzlYR0owSml2VzhOZlExSXd5V2dGN3hKaXgxc0VrUFg5UXBzMURQeHlDMFJMbEl0X3VwWDg1Yk5faERqa29PUnE3YlZDNA?oc=5",
+      "published": "2026-10-05T23:54:46+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·스마트태그3 7일 국내 출시…최대 301만원",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1OZ09hWFVlbkpmeUdCUndNOWIyRU9IWUw4czBidnowV1ZtWU5meGo0dEg1d18xZGRuc2h1VlFiaDgyMkJJV0E?oc=5",
+      "published": "2026-10-05T23:54:46+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·스마트태그3 7일 국내 출시…최대 301만원",
+      "source": "진일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE91QXBPbGhlNmVNYlhVNXRDdHRLNnFFVmk0cXdZRU5mcG1SMW1iclNiNW1SQzgwOVI2cVNncWx4bHNGWUt5WnZYTmJtOVlZeFFBNllDRTJNREFCY3lXeWlKaXVYbkVrektJa2NpbWFxTQ?oc=5",
+      "published": "2026-10-05T23:54:45+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 국내 출시",
+      "source": "뉴스드림",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzdVB0bVVraXJPcDMxQkZraWlPYTNfOW1QeVpDeVdYaTEyQXVIZG5HSmtZWGRZcVlHdVNuTzJhc25WNEo3VkdCV1gwYnh5TmQ1WF9zVnpyLTU1c1Ywc01lcUhNaGtVVFh2U3fSAW5BVV95cUxNSC1raVo5TG0zdTVzYzA2ZkxOcjdpTmVMVlNKRTI2djA5VzFWeUhWT2Rpblkwc3dkUVh5dWFfTEhXMHJIbVNLYUg0QzlGN0ZCMGNRSDVwZHBMUU95bG1wY3pDYjZvLVJqU2RvLTc0dw?oc=5",
+      "published": "2026-10-05T23:50:35+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8wZ3pBeDVUV1N1dEUtc2NsdURyRk9rQzFfeUk5LWRsbHVCc2FtZ2tPaG85dlpsaDhNVm9Va1d2RTBDdzdQd0E?oc=5",
+      "published": "2026-10-05T23:42:07+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 탭 S12' 7일 출시…스마트태그3도 출격",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EZlZMX1pJeTA4VXlCSUlUSmtORnRzWkQwVVhweFFkZTV0bVhGVVcyNk5hZWhSQlJnTHR0bDV2ZDN0Nms2Z2dIVVUxeDcxbGRFb0tUV3cza29nazjSAWBBVV95cUxOb1BTempJR0RSRzQyQlpEVEppWFQwZlBScm1aZnRWZjlmUVRMX2R6ZnRZRldwb2hFdHc0UXNlS19fNGh0bG5aalVfald5a25TRnRkUjRJZ3hWeHBGVk9CTVA?oc=5",
+      "published": "2026-10-05T23:40:25+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 7일 국내 출시",
+      "source": "서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pOHdaZDhSZnk1SFQ1TS1zNi1PVGxHZWhUVFp4Zm91MEdUT0NKRS1TWUwyUUdXSmdKVFE2T2NSeE41TEVHb21JQlkxdzc2ZG9XZFhud1UyQWVjaFBCeFZzN2xUQWlBNFQxZjJn?oc=5",
+      "published": "2026-10-05T23:39:12+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 7일 국내 출시",
+      "source": "직썰",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE50VktqYTcwVkYzdHpWRDZDQTR3cFdCc2ZabVhsUzFoZmlIS0lvYTYzT0o3YTNKWGJqaktaemx1R3BoSG9hX1l3ZTZfZHpoOXZwV3FiRjFuUFhXMW9WMWZYRlNJaXJOOTFx0gFsQVVfeXFMT2NKbEFQY2QwaGNTazc5bENXLWYtVGE2SXlSd3NPVUF4eWtMMGR4TWZtSXFPV25xQ05QMkszZlJ2eEZyM1BvbXVaZjA0ZmhJNm9oUnhRckl6VTcySVFVMjlNUm02anlkWHYzZGRE?oc=5",
+      "published": "2026-10-05T23:34:04+00:00"
+    },
+    {
+      "title": "‘갤럭시 탭 S12·스마트태그3’ 7일 출시…안드로이드 최초 포토샵 탑재",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdmJpbnMyTzlJOVVLSGRTQlNpdURQU1dhdktoLW9QZkZ0TXgtLV95NFVoellxcnh4QmlIbERmNnVpUGkzZ1JXcWRKZGdrYjFBbG5tMXB3VFZsOWdhbFVLb1NWRUFzUFNBWWpDdW43M1NvM2JOeGFDamdMS3VMOG5zcGo4TTY5UQ?oc=5",
+      "published": "2026-10-05T23:31:44+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LUjZHSFgzNHNKZjB1WS02SGlMUGlGa1RaeVkzcTVJeGF5dHA3SkpTaHEyeUJNeXlleWxtX3dqdnFsVUIyaVY3bnVpNURQVkNTTjZwMmZjRWR0RVNWUzc3aNIBYEFVX3lxTE5LUjZHSFgzNHNKZjB1WS02SGlMUGlGa1RaeVkzcTVJeGF5dHA3SkpTaHEyeUJNeXlleWxtX3dqdnFsVUIyaVY3bnVpNURQVkNTTjZwMmZjRWR0RVNWUzc3aA?oc=5",
+      "published": "2026-10-05T23:31:20+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 탭 S12' 7일 출시…태블릿 첫 '포토샵' 탑재",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tV0kxR0JPX19jM3Y4R0JIU2RNSU1OVEFYNF84aGkyNTY0NXFRbHZhakJYdU1VVi04T0Q0dGUtVGlSeU56SFdZdnR5T2g1dUo0X3V3YlZ2VklsaktrYTVtVNIBeEFVX3lxTE5GTnF3Y2Nlc2VwRmVlZ0lrVkR6dVAwQ05tdE9hV3B2V1dNN19zdnRQN0hCQ3N0SzRlblR1dFhsV18zM3gyMXFJWTdKTjlCdmE0SmZ4aGJONXY0Sm1sYUo4YnRtVzI5WXdUM2VWSzRfNU5MelFraXN6Uw?oc=5",
+      "published": "2026-10-05T23:30:17+00:00"
+    },
+    {
+      "title": "내년 출시되는 갤럭시 S27 울트라, 색상 추가 가능성…젊은층 공략 강화",
+      "source": "엠투데이",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEMmJmMjBkQzJPRFVBM0xtZXlEX1FhV01ZalJHWms3N08tT0lSa1lxVDY5a1NVaGRROVFnd0g1MjdPRmJFUGJpYjFQdG9heVRjdkxaSXMzREw5Z3pOc3dmN1hTbmRoeXNxUzE0UUdVNA?oc=5",
+      "published": "2026-10-05T23:28:49+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 국내 출시…대화면 AI·위치 탐색 강화",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IRlJtQk5GMlg5WlA3ZEdJZFYzT0dNM0lkaEIzV1dEc29QbFlKajNhclBLZ1VpaGRiZDRNYTV3N3ctVWlPVFdlcnd2TjFiSXRpQ0JlU0JQYTdoeTJFYU45S3laa281RjA?oc=5",
+      "published": "2026-10-05T23:28:37+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
+      "source": "부산일보",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1XcUVvNzdRdUg3OXpTOHk0YUprYWY2ZzJDNXdDWTNkQnRzNnpMNHRYM3ZDLUZ1Y2FNNWtLZ1lKSjdzQnFfc2x6X1NYTkhuNEVfTWh1YVhMWkdoUHpPYXJfQWhsdk9mXzJsdWxZYlppNXRPN0dfRldmU2d2cEQ?oc=5",
+      "published": "2026-10-05T23:28:01+00:00"
+    },
+    {
+      "title": "'갤럭시 스마트태그3'로 편리하게 위치 탐색",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBQQmFTWDktUmx6Z2dHVXpyT05iclpVcjJpQU02cVN4aUVJZUQ2NlFkOHpBeDc2NXE1bEdnYXpwbmRCcXZMZTZoSlN0VQ?oc=5",
+      "published": "2026-10-05T23:26:35+00:00"
+    },
+    {
+      "title": "'갤럭시 탭 S12, 3분할로 여러 작업을 동시에'",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8wSENKRDNKQzltYzM4ZGpjSmxIdzFjVklOcVBRV3BUdTF5NG5QZ2w1cnlJdWVKdldaOGhKdW54cGdLblYxQ3hITW93RQ?oc=5",
+      "published": "2026-10-05T23:26:33+00:00"
+    },
+    {
+      "title": "얇고 가벼운 '갤럭시 탭 S12'",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1Z2s3allwTFdXcjJHUE5ySGpySWhIVVRsTEtoaUtJQ2swbWwyeWQzdXlpODFVRmRiUXRDT0NvdnBNOHNhQkxqcVVRdw?oc=5",
+      "published": "2026-10-05T23:26:32+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12·스마트태그3’ 신제품 국내 정식 출시",
+      "source": "핀포인트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80b3hpLTFxTWljUFJHNDJpOS0ycGN0ZndoNzlkU3RhNlNIUjRGRE1JcU1ianJzUmNtNG1rQ1g5S2tLUjl0TE1LQ3k3eHo3NVhCVlA4SXRnY08tN2REdXpTa0JSYXhwbnhWaXlpVlpRV3NQekXSAXdBVV95cUxPYnRlWVVFSFZfX1A0Q2RINURnSHZKWWdneHhHMjg5OGstRDR2bGNmRDdSZXFlOTVGT2tHNUpENTd4cmpyX2x3dnhidFYxaWVILTlpamJSTk9tUXFENzJRU3BXN3UzVHdXQ3BFUHY2Mlc1WFh2SzhwQQ?oc=5",
+      "published": "2026-10-05T23:24:51+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 탭 S12 시리즈·스마트태그3' 국내 출시 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MbGJCU2FCTTl1WGVWVDRYbnRlbXpqalJDNlp5eEZjRlVDTDF3VkFITG5vcGhibTBCZmYtNkFjRGVhcUtxQzNqSFRyQURNREpmSS12d1N1N25fUzEyR1g1UGR2NW5HbVXSAWxBVV95cUxOOTQzRU9sZ0c3Y3NPb3dUeTFBalMwa0g4ZU1KOTNaZHJKNmNpMm5kMVVCMWRRZEF4RnFBd1dEcEdiSFhJeXR3ZEZKOV9CcGNYeU84LW8zVTBNOEc3bFY4bmZXRDJCcWZ4UXFwZnM?oc=5",
+      "published": "2026-10-05T23:23:55+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 탭 S12·스마트태그3 7일 국내 출시",
+      "source": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUaTQ4VERRVXhqdWZWX1labEVKbzRmNzh2SkNJZXJCbVdrQ2RpcFhYZFNSSnlIREZMSE8xd3U5SFdpNlBLQWtIeXQ3V0F1YW9SQWxyQmxrMy1yZ9IBWEFVX3lxTE9ncTFGYmxpVmtibkpHWmZ6aDZuQ2p2WEcxMG5QS3NxLXRWYmRSN3BMSnVzWGZlNm9FSHZXYnNUS1RTODNVckVSNlBoLTA2WmgtTjhkZi11SDc?oc=5",
+      "published": "2026-10-05T23:23:51+00:00"
+    },
+    {
+      "title": "삼성전자 '갤럭시 탭 S12·스마트태그3' 7일 국내 출시",
+      "source": "뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XYmtteFd2dnVQRXUxVnFvUEwzNXhmVDlfVXhPbnowa3RhMXhKMGQ1VktZX2N6Y244dXBXeExjV2l6Z3BmdHBoV19zbm41THo3cHVYRW9UTlZCVVBhcWZhZllHa2FzMjY3T3V0azZ3ZklNeVJFTllveElOc9IBgAFBVV95cUxNMU9JZVRPa2lWVzkyTDhGU25tZ2tfVEpOWVpPM2JrZzJsUHU4Zkg2NXowY0cydVlhTmJEVDh2OTV3Q1hLWGR5aEpTMjc4bkFCOHFGQkV6UEFpVkpRaklEcG5mV3V3YjJ4dDBrdTNnOHd3eXVON09rYW80LW9JZm4xYQ?oc=5",
+      "published": "2026-10-05T23:23:40+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12’·‘스마트태그3’ 국내 출시",
+      "source": "한국NGO신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xU2ZZVEhCUEtJSk9jTkk1ZGhQSXZJM1dMVXR2Y1lBUklvZC1aeTZJUDRud2pMbTBsdTMzRUFrMmFLVHdRSWxDa0tYN05WOFAtSEluck91VjA3R1QtRk13NjdQcjFQSWlz?oc=5",
+      "published": "2026-10-05T23:20:15+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시 탭 S12 출시…포토샵 탑재·최대 23시간 사용",
+      "source": "키즈맘",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1CYVVWMTZsVEJ3TjlzZVhCSmFIQ1p1aTdqV1kzUVRhRGFiOGxlU0hOTmNqSVRvS1plamgwbHdTbWk0el9uOEZQTzJ2dHRJVTNicVFsVEswcFJPXzg5ZlVUVjBwZXdhZWFF?oc=5",
+      "published": "2026-10-05T23:16:06+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
+      "source": "Samsung Global Newsroom",
+      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPWlRtTDFVbTI5dVVRNTR6d1ZuZ1BDYWw0R2tpZV9VRlhxNWhPeFVtd05URldQYjdDVnUzNXl5ZW9JSjM4bGdNTVRQOU00YU1Bd0dWQkZCNjRmVzBJSW9qcUoyU19odHFiR1daTWdHSnVOMjgwb1RwcFN5V3hOODdTWjNHYUxIeVBSNy1lOTdEVW8tZHlOMmpXbTJ2M0J6UnBEd2pjc2J6WVBKeUhEUW0zcktoOU5RYmcyYl9pMnhmWlhqbmVMYmt5RUoxVkZYMDFDbFlxMWM5eVY4dW9iODNoaEpvWUJrVm53OTN1amlhZjhtSF9KaVpnM0lKbl9PZERITy1iQWZEZXVXTlV5SHVUajNya212cHY1MWlnV3pHSFFSU2w4OWJPN2ZFWTNocDd6eGMwRFRnUEcyWlE?oc=5",
+      "published": "2026-10-05T23:00:00+00:00"
+    },
+    {
+      "title": "궁금한 항목부터 찾아 읽는 갤럭시 유료 앱 문답 페이지",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNR2YxVXNSaGF4NlN2ZUpoc3lwY3Z2WjE4MExrMGZxcHJMMFJYeFM1YjUyUkFKYWJtNDlvT3lWNUJ3ME85SWFCbVFaRHJ2d0lHUjgyQzEwYzJKSmduR1pSVWJTRmVsYm14Q3hBZ2VVYVMxQldhdThsWXF5b2FSb1Z3SlNWdUpxUzNDX1BoWEUxQjBaaGVvX3h3cUxDQnZXSWdyakVRVnNsR01SMktQdzdKQzcwMmZKb2RNQnFpWnkwYkdNaUF0QkhnTU1aRExpaUZaV2pYUEstSXM1dFI3ck4tYw?oc=5",
+      "published": "2026-10-05T16:08:24+00:00"
+    },
+    {
+      "title": "“AI 안 쓰는 초등생 없다”…갤럭시 무기 된 ‘AI 클래스’",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5FcTBLUVJJc05DcVVkVEVXWnVpaE5sMWtXMC1VZ2tHWHpjY3A0VWtleFlQM3FSaFpJbXI5V0FkY0tmam5SYnBuUjdXaw?oc=5",
+      "published": "2026-10-05T15:04:30+00:00"
+    },
+    {
+      "title": "“AI 안 쓰는 초등생 없다”…갤럭시 무기 된 ‘AI 클래스’",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOelR0VEhUSlRYeC1xb19jTG9lai0zMkJNTXFYRzFSWkFzLTh0aTFPLW1mVVBlUHBFVDZ4aTVlOHJ5UWJCQzFxenFjb292Nl9VM2FZU0dR?oc=5",
+      "published": "2026-10-05T15:02:01+00:00"
+    },
+    {
+      "title": "1교시 AI교육, 2교시 실습…갤럭시 들고 초등학교 간 삼성",
+      "source": "미주중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBOR3ZUb19aaFZ3UVo3TVd2NzFPWDdWdFdJSmpRNnVkcjZhazBNXzRNYkZXdlR1TzUzdGtpVHFrbE1jWFR0YTVuRmtyVjJzZGNfb1lwUFo5ZjFISUFCYjdETHBR?oc=5",
+      "published": "2026-10-05T08:58:00+00:00"
+    },
+    {
+      "title": "1교시 AI교육, 2교시 실습…갤럭시 들고 초등학교 간 삼성",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE95N2JBcEw5RHhzMDRFWHMxdTd3TnBBRHR3ZVlvbWk1OGJBWklCTXBaa0JxdlRpbGZjX0JxQXNsNVdVdnpPdjFBZk1JZw?oc=5",
+      "published": "2026-10-05T07:59:13+00:00"
+    },
+    {
+      "title": "1교시 AI교육, 2교시 실습…갤럭시 들고 초등학교 간 삼성",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9yTlgyUE5JQU5fN1R2dlFLNWhmQ2lRQ1ZuUTg4bS1vbFlKVzhWeTVZaFVKUVpCRGNnUEZvNjE3bVNFaHRnTkdFNDNKeFRPdjkwcVBIc2dB?oc=5",
+      "published": "2026-10-05T07:57:08+00:00"
+    },
+    {
+      "title": "아이폰은 조리개·갤럭시는 AI…스마트폰 카메라, 화소·줌 넘어 ‘빛’ 잡는다",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0xZzV5bWRFSkdoRmpTMVZBMm4zX01XYjlmZlVRdnZxeUFuamoxQzBCdDZlUlF0TXpNUldESWNXWXd3VFRfaGc?oc=5",
+      "published": "2026-10-05T07:39:14+00:00"
+    },
+    {
+      "title": "아이폰은 조리개·갤럭시는 AI…스마트폰 카메라, 화소·줌 넘어 ‘빛’ 잡는다",
+      "source": "www.dt.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ZUFBudHpaWXUtb3JSdEl2LVN6MnQ3WUI3RmpEaXp5VlEyVWFmV2F2QUdVMUpDNTBUZHllMGY0LTg3cXZHX2JkekxvN214Zw?oc=5",
+      "published": "2026-10-05T07:37:07+00:00"
+    },
+    {
+      "title": "갤럭시S27 라인업 이렇게 나온다, 4종 화면 크기 비교",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15Sm44TWU3LTBCcGcwUjJBVldzOW1ZRWNGUnpRYmNzMC1majFNWEQtQ2lQNGhPVFczMTFfZVZfRzdkMHg2dlFhUV9xNlI3d0VRSXJiWDFPbXBFb2pnQzNGYlBldUM?oc=5",
+      "published": "2026-10-05T03:16:11+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 폴드8, 아이폰 듀오보다 53g 가벼워…비결은 '설계'",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1vZ3cxRVdNT2QteVVCTmExRkpZTTBtVFhlLTN3Q3NZRXRldEFGTU1BOHNIaFdmQTYtejMtaElQUlRaMFFXQjV6RnV3dw?oc=5",
+      "published": "2026-10-05T02:22:30+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 폴드8, 아이폰 듀오보다 53g 가벼워…비결은 '설계'",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBIaWgtR1ptRnRDRndoa2gyRWtXM1FTeXYzOVgtZ3VXdmJ6aTdXdzVGbVRLSlU2OTZWZmNfUTBzeGpPZEV1cHgyS0d2SQ?oc=5",
+      "published": "2026-10-05T02:21:17+00:00"
+    },
+    {
+      "title": "갤럭시 Z 폴드8, 아이폰 듀오보다 가벼운 이유…샘모바일 “폴더블 경험 차이”",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9sTndJc1J0LThiTGp5Tk1ydHNQdEJzTlFWWjBEV1NhWnJSZVdzTWhzNkpCLURGcGhKdThlQmdwMzVhcS1qMjgwVjNoSU1TSDBOc2ZMNA?oc=5",
+      "published": "2026-10-05T01:13:00+00:00"
+    }
+  ],
+  "news_spam_removed": 177,
+  "google_trends_matches": []
+}

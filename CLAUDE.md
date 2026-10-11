@@ -18,7 +18,6 @@ Run from the repo root with the venv (`source .venv/bin/activate`):
 pip install -r week-05/requirements.txt          # requests, python-dotenv
 python midterm/collect_trends.py [--geo KR --wiki ko]   # general trending searches
 python midterm/topic_trends.py --topic "피지컬 AI"       # trends around one topic
-python midterm/topic_trends.py                          # every topic in midterm/topics.json
 python midterm/analyze_topic.py --topic "피지컬 AI"      # fact-based, cited explanation (needs .env key)
 python midterm/build_dashboard.py --open                # write + open midterm/dashboard.html
 python midterm/app.py                                   # local web app at localhost:8765: type any topic
@@ -38,7 +37,8 @@ There is no test suite or linter yet.
 - The API key lives only in `.env` (git-ignored). Never put keys in tracked files.
 - The professor grades the git history: commit after each meaningful change with a clear message.
 - Pipeline: `collect_trends.py` / `topic_trends.py` collect → `data/` JSON →
-  `analyze_topic.py` (facts → cited LLM explanation → second-pass claim check) →
+  `analyze_topic.py` (Jev relevance filter → measured facts → Sonnet writes with citations →
+  Jev checks each claim; `jev_api.py`) →
   `build_dashboard.py` fills `dashboard_template.html` with the newest files.
   `app.py` serves the same template with `live: true`, which shows a search box that
   POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
@@ -48,6 +48,11 @@ There is no test suite or linter yet.
   credit for a 65k-token reply and fails on keys with a spending limit.
 - Scripts import each other by module name, so run them by path (`python midterm/...`).
 - `midterm/worker/src/` is a JavaScript port of the Python pipeline (collect.js ≈
-  topic_trends + collect_trends, analyze.js ≈ analyze_topic). Keep both in sync when
-  changing the analysis logic. The worker imports `../dashboard_template.html` as text.
+  topic_trends + collect_trends, analyze.js ≈ analyze_topic + overview). Keep both in sync
+  when changing the analysis logic. The worker imports `../dashboard_template.html` as text.
+  Differences: the worker gets news from Gemini + Google Search (Google News refuses
+  Cloudflare), so it has no daily counts (`news_momentum: null`); local counts use rolling
+  24-hour windows.
+- The page template is bilingual (`STR.ko` / `STR.en`, toggle in the tab bar); new interface
+  strings go in both.
 - `midterm/model_api.py` is a copy of week-05's (week-05 is not committed).

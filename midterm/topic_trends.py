@@ -13,7 +13,6 @@ Each run saves a result to data/topics/<topic>_<time>.json.
 Usage:
     python midterm/topic_trends.py --topic "피지컬 AI"
     python midterm/topic_trends.py --topic "physical AI" --lang en --geo US
-    python midterm/topic_trends.py                 # every topic in topics.json
 """
 import argparse
 import json
@@ -33,7 +32,6 @@ SUGGEST_URL = "https://suggestqueries.google.com/complete/search"
 NEWS_RSS = "https://news.google.com/rss/search"
 
 HERE = Path(__file__).resolve().parent
-TOPICS_FILE = HERE / "topics.json"
 RESULT_DIR = HERE / "data" / "topics"
 
 # Gambling spam sites stuff unrelated keywords into headlines to get into Google News.
@@ -115,40 +113,50 @@ def is_spam(title, topic):
 
 
 def news_by_day(topic, lang, geo, days=7):
-    """Fetch the topic's news one day at a time.
+    """Count the topic's news in 24-hour windows going back from now.
 
-    One query returns at most 100 articles, so a single 7-day query undercounts
-    busy days. Asking per day (after:/before:) keeps each day's count accurate
-    up to 100. Spam headlines are dropped before counting.
-    Returns (articles newest first, count per day today first, spam headlines removed).
+    Windows, not calendar days: at 2 a.m. the calendar day has barely started,
+    which made "today" look nearly empty. Window 0 is the last 24 hours, window 1
+    the 24 hours before that, and so on.
+
+    One query returns at most 100 articles, so the news is fetched one calendar
+    day at a time (after:/before:), one extra day back to fill the oldest window.
+    Spam headlines are dropped before counting. On busy days a query fills its
+    100-article limit and Google's date filter (about a day off, time zones)
+    squeezes out the neighbouring days, so those counts are minimums.
+    Returns (articles newest first, count per window newest first, spam removed,
+    number of queries that hit the 100 limit).
     """
+    now = datetime.now(timezone.utc)
     today = datetime.now().date()
-    day_list = [today - timedelta(days=d) for d in range(days)]
+    day_list = [today - timedelta(days=d) for d in range(days + 1)]
 
     def one_day(day):
         query = f"{topic} after:{day - timedelta(days=1)} before:{day + timedelta(days=1)}"
-        return [
-            a for a in fetch_news(query, lang, geo)
-            if datetime.fromisoformat(a["published"]).astimezone().date() == day
-        ]
+        return fetch_news(query, lang, geo)
 
-    articles, counts, spam = {}, [], 0
+    articles, spam, capped = {}, 0, 0
     with ThreadPoolExecutor(max_workers=4) as pool:
         for day_articles in pool.map(one_day, day_list):
-            clean = [a for a in day_articles if not is_spam(a["title"], topic)]
-            spam += len(day_articles) - len(clean)
-            counts.append(len(clean))
-            for a in clean:
-                articles[a["url"]] = a
+            capped += len(day_articles) >= 100
+            for a in day_articles:
+                if is_spam(a["title"], topic):
+                    spam += 1
+                elif now - datetime.fromisoformat(a["published"]) < timedelta(days=days):
+                    articles[a["url"]] = a
+
+    counts = [0] * days
+    for a in articles.values():
+        counts[(now - datetime.fromisoformat(a["published"])) // timedelta(hours=24)] += 1
     ordered = sorted(articles.values(), key=lambda a: a["published"], reverse=True)
-    return ordered, counts, spam
+    return ordered, counts, spam, capped
 
 
-def news_momentum(per_day):
-    """Today's article count compared with the average of the previous days.
+def news_momentum(per_day, capped_queries=0):
+    """The last 24 hours' article count compared with the average of the earlier windows.
 
     Above 1.0 means the topic is getting more coverage than usual right now.
-    Today is still in progress, so early in the day the number runs low.
+    "today" in the result means the last 24 hours.
     """
     today, previous = per_day[0], per_day[1:]
     baseline = sum(previous) / len(previous) if previous else 0
@@ -156,8 +164,8 @@ def news_momentum(per_day):
         "today": today,
         "previous_daily_average": round(baseline, 1),
         "momentum": round(today / baseline, 2) if baseline else 0.0,
-        "per_day": per_day,  # index 0 = today
-        "capped_days": sum(1 for n in per_day if n >= 100),
+        "per_day": per_day,  # index 0 = last 24 hours
+        "capped_queries": capped_queries,  # queries that hit Google's 100-article limit
     }
 
 
@@ -184,14 +192,14 @@ def matching_trends(topic, geo, extra_words=()):
 # Run ------------------------------------------------------------------------
 
 def analyze_topic(topic, lang, geo, extra_words=()):
-    articles, per_day, spam = news_by_day(topic, lang, geo)
+    articles, per_day, spam, capped = news_by_day(topic, lang, geo)
     return {
         "topic": topic,
         "lang": lang,
         "geo": geo,
         "collected_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "related_searches": related_searches(topic, lang, geo),
-        "news_momentum": news_momentum(per_day),
+        "news_momentum": news_momentum(per_day, capped),
         "news": articles,
         "news_spam_removed": spam,
         "google_trends_matches": matching_trends(topic, geo, extra_words),
@@ -210,11 +218,11 @@ def print_result(result):
     m = result["news_momentum"]
     print(f"\n=== {result['topic']} ({result['geo']}) ===")
     print(
-        f"News: {m['today']} articles today, {m['previous_daily_average']}/day before"
+        f"News: {m['today']} articles in the last 24h, {m['previous_daily_average']}/day before"
         f" -> momentum {m['momentum']}"
-        + (f" ({m['capped_days']} day(s) hit the 100-article cap)" if m["capped_days"] else "")
+        + (f" ({m['capped_queries']} query(s) hit the 100-article limit: counts are minimums)" if m.get("capped_queries") else "")
     )
-    print(f"      per day, today first: {m['per_day']}")
+    print(f"      per 24h window, newest first: {m['per_day']}")
 
     print("\nWhat people search with it (Google autocomplete):")
     for s in result["related_searches"][:20]:
@@ -230,15 +238,9 @@ def print_result(result):
         print(f"  {t['traffic_text']:>7}  {t['term']}")
 
 
-def load_watchlist():
-    if not TOPICS_FILE.exists():
-        return []
-    return json.loads(TOPICS_FILE.read_text(encoding="utf-8"))["topics"]
-
-
 def main():
     parser = argparse.ArgumentParser(description="Find what is trending around one topic.")
-    parser.add_argument("--topic", help="Topic to research. Leave out to run topics.json.")
+    parser.add_argument("--topic", required=True, help="Topic to research")
     parser.add_argument("--lang", default="ko", help="Language code (ko, en, ...)")
     parser.add_argument("--geo", default="KR", help="Country code (KR, US, ...)")
     parser.add_argument(
@@ -247,17 +249,9 @@ def main():
     )
     args = parser.parse_args()
 
-    if args.topic:
-        topics = [{"topic": args.topic, "lang": args.lang, "geo": args.geo, "also": args.also}]
-    else:
-        topics = load_watchlist()
-        if not topics:
-            parser.error("give --topic or add topics to topics.json")
-
-    for t in topics:
-        result = analyze_topic(t["topic"], t.get("lang", "ko"), t.get("geo", "KR"), t.get("also", []))
-        print_result(result)
-        print(f"\nSaved {save_result(result).relative_to(HERE.parent)}")
+    result = analyze_topic(args.topic, args.lang, args.geo, args.also)
+    print_result(result)
+    print(f"\nSaved {save_result(result).relative_to(HERE.parent)}")
 
 
 if __name__ == "__main__":

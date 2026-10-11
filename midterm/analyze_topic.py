@@ -28,7 +28,7 @@ import argparse
 import json
 import re
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import jev_api
@@ -213,14 +213,14 @@ def headline_words(title, topic_words):
 
 
 def news_drivers(news, topic, top=12):
-    """Words that are much more common in today's headlines than in earlier ones."""
+    """Words that are much more common in the last 24 hours' headlines than in earlier ones."""
     topic_words = {w.lower() for w in re.split(r"\s+", topic)} | {topic.lower().replace(" ", "")}
-    today = datetime.now().astimezone().date()
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
     today_count, before_count = Counter(), Counter()
     today_n = before_n = 0
     for a in news:
         words = headline_words(a["title"], topic_words)
-        if datetime.fromisoformat(a["published"]).astimezone().date() == today:
+        if datetime.fromisoformat(a["published"]) >= cutoff:
             today_count.update(words)
             today_n += 1
         else:
@@ -244,7 +244,7 @@ def news_drivers(news, topic, top=12):
         )
     # New-today and big-lift words first.
     drivers.sort(key=lambda d: (d["lift"] is not None, -(d["lift"] or 0), -d["headlines_today"]))
-    return drivers[:top], today_n
+    return drivers[:top]
 
 
 # Scheduled events -------------------------------------------------------------
@@ -326,8 +326,10 @@ def build_evidence(facts, news, max_headlines=40):
     evidence = {}
     m = facts["coverage"]
     evidence["D1"] = (
-        f"News articles per day for the last {len(m['per_day'])} days, today first: {m['per_day']}. "
-        f"Today {m['today']} vs previous average {m['previous_daily_average']} -> momentum {m['momentum']}."
+        f"News articles per 24-hour window for the last {len(m['per_day'])} days, newest first: {m['per_day']}. "
+        f"Last 24 hours {m['today']} vs earlier average {m['previous_daily_average']} -> momentum {m['momentum']}."
+        + (" Some busy days hit Google's 100-article limit, so their counts are minimums; do not read"
+           " small differences between days as trends." if m.get("capped_queries") else "")
     )
     evidence["D2"] = "Search intent from Google autocomplete (share of suggestions): " + "; ".join(
         f"{i['intent']} {int(i['share'] * 100)}% (e.g. {', '.join(i['examples'][:3])})" for i in facts["intent"]
@@ -551,7 +553,7 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
 
     kept, dropped, relevance_method = relevant_news(data["news"], topic)
     data = {**data, "news": kept}
-    drivers, today_n = news_drivers(data["news"], topic)
+    drivers = news_drivers(data["news"], topic)
     intent_method, intents = search_intent(data["related_searches"], topic)
     facts = {
         "coverage": data["news_momentum"],

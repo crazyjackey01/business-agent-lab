@@ -162,8 +162,7 @@ export async function searchIntent(env, related, topic) {
   const byRule = Object.fromEntries(related.map(r => [r.phrase, classifyIntent(r.phrase, topic)]));
   const leftovers = Object.keys(byRule).filter(p => byRule[p] === "other").slice(0, 150);
   let byModel = {};
-  // JEV_FOR_INTENT turns Jev on for this step (set in wrangler.jsonc).
-  if (leftovers.length && env.OPENCODE_API_KEY && env.JEV_FOR_INTENT) {
+  if (leftovers.length && env.OPENCODE_API_KEY) {
     byModel = await classifyWithJev(env, leftovers, topic).catch(() => ({}));
   }
   if (leftovers.length && !Object.keys(byModel).length) byModel = await classifyWithModel(env, leftovers, topic);
@@ -498,14 +497,13 @@ export async function analyze(env, data) {
   const facts = {
     topic: data.topic,
     coverage: data.news_momentum,
-    news_unavailable: (data.source_errors || []).some(e => e.startsWith("news")),
+    news_unavailable: !data.news_momentum,
     spam_removed: data.news_spam_removed || 0,
     intent: await searchIntent(env, data.related_searches, data.topic),
-    intent_method: `word lists, then ${env.OPENCODE_API_KEY && env.JEV_FOR_INTENT ? "Jev" : "the text model"} for phrases they missed`,
+    intent_method: `word lists, then ${env.OPENCODE_API_KEY ? "Jev" : "the text model"} for phrases they missed`,
     drivers: newsDrivers(data.news, data.topic, data.geo),
     events: scheduledEvents(data.news),
     trends_matches: data.google_trends_matches,
-    history: [],
     relevance: {
       method: relevance.method,
       kept: relevance.kept.length,

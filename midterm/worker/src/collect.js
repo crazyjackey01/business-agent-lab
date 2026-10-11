@@ -2,15 +2,8 @@
 // Same sources, same output shape, so the dashboard template works for both.
 
 const HEADERS = { "User-Agent": "business-agent-lab-midterm/0.1 (student project)" };
-// Google News rejects unknown clients from data-center addresses, so it gets a browser's headers.
-const BROWSER_HEADERS = {
-  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36",
-  "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
-  "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
-};
 const TRENDS_RSS = "https://trends.google.com/trending/rss?geo=";
 const SUGGEST_URL = "https://suggestqueries.google.com/complete/search";
-const NEWS_RSS = "https://news.google.com/rss/search";
 const WIKI_TOP = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top";
 
 // Gambling spam sites stuff unrelated keywords into headlines to get into Google News.
@@ -167,55 +160,6 @@ export async function relatedSearches(topic, lang, geo) {
 
 // News ----------------------------------------------------------------------------
 
-async function fetchNews(query, lang, geo) {
-  const params = new URLSearchParams({ q: query, hl: lang, gl: geo, ceid: `${geo}:${lang}` });
-  const xml = await getText(`${NEWS_RSS}?${params}`, BROWSER_HEADERS);
-  const articles = [];
-  for (const item of items(xml)) {
-    const source = tag(item, "source");
-    let title = tag(item, "title");
-    // Google appends " - Source" to every title.
-    if (source && title.endsWith(` - ${source}`)) title = title.slice(0, -(source.length + 3));
-    const published = new Date(tag(item, "pubDate"));
-    if (isNaN(published)) continue;
-    articles.push({ title, source, url: tag(item, "link"), published: published.toISOString() });
-  }
-  return articles;
-}
-
-// One query returns at most 100 articles, so ask per day (after:/before:) to keep
-// each day's count accurate. Spam is dropped before counting.
-// Returns [articles newest first, counts today first, spam headlines removed].
-export async function newsByDay(topic, lang, geo, days = 7) {
-  const today = dayIn(new Date(), geo);
-  const dayList = Array.from({ length: days }, (_, d) => addDays(today, -d));
-  const oneDay = async day => {
-    const query = `${topic} after:${addDays(day, -1)} before:${addDays(day, 1)}`;
-    return (await fetchNews(query, lang, geo)).filter(a => dayIn(new Date(a.published), geo) === day);
-  };
-  // Two days at a time: all seven at once gets refused by Google more often.
-  const perDay = [];
-  for (let i = 0; i < dayList.length; i += 2) perDay.push(...await Promise.all(dayList.slice(i, i + 2).map(oneDay)));
-
-  const clean = perDay.map(list => list.filter(a => !isSpam(a.title, topic)));
-  const spam = perDay.flat().length - clean.flat().length;
-  const byUrl = new Map();
-  clean.flat().forEach(a => byUrl.set(a.url, a));
-  const articles = [...byUrl.values()].sort((a, b) => b.published.localeCompare(a.published));
-  return [articles, clean.map(list => list.length), spam];
-}
-
-export function newsMomentum(perDay) {
-  const [today, ...previous] = perDay;
-  const baseline = previous.length ? previous.reduce((a, b) => a + b, 0) / previous.length : 0;
-  return {
-    today,
-    previous_daily_average: Math.round(baseline * 10) / 10,
-    momentum: baseline ? Math.round((today / baseline) * 100) / 100 : 0,
-    per_day: perDay,
-    capped_days: perDay.filter(n => n >= 100).length,
-  };
-}
 
 // News through Gemini with Google Search ---------------------------------------
 // Google News refuses Cloudflare's servers, but Google's official Gemini API can search
@@ -353,16 +297,11 @@ export function matchingTrends(trends, topic, extraWords = []) {
 
 export async function collectTopic(env, topic, lang, geo) {
   // A blocked source should not stop the search; the page shows which ones failed.
+  // News comes only from Gemini + Google Search here: the Google News feed refuses
+  // Cloudflare's servers, so there are no daily counts (momentum) in this version.
   const sourceErrors = [];
-  const [related, [news, perDay, spam], trends] = await Promise.all([
+  const [related, trends] = await Promise.all([
     relatedSearches(topic, lang, geo),
-    // With a Gemini key, skip the Google News feed: it refuses Cloudflare's servers anyway.
-    env.GEMINI_API_KEY ? (sourceErrors.push("news counts: the Google News feed is not reachable from Cloudflare"),
-      Promise.resolve([[], [0, 0, 0, 0, 0, 0, 0], 0])) :
-    newsByDay(topic, lang, geo).catch(error => {
-      sourceErrors.push(`news: ${error.message}`);
-      return [[], [0, 0, 0, 0, 0, 0, 0], 0];
-    }),
     fetchGoogleTrends(geo).catch(error => {
       sourceErrors.push(`google trends: ${error.message}`);
       return [];
@@ -370,22 +309,22 @@ export async function collectTopic(env, topic, lang, geo) {
   ]);
   if (!related.length) sourceErrors.push("autocomplete: no suggestions returned");
 
-  // Google News is refused here, so the articles come from Gemini + Google Search,
-  // searched for the topic and for the top autocomplete phrases (hence after related).
+  // Searched for the topic and for the top autocomplete phrases (hence after related).
   const google = env.GEMINI_API_KEY
     ? await geminiNews(env, topic, geo, related).catch(error => { sourceErrors.push(`gemini search: ${error.message}`); return null; })
     : null;
   if (google?.failed?.length) sourceErrors.push(...google.failed.map(f => `gemini search (one angle): ${f}`));
-  const articles = news.length ? news : (google?.articles || []).filter(a => !isSpam(a.title, topic));
+  const found = google?.articles || [];
+  const articles = found.filter(a => !isSpam(a.title, topic));
   return {
     topic, lang, geo,
     collected_at: new Date().toISOString().slice(0, 19) + "+00:00",
     related_searches: related,
-    news_momentum: newsMomentum(perDay),
+    news_momentum: null, // needs daily counts; only the local version has them
     news: articles,
-    news_source: news.length ? "Google News feed" : google ? `Google Search via ${google.model}` : "none",
+    news_source: google ? `Google Search via ${google.model}` : "none",
     google_search: google && { queries: google.queries, searched: google.searched, suggestions: google.suggestions, dropped_uncited: google.dropped_uncited },
-    news_spam_removed: spam,
+    news_spam_removed: found.length - articles.length,
     google_trends_matches: matchingTrends(trends, topic),
     source_errors: sourceErrors,
   };

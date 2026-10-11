@@ -1,0 +1,335 @@
+{
+  "collected_at": "2026-10-11T17:12:24+00:00",
+  "geo": "KR",
+  "wiki": "ko",
+  "wiki_day": "2026-10-10",
+  "google_trends": [
+    {
+      "term": "청년",
+      "traffic": 5000,
+      "traffic_text": "5000+",
+      "started": "Sun, 11 Oct 2026 07:10:00 -0700",
+      "news": [
+        {
+          "title": "정부는 안정적인 계란 공급을 위해 신선란 수입선을 다변화해 왔습니다.",
+          "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973280",
+          "source": "정책브리핑"
+        },
+        {
+          "title": "‘연 최고 19.4%’ 청년미래적금, 내일부터 출생연도 관계없이 신청 - 조선비즈",
+          "url": "https://biz.chosun.com/stock/finance/2026/10/11/YXZLEKIRQZFTHMDIQV65STLHNQ/",
+          "source": "Chosunbiz"
+        },
+        {
+          "title": "최대 연 19.4% 금리 적금에 가입한 효과…“기회 놓치면 속상하겠네”",
+          "url": "https://stock.mk.co.kr/news/view/1172602",
+          "source": "매일경제 마켓"
+        }
+      ]
+    },
+    {
+      "term": "맨시티",
+      "traffic": 2000,
+      "traffic_text": "2000+",
+      "started": "Sun, 11 Oct 2026 08:10:00 -0700",
+      "news": [
+        {
+          "title": "이사크·각포 맨시티전 결장 확정…홀란 막을 리버풀의 선택은?",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=16243025",
+          "source": "TopStarNews"
+        },
+        {
+          "title": "2018년엔 병·벽돌·플레어 날아왔다… 스캔들 후 첫 경기가 하필 리버풀 안필드, 맨시티 버스 공격 우려에 英 경찰 비상",
+          "url": "https://www.besteleven.com/news/articleView.html?idxno=312931",
+          "source": "베스트일레븐"
+        },
+        {
+          "title": "[오피셜]'또 부상이야, 리버풀의 미래 맞나' 프랑스 국대 센터백 제레미 자케, 햄스트링 부상→대표팀 소집 해제→클럽 복귀..'어깨→무릎→허벅지 줄부상'",
+          "url": "https://www.chosun.com/sports/world-football/2026/10/06/GM2TCYRWMUYWMZRUGZSTIMTGGQ/",
+          "source": "조선일보"
+        }
+      ]
+    },
+    {
+      "term": "liverpool vs man city",
+      "traffic": 1000,
+      "traffic_text": "1000+",
+      "started": "Sun, 11 Oct 2026 07:40:00 -0700",
+      "news": [
+        {
+          "title": "Premier League: Cherki makes it 3-0 as Man City run riot against 10-man Liverpool",
+          "url": "https://www.bbc.com/sport/football/live/cr3el8xwnnxkt",
+          "source": "BBC"
+        },
+        {
+          "title": "Liverpool vs Man City LIVE! Premier League score updates, news, prediction, lineups and how to watch or stream",
+          "url": "https://www.skysports.com/football/live-blog/13592734/liverpool-vs-man-city-live-premier-league-score-updates-news-prediction-lineups-and-how-to-watch-or-stream",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "On demand: Watch Andoni Iraola's pre-Manchester City press conference",
+          "url": "https://www.liverpoolfc.com/news/andoni-iraola-liverpool-manchester-city-press-conference-premier-league",
+          "source": "Liverpool FC"
+        }
+      ]
+    },
+    {
+      "term": "f1",
+      "traffic": 1000,
+      "traffic_text": "1000+",
+      "started": "Sun, 11 Oct 2026 06:40:00 -0700",
+      "news": [
+        {
+          "title": "Verstappen seals commanding Singapore victory",
+          "url": "https://www.formula1.com/en/latest/article/verstappen-seals-commanding-singapore-grand-prix-victory-from-leclerc-and-antonelli.49wDzysiVqi5cloGjle40A",
+          "source": "Formula 1"
+        },
+        {
+          "title": "Max Verstappen wins Singapore Grand Prix: Formula One 2026 race – as it happened",
+          "url": "https://www.theguardian.com/sport/live/2026/oct/11/singapore-grand-prix-formula-one-2026-race-updates-live",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Red Bull's Laurent Mekies explains Verstappen's F1 wins in Malaysia and Singapore",
+          "url": "https://grandepremio.com/en/f1/red-bull-stunned-by-verstappens-back-to-back-domination-another-layer-of-max-magic/",
+          "source": "Grande Prêmio"
+        }
+      ]
+    },
+    {
+      "term": "레알 소시에다드 대 데포르티보",
+      "traffic": 500,
+      "traffic_text": "500+",
+      "started": "Sun, 11 Oct 2026 06:50:00 -0700",
+      "news": [
+        {
+          "title": "레알 소시에다드 대 데포르티보 라 코루나 예측: 방문객들은 하락세를 멈추기로 결정했습니다.",
+          "url": "https://www.vietnam.vn/ko/nhan-dinh-real-sociedad-vs-deportivo-la-coruna-khach-quyet-chan-da-sa-sut",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "라리가 레알 소시에다드 대 데포르티보 경기 예측",
+          "url": "https://ko.laodong.vn/bong-da-quoc-te/nhan-dinh-tran-real-sociedad-vs-deportivo-tai-la-liga-1781415.ldo",
+          "source": "Laodong.vn"
+        }
+      ]
+    },
+    {
+      "term": "india vs west indies",
+      "traffic": 500,
+      "traffic_text": "500+",
+      "started": "Sun, 11 Oct 2026 06:50:00 -0700",
+      "news": [
+        {
+          "title": "India and West Indies head to Indore for potential run-fest with series level",
+          "url": "https://www.cricinfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-3rd-t20i-1529232/match-preview",
+          "source": "Cricinfo"
+        },
+        {
+          "title": "Where to watch India vs. West Indies live stream, TV channel, start time and lineups for 3rd T20I",
+          "url": "https://sports.yahoo.com/articles/where-watch-india-vs-west-023002364.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "India, WI brace for another run fest in 3rd T20I",
+          "url": "https://dailypioneer.com/news/india-wi-brace-for-another-run-fest-in-3rd-t20i",
+          "source": "Daily Pioneer"
+        }
+      ]
+    },
+    {
+      "term": "ลิเวอร์พูล พบ แมนซิตี",
+      "traffic": 200,
+      "traffic_text": "200+",
+      "started": "Sun, 11 Oct 2026 08:30:00 -0700",
+      "news": [
+        {
+          "title": "ลิเวอร์พูล ปะทะ แมนเชสเตอร์ ซิตี้: สนามแอนฟิลด์ที่แข็งแกร่งรอต้อนรับทีมเรือใบสีฟ้าอยู่",
+          "url": "https://www.vietnam.vn/th/liverpool-manchester-city-hiem-dia-anfield-cho-the-citizens",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "115คดีแมนซิตี้vsพรีเมียร์ลีก ‘เรื่องบอล’ที่ไม่ใช่’เรื่องบอล’",
+          "url": "https://www.naewna.com/n/sports/107171/",
+          "source": "แนวหน้า"
+        },
+        {
+          "title": "มาเรสกา ยืนยันเชื่อมั่นในสโมสร แมนเชสเตอร์ ซิตี้ - ชี้โฟกัสดวลหงส์เต็มที่",
+          "url": "https://www.khaosod.co.th/sports/news_10432011",
+          "source": "ข่าวสด"
+        }
+      ]
+    },
+    {
+      "term": "liverpool đấu với man city",
+      "traffic": 200,
+      "traffic_text": "200+",
+      "started": "Sun, 11 Oct 2026 08:20:00 -0700",
+      "news": [
+        {
+          "title": "Trận đại chiến Man City có thể là bước ngoặt cho Barcola",
+          "url": "https://yeuthethao.net.vn/tran-dai-chien-man-city-co-the-la-buoc-ngoat-cho-barcola-d898214.html",
+          "source": "yeuthethao.net.vn"
+        },
+        {
+          "title": "Trực tiếp Liverpool 0-0 Man City (Hết hiệp 1): Hai bên giằng co trong thế trận bế tắc",
+          "url": "https://www.vietnam.vn/truc-tiep-liverpool-0-0-man-city-het-hiep-1-hai-ben-giang-co-trong-the-tran-be-tac",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "Man City bị chỉ trích dữ dội tại Anfield sau bê bối tài chính",
+          "url": "https://bongda24h.vn/bong-da-anh/man-city-bi-chi-trich-du-doi-tai-anfield-sau-be-boi-tai-chinh-172-461984.html",
+          "source": "Bongda24h"
+        }
+      ]
+    },
+    {
+      "term": "김성한",
+      "traffic": 200,
+      "traffic_text": "200+",
+      "started": "Sun, 11 Oct 2026 07:50:00 -0700",
+      "news": [
+        {
+          "title": "차에서 내린 취객이 ‘빠직’···또 파손된 김성한 전 해태 타이거즈 선수 조형물, 이번엔 발목만 남았다",
+          "url": "https://www.khan.co.kr/article/202610111919001",
+          "source": "경향신문"
+        },
+        {
+          "title": "취객이 또 부순 김성한 조형물…광주 용봉동 거리엔 발목만 남았다",
+          "url": "https://www.newsis.com/view/NISX20261011_0003821104",
+          "source": "뉴시스"
+        },
+        {
+          "title": "김성한 전 해태 선수 조형물 또 훼손… 경찰 수사",
+          "url": "https://www.kyeonggi.com/article/20261011580321",
+          "source": "경기일보"
+        }
+      ]
+    },
+    {
+      "term": "fotmob",
+      "traffic": 100,
+      "traffic_text": "100+",
+      "started": "Sun, 11 Oct 2026 08:20:00 -0700",
+      "news": [
+        {
+          "title": "'USA is not a football country', says Giroud",
+          "url": "https://www.fotmob.com/nb/news/1c73r2ub9a41j1n70plhn44939-usa-is-not-football-country-says-giroud",
+          "source": "FotMob"
+        },
+        {
+          "title": "'The US is Not a Football Country' - Olivier Giroud Slams MLS After Spell at LAFC",
+          "url": "https://www.givemesport.com/olivier-giroud-slams-mls-lafc-united-states-not-football-country/",
+          "source": "GiveMeSport"
+        },
+        {
+          "title": "'Not a football country!' - Olivier Giroud slams MLS after abrupt LAFC exit",
+          "url": "https://www.goal.com/en-ca/lists/not-a-football-country-olivier-giroud-slams-mls-after-abrupt-lafc-exit/blt1b7d4095c6a6f982",
+          "source": "Goal.com"
+        }
+      ]
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "title": "문화방송",
+      "views": 13213
+    },
+    {
+      "title": "닥터X: 하얀 마피아의 시대",
+      "views": 12140
+    },
+    {
+      "title": "한국방송공사",
+      "views": 11679
+    },
+    {
+      "title": "한국교육방송공사",
+      "views": 5701
+    },
+    {
+      "title": "김지원 (배우)",
+      "views": 3341
+    },
+    {
+      "title": "휘성",
+      "views": 2957
+    },
+    {
+      "title": "육영수 저격 사건",
+      "views": 2328
+    },
+    {
+      "title": "리센느",
+      "views": 2316
+    },
+    {
+      "title": "최옥영",
+      "views": 2051
+    },
+    {
+      "title": "5·18 광주 민주화 운동",
+      "views": 1982
+    },
+    {
+      "title": "닥터-X~외과의·다이몬 미치코~",
+      "views": 1867
+    },
+    {
+      "title": "이진희 (배우)",
+      "views": 1810
+    },
+    {
+      "title": "장예원 (아나운서)",
+      "views": 1731
+    },
+    {
+      "title": "일루미나티",
+      "views": 1679
+    },
+    {
+      "title": "100일의 거짓말",
+      "views": 1547
+    },
+    {
+      "title": "박신정",
+      "views": 1419
+    },
+    {
+      "title": "인스타그램",
+      "views": 1408
+    },
+    {
+      "title": "강은철",
+      "views": 1349
+    },
+    {
+      "title": "여성 사정",
+      "views": 1267
+    },
+    {
+      "title": "박정희",
+      "views": 1250
+    },
+    {
+      "title": "코리아세일페스타",
+      "views": 1244
+    },
+    {
+      "title": "금성대군",
+      "views": 1225
+    },
+    {
+      "title": "대한민국",
+      "views": 1187
+    },
+    {
+      "title": "사랑이 온다 (드라마)",
+      "views": 1176
+    },
+    {
+      "title": "지셀르 리본느",
+      "views": 1173
+    }
+  ]
+}
