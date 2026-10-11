@@ -45,9 +45,26 @@ in Korea, others in the US, or pick the region. Each result is saved under `midt
 
 ### On Cloudflare (public server)
 
+Live at **https://trend-signals.gimailft01.workers.dev** (running a search needs the class password).
+
 `midterm/worker/` is the same app as a Cloudflare Worker (JavaScript port of the
-pipeline, same page template). Analyses are stored in Workers KV; running a search
-needs the class password. Deploy:
+pipeline, same page template). Analyses are stored in Workers KV.
+
+What runs where on Cloudflare, and why:
+
+| Step | Source / model | Note |
+|---|---|---|
+| Related searches | Google autocomplete | works from Cloudflare |
+| Trending now | Google Trends RSS, Wikipedia | works from Cloudflare |
+| News articles | **Gemini + Google Search** (official API) | the Google News feed refuses Cloudflare's servers (HTTP 503); only articles Google attached a citation to are kept |
+| Writing the analysis | **Claude Sonnet 5.5** via OpenRouter | follows the cite-every-claim rules closely |
+| Claim check | Jev, falling back to the writing model | Jev's free tier answers 429 to Cloudflare |
+
+The Worker is pinned to Google Cloud's Seoul region (`placement` in `wrangler.jsonc`),
+because Gemini refuses requests from some of the locations Cloudflare would otherwise use.
+Daily news counts (momentum) are only available in the local version.
+
+Deploy:
 
 ```sh
 cd midterm/worker
@@ -56,6 +73,8 @@ npx wrangler login                          # once, opens the browser
 npx wrangler kv namespace create ANALYSES   # once; put the id in wrangler.jsonc
 npx wrangler secret put OPENROUTER_API_KEY
 npx wrangler secret put SEARCH_PASSWORD
+npx wrangler secret put GEMINI_API_KEY      # news via Google Search
+npx wrangler secret put OPENCODE_API_KEY    # Jev (optional)
 npx wrangler deploy
 ```
 

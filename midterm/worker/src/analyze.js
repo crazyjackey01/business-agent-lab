@@ -7,7 +7,8 @@
 import { dayIn } from "./collect.js";
 
 const OPENROUTER = "https://openrouter.ai/api/v1/chat/completions";
-const DEFAULT_MODEL = "nvidia/nemotron-3-super-120b-a12b:free";
+// Writes the analysis. Override with the OPENROUTER_MODEL variable.
+const DEFAULT_MODEL = "anthropic/claude-sonnet-5.5";
 const JEV_ENDPOINT = "https://opencode.ai/zen/v1/systemone";
 const JEV_MAX_QUESTIONS = 200; // one request per step when possible: the free tier allows few requests per minute
 
@@ -298,7 +299,7 @@ export function buildEvidence(facts, news, maxHeadlines = 40) {
   const m = facts.coverage;
   // A blocked news source must not read as "no news was published".
   evidence.D1 = facts.news_unavailable
-    ? "News coverage could NOT be measured this time: the news source refused the request. Say nothing about news volume."
+    ? "Daily news counts could NOT be measured this time (the news feed refused the request). The [S] articles below come from Google Search and are a sample, not a count. Say nothing about news volume or momentum."
     : `News articles per day for the last ${m.per_day.length} days, today first: [${m.per_day.join(", ")}]. `
     + `Today ${m.today} vs previous average ${m.previous_daily_average} -> momentum ${m.momentum}.`;
   evidence.D2 = "Search intent from Google autocomplete (share of suggestions): " + facts.intent.map(i =>
@@ -315,7 +316,7 @@ export function buildEvidence(facts, news, maxHeadlines = 40) {
     if (!seen.has(a.url)) { seen.add(a.url); chosen.push(a); }
   }
   chosen.slice(0, maxHeadlines).forEach((a, i) => {
-    evidence[`S${i + 1}`] = `${a.published.slice(0, 10)} | ${a.source} | ${a.title}`;
+    evidence[`S${i + 1}`] = `${a.published.slice(0, 10)} | ${a.source} | ${a.title}` + (a.summary ? ` | ${a.summary}` : "");
     links[`S${i + 1}`] = a.url;
   });
   return [evidence, links];
@@ -452,6 +453,9 @@ export async function analyze(env, data) {
     geo: data.geo,
     source_collected_at: data.collected_at,
     source_errors: data.source_errors || [],
+    news_source: data.news_source,
+    google_search: data.google_search || null,
+    writer_model: env.OPENROUTER_MODEL || DEFAULT_MODEL,
     analyzed_at: new Date().toISOString().slice(0, 19) + "+00:00",
     facts, evidence, evidence_links: links,
     related_searches: data.related_searches,

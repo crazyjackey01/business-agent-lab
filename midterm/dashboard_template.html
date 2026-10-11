@@ -162,6 +162,7 @@ function topicSection(a) {
          ${e.caveats && e.caveats.length ? `<p class="note">Caveats: ${e.caveats.map(esc).join(" · ")}</p>` : ""}
          ${e.unsupported_claims_removed ? `<p class="note">${e.unsupported_claims_removed} claim(s) without valid citations were removed.</p>` : ""}
          ${e.failed_check_removed ? `<p class="note">${e.failed_check_removed} claim(s) failed the evidence check and were removed.</p>` : ""}
+         ${a.writer_model ? `<p class="note">Written by ${esc(a.writer_model)} from the evidence below.</p>` : ""}
          ${e.checked_by ? `<p class="note">Claims checked against their evidence by ${e.checked_by === "jev" ? "Jev (a decision model that can only answer supported / partly / unsupported, with a probability)" : "a second text-model pass"}.</p>` : ""}
        </div>`;
 
@@ -184,6 +185,9 @@ function topicSection(a) {
       <div class="card"><h3>What people type with it</h3><div class="chips">${searches}</div></div>
       <div class="card"><h3>Today's news drivers</h3><div class="chips">${drivers || '<span class="empty">None</span>'}</div>
         <p class="note">Words far more common in today's headlines than earlier.</p></div>
+      ${a.google_search ? `<div class="card wide"><h3>News found with Google Search</h3>
+        <p class="note">Articles come from ${esc(a.news_source)}. Only articles Google attached a source citation to are used${a.google_search.dropped_uncited > 0 ? ` (${a.google_search.dropped_uncited} without a citation were dropped)` : ""}. Searches Google ran: ${(a.google_search.queries || []).map(esc).join(", ")}</p>
+        <div class="google-suggestions">${a.google_search.suggestions || ""}</div></div>` : ""}
       <div class="card wide"><h3>Scheduled events in the news</h3><ul class="clean">${events || '<li class="empty">None found</li>'}</ul></div>
       ${explanation}
       <div class="card wide"><details><summary>All evidence given to the model (${Object.keys(a.evidence).length} items)</summary>

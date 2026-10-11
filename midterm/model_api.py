@@ -15,9 +15,10 @@ from dotenv import load_dotenv
 # The endpoint is the address of the OpenRouter API.
 ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 
-# A free model that supports tool calling. To try another model, add a line such as
-# OPENROUTER_MODEL=openrouter/free to the .env file. No code change is needed.
-DEFAULT_MODEL = "nvidia/nemotron-3-super-120b-a12b:free"
+# Claude Sonnet writes the analysis: strong at following the cite-everything rules.
+# Paid (about $0.04 per search). To use another model, add a line such as
+# OPENROUTER_MODEL=nvidia/nemotron-3-super-120b-a12b:free to the .env file.
+DEFAULT_MODEL = "anthropic/claude-sonnet-5.5"
 
 # business-agent-lab/.env is one folder above this file, wherever you run the script from.
 ENV_FILE = Path(__file__).resolve().parent.parent / ".env"

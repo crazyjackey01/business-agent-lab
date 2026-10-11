@@ -9,8 +9,13 @@
     // Created with: npx wrangler kv namespace create ANALYSES
     { "binding": "ANALYSES", "id": "a58f3438df374fe8b85bcb8d4f5524d3" }
   ],
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // Run in one fixed region (Google Cloud Seoul). Otherwise the Worker runs wherever the
+  // visitor's nearest Cloudflare data center is, and Gemini refuses some of those
+  // locations ("User location is not supported").
+  "placement": { "mode": "targeted", "region": "gcp:asia-northeast3" }
   // Secrets (never in this file): npx wrangler secret put OPENROUTER_API_KEY
   //                                npx wrangler secret put SEARCH_PASSWORD
   //                                npx wrangler secret put OPENCODE_API_KEY   (Jev, optional)
+  //                                npx wrangler secret put GEMINI_API_KEY     (news via Google Search)
 }

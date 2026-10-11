@@ -205,6 +205,73 @@ export function newsMomentum(perDay) {
   };
 }
 
+// News through Gemini with Google Search ---------------------------------------
+// Google News refuses Cloudflare's servers, but Google's official Gemini API can search
+// Google for us. Gemini lists the articles it found, and Google attaches citations
+// (url_citation annotations) to the parts of its answer that come from real pages.
+// An article is kept only if its line carries such a citation, so the model cannot
+// add an article that Google Search did not return.
+
+const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/interactions";
+const GEMINI_SEARCH_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash"]; // second one if the first is busy
+
+async function geminiSearch(env, input) {
+  let lastError;
+  for (const model of GEMINI_SEARCH_MODELS) {
+    const response = await fetch(GEMINI_URL, {
+      method: "POST",
+      headers: { "x-goog-api-key": env.GEMINI_API_KEY, "Content-Type": "application/json" },
+      body: JSON.stringify({ model, input, tools: [{ type: "google_search" }] }),
+    });
+    const data = await response.json().catch(() => ({}));
+    if (response.ok && !data.error) return { ...data, model };
+    lastError = `Gemini ${model}: ${data.error?.message || response.status}`;
+  }
+  throw new Error(lastError);
+}
+
+export async function geminiNews(env, topic, geo) {
+  const today = dayIn(new Date(), geo);
+  const where = geo === "KR" ? " in South Korea (Korean-language news)" : geo === "US" ? " (English-language news)" : "";
+  const input = `Use Google Search to find news articles published in the 7 days up to ${today} about "${topic}"${where}.
+List up to 20 different articles, newest first, one per line, exactly in this format and nothing else:
+YYYY-MM-DD | outlet | headline | one sentence with the key facts the article reports`;
+  const data = await geminiSearch(env, input);
+
+  let text = "", annotations = [], suggestions = "", queries = [];
+  for (const step of data.steps || []) {
+    if (step.type === "google_search_call") queries.push(...(step.arguments?.queries || []));
+    if (step.type === "google_search_result") suggestions ||= step.result?.find(r => r.search_suggestions)?.search_suggestions || "";
+    if (step.type === "model_output") {
+      for (const c of step.content || []) {
+        if (c.type === "text") { annotations.push(...(c.annotations || []).map(a => ({ ...a, offset: new TextEncoder().encode(text).length }))); text += c.text; }
+      }
+    }
+  }
+
+  // Citation positions count UTF-8 bytes, not characters, so measure lines in bytes.
+  const encoder = new TextEncoder();
+  const articles = [];
+  let byte = 0;
+  for (const line of text.split("\n")) {
+    const start = byte, end = byte + encoder.encode(line).length;
+    byte = end + 1;
+    const parts = line.replace(/^[\s*•-]+/, "").split("|").map(x => x.trim());
+    if (parts.length < 3 || !/^\d{4}-\d{2}-\d{2}$/.test(parts[0])) continue;
+    const cites = annotations.filter(a => a.type === "url_citation" && a.offset + a.end_index > start && a.offset + a.end_index <= end + 1);
+    if (!cites.length) continue; // no Google citation: not kept
+    articles.push({
+      title: parts[2],
+      source: parts[1],
+      summary: parts[3] || "",
+      url: cites[0].url,
+      cited_domains: [...new Set(cites.map(c => c.title))],
+      published: new Date(parts[0] + "T12:00:00Z").toISOString(),
+    });
+  }
+  return { articles, suggestions, queries, model: data.model, dropped_uncited: text.split("\n").filter(l => /^\s*[*•-]?\s*\d{4}-\d{2}-\d{2}\s*\|/.test(l)).length - articles.length };
+}
+
 // Trending searches that mention the topic. Latin words must match as whole words
 // ("ai" must not match "weather"); Korean matches anywhere because of particles.
 export function matchingTrends(trends, topic, extraWords = []) {
@@ -216,11 +283,18 @@ export function matchingTrends(trends, topic, extraWords = []) {
   });
 }
 
-export async function collectTopic(topic, lang, geo) {
+export async function collectTopic(env, topic, lang, geo) {
   // A blocked source should not stop the search; the page shows which ones failed.
   const sourceErrors = [];
+  // Gemini's search is the slowest step, so it starts first and runs alongside the rest.
+  const googlePromise = env.GEMINI_API_KEY
+    ? geminiNews(env, topic, geo).catch(error => { sourceErrors.push(`gemini search: ${error.message}`); return null; })
+    : Promise.resolve(null);
   const [related, [news, perDay, spam], trends] = await Promise.all([
     relatedSearches(topic, lang, geo),
+    // With a Gemini key, skip the Google News feed: it refuses Cloudflare's servers anyway.
+    env.GEMINI_API_KEY ? (sourceErrors.push("news counts: the Google News feed is not reachable from Cloudflare"),
+      Promise.resolve([[], [0, 0, 0, 0, 0, 0, 0], 0])) :
     newsByDay(topic, lang, geo).catch(error => {
       sourceErrors.push(`news: ${error.message}`);
       return [[], [0, 0, 0, 0, 0, 0, 0], 0];
@@ -231,12 +305,18 @@ export async function collectTopic(topic, lang, geo) {
     }),
   ]);
   if (!related.length) sourceErrors.push("autocomplete: no suggestions returned");
+
+  // Google News is refused here, so the articles come from Gemini + Google Search.
+  const google = await googlePromise;
+  const articles = news.length ? news : (google?.articles || []).filter(a => !isSpam(a.title, topic));
   return {
     topic, lang, geo,
     collected_at: new Date().toISOString().slice(0, 19) + "+00:00",
     related_searches: related,
     news_momentum: newsMomentum(perDay),
-    news,
+    news: articles,
+    news_source: news.length ? "Google News feed" : google ? `Google Search via ${google.model}` : "none",
+    google_search: google && { queries: google.queries, suggestions: google.suggestions, dropped_uncited: google.dropped_uncited },
     news_spam_removed: spam,
     google_trends_matches: matchingTrends(trends, topic),
     source_errors: sourceErrors,
