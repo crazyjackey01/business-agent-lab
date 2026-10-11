@@ -335,7 +335,8 @@ export function buildEvidence(facts, news, maxHeadlines = 40) {
     if (!seen.has(a.url)) { seen.add(a.url); chosen.push(a); }
   }
   chosen.slice(0, maxHeadlines).forEach((a, i) => {
-    evidence[`S${i + 1}`] = `${a.published.slice(0, 10)} | ${a.source} | ${a.title}` + (a.summary ? ` | ${a.summary}` : "");
+    evidence[`S${i + 1}`] = `${a.published.slice(0, 10)} | ${a.source} | ${a.title}` + (a.summary ? ` | ${a.summary}` : "")
+      + (a.found_by && a.found_by !== facts.topic ? ` | found by searching "${a.found_by}"` : "");
     links[`S${i + 1}`] = a.url;
   });
   return [evidence, links];
@@ -480,6 +481,7 @@ export async function analyze(env, data) {
   const relevance = await relevantNews(env, data.news, data.topic);
   data = { ...data, news: relevance.kept };
   const facts = {
+    topic: data.topic,
     coverage: data.news_momentum,
     news_unavailable: (data.source_errors || []).some(e => e.startsWith("news")),
     spam_removed: data.news_spam_removed || 0,

@@ -213,12 +213,13 @@ export function newsMomentum(perDay) {
 // add an article that Google Search did not return.
 
 const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/interactions";
-// Tried in order; Gemini often answers "high demand" for a while, so there are fallbacks.
-const GEMINI_SEARCH_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"];
+// Tried in order. Listing articles is a simple job, so the fastest model goes first
+// (about 6 s); the bigger ones are fallbacks for when it is busy.
+const GEMINI_SEARCH_MODELS = ["gemini-3.5-flash-lite", "gemini-3.6-flash", "gemini-3.8-flash"];
 
-async function geminiSearch(env, input) {
+async function geminiSearch(env, input, models = GEMINI_SEARCH_MODELS) {
   let lastError;
-  for (const model of GEMINI_SEARCH_MODELS) {
+  for (const model of models) {
     for (let attempt = 0; attempt < 2; attempt++) {
       const response = await fetch(GEMINI_URL, {
         method: "POST",
@@ -239,14 +240,33 @@ async function geminiSearch(env, input) {
   throw new Error(lastError);
 }
 
-export async function geminiNews(env, topic, geo) {
+async function geminiNewsOne(env, topic, geo) {
   const today = dayIn(new Date(), geo);
   const where = geo === "KR" ? " in South Korea (Korean-language news)" : geo === "US" ? " (English-language news)" : "";
   const input = `Use Google Search to find news articles published in the 7 days up to ${today} about "${topic}"${where}.
 List up to 20 different articles, newest first, one per line, exactly in this format and nothing else:
 YYYY-MM-DD | outlet | headline | one sentence with the key facts the article reports`;
-  const data = await geminiSearch(env, input);
+  // The fast model sometimes lists only one or two articles; then ask the next model.
+  let result;
+  for (let i = 0; i < GEMINI_SEARCH_MODELS.length; i++) {
+    let data;
+    try {
+      data = await geminiSearch(env, input, GEMINI_SEARCH_MODELS.slice(i));
+    } catch (error) {
+      if (result) break; // bigger models busy: keep the few articles we have
+      throw error;
+    }
+    result = parseGeminiArticles(data, topic);
+    const used = GEMINI_SEARCH_MODELS.indexOf(data.model);
+    if (result.articles.length >= MIN_ARTICLES || used === GEMINI_SEARCH_MODELS.length - 1) break;
+    i = used; // continue after the model that answered
+  }
+  return result;
+}
 
+const MIN_ARTICLES = 3;
+
+function parseGeminiArticles(data, topic) {
   let text = "", annotations = [], suggestions = "", queries = [];
   for (const step of data.steps || []) {
     if (step.type === "google_search_call") queries.push(...(step.arguments?.queries || []));
@@ -278,7 +298,34 @@ YYYY-MM-DD | outlet | headline | one sentence with the key facts the article rep
       published: new Date(parts[0] + "T12:00:00Z").toISOString(),
     });
   }
-  return { articles, suggestions, queries, model: data.model, dropped_uncited: text.split("\n").filter(l => /^\s*[*•-]?\s*\d{4}-\d{2}-\d{2}\s*\|/.test(l)).length - articles.length };
+  return { articles, suggestions, queries, model: data.model, searched: topic, dropped_uncited: text.split("\n").filter(l => /^\s*[*•-]?\s*\d{4}-\d{2}-\d{2}\s*\|/.test(l)).length - articles.length };
+}
+
+// One search per angle, all at once: the topic itself plus the phrases people type most
+// with it (from autocomplete). This ties what people search to the news about it, and
+// gives more articles than one search. Articles are merged by headline.
+export async function geminiNews(env, topic, geo, related = []) {
+  const extra = related.map(r => r.phrase).filter(p => p !== topic.toLowerCase()).slice(0, 2);
+  const results = await Promise.allSettled([topic, ...extra].map(q => geminiNewsOne(env, q, geo)));
+  const ok = results.filter(r => r.status === "fulfilled").map(r => r.value);
+  if (!ok.length) throw results[0].reason;
+
+  const byTitle = new Map();
+  for (const r of ok) {
+    for (const a of r.articles) {
+      const key = a.title.replace(/\s+/g, "").toLowerCase();
+      if (!byTitle.has(key)) byTitle.set(key, { ...a, found_by: r.searched });
+    }
+  }
+  return {
+    articles: [...byTitle.values()].sort((a, b) => b.published.localeCompare(a.published)),
+    suggestions: ok[0].suggestions,
+    queries: ok.flatMap(r => r.queries),
+    searched: ok.map(r => r.searched),
+    model: [...new Set(ok.map(r => r.model))].join(", "),
+    dropped_uncited: ok.reduce((n, r) => n + r.dropped_uncited, 0),
+    failed: results.filter(r => r.status === "rejected").map(r => String(r.reason?.message || r.reason)),
+  };
 }
 
 // Trending searches that mention the topic. Latin words must match as whole words
@@ -295,10 +342,6 @@ export function matchingTrends(trends, topic, extraWords = []) {
 export async function collectTopic(env, topic, lang, geo) {
   // A blocked source should not stop the search; the page shows which ones failed.
   const sourceErrors = [];
-  // Gemini's search is the slowest step, so it starts first and runs alongside the rest.
-  const googlePromise = env.GEMINI_API_KEY
-    ? geminiNews(env, topic, geo).catch(error => { sourceErrors.push(`gemini search: ${error.message}`); return null; })
-    : Promise.resolve(null);
   const [related, [news, perDay, spam], trends] = await Promise.all([
     relatedSearches(topic, lang, geo),
     // With a Gemini key, skip the Google News feed: it refuses Cloudflare's servers anyway.
@@ -315,8 +358,12 @@ export async function collectTopic(env, topic, lang, geo) {
   ]);
   if (!related.length) sourceErrors.push("autocomplete: no suggestions returned");
 
-  // Google News is refused here, so the articles come from Gemini + Google Search.
-  const google = await googlePromise;
+  // Google News is refused here, so the articles come from Gemini + Google Search,
+  // searched for the topic and for the top autocomplete phrases (hence after related).
+  const google = env.GEMINI_API_KEY
+    ? await geminiNews(env, topic, geo, related).catch(error => { sourceErrors.push(`gemini search: ${error.message}`); return null; })
+    : null;
+  if (google?.failed?.length) sourceErrors.push(...google.failed.map(f => `gemini search (one angle): ${f}`));
   const articles = news.length ? news : (google?.articles || []).filter(a => !isSpam(a.title, topic));
   return {
     topic, lang, geo,
@@ -325,7 +372,7 @@ export async function collectTopic(env, topic, lang, geo) {
     news_momentum: newsMomentum(perDay),
     news: articles,
     news_source: news.length ? "Google News feed" : google ? `Google Search via ${google.model}` : "none",
-    google_search: google && { queries: google.queries, suggestions: google.suggestions, dropped_uncited: google.dropped_uncited },
+    google_search: google && { queries: google.queries, searched: google.searched, suggestions: google.suggestions, dropped_uncited: google.dropped_uncited },
     news_spam_removed: spam,
     google_trends_matches: matchingTrends(trends, topic),
     source_errors: sourceErrors,
