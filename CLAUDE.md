@@ -42,9 +42,8 @@ There is no test suite or linter yet.
   `build_dashboard.py` fills `dashboard_template.html` with the newest files.
   `app.py` serves the same template with `live: true`, which shows a search box that
   POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
-- Search purpose lives in `intent.py` / `worker/src/intent.js`: generic patterns (how-to
-  endings, 가격, 뜻, vs...) sort what the wording makes plain, Jev sorts the rest with short
-  category descriptions (short = fewer tokens; Jev re-reads them per phrase). Jev batches are
+- Search purpose lives in `intent.py` / `worker/src/intent.js`: Jev sorts every autocomplete
+  phrase, with short category descriptions (short = fewer tokens; Jev re-reads them per phrase). Jev batches are
   capped at 100 questions: it refuses requests over ~60k tokens. Worker model calls are in
   `worker/src/models.js`.
 - Empty topic = overview mode: `overview.py` / `analyzeOverview` (Google Trends + Jev categories
