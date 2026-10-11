@@ -297,10 +297,15 @@ Rules:
 - "outlook" items are forecasts. Base each one on a scheduled event or a measured trend in the evidence,
   give a confidence (low / medium / high), and say in "basis" which evidence it extends.
   Do not forecast prices or anything the evidence does not touch.
+- Be brief. "summary": one or two sentences answering "why is this being searched now?".
+  At most 3 why_people_search, 5 what_is_happening, 3 outlook items, each one or two short
+  sentences. Do not repeat a number the reader already sees in the data (like intent shares)
+  unless it is the point. Prefer the most important facts over covering everything.
 - Write every claim, basis and caveat in {language}.
 
 Reply with JSON only, in this shape:
 {
+  "summary": {"claim": "...", "cites": ["D2", "S1"]},
   "why_people_search": [{"claim": "...", "cites": ["D1", "S3"]}],
   "what_is_happening": [{"claim": "...", "cites": ["S1", "S2"]}],
   "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"]}],
@@ -381,7 +386,9 @@ def explain(topic, evidence, language):
         dropped += n
     result["caveats"] = reply.get("caveats", [])
     result["unsupported_claims_removed"] = dropped
-    result["failed_check_removed"] = check_claims(result, evidence, language)
+    result["summary"], _ = keep_supported([reply["summary"]] if reply.get("summary") else [], evidence)
+    result["failed_check_removed"] = check_claims(result, evidence, language, ("summary",) + SECTIONS)
+    result["summary"] = result["summary"][0] if result["summary"] else None
     return result
 
 

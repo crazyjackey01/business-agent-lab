@@ -30,9 +30,9 @@ You get today's trending Google searches. Each comes with the news articles Goog
 
 Rules:
 - Use ONLY the evidence given. Cite ids ([T3] for a trend's data, [S7] for an article) for every claim.
-- "trends": for each trending search, one or two sentences on why people are searching it, from its
+- "trends": for each trending search, ONE short sentence on why people are searching it, from its
   articles. Put the trend's exact search term in "term". If its articles do not explain it, skip it.
-- "themes": two to four claims about what the trends have in common (for example several sports
+- "themes": at most three short claims about what the trends have in common (for example several sports
   results, or one news story behind several searches). Each must cite at least two trends.
 - Headlines tell you what was reported, not the full story. Say "reported" when that matters.
 - Write in {language}.

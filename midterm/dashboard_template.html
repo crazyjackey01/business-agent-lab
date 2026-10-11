@@ -4,94 +4,179 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trend Signals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+KR:wght@600;700&display=swap">
 <style>
+  /* Layout: a briefing sheet. One question per result, the answer first, sources at the foot.
+     Main column reads; the side column holds the measured search data. */
   :root {
-    --bg: #f6f5f1; --surface: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e3e1da;
-    --accent: #2f5bd3; --accent-soft: #e6ecfb; --up: #1f8a4c; --down: #b2452f; --bar: #2f5bd3; --bar-dim: #b9c6ee;
+    --paper: #f5f6f4;        /* page ground, faintly green-grey */
+    --sheet: #ffffff;        /* reading surface */
+    --ink: #17201f;          /* text */
+    --ink-soft: #5d6866;     /* secondary text */
+    --rule: #dfe3e1;         /* hairlines */
+    --accent: #146b63;       /* deep teal: links, bars, active tab */
+    --accent-soft: #e2efed;
+    --ok: #2f8a57;           /* check: supported */
+    --warn: #c38a12;         /* check: partly */
+    --unsure: #9aa3a1;       /* check: uncertain / unchecked */
+    --serif: "Noto Serif KR", "Nanum Myeongjo", Georgia, serif;
+    --sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #141413; --surface: #1e1e1c; --ink: #ecebe6; --muted: #9c9a92; --line: #33322e;
-      --accent: #8aa8ff; --accent-soft: #24304f; --up: #5cc98a; --down: #ee8a72; --bar: #8aa8ff; --bar-dim: #3c4a72;
+    :root:not([data-theme="light"]) {
+      --paper: #101514; --sheet: #171e1d; --ink: #e6ebe9; --ink-soft: #9aa6a3; --rule: #2a3432;
+      --accent: #6cc3b8; --accent-soft: #1d3330; --ok: #5cc48a; --warn: #e2b04a; --unsure: #6e7977;
+      color-scheme: dark;
     }
   }
+  :root[data-theme="dark"] {
+    --paper: #101514; --sheet: #171e1d; --ink: #e6ebe9; --ink-soft: #9aa6a3; --rule: #2a3432;
+    --accent: #6cc3b8; --accent-soft: #1d3330; --ok: #5cc48a; --warn: #e2b04a; --unsure: #6e7977;
+    color-scheme: dark;
+  }
+
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink);
-         font: 15px/1.55 system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
-  main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
-  header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
-  header p { margin: 4px 0 0; color: var(--muted); }
-  h2 { font-size: 22px; margin: 40px 0 4px; letter-spacing: -0.01em; }
-  h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 10px; }
-  .sub { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
-  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; min-width: 0; }
-  .wide { grid-column: 1 / -1; }
-  .stats { display: flex; gap: 28px; flex-wrap: wrap; }
-  .stat b { display: block; font-size: 30px; line-height: 1.1; font-variant-numeric: tabular-nums; }
-  .stat span { color: var(--muted); font-size: 13px; }
-  .up { color: var(--up); } .down { color: var(--down); }
-  .bars { display: flex; align-items: flex-end; gap: 8px; height: 120px; margin-top: 16px; }
-  .bars div { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
-  .bars i { display: block; width: 100%; background: var(--bar-dim); border-radius: 4px 4px 0 0; min-height: 2px; }
-  .bars div:last-child i { background: var(--bar); }
-  .bars small { color: var(--muted); font-size: 11px; margin-top: 4px; font-variant-numeric: tabular-nums; }
-  .bars em { font-style: normal; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
-  .row { display: grid; grid-template-columns: 92px 1fr 40px; gap: 8px; align-items: center; margin: 5px 0; font-size: 14px; }
-  .track { background: var(--accent-soft); border-radius: 4px; height: 10px; overflow: hidden; }
-  .track i { display: block; height: 100%; background: var(--accent); }
-  .row .n { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { background: var(--accent-soft); color: var(--ink); border-radius: 999px; padding: 3px 10px; font-size: 13px; }
-  .chip b { color: var(--accent); font-weight: 600; margin-left: 4px; }
-  ul.clean { list-style: none; margin: 0; padding: 0; }
-  ul.clean li { padding: 8px 0; border-top: 1px solid var(--line); }
-  ul.clean li:first-child { border-top: 0; padding-top: 0; }
-  .meta { color: var(--muted); font-size: 12px; }
-  .claim { margin: 0 0 10px; }
-  .cite { display: inline-block; font-size: 11px; color: var(--accent); text-decoration: none; background: var(--accent-soft);
-          border-radius: 4px; padding: 0 5px; margin-left: 3px; vertical-align: 1px; cursor: help; }
-  a.cite:hover { text-decoration: underline; }
-  .conf { font-size: 11px; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 6px; color: var(--muted); }
-  .partly { color: var(--down); border-color: var(--down); cursor: help; }
-  .basis { display: block; color: var(--muted); font-size: 13px; }
-  details { margin-top: 12px; } summary { cursor: pointer; color: var(--muted); font-size: 13px; }
-  .evidence li { font-size: 13px; }
-  .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
-  a { color: var(--accent); }
-  .empty { color: var(--muted); }
-  form.search { display: flex; gap: 8px; margin: 22px 0 0; flex-wrap: wrap; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.65 var(--sans); }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 16px; }
+
+  /* Top bar */
+  header.top { border-bottom: 1px solid var(--rule); background: var(--sheet); }
+  header.top .wrap:first-child { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-block: 14px 4px; }
+  .brand { font: 700 19px/1 var(--serif); letter-spacing: -0.01em; white-space: nowrap; }
+  .brand small { display: block; font: 400 12px/1.4 var(--sans); color: var(--ink-soft); margin-top: 4px; letter-spacing: 0; }
+  form.search { flex: 1 1 420px; display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
   form.search input, form.search select, form.search button {
-    font: inherit; border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px;
-    background: var(--surface); color: var(--ink); }
-  form.search input { flex: 1 1 260px; min-width: 0; font-size: 16px; }
-  form.search button { background: var(--accent); color: #fff; border-color: var(--accent); cursor: pointer; font-weight: 600; }
-  form.search button:disabled { opacity: 0.6; cursor: wait; }
-  #status { margin: 10px 0 0; color: var(--muted); font-size: 14px; min-height: 1.4em; }
-  #status.error { color: var(--down); }
+    font: inherit; font-size: 14px; border: 1px solid var(--rule); border-radius: 8px;
+    padding: 9px 12px; background: var(--paper); color: var(--ink); min-width: 0; }
+  form.search #topic { flex: 1 1 240px; font-size: 15px; }
+  form.search #password { flex: 0 1 150px; }
+  form.search button { background: var(--accent); border-color: var(--accent); color: var(--sheet); font-weight: 600; cursor: pointer; }
+  form.search button:disabled { opacity: .6; cursor: wait; }
+  #status { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--ink-soft); min-height: 1.3em; }
+  #status.error { color: var(--warn); }
+
+  nav.tabs { display: flex; gap: 4px; }
+  nav.tabs button { font: 500 14px var(--sans); background: none; border: 0; border-bottom: 2px solid transparent;
+    padding: 10px 10px 10px; color: var(--ink-soft); cursor: pointer; }
+  nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+  nav.tabs .count { font: 400 12px var(--mono); color: var(--ink-soft); margin-left: 4px; }
+
+  main { padding-block: 28px 64px; }
+
+  /* Result sheet */
+  .sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 28px clamp(18px, 4vw, 40px); }
+  .kicker { font: 500 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+  h1.q { font: 700 clamp(26px, 4vw, 34px)/1.25 var(--serif); margin: 6px 0 14px; text-wrap: balance; letter-spacing: -0.01em; }
+  .answer { font: 600 clamp(17px, 2.2vw, 20px)/1.6 var(--serif); margin: 0 0 18px; max-width: 46em; text-wrap: pretty; }
+  .facts-row { display: flex; flex-wrap: wrap; gap: 8px 32px; padding-block: 14px; border-block: 1px solid var(--rule); margin-bottom: 26px; }
+  .fact b { display: block; font: 500 22px/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+  .fact span { font-size: 12px; color: var(--ink-soft); }
+
+  .cols { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; }
+  @media (max-width: 820px) { .cols { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+  h2.sec { font: 600 13px var(--sans); letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 10px; }
+  .block + .block { margin-top: 28px; }
+  ul.claims { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; max-width: 42em; }
+  ul.claims li { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 9px; background: var(--unsure); }
+  .dot.ok { background: var(--ok); } .dot.warn { background: var(--warn); }
+  .basis { display: block; font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+  .conf { font: 500 11px var(--mono); color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 4px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
+  sup.ref { font: 500 10px var(--mono); margin-left: 1px; }
+  sup.ref a, sup.ref span { text-decoration: none; color: var(--accent); padding: 0 1px; cursor: help; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--ink-soft); margin-top: 20px; }
+  .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 1px; }
+
+  /* Side column */
+  aside .panel + .panel { margin-top: 26px; }
+  .bar-row { display: grid; grid-template-columns: 88px minmax(0, 1fr) 36px; gap: 8px; align-items: center; font-size: 13px; margin: 6px 0; }
+  .track { height: 8px; background: var(--accent-soft); border-radius: 4px; overflow: hidden; }
+  .track i { display: block; height: 100%; background: var(--accent); }
+  .bar-row .n { text-align: right; font: 400 12px var(--mono); color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  ol.plain, ul.plain { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 14px; }
+  ol.plain { counter-reset: item; }
+  ol.plain li { display: grid; grid-template-columns: 22px minmax(0, 1fr); counter-increment: item; }
+  ol.plain li::before { content: counter(item); font: 400 12px var(--mono); color: var(--ink-soft); padding-top: 2px; }
+  .timeline li { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 8px; font-size: 13px; }
+  .timeline time { font: 500 12px var(--mono); color: var(--accent); padding-top: 1px; }
+  .muted { color: var(--ink-soft); font-size: 13px; }
+
+  /* Sources + how it was made */
+  .foot { margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--rule); display: grid; gap: 20px; }
+  ol.sources { margin: 0; padding-left: 26px; display: grid; gap: 4px; font-size: 13px; }
+  ol.sources li::marker { font: 400 12px var(--mono); color: var(--ink-soft); }
+  ol.sources li:target { background: var(--accent-soft); }
+  ol.sources .src { color: var(--ink-soft); }
+  details.how > summary { cursor: pointer; font-size: 13px; color: var(--ink-soft); }
+  details.how[open] > summary { margin-bottom: 12px; }
+  .how-grid { display: grid; gap: 16px; font-size: 13px; }
+  .how-grid h3 { font: 600 12px var(--sans); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-soft); margin: 0 0 4px; }
+  table.usage { border-collapse: collapse; width: 100%; font-size: 12px; }
+  table.usage td, table.usage th { text-align: left; padding: 4px 8px 4px 0; border-bottom: 1px solid var(--rule); }
+  table.usage .num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .scroll-x { overflow-x: auto; }
+  .google-suggestions { overflow-x: auto; }
+
+  /* Trending now */
+  table.trends { width: 100%; border-collapse: collapse; }
+  table.trends td { padding: 12px 10px 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.trends td.rank { font: 400 12px var(--mono); color: var(--ink-soft); width: 28px; padding-top: 15px; }
+  table.trends .term { font-weight: 600; }
+  table.trends .vol { font: 400 12px var(--mono); color: var(--ink-soft); margin-left: 8px; white-space: nowrap; }
+  table.trends .why { display: block; font-size: 14px; margin-top: 2px; }
+  table.trends .why .dot { display: inline-block; margin: 0 6px 1px 0; vertical-align: middle; }
+  .chip { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--ink); margin-left: 6px; white-space: nowrap; }
+  .mix { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin: 0 0 6px; background: var(--rule); }
+  .mix i { display: block; height: 100%; }
+  .mix-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--ink-soft); }
+  .mix-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
+
+  /* History */
+  ul.history { list-style: none; margin: 0; padding: 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; }
+  ul.history li + li { border-top: 1px solid var(--rule); }
+  ul.history button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 14px 20px; cursor: pointer; }
+  ul.history button:hover { background: var(--accent-soft); }
+  ul.history button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  ul.history .t { font: 600 16px var(--serif); }
+  ul.history .s { grid-column: 1 / -1; font-size: 13px; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  ul.history .d { font: 400 12px var(--mono); color: var(--ink-soft); }
+  .empty { color: var(--ink-soft); padding: 40px 0; text-align: center; }
+  @media (prefers-reduced-motion: no-preference) { .sheet { animation: rise .25s ease-out; } @keyframes rise { from { transform: translateY(4px); } } }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <h1>Trend Signals</h1>
-    <p id="built"></p>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Trend Signals<small>What people search, and why, from cited facts</small></div>
     <form class="search" id="search" hidden>
-      <input id="topic" name="topic" maxlength="60" autocomplete="off"
-             placeholder="Type a topic (e.g. 피지컬 AI, 전기차) — or leave empty for what everyone is searching now">
-      <input id="password" type="password" placeholder="Class password" autocomplete="current-password"
-             aria-label="Password" hidden style="flex: 0 1 170px">
+      <input id="topic" name="topic" maxlength="60" autocomplete="off" aria-label="Topic"
+             placeholder="Topic to analyze (e.g. 피지컬 AI) · leave empty for what's trending now">
+      <input id="password" type="password" placeholder="Class password" autocomplete="current-password" aria-label="Password" hidden>
       <select id="region" aria-label="Region">
         <option value="">Auto region</option><option value="KR">Korea</option><option value="US">US</option>
       </select>
       <button id="go" type="submit">Analyze</button>
+      <p id="status" role="status"></p>
     </form>
-    <p id="status"></p>
-  </header>
-  <div id="result"></div>
-  <div id="overview"></div>
-  <div id="topics"></div>
-  <div id="general"></div>
+  </div>
+  <div class="wrap">
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button role="tab" id="tab-now" data-view="now">Trending now</button>
+      <button role="tab" id="tab-topic" data-view="topic">Topic</button>
+      <button role="tab" id="tab-history" data-view="history">History<span class="count" id="history-count"></span></button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="view-now" role="tabpanel" aria-labelledby="tab-now"></section>
+  <section id="view-topic" role="tabpanel" aria-labelledby="tab-topic" hidden></section>
+  <section id="view-history" role="tabpanel" aria-labelledby="tab-history" hidden></section>
 </main>
 
 <script id="data" type="application/json">__DATA__</script>
@@ -99,213 +184,292 @@
 const DATA = JSON.parse(document.getElementById("data").textContent);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const pct = x => Math.round(x * 100) + "%";
+const when = iso => (iso || "").slice(0, 16).replace("T", " ");
 
-document.getElementById("built").textContent =
-  "Built " + DATA.built_at.replace("T", " ") + " · every explanation cites measured data [D] or news headlines [S]";
-
-function cites(ids, a) {
-  return ids.map(id => {
-    const text = esc(a.evidence[id] || "");
-    const url = a.evidence_links && a.evidence_links[id];
-    return url
-      ? `<a class="cite" href="${esc(url)}" target="_blank" rel="noopener" title="${text}">${esc(id)}</a>`
-      : `<span class="cite" title="${text}">${esc(id)}</span>`;
-  }).join("");
-}
-
-function checkBadge(c) {
-  const pctText = c.check_confidence != null ? ` ${Math.round(c.check_confidence * 100)}%` : "";
-  const tip = c.check_reason || (c.check_confidence != null ? `Checker confidence${pctText}` : "");
-  if (c.check === "partly") return `<span class="conf partly" title="${esc(tip)}">partly supported${pctText}</span>`;
-  if (c.check_uncertain) return `<span class="conf partly" title="${esc(tip)}">uncertain${pctText}</span>`;
-  return "";
-}
-
-function claims(list, a, outlook) {
-  if (!list || !list.length) return `<p class="empty">No supported claims.</p>`;
-  return list.map(c => `<p class="claim">${esc(c.claim)}${cites(c.cites, a)}` +
-    checkBadge(c) +
-    (outlook ? `<span class="conf">${esc(c.confidence || "")}</span><span class="basis">${esc(c.basis || "")}</span>` : "") +
-    `</p>`).join("");
-}
-
-function coverageBars(perDay) {
-  const days = [...perDay].reverse();  // oldest first, today last
-  const max = Math.max(...days, 1);
-  return `<div class="bars">` + days.map((n, i) => {
-    const label = i === days.length - 1 ? "today" : `-${days.length - 1 - i}d`;
-    return `<div><em>${n}</em><i style="height:${(n / max) * 100}%"></i><small>${label}</small></div>`;
-  }).join("") + `</div>`;
-}
-
-const CATEGORY_NAMES = {
-  breaking_news: "breaking news", politics: "politics", economy: "economy", sports: "sports",
-  entertainment: "entertainment", scheduled_event: "scheduled event", product_or_tech: "product / tech",
-  weather_or_seasonal: "weather / seasonal", other: "other",
+const INTENT_NAMES = {
+  buying: "구매·이용", investing: "투자", learning: "학습", technology: "기술", definition: "뜻·개념",
+  problems: "문제·리스크", companies: "기업", policy: "정책", industries: "산업 적용", outlook: "전망",
+  events: "행사", jobs: "취업", news: "뉴스", other: "기타",
 };
+const CATEGORY_NAMES = {
+  breaking_news: "사건·사고", politics: "정치", economy: "경제", sports: "스포츠", entertainment: "연예·문화",
+  scheduled_event: "예정된 행사", product_or_tech: "제품·기술", weather_or_seasonal: "날씨·계절", other: "기타",
+};
+const CATEGORY_COLORS = ["#146b63", "#4f8fc0", "#c38a12", "#8a5cb8", "#c0564f", "#5c9a4a", "#7a8a88", "#b07a4f", "#9aa3a1"];
 
-function overviewSection(o) {
-  const e = o.explanation || {};
-  const counts = {};
-  o.rows.forEach(r => { if (r.category) counts[r.category] = (counts[r.category] || 0) + 1; });
-  const mix = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([c, n]) =>
-    `<span class="chip">${esc(CATEGORY_NAMES[c] || c)}<b>${n}</b></span>`).join("");
-  const rows = o.rows.map(r => `<li>
-      <b>${esc(r.term)}</b> <span class="meta">${esc(r.traffic_text)} searches</span>
-      ${r.category ? `<span class="conf" title="Jev ${r.category_confidence != null ? Math.round(r.category_confidence * 100) + "%" : ""}">${esc(CATEGORY_NAMES[r.category] || r.category)}</span>` : ""}
-      ${r.on_wikipedia ? `<span class="conf">also top on Wikipedia</span>` : ""}
-      ${(r.why || []).map(c => `<p class="claim" style="margin:4px 0 0">${esc(c.claim)}${cites(c.cites, o)}${checkBadge(c)}</p>`).join("")}
-      ${!(r.why || []).length && r.top_article ? `<div class="meta"><a href="${esc(r.top_article.url)}" target="_blank" rel="noopener">${esc(r.top_article.title)}</a></div>` : ""}
-    </li>`).join("");
-  const usage = o.usage && o.usage.length
-    ? `<p class="note">Cost: $${o.usage.reduce((s, u) => s + (u.cost || 0), 0).toFixed(4)} · written by ${esc(o.writer_model || "")}, categories and checks by Jev.</p>` : "";
-  return `<section>
-    <h2>What people are searching most right now (${esc(o.geo)})</h2>
-    <p class="sub">Google Trends, analyzed ${esc(o.analyzed_at.slice(0, 16).replace("T", " "))} UTC · each trend is explained only from the news Google links to it</p>
-    <div class="grid">
-      ${e.themes && e.themes.length ? `<div class="card wide"><h3>Common themes</h3>${claims(e.themes, o)}</div>` : ""}
-      <div class="card wide"><h3>What kind of trends (Jev)</h3><div class="chips">${mix || '<span class="empty">not categorized</span>'}</div></div>
-      <div class="card wide"><h3>Each trending search, and why</h3><ul class="clean">${rows}</ul>
-        ${e.error ? `<p class="note">Explanation failed: ${esc(e.error)}</p>` : ""}
-        ${e.failed_check_removed ? `<p class="note">${e.failed_check_removed} claim(s) failed the evidence check and were removed.</p>` : ""}
-        ${usage}</div>
-    </div>
-  </section>`;
+// Citations: [S] ids become numbered sources in order of first use; [D]/[T] stay data refs.
+function makeRefs(result) {
+  const order = [];
+  return {
+    order,
+    html(ids) {
+      return (ids || []).map(id => {
+        const text = esc(result.evidence?.[id] || "");
+        const url = result.evidence_links?.[id];
+        if (id.startsWith("S") && url) {
+          let n = order.indexOf(id);
+          if (n < 0) { order.push(id); n = order.length - 1; }
+          return `<sup class="ref"><a href="#src-${esc(result._key)}-${n + 1}" title="${text}">${n + 1}</a></sup>`;
+        }
+        return `<sup class="ref"><span title="${text}">${id.startsWith("T") ? "trend" : "data"}</span></sup>`;
+      }).join("");
+    },
+  };
 }
 
-function topicSection(a) {
-  const f = a.facts, e = a.explanation, m = f.coverage;
-  const dir = m.momentum >= 1.2 ? "up" : m.momentum <= 0.8 ? "down" : "";
-  const intents = f.intent.filter(i => i.share > 0).map(i =>
-    `<div class="row" title="${esc(i.examples.join(", "))}"><span>${esc(i.intent)}</span>
-     <span class="track"><i style="width:${pct(i.share)}"></i></span><span class="n">${pct(i.share)}</span></div>`).join("");
-  const drivers = f.drivers.map(d =>
-    `<span class="chip">${esc(d.word)}<b>${d.lift === null ? "new" : d.lift + "×"}</b></span>`).join("");
-  const events = f.events.slice(0, 6).map(ev =>
-    `<li><a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>
-     <div class="meta">${esc(ev.source)} · ${esc(ev.published.slice(0, 10))} · dates: ${esc(ev.dates_mentioned.join(", "))}</div></li>`).join("");
-  const searches = (a.related_searches || []).slice(0, 14).map(s => `<span class="chip">${esc(s.phrase)}</span>`).join("");
-  const evidence = Object.entries(a.evidence).map(([id, text]) => {
-    const url = a.evidence_links && a.evidence_links[id];
-    return `<li><b>${esc(id)}</b> ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>` : esc(text)}</li>`;
+function dotClass(c) {
+  if (c.check_uncertain) return "";
+  return c.check === "supported" ? "ok" : c.check === "partly" ? "warn" : "";
+}
+function dotTitle(c) {
+  const p = c.check_confidence != null ? ` (${Math.round(c.check_confidence * 100)}%)` : "";
+  const label = c.check_uncertain ? "uncertain" : c.check === "supported" ? "supported by its sources"
+    : c.check === "partly" ? "partly supported" : "not checked";
+  return label + p + (c.check_reason ? ` · ${c.check_reason}` : "");
+}
+function claimList(list, refs, outlook) {
+  if (!list || !list.length) return `<p class="muted">Nothing the sources could support.</p>`;
+  return `<ul class="claims">${list.map(c => `<li>
+      <span class="dot ${dotClass(c)}" title="${esc(dotTitle(c))}"></span>
+      <div>${esc(c.claim)}${refs.html(c.cites)}${outlook && c.confidence ? `<span class="conf">${esc(c.confidence)}</span>` : ""}
+        ${outlook && c.basis ? `<span class="basis">${esc(c.basis)}</span>` : ""}</div>
+    </li>`).join("")}</ul>`;
+}
+const legend = `<div class="legend"><span><i style="background:var(--ok)"></i>supported by its sources</span>
+  <span><i style="background:var(--warn)"></i>partly supported</span><span><i style="background:var(--unsure)"></i>uncertain</span>
+  <span>Hover a dot for the checker's confidence, a number for its source.</span></div>`;
+
+function sourcesFoot(result, refs) {
+  const items = refs.order.map((id, n) => {
+    const parts = (result.evidence[id] || "").split(" | ");
+    const title = parts.length >= 3 ? parts[2] : parts[parts.length - 1];
+    const meta = parts.length >= 3 ? `${parts[1]} · ${parts[0]}` : "";
+    return `<li id="src-${esc(result._key)}-${n + 1}"><a href="${esc(result.evidence_links[id])}" target="_blank" rel="noopener">${esc(title)}</a>${meta ? `<span class="src"> · ${esc(meta)}</span>` : ""}</li>`;
   }).join("");
-
-  const explanation = e.error
-    ? `<div class="card wide"><p class="empty">Explanation failed: ${esc(e.error)}</p></div>`
-    : `<div class="card"><h3>Why people search it</h3>${claims(e.why_people_search, a)}</div>
-       <div class="card"><h3>What is happening</h3>${claims(e.what_is_happening, a)}</div>
-       <div class="card wide"><h3>What is likely next</h3>${claims(e.outlook, a, true)}
-         ${e.caveats && e.caveats.length ? `<p class="note">Caveats: ${e.caveats.map(esc).join(" · ")}</p>` : ""}
-         ${e.unsupported_claims_removed ? `<p class="note">${e.unsupported_claims_removed} claim(s) without valid citations were removed.</p>` : ""}
-         ${e.failed_check_removed ? `<p class="note">${e.failed_check_removed} claim(s) failed the evidence check and were removed.</p>` : ""}
-         ${a.writer_model ? `<p class="note">Written by ${esc(a.writer_model)} from the evidence below.</p>` : ""}
-         ${e.checked_by ? `<p class="note">Claims checked against their evidence by ${e.checked_by === "jev" ? "Jev (a decision model that can only answer supported / partly / unsupported, with a probability)" : "a second text-model pass"}.</p>` : ""}
-       </div>`;
-
-  return `<section>
-    <h2>${esc(a.topic)}</h2>
-    <p class="sub">${esc(a.geo)} · data collected ${esc(a.source_collected_at.slice(0, 16).replace("T", " "))} UTC</p>
-    ${a.source_errors && a.source_errors.length ? `<p class="note">Sources that failed this time: ${a.source_errors.map(esc).join(" · ")}</p>` : ""}
-    <div class="grid">
-      <div class="card">
-        <h3>News coverage</h3>
-        ${f.news_unavailable ? `<div class="stats">
-          <div class="stat"><b>${Object.keys(a.evidence).filter(k => k.startsWith("S")).length}</b><span>articles found with Google Search</span></div>
-        </div>` : `<div class="stats">
-          <div class="stat"><b>${m.today}</b><span>articles today</span></div>
-          <div class="stat"><b>${m.previous_daily_average}</b><span>per day before</span></div>
-          <div class="stat"><b class="${dir}">${m.momentum}×</b><span>momentum</span></div>
-        </div>`}
-        ${f.news_unavailable ? `<p class="note">Daily article counts (momentum) need the Google News feed, which refuses Cloudflare's servers. They are available in the local version.</p>` : coverageBars(m.per_day)}
-        ${f.spam_removed ? `<p class="note">${f.spam_removed} spam headline(s) (gambling sites stuffing keywords) were removed before counting.</p>` : ""}
-      </div>
-      <div class="card"><h3>What searchers want</h3>${intents}<p class="note">From Google autocomplete phrases. Hover a row for examples.</p></div>
-      <div class="card"><h3>What people type with it</h3><div class="chips">${searches}</div></div>
-      <div class="card"><h3>Today's news drivers</h3><div class="chips">${drivers || '<span class="empty">None</span>'}</div>
-        <p class="note">Words far more common in today's headlines than earlier.</p></div>
-      ${a.google_search ? `<div class="card wide"><h3>News found with Google Search</h3>
-        <p class="note">Articles come from ${esc(a.news_source)}. Only articles Google attached a source citation to are used${a.google_search.dropped_uncited > 0 ? ` (${a.google_search.dropped_uncited} without a citation were dropped)` : ""}. Searched for: ${(a.google_search.searched || [a.topic]).map(esc).join(" · ")}. Searches Google ran: ${(a.google_search.queries || []).map(esc).join(", ")}</p>
-        <div class="google-suggestions">${a.google_search.suggestions || ""}</div></div>` : ""}
-      ${f.relevance && f.relevance.method === "Jev" ? `<div class="card wide"><h3>Relevance filter (Jev)</h3>
-        <p class="note">Jev judged each article "mainly about ${esc(a.topic)}?" before the writer saw them:
-          ${f.relevance.kept} kept, ${f.relevance.dropped.length} dropped.</p>
-        ${f.relevance.dropped.length ? `<details><summary>Dropped articles</summary><ul class="clean">${f.relevance.dropped.map(d =>
-          `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>
-           <div class="meta">${esc(d.source)} · ${d.relevance == null ? "" : Math.round(d.relevance * 100) + "% relevant"}</div></li>`).join("")}</ul></details>` : ""}
-      </div>` : ""}
-      <div class="card wide"><h3>Scheduled events in the news</h3><ul class="clean">${events || '<li class="empty">None found</li>'}</ul></div>
-      ${explanation}
-      ${a.usage && a.usage.length ? `<div class="card wide"><h3>What this search used</h3>
-        <ul class="clean">${a.usage.map(u => `<li>${esc(u.step)} · <b>${esc(u.model)}</b>${u.questions ? ` · ${u.questions} questions` : ""}
-          <span class="meta">· ${u.input_tokens.toLocaleString()} in / ${u.output_tokens.toLocaleString()} out tokens ·
-          ${u.cost == null ? "free tier / not reported" : "$" + u.cost.toFixed(4)}</span></li>`).join("")}</ul>
-        <p class="note">Total reported cost: $${a.usage.reduce((s, u) => s + (u.cost || 0), 0).toFixed(4)}. Jev only picks from fixed labels, and its output tokens are free.</p></div>` : ""}
-      <div class="card wide"><details><summary>All evidence given to the model (${Object.keys(a.evidence).length} items)</summary>
-        <ul class="clean evidence">${evidence}</ul></details></div>
-    </div>
-  </section>`;
+  return items ? `<div><h2 class="sec">Sources</h2><ol class="sources">${items}</ol></div>` : "";
 }
 
-function generalSection(s) {
-  if (!s) return "";
-  const trends = s.google_trends.slice(0, 15).map(t =>
-    `<li><b>${esc(t.term)}</b> <span class="meta">${esc(t.traffic_text)}</span>
-     ${t.news[0] ? `<div class="meta"><a href="${esc(t.news[0].url)}" target="_blank" rel="noopener">${esc(t.news[0].title)}</a></div>` : ""}</li>`).join("");
-  const wiki = s.wikipedia_top.slice(0, 15).map(w =>
-    `<li>${esc(w.title)} <span class="meta">${w.views.toLocaleString()} views</span></li>`).join("");
-  return `<section>
-    <h2>Trending right now (${esc(s.geo)})</h2>
-    <p class="sub">Collected ${esc(s.collected_at.slice(0, 16).replace("T", " "))} UTC</p>
-    <div class="grid">
-      <div class="card"><h3>Google Trends</h3><ul class="clean">${trends}</ul></div>
-      <div class="card"><h3>Most-viewed Wikipedia (${esc(s.wiki_day)})</h3><ul class="clean">${wiki}</ul></div>
-    </div>
-  </section>`;
+function usageTable(usage) {
+  if (!usage || !usage.length) return "";
+  const total = usage.reduce((s, u) => s + (u.cost || 0), 0);
+  return `<div><h3>What it used · $${total.toFixed(4)}</h3><div class="scroll-x"><table class="usage">
+    <tr><th>Step</th><th>Model</th><th class="num">Tokens in / out</th><th class="num">Cost</th></tr>
+    ${usage.map(u => `<tr><td>${esc(u.step)}</td><td>${esc(u.model)}</td>
+      <td class="num">${u.input_tokens.toLocaleString()} / ${u.output_tokens.toLocaleString()}</td>
+      <td class="num">${u.cost == null ? "free" : "$" + u.cost.toFixed(4)}</td></tr>`).join("")}
+  </table></div></div>`;
 }
 
-document.getElementById("topics").innerHTML = DATA.analyses.length
-  ? DATA.analyses.map(topicSection).join("")
-  : `<p class="empty">No analyses yet. Run analyze_topic.py first.</p>`;
-document.getElementById("general").innerHTML = generalSection(DATA.snapshot);
-if (DATA.overview) document.getElementById("overview").innerHTML = overviewSection(DATA.overview);
+// Topic result ---------------------------------------------------------------
+function topicSheet(a) {
+  const f = a.facts, e = a.explanation || {}, m = f.coverage || {};
+  const refs = makeRefs(a);
+  const articleCount = Object.keys(a.evidence).filter(k => k.startsWith("S")).length;
+  const topIntent = (f.intent || []).find(i => i.intent !== "other");
+  const allClaims = ["why_people_search", "what_is_happening", "outlook"].flatMap(s => e[s] || []);
+  const supported = allClaims.filter(c => c.check === "supported" && !c.check_uncertain).length;
 
-// Live mode (served by app.py): search any topic.
+  const summary = e.summary || (e.what_is_happening || [])[0];
+  const answer = summary ? `<p class="answer">${esc(summary.claim)}${refs.html(summary.cites)}</p>` : "";
+
+  const facts = [
+    f.news_unavailable
+      ? `<div class="fact"><b>${articleCount}</b><span>articles from Google Search</span></div>`
+      : `<div class="fact"><b>${m.momentum}×</b><span>news vs usual (${m.today} today)</span></div>`,
+    topIntent ? `<div class="fact"><b>${pct(topIntent.share)}</b><span>search for ${esc(INTENT_NAMES[topIntent.intent] || topIntent.intent)}</span></div>` : "",
+    allClaims.length ? `<div class="fact"><b>${supported}/${allClaims.length}</b><span>claims fully supported</span></div>` : "",
+    f.relevance?.method === "Jev" ? `<div class="fact"><b>${f.relevance.dropped.length}</b><span>off-topic articles dropped</span></div>` : "",
+  ].join("");
+
+  const intents = (f.intent || []).filter(i => i.share >= 0.02).slice(0, 7).map(i =>
+    `<div class="bar-row" title="${esc(i.examples.join(", "))}"><span>${esc(INTENT_NAMES[i.intent] || i.intent)}</span>
+     <span class="track"><i style="width:${pct(i.share)}"></i></span><span class="n">${pct(i.share)}</span></div>`).join("");
+  const searches = (a.related_searches || []).slice(0, 8).map(s => `<li><span>${esc(s.phrase)}</span></li>`).join("");
+  const events = (f.events || []).slice(0, 5).map(ev =>
+    `<li><time>${esc(ev.dates_mentioned[0])}</time><a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a></li>`).join("");
+  let coverage = "";
+  if (!f.news_unavailable && m.per_day) {
+    const days = [...m.per_day].reverse(), max = Math.max(...days, 1);
+    coverage = `<div class="panel"><h2 class="sec">News per day</h2>
+      <svg viewBox="0 0 280 72" width="100%" role="img" aria-label="Articles per day, last 7 days">
+        ${days.map((n, i) => `<rect x="${i * 40 + 6}" y="${58 - (n / max) * 48}" width="28" height="${(n / max) * 48 + 1}" rx="3"
+          fill="${i === days.length - 1 ? "var(--accent)" : "var(--accent-soft)"}"><title>${n} articles</title></rect>
+          <text x="${i * 40 + 20}" y="70" font-size="9" text-anchor="middle" fill="var(--ink-soft)">${i === days.length - 1 ? "today" : "-" + (days.length - 1 - i) + "d"}</text>`).join("")}
+      </svg></div>`;
+  }
+
+  const body = e.error ? `<p class="muted">The explanation could not be written: ${esc(e.error)}</p>` : `
+    <div class="block"><h2 class="sec">Why people search it</h2>${claimList(e.why_people_search, refs)}</div>
+    <div class="block"><h2 class="sec">What is happening</h2>${claimList(e.what_is_happening, refs)}</div>
+    <div class="block"><h2 class="sec">What is likely next</h2>${claimList(e.outlook, refs, true)}</div>
+    ${legend}`;
+
+  const removed = (e.unsupported_claims_removed || 0) + (e.failed_check_removed || 0);
+  const how = `<details class="how"><summary>How this was made</summary><div class="how-grid">
+      <div><h3>Pipeline</h3>News: ${esc(a.news_source || "Google News feed")}. Search intent: ${esc(f.intent_method || "word lists")}.
+        Written by ${esc(a.writer_model || "the text model")}; each claim checked against its sources by ${e.checked_by === "jev" ? "Jev" : "a second model pass"}.
+        ${removed ? ` ${removed} claim(s) without support were removed.` : ""}</div>
+      ${f.relevance?.dropped?.length ? `<div><h3>Dropped as off-topic (Jev)</h3><ul class="plain">${f.relevance.dropped.map(d =>
+        `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a> <span class="muted">${d.relevance == null ? "" : pct(d.relevance) + " relevant"}</span></li>`).join("")}</ul></div>` : ""}
+      ${f.spam_removed ? `<div><h3>Spam</h3>${f.spam_removed} keyword-stuffed gambling headlines were removed before counting.</div>` : ""}
+      ${(a.source_errors || []).length ? `<div><h3>Sources that failed</h3>${a.source_errors.map(esc).join("<br>")}</div>` : ""}
+      ${e.caveats?.length ? `<div><h3>Caveats</h3>${e.caveats.map(esc).join("<br>")}</div>` : ""}
+      ${usageTable(a.usage)}
+      <div><h3>All evidence given to the writer</h3><ul class="plain">${Object.entries(a.evidence).map(([id, t]) =>
+        `<li><span class="muted">${esc(id)}</span> ${esc(t)}</li>`).join("")}</ul></div>
+    </div></details>`;
+
+  // Google's terms: grounded results show its search suggestions.
+  const google = a.google_search?.suggestions
+    ? `<div><h2 class="sec">Searched with Google</h2><div class="google-suggestions">${a.google_search.suggestions}</div></div>` : "";
+
+  return `<article class="sheet">
+    <div class="kicker">${esc(a.geo)} · ${esc(when(a.analyzed_at || a.source_collected_at))} UTC</div>
+    <h1 class="q">${esc(a.topic)}</h1>
+    ${answer}
+    <div class="facts-row">${facts}</div>
+    <div class="cols">
+      <div>${body}</div>
+      <aside>
+        ${intents ? `<div class="panel"><h2 class="sec">What searchers want</h2>${intents}<p class="muted">Share of Google autocomplete phrases.</p></div>` : ""}
+        ${coverage}
+        ${searches ? `<div class="panel"><h2 class="sec">Typed with it most</h2><ol class="plain">${searches}</ol></div>` : ""}
+        ${events ? `<div class="panel"><h2 class="sec">Dates in the news</h2><ul class="plain timeline">${events}</ul></div>` : ""}
+      </aside>
+    </div>
+    <div class="foot">${sourcesFoot(a, refs)}${google}${how}</div>
+  </article>`;
+}
+
+// Trending now -----------------------------------------------------------------
+function overviewSheet(o) {
+  const e = o.explanation || {};
+  const refs = makeRefs(o);
+  const counts = {};
+  o.rows.forEach(r => { const c = r.category || "other"; counts[c] = (counts[c] || 0) + 1; });
+  const cats = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  const color = i => CATEGORY_COLORS[i % CATEGORY_COLORS.length];
+  const mix = cats.map(([c, n], i) => `<i style="width:${n / o.rows.length * 100}%;background:${color(i)}" title="${esc(CATEGORY_NAMES[c] || c)} ${n}"></i>`).join("");
+  const mixLegend = cats.map(([c, n], i) => `<span><i style="background:${color(i)}"></i>${esc(CATEGORY_NAMES[c] || c)} ${n}</span>`).join("");
+  const rows = o.rows.map((r, i) => {
+    const why = (r.why || [])[0];
+    return `<tr><td class="rank">${i + 1}</td><td>
+      <span class="term">${esc(r.term)}</span><span class="vol">${esc(r.traffic_text)}</span>
+      ${r.category ? `<span class="chip" title="Jev ${r.category_confidence != null ? pct(r.category_confidence) : ""}">${esc(CATEGORY_NAMES[r.category] || r.category)}</span>` : ""}
+      ${r.on_wikipedia ? `<span class="chip">Wikipedia top</span>` : ""}
+      ${why ? `<span class="why"><span class="dot ${dotClass(why)}" title="${esc(dotTitle(why))}"></span>${esc(why.claim)}${refs.html(why.cites)}</span>`
+            : r.top_article ? `<span class="why muted"><a href="${esc(r.top_article.url)}" target="_blank" rel="noopener">${esc(r.top_article.title)}</a></span>` : ""}
+    </td></tr>`;
+  }).join("");
+  const themes = e.themes?.length ? claimList(e.themes, refs) : "";
+  return `<article class="sheet">
+    <div class="kicker">${esc(o.geo)} · Google Trends · ${esc(when(o.analyzed_at))} UTC</div>
+    <h1 class="q">지금 사람들이 가장 많이 검색하는 것</h1>
+    ${themes ? `<div class="block">${themes}</div>` : ""}
+    <div class="block"><h2 class="sec">What kind of trends</h2><div class="mix" aria-hidden="true">${mix}</div><div class="mix-legend">${mixLegend}</div></div>
+    <div class="block scroll-x"><table class="trends">${rows}</table></div>
+    ${legend}
+    <div class="foot">${sourcesFoot(o, refs)}
+      <details class="how"><summary>How this was made</summary><div class="how-grid">
+        <div>Each trending search and its linked articles come from Google Trends. Categories by Jev, explanations by ${esc(o.writer_model || "the text model")}, and every claim checked by Jev against the cited articles.
+          ${e.error ? `<br>Explanation failed: ${esc(e.error)}` : ""}</div>
+        ${usageTable(o.usage)}
+      </div></details>
+    </div>
+  </article>`;
+}
+
+function snapshotSheet(s) {
+  if (!s) return `<p class="empty">No trend data yet. Leave the box empty and press Analyze.</p>`;
+  return `<article class="sheet">
+    <div class="kicker">${esc(s.geo)} · Google Trends · ${esc(when(s.collected_at))} UTC</div>
+    <h1 class="q">지금 사람들이 가장 많이 검색하는 것</h1>
+    <p class="muted">Not explained yet. Leave the box empty and press Analyze to see why each one is trending.</p>
+    <ol class="plain">${s.google_trends.slice(0, 15).map(t => `<li><span><b>${esc(t.term)}</b> <span class="muted">${esc(t.traffic_text)}</span>
+      ${t.news[0] ? `<br><a href="${esc(t.news[0].url)}" target="_blank" rel="noopener">${esc(t.news[0].title)}</a>` : ""}</span></li>`).join("")}</ol>
+  </article>`;
+}
+
+// Views --------------------------------------------------------------------------
+const results = (DATA.analyses || []).map((a, i) => ({ ...a, _key: "h" + i }));
+let current = results[0] || null;
+
+function renderNow() {
+  const o = DATA.overview ? { ...DATA.overview, _key: "now" } : null;
+  document.getElementById("view-now").innerHTML = o ? overviewSheet(o) : snapshotSheet(DATA.snapshot);
+}
+function renderTopic() {
+  document.getElementById("view-topic").innerHTML = current ? topicSheet(current)
+    : `<p class="empty">No topic analyzed yet. Type a topic above and press Analyze.</p>`;
+}
+function renderHistory() {
+  document.getElementById("history-count").textContent = results.length ? String(results.length) : "";
+  document.getElementById("view-history").innerHTML = results.length ? `<ul class="history">${results.map((a, i) => {
+    const s = a.explanation?.summary || (a.explanation?.what_is_happening || [])[0];
+    return `<li><button data-i="${i}"><span class="t">${esc(a.topic)}</span><span class="d">${esc(a.geo)} · ${esc(when(a.analyzed_at || a.source_collected_at))}</span>
+      ${s ? `<span class="s">${esc(s.claim)}</span>` : ""}</button></li>`;
+  }).join("")}</ul>` : `<p class="empty">Past searches will appear here.</p>`;
+  document.querySelectorAll("ul.history button").forEach(b => b.addEventListener("click", () => {
+    current = results[+b.dataset.i]; renderTopic(); show("topic");
+  }));
+}
+
+function show(view) {
+  for (const v of ["now", "topic", "history"]) {
+    document.getElementById("view-" + v).hidden = v !== view;
+    document.getElementById("tab-" + v).setAttribute("aria-selected", String(v === view));
+  }
+  try { history.replaceState(null, "", "#" + view); } catch {}
+}
+document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.view)));
+
+renderNow(); renderTopic(); renderHistory();
+const start = location.hash.slice(1);
+show(["now", "topic", "history"].includes(start) ? start : (DATA.overview || !current ? "now" : "topic"));
+
+// Live mode (served by app.py or the Worker): run searches -------------------------
 if (DATA.live) {
   const form = document.getElementById("search"), status = document.getElementById("status");
-  const button = document.getElementById("go");
+  const button = document.getElementById("go"), passwordInput = document.getElementById("password");
   form.hidden = false;
-  const passwordInput = document.getElementById("password");
   if (DATA.needs_password) {
     passwordInput.hidden = false;
-    passwordInput.required = true;
     try { passwordInput.value = sessionStorage.getItem("searchPassword") || ""; } catch {}
   }
   form.addEventListener("submit", async event => {
     event.preventDefault();
     const topic = document.getElementById("topic").value.trim();
+    if (DATA.needs_password && !passwordInput.value) {
+      status.className = "error"; status.textContent = "Enter the class password to run a search."; return;
+    }
     button.disabled = true;
     status.className = "";
     const started = Date.now();
     const tick = setInterval(() => {
       const s = Math.round((Date.now() - started) / 1000);
       status.textContent = topic
-        ? `Collecting searches and news for "${topic}", then analyzing… ${s}s (usually 1-2 min)`
-        : `Finding what everyone is searching for right now, then explaining it… ${s}s (usually under a minute)`;
+        ? `Searching Google and analyzing "${topic}"… ${s}s (usually 1–2 min)`
+        : `Finding what everyone is searching right now… ${s}s (usually under 30 s)`;
     }, 500);
     try {
       const response = await fetch("/api/analyze", {
-        method: "POST", headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({topic, region: document.getElementById("region").value, password: passwordInput.value}),
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ topic, region: document.getElementById("region").value, password: passwordInput.value }),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || response.statusText);
       try { if (DATA.needs_password) sessionStorage.setItem("searchPassword", passwordInput.value); } catch {}
-      document.getElementById("result").innerHTML = result.kind === "overview" ? overviewSection(result) : topicSection(result);
-      status.textContent = `Done in ${Math.round((Date.now() - started) / 1000)}s.`;
-      document.getElementById("result").scrollIntoView({behavior: "smooth"});
+      if (result.kind === "overview") {
+        DATA.overview = result; renderNow(); show("now");
+      } else {
+        current = { ...result, _key: "r" + Date.now() };
+        results.unshift(current); renderTopic(); renderHistory(); show("topic");
+      }
+      status.textContent = `Done in ${Math.round((Date.now() - started) / 1000)} s.`;
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (error) {
       status.className = "error";
-      status.textContent = "Failed: " + error.message;
+      status.textContent = "Search failed: " + error.message;
     } finally {
       clearInterval(tick);
       button.disabled = false;

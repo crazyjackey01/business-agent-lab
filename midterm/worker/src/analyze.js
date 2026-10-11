@@ -292,10 +292,15 @@ Rules:
 - "outlook" items are forecasts. Base each one on a scheduled event or a measured trend in the evidence,
   give a confidence (low / medium / high), and say in "basis" which evidence it extends.
   Do not forecast prices or anything the evidence does not touch.
+- Be brief. "summary": one or two sentences answering "why is this being searched now?".
+  At most 3 why_people_search, 5 what_is_happening, 3 outlook items, each one or two short
+  sentences. Do not repeat a number the reader already sees in the data (like intent shares)
+  unless it is the point. Prefer the most important facts over covering everything.
 - Write every claim, basis and caveat in {language}.
 
 Reply with JSON only, in this shape:
 {
+  "summary": {"claim": "...", "cites": ["D2", "S1"]},
   "why_people_search": [{"claim": "...", "cites": ["D1", "S3"]}],
   "what_is_happening": [{"claim": "...", "cites": ["S1", "S2"]}],
   "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"]}],
@@ -445,7 +450,10 @@ async function explain(env, topic, evidence, language) {
   }
   result.caveats = reply.caveats || [];
   result.unsupported_claims_removed = dropped;
-  result.failed_check_removed = await checkClaims(env, result, evidence, language);
+  [result.summary] = keepSupported(reply.summary ? [reply.summary] : [], evidence)[0];
+  result.summary = result.summary ? [result.summary] : [];
+  result.failed_check_removed = await checkClaims(env, result, evidence, language, ["summary", ...SECTIONS]);
+  result.summary = result.summary[0] || null;
   return result;
 }
 
@@ -544,9 +552,9 @@ You get today's trending Google searches. Each comes with the news articles Goog
 
 Rules:
 - Use ONLY the evidence given. Cite ids ([T3] for a trend's data, [S7] for an article) for every claim.
-- "trends": for each trending search, one or two sentences on why people are searching it, from its
+- "trends": for each trending search, ONE short sentence on why people are searching it, from its
   articles. Put the trend's exact search term in "term". If its articles do not explain it, skip it.
-- "themes": two to four claims about what the trends have in common (for example several sports
+- "themes": at most three short claims about what the trends have in common (for example several sports
   results, or one news story behind several searches). Each must cite at least two trends.
 - Headlines tell you what was reported, not the full story. Say "reported" when that matters.
 - Write in {language}.
