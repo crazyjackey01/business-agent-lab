@@ -66,6 +66,7 @@
   nav.tabs button { font: 500 14px var(--sans); background: none; border: 0; border-bottom: 2px solid transparent;
     padding: 10px 10px 10px; color: var(--ink-soft); cursor: pointer; }
   nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+  nav.tabs .lang { margin-left: auto; font: 600 13px var(--sans); color: var(--accent); border-bottom: 0; }
   nav.tabs .count { font: 400 12px var(--mono); color: var(--ink-soft); margin-left: 4px; }
 
   main { padding-block: 28px 64px; }
@@ -155,23 +156,24 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <div class="brand">트렌드 시그널<small id="today"></small></div>
+    <div class="brand"><span data-i18n="brand">트렌드 시그널</span><small id="today"></small></div>
     <form class="search" id="search" hidden>
       <input id="topic" name="topic" maxlength="60" autocomplete="off" aria-label="Topic"
-             placeholder="분석할 주제 (예: 피지컬 AI) · 비워 두면 지금 뜨는 검색어">
-      <input id="password" type="password" placeholder="비밀번호" autocomplete="current-password" aria-label="비밀번호" hidden>
+             data-i18n-ph="topic_ph" placeholder="분석할 주제 (예: 피지컬 AI) · 비워 두면 지금 뜨는 검색어">
+      <input id="password" type="password" data-i18n-ph="password" placeholder="비밀번호" autocomplete="current-password" aria-label="비밀번호" hidden>
       <select id="region" aria-label="Region">
-        <option value="">지역 자동</option><option value="KR">한국</option><option value="US">미국</option>
+        <option value="" data-i18n="region_auto">지역 자동</option><option value="KR" data-i18n="region_KR">한국</option><option value="US" data-i18n="region_US">미국</option>
       </select>
-      <button id="go" type="submit">분석</button>
+      <button id="go" type="submit" data-i18n="analyze">분석</button>
       <p id="status" role="status"></p>
     </form>
   </div>
   <div class="wrap">
     <nav class="tabs" role="tablist" aria-label="Views">
-      <button role="tab" id="tab-now" data-view="now">지금 뜨는 검색어</button>
-      <button role="tab" id="tab-topic" data-view="topic">주제 분석</button>
-      <button role="tab" id="tab-history" data-view="history">지난 분석<span class="count" id="history-count"></span></button>
+      <button role="tab" id="tab-now" data-view="now"><span data-i18n="tab_now">지금 뜨는 검색어</span></button>
+      <button role="tab" id="tab-topic" data-view="topic"><span data-i18n="tab_topic">주제 분석</span></button>
+      <button role="tab" id="tab-history" data-view="history"><span data-i18n="tab_history">지난 분석</span><span class="count" id="history-count"></span></button>
+      <button type="button" id="lang" class="lang" aria-label="Language">EN</button>
     </nav>
   </div>
 </header>
@@ -192,20 +194,90 @@ const ZONES = { KR: "Asia/Seoul", US: "America/New_York" };
 function when(iso, geo = "KR") {
   if (!iso) return "";
   const d = new Date(iso.endsWith("Z") || /[+-]\d\d:\d\d$/.test(iso) ? iso : iso + "Z");
-  return new Intl.DateTimeFormat("ko-KR", { timeZone: ZONES[geo] || "Asia/Seoul", month: "long", day: "numeric",
+  return new Intl.DateTimeFormat(LANG === "ko" ? "ko-KR" : "en-US", { timeZone: ZONES[geo] || "Asia/Seoul", month: "long", day: "numeric",
     hour: "2-digit", minute: "2-digit", hour12: false }).format(d);
 }
-const REGION = { KR: "한국", US: "미국" };
+// Interface language: Korean or English. Analyses stay in the language they were written in.
+let LANG = "ko";
+try { LANG = localStorage.getItem("lang") === "en" ? "en" : "ko"; } catch {}
+const STR = {
+  ko: {
+    brand: "트렌드 시그널", topic_ph: "분석할 주제 (예: 피지컬 AI) · 비워 두면 지금 뜨는 검색어", password: "비밀번호",
+    region_auto: "지역 자동", region_KR: "한국", region_US: "미국", analyze: "분석",
+    tab_now: "지금 뜨는 검색어", tab_topic: "주제 분석", tab_history: "지난 분석",
+    unsure: "불확실", supported: "출처와 일치", partly: "일부만 일치", unchecked: "검증 안 됨",
+    no_claims: "출처로 뒷받침되는 내용이 없다.", likely: "가능성", conf_low: "낮음", conf_medium: "보통", conf_high: "높음",
+    sources: "출처", usage: "사용량", step: "단계", model: "모델", tokens: "토큰 입력 / 출력", cost: "비용", free: "무료",
+    f_articles: n => [`${n}건`, "구글 검색으로 찾은 기사"], f_momentum: (x, n) => [`${x}배`, `평소 대비 기사량 (오늘 ${n}건)`],
+    f_intent: (p, k) => [p, `검색 목적 1위: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "출처와 일치한 문장"],
+    f_dropped: n => [`${n}건`, "관련 없어 뺀 기사"],
+    per_day: "하루 기사 수", today: "오늘", days_ago: n => `${n}일 전`,
+    write_failed: "분석을 쓰지 못했다", why: "왜 찾나", happening: "무슨 일", next: "다음은",
+    how: "이 분석은 어떻게 만들었나", process: "과정",
+    process_text: (news, intent, writer, checker, removed) => `기사: ${news}. 검색 목적 분류: ${intent}. 작성: ${writer}. 문장마다 인용한 출처와 맞는지 ${checker}가 검사했다.${removed ? ` 근거 없는 문장 ${removed}개를 뺐다.` : ""}`,
+    second_model: "두 번째 모델", dropped: "관련 없어 뺀 기사 (Jev)", relevance: "관련도", spam: "스팸",
+    spam_text: n => `키워드를 끼워 넣은 도박 사이트 기사 ${n}건을 세기 전에 뺐다.`,
+    failed_sources: "실패한 소스", caveats: "한계", evidence_all: "작성 모델에게 준 근거 전체",
+    google_searched: "구글에서 검색한 말", as_of: "기준", intent_title: "검색하는 목적", intent_note: "구글 자동완성 문구 기준",
+    typed_with: "함께 많이 치는 말", dates: "기사에 나온 날짜", wiki_top: "위키백과 상위", google_trends: "구글 트렌드",
+    now_title: "지금 사람들이 가장 많이 검색하는 것", kinds: "어떤 검색어인가",
+    now_how: w => `검색어와 연결 기사는 구글 트렌드에서 가져왔다. 분류는 Jev, 설명은 ${w}가 썼고, 문장마다 인용한 기사와 맞는지 Jev가 검사했다.`,
+    expl_failed: "설명 작성 실패", no_data: "아직 데이터가 없다. 검색창을 비우고 분석을 눌러 보자.",
+    not_explained: "아직 설명 전이다. 검색창을 비우고 분석을 누르면 검색어마다 이유를 붙인다.",
+    no_topic: "아직 분석한 주제가 없다. 위에 주제를 입력하고 분석을 누르자.", no_history: "분석한 주제가 여기에 쌓인다.",
+    need_pw: "비밀번호를 입력해야 분석할 수 있다.",
+    busy_topic: (q, s) => `"${q}" 구글 검색과 분석 중… ${s}초 (보통 1~2분)`, busy_now: s => `지금 뜨는 검색어를 모으고 이유를 찾는 중… ${s}초 (보통 30초 안)`,
+    done: s => `${s}초 만에 끝났다.`, failed: "분석 실패: ", switch_to: "EN",
+  },
+  en: {
+    brand: "Trend Signals", topic_ph: "Topic to analyze (e.g. physical AI) · empty = trending now", password: "Password",
+    region_auto: "Auto region", region_KR: "Korea", region_US: "US", analyze: "Analyze",
+    tab_now: "Trending now", tab_topic: "Topic", tab_history: "History",
+    unsure: "uncertain", supported: "matches its sources", partly: "partly matches", unchecked: "not checked",
+    no_claims: "Nothing the sources support.", likely: "likelihood", conf_low: "low", conf_medium: "medium", conf_high: "high",
+    sources: "Sources", usage: "Usage", step: "Step", model: "Model", tokens: "Tokens in / out", cost: "Cost", free: "free",
+    f_articles: n => [String(n), "articles found with Google Search"], f_momentum: (x, n) => [`${x}×`, `news vs usual (${n} today)`],
+    f_intent: (p, k) => [p, `top search purpose: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "sentences matching sources"],
+    f_dropped: n => [String(n), "off-topic articles dropped"],
+    per_day: "Articles per day", today: "today", days_ago: n => `-${n}d`,
+    write_failed: "The analysis could not be written", why: "Why people search", happening: "What is happening", next: "What is next",
+    how: "How this was made", process: "Process",
+    process_text: (news, intent, writer, checker, removed) => `News: ${news}. Search purpose: ${intent}. Written by ${writer}. Each sentence checked against its cited sources by ${checker}.${removed ? ` ${removed} unsupported sentence(s) removed.` : ""}`,
+    second_model: "a second model", dropped: "Dropped as off-topic (Jev)", relevance: "relevance", spam: "Spam",
+    spam_text: n => `${n} keyword-stuffed gambling headlines were removed before counting.`,
+    failed_sources: "Sources that failed", caveats: "Limits", evidence_all: "All evidence given to the writer",
+    google_searched: "Searched on Google", as_of: "", intent_title: "What searchers want", intent_note: "Share of Google autocomplete phrases",
+    typed_with: "Typed with it most", dates: "Dates in the news", wiki_top: "Wikipedia top", google_trends: "Google Trends",
+    now_title: "What people are searching most right now", kinds: "What kind of searches",
+    now_how: w => `Trending searches and their linked articles come from Google Trends. Categories by Jev, explanations by ${w}, and every sentence checked by Jev against the cited articles.`,
+    expl_failed: "Explanation failed", no_data: "No data yet. Leave the box empty and press Analyze.",
+    not_explained: "Not explained yet. Leave the box empty and press Analyze to see why each one is trending.",
+    no_topic: "No topic analyzed yet. Type a topic above and press Analyze.", no_history: "Past analyses will appear here.",
+    need_pw: "Enter the password to run an analysis.",
+    busy_topic: (q, s) => `Searching Google and analyzing "${q}"… ${s}s (usually 1–2 min)`, busy_now: s => `Collecting trending searches and finding why… ${s}s (usually under 30 s)`,
+    done: s => `Done in ${s} s.`, failed: "Analysis failed: ", switch_to: "한국어",
+  },
+};
+const t = (k, ...a) => { const v = STR[LANG][k] ?? STR.ko[k]; return typeof v === "function" ? v(...a) : v; };
+const region = geo => t("region_" + geo) || geo;
+const fact = ([big, label]) => `<div class="fact"><b>${esc(big)}</b><span>${esc(label)}</span></div>`;
 
-const INTENT_NAMES = {
-  buying: "구매·이용", investing: "투자", learning: "학습", technology: "기술", definition: "뜻·개념",
-  problems: "문제·리스크", companies: "기업", policy: "정책", industries: "산업 적용", outlook: "전망",
-  events: "행사", jobs: "취업", news: "뉴스", other: "기타",
+const INTENTS = {
+  ko: { buying: "구매·이용", investing: "투자", learning: "학습", technology: "기술", definition: "뜻·개념",
+    problems: "문제·리스크", companies: "기업", policy: "정책", industries: "산업 적용", outlook: "전망",
+    events: "행사", jobs: "취업", news: "뉴스", other: "기타" },
+  en: { buying: "buying", investing: "investing", learning: "learning", technology: "technology", definition: "meaning",
+    problems: "problems", companies: "companies", policy: "policy", industries: "industries", outlook: "outlook",
+    events: "events", jobs: "jobs", news: "news", other: "other" },
 };
-const CATEGORY_NAMES = {
-  breaking_news: "사건·사고", politics: "정치", economy: "경제", sports: "스포츠", entertainment: "연예·문화",
-  scheduled_event: "예정된 행사", product_or_tech: "제품·기술", weather_or_seasonal: "날씨·계절", other: "기타",
+const CATEGORIES = {
+  ko: { breaking_news: "사건·사고", politics: "정치", economy: "경제", sports: "스포츠", entertainment: "연예·문화",
+    scheduled_event: "예정된 행사", product_or_tech: "제품·기술", weather_or_seasonal: "날씨·계절", other: "기타" },
+  en: { breaking_news: "breaking news", politics: "politics", economy: "economy", sports: "sports", entertainment: "entertainment",
+    scheduled_event: "scheduled event", product_or_tech: "product / tech", weather_or_seasonal: "weather / seasonal", other: "other" },
 };
+const intentName = k => INTENTS[LANG][k] || k;
+const categoryName = k => CATEGORIES[LANG][k] || k;
 const CATEGORY_COLORS = ["#146b63", "#4f8fc0", "#c38a12", "#8a5cb8", "#c0564f", "#5c9a4a", "#7a8a88", "#b07a4f", "#9aa3a1"];
 
 // Citations: [S] ids become numbered sources in order of first use; [D]/[T] stay data refs.
@@ -243,20 +315,20 @@ function dotClass(c) {
 }
 function dotTitle(c) {
   const p = c.check_confidence != null ? ` (${Math.round(c.check_confidence * 100)}%)` : "";
-  const label = c.check_uncertain ? "불확실" : c.check === "supported" ? "출처와 일치"
-    : c.check === "partly" ? "일부만 일치" : "검증 안 됨";
+  const label = t(c.check_uncertain ? "unsure" : c.check === "supported" ? "supported"
+    : c.check === "partly" ? "partly" : "unchecked");
   return label + p + (c.check_reason ? ` · ${c.check_reason}` : "");
 }
 function claimList(list, refs, outlook) {
-  if (!list || !list.length) return `<p class="muted">출처로 뒷받침되는 내용이 없다.</p>`;
+  if (!list || !list.length) return `<p class="muted">${t("no_claims")}</p>`;
   return `<ul class="claims">${list.map(c => `<li>
       <span class="dot ${dotClass(c)}" title="${esc(dotTitle(c))}"></span>
-      <div>${esc(c.claim)}${refs.html(c.cites)}${outlook && c.confidence ? `<span class="conf">가능성 ${esc(({ low: "낮음", medium: "보통", high: "높음" })[c.confidence] || c.confidence)}</span>` : ""}
+      <div>${esc(c.claim)}${refs.html(c.cites)}${outlook && c.confidence ? `<span class="conf">${t("likely")} ${esc(t("conf_" + c.confidence) || c.confidence)}</span>` : ""}
         ${outlook && c.basis ? `<span class="basis">${esc(c.basis)}</span>` : ""}</div>
     </li>`).join("")}</ul>`;
 }
-const legend = `<div class="legend"><span><i style="background:var(--ok)"></i>출처와 일치</span>
-  <span><i style="background:var(--warn)"></i>일부만 일치</span><span><i style="background:var(--unsure)"></i>불확실</span></div>`;
+const legend = () => `<div class="legend"><span><i style="background:var(--ok)"></i>${t("supported")}</span>
+  <span><i style="background:var(--warn)"></i>${t("partly")}</span><span><i style="background:var(--unsure)"></i>${t("unsure")}</span></div>`;
 
 function sourcesFoot(result, refs) {
   const items = refs.order.map((id, n) => {
@@ -265,17 +337,17 @@ function sourcesFoot(result, refs) {
     const meta = parts.length >= 3 ? `${parts[1]} · ${parts[0]}` : "";
     return `<li id="src-${esc(result._key)}-${n + 1}"><a href="${esc(result.evidence_links[id])}" target="_blank" rel="noopener">${esc(title)}</a>${meta ? `<span class="src"> · ${esc(meta)}</span>` : ""}</li>`;
   }).join("");
-  return items ? `<div><h2 class="sec">출처</h2><ol class="sources">${items}</ol></div>` : "";
+  return items ? `<div><h2 class="sec">${t("sources")}</h2><ol class="sources">${items}</ol></div>` : "";
 }
 
 function usageTable(usage) {
   if (!usage || !usage.length) return "";
   const total = usage.reduce((s, u) => s + (u.cost || 0), 0);
-  return `<div><h3>사용량 · $${total.toFixed(4)}</h3><div class="scroll-x"><table class="usage">
-    <tr><th>단계</th><th>모델</th><th class="num">토큰 입력 / 출력</th><th class="num">비용</th></tr>
+  return `<div><h3>${t("usage")} · $${total.toFixed(4)}</h3><div class="scroll-x"><table class="usage">
+    <tr><th>${t("step")}</th><th>${t("model")}</th><th class="num">${t("tokens")}</th><th class="num">${t("cost")}</th></tr>
     ${usage.map(u => `<tr><td>${esc(u.step)}</td><td>${esc(u.model)}</td>
       <td class="num">${u.input_tokens.toLocaleString()} / ${u.output_tokens.toLocaleString()}</td>
-      <td class="num">${u.cost == null ? "무료" : "$" + u.cost.toFixed(4)}</td></tr>`).join("")}
+      <td class="num">${u.cost == null ? t("free") : "$" + u.cost.toFixed(4)}</td></tr>`).join("")}
   </table></div></div>`;
 }
 
@@ -293,15 +365,15 @@ function topicSheet(a) {
 
   const facts = [
     f.news_unavailable
-      ? `<div class="fact"><b>${articleCount}건</b><span>구글 검색으로 찾은 기사</span></div>`
-      : `<div class="fact"><b>${m.momentum}배</b><span>평소 대비 기사량 (오늘 ${m.today}건)</span></div>`,
-    topIntent ? `<div class="fact"><b>${pct(topIntent.share)}</b><span>검색 목적 1위: ${esc(INTENT_NAMES[topIntent.intent] || topIntent.intent)}</span></div>` : "",
-    allClaims.length ? `<div class="fact"><b>${supported}/${allClaims.length}</b><span>출처와 일치한 문장</span></div>` : "",
-    f.relevance?.method === "Jev" ? `<div class="fact"><b>${f.relevance.dropped.length}건</b><span>관련 없어 뺀 기사</span></div>` : "",
+      ? fact(t("f_articles", articleCount))
+      : fact(t("f_momentum", m.momentum, m.today)),
+    topIntent ? fact(t("f_intent", pct(topIntent.share), intentName(topIntent.intent))) : "",
+    allClaims.length ? fact(t("f_supported", supported, allClaims.length)) : "",
+    f.relevance?.method === "Jev" ? fact(t("f_dropped", f.relevance.dropped.length)) : "",
   ].join("");
 
   const intents = (f.intent || []).filter(i => i.share >= 0.02).slice(0, 7).map(i =>
-    `<div class="bar-row" title="${esc(i.examples.join(", "))}"><span>${esc(INTENT_NAMES[i.intent] || i.intent)}</span>
+    `<div class="bar-row" title="${esc(i.examples.join(", "))}"><span>${esc(intentName(i.intent))}</span>
      <span class="track"><i style="width:${pct(i.share)}"></i></span><span class="n">${pct(i.share)}</span></div>`).join("");
   const searches = (a.related_searches || []).slice(0, 8).map(s => `<li><span>${esc(s.phrase)}</span></li>`).join("");
   const events = (f.events || []).slice(0, 5).map(ev =>
@@ -309,53 +381,52 @@ function topicSheet(a) {
   let coverage = "";
   if (!f.news_unavailable && m.per_day) {
     const days = [...m.per_day].reverse(), max = Math.max(...days, 1);
-    coverage = `<div class="panel"><h2 class="sec">하루 기사 수</h2>
-      <svg viewBox="0 0 280 72" width="100%" role="img" aria-label="최근 7일 하루 기사 수">
+    coverage = `<div class="panel"><h2 class="sec">${t("per_day")}</h2>
+      <svg viewBox="0 0 280 72" width="100%" role="img" aria-label="${t("per_day")}">
         ${days.map((n, i) => `<rect x="${i * 40 + 6}" y="${58 - (n / max) * 48}" width="28" height="${(n / max) * 48 + 1}" rx="3"
           fill="${i === days.length - 1 ? "var(--accent)" : "var(--accent-soft)"}"><title>${n} articles</title></rect>
-          <text x="${i * 40 + 20}" y="70" font-size="9" text-anchor="middle" fill="var(--ink-soft)">${i === days.length - 1 ? "오늘" : (days.length - 1 - i) + "일 전"}</text>`).join("")}
+          <text x="${i * 40 + 20}" y="70" font-size="9" text-anchor="middle" fill="var(--ink-soft)">${i === days.length - 1 ? t("today") : t("days_ago", days.length - 1 - i)}</text>`).join("")}
       </svg></div>`;
   }
 
-  const body = e.error ? `<p class="muted">분석을 쓰지 못했다: ${esc(e.error)}</p>` : `
-    <div class="block"><h2 class="sec">왜 찾나</h2>${claimList(e.why_people_search, refs)}</div>
-    <div class="block"><h2 class="sec">무슨 일</h2>${claimList(e.what_is_happening, refs)}</div>
-    <div class="block"><h2 class="sec">다음은</h2>${claimList(e.outlook, refs, true)}</div>`;
+  const body = e.error ? `<p class="muted">${t("write_failed")}: ${esc(e.error)}</p>` : `
+    <div class="block"><h2 class="sec">${t("why")}</h2>${claimList(e.why_people_search, refs)}</div>
+    <div class="block"><h2 class="sec">${t("happening")}</h2>${claimList(e.what_is_happening, refs)}</div>
+    <div class="block"><h2 class="sec">${t("next")}</h2>${claimList(e.outlook, refs, true)}</div>`;
 
   const removed = (e.unsupported_claims_removed || 0) + (e.failed_check_removed || 0);
-  const how = `<details class="how"><summary>이 분석은 어떻게 만들었나</summary><div class="how-grid">
-      <div><h3>과정</h3>기사: ${esc(a.news_source || "Google News feed")}. 검색 목적 분류: ${esc(f.intent_method || "word lists")}.
-        작성: ${esc(a.writer_model || "text model")}. 문장마다 인용한 출처와 맞는지 ${e.checked_by === "jev" ? "Jev" : "두 번째 모델"}가 검사했다.
-        ${removed ? ` 근거 없는 문장 ${removed}개를 뺐다.` : ""}</div>
-      ${f.relevance?.dropped?.length ? `<div><h3>관련 없어 뺀 기사 (Jev)</h3><ul class="plain">${f.relevance.dropped.map(d =>
-        `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a> <span class="muted">${d.relevance == null ? "" : "관련도 " + pct(d.relevance)}</span></li>`).join("")}</ul></div>` : ""}
-      ${f.spam_removed ? `<div><h3>스팸</h3>키워드를 끼워 넣은 도박 사이트 기사 ${f.spam_removed}건을 세기 전에 뺐다.</div>` : ""}
-      ${(a.source_errors || []).length ? `<div><h3>실패한 소스</h3>${a.source_errors.map(esc).join("<br>")}</div>` : ""}
-      ${e.caveats?.length ? `<div><h3>한계</h3>${e.caveats.map(esc).join("<br>")}</div>` : ""}
+  const how = `<details class="how"><summary>${t("how")}</summary><div class="how-grid">
+      <div><h3>${t("process")}</h3>${esc(t("process_text", a.news_source || "Google News feed", f.intent_method || "word lists",
+        a.writer_model || "text model", e.checked_by === "jev" ? "Jev" : t("second_model"), removed))}</div>
+      ${f.relevance?.dropped?.length ? `<div><h3>${t("dropped")}</h3><ul class="plain">${f.relevance.dropped.map(d =>
+        `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a> <span class="muted">${d.relevance == null ? "" : t("relevance") + " " + pct(d.relevance)}</span></li>`).join("")}</ul></div>` : ""}
+      ${f.spam_removed ? `<div><h3>${t("spam")}</h3>${esc(t("spam_text", f.spam_removed))}</div>` : ""}
+      ${(a.source_errors || []).length ? `<div><h3>${t("failed_sources")}</h3>${a.source_errors.map(esc).join("<br>")}</div>` : ""}
+      ${e.caveats?.length ? `<div><h3>${t("caveats")}</h3>${e.caveats.map(esc).join("<br>")}</div>` : ""}
       ${usageTable(a.usage)}
-      <div><h3>작성 모델에게 준 근거 전체</h3><ul class="plain">${Object.entries(a.evidence).map(([id, t]) =>
+      <div><h3>${t("evidence_all")}</h3><ul class="plain">${Object.entries(a.evidence).map(([id, t]) =>
         `<li><span class="muted">${esc(id)}</span> ${esc(t)}</li>`).join("")}</ul></div>
     </div></details>`;
 
   // Google's terms: grounded results show its search suggestions.
   const google = a.google_search?.suggestions
-    ? `<div><h2 class="sec">구글에서 검색한 말</h2><div class="google-suggestions">${a.google_search.suggestions}</div></div>` : "";
+    ? `<div><h2 class="sec">${t("google_searched")}</h2><div class="google-suggestions">${a.google_search.suggestions}</div></div>` : "";
 
   return `<article class="sheet">
-    <div class="kicker">${esc(REGION[a.geo] || a.geo)} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))} 기준</div>
+    <div class="kicker">${esc(region(a.geo))} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))} ${t("as_of")}</div>
     <h1 class="q">${esc(a.topic)}</h1>
     ${answer}
     <div class="facts-row">${facts}</div>
     <div class="cols">
       <div>${body}</div>
       <aside>
-        ${intents ? `<div class="panel"><h2 class="sec">검색하는 목적</h2>${intents}<p class="muted">구글 자동완성 문구 기준</p></div>` : ""}
+        ${intents ? `<div class="panel"><h2 class="sec">${t("intent_title")}</h2>${intents}<p class="muted">${t("intent_note")}</p></div>` : ""}
         ${coverage}
-        ${searches ? `<div class="panel"><h2 class="sec">함께 많이 치는 말</h2><ol class="plain">${searches}</ol></div>` : ""}
-        ${events ? `<div class="panel"><h2 class="sec">기사에 나온 날짜</h2><ul class="plain timeline">${events}</ul></div>` : ""}
+        ${searches ? `<div class="panel"><h2 class="sec">${t("typed_with")}</h2><ol class="plain">${searches}</ol></div>` : ""}
+        ${events ? `<div class="panel"><h2 class="sec">${t("dates")}</h2><ul class="plain timeline">${events}</ul></div>` : ""}
       </aside>
     </div>
-    <div class="foot">${legend}${sourcesFoot(a, refs)}${google}${how}</div>
+    <div class="foot">${legend()}${sourcesFoot(a, refs)}${google}${how}</div>
   </article>`;
 }
 
@@ -367,29 +438,29 @@ function overviewSheet(o) {
   o.rows.forEach(r => { const c = r.category || "other"; counts[c] = (counts[c] || 0) + 1; });
   const cats = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   const color = i => CATEGORY_COLORS[i % CATEGORY_COLORS.length];
-  const mix = cats.map(([c, n], i) => `<i style="width:${n / o.rows.length * 100}%;background:${color(i)}" title="${esc(CATEGORY_NAMES[c] || c)} ${n}"></i>`).join("");
-  const mixLegend = cats.map(([c, n], i) => `<span><i style="background:${color(i)}"></i>${esc(CATEGORY_NAMES[c] || c)} ${n}</span>`).join("");
+  const mix = cats.map(([c, n], i) => `<i style="width:${n / o.rows.length * 100}%;background:${color(i)}" title="${esc(categoryName(c))} ${n}"></i>`).join("");
+  const mixLegend = cats.map(([c, n], i) => `<span><i style="background:${color(i)}"></i>${esc(categoryName(c))} ${n}</span>`).join("");
   const rows = o.rows.map((r, i) => {
     const why = (r.why || [])[0];
     return `<tr><td class="rank">${i + 1}</td><td>
       <span class="term">${esc(r.term)}</span><span class="vol">${esc(r.traffic_text)}</span>
-      ${r.category ? `<span class="chip" title="Jev ${r.category_confidence != null ? pct(r.category_confidence) : ""}">${esc(CATEGORY_NAMES[r.category] || r.category)}</span>` : ""}
-      ${r.on_wikipedia ? `<span class="chip">위키백과 상위</span>` : ""}
+      ${r.category ? `<span class="chip" title="Jev ${r.category_confidence != null ? pct(r.category_confidence) : ""}">${esc(categoryName(r.category))}</span>` : ""}
+      ${r.on_wikipedia ? `<span class="chip">${t("wiki_top")}</span>` : ""}
       ${why ? `<span class="why"><span class="dot ${dotClass(why)}" title="${esc(dotTitle(why))}"></span>${esc(why.claim)}${refs.html(why.cites, r.id)}</span>`
             : r.top_article ? `<span class="why muted"><a href="${esc(r.top_article.url)}" target="_blank" rel="noopener">${esc(r.top_article.title)}</a></span>` : ""}
     </td></tr>`;
   }).join("");
   const themes = e.themes?.length ? claimList(e.themes, refs) : "";
   return `<article class="sheet">
-    <div class="kicker">${esc(REGION[o.geo] || o.geo)} · 구글 트렌드 · ${esc(when(o.analyzed_at, o.geo))} 기준</div>
-    <h1 class="q">지금 사람들이 가장 많이 검색하는 것</h1>
+    <div class="kicker">${esc(region(o.geo))} · ${t("google_trends")} · ${esc(when(o.analyzed_at, o.geo))} ${t("as_of")}</div>
+    <h1 class="q">${t("now_title")}</h1>
     ${themes ? `<div class="block">${themes}</div>` : ""}
-    <div class="block"><h2 class="sec">어떤 검색어인가</h2><div class="mix" aria-hidden="true">${mix}</div><div class="mix-legend">${mixLegend}</div></div>
+    <div class="block"><h2 class="sec">${t("kinds")}</h2><div class="mix" aria-hidden="true">${mix}</div><div class="mix-legend">${mixLegend}</div></div>
     <div class="block scroll-x"><table class="trends">${rows}</table></div>
-    <div class="foot">${legend}${sourcesFoot(o, refs)}
-      <details class="how"><summary>이 분석은 어떻게 만들었나</summary><div class="how-grid">
-        <div>검색어와 연결 기사는 구글 트렌드에서 가져왔다. 분류는 Jev, 설명은 ${esc(o.writer_model || "text model")}가 썼고, 문장마다 인용한 기사와 맞는지 Jev가 검사했다.
-          ${e.error ? `<br>설명 작성 실패: ${esc(e.error)}` : ""}</div>
+    <div class="foot">${legend()}${sourcesFoot(o, refs)}
+      <details class="how"><summary>${t("how")}</summary><div class="how-grid">
+        <div>${esc(t("now_how", o.writer_model || "text model"))}
+          ${e.error ? `<br>${t("expl_failed")}: ${esc(e.error)}` : ""}</div>
         ${usageTable(o.usage)}
       </div></details>
     </div>
@@ -397,11 +468,11 @@ function overviewSheet(o) {
 }
 
 function snapshotSheet(s) {
-  if (!s) return `<p class="empty">아직 데이터가 없다. 검색창을 비우고 분석을 눌러 보자.</p>`;
+  if (!s) return `<p class="empty">${t("no_data")}</p>`;
   return `<article class="sheet">
-    <div class="kicker">${esc(REGION[s.geo] || s.geo)} · 구글 트렌드 · ${esc(when(s.collected_at, s.geo))} 기준</div>
-    <h1 class="q">지금 사람들이 가장 많이 검색하는 것</h1>
-    <p class="muted">아직 설명 전이다. 검색창을 비우고 분석을 누르면 검색어마다 이유를 붙인다.</p>
+    <div class="kicker">${esc(region(s.geo))} · ${t("google_trends")} · ${esc(when(s.collected_at, s.geo))} ${t("as_of")}</div>
+    <h1 class="q">${t("now_title")}</h1>
+    <p class="muted">${t("not_explained")}</p>
     <ol class="plain">${s.google_trends.slice(0, 15).map(t => `<li><span><b>${esc(t.term)}</b> <span class="muted">${esc(t.traffic_text)}</span>
       ${t.news[0] ? `<br><a href="${esc(t.news[0].url)}" target="_blank" rel="noopener">${esc(t.news[0].title)}</a>` : ""}</span></li>`).join("")}</ol>
   </article>`;
@@ -417,15 +488,15 @@ function renderNow() {
 }
 function renderTopic() {
   document.getElementById("view-topic").innerHTML = current ? topicSheet(current)
-    : `<p class="empty">아직 분석한 주제가 없다. 위에 주제를 입력하고 분석을 누르자.</p>`;
+    : `<p class="empty">${t("no_topic")}</p>`;
 }
 function renderHistory() {
   document.getElementById("history-count").textContent = results.length ? String(results.length) : "";
   document.getElementById("view-history").innerHTML = results.length ? `<ul class="history">${results.map((a, i) => {
     const s = a.explanation?.summary || (a.explanation?.what_is_happening || [])[0];
-    return `<li><button data-i="${i}"><span class="t">${esc(a.topic)}</span><span class="d">${esc(REGION[a.geo] || a.geo)} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))}</span>
+    return `<li><button data-i="${i}"><span class="t">${esc(a.topic)}</span><span class="d">${esc(region(a.geo))} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))}</span>
       ${s ? `<span class="s">${esc(s.claim)}</span>` : ""}</button></li>`;
-  }).join("")}</ul>` : `<p class="empty">분석한 주제가 여기에 쌓인다.</p>`;
+  }).join("")}</ul>` : `<p class="empty">${t("no_history")}</p>`;
   document.querySelectorAll("ul.history button").forEach(b => b.addEventListener("click", () => {
     current = results[+b.dataset.i]; renderTopic(); show("topic");
   }));
@@ -440,9 +511,21 @@ function show(view) {
 }
 document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.view)));
 
-document.getElementById("today").textContent = new Intl.DateTimeFormat("ko-KR",
-  { timeZone: "Asia/Seoul", year: "numeric", month: "long", day: "numeric", weekday: "long" }).format(new Date());
-renderNow(); renderTopic(); renderHistory();
+function applyLanguage() {
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); el.setAttribute("aria-label", t(el.dataset.i18nPh)); });
+  document.getElementById("lang").textContent = t("switch_to");
+  document.getElementById("today").textContent = new Intl.DateTimeFormat(LANG === "ko" ? "ko-KR" : "en-US",
+    { timeZone: "Asia/Seoul", year: "numeric", month: "long", day: "numeric", weekday: "long" }).format(new Date());
+  renderNow(); renderTopic(); renderHistory();
+}
+document.getElementById("lang").addEventListener("click", () => {
+  LANG = LANG === "ko" ? "en" : "ko";
+  try { localStorage.setItem("lang", LANG); } catch {}
+  applyLanguage();
+});
+applyLanguage();
 const start = location.hash.slice(1);
 show(["now", "topic", "history"].includes(start) ? start : (DATA.overview || !current ? "now" : "topic"));
 
@@ -459,7 +542,7 @@ if (DATA.live) {
     event.preventDefault();
     const topic = document.getElementById("topic").value.trim();
     if (DATA.needs_password && !passwordInput.value) {
-      status.className = "error"; status.textContent = "비밀번호를 입력해야 분석할 수 있다."; return;
+      status.className = "error"; status.textContent = t("need_pw"); return;
     }
     button.disabled = true;
     status.className = "";
@@ -467,8 +550,7 @@ if (DATA.live) {
     const tick = setInterval(() => {
       const s = Math.round((Date.now() - started) / 1000);
       status.textContent = topic
-        ? `"${topic}" 구글 검색과 분석 중… ${s}초 (보통 1~2분)`
-        : `지금 뜨는 검색어를 모으고 이유를 찾는 중… ${s}초 (보통 30초 안)`;
+        ? t("busy_topic", topic, s) : t("busy_now", s);
     }, 500);
     try {
       const response = await fetch("/api/analyze", {
@@ -484,11 +566,11 @@ if (DATA.live) {
         current = { ...result, _key: "r" + Date.now() };
         results.unshift(current); renderTopic(); renderHistory(); show("topic");
       }
-      status.textContent = `${Math.round((Date.now() - started) / 1000)}초 만에 끝났다.`;
+      status.textContent = t("done", Math.round((Date.now() - started) / 1000));
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (error) {
       status.className = "error";
-      status.textContent = "분석 실패: " + error.message;
+      status.textContent = t("failed") + error.message;
     } finally {
       clearInterval(tick);
       button.disabled = false;
