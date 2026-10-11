@@ -10,6 +10,8 @@
     { "binding": "ANALYSES", "id": "a58f3438df374fe8b85bcb8d4f5524d3" }
   ],
   "observability": { "enabled": true },
+  // Paid Jev: the free tier refuses Cloudflare's servers (FreeUsageLimitError). About $0.04 per 1M input tokens.
+  "vars": { "JEV_MODEL": "jev-1.13", "JEV_FOR_INTENT": "1" },
   // Run in one fixed region (Google Cloud Seoul). Otherwise the Worker runs wherever the
   // visitor's nearest Cloudflare data center is, and Gemini refuses some of those
   // locations ("User location is not supported").

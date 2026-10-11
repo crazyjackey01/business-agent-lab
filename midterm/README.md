@@ -56,9 +56,9 @@ What runs where on Cloudflare, and why:
 |---|---|---|
 | Related searches | Google autocomplete | works from Cloudflare |
 | Trending now | Google Trends RSS, Wikipedia | works from Cloudflare |
-| News articles | **Gemini + Google Search** (official API) | the Google News feed refuses Cloudflare's servers (HTTP 503); only articles Google attached a citation to are kept |
+| News articles | **Gemini + Google Search** (official API) | the Google News feed refuses Cloudflare's servers (HTTP 503); only articles Google attached a citation to are kept; falls back across three Gemini models when one is busy |
 | Writing the analysis | **Claude Sonnet 5.5** via OpenRouter | follows the cite-every-claim rules closely |
-| Claim check | Jev, falling back to the writing model | Jev's free tier answers 429 to Cloudflare |
+| Claim check, intent sorting | **Jev 1.13 (paid)** via OpenCode Zen | the free tier refuses Cloudflare (FreeUsageLimitError); paid works |
 
 The Worker is pinned to Google Cloud's Seoul region (`placement` in `wrangler.jsonc`),
 because Gemini refuses requests from some of the locations Cloudflare would otherwise use.

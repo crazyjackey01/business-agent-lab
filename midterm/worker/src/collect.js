@@ -213,19 +213,24 @@ export function newsMomentum(perDay) {
 // add an article that Google Search did not return.
 
 const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/interactions";
-const GEMINI_SEARCH_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash"]; // second one if the first is busy
+// Tried in order; Gemini often answers "high demand" for a while, so there are fallbacks.
+const GEMINI_SEARCH_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"];
 
 async function geminiSearch(env, input) {
   let lastError;
   for (const model of GEMINI_SEARCH_MODELS) {
-    const response = await fetch(GEMINI_URL, {
-      method: "POST",
-      headers: { "x-goog-api-key": env.GEMINI_API_KEY, "Content-Type": "application/json" },
-      body: JSON.stringify({ model, input, tools: [{ type: "google_search" }] }),
-    });
-    const data = await response.json().catch(() => ({}));
-    if (response.ok && !data.error) return { ...data, model };
-    lastError = `Gemini ${model}: ${data.error?.message || response.status}`;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const response = await fetch(GEMINI_URL, {
+        method: "POST",
+        headers: { "x-goog-api-key": env.GEMINI_API_KEY, "Content-Type": "application/json" },
+        body: JSON.stringify({ model, input, tools: [{ type: "google_search" }] }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (response.ok && !data.error) return { ...data, model };
+      lastError = `Gemini ${model}: ${data.error?.message || response.status}`;
+      if (response.status !== 503 && data.error?.code !== "service_unavailable") break; // only "busy" is worth retrying
+      await new Promise(r => setTimeout(r, 3000));
+    }
   }
   throw new Error(lastError);
 }

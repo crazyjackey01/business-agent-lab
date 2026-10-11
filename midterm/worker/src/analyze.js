@@ -147,8 +147,7 @@ export async function searchIntent(env, related, topic) {
   const byRule = Object.fromEntries(related.map(r => [r.phrase, classifyIntent(r.phrase, topic)]));
   const leftovers = Object.keys(byRule).filter(p => byRule[p] === "other").slice(0, 150);
   let byModel = {};
-  // Jev's free tier allows few requests from Cloudflare, so it is saved for the claim check
-  // unless JEV_FOR_INTENT is set.
+  // JEV_FOR_INTENT turns Jev on for this step (set in wrangler.jsonc).
   if (leftovers.length && env.OPENCODE_API_KEY && env.JEV_FOR_INTENT) {
     byModel = await classifyWithJev(env, leftovers, topic).catch(() => ({}));
   }
