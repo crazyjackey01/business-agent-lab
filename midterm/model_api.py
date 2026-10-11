@@ -5,7 +5,9 @@ Copied from week-05. analyze_topic.py uses request_model() from this file.
 The API key comes from the .env file in the project root (business-agent-lab/.env).
 This file never prints the key.
 """
+import json
 import os
+import re
 import time
 from pathlib import Path
 
@@ -87,3 +89,10 @@ def error_message(data):
     if isinstance(error, dict):
         return error.get("message") or "no message"
     return str(error)
+
+
+def parse_json_reply(text):
+    match = re.search(r"\{.*\}", text or "", re.DOTALL)
+    if not match:
+        raise ValueError("the model did not reply with JSON")
+    return json.loads(match.group(0))

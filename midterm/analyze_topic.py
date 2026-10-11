@@ -5,8 +5,8 @@ Input: the latest result from topic_trends.py for a topic (or a fresh run).
 Two layers, so the conclusions rest on facts and not on guesses:
 
   1. Measured facts (plain code, no AI):
-     - search intent: what kind of thing people ask about the topic
-       (investing, definition, companies, outlook, ...), from autocomplete phrases
+     - search intent: what people want from the topic (buying, how-to, investing, ...),
+       from autocomplete phrases; Jev sorts every phrase (intent.py)
      - news drivers: words that appear much more in today's headlines than before
      - scheduled events: dates and launch/event words found in headlines
      - coverage trend: daily article counts and momentum, across saved runs too
@@ -32,162 +32,12 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import jev_api
-from model_api import ModelRequestError, request_model
+from intent import search_intent
+from model_api import ModelRequestError, parse_json_reply, request_model
 from topic_trends import RESULT_DIR, analyze_topic, save_result
 
 HERE = Path(__file__).resolve().parent
 ANALYSIS_DIR = HERE / "data" / "analysis"
-
-# Search intent ----------------------------------------------------------------
-
-# Words in an autocomplete phrase that show what the searcher wants.
-# Checked in this order; the first intent with a matching word wins.
-# Korean words match inside longer words ("로봇팔" counts as 로봇).
-INTENT_WORDS = {
-    "problems": ["화재", "리콜", "고장", "결함", "사고", "문제", "논란", "부작용", "위험", "단점", "recall",
-                 "problems", "issues", "fire", "lawsuit", "risks", "dangers", "complaints"],
-    "buying": ["가격", "보조금", "추천", "순위", "비교", "중고", "구매", "할인", "후기", "리뷰", "충전", "렌트",
-               "price", "prices", "cost", "best", "vs", "review", "reviews", "buy", "cheap", "deals",
-               "subsidy", "used", "charging", "rent"],
-    "investing": ["관련주", "대장주", "주도주", "주가", "주식", "종목", "etf", "수혜주", "테마주", "투자",
-                  "밸류체인", "stock", "stocks", "invest", "investments", "investors", "funding",
-                  "shares", "price"],
-    "definition": ["뜻", "란", "이란", "개념", "의미", "정의", "뭐야", "특징", "종류", "영어로",
-                   "나무위키", "meaning", "what is", "definition", "explained", "overview", "wiki",
-                   "que es", "là gì", "kya hai"],
-    "learning": ["공부", "교육", "강의", "논문", "책", "자격증", "부트캠프", "대학원", "연구실", "랩실",
-                 "코딩", "학습", "트레이닝", "course", "paper", "papers", "book", "books", "learn",
-                 "learning", "tutorial", "bootcamp", "certification", "research", "journal", "pdf",
-                 "github", "open source", "projects", "kit"],
-    "jobs": ["채용", "취업", "연봉", "직무", "신입", "jobs", "careers", "salary", "hiring", "engineer",
-             "roles", "fellowship"],
-    "events": ["컨퍼런스", "대회", "챌린지", "포럼", "세미나", "해커톤", "박람회", "conference", "summit",
-               "hackathon", "expo", "meetup", "events"],
-    "policy": ["특별법", "전략", "정책", "얼라이언스", "협회", "규제", "패권", "governance", "regulation",
-               "policy"],
-    "companies": ["기업", "회사", "스타트업", "업체", "현대차", "삼성", "엔비디아", "companies", "company",
-                  "startups", "startup", "key players", "leaders", "nvidia", "google", "openai",
-                  "anthropic", "intel", "amd", "qualcomm", "aws", "tesla", "hitachi", "fujitsu", "fanuc"],
-    "industries": ["제조", "물류", "방산", "자율주행", "항만", "의료", "사례", "산업", "분야", "manufacturing",
-                   "healthcare", "logistics", "applications", "in healthcare", "for robotics"],
-    "technology": ["기술", "모델", "데이터", "월드모델", "반도체", "메모리", "액추에이터", "플랫폼", "풀스택",
-                   "시스템", "로보틱스", "휴머노이드", "로봇", "드론", "vla", "models", "model", "dataset",
-                   "data", "world models", "reinforcement learning", "framework", "hardware", "platform",
-                   "os", "operating system", "benchmarks", "robotics", "robot", "robots", "humanoid",
-                   "simulation", "omniverse", "cosmos", "embodied ai"],
-    "outlook": ["전망", "미래", "트렌드", "동향", "시장", "규모", "보고서", "future", "outlook", "market",
-                "trends", "forecast", "boom", "hype", "growth", "report", "next frontier"],
-    "news": ["뉴스", "디시", "news", "newsletter", "blog", "podcast", "reddit", "linkedin"],
-}
-
-
-def classify_intent(phrase, topic):
-    rest = phrase.lower().replace(topic.lower(), " ").strip()
-    words = set(re.split(r"\s+", rest))
-    for intent, keys in INTENT_WORDS.items():
-        for key in keys:
-            if " " in key or not key.isascii():
-                if key in rest:
-                    return intent
-            elif key in words:
-                return intent
-    return "other"
-
-
-# What each intent means, so Jev knows what it is choosing between.
-INTENT_DESCRIPTIONS = {
-    "problems": "problems, risks, recalls, accidents, controversy, downsides",
-    "buying": "buying or using it: prices, reviews, comparisons, recommendations, subsidies, charging",
-    "investing": "stocks, ETFs, funds, investment opportunities",
-    "definition": "what it is: meaning, definition, examples, types",
-    "learning": "studying it: courses, papers, books, research, tutorials, projects",
-    "jobs": "jobs, careers, salaries, hiring",
-    "events": "conferences, competitions, expos, hackathons, forums",
-    "policy": "government policy, laws, regulation, national strategy, alliances",
-    "companies": "specific companies, brands, startups, key players",
-    "industries": "use in an industry or field: manufacturing, healthcare, logistics, cases",
-    "technology": "how it works: technology, models, hardware, data, platforms",
-    "outlook": "the future: outlook, market size, trends, forecasts, reports",
-    "news": "the latest news, blogs, forums, communities",
-    "other": "none of the above",
-}
-
-
-def classify_with_jev(phrases, topic):
-    """Jev picks one intent per phrase, with a probability. Returns {phrase: intent}."""
-    state = f"Search phrases people typed into Google about the topic: {topic}"
-    questions = {
-        f"p{n}": {
-            "type": "choice",
-            "instructions": f'What does someone who searches "{phrase}" want?',
-            "criteria": INTENT_DESCRIPTIONS,
-        }
-        for n, phrase in enumerate(phrases)
-    }
-    answers = jev_api.ask(state, questions)
-    return {phrase: answers[f"p{n}"]["choice"] for n, phrase in enumerate(phrases)
-            if answers.get(f"p{n}", {}).get("choice") in INTENT_DESCRIPTIONS}
-
-
-def classify_with_model(phrases, topic):
-    """Sort phrases the word lists missed into the same fixed intents, in one model call.
-
-    The model only picks a label from INTENT_WORDS for each phrase; it adds no facts.
-    Returns {phrase: intent}; on any failure, an empty dict (phrases stay "other").
-    """
-    if not phrases:
-        return {}
-    labels = list(INTENT_WORDS) + ["other"]
-    numbered = "\n".join(f"{n}. {p}" for n, p in enumerate(phrases))
-    messages = [
-        {"role": "system", "content": (
-            "Classify what each search phrase's searcher wants. Pick exactly one label per phrase from: "
-            + ", ".join(labels) + ". Use other only if none fits. "
-            'Reply with JSON only: {"labels": {"0": "buying", "1": "technology"}}')},
-        {"role": "user", "content": f"Topic: {topic}\n\nSearch phrases:\n{numbered}"},
-    ]
-    try:
-        answer = parse_json_reply(request_model(messages).get("content"))["labels"]
-    except (ModelRequestError, ValueError, KeyError):
-        return {}
-    return {phrases[int(n)]: label for n, label in answer.items()
-            if str(n).isdigit() and int(n) < len(phrases) and label in labels}
-
-
-def search_intent(related, topic, use_model=True):
-    """Share of autocomplete phrases per intent, weighted by how often each was suggested.
-
-    Word lists first (exact and explainable), then the model for what they miss.
-    Returns (how the phrases were classified, list of intents with shares).
-    """
-    by_rule = {item["phrase"]: classify_intent(item["phrase"], topic) for item in related}
-    leftovers = [p for p, intent in by_rule.items() if intent == "other"][:150]
-    by_model, method = {}, "word lists only"
-    if use_model and leftovers and jev_api.available():
-        try:
-            by_model = classify_with_jev(leftovers, topic)
-            method = "word lists, then Jev for phrases they missed"
-        except jev_api.JevError:
-            by_model = {}
-    if use_model and leftovers and not by_model:
-        by_model = classify_with_model(leftovers, topic)
-        method = "word lists, then the text model for phrases they missed"
-
-    totals, examples = Counter(), {}
-    for item in related:
-        intent = by_model.get(item["phrase"], by_rule[item["phrase"]])
-        totals[intent] += item["times_suggested"]
-        examples.setdefault(intent, []).append(item["phrase"])
-    all_count = sum(totals.values()) or 1
-    return method, [
-        {
-            "intent": intent,
-            "share": round(n / all_count, 2),
-            "examples": examples[intent][:5],
-        }
-        for intent, n in totals.most_common()
-    ]
-
 
 # News drivers -----------------------------------------------------------------
 
@@ -358,13 +208,6 @@ def build_evidence(facts, news, max_headlines=40):
         evidence[f"S{n}"] = f"{a['published'][:10]} | {a['source']} | {a['title']}"
         links[f"S{n}"] = a["url"]
     return evidence, links
-
-
-def parse_json_reply(text):
-    match = re.search(r"\{.*\}", text or "", re.DOTALL)
-    if not match:
-        raise ValueError("the model did not reply with JSON")
-    return json.loads(match.group(0))
 
 
 def keep_supported(claims, evidence):

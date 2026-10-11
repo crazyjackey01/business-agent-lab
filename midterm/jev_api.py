@@ -16,7 +16,7 @@ import model_api  # loads the .env file
 
 ENDPOINT = "https://opencode.ai/zen/v1/systemone"
 MODEL = os.getenv("JEV_MODEL") or "jev-1.13-free"
-MAX_QUESTIONS = 200  # one request per step when possible: the free tier allows few requests per minute
+MAX_QUESTIONS = 100  # per request: Jev refuses requests over ~60k tokens (about 150 intent questions)
 
 
 class JevError(Exception):

@@ -263,10 +263,10 @@ const region = geo => t("region_" + geo) || geo;
 const fact = ([big, label]) => `<div class="fact"><b>${esc(big)}</b><span>${esc(label)}</span></div>`;
 
 const INTENTS = {
-  ko: { buying: "구매·이용", investing: "투자", learning: "학습", technology: "기술", definition: "뜻·개념",
+  ko: { buying: "구매", product_info: "제품 정보", how_to: "사용법·설정", investing: "투자", learning: "학습", technology: "기술", definition: "뜻·개념",
     problems: "문제·리스크", companies: "기업", policy: "정책", industries: "산업 적용", outlook: "전망",
     events: "행사", jobs: "취업", news: "뉴스", other: "기타" },
-  en: { buying: "buying", investing: "investing", learning: "learning", technology: "technology", definition: "meaning",
+  en: { buying: "buying", product_info: "product info", how_to: "how to use", investing: "investing", learning: "learning", technology: "technology", definition: "meaning",
     problems: "problems", companies: "companies", policy: "policy", industries: "industries", outlook: "outlook",
     events: "events", jobs: "jobs", news: "news", other: "other" },
 };

@@ -5,179 +5,10 @@
 //      can only pick supported / partly / unsupported) when OPENCODE_API_KEY is set,
 //      otherwise by a second text-model call
 import { dayIn } from "./collect.js";
-
-const OPENROUTER = "https://openrouter.ai/api/v1/chat/completions";
-// Writes the analysis. Override with the OPENROUTER_MODEL variable.
-const DEFAULT_MODEL = "anthropic/claude-sonnet-5.5";
-const MAX_REPLY_TOKENS = 4000; // analyses use about 2,000
-const JEV_ENDPOINT = "https://opencode.ai/zen/v1/systemone";
-const JEV_MAX_QUESTIONS = 200; // one request per step when possible: the free tier allows few requests per minute
-
-const JEV_INPUT_PRICE = 0.042 / 1e6; // dollars per input token for paid jev-1.13; output is free
-
-// Every model call adds a row to env.usage (one list per search), so the page can show
-// what each step cost in tokens and dollars.
-function recordUsage(env, row) {
-  if (env.usage) env.usage.push(row);
-}
-
-// Jev writes no text: it answers questions whose possible answers we fix in advance.
-async function askJev(env, state, questions, step) {
-  const ids = Object.keys(questions), answers = {};
-  // One batch at a time, and wait on 429: the free tier rejects bursts.
-  for (let i = 0; i < ids.length; i += JEV_MAX_QUESTIONS) {
-    const batch = ids.slice(i, i + JEV_MAX_QUESTIONS);
-    for (let attempt = 0; ; attempt++) {
-      const response = await fetch(JEV_ENDPOINT, {
-        method: "POST",
-        headers: { Authorization: `Bearer ${env.OPENCODE_API_KEY}`, "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: env.JEV_MODEL || "jev-1.13-free", state,
-          questions: Object.fromEntries(batch.map(id => [id, questions[id]])),
-        }),
-      });
-      if (response.status === 429 && attempt < 3) {
-        await new Promise(r => setTimeout(r, 1500 * 2 ** attempt));
-        continue;
-      }
-      const data = await response.json().catch(() => ({}));
-      if (!response.ok || !data.answers) throw new Error(`Jev HTTP ${response.status}: ${data.error?.message || "no answers"}`);
-      Object.assign(answers, data.answers);
-      const model = env.JEV_MODEL || "jev-1.13-free";
-      recordUsage(env, {
-        step, model, questions: batch.length,
-        input_tokens: data.usage?.input_tokens || 0, output_tokens: data.usage?.output_tokens || 0,
-        cost: model.endsWith("-free") ? 0 : (data.usage?.input_tokens || 0) * JEV_INPUT_PRICE,
-      });
-      break;
-    }
-  }
-  return answers;
-}
+import { searchIntent } from "./intent.js";
+import { DEFAULT_MODEL, askJev, parseJsonReply, requestModel } from "./models.js";
 
 const isAscii = s => /^[\x00-\x7f]*$/.test(s);
-
-// Search intent ----------------------------------------------------------------
-
-// Checked in this order; the first intent with a matching word wins.
-// Korean words match inside longer words ("로봇팔" counts as 로봇).
-export const INTENT_WORDS = {
-  problems: ["화재", "리콜", "고장", "결함", "사고", "문제", "논란", "부작용", "위험", "단점", "recall",
-    "problems", "issues", "fire", "lawsuit", "risks", "dangers", "complaints"],
-  buying: ["가격", "보조금", "추천", "순위", "비교", "중고", "구매", "할인", "후기", "리뷰", "충전", "렌트",
-    "price", "prices", "cost", "best", "vs", "review", "reviews", "buy", "cheap", "deals",
-    "subsidy", "used", "charging", "rent"],
-  investing: ["관련주", "대장주", "주도주", "주가", "주식", "종목", "etf", "수혜주", "테마주", "투자",
-    "밸류체인", "stock", "stocks", "invest", "investments", "investors", "funding", "shares", "price"],
-  definition: ["뜻", "란", "이란", "개념", "의미", "정의", "뭐야", "특징", "종류", "영어로", "나무위키",
-    "meaning", "what is", "definition", "explained", "overview", "wiki", "que es", "là gì", "kya hai"],
-  learning: ["공부", "교육", "강의", "논문", "책", "자격증", "부트캠프", "대학원", "연구실", "랩실", "코딩",
-    "학습", "트레이닝", "course", "paper", "papers", "book", "books", "learn", "learning", "tutorial",
-    "bootcamp", "certification", "research", "journal", "pdf", "github", "open source", "projects", "kit"],
-  jobs: ["채용", "취업", "연봉", "직무", "신입", "jobs", "careers", "salary", "hiring", "engineer", "roles",
-    "fellowship"],
-  events: ["컨퍼런스", "대회", "챌린지", "포럼", "세미나", "해커톤", "박람회", "conference", "summit",
-    "hackathon", "expo", "meetup", "events"],
-  policy: ["특별법", "전략", "정책", "얼라이언스", "협회", "규제", "패권", "governance", "regulation", "policy"],
-  companies: ["기업", "회사", "스타트업", "업체", "현대차", "삼성", "엔비디아", "companies", "company",
-    "startups", "startup", "key players", "leaders", "nvidia", "google", "openai", "anthropic", "intel",
-    "amd", "qualcomm", "aws", "tesla", "hitachi", "fujitsu", "fanuc"],
-  industries: ["제조", "물류", "방산", "자율주행", "항만", "의료", "사례", "산업", "분야", "manufacturing",
-    "healthcare", "logistics", "applications", "in healthcare", "for robotics"],
-  technology: ["기술", "모델", "데이터", "월드모델", "반도체", "메모리", "액추에이터", "플랫폼", "풀스택",
-    "시스템", "로보틱스", "휴머노이드", "로봇", "드론", "vla", "models", "model", "dataset", "data",
-    "world models", "reinforcement learning", "framework", "hardware", "platform", "os",
-    "operating system", "benchmarks", "robotics", "robot", "robots", "humanoid", "simulation",
-    "omniverse", "cosmos", "embodied ai"],
-  outlook: ["전망", "미래", "트렌드", "동향", "시장", "규모", "보고서", "future", "outlook", "market",
-    "trends", "forecast", "boom", "hype", "growth", "report", "next frontier"],
-  news: ["뉴스", "디시", "news", "newsletter", "blog", "podcast", "reddit", "linkedin"],
-};
-
-// What each intent means, so Jev knows what it is choosing between.
-const INTENT_DESCRIPTIONS = {
-  problems: "problems, risks, recalls, accidents, controversy, downsides",
-  buying: "buying or using it: prices, reviews, comparisons, recommendations, subsidies, charging",
-  investing: "stocks, ETFs, funds, investment opportunities",
-  definition: "what it is: meaning, definition, examples, types",
-  learning: "studying it: courses, papers, books, research, tutorials, projects",
-  jobs: "jobs, careers, salaries, hiring",
-  events: "conferences, competitions, expos, hackathons, forums",
-  policy: "government policy, laws, regulation, national strategy, alliances",
-  companies: "specific companies, brands, startups, key players",
-  industries: "use in an industry or field: manufacturing, healthcare, logistics, cases",
-  technology: "how it works: technology, models, hardware, data, platforms",
-  outlook: "the future: outlook, market size, trends, forecasts, reports",
-  news: "the latest news, blogs, forums, communities",
-  other: "none of the above",
-};
-
-async function classifyWithJev(env, phrases, topic) {
-  const questions = Object.fromEntries(phrases.map((phrase, n) => [`p${n}`, {
-    type: "choice", instructions: `What does someone who searches "${phrase}" want?`, criteria: INTENT_DESCRIPTIONS,
-  }]));
-  const answers = await askJev(env, `Search phrases people typed into Google about the topic: ${topic}`, questions, "intent");
-  const out = {};
-  phrases.forEach((phrase, n) => {
-    const choice = answers[`p${n}`]?.choice;
-    if (choice in INTENT_DESCRIPTIONS) out[phrase] = choice;
-  });
-  return out;
-}
-
-export function classifyIntent(phrase, topic) {
-  const rest = phrase.toLowerCase().replace(topic.toLowerCase(), " ").trim();
-  const words = new Set(rest.split(/\s+/));
-  for (const [intent, keys] of Object.entries(INTENT_WORDS)) {
-    for (const key of keys) {
-      if (key.includes(" ") || !isAscii(key) ? rest.includes(key) : words.has(key)) return intent;
-    }
-  }
-  return "other";
-}
-
-// Sort phrases the word lists missed into the same fixed intents, in one model call.
-// The model only picks a label for each phrase; it adds no facts.
-async function classifyWithModel(env, phrases, topic) {
-  if (!phrases.length) return {};
-  const labels = [...Object.keys(INTENT_WORDS), "other"];
-  const numbered = phrases.map((p, n) => `${n}. ${p}`).join("\n");
-  try {
-    const reply = parseJsonReply(await requestModel(env, [
-      { role: "system", content: "Classify what each search phrase's searcher wants. Pick exactly one label per phrase from: "
-          + labels.join(", ") + '. Use other only if none fits. Reply with JSON only: {"labels": {"0": "buying", "1": "technology"}}' },
-      { role: "user", content: `Topic: ${topic}\n\nSearch phrases:\n${numbered}` },
-    ], "intent"));
-    const out = {};
-    for (const [n, label] of Object.entries(reply.labels || {})) {
-      if (/^\d+$/.test(n) && +n < phrases.length && labels.includes(label)) out[phrases[+n]] = label;
-    }
-    return out;
-  } catch {
-    return {}; // phrases stay "other"
-  }
-}
-
-export async function searchIntent(env, related, topic) {
-  const byRule = Object.fromEntries(related.map(r => [r.phrase, classifyIntent(r.phrase, topic)]));
-  const leftovers = Object.keys(byRule).filter(p => byRule[p] === "other").slice(0, 150);
-  let byModel = {};
-  if (leftovers.length && env.OPENCODE_API_KEY) {
-    byModel = await classifyWithJev(env, leftovers, topic).catch(() => ({}));
-  }
-  if (leftovers.length && !Object.keys(byModel).length) byModel = await classifyWithModel(env, leftovers, topic);
-
-  const totals = new Map(), examples = {};
-  for (const r of related) {
-    const intent = byModel[r.phrase] || byRule[r.phrase];
-    totals.set(intent, (totals.get(intent) || 0) + r.times_suggested);
-    (examples[intent] ||= []).push(r.phrase);
-  }
-  const all = [...totals.values()].reduce((a, b) => a + b, 0) || 1;
-  return [...totals].sort((a, b) => b[1] - a[1]).map(([intent, n]) => ({
-    intent, share: Math.round((n / all) * 100) / 100, examples: examples[intent].slice(0, 5),
-  }));
-}
 
 // News drivers -----------------------------------------------------------------
 
@@ -245,38 +76,6 @@ export function scheduledEvents(news, limit = 15) {
     if (dates.length && words.length) events.push({ ...a, dates_mentioned: dates, event_words: words });
   }
   return events.slice(0, limit);
-}
-
-// Model calls --------------------------------------------------------------------
-
-async function requestModel(env, messages, step) {
-  // max_tokens caps the reply; without it OpenRouter reserves credit for a 65k-token reply.
-  const body = JSON.stringify({ model: env.OPENROUTER_MODEL || DEFAULT_MODEL, messages, max_tokens: MAX_REPLY_TOKENS });
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const response = await fetch(OPENROUTER, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${env.OPENROUTER_API_KEY}`, "Content-Type": "application/json" },
-      body,
-    });
-    if (response.status === 429 && attempt < 2) {
-      await new Promise(r => setTimeout(r, 2000 * 2 ** attempt)); // rate limited: wait, try again
-      continue;
-    }
-    const data = await response.json().catch(() => ({ error: { message: "not JSON" } }));
-    if (!response.ok || data.error) throw new Error(`model HTTP ${response.status}: ${data.error?.message || "no message"}`);
-    recordUsage(env, {
-      step, model: data.model || env.OPENROUTER_MODEL || DEFAULT_MODEL,
-      input_tokens: data.usage?.prompt_tokens || 0, output_tokens: data.usage?.completion_tokens || 0,
-      cost: data.usage?.cost ?? null,
-    });
-    return data.choices[0].message.content;
-  }
-}
-
-function parseJsonReply(text) {
-  const match = (text || "").match(/\{[\s\S]*\}/);
-  if (!match) throw new Error("the model did not reply with JSON");
-  return JSON.parse(match[0]);
 }
 
 // Explanation ----------------------------------------------------------------------
@@ -492,15 +291,18 @@ export async function relevantNews(env, news, topic) {
 // Run --------------------------------------------------------------------------------
 
 export async function analyze(env, data) {
-  const relevance = await relevantNews(env, data.news, data.topic);
+  const [relevance, [intentMethod, intents]] = await Promise.all([
+    relevantNews(env, data.news, data.topic),
+    searchIntent(env, data.related_searches, data.topic),
+  ]);
   data = { ...data, news: relevance.kept };
   const facts = {
     topic: data.topic,
     coverage: data.news_momentum,
     news_unavailable: !data.news_momentum,
     spam_removed: data.news_spam_removed || 0,
-    intent: await searchIntent(env, data.related_searches, data.topic),
-    intent_method: `word lists, then ${env.OPENCODE_API_KEY ? "Jev" : "the text model"} for phrases they missed`,
+    intent: intents,
+    intent_method: intentMethod,
     drivers: newsDrivers(data.news, data.topic, data.geo),
     events: scheduledEvents(data.news),
     trends_matches: data.google_trends_matches,
