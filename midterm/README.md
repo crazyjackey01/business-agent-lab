@@ -124,6 +124,10 @@ Built so conclusions rest on facts, not speculation:
 2. **Explanation (LLM via OpenRouter)**: the model sees only those facts, each with an
    id (`[D1]` data, `[S4]` headline), and must cite ids for every claim. Claims citing
    nothing or nonexistent ids are dropped. Forecasts need a basis and a confidence.
+   Before that, **Jev filters the news**: for each article it answers yes/no to "is this
+   mainly about the topic?", and articles under 50% are dropped (and listed on the page).
+   For 스마트 안경 locally it dropped 43 of 95 (leftover gambling spam, an AI-bubble
+   column, XR-headset stories) for about $0.0001.
 3. **Evidence check**: a second model call rates each claim against the exact
    evidence it cites. Unsupported claims are removed, "partly" ones are marked.
 

@@ -1,0 +1,813 @@
+{
+  "topic": "스마트 안경",
+  "lang": "ko",
+  "geo": "KR",
+  "collected_at": "2026-10-11T16:09:27+00:00",
+  "related_searches": [
+    {
+      "phrase": "스마트 안경 가격",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 후기",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 시력 교정",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 시험 디시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 추천",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 후기 디시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 도수",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 기능",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 디시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 게임",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 구매",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 관련주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 기사",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 골프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 나무위키",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 녹화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 노안",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 도수 조절",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 대여",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 디스플레이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 렌즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 메타",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 문제점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 ar",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 번역",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 부정행위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 브랜드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 비교",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 배터리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 시험",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 수능",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 삼성",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 실시간 번역",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 사용법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 시력",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 수능 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 시험장",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 원리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 종류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 자동 초점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 장단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 촬영",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 추천 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 컨닝 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 컨닝",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 카메라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 클리앙",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 토익",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 통역",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 판매",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 효과",
+      "times_suggested": 1
+    }
+  ],
+  "news_momentum": {
+    "today": 0,
+    "previous_daily_average": 15.8,
+    "momentum": 0.0,
+    "per_day": [
+      0,
+      12,
+      15,
+      12,
+      15,
+      26,
+      15
+    ],
+    "capped_days": 0
+  },
+  "news": [
+    {
+      "title": "뇌 자극하는 ‘투명 OLED 안경’ 개발, 알츠하이머 예방·관리 길 열어",
+      "source": "스포츠경향",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yaWxhVEtFVHdzVUY3SkVqSnFmcEN0U3RDVUE2N1Rpa3FsMjliaHoweXFHUms4Q1A0OTNXamNZZlplZWFRXzEyUW1VeGY1ZnZUUlo1OGRXUVBETi1Ca3fSAWNBVV95cUxPRDBjTlVzcEJwUWNzRDhHTHBXdllnUWkxRnhLVUZkRUlXdmM3aEJMYi1PSE8wYXFLbVFUZS1aNlF2OUlJa3Y1SURJa3dxZW5zYjZJSEliZzVSaUlLNU9wemwyLWs?oc=5",
+      "published": "2026-10-11T11:27:00+00:00"
+    },
+    {
+      "title": "GIST, 이동형 XR 국제 워크숍 개최…보행·운전 환경 안전성 논의",
+      "source": "IT타임스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16RlV2eFhSMU1tRU1OZ01pbm82bnlhcl9WQXJzUzM4ZlR6SGZIbVVGYTVFeWstQnNyMmZlWXE0aTQ1cGhndXlfNHFMTDBvaTJUQWRaYWxfMF81dC1LaTRlWXZLNlotM2Ez?oc=5",
+      "published": "2026-10-11T09:19:30+00:00"
+    },
+    {
+      "title": "GIST, 바리 ISMAR서 이동형 XR 국제 워크숍 성료",
+      "source": "뉴스워커",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGZllSVWhuUllYQUhjNDQ0bFpzbm03Rkk3bUhoRzA1Z2taMHFCY2ZNS28xU2l0Y1Z3aC1NSkZwaWJLZnFGWV9femc0TDdDLS12dU90UjIzWkh4azQ4TkM3MzQ4S05fbDNmMW1wanJIeExsQjhn0gF0QVVfeXFMUEZmWVJVaG5SWVhBSGM0NDRsWnNubTdGSTdtSGhHMDVna1owcUJjZk1LbzFTaXRjVndoLU1KRnBpYktmcUZZX196ZzRMN0MtLXZ1T3RSMjNaSHhrNDhOQzczNDhLTl9sM2YxbXBqckh4TGxCOGc?oc=5",
+      "published": "2026-10-11T05:24:33+00:00"
+    },
+    {
+      "title": "GIST, 국제 XR 워크숍 개최…보행·차량 이동 중 안전성 연구 논의",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DYlpHcG5ZQUNDckVaS2hNWEstWE1pUFpsTzlzQWF6M1hnYzBnckV4M2cyS2lEWDk3cE9ZVGVXaV9tRmVxeGgwMURHT25ncE5vbzFCYzlNbjUtNEREeUJiOHFLcVg?oc=5",
+      "published": "2026-10-11T04:13:51+00:00"
+    },
+    {
+      "title": "한미일, XR 헤드셋 이동할 때 멀미 해결 나선다",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBycDc3WTNyN1ZHWERDc3NIb2dpcHNWWl9UMFZEWHB5YnNFY0dRcFg0TDNNY1BCZ2hzNks3Zl85RkhYRklMVEhXaEtrRlVMeXlFV3dNVGZn?oc=5",
+      "published": "2026-10-11T03:05:21+00:00"
+    },
+    {
+      "title": "인공지능 거품의 잠재적 위험성",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XTXZWcHZJNkRGWjdGMUVmNnVMRGdJZnRwMEcwb05BdXNGQm5POVc5Um9TRjM4WVRZODV6SFp5OGFnZXpSSVBPNjJoVEpFVURHSFNLVy1PWGNZb0E3Q2dRcE1DclpWempFNFplcWE5djE?oc=5",
+      "published": "2026-10-11T01:48:50+00:00"
+    },
+    {
+      "title": "이제 걷고 운전하면서도 XR…GIST, '이동형 XR 국제 워크숍' 개최",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12UFVaT0RvcVlUN0xyVElDX2xONXQzUF9KcjUwVjN2SV9JUzk5ODRhMGNVUERQSVE4WElvQm9PcFRpeTdmNjVSWjlhendmQQ?oc=5",
+      "published": "2026-10-10T23:16:52+00:00"
+    },
+    {
+      "title": "보너스 전후에 유지되는 설정, 도박 돈 차이 기능 질문",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPX2VUTDdfUXNESUt2NGtnZHdiRElHQ0djSkZpc1RqT0RGektnU3h6eTdDaWFUS2RNLVRtUUwwNnRTU3BSM0RKR1U1dVJGeHEtTnR3MllQM2E3MXEzVldvejRKcm5iR192bFVfTWN6NThDSF83cUdKY25pbFFXMWQ0bjczYW92bWNOUDhLMnNqWUJYRzZvSHQ5SkJWeGpZZFlpZ1VsX25kTU94OUt3QnFEZHJrMzFmaTRUVjU3Q21BdW1fMEl2TUNwQ0NyanhZV1VIOWtLTQ?oc=5",
+      "published": "2026-10-10T21:12:37+00:00"
+    },
+    {
+      "title": "규칙이 긴 게임을 읽는 순서와 한화 이글스 온라인샵",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNG1WRTNZMG4zWTRBUlFjT18yYUwwVTAyTjR6UGFTMjNXV2RZeVV4YkhUdkp1aWZGQUVMaDVCT3VDMktoNVhiY0ZjMTMtU05iTFJQRkFYSEt2S09YTENfLU14NzRQXzVDWldLbnFkX19RVmRMbEw1OTBsVGdyVjE3MjZmY3JKN3hESUFFNWdPaUVwWDlpbWoxbXVxR2R5c052bVg3Yw?oc=5",
+      "published": "2026-10-10T19:42:11+00:00"
+    },
+    {
+      "title": "AI, 스마트폰 중심 기기시장 흔든다…애플·MS·메타 새 경쟁",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMGh6WjRjNUVaenB4ZnQzcElPSFFsODRrWnk1am9YNkJmcHNBY2loblNCaVZfM3NNUzlzZHlVM2RuZ0lYSUNGQmpFb0Rra1lZbUh5alUzdGFJSmVUR2dRaEpQUzhpeE9NM1FjdTQ5cXJ2MFpadWtrVUlPZmNYRzUxelRwbHpYcGNt?oc=5",
+      "published": "2026-10-10T19:00:00+00:00"
+    },
+    {
+      "title": "게임 정보를 비교표로 읽는 파워볼 예측 프로그램 유형 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMFF4bnBFdlBDdnpRQjNIMHZvb1laWVhMdnNkXzhKd3RJbU1sbVZNaWhyT19UWFNPUEN3aVAtZjZSWEhxU0d4ZkQ1cXhOY2ZseDZsNE8zYkRackxxNWtaS1V0X0RHSUtOM25mSVZkbVBKYmNsVzkyR1Y3dENHV2l5MnpvYWZzR1hmeGUxams1Rk1tYmhFdkdVOUkwUENDeGY3ZUlGTkNTS292QlUxZ1N4a3JQcDlHM0E1MmZBM1FZb2tseDNzR2FsUFNTaXlQcEJ3WFNJbnM4SEotNkF5bkRta0lvaw?oc=5",
+      "published": "2026-10-10T18:27:07+00:00"
+    },
+    {
+      "title": "국감도 '보여줘야 산다'…쇼츠 시대 달라진 질의 풍경",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1YU45ZUxIVFdtZzZmR2hvMDNZdXlYUEx0OFVfcjBQR05hWFlDREJpMmpYUlllZEJrMDllTEtsS09KQkZVbklEdmN6Zlo5SWFwU2Fj0gFTQVVfeXFMUHVhTjllTEhUV21nNmZHaG8wM1l1eVhQTHQ4VV9yMFBHTmFYWUNEQmkyalhSWWVkQmswOWVMS2xLT0pCRlVuSUR2Y3pmWjlJYXBTYWM?oc=5",
+      "published": "2026-10-10T15:00:00+00:00"
+    },
+    {
+      "title": "테마 목록에 넣기 전에 읽는 블아 마작 콜라 보 상세 소개",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5Ub3FQaTh3azhaWmR5cTNrX1VhQTlhclNBMmFUd0lWQXRfbExjU0RiVTBXUVB5bENGeWdSa1hoNXNpSm4wcS05WGEzOHV0VHZ1cXZ3RDZfVUYzZEJtUE9MUFU5ZHFXSnI1YjJRUTUwa0dkUXk2R3M0VktR?oc=5",
+      "published": "2026-10-10T12:25:57+00:00"
+    },
+    {
+      "title": "청소년 온라인 도박 실태 AI 시대 디자인 패턴: 역사, 현황 및 미래",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPRU1wbG5maUxSbk43bVE3VGhrc3I4OVM3WVdQem9FRzM4cmdHMlFkWDI5a3ZuYU5obVZuZE0xWXdhSVB2VjlJV0R3THdWbmUweDgyc01vVFRMVUxJVGJpWkMyNUhLVVdTNTBQVS1FalBUVC1rUGxKNUYzbFJzdGxKc213T2hvaFlQbWp5UzE2RS1GblhOZ0VsMVczNmxXN0RyUnRTb2RvRW1qbE11bEh0MVlpN2R4TVhjZWZIWHM1RkQtcTNEWkI3X0JiTWFHOC1sVHVCUTQ2bkdETFNpbkZFOGtsbHp3ajBvZ1dMQVpienVEaThKT0ZfSW13a0lYWE5wQUZNdkh4M2tUSGVieDRv?oc=5",
+      "published": "2026-10-10T10:21:59+00:00"
+    },
+    {
+      "title": "해양수산연수원, ‘스마트통합 국제승선실습 프로그램’ 환영식 개최",
+      "source": "물류신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhY2VmcnNNZGxVeWlpVVF4Ml8xc0lNNE1ZZFBGVmlmem55dzZsZVdaaVlLaVhDNGdzUWV1aHlZaExGaW5IX3ZlZEV6anRxR2VtMU1OTlotRGVIQk1qUGlnUjM4NXkyeU1mZEFz?oc=5",
+      "published": "2026-10-10T09:10:01+00:00"
+    },
+    {
+      "title": "볼보그룹코리아, ‘고객감동경영대상’ 6년 연속 수상",
+      "source": "물류신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBDRVNEZ2wzLUZrc2tfTXUzMFowdzhTZDU2ak5lMF8wakUtbDlmdVBWUjE5TUtOWTZ1OFFqUkZUVGRSdkNzS01qOXUyQ1hjNUM2a21CU2hMajdHdGZKZFpvWXJNY1ZYd1pJLVNJ?oc=5",
+      "published": "2026-10-10T09:10:01+00:00"
+    },
+    {
+      "title": "게임 정보를 비교표로 읽는 마작 연습 유형 안내",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSkNSbnQtOXJuUk1rQWFvZHU0MURFMVU0cTQ1NFN1Tk5IOVJxMlpoZVcwN3lPa3ZLMHg5QnBiZDFpUlBzSTFwTk10ZkRyNUZhTTRIbjNNaklveGxxLUJvQnQxdWpHNm5LSURuaGxpNkhYQzAtcHJneFZiejFpQzRFRkJzUkt3cmt6TTV1WVZLOA?oc=5",
+      "published": "2026-10-10T07:40:42+00:00"
+    },
+    {
+      "title": "화면 위쪽 숫자부터 따라가는 피망 뉴 맞고 기초 읽기",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUU1GMS1nMl9WVzZlRGQzU0JNczRPS1NvM3k0QWhxQ094Mlc1a2lfTUVMVzVEOWJ4Z1U2WXRPUW5DM3VIV1kyUm1vcFB6N0xaZ09fVVJTMlhkNzZRVUFRNGpXWFZadkhPemxtU1FkRld1T1JxY1hNMUd6d2lEdXU3WWJxNTRBODh4Sl9kbWZSY2FIenVrbnpPaF9yTHQwZG84WEFZeElKdmgxNDJSczJPRWR3MEJWakhCc1k0TV90eDRzOFhpSnZMYWFn?oc=5",
+      "published": "2026-10-10T07:13:01+00:00"
+    },
+    {
+      "title": "“글라스 한놈 걸렸네”…연세대 논술 당일 번진 스마트글래스 소문, 사실이라면 무엇이 무너지나",
+      "source": "교육을 비추다",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XekhqbTdRaTVRbUttZUVCTWpJai1zYmF2TkhBVlpaSUV4QWVNRl9uZDNPR1o2QVhoTkMtSU9PWWFVdDQ4dDN6eUMwZS1sbkhrWnE5QTkwLTJxdl8xdU0xNExJOThCUQ?oc=5",
+      "published": "2026-10-10T05:58:00+00:00"
+    },
+    {
+      "title": "[현장] 6000명 모인 선전 엑스포, 목우촌·하나은행·중국 AI 기업이 한자리에",
+      "source": "포인트데일리",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zWFFjMnNqekhSNnA1MW53STgyaVMzNlZZeXBMNGMwOV8xTFpyMGE0bWtaRTMyclhzN2J1LVA1X09QWjFPUjduVFFaT19Sb285dXBNRHhrX0tOX1VZVm90Q1o0YXRZZkVtdExLaUlpQS1ZQzZO0gF0QVVfeXFMTXNYUWMyc2p6SFI2cDUxbndJODJpUzM2Vll5cEw0YzA5XzFMWnIwYTRta1pFMzJyWHM3YnUtUDVfT1BaMU9SN25UUVpPX1Jvbzl1cE1EeGtfS05fVVlWb3RDWjRhdFlmRW10TEtpSWlBLVlDNk4?oc=5",
+      "published": "2026-10-10T04:24:23+00:00"
+    },
+    {
+      "title": "메타 스마트 안경이 여성들 사이에서 우려를 불러일으키고 있다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Wd3RpTE1uUDYtS1pxcS1sUXFvSEhzbnNLMDJXeVRQVlpLQm1zdUw3dzNKQ3ZubEp0el81UlRsSVRKdGxoaC1hYnFsNW1uRHpfek82bzVnTHY2am1RcGZRNzRQX19NNURVcXNxYzdwWV9LTWpRN2RiTQ?oc=5",
+      "published": "2026-10-10T04:12:59+00:00"
+    },
+    {
+      "title": "2024 일본 경마 g1 일정 진행 버튼 주변의 보조 기능",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOVmhOaG0yT3hoMUtOYkhnVW1BOUJVOFFmaHNqXzdYSnM1eFVHQzFUZFVLZnEza2o5dXhiUlVIUTBnSUhlVTF1VDk1Q2lESi1sQnBPZHlaREo2U0RScnEyRGV6V2ZTQjBrQVlBa3NMRnZvRjN4cDcxaGRRVklEbzhTLTF4TlZfT1RtT3ZDWVR3UEZFZ2w3XzRqcDVYNkIyc0ZjbFlSTEp6NTNCUTQtN0hwbkFmUUstbFAzTlFUUzEyRTNaZkQ2U2pnYy02M3JsaXBvcXRTeGZzci0tZXczVzRJbi1BaGZNVlhBOUVwZGdLcw?oc=5",
+      "published": "2026-10-10T02:06:08+00:00"
+    },
+    {
+      "title": "\"당장 벗어\"…'몰카 공포'에 420만대 초대박 난 제품 퇴출 위기 [이슈+]",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1MGZQT2dZbWZ2cjQ1WmpaYXhZUGRwMllYbENOckU0clplRWlpOXRjZmlpVlZHVGRWbVlOdmgzcG8tbjY2a2dwd1lqcmpETGlGSzQzVVJ4cjA4QQ?oc=5",
+      "published": "2026-10-10T00:00:09+00:00"
+    },
+    {
+      "title": "로봇 춤판, 스마트안경 ‘번쩍’… 이색 물품 등장한 ‘시연 국감’",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBROEZqdnpYcHQyenRNZmNxeDJ4VUx2NU8wTklZLUFxbXRiXzBYZDhOUEJvNWRrSDk0MVI3RVhJZFQwSUZLdVVYTFBuWEdUUHlreG9LTS13?oc=5",
+      "published": "2026-10-09T23:00:00+00:00"
+    },
+    {
+      "title": "수능 부정행위 1229건 전원 무효…넷 중 하나는 4교시 실수",
+      "source": "매일신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE81QkhVa0N6S3V0ZzA5NE92cjhIaHQxWFFQd0REdWFqdFpVVFA4aWIxSE1jQ016RERnVEFVVXFxOGVZamZXVWgyc25ic2VMM2ZVVlpnTFZrVlZzRWduUUN3VllR?oc=5",
+      "published": "2026-10-09T22:02:30+00:00"
+    },
+    {
+      "title": "버튼을 길게 누르는 기능이 있나요? 근처 보드게임카페",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoeG56ek1VZHNXWEotLWNaMDY3cVBQN1FCbTFCdjN2dm9qTHV5eVd6VlRfZ0FTRE1LSFhmZmJ0WVRKVEFyUElFM3lqNFlwUkx1Ui1Yck81NFp6SGx3XzVKaFNMbnlrYklZQlVMRG9IYkRlNDhNeFNQcTR2SQ?oc=5",
+      "published": "2026-10-09T21:34:20+00:00"
+    },
+    {
+      "title": "규칙 확인에 필요한 버튼은 어디에? 엔트리 러시안 룰렛",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVHhERXR4MUl5NWdmVUY3VWRHSC1CX1RYR3NNVmVicHRQS1V3SWRYQ1o4eGE2RUVIbjFGU3BkLVotUUU1Y3oyTnpUeTB6MXkwck0zRUJNNWNaczU0NlRISFkycFVweElIZzFYTVRyRG02X2EzOW8xVGNHSUFCUW1xdFY5T19vSUd0a0pCZ0Z4U1FoalkzbzVkeDA2WjJMUW12WnR3ZWNDN2VYM21nY2pEQXdycXZsejhjOWlFN21RS2xLcXI0djliSWg2R2huMy0xOHRYOUxXbW9uZlhTb2VkdUlQdmI4dkljQVE?oc=5",
+      "published": "2026-10-09T19:07:08+00:00"
+    },
+    {
+      "title": "ZenaTech, AI 기반 스마트 안전 안경 ’Stacklens’ 공개",
+      "source": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uUW0zd0NHeG11TDhPdllURFZKaG03QUNoLWVKR3lCQk5qR0JMVnc3dWl6WFdaNlpkTDhScnNVcE1FY05MU3Vta0lhN3NCdU04Q0pHbWVDZmczV0ZGbVlZQ3NtcVRRM3pqZ2d4RUlMNXQ?oc=5",
+      "published": "2026-10-09T14:33:00+00:00"
+    },
+    {
+      "title": "곧 출시될 오픈AI 기기들: 조니 아이브가 디자인한 스피커와 애플을 위협하는 AI 스마트폰",
+      "source": "آي-فون إسلام",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZUttSzFoc3RDeV95VEd6anJGbVJzbkktSkVpN2JvMFlMQUl6WkNCdjM0LTJ0SlVtdTdXQkZEaWpNWkdRUmQwSHBMNURZdFIxMWNMOHYzTXJELWFBYjYyYVpPd0d1WGU5RUwxcGdJalNqRUVPMDFnZGFJVm50dzdVeGlHY3FtUFc0ZlBuMmhvTzBVU2hiZXBJSGlWUVRJTC0tdzBIaEF5N0hUVGpEajJIdWxMWVJfSzdyNnVGX1ZsMUlPSV80MU1FMkZfeUNqdF9ycTRPM3FvUG5oUQ?oc=5",
+      "published": "2026-10-09T10:14:19+00:00"
+    },
+    {
+      "title": "中 국경절 영화 매출 12년 만에 최저…로봇·스마트안경 소비는 급증 : 국제",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBZY3ZSak1HcFpLclpESllVaVQzN2d4RXFFMkdHQ3lmYXZkeTRDZ2x5VG1NUlFLRmQ3RldLSEVQQnpMYVBaeWVqaUtNRQ?oc=5",
+      "published": "2026-10-09T08:27:00+00:00"
+    },
+    {
+      "title": "[현장] 김·전통주 맛보고 AI 안경 써보고…中 선전 달군 '한중 비즈니스 열기'",
+      "source": "재외동포신문",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TVGgtaTluMmRfeHE1S1pTeDNOcDJoOHliWHk2YlpPR0lNelRCTk9wRHM2LUxpZ0xHdkJZZTNIZ0haQnR6VlpMUTY2YmF1dXdiMENiYWc4V01aczM4QzEtRXJ2SHBqalpEWUd3Sg?oc=5",
+      "published": "2026-10-09T07:16:12+00:00"
+    },
+    {
+      "title": "국내 택배현장 스마트안경 도입되면 '어떤 변화'가",
+      "source": "물류신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5iZlJUNzlxbGYyR2pCVEhqeUVGOVkxekFTUXBnX2RlU1hDQXRLd0E0ZnNsR3VScVdlQ2FZVDdDRDNjYlBrdVQ0MUIyMXF4QzFZSUVnREJ3R29WOHVjaDlsd0hnWkZHTnVJdXpZ?oc=5",
+      "published": "2026-10-09T04:42:00+00:00"
+    },
+    {
+      "title": "심벌 교체 기능이 있는지 살펴보는 한게임 포커 모바일 pc",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNeF9YeVhtZUFuZ0VfdDhYcWVPNkVLMG1leDdpM0ZpS2NpX2FwZFMxQmI1RHc5OWhoOUN1ZUdTOFhsRWxEdWc0VEZfZlN5cTBGbzJpOG9vSGp4V3V0WEpEcndzclNGZHI4N0hSUUZoS05tR21FY3VvU2pZX3FlZEVDQXFCQktTUHlPZHJpdl9UWlk4MThiLTluWHhiSEpyalJSZDJfeDFQQmdCa3B4b1ZNMG1oREx0aDVHdGxwTU9YcmFENEFOVVFQbEhoU001SmJIajRYc2NCbDU0MU9PenAtcWFJWVdzTFhxQkpKSU51aHIycHJsZjhLZzAyeVpjZE5OanQtZ0hDSEVXVGppSDkzVXJKaFo5M2EzdW5xeG00SXZpSTQ?oc=5",
+      "published": "2026-10-09T01:08:32+00:00"
+    },
+    {
+      "title": "“공공장소서 쓰지 마세요”…AI 안경, 규제 확산에 ‘비상’",
+      "source": "한경매거진&북",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96TGFPbnJhandrZXNfVTczQlJjclljQjhTbTF6bG1tRXpjTVRrUWNIdWxaSmtmMHdfM3BRMlI0blpRT0M3d2lqYTJRTUZLbklHVDdhbkw4cXdEMWRvekpucVFyTVl6b1FlNGR2cw?oc=5",
+      "published": "2026-10-09T00:56:00+00:00"
+    },
+    {
+      "title": "프리스핀 중 남은 횟수는 어디에? 경마컴퓨터세탁",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdmRHcFZFbXRXYUNlb0RKT1ZHOUQxRTZ2RmVveTA5dGtQTnlnWWRWT2NJRlBkOW43RDJkRGJQNUk0REtoYTRPNzJKeXA1VWVrMGZMZV9xeEtob0cwQTh5TmtwMUV2Q1JYRVNGUWt4dHFXLUd0eTB5LU5ySG05VE1fSmZaal9MWEVj?oc=5",
+      "published": "2026-10-09T00:35:44+00:00"
+    },
+    {
+      "title": "노르웨이에서 금지 될 위기에 처한 AI 스마트 글래스, 이유는 이것입니다",
+      "source": "VOI.ID",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9RZG93R0lJUFNBdmlFQmZKZ0RaNUV4cHBYRm5PMjd0NWliQ0Nvb1ZGUjJMeUpKRjIxM1JId3RLQS0tVHp3cWxJTFNYSdIBQkFVX3lxTE1leFlfRDZzcHB6V0RNTk9FWWoyM2pfQVNoX203ekV5V2hYcUxZMlNmSjdrQ2NlZjlvTUxfMTZZOU9DUQ?oc=5",
+      "published": "2026-10-08T19:54:56+00:00"
+    },
+    {
+      "title": "기능 소개와 사용 조건을 함께 보는 파워볼 조합 배당",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9GcnZZRjBacWxPOVU2ZDhKRWlVZlpLNmFZUEc2VDU5aEZMUU5hZkx0TnBRd0s4clp1RFA5NkoxWjlyZ0ozOGVNcDZzelJZWHFIaGhlb0EwUXF4T20xX3NyQ1l3VnY3eUFGLVk5dGV0ai0?oc=5",
+      "published": "2026-10-08T19:38:17+00:00"
+    },
+    {
+      "title": "기본 규칙은 어디까지 공통일까? 금요경마동영상 비교 해설",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWkJDM0lXNndaRUJEN3hEcWRhaURLdVJLLWd1amZqMHZsc05CaHNKcDFxb3JNOEJzUzBiZS1hOE5LMTJxYXVCT0VreXpKNXFCQVFNWFNMZk1zMlNNVXlxaFBkQldlMnM2ME0zT1FtSWVPcFViMzNzWnB3TVhrdGprelBEZzRvS21UWVN2U05fMlJYSnVMQ3RJYVF2VFU1NFVVck5nUnZ6NWVPWXkwRUw4b3VueFo4NlRWckYwdm5id0phT2tXWENpNU40WngtaUl4Zm90VU1oUnFlVWQwQ1NlMXhGUVZDS3lSWm43Xw?oc=5",
+      "published": "2026-10-08T19:30:41+00:00"
+    },
+    {
+      "title": "후 오비 코리아 거래 중지 의 모든 것: 기본 개념부터 고급 기술까지",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNREMteFlDaU5xQTJOSWZ5a25CYnFmX0hzdWNPTWJhd1dWNmlaUnNUSFlKVVBQc0JPcmhWSGJoVGlLN3hrVzItcXpFWGlUUm1yR3oyTmlOTDVuNzVhc2E0eXBZeldtU1hZck9ZNmZoTTUyNFJpaGFzZ3JGcG5hb0QwRF9VdEg5blpwdVBWN25TOW1fUnQzX2JuVG9iSE4wTWhpb0ItR0NUUUJlbVJyNzNtaGpvM1pJaktuejR2NFp3a1dOM3M5cWlnanlfcjRFMm1heEZwQ29IRzRKeUNUaHhxTHZtRQ?oc=5",
+      "published": "2026-10-08T19:11:02+00:00"
+    },
+    {
+      "title": "[미스터리경제] '삼성도 출격' 스마트글래스, 왜 현실엔 한 명도 없을까? (영상)",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBieDYtaEF0TmNDaUhOcFM1bE9wQkdaeWF1bE04cU5nRjJOZlpwX1lRajVyVy04THdBTGtmYzhBV1gyYTNDTnJETk1zNFBWUEJnZktreHd1RVJMVjVGdlFEb3lPU2nSAWNBVV95cUxNOG9ZcF9mbFhUVFluMlU0anUyTEUtSFRESlhsYUNGaUY3VVVYTkQwUi1PLVhEV3RyUmRUM1RnZzJBNl8xWkhwR0xxbkxUa3hQaGhxRnFJSm1FY0IwN015VjJRVjA?oc=5",
+      "published": "2026-10-08T14:03:18+00:00"
+    },
+    {
+      "title": "라이벌 스타 경마 : 을 활용한 효율적인 방법",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxbXYzQ1NFX3BoWmJDLXN3bzVzQ0tUdHU1c0otWjJuRzhmVExha2hSaFdlQ2NkUk1UQ3RIV2hFRXMzUFVrV3UyMnczdThmaU5LUVNybXFMR1Z3SlNSVW92SkU0d2NjLU5BbHZzVmRLOE4?oc=5",
+      "published": "2026-10-08T11:26:06+00:00"
+    },
+    {
+      "title": "스마트폰에서 처음 여는 포커 프로그램 설정 메뉴",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQalM2aGpZeU1jLU5zU3dsMzBnSnhWbHBpTmJWbXU0QU1Mc093QmtyeFB4UTN5OW80TXJTbUhSSURvY256Y0FYdHhBOTd1YTdMSUJzX2lKRS0ya3JoMkJQcDE4X3h1Q2ZYLUNYanR5bXNuSjBBUWdlR191dUJWS1Q0M202WGlVd185bjhyZFhubXJZVENmcWFuWERFaHA1LUoydFV5Z2c5ZU16SFNZQ2MtVGNZV2RKdVFubHc4b1UxMy1nSE1kT2hkRUFXN0hUUlZRX19abGFZLWZ6cjliOHdOSTJmSEJNZE0?oc=5",
+      "published": "2026-10-08T10:00:14+00:00"
+    },
+    {
+      "title": "中국경절연휴 영화수입 12년만 최저…로봇·스마트안경 판매는↑(종합)",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvWUFhcEkxQ3B4WmZLVUlPcXNtLWV5aWY2THdiNk9iVzVST0tQNGk2cnhZRkx6VGxSZzBUdEFQQlRpdnVsanpfc2RpSzM0U295YnRqcWhkNnFGdjTSAWBBVV95cUxOV0dEN0tsX0w5amFSM3VuN0tPVUR2a2hvbERYSkNYY2VsaU40WU1OcTRzb05FcTlVZjVmYm9PT3NQM3BrVVZrQ2JCOU5tb2k0czVCZk5IS2xFMTNhTmVQOEo?oc=5",
+      "published": "2026-10-08T07:08:22+00:00"
+    },
+    {
+      "title": "'스마트 안경'에 수능 풀리고 군 보안 뚫렸다… 中 기술에 경악한 국감장",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBObFFweURsenYzWUVsM3pZQ0VSSDl2RjB1M0V2bGVGVFhDNEMtYVpZMEYyNWJVQ3lPSzZFakcxVWZNdUVyWGp0QXE1MVNHLWlVUy1xVlJKamNNQWVJUE41WXJqT1FhR1N1UmRHclln0gFzQVVfeXFMT1U4SWJQQVFXWmFNLU95eG5OTWM0a0pEZkpPWHFVM3puRUVSRW45YVYwZEpWa1g4eE85Z2dWa052ZkxCb21EeUpzZ2xXWTN0Mzh1elp6a2txdUdDSGw2MTJLX21WcXdhakFzUFlaa3U4TnJsUQ?oc=5",
+      "published": "2026-10-08T05:00:00+00:00"
+    },
+    {
+      "title": "라스트마일 배송기사, 스마트폰 내려놓다 ‘그 후는’",
+      "source": "물류신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFVi0wX3h4cjMwWlhnbG9RdHFOejQwWlFZYWtJQ29Yd3BOT1VrZHoxend1b2RnbWVpMFk2V2hMTUdsVWJCaXdFS1FNOXBXb1Y2ejJWLVJMTzIyS0hJTFU0ZmU4Slk0S1BTUVVZ?oc=5",
+      "published": "2026-10-08T03:33:18+00:00"
+    },
+    {
+      "title": "로봇·스마트안경 매출 2배 는 중국 국경절",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HcjFXcWR1RjA5dUlEdmZaLWwtalFTRktLR3VKX0I5WXpNNU5zTDBVYlJoU0szY2VVT3RkM29LMnlEdVpTdmJJM2t3czlraE5ycmdZc2duVnlLZw?oc=5",
+      "published": "2026-10-08T02:59:07+00:00"
+    },
+    {
+      "title": "AI 안경, 미래감 뿜뿜...中 국경절 연휴 '첨단 기술' 체험 인기-Xinhua",
+      "source": "신화망",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA0UG56ZjZqa2VWNmVwQ2gyRlFuZUVibmtjWFVObkE1Z0xzcEN2V2NPV3JGV2FqMmFjdWZmeHphc29IdG1CN0Q4c1pQWlFrSnNNWVM5UlRsSnBMVW5DX2FORjVtQ0cwM1RyeEFsVzR1YjVqZFhuUnc?oc=5",
+      "published": "2026-10-08T02:34:46+00:00"
+    },
+    {
+      "title": "中국경절 21억명 이동…로봇·스마트안경 매출 전년의 2배",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8tMW11Z2dOem5nR21abHlGck9pUGlKdU4tVGNsMFg0MzBYSDhWVHBuODZMSGNDd1NabXZsLUdpYm0tajc0dExoS1l2T2diV0ZoYWt5M0ptYUpET0tXX3c?oc=5",
+      "published": "2026-10-08T02:05:24+00:00"
+    },
+    {
+      "title": "\"군대서 뿔테 안경 금지령 내릴 판\"…천하람 발언, 왜?",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdE9JZWtfT0JaNXZXbWR4SS1DLUJCNnhUSjRRX0tSV1ptOVktMmdhd3ItazIzQU1FLUN6T3FFeThwMXpjWFJmRkRMUTZrUnJWT09MN1ZlY0U4M1RWRDIxRGd5dTREMFVpUEdtQ0o4Sk5sMk1mRDR2bUExanJ1STh2dg?oc=5",
+      "published": "2026-10-08T01:19:51+00:00"
+    },
+    {
+      "title": "“수능서 걸리면 2년간 응시자격 박탈” 장관도 경고…전 세계가 ‘AI 안경’ 비상",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtNDMwdjZtRkRRekpNQlVJYVBldXQ0Q1lSVlZDN2FsbnRIMTZPQnc5WDdoNHZtcHViYnV5cTdKeUNvNy1xNWRwNjdrMC1taWpxLXfSAVNBVV95cUxQXy1qT3lyM1RUMmZjU19KVU9vdjRFUVpwMUs4bGJUbnFzR2RZejdqWHd4QzVQbUYtdXYtRzZpLU5FTWlMMzZybFdzQmtTRmlQZ2RpVQ?oc=5",
+      "published": "2026-10-08T01:12:35+00:00"
+    },
+    {
+      "title": "게임 이름만으로 알기 어려운 인기게임 순위 세부 규칙",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUF9Td2tRQk1hVEhyZkY1UGVVUzFhZTNaWElWQ0Q2TlBSSnJPcUF4T0w5Nnl4V21tOUFTZmIzYV83OFF4M1JINVp4bW02eUhlLVFza3N3SmJ3ekY4WGxiSnI4UmxUMl9JQU1UZzdpX1I2MnhLTVFZRlZSMDN1ZlJQMVdrODhpZ2hLRV9rUDRZaGxpZFhCTnktbjdTZGhTeXQ3S1NHLWZSRUpWcE1fRnRvdnlScE9rODl2LWhralN4LUEwWWRHVHBNcDVoQTVlZDk1eFUxRndKb0tvWTlDN3UzWlFSOXlTVDZoUUViNVFGaFN2dw?oc=5",
+      "published": "2026-10-07T23:36:32+00:00"
+    },
+    {
+      "title": "설정값과 결과값을 구별하는 블랙잭 비슷한 게임 숫자 읽기",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5QN2FvbjBEU2RkQWNZWE1DYzJHNkxTWmtRSFNUM0VqMnAzbm1PT1VrckI3a0VGMzNhUEhSUXdfNnlUSFVieWZyRERSMjJOa1dlMGVtYUZqNHQyWHZNRGNka1lPbXhPUQ?oc=5",
+      "published": "2026-10-07T23:11:34+00:00"
+    },
+    {
+      "title": "권총부터 휴머노이드 로봇까지…국감장 달군 ‘이색 아이템’[국감 2026]",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuWnBKMUVMY19sc2ljd053Z2xwdHktR1pwb0lzb3NLNFhzc2ZUQ2lHeDgwYUhVLWltWl9KODlLQ0FlVkVoQWUzT2szcndJbDZ3SXfSAVNBVV95cUxNSkxic2xVR1M3aW5sWmZ6VENOcWwyZWJBMkUxbW11UXpLVjRNTDVtaGFnV0swYnNnazFhVncxRzFzR1JXaUl0WEFuNTVqUktEZkxRYw?oc=5",
+      "published": "2026-10-07T22:30:00+00:00"
+    },
+    {
+      "title": "테마를 이해하는 데 필요한 다나와티비 배경 설정",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9LN19aeEV1cmJOU01fazJiWUVpbEtGLS1BNGlGaXZUT0twR3dFY0RIakhvd00zdlk2RDBubXc5N2lLcjVWXzJTQXVQT2dfa08wRnUyWHp5UHVEZUlaOVZkSkgwR0VDVnc0aVlZQkpudmEtU0YtTGplcA?oc=5",
+      "published": "2026-10-07T16:24:39+00:00"
+    },
+    {
+      "title": "노르웨이에서 금지 될 위기에 처한 AI 스마트 글래스, 이유는 이것입니다",
+      "source": "VOI.ID",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1leFlfRDZzcHB6V0RNTk9FWWoyM2pfQVNoX203ekV5V2hYcUxZMlNmSjdrQ2NlZjlvTUxfMTZZOU9DUdIBQkFVX3lxTE1leFlfRDZzcHB6V0RNTk9FWWoyM2pfQVNoX203ekV5V2hYcUxZMlNmSjdrQ2NlZjlvTUxfMTZZOU9DUQ?oc=5",
+      "published": "2026-10-07T09:22:51+00:00"
+    },
+    {
+      "title": "스마트폰에서 글자가 잘 보이는지 보는 보드게임 테이블탑",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9nRk15Zkg5aENpc3IzYzJyaWppNlpBRWNqUzhXNGNibElqektCU3NpU1JlUVc0LWlRZFRzWkVYTUlobk13WWc5SXcwZmxMV2ZVb0R6a1dlVUJqMlV1aDhQaWtKWGw0T0tvdWlYT29aRWI4dGlP?oc=5",
+      "published": "2026-10-07T09:16:45+00:00"
+    },
+    {
+      "title": "[조타수] '몰카 안경' 앱에 질의서 보낸 호주…국내 10만원대 안경은 안전?",
+      "source": "콕스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40ZDBOSlozS0ljUldXeEozaDFabGpudHFRV0hSM2ZzRzdLb3NzZTAxa1o1SEFsNGtnRXdRZHBXMi1ZbDhXVTRFQUVEZXppUUVNcHFfZDhqTnpRVHgyV01MOFZWdWlIdDlEMUE?oc=5",
+      "published": "2026-10-07T08:27:04+00:00"
+    },
+    {
+      "title": "[뉴스1 PICK] 교육위 국감에 등장한 스마트 안경…\"AI 활용한 수능 결과는?\"",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tRkxqcmszNXFEUHlNQ0VlN0JrUWFHNzFnb2JPcDA2aGlNX2JSR0tBUjQtVktKN193RVdMV3hkMUNwd1RVRjVMdDg3RDY0engwaG1MM2lxVV94dw?oc=5",
+      "published": "2026-10-07T07:38:06+00:00"
+    },
+    {
+      "title": "스마트워치 됐는데 반지·안경은 왜?…웨어러블의 ‘불편한 진실'",
+      "source": "이코노미스트",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB1b3lrTWpQR1FIWWxXa2g0X01jUjFOa04yWGFCRHBCYlFScE5NZlltWVVJODBZdGZId3lxYWF2VW1MZWQ4M3NhRm54aVdtTkRsNlk2S1ZXRTY2dC16akgyRmtB?oc=5",
+      "published": "2026-10-07T07:00:00+00:00"
+    },
+    {
+      "title": "국정 감사서 쟁점이 된 스마트 안경, 왜?",
+      "source": "이코리아",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBjQmFBRDFnN21idjliQ1gxc1BUZ3N3a3JBTXNpdERUVFNfZkU1aWVDQVVYRVZ5S3RBbEpqV2FOYWJYNnQ0NlpiSUlKekgxLVNpSWpvX3cxNEt1UENCcFY0RFFobHJoNVJJd09ldnRRbw?oc=5",
+      "published": "2026-10-07T06:30:33+00:00"
+    },
+    {
+      "title": "최교진 교육부 장관 \"AI 안경 수능 부정행위 적발 시 내년까지 응시 자격 박탈 추진\"",
+      "source": "서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA2Tk56a2pveUlFTEFLLWFhdVROMk5aOXh2XzJrSDg0eHVOSG5XS1JNdHVFdTF6RUVBVTUxc3NkVjF5WW50ZWEzeVBnRnQ4Z0RPbjRNRE9TdVkzWFg0ZmF3WmdVd2pzazRMdE00?oc=5",
+      "published": "2026-10-07T05:52:06+00:00"
+    },
+    {
+      "title": "최교진 \"수능서 AI 안경 적발 시 이듬해 응시자격도 박탈\"",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aSlBFaS14eGhEX0paQTNaTTNaUThEMVdjQlhYZDNnWlFWd1lUR1R1UlpHcnVsUm5SR1I4WS02ZmZ3M0ZSU0JQV0J6TGJkV3ZSaGZhb0xic19VNXpxRllOLdIBeEFVX3lxTE9PY3pqUlR0NHAtUERmTGJZUnBVdm1zLVplY1VKdy1YWHR2V0psVEpETVpnY0o1RTZrSGhXMmRZRzRlNG1rSlZvUUtlZmZWR0ZMWXAyeXZrUF9EODQwTFhLM0toa1psTE5EQ1RzMkNQN1dnMG4yYUExTg?oc=5",
+      "published": "2026-10-07T05:47:44+00:00"
+    },
+    {
+      "title": "강신철, 스마트안경 쓰고 국감장 찾은 천하람에 \"제재 규정 없어\"",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CVTRVU0ZaUERUMnc4Q1lCWkVmTjNHSXhWU2xsOTJmaFVURmotZ0Q2ZFQtN25oNk9TdTVCNEppaWc4ZEt5bHdaXzlKZEtQVGtNa2FOSVM5bzFKQQ?oc=5",
+      "published": "2026-10-07T05:32:51+00:00"
+    },
+    {
+      "title": "강신철, 스마트안경 쓰고 국감장 찾은 천하람에 \"제재 규정 없어\"",
+      "source": "부산파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1LQTV0VDhiT21TbGdsQnNPZEdnNlBwdFBiSFE2SFJ0UHFrVlhWU1duX1U0TE1YeEExMlI0Tkk0OHpRMV9BbDE5Q0d2ZnlIZFBiNmpoQ1lZaDViR1lv?oc=5",
+      "published": "2026-10-07T05:32:00+00:00"
+    },
+    {
+      "title": "최교진 “AI 안경 부정행위 적발 땐 2년간 수능 응시 제한”",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeWdGcU9QUGpoVG5oakhJcVR0WWJYSExIUzVQREljSlhtTkRUanRvZXV5b0VCcnFWaWh5bWw0dkxMNHRUdWRjWEVocFl5U3RvSmwxbjUtcnZSWlpfSXUwRmdKVlNNNmtVNzgweldIQ0hxcVRZUlJwTzcyNGRoMm9pdQ?oc=5",
+      "published": "2026-10-07T05:09:00+00:00"
+    },
+    {
+      "title": "최교진 “수능서 ‘AI 안경’ 적발 땐 2년간 응시자격 박탈”",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uSk5NanN6X3I2OWlCbmlCQWpmWm5jVl96bE9OVkpTWnByRkNGb3JLOWpMWDlqSEJTZ0d2alVtLUlRV3FvdFAzV2FNRTFkQ1RhVXfSAVNBVV95cUxNa0dsQ1hqcnhsN0I5UkQ2UHJVOVBCWlBZMXFZSDBxTHVaZ0thdmJFR3NsUnJkWnRLZzhuWklWQnZlSVBremd6RDUzcTBSZEZ1NVlDcw?oc=5",
+      "published": "2026-10-07T04:45:53+00:00"
+    },
+    {
+      "title": "[2026 국정감사] 스마트안경으로 장관 촬영해도 몰라…국방부, 보안 사각지대 도마",
+      "source": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1uN3B3RXhQSjFtZ1k1QmxWRW5YYi1ZYWlYYkJMMzI0emZacjVWMmlpNGZhVTBpS0NNQ2NNbmtOLW9CRkp3WTg5S1o3bkJsU0x1dmh5aXR4Ym54UdIBWEFVX3lxTE9tWjliN1VPdHJrd3h0Sk96Uld2MGlzamlKS25tQmEtdUlZYVhsd0U0RVU1RVV0cWxCOTI2MGlVc1B0MGIzOXZsdEZDZUJSbWJZNkhIN0VSR3Y?oc=5",
+      "published": "2026-10-07T04:41:32+00:00"
+    },
+    {
+      "title": "AI 스마트 안경 착용한 김문수 더불어민주당 의원",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zZ3I1V1JPeGRQTHhxdl96a1JtSG5OZ2ozYnphQm0wZ2hBSjFLVWNJN0t0bkRZZzQybDhQVkVwMVNaTU45aHNISmNnZXI1VDZSVjRmb2hNUkNGVE9QMG9wRHRPcG1WRlRiamFMd0g0aVhEWVFmd3NwdtIBeEFVX3lxTE0zZ3I1V1JPeGRQTHhxdl96a1JtSG5OZ2ozYnphQm0wZ2hBSjFLVWNJN0t0bkRZZzQybDhQVkVwMVNaTU45aHNISmNnZXI1VDZSVjRmb2hNUkNGVE9QMG9wRHRPcG1WRlRiamFMd0g0aVhEWVFmd3Nwdg?oc=5",
+      "published": "2026-10-07T03:42:25+00:00"
+    },
+    {
+      "title": "AI 스마트 안경 착용하는 김문수 더불어민주당 의원",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfcWVvZDFtdlBJbUt0RjBqQWY3WnNKMkZPQlh3STI1VmttTG5KRE9iNDdiSDJHY0dDcGFVSHVzclJZeEVtWi1uUTZGOVo4X1pfWDdMUW01a2dDQ29WSm9NSw?oc=5",
+      "published": "2026-10-07T03:42:25+00:00"
+    },
+    {
+      "title": "dol 도박 누적 표시가 쓰이는 기능",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ZcVNnVWo3aUg1VVVCT1A4dHZYQ1NkRVhOeUs4YlRob1ZUMkhPNkxlNTZsTkpVdzdwcmtISE9EU0pUZG1KOGdlQ1d1WjZaeC14b2JTaFdqR2EtVGNOMlJsM2wwOG13SDUzejZXdWpZQUc3dw?oc=5",
+      "published": "2026-10-07T03:32:02+00:00"
+    },
+    {
+      "title": "AI 스마트 안경 수능 부정행위 적발 시 내년까지 응시 자격 박탈",
+      "source": "https://www.2news.co.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBsR0w4VzJST3k2M3l5Rk5jTTN4bHdTc0lqMUFmMXJGTTFKck0xQWJqUkFkbFM5TU5na0ZfSE9VZzBYejFnaW1GRDBhSDZmWnN5NDlEVkVZQjY4Z2I2WXh6eG9RTmJnZUR1?oc=5",
+      "published": "2026-10-07T03:07:00+00:00"
+    },
+    {
+      "title": "최교진 \"수능서 'AI 안경' 적발되면 이듬해까지 응시자격 박탈\"",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBoN0RPMHNKT3QtLU5QZWx0MFF2eTF3UmwyWG85OE5uaXMyeDFXR1R3Y19FRHlBSkhFdFQtT2duU2lzVkZJbXd3SXBSZ2d3UUVGVG0tbE01Uk4wUQ?oc=5",
+      "published": "2026-10-07T03:02:48+00:00"
+    },
+    {
+      "title": "화면 연출이 차분한지 살펴보는 마이카 영양가득 룰렛 이벤트 비교 기준",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLWxPOC1GWXA4MkNxSFNwYTFSR3hhRk53bTZNOGZTcWdrZmZCMVdNMnVpdVRoUVlsN1JaZkFuSnlvdlJRb05paFdJWnBuRGI3bEZDQjdoVmp4YjFQUmRpQVhJMHpkanpsM3BGbzk2U2NPOEtPSGxqQ09kTzB1UEprQXlpVjRReDIwczAxWmg2TTBtTDdtX1dIV0hHWHdDb2RuV2x1VTFpSlJYamlr?oc=5",
+      "published": "2026-10-07T01:37:09+00:00"
+    },
+    {
+      "title": "안경으로 알츠하이머병 예방·관리 가능성 제시",
+      "source": "시사저널",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBoRGJwc29BclVPTGk2OXVTNUdDQVFNeElYelp4T1M5eUNpNmRTbnFCMEhKUmpzMFc5a1k5cHRYeEhsdElrQUpORTA2ZTBhS0Q5eTJhenhSTzZ5dHNvdU5ESGtDQkpZSFlYR3VGNXc5WdIBc0FVX3lxTE5XVmZ0Wk9nOVRwaWJMSnZyR3Vxdm8zWTFIbE82WXZGeEdsc2F2OUtYT1pWQlFkUVFMdWVUcGRhYmxVa3hSLWRILWd5ZWFqYW5vVmdIT0NnS3k3RVRfNTNmaVJFVUt3NEpXM2dJVlhTS19SUmc?oc=5",
+      "published": "2026-10-07T01:14:19+00:00"
+    },
+    {
+      "title": "호주 개인정보 보호 감독 기관, Kmart 제품에 사용되는 스마트 안경 앱 개발사 조사 중",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE13MHBrZFBkNkRuNTFRS2FyVVR0Q1VxdzlReE1DUmN6dzlhRW01ZEoxQ2JLMHVpWU5pems1SFZpYmJQcmlMc2pNT1FpcjNUX3NneXQ2Y1hlOTJYTkZPV2RZaG5rUE5QTUFHZ19FdnFZRE1YRXNMLXRn?oc=5",
+      "published": "2026-10-06T23:55:51+00:00"
+    },
+    {
+      "title": "스마트안경 쓴 천하람 \"지금도 촬영 중입니다\"…'중국산'에 국방부 뚫렸다?! [문화일보]",
+      "source": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yWE1yaHhCLTlHUVRrUVNmYktFcE5QRVRIMjJ2U0ZyamRkYkwwcXIwdHZWNnQtV0VXQkdOQmREMkFmTDRNcVlMRmRmVDhQOXlwQi1SaQ?oc=5",
+      "published": "2026-10-06T23:37:00+00:00"
+    },
+    {
+      "title": "여러 창을 열었을 때 주의할 무료 디자인 소스 사이트 이용 상태",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBDRmx1VEt4RmZwbUFXYnR1RGRoOVA3R3doci1yTm1mdXpYWERRX19nQUQ0WHNoN2d1VEdaZnlJYlI4cEY4MnUxZk0xem5HNUplT1BYM3hYQVRxVk5zMHprRHF4LTV6UG1PRWpzWHZSQWwxLTQ?oc=5",
+      "published": "2026-10-06T19:49:09+00:00"
+    },
+    {
+      "title": "분당서울대병원, 투명 OLED 스마트 안경으로 감마파 자극 임상 결과 발표",
+      "source": "MEDI:GATE NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1qSlh0RXUxLUpVa0ZPQVNWaG1oT0hCc25VZ3JDbWRRZ1pqY05iZm1Nb1kxUmJOLXpEVkI4SU5naU9MRGtVd1dBRHJleEhiRUI1ZHRnWlFsYw?oc=5",
+      "published": "2026-10-06T19:32:00+00:00"
+    },
+    {
+      "title": "크라운 섯다 딜러 의 모든 측면: 장점, 단점 및 활용 방법",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrbmNNTk5GNlBvTmpJdGJVcW9mOVptR2pUZXNJdWN5MkFLVGl1aHNYUTgtSGZHQXZrZG8zZ3FkWFBMSU9aYm5CbmlOSjBoWFdMMnVBYmhJQXF6NGNLcnp5VjVhU2d3YUtVRmktT0VoQ2ZSbk8zX2tWaWxMYmgyUQ?oc=5",
+      "published": "2026-10-06T16:23:53+00:00"
+    },
+    {
+      "title": "노르웨이 \"공원·학교 등서 스마트 안경 사용 금지 추진… 동의 없는 촬영·녹음 차단\"",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1zY3RLYUNGR0VzdTBqY3pYSkR1YWVYUURxTzdxa1lELUVodkozUFYyQUFMbFo3T3U4QTRQUWl4bjBUbmR6UlZxdmRzVDhvNXpvZ18wcm1uejVBU19h?oc=5",
+      "published": "2026-10-06T15:02:00+00:00"
+    },
+    {
+      "title": "메타 '스마트 안경' 규제 확산…\"사생활 침해우려\"",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhdTlEcWZPeTM1MC1iUkp1bW16YkhGdnVTUm1wYWZHb0NZZlM3ZTZ1RUhKRHVNQzZMTWVrYWQ5bEk0M3lLTHNCVGQ2TFRvelpBWHFRQWtON2J6UQ?oc=5",
+      "published": "2026-10-06T12:59:40+00:00"
+    },
+    {
+      "title": "버튼을 길게 누르는 기능이 있나요? 젤다 도박",
+      "source": "Calgary Roughnecks",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNEpva1U0OWttaDB4VDZIclZQM21PUU1FRFVKR3U5RnRIMzRoY0Y2ZXhNckxtUGROVTk2a2VOa3poODk2cnhLUFFBWlRMRUpHNkRxWmVfelVnckljcy1TWWlOOGVQMDREdmFsOWxkSG9kb0Q2TmpUM25sTWdNZDFQSlhwQUUwZWwxczRLVDhYNTJ3Um5qalVKLUlIXzBvalFmMnlBZkNn?oc=5",
+      "published": "2026-10-06T11:06:05+00:00"
+    },
+    {
+      "title": "노르웨이, 공공장소 ‘AI 안경’ 일시 금지 추진…세계 첫 규제 움직임",
+      "source": "AI타임스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xNEtYX185UGg1cUp0OFdhbGljZmp4VlRUY0lacFNQUk9KOHMxZElGWUFjSUhKTF9IaDVRSi11dmRVcGhYWXY5Ny1xQ2x3a1RKS1h6Z2dkZUVVYVNCOEJ1cm10Mk1xa181c1E?oc=5",
+      "published": "2026-10-06T08:50:59+00:00"
+    },
+    {
+      "title": "빛으로 뇌 자극하는 ‘스마트 안경’ 나왔다⋯알츠하이머 예방·관리 새 가능성",
+      "source": "코메디닷컴",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE54UkxFR3MxREdIM1N5dTJXVkpPUW1wMC1HUWlOT3NrVlQ5TFZQUzZ3SVlhTEJqWDZUeVlZX2c5SDhHdw?oc=5",
+      "published": "2026-10-06T08:12:00+00:00"
+    },
+    {
+      "title": "투명 OLED 안경, 알츠하이머 예방·관리 가능해져",
+      "source": "메디칼업저버",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1pajJaakw4dnFPWG01b1FzRFhxa1BCc1Y0ZXhtWkNGX1VRblI4NW1QM3JNX0lSdkRMc01BbzJseWcweVhENGdTcjZpU3lfQmJ3MWNEdndfUkR4aDBIOVRMcUNqM2xHTVY1NG9V?oc=5",
+      "published": "2026-10-06T06:46:52+00:00"
+    },
+    {
+      "title": "분당서울대병원-KAIST, 뇌 자극용 '투명 OLED 안경' 개발",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAtek1nR3ZWS1MxUktJVFVxTkxfYWlhNzVJakxaNjB6dVRSTlZidnQ5OEVwSHN3NWhLRzFfaHZ5bjlSWGlocTU4TW1IbXlGdw?oc=5",
+      "published": "2026-10-06T05:19:18+00:00"
+    },
+    {
+      "title": "노르웨이, AI 안경 금지 제안…웨어러블 기기로 유럽의 프라이버시 한계 시험",
+      "source": "Cryptopolitan",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZnVEN1VVUjJsQk1YMWtHLWU5aGowTDdET0o0bWExaTdjVGptcWlkcmgtcm9hVXFhWGlYaHhvbDFRRVBaNXBPajFFdGxfLWtUQ244ZVVnVkVvZnY2MHNSYnJPblR2UGhwYjBNWnU0Q0hKVDdnZi01d2dVMF9nUWRlQS00ek02bzN1eGFyZTMwTHM5bXJBZUtVVEQ3RHpaSkZkZkRyeU9JczQ?oc=5",
+      "published": "2026-10-06T02:16:39+00:00"
+    },
+    {
+      "title": "일상 속 감마파 자극 가능해진다…투명 OLED 스마트 안경 개발",
+      "source": "서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wMWhUNUNobnE5cjFtSjFEMUZ0c2d5MENxVFRWbXFqNHFMNW9SNVFhNkdHeGdoXzNWTnVjaGdiZzBRWlJ3NlpGblh4MlF0THJWbjQ3UDBBRHZmcGNvcG5qTlI4UHZTX2pBN1dN?oc=5",
+      "published": "2026-10-06T01:45:37+00:00"
+    },
+    {
+      "title": "분당서울대병원, 일상생활서 뇌 자극하는 ‘투명 OLED 안경’ 개발",
+      "source": "에너지경제신문",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1ampLVzNqLVJWUkdXLXFxZkpWLUZBTm03dDBnYTRtTldUOWRCbHFZRFg5WTlaZmFxR20zT1hkSlZpV0FSaE1OUlJQdXp0T0VBRVkxbF9tUWRzWWM?oc=5",
+      "published": "2026-10-06T00:58:06+00:00"
+    },
+    {
+      "title": "노르웨이, 스마트글래스 사용 금지 추진…AI 안경 규제 법안 준비",
+      "source": "디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1TbXZDRHZQb3ZoREpKb0ZYbDNGeUFNTV9Zbk9KNHMydk5nR2taTC1fSWdWTzNORkVVRVhZYmRhenA0Q1R4Zk14V2R4dEJ3QXVhSG5rOVJmRVlaQ0o5UFhkRS1MYmgzTkIzOUEyVUV3czhncnc?oc=5",
+      "published": "2026-10-06T00:46:54+00:00"
+    },
+    {
+      "title": "“치매 예방, 안경으로 가능할까”…투명 OLED로 감마파 변화 확인 [노화설계]",
+      "source": "Daum",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83VXIzdUxCVGtxZEtEVkZtUXFySG5RMU5NNE13RU5aSnJ5V2hwbWRHS1FXNTN0cTNWV0hCZFpjaDZFWDB0MEdIa0RSREtwSXkzNlFlUA?oc=5",
+      "published": "2026-10-06T00:43:44+00:00"
+    },
+    {
+      "title": "투명 OLED 안경, 주변광서 감마파 변화 가장 뚜렷…뇌 자극 가능성 확인",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZGJtd0tYRXNtZXF6d2ZFSGpSRUl5NVc2aHBsUHNDcnVVcFZWZ185UTdoREp1NmM5SlJIclVlQXpDbHBRSW9fa21hWUNfejlSc0NJSENYeXNPLUNpSXl3RHl2NDZDSFRLay1fQUpnNTVSLUF1MjliZkN6OTZRcnJsMg?oc=5",
+      "published": "2026-10-06T00:39:36+00:00"
+    },
+    {
+      "title": "\"뇌 자극해 치매 예방 도움\"…'스마트 안경' 개발",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QWG5SVjRzZXZvRFJzNUpGWUp5ejcxQi0yNVNXSUdmWEJPUk1sNlJMd2U5N0Y5dXRXaWpablZxcmxjSUgyd0ZYVlJ5UzNNeDNhbG9OSTEyekpqblRSLVNLWtIBeEFVX3lxTE1WVlNKTHJoNmp0TXpZUmVTclljSEhaNl9zbHNIb1NteExtZ1FlS1FXNVVtakFXRjM4RTM5c2xuRDdBWUdhaXZzcWhjMWJWb2FndHBrRXVKd2RNaGd5NnNtamRmU2RCNVpqRXdHM3RZeGI3M05QVW5jMQ?oc=5",
+      "published": "2026-10-06T00:20:58+00:00"
+    },
+    {
+      "title": "일상생활서 뇌 자극하는 ‘투명 OLED 안경’ 개발, 알츠하이머 예방·관리 길 열어:약품신문",
+      "source": "약품신문",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9EZXNHeTZ3Si1tZVpPV1ZIM2FqNnVpTGJQalp6MzNIaFBiN1U5dHl0Uy1WR05lazhzLThaemtsSVBFcnR4LXFCTk40Wk5TU2lQ0gFgQVVfeXFMTk9Rc2RCMzdTd0JFdUh5Q2NWQzd2SFRheTNhZHFrMXZESV9sbGp5eHlWNG5tN3JpMW8yQmxNM1E5cGVPcEhCVUFNM0hvQ1d3em1hVlNSZFlTYTNEZVMya0R2?oc=5",
+      "published": "2026-10-05T23:29:00+00:00"
+    },
+    {
+      "title": "Dutch Eyewear Chain Bans Meta Smart Glasses Across Netherlands and Belgium",
+      "source": "TIKR.com",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSGM1MHNWekpWYmV0OXpna1dxakk2TUFPN3BzZ3lhbTU1SWtIdHRLMmYxc1lBamljcUxhU08yYUwzdkotajNDSmhQRndTV3QtTG9wQUxUekVmMWh4ZVczcHlIUGI1RHNmdkVoQmhzWHNoWW1TYUR2aWVLY2pTdlhqMnJRUUFSVnN2VkYw?oc=5",
+      "published": "2026-10-05T15:56:15+00:00"
+    }
+  ],
+  "news_spam_removed": 63,
+  "google_trends_matches": []
+}

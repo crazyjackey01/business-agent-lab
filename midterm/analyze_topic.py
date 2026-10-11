@@ -486,6 +486,38 @@ def check_claims(result, evidence, language):
     return removed
 
 
+# Relevance filter -----------------------------------------------------------------
+# Before the writer sees any news, Jev answers yes/no for each article: is it mainly
+# about the topic? Off-topic articles are dropped, so the writer reads less and cannot
+# cite something unrelated. The daily counts were measured before this step.
+
+RELEVANT_AT = 0.5  # Jev's probability of "yes" needed to keep an article
+
+
+def relevant_news(news, topic):
+    """Returns (kept articles, dropped articles, method)."""
+    if not news or not jev_api.available():
+        return news, [], "not filtered"
+    state = f'News articles found for the search topic "{topic}":\n\n' + "\n".join(
+        f"[{n}] {a['source']} | {a['title']}" + (f" | {a['summary']}" if a.get("summary") else "")
+        for n, a in enumerate(news))
+    questions = {
+        f"a{n}": {"type": "noul",
+                  "instructions": f"Is article [{n}] mainly about {topic}, rather than mentioning it "
+                                  "in passing or being unrelated?"}
+        for n in range(len(news))
+    }
+    try:
+        answers = jev_api.ask(state, questions)
+    except jev_api.JevError as error:
+        return news, [], f"not filtered ({error})"
+    kept, dropped = [], []
+    for n, a in enumerate(news):
+        p = answers.get(f"a{n}", {}).get("noul")
+        (kept if p is None or p >= RELEVANT_AT else dropped).append({**a, "relevance": p})
+    return kept, dropped, "Jev"
+
+
 # Run ----------------------------------------------------------------------------
 
 def latest_result(topic):
@@ -503,6 +535,8 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
         data = analyze_topic(topic, lang, geo)
         save_result(data)
 
+    kept, dropped, relevance_method = relevant_news(data["news"], topic)
+    data = {**data, "news": kept}
     drivers, today_n = news_drivers(data["news"], topic)
     intent_method, intents = search_intent(data["related_searches"], topic)
     facts = {
@@ -512,6 +546,12 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
         "intent_method": intent_method,
         "drivers": drivers,
         "events": scheduled_events(data["news"]),
+        "relevance": {
+            "method": relevance_method,
+            "kept": len(kept),
+            "dropped": [{"title": a["title"], "source": a["source"], "url": a["url"],
+                         "relevance": a["relevance"]} for a in dropped],
+        },
         "trends_matches": data["google_trends_matches"],
         "history": coverage_history(topic),
     }

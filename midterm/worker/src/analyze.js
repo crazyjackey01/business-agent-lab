@@ -446,9 +446,39 @@ async function explain(env, topic, evidence, language) {
   return result;
 }
 
+// Relevance filter ---------------------------------------------------------------------
+// Before the writer sees any news, Jev answers yes/no for each article: is it mainly
+// about the topic? Off-topic articles (keyword stuffing, passing mentions) are dropped,
+// so the writer reads less and cannot cite something unrelated.
+
+const RELEVANT_AT = 0.5; // Jev's probability of "yes" needed to keep an article
+
+export async function relevantNews(env, news, topic) {
+  if (!news.length || !env.OPENCODE_API_KEY) return { kept: news, dropped: [], method: "not filtered" };
+  const state = `News articles found for the search topic "${topic}":\n\n` + news.map((a, n) =>
+    `[${n}] ${a.source} | ${a.title}${a.summary ? ` | ${a.summary}` : ""}`).join("\n");
+  const questions = Object.fromEntries(news.map((_, n) => [`a${n}`, {
+    type: "noul",
+    instructions: `Is article [${n}] mainly about ${topic}, rather than mentioning it in passing or being unrelated?`,
+  }]));
+  try {
+    const answers = await askJev(env, state, questions, "relevance");
+    const kept = [], dropped = [];
+    news.forEach((a, n) => {
+      const p = answers[`a${n}`]?.noul;
+      (p === undefined || p >= RELEVANT_AT ? kept : dropped).push({ ...a, relevance: p ?? null });
+    });
+    return { kept, dropped, method: "Jev" };
+  } catch (error) {
+    return { kept: news, dropped: [], method: `not filtered (${error.message})` };
+  }
+}
+
 // Run --------------------------------------------------------------------------------
 
 export async function analyze(env, data) {
+  const relevance = await relevantNews(env, data.news, data.topic);
+  data = { ...data, news: relevance.kept };
   const facts = {
     coverage: data.news_momentum,
     news_unavailable: (data.source_errors || []).some(e => e.startsWith("news")),
@@ -459,6 +489,11 @@ export async function analyze(env, data) {
     events: scheduledEvents(data.news),
     trends_matches: data.google_trends_matches,
     history: [],
+    relevance: {
+      method: relevance.method,
+      kept: relevance.kept.length,
+      dropped: relevance.dropped.map(a => ({ title: a.title, source: a.source, url: a.url, relevance: a.relevance })),
+    },
   };
   const [evidence, links] = buildEvidence(facts, data.news);
   let explanation;

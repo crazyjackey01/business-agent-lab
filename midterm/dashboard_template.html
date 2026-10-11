@@ -190,6 +190,13 @@ function topicSection(a) {
       ${a.google_search ? `<div class="card wide"><h3>News found with Google Search</h3>
         <p class="note">Articles come from ${esc(a.news_source)}. Only articles Google attached a source citation to are used${a.google_search.dropped_uncited > 0 ? ` (${a.google_search.dropped_uncited} without a citation were dropped)` : ""}. Searches Google ran: ${(a.google_search.queries || []).map(esc).join(", ")}</p>
         <div class="google-suggestions">${a.google_search.suggestions || ""}</div></div>` : ""}
+      ${f.relevance && f.relevance.method === "Jev" ? `<div class="card wide"><h3>Relevance filter (Jev)</h3>
+        <p class="note">Jev judged each article "mainly about ${esc(a.topic)}?" before the writer saw them:
+          ${f.relevance.kept} kept, ${f.relevance.dropped.length} dropped.</p>
+        ${f.relevance.dropped.length ? `<details><summary>Dropped articles</summary><ul class="clean">${f.relevance.dropped.map(d =>
+          `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>
+           <div class="meta">${esc(d.source)} · ${d.relevance == null ? "" : Math.round(d.relevance * 100) + "% relevant"}</div></li>`).join("")}</ul></details>` : ""}
+      </div>` : ""}
       <div class="card wide"><h3>Scheduled events in the news</h3><ul class="clean">${events || '<li class="empty">None found</li>'}</ul></div>
       ${explanation}
       ${a.usage && a.usage.length ? `<div class="card wide"><h3>What this search used</h3>
