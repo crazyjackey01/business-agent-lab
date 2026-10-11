@@ -109,12 +109,24 @@ export async function fetchWikipediaTop(wiki, isoDay, limit = 25) {
     .map(a => ({ title: a.article.replace(/_/g, " "), views: a.views }));
 }
 
+// A day's Wikipedia totals appear a few hours after it ends (UTC), so if yesterday is not
+// ready yet, use the day before. Wikipedia is only a cross-check, so failing is allowed.
+async function latestWikipediaTop(wiki) {
+  const today = new Date().toISOString().slice(0, 10);
+  for (const back of [1, 2]) {
+    const day = addDays(today, -back);
+    try {
+      return [day, await fetchWikipediaTop(wiki, day)];
+    } catch { /* not published yet */ }
+  }
+  return [null, []];
+}
+
 export async function collectSnapshot(geo = "KR", wiki = "ko") {
-  const yesterday = addDays(new Date().toISOString().slice(0, 10), -1);
-  const [trends, wikiTop] = await Promise.all([fetchGoogleTrends(geo), fetchWikipediaTop(wiki, yesterday)]);
+  const [trends, [wikiDay, wikiTop]] = await Promise.all([fetchGoogleTrends(geo), latestWikipediaTop(wiki)]);
   return {
     collected_at: new Date().toISOString().slice(0, 19) + "+00:00",
-    geo, wiki, wiki_day: yesterday,
+    geo, wiki, wiki_day: wikiDay,
     google_trends: trends,
     wikipedia_top: wikiTop,
   };

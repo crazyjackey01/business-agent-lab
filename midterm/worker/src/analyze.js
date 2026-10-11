@@ -9,6 +9,7 @@ import { dayIn } from "./collect.js";
 const OPENROUTER = "https://openrouter.ai/api/v1/chat/completions";
 // Writes the analysis. Override with the OPENROUTER_MODEL variable.
 const DEFAULT_MODEL = "anthropic/claude-sonnet-5.5";
+const MAX_REPLY_TOKENS = 4000; // analyses use about 2,000
 const JEV_ENDPOINT = "https://opencode.ai/zen/v1/systemone";
 const JEV_MAX_QUESTIONS = 200; // one request per step when possible: the free tier allows few requests per minute
 
@@ -250,7 +251,8 @@ export function scheduledEvents(news, limit = 15) {
 // Model calls --------------------------------------------------------------------
 
 async function requestModel(env, messages, step) {
-  const body = JSON.stringify({ model: env.OPENROUTER_MODEL || DEFAULT_MODEL, messages });
+  // max_tokens caps the reply; without it OpenRouter reserves credit for a 65k-token reply.
+  const body = JSON.stringify({ model: env.OPENROUTER_MODEL || DEFAULT_MODEL, messages, max_tokens: MAX_REPLY_TOKENS });
   for (let attempt = 0; attempt < 3; attempt++) {
     const response = await fetch(OPENROUTER, {
       method: "POST",
@@ -393,8 +395,8 @@ async function ratingsFromModel(env, items, evidence, language) {
   return new Map(checks.filter(c => /^\d+$/.test(String(c.id))).map(c => [+c.id, { ...c, by: "model" }]));
 }
 
-async function checkClaims(env, result, evidence, language) {
-  const items = SECTIONS.flatMap(section => result[section].map(c => [section, c]));
+async function checkClaims(env, result, evidence, language, sections = SECTIONS) {
+  const items = sections.flatMap(section => result[section].map(c => [section, c]));
   if (!items.length) return 0;
   let ratings = null;
   if (env.OPENCODE_API_KEY) {
@@ -415,7 +417,7 @@ async function checkClaims(env, result, evidence, language) {
   result.checked_by = ratings.size ? [...ratings.values()][0].by : "none";
 
   let removed = 0;
-  for (const section of SECTIONS) {
+  for (const section of sections) {
     result[section] = result[section].flatMap(c => {
       const n = items.findIndex(([, item]) => item === c);
       const check = ratings.get(n) || { rating: "unchecked", reason: "" };
@@ -516,5 +518,116 @@ export async function analyze(env, data) {
     facts, evidence, evidence_links: links,
     related_searches: data.related_searches,
     explanation,
+  };
+}
+
+// Overview: what is everyone searching for right now? -----------------------------------
+// Used when no topic is typed. Google Trends' live list is the data: each trending search
+// comes with its approximate volume and the news articles Google links to it. Those
+// articles are the evidence. Jev sorts each trend into a category; the writer explains
+// why each one trends and what they have in common; Jev checks every claim.
+
+const TREND_CATEGORIES = {
+  breaking_news: "an accident, disaster, crime or sudden news event",
+  politics: "politics, government, elections, diplomacy, North Korea",
+  economy: "stocks, companies, prices, the economy",
+  sports: "a match, player, team or sports result",
+  entertainment: "a TV show, celebrity, music, film or game",
+  scheduled_event: "a planned event, holiday, ceremony or announcement on a set date",
+  product_or_tech: "a product launch, app, gadget or technology",
+  weather_or_seasonal: "weather, seasons, seasonal food or activities",
+  other: "none of the above",
+};
+
+const OVERVIEW_PROMPT = `You explain what people are searching for most right now, and why.
+You get today's trending Google searches. Each comes with the news articles Google links to it.
+
+Rules:
+- Use ONLY the evidence given. Cite ids ([T3] for a trend's data, [S7] for an article) for every claim.
+- "trends": for each trending search, one or two sentences on why people are searching it, from its
+  articles. Put the trend's exact search term in "term". If its articles do not explain it, skip it.
+- "themes": two to four claims about what the trends have in common (for example several sports
+  results, or one news story behind several searches). Each must cite at least two trends.
+- Headlines tell you what was reported, not the full story. Say "reported" when that matters.
+- Write in {language}.
+
+Reply with JSON only:
+{
+  "trends": [{"term": "...", "claim": "...", "cites": ["T1", "S1"]}],
+  "themes": [{"claim": "...", "cites": ["T1", "T4"]}]
+}`;
+
+export async function analyzeOverview(env, snapshot, lang) {
+  const trends = snapshot.google_trends.slice(0, 15);
+  const wikiTitles = (snapshot.wikipedia_top || []).map(w => w.title.toLowerCase());
+
+  // Jev: one category per trend, from its term and headlines.
+  let categories = {};
+  if (env.OPENCODE_API_KEY && trends.length) {
+    const state = "Trending Google searches right now, each with the headlines Google links to it:\n\n" + trends.map((t, n) =>
+      `[${n}] "${t.term}": ` + (t.news.map(x => x.title).join(" / ") || "(no headlines)")).join("\n");
+    const questions = Object.fromEntries(trends.map((t, n) => [`t${n}`, {
+      type: "choice", instructions: `What kind of thing is trend [${n}] "${t.term}"?`, criteria: TREND_CATEGORIES,
+    }]));
+    try {
+      categories = await askJev(env, state, questions, "categories");
+    } catch { /* categories stay empty */ }
+  }
+
+  // Evidence: one [T] per trend, one [S] per linked article.
+  const evidence = {}, links = {};
+  let s = 0;
+  const rows = trends.map((t, n) => {
+    const id = `T${n + 1}`;
+    const onWiki = wikiTitles.some(w => w.includes(t.term.toLowerCase()) || t.term.toLowerCase().includes(w));
+    evidence[id] = `Trending search "${t.term}", about ${t.traffic_text} searches` + (onWiki ? ", also among the most-viewed Wikipedia pages" : "");
+    const articleIds = t.news.map(a => {
+      const sid = `S${++s}`;
+      evidence[sid] = `article linked to "${t.term}" | ${a.source} | ${a.title}`;
+      links[sid] = a.url;
+      return sid;
+    });
+    const c = categories[`t${n}`];
+    return {
+      id, term: t.term, traffic: t.traffic, traffic_text: t.traffic_text, on_wikipedia: onWiki,
+      category: c?.choice in TREND_CATEGORIES ? c.choice : null, category_confidence: c?.confidence ?? null,
+      article_ids: articleIds, top_article: t.news[0] || null,
+    };
+  });
+
+  const language = lang === "ko" ? "Korean" : "English";
+  let explanation;
+  try {
+    const evidenceText = Object.entries(evidence).map(([k, v]) => `[${k}] ${v}`).join("\n");
+    const reply = parseJsonReply(await requestModel(env, [
+      { role: "system", content: OVERVIEW_PROMPT.replace("{language}", language) },
+      { role: "user", content: `Region: ${snapshot.geo}\n\nEvidence:\n${evidenceText}` },
+    ], "write"));
+    explanation = {};
+    let dropped = 0;
+    for (const section of ["trends", "themes"]) {
+      const [kept, n] = keepSupported(reply[section], evidence);
+      explanation[section] = kept;
+      dropped += n;
+    }
+    explanation.unsupported_claims_removed = dropped;
+    explanation.failed_check_removed = await checkClaims(env, explanation, evidence, language, ["trends", "themes"]);
+  } catch (error) {
+    explanation = { error: String(error.message || error) };
+  }
+
+  // Attach each trend's explanation to its row.
+  for (const r of rows) r.why = (explanation.trends || []).filter(c => c.term === r.term);
+
+  return {
+    kind: "overview",
+    topic: `Trending now (${snapshot.geo})`,
+    geo: snapshot.geo,
+    source_collected_at: snapshot.collected_at,
+    analyzed_at: new Date().toISOString().slice(0, 19) + "+00:00",
+    rows, evidence, evidence_links: links,
+    wikipedia_top: snapshot.wikipedia_top || [],
+    explanation,
+    writer_model: env.OPENROUTER_MODEL || DEFAULT_MODEL,
   };
 }

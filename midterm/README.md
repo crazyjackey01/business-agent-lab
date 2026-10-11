@@ -81,6 +81,15 @@ npx wrangler deploy
 Local test: put `OPENROUTER_API_KEY=...` and `SEARCH_PASSWORD=...` in
 `midterm/worker/.dev.vars` (git-ignored), then `npx wrangler dev`.
 
+### Overview: leave the box empty
+
+With no topic, the app explains **what everyone is searching for right now**:
+Google Trends' live list (with the news Google links to each trend) is the evidence,
+Wikipedia's most-viewed pages are a cross-check, Jev sorts each trend into a category
+(sports, politics, entertainment, ...), the writer explains each trend and the common
+themes from those articles only, and Jev checks every claim. About 15 s and $0.02.
+Code: `overview.py` (local) and `analyzeOverview` in `worker/src/analyze.js`.
+
 ### Command line
 
 ```sh

@@ -24,6 +24,7 @@ DEFAULT_MODEL = "anthropic/claude-sonnet-5.5"
 ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(ENV_FILE)
 MODEL = os.getenv("OPENROUTER_MODEL") or DEFAULT_MODEL
+MAX_REPLY_TOKENS = 4000  # analyses use about 2,000
 
 
 class ModelRequestError(Exception):
@@ -43,7 +44,8 @@ def request_model(messages, tools=None):
     Returns the model's reply message as a dict. The reply has either
     "content" (text for the user) or "tool_calls" (functions the model asks us to run).
     """
-    body = {"model": MODEL, "messages": messages}
+    # max_tokens caps the reply; without it OpenRouter reserves credit for a 65k-token reply.
+    body = {"model": MODEL, "messages": messages, "max_tokens": MAX_REPLY_TOKENS}
     if tools:
         body["tools"] = tools
     headers = {"Authorization": f"Bearer {api_key()}"}

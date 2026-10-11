@@ -6,6 +6,7 @@ topic_trends.py collects fresh data, analyze_topic.py measures the facts and
 writes the cited explanation, and the result appears on the page.
 
 A Korean topic is searched in Korea (ko/KR); anything else in the US (en/US).
+Leaving the box empty explains what everyone is searching for right now (overview.py).
 One search takes about 30-60 seconds.
 
 Usage:
@@ -21,6 +22,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from analyze_topic import analyze, save_analysis
 from build_dashboard import payload, render
+from overview import analyze_overview
 
 MAX_TOPIC_LENGTH = 60
 # One search at a time: each one makes ~20 requests to Google and two model calls.
@@ -62,7 +64,9 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_json(400, {"error": "bad request"})
 
         topic = " ".join(str(request.get("topic", "")).split())
-        if not topic or len(topic) > MAX_TOPIC_LENGTH:
+        if not topic:  # no topic: what is everyone searching for right now?
+            return self.run_overview("US" if request.get("region") == "US" else "KR")
+        if len(topic) > MAX_TOPIC_LENGTH:
             return self.send_json(400, {"error": f"type a topic of 1-{MAX_TOPIC_LENGTH} characters"})
         lang, geo = guess_region(topic)
         if request.get("region") in ("KR", "US"):
@@ -75,6 +79,18 @@ class Handler(BaseHTTPRequestHandler):
             result = analyze(topic, lang, geo, refresh=True)
             save_analysis(result)
         except Exception as error:  # show any failure on the page instead of a dead request
+            return self.send_json(500, {"error": f"{type(error).__name__}: {error}"})
+        finally:
+            search_lock.release()
+        self.send_json(200, result)
+
+    def run_overview(self, geo):
+        if not search_lock.acquire(blocking=False):
+            return self.send_json(429, {"error": "another search is running, try again in a moment"})
+        try:
+            print(f"overview: {geo}")
+            result = analyze_overview(geo)
+        except Exception as error:
             return self.send_json(500, {"error": f"{type(error).__name__}: {error}"})
         finally:
             search_lock.release()

@@ -3,7 +3,7 @@
 //   POST /api/analyze  {topic, region, password} -> collect + analyze + save, returns the analysis
 // Analyses and the general-trends snapshot are kept in Workers KV (binding ANALYSES).
 import template from "../../dashboard_template.html";
-import { analyze } from "./analyze.js";
+import { analyze, analyzeOverview } from "./analyze.js";
 import { collectSnapshot, collectTopic } from "./collect.js";
 
 const MAX_TOPIC_LENGTH = 60;
@@ -52,10 +52,12 @@ async function recentAnalyses(env) {
 }
 
 async function page(env) {
-  const [analyses, snapshot] = await Promise.all([recentAnalyses(env), latestSnapshot(env)]);
+  const [analyses, snapshot, overview] = await Promise.all([
+    recentAnalyses(env), latestSnapshot(env), env.ANALYSES.get("overview:KR", "json"),
+  ]);
   const data = {
     built_at: new Date().toISOString().slice(0, 16),
-    analyses, snapshot,
+    analyses, snapshot, overview,
     live: true,
     needs_password: Boolean(env.SEARCH_PASSWORD),
   };
@@ -75,7 +77,9 @@ async function runSearch(request, env) {
     return json({ error: "wrong password" }, 401);
   }
   const topic = String(body.topic || "").split(/\s+/).filter(Boolean).join(" ");
-  if (!topic || topic.length > MAX_TOPIC_LENGTH) {
+  // No topic: explain what everyone is searching for right now.
+  if (!topic) return runOverview(env, body.region === "US" ? "US" : "KR");
+  if (topic.length > MAX_TOPIC_LENGTH) {
     return json({ error: `type a topic of 1-${MAX_TOPIC_LENGTH} characters` }, 400);
   }
   let [lang, geo] = guessRegion(topic);
@@ -91,6 +95,20 @@ async function runSearch(request, env) {
     await env.ANALYSES.put(`analysis:${slug(topic)}:${geo}`, JSON.stringify(result), {
       metadata: { analyzed_at: result.analyzed_at },
     });
+    return json(result);
+  } catch (error) {
+    return json({ error: `${error.name}: ${error.message}` }, 500);
+  }
+}
+
+async function runOverview(env, geo) {
+  try {
+    const ctx = { ...env, usage: [] };
+    const snapshot = await collectSnapshot(geo, geo === "KR" ? "ko" : "en");
+    await env.ANALYSES.put(`snapshot:${geo}`, JSON.stringify(snapshot));
+    const result = await analyzeOverview(ctx, snapshot, geo === "KR" ? "ko" : "en");
+    result.usage = ctx.usage;
+    await env.ANALYSES.put(`overview:${geo}`, JSON.stringify(result), { metadata: { analyzed_at: result.analyzed_at } });
     return json(result);
   } catch (error) {
     return json({ error: `${error.name}: ${error.message}` }, 500);

@@ -77,8 +77,8 @@
     <h1>Trend Signals</h1>
     <p id="built"></p>
     <form class="search" id="search" hidden>
-      <input id="topic" name="topic" maxlength="60" required autocomplete="off"
-             placeholder="Type a topic you want to know about (e.g. 피지컬 AI, 전기차, smart glasses)">
+      <input id="topic" name="topic" maxlength="60" autocomplete="off"
+             placeholder="Type a topic (e.g. 피지컬 AI, 전기차) — or leave empty for what everyone is searching now">
       <input id="password" type="password" placeholder="Class password" autocomplete="current-password"
              aria-label="Password" hidden style="flex: 0 1 170px">
       <select id="region" aria-label="Region">
@@ -89,6 +89,7 @@
     <p id="status"></p>
   </header>
   <div id="result"></div>
+  <div id="overview"></div>
   <div id="topics"></div>
   <div id="general"></div>
 </main>
@@ -135,6 +136,41 @@ function coverageBars(perDay) {
     const label = i === days.length - 1 ? "today" : `-${days.length - 1 - i}d`;
     return `<div><em>${n}</em><i style="height:${(n / max) * 100}%"></i><small>${label}</small></div>`;
   }).join("") + `</div>`;
+}
+
+const CATEGORY_NAMES = {
+  breaking_news: "breaking news", politics: "politics", economy: "economy", sports: "sports",
+  entertainment: "entertainment", scheduled_event: "scheduled event", product_or_tech: "product / tech",
+  weather_or_seasonal: "weather / seasonal", other: "other",
+};
+
+function overviewSection(o) {
+  const e = o.explanation || {};
+  const counts = {};
+  o.rows.forEach(r => { if (r.category) counts[r.category] = (counts[r.category] || 0) + 1; });
+  const mix = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([c, n]) =>
+    `<span class="chip">${esc(CATEGORY_NAMES[c] || c)}<b>${n}</b></span>`).join("");
+  const rows = o.rows.map(r => `<li>
+      <b>${esc(r.term)}</b> <span class="meta">${esc(r.traffic_text)} searches</span>
+      ${r.category ? `<span class="conf" title="Jev ${r.category_confidence != null ? Math.round(r.category_confidence * 100) + "%" : ""}">${esc(CATEGORY_NAMES[r.category] || r.category)}</span>` : ""}
+      ${r.on_wikipedia ? `<span class="conf">also top on Wikipedia</span>` : ""}
+      ${(r.why || []).map(c => `<p class="claim" style="margin:4px 0 0">${esc(c.claim)}${cites(c.cites, o)}${checkBadge(c)}</p>`).join("")}
+      ${!(r.why || []).length && r.top_article ? `<div class="meta"><a href="${esc(r.top_article.url)}" target="_blank" rel="noopener">${esc(r.top_article.title)}</a></div>` : ""}
+    </li>`).join("");
+  const usage = o.usage && o.usage.length
+    ? `<p class="note">Cost: $${o.usage.reduce((s, u) => s + (u.cost || 0), 0).toFixed(4)} · written by ${esc(o.writer_model || "")}, categories and checks by Jev.</p>` : "";
+  return `<section>
+    <h2>What people are searching most right now (${esc(o.geo)})</h2>
+    <p class="sub">Google Trends, analyzed ${esc(o.analyzed_at.slice(0, 16).replace("T", " "))} UTC · each trend is explained only from the news Google links to it</p>
+    <div class="grid">
+      ${e.themes && e.themes.length ? `<div class="card wide"><h3>Common themes</h3>${claims(e.themes, o)}</div>` : ""}
+      <div class="card wide"><h3>What kind of trends (Jev)</h3><div class="chips">${mix || '<span class="empty">not categorized</span>'}</div></div>
+      <div class="card wide"><h3>Each trending search, and why</h3><ul class="clean">${rows}</ul>
+        ${e.error ? `<p class="note">Explanation failed: ${esc(e.error)}</p>` : ""}
+        ${e.failed_check_removed ? `<p class="note">${e.failed_check_removed} claim(s) failed the evidence check and were removed.</p>` : ""}
+        ${usage}</div>
+    </div>
+  </section>`;
 }
 
 function topicSection(a) {
@@ -231,6 +267,7 @@ document.getElementById("topics").innerHTML = DATA.analyses.length
   ? DATA.analyses.map(topicSection).join("")
   : `<p class="empty">No analyses yet. Run analyze_topic.py first.</p>`;
 document.getElementById("general").innerHTML = generalSection(DATA.snapshot);
+if (DATA.overview) document.getElementById("overview").innerHTML = overviewSection(DATA.overview);
 
 // Live mode (served by app.py): search any topic.
 if (DATA.live) {
@@ -246,13 +283,14 @@ if (DATA.live) {
   form.addEventListener("submit", async event => {
     event.preventDefault();
     const topic = document.getElementById("topic").value.trim();
-    if (!topic) return;
     button.disabled = true;
     status.className = "";
     const started = Date.now();
     const tick = setInterval(() => {
       const s = Math.round((Date.now() - started) / 1000);
-      status.textContent = `Collecting searches and news for "${topic}", then analyzing… ${s}s (usually 30-60s)`;
+      status.textContent = topic
+        ? `Collecting searches and news for "${topic}", then analyzing… ${s}s (usually 1-2 min)`
+        : `Finding what everyone is searching for right now, then explaining it… ${s}s (usually under a minute)`;
     }, 500);
     try {
       const response = await fetch("/api/analyze", {
@@ -262,7 +300,7 @@ if (DATA.live) {
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || response.statusText);
       try { if (DATA.needs_password) sessionStorage.setItem("searchPassword", passwordInput.value); } catch {}
-      document.getElementById("result").innerHTML = topicSection(result);
+      document.getElementById("result").innerHTML = result.kind === "overview" ? overviewSection(result) : topicSection(result);
       status.textContent = `Done in ${Math.round((Date.now() - started) / 1000)}s.`;
       document.getElementById("result").scrollIntoView({behavior: "smooth"});
     } catch (error) {

@@ -405,9 +405,11 @@ CHECK_LABELS = {
 UNCERTAIN_BELOW = 0.6  # Jev confidence under this is shown as uncertain
 
 
-def claim_items(result):
-    return [(section, c) for section in ("why_people_search", "what_is_happening", "outlook")
-            for c in result[section]]
+SECTIONS = ("why_people_search", "what_is_happening", "outlook")
+
+
+def claim_items(result, sections=SECTIONS):
+    return [(section, c) for section in sections for c in result[section]]
 
 
 def claim_text(n, section, c, evidence):
@@ -450,9 +452,9 @@ def ratings_from_model(items, evidence, language):
     return {int(c["id"]): {**c, "by": "model"} for c in checks if str(c.get("id", "")).isdigit()}
 
 
-def check_claims(result, evidence, language):
+def check_claims(result, evidence, language, sections=SECTIONS):
     """Second pass: rate every claim against its cited evidence. Returns how many were removed."""
-    items = claim_items(result)
+    items = claim_items(result, sections)
     if not items:
         return 0
     ratings = None
@@ -470,7 +472,7 @@ def check_claims(result, evidence, language):
     result["checked_by"] = next(iter(ratings.values()))["by"] if ratings else "none"
 
     removed = 0
-    for section in ("why_people_search", "what_is_happening", "outlook"):
+    for section in sections:
         kept = []
         for c in result[section]:
             n = next(i for i, (_, item) in enumerate(items) if item is c)

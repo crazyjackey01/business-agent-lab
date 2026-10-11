@@ -42,6 +42,10 @@ There is no test suite or linter yet.
   `build_dashboard.py` fills `dashboard_template.html` with the newest files.
   `app.py` serves the same template with `live: true`, which shows a search box that
   POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
+- Empty topic = overview mode: `overview.py` / `analyzeOverview` (Google Trends + Jev categories
+  + cited explanation). The page renders it with `overviewSection` in the template.
+- Model replies are capped with max_tokens (MAX_REPLY_TOKENS); without it OpenRouter reserves
+  credit for a 65k-token reply and fails on keys with a spending limit.
 - Scripts import each other by module name, so run them by path (`python midterm/...`).
 - `midterm/worker/src/` is a JavaScript port of the Python pipeline (collect.js ≈
   topic_trends + collect_trends, analyze.js ≈ analyze_topic). Keep both in sync when
