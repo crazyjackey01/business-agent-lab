@@ -4,6 +4,7 @@ Run from the project root:   python week-05/03_assistant.py
 
 Every tool call prints a short trace: the call, the result, and the assistant's answer.
 The conversation is kept only while the program runs.
+Type gigachad mode to switch the assistant's voice, and normal mode to switch back.
 """
 import json
 from datetime import date
@@ -12,6 +13,7 @@ from model_api import ModelRequestError, request_model
 from tools import (
     CALCULATOR,
     CONVERT_CURRENCY,
+    GIGACHAD,
     MOTIVATE,
     READ_SCHEDULE,
     SAVE_NOTE,
@@ -49,10 +51,24 @@ SYSTEM_PROMPT = (
     "Keep answers short. Write plain text, without Markdown."
 )
 
+# Added to the system prompt while gigachad mode is on.
+GIGACHAD_STYLE = (
+    "\n\nGigachad mode is on. Speak like Gigachad from the meme: calm, unshakable, supremely confident, "
+    "few words. Every answer uses this voice, also plain facts: give the facts in short, flat lines, "
+    "then end with one short line of calm confidence. If the user hesitates or makes an excuse, answer with a flat \"Yes.\" "
+    "Never insult the user. The facts still come from the tools. "
+    "When motivate returns a message, pass it on in full; it is already in this voice.\n"
+    "Examples of the voice (not of the facts):\n"
+    "User: what is 12 times 7? Gigachad: 84. Calculated. Never doubted.\n"
+    "User: what's on tomorrow? Gigachad: Meeting at 10. Gym at 18:30. Both handled.\n"
+    "User: I don't feel like studying. Gigachad: Yes. Open the book anyway."
+)
+
 
 def main():
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-    print("Assistant ready. Type exit to quit.")
+    print("Assistant ready. Type exit to quit. Type gigachad mode for a different voice.")
+    gigachad = False
     while True:
         try:
             text = input("> ").strip()
@@ -61,14 +77,22 @@ def main():
             break
         if text.lower() in {"exit", "quit"}:
             break
+        if text.lower() in {"gigachad mode", "normal mode"}:
+            gigachad = text.lower() == "gigachad mode"
+            messages[0]["content"] = SYSTEM_PROMPT + (GIGACHAD_STYLE if gigachad else "")
+            if gigachad:
+                print(GIGACHAD)
+            trace("mode", "gigachad mode on" if gigachad else "normal mode on")
+            continue
         if text:
             messages.append({"role": "user", "content": text})
-            answer(messages)
+            answer(messages, gigachad)
 
 
-def answer(messages):
+def answer(messages, gigachad=False):
     """Request the model until it answers without a tool call, or until MAX_ROUNDS."""
     start = len(messages) - 1
+    shown = False  # motivate() already prints the emote, so show it at most once per answer
     for _ in range(MAX_ROUNDS):
         try:
             reply = request_model(messages, TOOLS)
@@ -79,10 +103,13 @@ def answer(messages):
         messages.append({"role": "assistant", "content": reply.get("content"), "tool_calls": reply.get("tool_calls")})
         if not reply.get("tool_calls"):
             messages[-1].pop("tool_calls")
+            if gigachad and not shown:
+                print(GIGACHAD)
             trace("assistant", reply.get("content") or "(no text)")
             return
         for call in reply["tool_calls"]:
             trace("tool call", describe(call))
+            shown = shown or call["function"]["name"] == "motivate"
             result = dispatch(call)
             trace("tool result", shorten(result))
             messages.append(tool_result(call["id"], result))
