@@ -12,11 +12,13 @@ from model_api import ModelRequestError, request_model
 from tools import (
     CALCULATOR,
     CONVERT_CURRENCY,
+    MOTIVATE,
     READ_SCHEDULE,
     SAVE_NOTE,
     SEARCH_WIKIPEDIA,
     calculator,
     convert_currency,
+    motivate,
     read_schedule,
     save_note,
     search_wikipedia,
@@ -26,7 +28,7 @@ from tools import (
 MAX_ROUNDS = 5
 
 # The tool definitions sent to the model.
-TOOLS = [CALCULATOR, READ_SCHEDULE, SEARCH_WIKIPEDIA, SAVE_NOTE, CONVERT_CURRENCY]
+TOOLS = [CALCULATOR, READ_SCHEDULE, SEARCH_WIKIPEDIA, SAVE_NOTE, CONVERT_CURRENCY, MOTIVATE]
 
 # The functions this program allows the model to request.
 FUNCTIONS = {
@@ -35,6 +37,7 @@ FUNCTIONS = {
     "search_wikipedia": search_wikipedia,
     "save_note": save_note,
     "convert_currency": convert_currency,
+    "motivate": motivate,
 }
 
 SYSTEM_PROMPT = (

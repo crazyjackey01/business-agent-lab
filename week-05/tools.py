@@ -9,10 +9,12 @@ The model only reads the definitions. The program runs the functions.
 import html
 import json
 import re
-from datetime import date as Date
+from datetime import date as Date, datetime
 from pathlib import Path
 
 import requests
+
+from model_api import request_model
 
 HERE = Path(__file__).resolve().parent
 SCHEDULE_FILE = HERE / "data" / "schedule.json"
@@ -211,3 +213,51 @@ def convert_currency(amount, from_currency, to_currency):
         "converted_amount": round(amount * data["rate"], 2),
         "note": "dated reference rate, not the amount a bank pays after fees",
     }
+
+
+# Motivation ---------------------------------------------------------------
+
+MOTIVATE = {
+    "type": "function",
+    "function": {
+        "name": "motivate",
+        "description": (
+            "Get a short, direct push to start one task right now, written by a separate coach model "
+            "that also sees the user's schedule for the next seven days. "
+            "Use it when the user is putting off work or asks for motivation."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "task": {"type": "string", "description": "The task the user should start, such as statistics homework."},
+                "deadline": {"type": "string", "description": "When the task is due, if the user said so."},
+            },
+            "required": ["task"],
+        },
+    },
+}
+
+COACH_PROMPT = (
+    "You are a blunt but kind study coach. The student is putting off a task. "
+    "In at most five short sentences: name what the delay costs them, using their schedule if it helps "
+    "(for example, the free time before their next event), then give one first step that takes under "
+    "five minutes, and end by telling them to start now. Write plain text, without Markdown. "
+    "Do not invent events that are not in the schedule."
+)
+
+
+def motivate(task, deadline=None):
+    today = Date.today()
+    events = json.loads(SCHEDULE_FILE.read_text(encoding="utf-8"))
+    upcoming = [event for event in events if 0 <= (Date.fromisoformat(event["date"]) - today).days < 7]
+    details = [
+        f"Task: {task}",
+        f"Deadline: {deadline or 'not given'}",
+        f"Now: {datetime.now():%A %Y-%m-%d %H:%M}",
+        "Schedule for the next seven days: " + (json.dumps(upcoming, ensure_ascii=False) if upcoming else "nothing"),
+    ]
+    reply = request_model([
+        {"role": "system", "content": COACH_PROMPT},
+        {"role": "user", "content": "\n".join(details)},
+    ])
+    return (reply.get("content") or "").strip() or "error: the coach model returned no text"
