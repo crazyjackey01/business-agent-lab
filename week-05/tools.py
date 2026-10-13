@@ -253,7 +253,25 @@ COACH_PROMPT = (
 )
 
 
+# Printed in the terminal every time motivate() runs. The model never sees it.
+GIGACHAD = r"""
+        ____________
+       /  _  __  _  \
+      |  / \/  \/ \  |
+      |   __    __   |
+      |  (__)  (__)  |
+      |      /\      |
+      |     /__\     |
+      |   ________   |
+       \  \______/  /
+        \__________/
+         \________/
+      G I G A C H A D
+"""
+
+
 def motivate(task, deadline=None):
+    print(GIGACHAD)
     today = Date.today()
     events = json.loads(SCHEDULE_FILE.read_text(encoding="utf-8"))
     upcoming = [event for event in events if 0 <= (Date.fromisoformat(event["date"]) - today).days < 7]
