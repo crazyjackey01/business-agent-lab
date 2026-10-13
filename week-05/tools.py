@@ -163,16 +163,51 @@ def save_note(filename, text):
     return f"saved notes/{path.name}"
 
 
-# Currency conversion (exercise) -------------------------------------------
-#
-# Add two things here:
-#   1. a function           convert_currency(amount, from_currency, to_currency)
-#   2. a tool definition    CONVERT_CURRENCY, written like the definitions above
-# Then register both in 03_assistant.py, in TOOLS and in FUNCTIONS.
-#
-# Rate service: Frankfurter (no API key needed). Example request and response:
-#   GET https://api.frankfurter.dev/v2/rate/USD/KRW
-#   {"date": "2026-10-05", "base": "USD", "quote": "KRW", "rate": 1347.79}
-#
-# Return the rate, its date, and the converted amount (amount × rate).
-# The rate is a dated reference rate, not the amount a bank pays after fees.
+# Currency conversion ------------------------------------------------------
+
+CONVERT_CURRENCY = {
+    "type": "function",
+    "function": {
+        "name": "convert_currency",
+        "description": (
+            "Convert an amount from one currency to another with the latest Frankfurter reference rate. "
+            "Returns the rate, its date, and the converted amount. "
+            "The rate is a dated reference rate, not the amount a bank pays after fees."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "amount": {"type": "number", "description": "The amount to convert."},
+                "from_currency": {"type": "string", "description": "Three-letter currency code, such as USD."},
+                "to_currency": {"type": "string", "description": "Three-letter currency code, such as KRW."},
+            },
+            "required": ["amount", "from_currency", "to_currency"],
+        },
+    },
+}
+
+
+def convert_currency(amount, from_currency, to_currency):
+    if not isinstance(amount, (int, float)):
+        raise ValueError("amount must be a number")
+    codes = [code.strip().upper() for code in (from_currency, to_currency)]
+    if not all(re.fullmatch(r"[A-Z]{3}", code) for code in codes):
+        raise ValueError("currencies must be three-letter codes, such as USD")
+    response = requests.get(
+        f"https://api.frankfurter.dev/v2/rate/{codes[0]}/{codes[1]}",
+        headers={"User-Agent": "business-agent-lab-week-05 (course exercise)"},
+        timeout=10,
+    )
+    if response.status_code == 422:
+        raise ValueError(response.json().get("message", "unknown currency"))
+    response.raise_for_status()
+    data = response.json()
+    return {
+        "from_currency": data["base"],
+        "to_currency": data["quote"],
+        "rate": data["rate"],
+        "rate_date": data["date"],
+        "amount": amount,
+        "converted_amount": round(amount * data["rate"], 2),
+        "note": "dated reference rate, not the amount a bank pays after fees",
+    }
