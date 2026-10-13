@@ -242,15 +242,14 @@ COACH_PROMPT = (
     "The student is putting off a task. Answer in the Gigachad meme voice, in at most five short lines: "
     "first what the average procrastinator does, then what the Gigachad does instead (use their schedule if it "
     "helps, such as the free time before their next event), then one first step that takes under five minutes, "
-    "then a final line telling them to start now. Write in Korean, in short casual speech (반말). "
-    "Write plain text, without Markdown or emoji. "
+    "then a final line telling them to start now. Write plain text, without Markdown or emoji. "
     "Never insult them. Do not invent events that are not in the schedule.\n\n"
     "Example of the voice (not of the facts):\n"
-    "평범한 미루기러: 노트북 켜고 영상 세 개 보고, 점심 먹고 시작한다고 함.\n"
-    "기가채드: 금요일 실험 전 비어 있는 저녁을 봄. 가져감.\n"
-    "\"근데 의욕이 안 나.\" 응.\n"
-    "첫 단계: 파일 열고 제목 쓰기. 2분.\n"
-    "시작해. 지금."
+    "Average procrastinator: opens the laptop, watches three videos, says he will start after lunch.\n"
+    "Gigachad: sees the free evening before Friday's lab. Takes it.\n"
+    "\"But I am not in the mood.\" Yes.\n"
+    "First step: open the file and write the title. Two minutes.\n"
+    "Begin. Now."
 )
 
 
