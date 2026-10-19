@@ -5,23 +5,33 @@ statistics compared against external ground truth. Language models only turn res
 that are already decided into sentences; none of them decides whether a spike is real,
 whether a prediction was right, or whether a number is correct.
 
-Results as of 2026-10-19. Run everything from the `business-agent-lab` folder with the
+Results as of 2026-10-19. Ground truth: Google Trends search interest and Wikipedia pageviews. Run everything from the `business-agent-lab` folder with the
 venv active (`pip install -r midterm/requirements.txt` for numpy and scipy). Every module
 runs its own assert-based self-check first.
 
-## The three numbers to present
+## The numbers to present
 
-1. **Our news signal tracks real public interest for 1 of 5 topics.** 피지컬 AI:
-   Spearman ρ = +0.48 (p = 0.007) between daily news counts and Wikipedia pageviews over
-   30 days, and +0.75 when pageviews are compared one day earlier. The other four are
-   not significant (ρ from −0.32 to +0.33). Korean Wikipedia is a weak ground truth
-   (Koreans use 나무위키), and most news days hit Google's 100-article limit.
-2. **Forecasts beat the naive "same as last week" forecast on 3 of 5 topics, by up to 9%**:
-   MASE 0.908 for 갤럭시 (9% better), 0.934 for physical AI (7%), 0.994 for 스마트 안경
-   (0.6%). For 전기차 and 피지컬 AI nothing beats naive.
+1. **Our news signal tracks real public interest for 4 of 5 topics.** Over 90 days, daily news
+   counts correlate significantly (Spearman, p < 0.05) with Google search interest or Wikipedia
+   pageviews for 피지컬 AI (Google ρ = +0.40, p = 0.0001; Wikipedia +0.27), physical AI
+   (Wikipedia +0.32, p = 0.002), 전기차 (Google +0.24, p = 0.02) and 스마트 안경 (Google +0.23,
+   p = 0.03). 갤럭시 shows no link. After a strict correction for 10 tests (p < 0.005), two
+   survive: 피지컬 AI on Google and physical AI on Wikipedia.
+2. **Predictions, tested on data the models never saw** (holdout, `eval/prediction_test.py`):
+   next week's Google search interest is predicted within **8–9%** for 전기차 and 갤럭시 (MAPE),
+   but no model beats "same as last week" on Google (MASE ≥ 1.0). On Wikipedia the best case is
+   갤럭시: **12% better than naive** (MASE 0.878) and up/down called right **62%** of the time
+   (p = 0.0006 vs a coin flip). 80% prediction intervals catch the actual value **76%** of the time
+   on average (49–98% by topic). Sudden jumps are missed: 스마트 안경 went to 100 against a
+   forecast of 26.
 3. **100% of the numbers in generated text are grounded in the run's own facts**:
    192 of 192, including 79 of 79 distinctive numbers (≥ 100 or with decimals). By
    chance, checked against another topic's facts, only 25% of distinctive numbers match.
+
+**Google Trends** gives a relative 0–100 index of how much people searched a term, not raw
+counts (Google publishes none; Keyword Planner gives monthly ranges with an Ads account).
+It is read through the endpoints the Trends website uses (`eval/gtrends.py`), which is not an
+official API: it works from a home connection, is cached, and may be rate-limited or change.
 
 ## 1. Spike test: `eval/spike.py`
 
@@ -48,25 +58,29 @@ The 전기차 day is the self-check: Poisson gives p = 8.6e-6 ("spike"), the neg
 p = 0.069 ("normal"). The old ratio called 전기차 1.7× and 피지컬 AI (2026-10-11) 2.17×,
 which the writer described as a surge; the test calls the latter only "elevated" (p = 0.034).
 
-## 2. Ground truth: `eval/groundtruth.py` (+ `eval/wiki.py`)
+## 2. Ground truth: `eval/groundtruth.py` (+ `eval/gtrends.py`, `eval/wiki.py`)
 
-**Measures:** whether daily Google News counts move with daily Wikipedia pageviews
-(Wikimedia REST API, human users, cached in `data/eval/wiki/`). Spearman correlation with
-its p-value, and lead-lag correlation for lags −3..+3 (lag k = news on day t vs pageviews
-on day t+k; best lag > 0 means news leads). Under 7 overlapping days, no number is reported.
+**Measures:** whether daily Google News counts move with two independent measures of public
+interest: daily Google search interest (Google Trends index, Korean days) and daily Wikipedia
+pageviews (Wikimedia REST API, human users). Spearman correlation with its p-value, and
+lead-lag correlation for lags −3..+3 (lag k = news on day t vs interest on day t+k). Under 7
+overlapping days, no number is reported. Responses are cached in `data/eval/`.
 
-**Run:** `python midterm/eval/groundtruth.py` (30 days by default; `--days 60`)
+**Run:** `python midterm/eval/groundtruth.py --days 90` (Google daily data covers 90 days)
 
-| topic | article | ρ (30 days) | p | best lag | r at best lag | capped news days |
-|---|---|---|---|---|---|---|
-| 피지컬 AI | ko: 피지컬 AI | **+0.48** | **0.007** | −1 (pageviews first) | +0.75 | 26/30 |
-| physical AI | en: Physical AI | +0.33 | 0.078 | +1 (news first) | +0.60 | 19/30 |
-| 스마트 안경 | ko: 스마트글래스 | +0.12 | 0.54 | +1 | +0.40 | 3/30 |
-| 갤럭시 | ko: 삼성 갤럭시 | −0.06 | 0.74 | 0 | −0.06 | 19/30 |
-| 전기차 | ko: 전기자동차 | −0.32 | 0.082 | −3 | +0.20 | 30/30 |
+| topic | Google ρ (p) | Wikipedia ρ (p) | best lag (Google / Wiki) | capped news days |
+|---|---|---|---|---|
+| 피지컬 AI | **+0.40 (0.0001)** | **+0.27 (0.011)** | 0 / 0 | 69/90 |
+| physical AI | +0.14 (0.20) | **+0.32 (0.002)** | 0 / 0 | 46/90 |
+| 전기차 | **+0.24 (0.023)** | −0.14 (0.18) | 0 / −3 | 74/90 |
+| 스마트 안경 | **+0.23 (0.031)** | +0.03 (0.78) | −3 / 0 | 3/90 |
+| 갤럭시 | −0.09 (0.39) | +0.13 (0.23) | −2 / 0 | 64/90 |
 
-Read with care: five topics × seven lags is many comparisons, so only 피지컬 AI's ρ clears
-a strict bar. 전기자동차 gets about 6 views a day, too few to track anything.
+Bold = p < 0.05. Over 30 days only 피지컬 AI was significant and its best lag was −1 (searches a
+day before news); with 90 days the best lag is 0, so the data do not show news leading interest
+or the other way round. Caveats: most news days hit Google's 100-article limit (counts are
+minimums); Korean Wikipedia traffic is small (Koreans use 나무위키); Google days are KST and
+news days UTC.
 
 ## 3. Forecasts and backtest: `eval/forecast.py`, `eval/score_predictions.py`
 
@@ -106,6 +120,50 @@ MASE) to `data/predictions.jsonl`. Five are logged for 2026-10-19..25:
 
 **Score them** after 2026-10-26 (once Wikimedia publishes the 25th):
 `python midterm/eval/score_predictions.py`.
+
+## 3b. Prediction accuracy on unseen data: `eval/prediction_test.py`
+
+**Measures:** how accurate the forecasts are on a period never used to build them. At every
+origin the forecast uses only past data. The model (lowest error) and the 80% interval (10th–90th
+percentile of actual/predicted on recent training origins) are chosen on training origins only;
+the most recent period is the holdout: 52 weeks of Google next-week interest (5 years of weekly
+data; models naive, 4-week mean, exponential smoothing, same week last year) and 180 days of
+Wikipedia 7-day sums. Metrics: MAE, MASE vs naive, MAPE, interval coverage (should be near 80%),
+direction hit rate with a one-sided binomial test against a coin flip.
+
+**Run:** `python midterm/eval/prediction_test.py` → `data/eval/prediction_test.{md,json}`
+
+| source | topic | model (chosen on training) | holdout n | MASE vs naive | MAPE | 80% coverage | direction hit (p vs coin) |
+|---|---|---|---|---|---|---|---|
+| Google weekly | 전기차 | ses | 52 | 1.055 | 7.9% | 83% | 58% (0.17) |
+| Google weekly | 갤럭시 | naive | 52 | 1.000 | 9.2% | 60% | - |
+| Google weekly | 스마트 안경 | mean4 | 52 | 1.011 | 26.7% | 94% | 61% (0.08) |
+| Google weekly | 피지컬 AI | mean4 | 52 | 1.114 | 38.5% | 98% | 50% (0.56) |
+| Google weekly | physical AI | naive | 52 | 1.000 | 14.9% | 98% | - |
+| Wikipedia 7-day | 전기차 | naive | 180 | 1.000 | 40.2% | 60% | - |
+| Wikipedia 7-day | 갤럭시 | ses | 180 | **0.878** | 50.0% | 49% | **62% (0.0006)** |
+| Wikipedia 7-day | 스마트 안경 | decay | 180 | 1.223 | 34.3% | 78% | 55% (0.10) |
+| Wikipedia 7-day | 피지컬 AI | naive | 180 | 1.000 | 41.7% | 61% | - |
+| Wikipedia 7-day | physical AI | too little history (21 origins) | | | | | |
+
+When naive is chosen there is no up/down call (it always predicts "no change").
+
+One real forecast per topic, made with data up to a week before the latest data:
+
+| source | topic | data up to | predicted | 80% interval | actual |
+|---|---|---|---|---|---|
+| Google | 전기차 | 2026-10-04 | 55.8 | 47.6–63.5 | 54 ✓ |
+| Google | 갤럭시 | 2026-10-04 | 56.0 | 51.8–60.1 | 55 ✓ |
+| Google | 스마트 안경 | 2026-10-04 | 26.0 | 0–62.9 | **100 ✗** (sudden jump) |
+| Google | 피지컬 AI | 2026-10-04 | 15.5 | 0–44.0 | 19 ✓ |
+| Google | physical AI | 2026-10-04 | 17.0 | 11.3–25.5 | 16 ✓ |
+| Wikipedia | 전기차 | 2026-10-11 | 35 | 23–49 | 40 ✓ |
+| Wikipedia | 갤럭시 | 2026-10-11 | 361 | 252–510 | 389 ✓ (naive said 142) |
+| Wikipedia | 스마트 안경 | 2026-10-11 | 45 | 28–75 | **152 ✗** |
+| Wikipedia | 피지컬 AI | 2026-10-11 | 293 | 204–494 | 303 ✓ |
+
+7 of 9 inside the interval; both misses are the same 스마트 안경 jump, which no past data
+announced.
 
 ## 4. Number grounding: `eval/grounding.py`
 

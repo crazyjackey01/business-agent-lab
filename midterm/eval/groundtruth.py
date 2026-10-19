@@ -1,7 +1,11 @@
-"""Does our news signal track real public interest? News counts vs Wikipedia pageviews.
+"""Does our news signal track real public interest? News counts vs Google and Wikipedia.
 
 For each demo topic: daily Google News article counts (UTC calendar days, same
-per-day queries as topic_trends.py) are aligned with daily Wikipedia pageviews, then
+per-day queries as topic_trends.py) are aligned with two measures of public interest:
+  google    - daily Google search interest (Google Trends index, eval/gtrends.py; Korean
+              days, 9 hours off the UTC news days)
+  wikipedia - daily Wikipedia pageviews (eval/wiki.py)
+then
   - Spearman rank correlation with its p-value, and
   - lead-lag cross-correlation for lags -3..+3: lag k compares news on day t with
     pageviews on day t+k, so a best lag > 0 means news leads pageviews.
@@ -25,6 +29,7 @@ import numpy as np
 from scipy import stats
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # midterm/ modules
+from eval.gtrends import interest  # noqa: E402
 from eval.wiki import ARTICLES, pageviews  # noqa: E402
 from topic_trends import fetch_news, is_spam  # noqa: E402
 
@@ -100,7 +105,7 @@ def self_check():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="News counts vs Wikipedia pageviews.")
+    parser = argparse.ArgumentParser(description="News counts vs Google search interest and Wikipedia pageviews.")
     parser.add_argument("--days", type=int, default=30)
     args = parser.parse_args()
     self_check()
@@ -109,22 +114,21 @@ def main():
     results = {}
     for topic in ARTICLES:
         counts = news_daily_counts(topic, args.days)
-        views = pageviews(topic)
-        days = sorted(d for d in counts if d in views)
-        r = compare([counts[d][0] for d in days], [views[d] for d in days])
-        r.update({
-            "article": "/".join(ARTICLES[topic]),
-            "capped_days": sum(counts[d][1] for d in days),
-            "news_per_day": round(float(np.mean([counts[d][0] for d in days])), 1) if days else None,
-            "views_per_day": round(float(np.mean([views[d] for d in days])), 1) if days else None,
-        })
-        results[topic] = r
-        if "note" in r:
-            print(f"{topic:12} {r['note']}")
-        else:
-            print(f"{topic:12} {r['overlap_days']}d  spearman {r['spearman']:+.2f} (p={r['p_value']:.3f})  "
-                  f"best lag {r['best_lag']:+d} (r={r['best_lag_r']:+.2f})  capped days {r['capped_days']}  "
-                  f"news/day {r['news_per_day']}  views/day {r['views_per_day']}")
+        results[topic] = {}
+        for source, series in (("google", interest(topic, "daily")), ("wikipedia", pageviews(topic))):
+            days = sorted(d for d in counts if series and d in series)
+            r = compare([counts[d][0] for d in days], [series[d] for d in days])
+            r.update({
+                "series": "Google Trends: " + topic if source == "google" else "/".join(ARTICLES[topic]),
+                "capped_days": sum(counts[d][1] for d in days),
+                "news_per_day": round(float(np.mean([counts[d][0] for d in days])), 1) if days else None,
+            })
+            results[topic][source] = r
+            if "note" in r:
+                print(f"{topic:12} {source:9} {r['note']}")
+            else:
+                print(f"{topic:12} {source:9} {r['overlap_days']}d  spearman {r['spearman']:+.2f} (p={r['p_value']:.3f})  "
+                      f"best lag {r['best_lag']:+d} (r={r['best_lag_r']:+.2f})  capped news days {r['capped_days']}")
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "groundtruth.json").write_text(json.dumps(
         {"made_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "days": args.days, "results": results},
