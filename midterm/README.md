@@ -96,6 +96,17 @@ The Worker is pinned to Google Cloud's Seoul region (`placement` in `wrangler.js
 Gemini refuses some locations Cloudflare would otherwise run it in. Free Jev refuses
 Cloudflare, so the Worker uses paid `jev-1.13` (`JEV_MODEL`).
 
+## Measurable validation (`eval/`)
+
+Deterministic statistics against external ground truth (Wikipedia pageviews): a negative
+binomial spike test, news-vs-pageviews correlation, 7-day forecasts with a rolling backtest
+and a prediction log, number grounding of generated text, log-odds driver words, and a
+Jev-vs-human agreement check. Results and one command per test: [`eval/README.md`](eval/README.md).
+
+**Worker not ported yet:** the Python version has these; `worker/` still uses the momentum
+ratio and share-ratio drivers, and has no surge-word filter or prediction log (details at the
+end of `eval/README.md`).
+
 ## Known limits
 
 - Headlines and one-line summaries only, not full articles.

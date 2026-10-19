@@ -30,7 +30,19 @@ cd midterm/worker && npx wrangler dev      # local, reads secrets from .dev.vars
 cd midterm/worker && npx wrangler deploy   # production
 ```
 
-There is no test suite or linter yet.
+Validation (`midterm/eval/`, numpy + scipy; each module runs assert self-checks first):
+
+```sh
+python midterm/eval/spike.py                 # negative binomial spike test on saved topics
+python midterm/eval/groundtruth.py           # news counts vs Wikipedia pageviews (Spearman, lead-lag)
+python midterm/eval/forecast.py              # 7-day pageview forecasts, rolling backtest
+python midterm/eval/score_predictions.py     # score data/predictions.jsonl once windows end
+python midterm/eval/grounding.py             # numbers in generated text vs the run's facts
+python midterm/eval/jev_agreement.py export|score   # hand-label CSV, Cohen's kappa
+```
+
+There is no other test suite or linter. Rule for eval/: no LLM decides whether a spike is
+real, a prediction was right, or a number is correct; results are in midterm/eval/README.md.
 
 ## Notes
 

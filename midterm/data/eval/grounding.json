@@ -1,27 +1,27 @@
 {
-  "analyses": 12,
-  "claims": 217,
-  "numbers": 192,
-  "grounded": 192,
+  "analyses": 13,
+  "claims": 232,
+  "numbers": 205,
+  "grounded": 205,
   "grounded_pct": 100.0,
   "own": {
     "all": [
-      192,
-      192
+      205,
+      205
     ],
     "distinctive": [
-      79,
-      79
+      82,
+      82
     ]
   },
   "chance_other_topic": {
     "all": [
-      1050,
-      1750
+      1223,
+      2003
     ],
     "distinctive": [
-      176,
-      713
+      202,
+      800
     ]
   },
   "per_run": {
@@ -72,6 +72,12 @@
       "claims": 21,
       "numbers": 18,
       "grounded": 18
+    },
+    "전기차_2026-10-19_2103.json": {
+      "topic": "전기차",
+      "claims": 15,
+      "numbers": 13,
+      "grounded": 13
     },
     "피지컬-ai_2026-10-11_2209.json": {
       "topic": "피지컬 AI",
