@@ -125,7 +125,7 @@ def news_by_day(topic, lang, geo, days=7):
     100-article limit and Google's date filter (about a day off, time zones)
     squeezes out the neighbouring days, so those counts are minimums.
     Returns (articles newest first, count per window newest first, spam removed,
-    number of queries that hit the 100 limit).
+    number of queries that hit the 100 limit, per window: True if it may be undercounted).
     """
     now = datetime.now(timezone.utc)
     today = datetime.now().date()
@@ -135,24 +135,29 @@ def news_by_day(topic, lang, geo, days=7):
         query = f"{topic} after:{day - timedelta(days=1)} before:{day + timedelta(days=1)}"
         return fetch_news(query, lang, geo)
 
-    articles, spam, capped = {}, 0, 0
+    articles, spam, capped, from_capped = {}, 0, 0, set()
     with ThreadPoolExecutor(max_workers=4) as pool:
         for day_articles in pool.map(one_day, day_list):
-            capped += len(day_articles) >= 100
+            hit_limit = len(day_articles) >= 100
+            capped += hit_limit
             for a in day_articles:
                 if is_spam(a["title"], topic):
                     spam += 1
                 elif now - datetime.fromisoformat(a["published"]) < timedelta(days=days):
                     articles[a["url"]] = a
+                    if hit_limit:
+                        from_capped.add(a["url"])
 
-    counts = [0] * days
+    counts, capped_windows = [0] * days, [False] * days
     for a in articles.values():
-        counts[(now - datetime.fromisoformat(a["published"])) // timedelta(hours=24)] += 1
+        window = (now - datetime.fromisoformat(a["published"])) // timedelta(hours=24)
+        counts[window] += 1
+        capped_windows[window] |= a["url"] in from_capped  # count may be a minimum
     ordered = sorted(articles.values(), key=lambda a: a["published"], reverse=True)
-    return ordered, counts, spam, capped
+    return ordered, counts, spam, capped, capped_windows
 
 
-def news_momentum(per_day, capped_queries=0):
+def news_momentum(per_day, capped_queries=0, capped_windows=None):
     """The last 24 hours' article count compared with the average of the earlier windows.
 
     Above 1.0 means the topic is getting more coverage than usual right now.
@@ -166,6 +171,7 @@ def news_momentum(per_day, capped_queries=0):
         "momentum": round(today / baseline, 2) if baseline else 0.0,
         "per_day": per_day,  # index 0 = last 24 hours
         "capped_queries": capped_queries,  # queries that hit Google's 100-article limit
+        "capped_windows": capped_windows or [False] * len(per_day),  # newest first
     }
 
 
@@ -192,14 +198,14 @@ def matching_trends(topic, geo, extra_words=()):
 # Run ------------------------------------------------------------------------
 
 def analyze_topic(topic, lang, geo, extra_words=()):
-    articles, per_day, spam, capped = news_by_day(topic, lang, geo)
+    articles, per_day, spam, capped, capped_windows = news_by_day(topic, lang, geo)
     return {
         "topic": topic,
         "lang": lang,
         "geo": geo,
         "collected_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "related_searches": related_searches(topic, lang, geo),
-        "news_momentum": news_momentum(per_day, capped),
+        "news_momentum": news_momentum(per_day, capped, capped_windows),
         "news": articles,
         "news_spam_removed": spam,
         "google_trends_matches": matching_trends(topic, geo, extra_words),

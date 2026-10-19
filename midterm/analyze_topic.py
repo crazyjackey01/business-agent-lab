@@ -34,6 +34,7 @@ from pathlib import Path
 import jev_api
 from intent import search_intent
 from model_api import ModelRequestError, parse_json_reply, request_model
+from eval.spike import spike_test
 from topic_trends import RESULT_DIR, analyze_topic, save_result
 
 HERE = Path(__file__).resolve().parent
@@ -175,11 +176,15 @@ def build_evidence(facts, news, max_headlines=40):
     """
     evidence = {}
     m = facts["coverage"]
+    sp = facts["spike"]
     evidence["D1"] = (
         f"News articles per 24-hour window for the last {len(m['per_day'])} days, newest first: {m['per_day']}. "
-        f"Last 24 hours {m['today']} vs earlier average {m['previous_daily_average']} -> momentum {m['momentum']}."
-        + (" Some busy days hit Google's 100-article limit, so their counts are minimums; do not read"
-           " small differences between days as trends." if m.get("capped_queries") else "")
+        f"Spike test (negative binomial fit to the earlier days, decided by statistics, not by you): "
+        f"last 24 hours {sp['today']} vs baseline mean {sp['baseline_mean']}, p = {sp['p_value']:.3g}, "
+        f"verdict: {sp['verdict']}. State this verdict as given. "
+        + ("Only because the verdict is 'spike' may you call it a surge (급증)."
+           if sp["verdict"] == "spike" else
+           "Do NOT call it a surge, spike, jump or 급증/급등/폭증; describe it as the verdict says.")
     )
     evidence["D2"] = "Search intent from Google autocomplete (share of suggestions): " + "; ".join(
         f"{i['intent']} {int(i['share'] * 100)}% (e.g. {', '.join(i['examples'][:3])})" for i in facts["intent"]
@@ -222,7 +227,24 @@ def keep_supported(claims, evidence):
     return kept, dropped
 
 
-def explain(topic, evidence, language):
+# Words that claim a spike. Allowed only when the spike test's verdict is "spike";
+# this is checked in code, not left to the model.
+SURGE_WORDS = re.compile(r"급증|급등|폭증|폭발적|치솟|surg|spik|soar|skyrocket|explod", re.IGNORECASE)
+
+
+def drop_surge_claims(result, sections, verdict):
+    """Remove claims that call it a surge when the measured verdict is not 'spike'."""
+    if verdict == "spike":
+        return 0
+    removed = 0
+    for section in sections:
+        kept = [c for c in result.get(section, []) if not SURGE_WORDS.search(c["claim"])]
+        removed += len(result.get(section, [])) - len(kept)
+        result[section] = kept
+    return removed
+
+
+def explain(topic, evidence, language, verdict=None):
     evidence_text = "\n".join(f"[{k}] {v}" for k, v in evidence.items())
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT.replace("{language}", language)},
@@ -237,6 +259,7 @@ def explain(topic, evidence, language):
     result["caveats"] = reply.get("caveats", [])
     result["unsupported_claims_removed"] = dropped
     result["summary"], _ = keep_supported([reply["summary"]] if reply.get("summary") else [], evidence)
+    result["surge_claims_removed"] = drop_surge_claims(result, ("summary",) + SECTIONS, verdict)
     result["failed_check_removed"] = check_claims(result, evidence, language, ("summary",) + SECTIONS)
     result["summary"] = result["summary"][0] if result["summary"] else None
     return result
@@ -398,8 +421,10 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
     data = {**data, "news": kept}
     drivers = news_drivers(data["news"], topic)
     intent_method, intents = search_intent(data["related_searches"], topic)
+    m = data["news_momentum"]
     facts = {
-        "coverage": data["news_momentum"],
+        "coverage": m,
+        "spike": spike_test(m["per_day"][0], m["per_day"][1:], m.get("capped_windows")),
         "spam_removed": data.get("news_spam_removed", 0),
         "intent": intents,
         "intent_method": intent_method,
@@ -416,7 +441,7 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
     }
     evidence, links = build_evidence(facts, data["news"])
     try:
-        explanation = explain(topic, evidence, "Korean" if lang == "ko" else "English")
+        explanation = explain(topic, evidence, "Korean" if lang == "ko" else "English", facts["spike"]["verdict"])
     except (ModelRequestError, ValueError) as error:
         explanation = {"error": str(error)}
 

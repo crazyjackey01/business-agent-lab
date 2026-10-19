@@ -209,6 +209,8 @@ const STR = {
     no_claims: "출처로 뒷받침되는 내용이 없다.", likely: "가능성", conf_low: "낮음", conf_medium: "보통", conf_high: "높음",
     sources: "출처", usage: "사용량", step: "단계", model: "모델", tokens: "토큰 입력 / 출력", cost: "비용", free: "무료",
     f_articles: n => [`${n}건`, "구글 검색으로 찾은 기사"], f_momentum: (x, n) => [`${x}배`, `평소 대비 기사량 (최근 24시간 ${n}건)`],
+    f_spike: (v, p, n, mean) => [v, `기사량 검정 p=${p.toPrecision(2)} (최근 24시간 ${n}건, 평소 ${mean}건)`],
+    verdict_spike: "급증", verdict_elevated: "다소 많음", verdict_normal: "평소 수준", verdict_uncertain: "판단 보류 (상한 걸림)",
     f_intent: (p, k) => [p, `검색 목적 1위: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "출처와 일치한 문장"],
     f_dropped: n => [`${n}건`, "관련 없어 뺀 기사"],
     per_day: "24시간별 기사 수", today: "최근 24h", days_ago: n => `${n}일 전`,
@@ -237,6 +239,8 @@ const STR = {
     no_claims: "Nothing the sources support.", likely: "likelihood", conf_low: "low", conf_medium: "medium", conf_high: "high",
     sources: "Sources", usage: "Usage", step: "Step", model: "Model", tokens: "Tokens in / out", cost: "Cost", free: "free",
     f_articles: n => [String(n), "articles found with Google Search"], f_momentum: (x, n) => [`${x}×`, `news vs usual (${n} in the last 24h)`],
+    f_spike: (v, p, n, mean) => [v, `news-volume test p=${p.toPrecision(2)} (${n} in last 24h, usual ${mean})`],
+    verdict_spike: "spike", verdict_elevated: "elevated", verdict_normal: "normal", verdict_uncertain: "uncertain (capped)",
     f_intent: (p, k) => [p, `top search purpose: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "sentences matching sources"],
     f_dropped: n => [String(n), "off-topic articles dropped"],
     per_day: "Articles per 24 hours", today: "last 24h", days_ago: n => `-${n}d`,
@@ -366,6 +370,7 @@ function topicSheet(a) {
   const facts = [
     f.news_unavailable
       ? fact(t("f_articles", articleCount))
+      : f.spike ? fact(t("f_spike", t("verdict_" + f.spike.verdict.split(" ")[0]), f.spike.p_value, f.spike.today, f.spike.baseline_mean))
       : fact(t("f_momentum", m.momentum, m.today)),
     topIntent ? fact(t("f_intent", pct(topIntent.share), intentName(topIntent.intent))) : "",
     allClaims.length ? fact(t("f_supported", supported, allClaims.length)) : "",

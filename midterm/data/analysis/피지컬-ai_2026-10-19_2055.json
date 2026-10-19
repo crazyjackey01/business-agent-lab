@@ -1,0 +1,1484 @@
+{
+  "topic": "피지컬 AI",
+  "geo": "KR",
+  "source_collected_at": "2026-10-19T11:54:37+00:00",
+  "analyzed_at": "2026-10-19T11:55:00+00:00",
+  "facts": {
+    "coverage": {
+      "today": 120,
+      "previous_daily_average": 68.3,
+      "momentum": 1.76,
+      "per_day": [
+        120,
+        41,
+        23,
+        82,
+        85,
+        72,
+        107
+      ],
+      "capped_queries": 8,
+      "capped_windows": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "spike": {
+      "today": 120,
+      "baseline": [
+        41,
+        23,
+        82,
+        85,
+        72,
+        107
+      ],
+      "baseline_mean": 68.33,
+      "baseline_variance": 955.07,
+      "model": "negative binomial",
+      "p_value": 0.06564190654159759,
+      "robust_z": 1.5264790872365048,
+      "verdict": "uncertain (capped)"
+    },
+    "spam_removed": 19,
+    "intent": [
+      {
+        "intent": "definition",
+        "share": 0.17,
+        "examples": [
+          "피지컬 ai 로봇",
+          "피지컬 ai 예시",
+          "피지컬 ai 뜻",
+          "피지컬 ai 나무위키",
+          "피지컬 ai 란"
+        ]
+      },
+      {
+        "intent": "investing",
+        "share": 0.16,
+        "examples": [
+          "피지컬 ai 관련주",
+          "피지컬 ai 대장주",
+          "피지컬 ai etf",
+          "피지컬 ai 관련주 한국",
+          "피지컬 ai 관련주 미국"
+        ]
+      },
+      {
+        "intent": "technology",
+        "share": 0.12,
+        "examples": [
+          "피지컬 ai 기술",
+          "피지컬 ai 데이터",
+          "피지컬 ai 드론",
+          "피지컬 ai 리얼월드",
+          "피지컬 ai 로봇팔"
+        ]
+      },
+      {
+        "intent": "news",
+        "share": 0.1,
+        "examples": [
+          "피지컬 ai 글로벌 얼라이언스",
+          "피지컬 ai 뉴스",
+          "피지컬 ai 디시",
+          "피지컬 ai 메가프로젝트",
+          "피지컬 ai 얼라이언스"
+        ]
+      },
+      {
+        "intent": "outlook",
+        "share": 0.09,
+        "examples": [
+          "피지컬 ai 전망",
+          "피지컬 ai 동향",
+          "피지컬 ai 메가 트렌드",
+          "피지컬 ai 미래",
+          "피지컬 ai 보고서"
+        ]
+      },
+      {
+        "intent": "learning",
+        "share": 0.08,
+        "examples": [
+          "피지컬 ai 교육",
+          "피지컬 ai 공부",
+          "피지컬 ai 논문",
+          "피지컬 ai 대학원",
+          "피지컬 ai 로봇 교육"
+        ]
+      },
+      {
+        "intent": "companies",
+        "share": 0.07,
+        "examples": [
+          "피지컬 ai 기업",
+          "피지컬 ai 랩실",
+          "피지컬 ai 스타트업",
+          "피지컬 ai 연구실",
+          "피지컬 ai 전북"
+        ]
+      },
+      {
+        "intent": "events",
+        "share": 0.06,
+        "examples": [
+          "피지컬 ai 대회",
+          "피지컬 ai 세미나",
+          "피지컬 ai 제조 ax 캠퍼스",
+          "피지컬 ai 컨퍼런스",
+          "피지컬 ai 컨퍼런스 2026"
+        ]
+      },
+      {
+        "intent": "jobs",
+        "share": 0.04,
+        "examples": [
+          "피지컬 ai 신입사원이 되다",
+          "피지컬 ai 채용",
+          "피지컬 ai 취업",
+          "피지컬 ai 취업 디시",
+          "피지컬 ai 풀스택"
+        ]
+      },
+      {
+        "intent": "industries",
+        "share": 0.03,
+        "examples": [
+          "피지컬 ai 물류",
+          "피지컬 ai 방산",
+          "피지컬 ai 산업",
+          "피지컬 ai 항만 전략"
+        ]
+      },
+      {
+        "intent": "problems",
+        "share": 0.03,
+        "examples": [
+          "피지컬 ai 단점",
+          "피지컬 ai 반대",
+          "피지컬 ai 보안"
+        ]
+      },
+      {
+        "intent": "buying",
+        "share": 0.02,
+        "examples": [
+          "피지컬 ai 로봇 가격",
+          "피지컬 ai 키트"
+        ]
+      },
+      {
+        "intent": "other",
+        "share": 0.01,
+        "examples": [
+          "피지컬 ai 아이콘"
+        ]
+      },
+      {
+        "intent": "how_to",
+        "share": 0.01,
+        "examples": [
+          "피지컬 ai 코딩"
+        ]
+      },
+      {
+        "intent": "policy",
+        "share": 0.01,
+        "examples": [
+          "피지컬 ai 특별법"
+        ]
+      }
+    ],
+    "intent_method": "Jev, every phrase",
+    "drivers": [
+      {
+        "word": "ey한영",
+        "headlines_today": 6,
+        "share_today": 0.07,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "가전",
+        "headlines_today": 6,
+        "share_today": 0.07,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "lg전자",
+        "headlines_today": 6,
+        "share_today": 0.07,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "로바",
+        "headlines_today": 5,
+        "share_today": 0.06,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "링커봇",
+        "headlines_today": 5,
+        "share_today": 0.06,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "혁신기업",
+        "headlines_today": 5,
+        "share_today": 0.06,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "뉴욕",
+        "headlines_today": 5,
+        "share_today": 0.06,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "소통",
+        "headlines_today": 4,
+        "share_today": 0.04,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "애로",
+        "headlines_today": 3,
+        "share_today": 0.03,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "ai·자율제조",
+        "headlines_today": 3,
+        "share_today": 0.03,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "21일",
+        "headlines_today": 3,
+        "share_today": 0.03,
+        "share_before": 0.0,
+        "lift": null
+      },
+      {
+        "word": "장관상",
+        "headlines_today": 3,
+        "share_today": 0.03,
+        "share_before": 0.0,
+        "lift": null
+      }
+    ],
+    "events": [
+      {
+        "title": "아이엘, ‘2026 산업AI EXPO’ 참가…텔스타와 '현장 데이터 기반 피지컬AI' 선봬",
+        "source": "MTN 머니투데이방송",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PaEQyUDdwd01LSDNRaF8zeDFWZ0R4V1RuSU9SVTBBMkJBUmtfQVBhQ3JWUnNjVTRTR3pRM3NKZUlfWjdVT2h5MzcyS2R3VWZXY2xybUJfMGktSFBrMVk4?oc=5",
+        "published": "2026-10-19T06:22:42+00:00",
+        "relevance": 0.83,
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "expo"
+        ]
+      },
+      {
+        "title": "피지컬 AI 2026 산학협력 공개강좌」수강생 모집 안내 - 전체 행사 - SNU 캘린더 - 서울대 소식",
+        "source": "서울대학교",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NX25SMFZaNHdPWEZ6WWF3RWl2N3gwaXZycTVCSzRTWnQ1b1JzNXU1ZEo5SEpHQVRWRnhWekVkdXcxNzhMRTZSckJ1TVZoZTlTZ1Q4Q1ZQSHh3Zlo0dUZZNTZjUFM?oc=5",
+        "published": "2026-10-19T05:27:28+00:00",
+        "relevance": 0.87,
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "공개"
+        ]
+      },
+      {
+        "title": "‘2026 대구 글로벌 로봇 비즈니스 포럼’ 개최…10주년 맞아 미래 로봇산업 조망",
+        "source": "BBS",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yVHZiUDljblBEcTdQWkxaTl80SHpyUjZVdlkyUjFCMUw0QmQwU3lwczR5WHVfREw1bDJYbW0yTGk4NEhDWXFHTjVzVVNKeHZUd3Y1T1dyWHNtQ2RLbjlqY0RkUnE3Yy10Q1dv?oc=5",
+        "published": "2026-10-19T01:52:38+00:00",
+        "relevance": 0.65,
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "EY한영, '피지컬 AI 포럼 2026' 개최…제조·물류 현장 적용 전략 공유",
+        "source": "이투데이",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhWXVSRlVNRjBJbHdVTlVSaVpxZFFnendyNktkOFFvbWwwYVlOWDh3R3NKNmozLUNtcEx5dU8zRjFuM1lmLXBYcWFOb0ZRaEFrRnpGb3NUcFl6TlE1ZlRRbEU0QTY4RmZpSFVzYXJn?oc=5",
+        "published": "2026-10-19T00:10:00+00:00",
+        "relevance": 0.95,
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "국립군산대 전북과학문화거점센터 '2026 전북 피지컬 AI 미래 인재 챌린지' 개최",
+        "source": "베리타스알파",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTcDJMcVljNlM4dmYzLU9uUGFlaWdfdHNuVHlodmhxYnVwWEh6TTFvLXFBYWF1N0VSMXlhS3lhbzFBZ3Q3NHRoNzR3SEVwV0tiY3NEOWpaVlNvLV84WldmaUVyTDRoY3VXcnBqUQ?oc=5",
+        "published": "2026-10-16T08:14:51+00:00",
+        "relevance": 0.89,
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      },
+      {
+        "title": "에이아이웍스, ‘2026 THE NEXT AI’서 피지컬 AI 테스트 전략 발표",
+        "source": "경상일보",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aTU9xMk40QlBORm1fT2NHRlo1Tm5wdXRpRjEzemY0cjlzR3VQUHR5bkV1TGNIeW5OR21CNUtQN0t1VC1BVjJmdC1pSnVOcFB3OEwza0w2dU55akRMd1ZGSU96R1lfTlFQb0JtVA?oc=5",
+        "published": "2026-10-16T02:07:43+00:00",
+        "relevance": 0.94,
+        "dates_mentioned": [
+          "2026"
+        ],
+        "event_words": [
+          "발표"
+        ]
+      },
+      {
+        "title": "'제20회 전북과학축전' 16~18일 개최…'피지컬 AI' 미래기술 한자리에",
+        "source": "전자신문",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1TSDdENTl5N0NGYk1QeXptTjFOcHMzbnQ0NHJZcE1iNjlKUDlaMVE0bF9Qdkd0dWJYTVQwR2k3OGJCUUNZeXVndENzaW93QQ?oc=5",
+        "published": "2026-10-14T02:02:49+00:00",
+        "relevance": 0.92,
+        "dates_mentioned": [
+          "18일"
+        ],
+        "event_words": [
+          "개최"
+        ]
+      }
+    ],
+    "relevance": {
+      "method": "Jev",
+      "kept": 467,
+      "dropped": [
+        {
+          "title": "두산로보틱스, 비전 AI·노코딩 적용 제품군 확대 검토",
+          "source": "지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14dXZ0eDlDTlB4Q29NSUFVbVA0R2ZJUGRmZjB1Uk85MDlXWEktejZaNE9ZREhDUHh6cFllelZxc0ZFQ0psc0VjZFkzbTRxZ29XdWpmZ0Z3?oc=5",
+          "relevance": 0.15
+        },
+        {
+          "title": "정원은 3% 줄이고 반도체·피지컬AI 키운다…사립대 33곳에 6,000억원",
+          "source": "산학뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5wV2pYSEh3TklXR3FPNnl5NHJZb1MxZTJCWFg3WkxSeWczSHU4ZEZqMFJTQnhiMWY1N08yNjFoYm5TZWNscE1UeXFVNk41cEF2LXRPNGtvRUFZZ3lNOUt2WVk4U2F0cUh4RThr?oc=5",
+          "relevance": 0.44
+        },
+        {
+          "title": "AI사업 패권 겨눈 구광모…로봇·DC 전략 집중 점검",
+          "source": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE84U0ViV0hhZzBzNU5ZQWpRSEhFd0R0ZTE4X3ZWZ1lObkZzam9wWk81T1dHeE53VjlRSW1mZDVueG9iV1I2Y1pFV29CQkdNa2hYN1ZR0gFTQVVfeXFMTzhTRWJXSGFnMHM1TllBalFISEV3RHRlMThfdlZnWU5uRnNqb3BaTzVPV0d4TndWOVFJbWZkNW54b2JXUjZjWkVXb0JCR01raFg3VlE?oc=5",
+          "relevance": 0.26
+        },
+        {
+          "title": "LG전자, 가전 혁신 68년 역사 조명…AI홈·홈로봇으로 미래 연다",
+          "source": "더글로벌기빙뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9YMTBpOU9veFdVRnNyUHF0VC1CSUdkRTNDZ0UtenFuUFB3aF9SSHVIQ1BpTWczMVo5MjNPSjFZUGZsVFFYWlduY1ZmUUZVZWRFR0RfVA?oc=5",
+          "relevance": 0.29
+        },
+        {
+          "title": "[산업 HOT 뉴스] “가사 노동 없는 삶 만든다”…백조세탁기서 AI홈로봇까지, LG 가전 60년의 집념",
+          "source": "비즈월드",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1fM1JJUHd5a1RpX0lId3E4VmFsU0Q0cjdRRWFQaG1qM3piSWE1elY2ZWZpQ3VJYkgwa3JKNW9mTXVmS2pZT0ZINGlwWUZiMjNPNWRGNTZvZEZlVXZqRTlBNmVidXJnRnl3ZFhn?oc=5",
+          "relevance": 0.41
+        },
+        {
+          "title": "하정우 \"AI가 도로·차량 함께 바꾸는 시대\"…강릉서 미래 교통 비전 제시",
+          "source": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5UdkVRNWt6UXFDbFZjV1g1NDdoOUxSUFR6RTdXNjNTQVFaeFJDcGdzNTJteTlqTnZBMDFGRF9jS3AtelNWbkw1Q3pYOXYwaUZ2SWMyaw?oc=5",
+          "relevance": 0.22
+        },
+        {
+          "title": "‘이제는 AI로 일하는 시대’...국내 기업들 AX 전략 가속화",
+          "source": "우먼타임스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtTGswWDVyc2l3ZU9Mc0RaU29WZmthVnlveFNfODA4NjVoeUZDN29TTUpydms3b2FWUUtNdlg1ZjJ3am14d2o0aUZqd3ptZ3NsNlVvN0x5LVdQUFZVbzkxLVVFWE9zTEdxd051ZFo2bFrSAXRBVV95cUxObHhpSkFUY29DdHpkcU0zanpxVnhoM2xIZTRoRW4tYl9MZ0o2Qk9mNzNLeTVFWXdxSEV2RnJLZWVMUEJ6TmF5U0IwV0gwdHhSTUJGeG05OFBzQWpsTXZaT3F5ajZWbG5nOEYwaWJmTjhxWXdJVQ?oc=5",
+          "relevance": 0.1
+        },
+        {
+          "title": "성남시청소년청년재단 중원유스센터, 청소년 로봇대회 ‘제2회 유스올림피아드’ 성료",
+          "source": "중앙뉴스타임스",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5qV3ZvY2JyemgyYmxwYXgwc0hudUxZUGxKVlVleTZkSlByWENUWVRNRXpNZElST1ZLeFNWSDdLMTVjOUtoMUxpbUQ3cmFwX1RTUFd0WHFqZU1HTG5EQ2VtRDl2dng?oc=5",
+          "relevance": 0.15
+        },
+        {
+          "title": "[IPO+] '2년 연속 흑자' 제논, 11월 코스닥 입성…AI 에이전트 기업가치 가늠쇠",
+          "source": "녹색경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44c1h0UHBnMlZ3dW5adEo3emNiUkoxenZURXUyMzhLZWtnWUVBejI1NGd6R1pydmhhN3EzOEtsSFpOby04eGtFWTVWRDN6X2QxM1lWMmd2dnJlM19rU21fUmVwQ0xnM1I5?oc=5",
+          "relevance": 0.46
+        },
+        {
+          "title": "성남시청소년청년재단 중원유스센터, 청소년 로봇대회 ‘제2회 유스올림피아드’ 성료",
+          "source": "산경일보",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54d1B1SC1GanR2UWZIN1VoNGVHR0pNYVNNNlRNS3FSRmM2OWRyUUZzUGIxdWFtU053RzlEXzFzdGxhc29WNDFrTUdaUzY4UFhiRFlZeDljRGNNamk5VDN4MjRUZXZ3Y3N4R2YyY0NzNUI?oc=5",
+          "relevance": 0.24
+        },
+        {
+          "title": "중기중앙회, AI 시대 성장 전략 모색 '중소기업 리더스포럼' 개최",
+          "source": "한국일보",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iN292bTlVVTZLclFpOHIwRkZhU1MwODQ2dTZhS1l1Y0J4SDRKal9UNjZFdXc0Q3ZqVFJoVW9mSG5HU1c1clU1OXRzR1Rrd2NVTG1TUWRvU2FQOXpZbm45ZVdEOU5nWm5RRWpmTkR30gFzQVVfeXFMUDV3eUl6bzR6b3hyRHdJU2RVSlFTRmI1N3NuVFIwOTlid2UtYlVqTTROaktZaUpNUnNsUFRNWlNlNE4yV2lMcDdJVWEwN0NwdHpzbTl2R2U2MklBRFdTeWdRRE4wR0l4bVRGNV94RDJrZENrWQ?oc=5",
+          "relevance": 0.37
+        },
+        {
+          "title": "아이씨뱅큐, '2026 산업 AI EXPO' 참가...퀄컴 프로세서 탑재 아두이노 UNO Q·아두이노VENTUNO Q 전시",
+          "source": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ZVjd3bE5YRFBaSjFGMGcyZEVGeTQ0VVc3bU9vN3F6UG9ReGd2elpKUFdHcjdOWUp3T2NOdDJpWUowOVRVdm8xRWw3SERFdw?oc=5",
+          "relevance": 0.15
+        },
+        {
+          "title": "[현장] 실시간 대화부터 보안까지…AI 어디까지 왔나",
+          "source": "한경매거진",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9kbEsydFZuNElCWjdrOU1vUEUxU3J0REJVZ0gtYkNJdkFydnNhejIxdnA5NTdSYTU1SVBrNDdKWG5jSUgzX3luSVM1Z0Q3QnNVWHlPOXRYa19pRDdlTGNxU2N0dkgzQQ?oc=5",
+          "relevance": 0.19
+        },
+        {
+          "title": "피지컬 AI부터 인문학까지…중기중앙회, 리더스포럼 개최 - 조선비즈",
+          "source": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0xJUUtlc0RGYUNuRDVxMHBvQVlpV2xZTEYtb0lYQnEzNGZCY3lWb284djlIZW5KTEw1eGV2LVczT1p2SFV3N2Z4dkRUNGRidFdoVk1NUlV0M2RKUVdJWllWV3dGQkRGOGdtbkhvX2NHTlBTYVhuRkV2ZmJxbFZzekZES3Q3MkdpT29rR1lsbGfSAaQBQVVfeXFMUEdqaDVPSWp5dlZNcUdXTUVKN2JwdXM2Mmk1b2hiSTRrSHRxZjRyMFlMU1plSEVxQ3ZiMWJJbDhDdndzS2tGRDRJdHcyUkdXWEEwckliNlFNTVJoeHNxMExDUmJrLXltaTJIamxNOXVxT1RiQk9BMWdyMWRnT1V4dDE0ODlRc3RNQ0dQX2FRM3BRc1VBbHRybzdJZlVoWUtfT1dNclY?oc=5",
+          "relevance": 0.47
+        },
+        {
+          "title": "LG, 오늘부터 전 계열사 사업보고회 돌입",
+          "source": "부산일보",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JeVcwclN5djdxS0o5NWNfVXFkSW5XTE93eXZ0Y1NyN05EYW9wS0ExNkluQUlyaUttaUlObE93bGUzRWRNNjA4a012ZEpLUVVJYTBlblBKd2drVm9ydnREdFVkX19oeURsTDVrbVVaQWRGdzBn?oc=5",
+          "relevance": 0.11
+        },
+        {
+          "title": "정지훈 교수 \"AI는 빌려도 현장은 못 빌려…韓 기회될 것\"[뉴시스 포럼-10년 후 한국]",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5aZ29Tb2I1cGxwWGdPZUJVNFhxOXV2bGplV2hpMVRRdzJWWEVOYU93ZzR5WV9HLVNNRlpISER4Z1hVYllrd25VbjNRXzFaZGVRVGQzc1RJbWdtaVdJYWw2dm4zRk5wbW9NVTNvZ3JjdE80bnlBYk1iV9IBeEFVX3lxTE5aZ29Tb2I1cGxwWGdPZUJVNFhxOXV2bGplV2hpMVRRdzJWWEVOYU93ZzR5WV9HLVNNRlpISER4Z1hVYllrd25VbjNRXzFaZGVRVGQzc1RJbWdtaVdJYWw2dm4zRk5wbW9NVTNvZ3JjdE80bnlBYk1iVw?oc=5",
+          "relevance": 0.39
+        },
+        {
+          "title": "LG 전 계열사 한달 간 사업보고회 엔비디아·MS 등과 AI 협력안 집중",
+          "source": "중소기업신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYc1k2aUNyZDVJSjdzYW1pNUVuZ3VZRDNCLXRwLW0zVnltVEZGbVUwallVd2J0RXFacmZQZXJBZ2NIY1IyRVNUN3pYcGYzcE9PLVVGYlR1cUd5VjdRZnpheFAyMXFYYjNha29OWFdB?oc=5",
+          "relevance": 0.22
+        },
+        {
+          "title": "구광모, LG 계열사 사업보고회 돌입…AI 투자·협력 전략 점검",
+          "source": "디지틀조선TV",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPLWlxVkNES2lPVk56dV9GdFJ5ZkQ2ZWlnaFpON0d6UUpOMktsckN1ZzJwblQtNDVLaWRQMUdUWnNZRjdpZXlSZzNOeFo4Yk1QbE1Ob3c2ZGl1ZDRkUlBRVzlZOGVjdDZnck1zSVNCUmxRNFRHWnBnelRScVAzWnVlMzA4SUhmQQ?oc=5",
+          "relevance": 0.28
+        },
+        {
+          "title": "구광모, LG 계열사 사업보고회 돌입…AI 투자·협력 전략 점검",
+          "source": "디지틀조선TV",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NYXBaSmo5YXdLSVFyc3poUTRrZHo3aGhxWFphTWdkSmNFUFRVbS10ZUdoc2UydE9Vd2ZlYlVKREJ0UUN4NDdXSVNkOEcyRzdNTnhTeW5QNXhJRGJkMGZFcDdfb0QyMVh2Rl9hNjYzdlNkWVl6cGExTWc0SFE?oc=5",
+          "relevance": 0.26
+        },
+        {
+          "title": "‘미국 반도체·AI’ 등 ETF 7종, 코스피 상장",
+          "source": "뉴스웰",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoandqbnVJdlNGUWk5QUJ3VHZ0SWpidi1hSnVQODE1RkhmeVFwTHBXLTZ4V01hY2dLcFE2VVpCYTd0Vm5wS0lySlhuMUhmOHlNUW1iekxUWVd0UDZ0OEFoM08yLUIzRm1Yb0RoTA?oc=5",
+          "relevance": 0.14
+        },
+        {
+          "title": "LG, 전 계열사 사업보고회 돌입…AI 실행전략·빅테크 협력 점검",
+          "source": "FETV",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94dTBXampuMFdTRWtKYlBZYnVBV19XRkdHU3J3akd2d3B4SEFjUU9lRnEzMUd4bGl4eEFGYU5NZkE2MVQyUjFCdEVHdTFWRVZLaGx2c3dqVGtHTjYzQlhtZUtZa1p0NXlW?oc=5",
+          "relevance": 0.27
+        },
+        {
+          "title": "전 계열사 사업보고회 돌입한 LG…구광모 회장 주재 AI 전략 점검",
+          "source": "라이센스뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE92Z3pocGJhRlY3M3I0VlRUYUx0bndhaElPYVVzVWIwLThNb0phazZMMm45UjR6a2g5dXI3bzNsRG5WUkMtRmIwMGUzenloOW5zeWdIM3RZdGZqRGZLVC04VFQxcl90aGxXbktz?oc=5",
+          "relevance": 0.18
+        },
+        {
+          "title": "스마일게이트 오렌지플래닛, 헬스케어·피지컬 AI 등 스타트업 12개 팀 성장 지원",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPZlZjWWl0TlplQ1pTbUV2U0h4cnl4dm8ySDBVVWlaSWhqWDF1TmxoUmdXZkxQSXJLR2pBNlZodS1yVjZKc3hzWlpfRkdnWW1QWGFwT2lubUVFRUZkb0VhS2lwaGh1cmc4S1lfaDZsRXZsbFduNHktV0hscWhzbEIwVmNGbE5FWXpYTkd6YkFRZi1fTGNTWG15Um14NTJEYVZpTE9Lcm5DMVlFb0piNHI3czlYWkxHM0ZwS25BWlM1T1NvMmVBVUl5VFJJYlBha2RXVktJQ3pvQVdCNTFFM1BPbVZYM29vaUlOYnlyN2ZjLS1TNzVLTnFuVVo2YVd3al9VakhnRVpkYUcwMVFQN25SWTZoS0VPb0lEY0tfdDFpVkN0WVRBUmMyVExNbVdaSWF4dXQzZHg5SUQ?oc=5",
+          "relevance": 0.46
+        },
+        {
+          "title": "구광모, LG 전 계열사 AI 승부처 집중 점검 보고회",
+          "source": "CNews",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aeXhGQUFfSloxam1DREttdHdORlZRamdTcXBiTGVGX2FPNktFbnB3QUtnQjBNM2xlT3NkNTd3aktWX0dZUDcycWtBb3J3UVhabHZnOUM5T3BBbTRmUXRmNnZkTlkxOEFucHdxU29zWFlYcFp0R01V?oc=5",
+          "relevance": 0.25
+        },
+        {
+          "title": "구광모 주재 LG 사업보고회 착수…‘원 LG’ AI 시너지 속도",
+          "source": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZSEpaOGhQR01XeHFabFlWZ25ialZEWGp1dUVSRmVpbGpqV0Z4RUU0SEVvRTBQX1hBZnViX0FTdlJ0a05SRzZSeHdHcDVkOHV0eERxZDdHSlBtUFpnb19ocng0bVo?oc=5",
+          "relevance": 0.27
+        },
+        {
+          "title": "LG, 오늘부터 전 계열사 사업보고회…구광모, AI 미래전략 점검",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ac29hZDd0Ym83dm9BZEpZRjliMHEyVllkUElUeU1md1VRam9pSHg1NFRVdV9UQW5Ud1JCMTVCUndCdngyc1huQ2xaNXJiR0s0Y1RsajR3a2FJZlFxampNM9IBYEFVX3lxTE5ac29hZDd0Ym83dm9BZEpZRjliMHEyVllkUElUeU1md1VRam9pSHg1NFRVdV9UQW5Ud1JCMTVCUndCdngyc1huQ2xaNXJiR0s0Y1RsajR3a2FJZlFxampNMw?oc=5",
+          "relevance": 0.23
+        },
+        {
+          "title": "LG, 전 계열사 사업보고회 돌입…AI 미래 성장전략 집중 점검",
+          "source": "www.ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wbENrZHlMVWw2ckR3WHloWUtVendmTGMySDNERHNqS3pEdTJLSmZlektWdTQ2aDBxd0VWM2U2c00zclY2azVxU0lnZzY3MjlDSE5iemhJb1lhRC0zVHB4WlhOVmdpakhM?oc=5",
+          "relevance": 0.24
+        },
+        {
+          "title": "천안시, '4족 보행 순찰 로봇' 도입…도시 안전망 강화",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81SUpoMndUdFJ4Q1lKUHJ2U1hIS3otV3RnT09JeVBRWVg4Vm5icjJBaGVXT1JPRHpOQkNzQ1RFbS1sS09wenBrR3ZXd3ZwbUVqZ1JMRXpqUElpay1rc2J5cNIBYEFVX3lxTE81SUpoMndUdFJ4Q1lKUHJ2U1hIS3otV3RnT09JeVBRWVg4Vm5icjJBaGVXT1JPRHpOQkNzQ1RFbS1sS09wenBrR3ZXd3ZwbUVqZ1JMRXpqUElpay1rc2J5cA?oc=5",
+          "relevance": 0.43
+        },
+        {
+          "title": "게임 도움말은 진행 중에도 볼 수 있나요? 롤 아이템 효율 사이트",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tYnB4MEtoQTBPSGRKT3kyOFVKWEVwOUptVWpqcHRzQUtqNWxYaUFpQTRqWF94VktPZ0k2cmh5SVFBdS1HdWZ6eHJ4OEF6SDU3Q2tFVFZYbWtXUWw2OWhSbVRBREdqWm8zejNVdnE2UzY?oc=5",
+          "relevance": 0.02
+        },
+        {
+          "title": "자동 진행과 수동 진행, 파워볼게임픽 지원 기능 구분",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VMWVzMVBqaTdydFgzYXBWLXFRUDFCQnZEZ2p3UmozNkllTHdsME9aR3RiRTN1Ti03MEtyWmFFcDRIcWtBdXN0TnZrVzZLUkptLWZWUl9WM3NBZzNVZndYYU9CUkxTSjhy?oc=5",
+          "relevance": 0.02
+        },
+        {
+          "title": "\"이케아 도면만 보고 조립, AI는 왜 못하나\"…애플·구글 출신들이 공개한 '시각적 AGI'",
+          "source": "AI포스트",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KWG5NS19mdkpMRGFPbk5pMmxWSHFlSm02TFRoalc2aHJCcExVYWdtTldEZ05OdUNkbUo4NHg3N1ZZeVM0Qkk5NHVYMEFMUWFCa3RMS1cta0djVkh6RG1MVTBVSFBtcWloaE90Mnl30gFyQVVfeXFMTXdjX1VBVXJKQ1h3UzgyOTdKaVVzanlaMS1iTFZQcmhzQTZNWTJuclFwMFpMby0tNjg0VXo2M1lPR3k5WHFIWGR1ald4Qmh2cjZQT2I0d1g5aW5GUV9Tc1R0djhwSElEVWtSaVVXNVF2OG93?oc=5",
+          "relevance": 0.24
+        },
+        {
+          "title": "여러 숫자 중 무엇부터 읽을지 알려주는 재미있는 무료게임 추천",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPT0FjcUstRVgwN1RKRGpkVmEzcERzS1pFcXozUElKMm4ydVlpakhDSGVVeWtkWUFhalYtbTlIVmlVNkVDY1ZKdjN0eVRjZ1lUU0pZNWNLZUdTRll4NW40M1ZCUExDQTV1OHVQWGxCaVliRWFxOUhac0pUN1NkMmZPdUhFVmg1RVkzNU1icTl1bDJZOWFmbDRGNUpKRHlqUVNITHBYT3UxVjBMeU80NzZnSWxIbWUyZ1pva0lNRDhTVGk4dkpJZVE?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "게임 진행 중 설정을 바꿀 수 있나요? 경마방송",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQaG45ZVJ0Tnc1Z09sT09sY21mRjBfWjh2bTgzVDBPMjFPbVBUX3Bkc0NIRm1pc2ZrbHl3VkJfVVFFX1lvWU9idkszVGdGVU80d3lTSmF1TzktM3k0V1hmOURwSXktS016WTdwaE1CR2Rpd3A1LVZ1R184MHhlUEctMHhIZWNfanFId0JpWm5yVmh0U1hrRWVrWkswdXhqSDRtQjdVSS1sS0hmRXpxTl9mUWk5OEw5ZzhwOHNnRWdkbzhpazJ2WFRXcVRrMTJsMUJRYjd0V2hSMEM0SUwzYWhnSWtzZjl0MGNZRFR5akQ4TWRvbjMySDJ3dzhpN3pDZw?oc=5",
+          "relevance": 0.02
+        },
+        {
+          "title": "인천대 재도전성공패키지 지원기업 지티엘·홍익정보기술, 업무협약 체결",
+          "source": "기호일보",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5tRW4wbjVlZkp3U2stYzlhZEQ3MlRFSEZ5eUpqdEY1dlVnSEg0c3g5cUZBME5vcVp2cWt5SXZHQWdiSWpnX2J2d0RRS2taMGZWeVY2QWFDeW02RndKbVNOeUtqa0hrRERtX3JKNXk2bw?oc=5",
+          "relevance": 0.14
+        },
+        {
+          "title": "[현장] 씨이랩 안전AI에 시선...'엑스아이바' 큰 관심",
+          "source": "지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tZWdvYVpLSDhLeEZZd0xFdmRUYTR5NmF2d19WTVU5ZEZrUmIyNnljYkczRVczZzVLbW5lRkM1QzVqSTFXYWRFQkkxZDRNbEU1NllqRDVR?oc=5",
+          "relevance": 0.28
+        },
+        {
+          "title": "어떤 기능부터 익히면 편할까? 두툰 게임라운지 입문 질문",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVjQtY2FuOVE3em5Tdm5odWRXcmhYbExCLVk4M1M3WVZZUFp1dDYwOGh1WDcwbjFXb0JkeUVrNHZwczM2YWg5eUZlYm53bG5PVnBfOGZxX1prRGpMQW92Yjk4akJzaE5pWGJNT0dTbWRGYUQxeF9fX24xSC1xbkxGVV94X0hqbVg1azhTeUpMNUh1dk84dWtnVGxqQTVxWnFONDVn?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "화면 테마와 사운드의 연결, 체인 의 종류 연출 해설",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hZHViOXVSUC1TMTIyX3VDNksyMVg5N0hvNVE4Z2NfU0pGSHhkRTlGNnRQeU83VzlDR0hjOWR2NWd2NnlxbGRwOEU0OVJXeVpqck1QWmViZ3ZLbmtqemhzXzF1NXZ6elRnU1ZDTmxMQkFwQjB3UFcyRVRB?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "소부장·금융채·美배당·피지컬AI·CPU·MLCC·엔비디아 [이주의 상장ETF]",
+          "source": "IT조선",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBiNHRnMVZTYUdTTWxEVkVXc1RjN2RadFI1MDRGaDJKYmNvQ1ZaRURhUHNVSS0xTG1vYUp2TmptUlpoMnk3OVVsdmdET1haVzc2clpOUERDR2Q1dU1DbV9ydGZTbWdzdlBSdDRDelZlTGNpa0py0gF0QVVfeXFMUGI0dGcxVlNhR1NNbERWRVdzVGM3ZFp0UjUwNEZoMkpiY29DVlpFRGFQc1VJLTFMbW9hSnZOam1SWmgyeTc5VWx2Z0RPWFpXNzZyWk5QRENHZDV1TUNtX3J0ZlNtZ3N2UFJ0NEN6VmVMY2lrSnI?oc=5",
+          "relevance": 0.3
+        },
+        {
+          "title": "[만나보니] 딥엑스 김녹원 \"인텔과 기술협력 본격화…AMD와도 논의\"",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00RHlBMW1Tc19CQzBnNDhjS2NudTUxUmhqM1A3WE9Zb0h0UzFuZzBhOGQ5SDdOcjZjbW9xLWVHVGxrWjN4bWlNQ0xHRjUzdUR4bG9oQTBSNW1iN2VWTThSVdIBYEFVX3lxTE00RHlBMW1Tc19CQzBnNDhjS2NudTUxUmhqM1A3WE9Zb0h0UzFuZzBhOGQ5SDdOcjZjbW9xLWVHVGxrWjN4bWlNQ0xHRjUzdUR4bG9oQTBSNW1iN2VWTThSVQ?oc=5",
+          "relevance": 0.42
+        },
+        {
+          "title": "\"中, 로봇 기술로 AI 패권 경쟁에서 우위 차지할 것\" - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nV2h3a1FLT0ZnT0ZQOXVjV3E4LWxOU2dIbF8wUUNSeUpKMFhUZkVqN0VLTktqSDQyLUFOMDhBYm55dG9sSE5zaWZ3a2VKR0RnSnZsMDBTMW83MFNkbFJCQXhjS1BETWt10gFuQVVfeXFMT3BIdzYwSVFjSVZtOE9URHNqNFEwTWp0cXpBZC1pbFZxU1JySzRLS2RtOG1LZXRUcTc1cGtlY3pyVXg0c2NzdUxIR19aSmRaSkF0Z0xBa3R4R0lVTUQzSnpTQjhHRTFHR19LeDZHR3c?oc=5",
+          "relevance": 0.49
+        },
+        {
+          "title": "비주얼 중심으로 둘러보는 도박 채무 게임 디자인",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNeV9JTWFjLTdsRmN3bFdwWkJxNGZRUWEzcVJZQTlpUU0tczBuUGpnd2N0X3VfT3B0NlQwZVk4NGY1MlNpTmlLU2dIQ1U5ZHpvTGs0YllYREY3bFFQQ0t0MEZTNFI2eWNOM2M0MFRKeUR2SnBaZkxHSkZFS19mR0NoYTBZWWxBNzd1eVNEUkpjbU5TSXVzVjJFampYOFU5MHRLemthX1FmcEFlLTlsdnRObUM5T0VEWUdoekpHRjBYWlJiNkZwNndkOURJbEVCTXhXN3JmZ3ZqY0Mxd19RMUxaS0JTcEctZWVxcUtjT1FfS1Y2V0NwUUFQbUFVNTMwV0pPTEhtakNTRkF6OUdpVkNrVUx1SEpRQQ?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "경마 최고 배당률 화면에 나타나는 배율 정보",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNXNlVENCYmN5M3lITzRjbzRBX0lzQ0Fobmw0cFBGREI0SWNkbE1EM0dkT0lBemxqallRNGxqOFM4VnNuYmlsS3R0T0h2UHgtaWRtclpid2tiZmhTS0FXME0xTlFKVHlxUDNnZ09WV0RtV0p0ZGZRNDJiRUQzQlo3MHZwYmRNczdwS3RyQXg3RkZNWUFDQnRidzdpUmlQbHBWLTlKMm5kQlBzY2pjZlNR?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "어떤 비교 항목이 필요한지 정하는 몰디브 바둑이",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAzY0FLWV85QmFkbF9hTGduNW9TZ2ZhcTFnWFQtbDEyM3pzU0FlcTNvdkQyMkFxbDB5ZTVZczhmT2Exc1ZQNmhacUw0cVdNU2RLTG5lWTJGeHlOR0l4NUstcVNn?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "게임 특징을 짧게 비교하는 도박 뇌 상세 항목",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMW1TN1ZjcTh2QUp3OVQyc25sa0hkbHpEWkY0N05HYzdqMFhKM3RpYjVVSUMyblZvZF9ObU44bjh1ckpqdzhaUmFoZ0YzTFRseWl0OEZ6NVFuam5acF9HbFdLdVNOVDlMUjhQUDBXaEM3U2FidktkYjFmb1lTZklkWWtTemljdnlDRjltOVdvTjZiNXNVRHNBSDFfcUs5RGpxRzdYZi1oY0Fwb3hNVHNpejhOMjl1blU?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "기능 소개를 읽기 전에 알아둘 윈조이 대박맞고 조건 표현",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOajJsWEMyQmg2eTA2X2Y5ODU5c3Vxc2JZTjMtNGdiVEZjTzJxcXpodEY3d1lzWkF3SmFCZUVIUVZKelpmZTJMR250SThraWtjQ0J3dnlNR2UybkpYTWhFRlRtUGJ3M182alBMeWVjamVWVnVlRFFoMFlyWHphMTJNaDI4blUtV2tBOFluemZWVGZ0eTgzbHFuMVYyRjV4UWt4ZkV3dFJJU1JRcEU3U0dxS3FCb2VUSVdVbE9rZ3pBeUUtLWlhWS1lSGRxVWotV0c1N2x1cTkxaGFEVUx4dlB2VTB1VWN2MTNLUHhzbURrbFgtbEduNDlqVGhEbXpobGM?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "추가 라운드가 끝난 뒤의 독감맞고술 운동 진행 순서",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQN3lwQ1lkRlM0ZUxMcjNfUk14d1JWMTJJb0hkcnRwWmphOHNuRU9Iazhsc0YzZXAyWGV5bDZhY2ozQ3NLbFdIelVfT09rcHMzamhLVFEwVWs0Unc4TFdzalZLY1IxX3VJS3VFMUhRNVY4RUNhS20xLUwxZnUzZE5fc2VuOXVWS1JrWG9qZ2dLc2hOcUdfM1dPVGVmRldmaVZ2TXYwLTlCcGdBTmI4Y0FPYTRPS25VUld5c2RmeEFmZDVuWmI5bzhJ?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "자동 진행과 수동 진행, 도박 공간 개설 방조 지원 기능 구분",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOOWlnVF80c2JnTmt5LVB2RHlfQVlMbC1lMzVWT1RSZEdwY0VqTVJCd3RqOTNzWGJQcHBOLUR4U2NnRk51QkVKTC1VcFFnM3N2YVB3Tl9TV2lkcHBMd2trTi1udzFUZ29vbXNNLThlSVR3Nk82amxqZHVreDhtMk1HNHI3dWpuMGdpOS1hZ190SVNRM0NFSzhXUGxQcWxYODlXSG1zcF9ZMl9ZTF9vNkZ6dV9LSUYwUHRENmx1YTZ1ODA4Q2lFRVRBSndEdkI1Y0gtLVJpZVFzQmVPMlBsLWZJSUZVb1B5LVRNRThkbA?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "구미전자공고, AI·로봇·반도체 실무교육 수상 성과로",
+          "source": "경북일보",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xTkY3aEtuQ1BpOEJvdzFhbHdfZnZhcC1wbHN6U3R2ckpNeWNYZy1yeVdxR25sVFJPLXNJbWxMYVp4SXRnZWRGUzZBMWdva3BpYVphUjFnRi1WYjA3SE9rNTR6amQ0UThJQTlhX3c0dw?oc=5",
+          "relevance": 0.22
+        },
+        {
+          "title": "배경 이야기보다 규칙이 궁금한 폴아웃4 도박 상세 해설",
+          "source": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQeVc0bGpodUZYb1FyeXRTQ3RwZDM0R2JkbHhaakRudGhTZzZQMVZFZFdIM1NzWm5BVnNHNlB5Um8xOGlMb0RIRVdNLVY2Qm5ZT2JOZnJvTC1VQXk3emxRckhGd1dWakxsZ09uby1SZXUzWVBWRFNjdk1MNUxTLTBOckZiY0R2akJHT2Y5OTNITG9nb0xEeE00LXdmNjE3XzFfal9IZ1V2eWVPTGFSbnZYN0tpeVFZdnB4Y1V6SWNkdll0WHZDRG5rS1IzU2hUN2dtN1VNVEdNVTVqN2xyc0U3QTZfdlN0dXM?oc=5",
+          "relevance": 0.03
+        },
+        {
+          "title": "[전북] 농생명자원에 AI를 더하다. 전북, K-푸드 미래산업 거점 도약",
+          "source": "월간친환경",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9yRlp4X3FEY2hmY2RzZExEdjdEOGl1NmQ5clIxRDhBS1padUVXZkpoeGF6bU5vcmlxQ3NmYXRZRUZCZ2YzRWx3R29QVi1sN1lCRWxXd3RUc1ZmZ2hSeURsYjBqdVpCTVpHd0pxRTltM05lUQ?oc=5",
+          "relevance": 0.33
+        },
+        {
+          "title": "반도체·피지컬AI부터 금융채까지…ETF 7종목 20일 상장",
+          "source": "코리아리포트",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3QW8wYTBmSmowNFpuUWhJcDB2TFZzNVZRN1hqSEFvVDcyZHg3b3dMQmVTcW5tWnJ2dmRaTjI1WGhYRHUxYktZZndHUXNKT1R1bEpoTUJZcUlRY0xaeEQ3aGlyaWFkRlVrcDNNVzRzaHA?oc=5",
+          "relevance": 0.3
+        },
+        {
+          "title": "산업연구원, 1600조 AI 투자 지역 산업으로 확산해야",
+          "source": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9FcjhCd0ZlOS1YcExjLWgxVFF3QnBBV193NnlsbS03a3NtaXl5bU1Nd3pQTzY1UFBQd3J1M3VTMTVtY3ZGbFdTRmVRTGJDSUpGanRYejhlTzdNZWZLMmV1T0NOd0Y?oc=5",
+          "relevance": 0.4
+        },
+        {
+          "title": "[AI서머리] GDIN, 8개사 日 진출 지원‧페블러스, 피지컬 AI 데이터 관리 로드맵 웨비나 개최",
+          "source": "스타트업레시피",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzcE4zUGNwWGRPUjNnSWtueENfNVhwOTljRXJ3TC1XZ1hkZUE4WUg0VUM2MHdXTXlkaV9UdVp1dkx2ODRja19MeUFSNzBid0ZtUXdiOUo2dw?oc=5",
+          "relevance": 0.47
+        },
+        {
+          "title": "고려대, 'AI Tech Day' 개최…AI 에이전트부터 피지컬 AI까지 성과 공유",
+          "source": "메트로신문",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lOFplOHBwRjN4eUZaWE1SNWpQOVpWQTlKNUJ4czdhdmM4R25rSm1JYXR4YjFZS3Q5cnBnclktcm1FT2pmRlVFVjJIbjZTM0pZZ1F3Q05maHNlZFhhdG92UA?oc=5",
+          "relevance": 0.47
+        },
+        {
+          "title": "[AI프리즘] \"AI 에이전트 똑똑해질수록 추론 인프라가 관건\"",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eXdsNDdVYUJBeTF2bS1fUndWZnppbUxjVWYtZl9qX0R2aVJ0ckZHS09qUGpWZnJYYjFncDRPQzN6U1c0NUJsN2c4bDNTWjRqdlBZYUFJbTBhRXfSAWBBVV95cUxQT0ZsdzBYdFUwVjNtUkczcTJNV3FiSlhOT3AyNWQ5b21LYlJVUGt6QnFFVU9EbjNFXzlXZDVDQmJXaFNhOGNObE1GdE9DYTZERGJKZWhxSDJFNXUwREhEWmI?oc=5",
+          "relevance": 0.29
+        },
+        {
+          "title": "[AI프리즘] \"AI 에이전트 똑똑해질수록 추론 인프라가 관건\"",
+          "source": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9rek9pLV8wTmxsT2VCcXhVYmFxaXF1TTFPQWo2aUFOazhzemhrWmVaZ1lOZlFncDdrbk1VOEY4bnNjRWltMUR1emEyNS1SU0owR3c?oc=5",
+          "relevance": 0.24
+        },
+        {
+          "title": "CEATEC 개막, 사이버 공격 대응과 피지컬 AI 전시 잇따라",
+          "source": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fUXUwb2RDYmNzY2xJX0JUTG1IbmNQcllBVUt4UVJiQ1lTQVBYT0dDTEo3ejN5M2JHTWM4YUlCbDJyc3BNeC1lNGM5SzFmM2FvbFpUeWhBNjZKaUxyQUgxZ3BvS3VlakE?oc=5",
+          "relevance": 0.47
+        },
+        {
+          "title": "폴리텍대학 성남캠퍼스, 바이오·AI·로봇 융합 인재 키운다",
+          "source": "경기일보",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE42TnlHVjRkeThwZ2JXWVpHQmJaVEduLUVrVXRySnBvdnQ3ZmpET3MtaDJ4VENpeng5RkhDYjdlS1hWaHN2TjZDdGpJN0xYX19SbnFNTGJUU0RiTGc?oc=5",
+          "relevance": 0.28
+        },
+        {
+          "title": "산업부, AI·로봇 규제 빗장 풀었다",
+          "source": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBuUnVvNVpPeU9mdTFZZllJLUtRMFBWaGVOVWlQLXlLajFhMUNidTBWTi1pMlVHcGVOZDMwbTBxcE5aTjljZ0Q3c1FZc1VzUQ?oc=5",
+          "relevance": 0.48
+        },
+        {
+          "title": "인공지능이 펼치는 세상 살펴보고 경험하세요",
+          "source": "K스피릿",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HbVk4ekJuemVmSHlXcU1oV1lJUTh1VGRSdW1KWVloZTRncm1RTU5PVUUzT2JFa1Zud2Rjb3lSOExTMUNqRzh4eVJnYk91UWYxRVMwakdXRUFXcldCdmY0SWNWd0ZwQ21BNFJ1VWhEZ9IBc0FVX3lxTE5NeTdaN0ZzRkFhU1RJU2FFZU5FZUNETE9jN09naVVQMzhDMnJwX2pReExVT3BGOUM5d21tMXZvMk1mVGM1TVdCSll4MnBoTFhrekNWWlM5M19wZWFWQUpOaXY4WUVWLTYzTTR1MnVpaFYzakE?oc=5",
+          "relevance": 0.33
+        },
+        {
+          "title": "AI와 한 집에 사는 시대, '스마트라이프위크'에서 서울의 미래를 만나다",
+          "source": "서울특별시",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1PTjJ5Q3J0ZXZGMVFhZDV3Um12SHRTaU1FWVN5X1FaYXJHNkZ2d1U0bW9lZVViTHhDTVBydHRKcG15S21nbmFaZ1AtbzZIbDhwXzRyOTZEVEM?oc=5",
+          "relevance": 0.15
+        },
+        {
+          "title": "제3회 대한민국 인공지능 혁신대상 개최…",
+          "source": "서귀포방송",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6aGc4LVM3TDJVajItSjJlcU5wRVVPS0FxTFdTc281M3I4WDNObnlONjBta1cwZjROTU44d1JLcUFsZ0RRMkdfTktQVlJWVTRSVmdoNFVpcUJuVE9BQ0R2S01DNENIN2c?oc=5",
+          "relevance": 0.49
+        },
+        {
+          "title": "GS건설 “협력사 실질적 지원 확대···피지컬 AI 도입”",
+          "source": "대한전문건설신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MUDNSSGpmRXpFNVo0SGJjZVB3QVZJdnRxVDBFV2pMVjVIWGRKcUlWRmgwRXhOaXdWc3c4TF9UeVBYQ3FZa0VlUVBuWDkzVERRN1draDRfbkg0dWp5V0J3RmNHTEltR2Jy0gFsQVVfeXFMTThtZXNlcHFqRVZReUpWT1NId0lMSkJadWhkZTktaUJ1MmVvd01CbkVwWkNEWDNHMFhzS1VXeWVkSFVuR044OU5hMjFmWWVrRVJKUHFoTUlpaW05OHdVNFlObVg3cno5eWxrZ2Nw?oc=5",
+          "relevance": 0.45
+        }
+      ]
+    },
+    "trends_matches": [],
+    "history": [
+      {
+        "collected_at": "2026-10-11T13:00:34+00:00",
+        "today": 90,
+        "momentum": 2.17
+      },
+      {
+        "collected_at": "2026-10-19T11:54:37+00:00",
+        "today": 120,
+        "momentum": 1.76
+      }
+    ]
+  },
+  "evidence": {
+    "D1": "News articles per 24-hour window for the last 7 days, newest first: [120, 41, 23, 82, 85, 72, 107]. Spike test (negative binomial fit to the earlier days, decided by statistics, not by you): last 24 hours 120 vs baseline mean 68.33, p = 0.0656, verdict: uncertain (capped). State this verdict as given. Do NOT call it a surge, spike, jump or 급증/급등/폭증; describe it as the verdict says.",
+    "D2": "Search intent from Google autocomplete (share of suggestions): definition 17% (e.g. 피지컬 ai 로봇, 피지컬 ai 예시, 피지컬 ai 뜻); investing 16% (e.g. 피지컬 ai 관련주, 피지컬 ai 대장주, 피지컬 ai etf); technology 12% (e.g. 피지컬 ai 기술, 피지컬 ai 데이터, 피지컬 ai 드론); news 10% (e.g. 피지컬 ai 글로벌 얼라이언스, 피지컬 ai 뉴스, 피지컬 ai 디시); outlook 9% (e.g. 피지컬 ai 전망, 피지컬 ai 동향, 피지컬 ai 메가 트렌드); learning 8% (e.g. 피지컬 ai 교육, 피지컬 ai 공부, 피지컬 ai 논문); companies 7% (e.g. 피지컬 ai 기업, 피지컬 ai 랩실, 피지컬 ai 스타트업); events 6% (e.g. 피지컬 ai 대회, 피지컬 ai 세미나, 피지컬 ai 제조 ax 캠퍼스); jobs 4% (e.g. 피지컬 ai 신입사원이 되다, 피지컬 ai 채용, 피지컬 ai 취업); industries 3% (e.g. 피지컬 ai 물류, 피지컬 ai 방산, 피지컬 ai 산업); problems 3% (e.g. 피지컬 ai 단점, 피지컬 ai 반대, 피지컬 ai 보안); buying 2% (e.g. 피지컬 ai 로봇 가격, 피지컬 ai 키트); other 1% (e.g. 피지컬 ai 아이콘); how_to 1% (e.g. 피지컬 ai 코딩); policy 1% (e.g. 피지컬 ai 특별법)",
+    "D3": "Words much more common in today's headlines than earlier (lift = times more common, new = absent before): ey한영 in 6 headlines (new); 가전 in 6 headlines (new); lg전자 in 6 headlines (new); 로바 in 5 headlines (new); 링커봇 in 5 headlines (new); 혁신기업 in 5 headlines (new); 뉴욕 in 5 headlines (new); 소통 in 4 headlines (new); 애로 in 3 headlines (new); ai·자율제조 in 3 headlines (new); 21일 in 3 headlines (new); 장관상 in 3 headlines (new)",
+    "D5": "Momentum in earlier runs, oldest first: 2026-10-11T13:00 2.17; 2026-10-19T11:54 1.76",
+    "S1": "2026-10-19 | MTN 머니투데이방송 | 아이엘, ‘2026 산업AI EXPO’ 참가…텔스타와 '현장 데이터 기반 피지컬AI' 선봬",
+    "S2": "2026-10-19 | 서울대학교 | 피지컬 AI 2026 산학협력 공개강좌」수강생 모집 안내 - 전체 행사 - SNU 캘린더 - 서울대 소식",
+    "S3": "2026-10-19 | BBS | ‘2026 대구 글로벌 로봇 비즈니스 포럼’ 개최…10주년 맞아 미래 로봇산업 조망",
+    "S4": "2026-10-19 | 이투데이 | EY한영, '피지컬 AI 포럼 2026' 개최…제조·물류 현장 적용 전략 공유",
+    "S5": "2026-10-16 | 베리타스알파 | 국립군산대 전북과학문화거점센터 '2026 전북 피지컬 AI 미래 인재 챌린지' 개최",
+    "S6": "2026-10-16 | 경상일보 | 에이아이웍스, ‘2026 THE NEXT AI’서 피지컬 AI 테스트 전략 발표",
+    "S7": "2026-10-14 | 전자신문 | '제20회 전북과학축전' 16~18일 개최…'피지컬 AI' 미래기술 한자리에",
+    "S8": "2026-10-19 | 머니투데이 | 로바이, 中 링커봇과 피지컬 AI 협력…로봇 자가학습 기술 실증 나선다 - 머니투데이",
+    "S9": "2026-10-19 | 국제뉴스 | 전북도, 피지컬AI 혁신기업 간담회 개최…기업 애로 청취 · 협력 논의",
+    "S10": "2026-10-19 | 이데일리 | 피지컬 AI·자율제조 사업 기회 모색…대구 글로벌 로봇포럼 21일 개막",
+    "S11": "2026-10-19 | 베타뉴스 | 마음AI, 과학기술정보통신부 장관상 수상…피지컬AI 기술 경쟁력 부각",
+    "S12": "2026-10-19 | 한국사회복지저널 | 전북도 피지컬AI 기업 애로 듣는다…로봇 연구거점 협력 논의",
+    "S13": "2026-10-19 | www.kyongbuk.co.kr | 대구 로봇포럼 10회째…피지컬 AI·자율제조 사업화 모색",
+    "S14": "2026-10-19 | 웹이코노미 | 전북도, 피지컬AI 혁신기업과 현장 소통 강화",
+    "S15": "2026-10-19 | 뉴스프리존 | 전북 피지컬AI, 규제 개선부터 사업화까지 해법 찾는다",
+    "S16": "2026-10-19 | 티스토리 | 티로보틱스, 102억원 규모 피지컬 AI 기반 자율제조 R&D 참여",
+    "S17": "2026-10-19 | 전라매일 | 전북도, 피지컬AI 기업과 산업 생태계 구축 논의",
+    "S18": "2026-10-19 | 전북도민일보 | 전북자치도, 대한민국 피지컬 AI 혁신기업 소통 간담회 참석",
+    "S19": "2026-10-19 | 마켓인 | 나이키도 인정한 '불량 잡는 AI'…제논 로봇 기술은?",
+    "S20": "2026-10-19 | 이데일리 | [단독]나이키도 인정한 '불량 잡는 AI'…제논 로봇 기술은?",
+    "S21": "2026-10-19 | 뉴스핌 | 전북도, 피지컬AI 기업 애로 청취…로봇 연구 거점 구축 협력",
+    "S22": "2026-10-19 | 폴리뉴스 Polinews | 대구, 로봇산업전·글로벌 포럼 개최…피지컬 AI 기술·사업화 기회 모색",
+    "S23": "2026-10-19 | 대한지방자치뉴스 | 전북자치도, 피지컬AI 산업 육성 협력 방안 논의",
+    "S24": "2026-10-19 | 투데이안 | 전북자치도, 피지컬AI 혁신기업과 현장 소통 강화",
+    "S25": "2026-10-19 | 디일렉 | 로바이, 피지컬 AI '로봇 자가지도 학습' 상용화 도전",
+    "S26": "2026-10-19 | Benzinga | “로봇은 아직 ‘레고 시대’”···피지컬 AI, 챗GPT 같은 혁신의 순간 올까",
+    "S27": "2026-10-19 | 경제타임스 | \"말하던 AI가 뛴다\"…마음AI, '피지컬 AI'로 장관상",
+    "S28": "2026-10-19 | 지디넷코리아 | 마음AI, 과기정통부 장관상 수상...피지컬 AI 기술 경쟁력 부각",
+    "S29": "2026-10-19 | 전민일보 | 전북도, 피지컬AI...‘기술은 현장으로, 기업 목소리는 정책으로'",
+    "S30": "2026-10-19 | 호남타임즈 | 전북도, 피지컬AI 혁신기업과 현장 소통 강화",
+    "S31": "2026-10-19 | 충청뉴스라인 | 충주시, 민선 9기 첫 업무보고 핵심사업 시동…피지컬 AI·관광·청년정책 성장 육성",
+    "S32": "2026-10-19 | 충청매일 | [경제칼럼]로봇이 '눈과 두뇌'를 얻었다 — 중소기업, 피지컬 AI를 준비하라",
+    "S33": "2026-10-19 | 한국일보 | '피지컬AI와 자율제조'...대구, 글로벌 로봇 협력 10년 결실 맺는다",
+    "S34": "2026-10-19 | 경북매일 | 대구 글로벌 로봇 비즈니스 포럼 10주년…세계 20개국 로봇 전문가 집결",
+    "S35": "2026-10-19 | 뉴데일리 대구경북 | 대구시, 글로벌 로봇 포럼 10주년…피지컬 AI·자율제조 협력 확대",
+    "S36": "2026-10-19 | 브릿지경제 | 피지컬 AI부터 중소기업 AX까지…여야, 맞춤형 지원 입법 움직임",
+    "S37": "2026-10-19 | 비즈월드 | [단독] 글로벌파운드리스, 7nm급 저전력 공정 공개…피지컬 AI 반도체 겨냥",
+    "S38": "2026-10-19 | 바이라인네트워크 | 로바이, 중국 링커봇과 피지컬 AI 제어 기술 업무협약 체결",
+    "S39": "2026-10-19 | 퍼블릭타임스 | 로바이, 중국 링커봇과 손잡고 피지컬 AI 검증",
+    "S40": "2026-10-19 | 엔지니어링데일리 | 위즈코어, 피지컬AI 결합 제조 현장 실증"
+  },
+  "evidence_links": {
+    "S1": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PaEQyUDdwd01LSDNRaF8zeDFWZ0R4V1RuSU9SVTBBMkJBUmtfQVBhQ3JWUnNjVTRTR3pRM3NKZUlfWjdVT2h5MzcyS2R3VWZXY2xybUJfMGktSFBrMVk4?oc=5",
+    "S2": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NX25SMFZaNHdPWEZ6WWF3RWl2N3gwaXZycTVCSzRTWnQ1b1JzNXU1ZEo5SEpHQVRWRnhWekVkdXcxNzhMRTZSckJ1TVZoZTlTZ1Q4Q1ZQSHh3Zlo0dUZZNTZjUFM?oc=5",
+    "S3": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yVHZiUDljblBEcTdQWkxaTl80SHpyUjZVdlkyUjFCMUw0QmQwU3lwczR5WHVfREw1bDJYbW0yTGk4NEhDWXFHTjVzVVNKeHZUd3Y1T1dyWHNtQ2RLbjlqY0RkUnE3Yy10Q1dv?oc=5",
+    "S4": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhWXVSRlVNRjBJbHdVTlVSaVpxZFFnendyNktkOFFvbWwwYVlOWDh3R3NKNmozLUNtcEx5dU8zRjFuM1lmLXBYcWFOb0ZRaEFrRnpGb3NUcFl6TlE1ZlRRbEU0QTY4RmZpSFVzYXJn?oc=5",
+    "S5": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTcDJMcVljNlM4dmYzLU9uUGFlaWdfdHNuVHlodmhxYnVwWEh6TTFvLXFBYWF1N0VSMXlhS3lhbzFBZ3Q3NHRoNzR3SEVwV0tiY3NEOWpaVlNvLV84WldmaUVyTDRoY3VXcnBqUQ?oc=5",
+    "S6": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aTU9xMk40QlBORm1fT2NHRlo1Tm5wdXRpRjEzemY0cjlzR3VQUHR5bkV1TGNIeW5OR21CNUtQN0t1VC1BVjJmdC1pSnVOcFB3OEwza0w2dU55akRMd1ZGSU96R1lfTlFQb0JtVA?oc=5",
+    "S7": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1TSDdENTl5N0NGYk1QeXptTjFOcHMzbnQ0NHJZcE1iNjlKUDlaMVE0bF9Qdkd0dWJYTVQwR2k3OGJCUUNZeXVndENzaW93QQ?oc=5",
+    "S8": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95M3FmWEVVb2V3bTg2SnNfUENMV2p2ZDRUMGhSTlNsZ0pEeEZSTm13NU1yNHhrZEVmN0hhTnl1RER1S2VxZ2U5MEJGWHVPVFJWMWVXT25YdGN3NHF5eWswQ3pDTnR5NWJ0cXRUb3Rhc1dvSmtuaDR30gF8QVVfeXFMUFNuQVpYOHhKNmpRZ0ZtWmpMYjhMSVQteG9oWVE4WU1GQUdrX0taYUJsWmJmbGJ5OHRLN3ZSc3JhS0pzRjF0bFJrbGpkVElMUTBTakxYWlU5VnI2NzJ0VVVaTzQ5aExfV2NzN19MOUpYNlJUZlpIQS05Z2sxLQ?oc=5",
+    "S9": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9XRTZqVEJtRms0WDdNTV9ON2c0bEp0eHlzd0gta0cwVjNmNkJIMzdkdHEtNFlhUlpnQkJRZGRpMzJBcjZoMGphZFUwQ3ozSjA3OFpReUNGTENSQzV5YWFUbVVOS2ZIdm8tQm00d1VR?oc=5",
+    "S10": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcHcycGtEMEhrSWN6MlFCeDZDWFpBdWhsZkZtZW1NWGxBdW9lY0VtQ1o0S08wc01iUDc2ajRyVm0tQlhkYnhndWxmemZqUjJQRXhieHpfLUFMNUlldHdkU2RYSVYzQ2ZyRzhRUGNsWGtycFZQUXdyMDVwWlNVdFp5NA?oc=5",
+    "S11": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBjT1RPV0tHYzcxR1ZqY0EzTjZEdW9sTEE1OE5FcnpoYjVQQ0JCY01TUlZ0c1JIRVZ2WFBGZkxyRWtZR3BrTkdabExJRVdONVV4a0hXT2hSbWlfVGN4SWlCekNJdXg?oc=5",
+    "S12": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WSTJiOTFmbVFtZTd0dVBIN3ZvTG9Eanp5Q1lnYUxBbFd6dkVva1Z1clVtNGlvaHZhNHM3R1RteFZWNmZaYjIwMlJJdHB0MTdwYlJTc3U5VkRrTk1CVFpheTRnVndjWHgtRktJ?oc=5",
+    "S13": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1VSmIwWC1GeXNyM18ydU5yam9ETXpaTV93dERaNUVuOS1hVG10emlpdW1paGFJcGtCSzdEai0zRW5DblNqRTZKQnlLRHBoSFI5YVJNejZUaDZXdDFyOFV2a2doNUd2T2Ria3oxRFBhTQ?oc=5",
+    "S14": "https://news.google.com/rss/articles/CBMickFVX3lxTE1EdVhLZDZnUExobW9YcWY5dFhEbFNIZGxTU1RrWC0tTmxwWnBzVEQyYWVzN1VoSWJhVk1yc1dacGU1dzVGZzd4MFVGdHN3eU9KN0plSmpoU2d1T2JmbGw3azQ0bnhRMmVNMGQ1eG91OU1EZw?oc=5",
+    "S15": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XSDdIamQ1Vk1pLXMzeExDXzZwOXFKaC1OZ0kyZlR6Z21XdUlNN1NXZnlXNS1vdC01OC12Vl9PTFNRd2tCM184U0VFQnpVOFVqZklXLS01UUhZcmZXeXBjRkc1UjFDWFZTaVVQempTQ1dGRTTSAXdBVV95cUxOMWUzUWVSODZ3bTFjTVVfRUlPY2ZfcUdnYVBJRjgxQzZOMnV2NTBNcUhZNGgyREZ3Q2xpVUFQWUV5a0sxTHRfUVZoTE45RVJoOWQ1Zkd0bmxaMkNTYndQOV9NdjNQTFQxaEJaSUpmbFAzM09sZHhrNA?oc=5",
+    "S16": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBEVTJGVlFvNmhyYm8zT2JmR09kTlJNb3EtcjRXYUF0My0zbGJ0R3lzU1cyVEJDUElHT3dabi1XQUhWOTRvVnRqUVcwbw?oc=5",
+    "S17": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Ndl9NZEVuTm9WLWFrNEtLbE43cVdvRXc0X0NGdWx3ODJqTTBmZmZBU1Z1LUViY292dHN2M1FFcmV1SVdFT1dZSEZpLUhuMGQ0ZlE?oc=5",
+    "S18": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMU5KbmtRQll2NjZ5anZfVW9hc2ViRHpjejdoZWhkRnhIMkJ1Z05hMHlDUWVfUlMzNEVNdkdDVDVNTzlEMkZrVkgtbndkSmFZUk5iUmpmODFpR2pmZjVqUlgwM3ZCNm9IVTJleFA1LXpPLWNfVmR2V2E5OHpFUDczdXZQdG5mZTQ?oc=5",
+    "S19": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kaGQweFV1TldDNTQ5YmY0OG95Tkw4WG9uMUxYNFNXWTdnVU91MC1oQ1hPYjdyakNETkt5VlZzcFE2Q2s4SHU5MDA2ekhmdnQ1cV9oZDlhdlJIOTlIT3FKZ01iUmlTR0diLVF6WjJjVzhHWG8?oc=5",
+    "S20": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdEVGWU9yZ1JtN0U1N3lUT3VzemZFdElqWFZlYk1XNzB0a0xiTHFSaDJ0bUQ5SDdVQTdJU0dzclhGUEpSOFotcnF6YjhsUk5HOWFRX29YRmxOSDhrakRLS25mNzRkRG51ZHkyTmlHc3VJZ01tRF9zbm02a3hQLTBOcA?oc=5",
+    "S21": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xUUVIancwYjBwWEwxZjViMUVkWGZHMXpadmYycXFuN2doMGozQ25lcHhCb19jV0N1OFpnUXhjaFVxam4xZ0tsSTNGVmNjeVMwWXVmbklLQ0I1MHVT?oc=5",
+    "S22": "https://news.google.com/rss/articles/CBMibkFVX3lxTE93WUw3RUxpUmR0LUVpTURJR1BqRmhUd0RPQnQ3V1RNS3YyaWJvclhlOWNYVG92UTBzODd6dEkxdXAwNlJSTTdIVEhPUl9SRnd6dThsMndTeU1qaGowVUsyQlVNUUprT0NJOTBIOXRR?oc=5",
+    "S23": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPamhzak9iYUh0RFhLbHpzRWZfaUx5N2IxNFp3WEphZDc4SWdjNEtRcnplVlBmLS02ckZLRGFrbmUtMERTSko1eU15X1dRb0lVUlVLTDFKR055RXdNYmlwUnkySXdvd0Ria3NWSXIzdjFBUWFyUjllT2R0SWgybGZES2RvVGQxclhpRVhDR1dLR2NpUHp6Qm5TZkVTejhjMWVuNTN2cEVR?oc=5",
+    "S24": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9wSUFMdUNwSkxZTTRFNlA0eWVzLXhweDhhLWUweWtIQTNSaHQ4bFQ2TmRqdXRYa21wZzZOejN2cnFwRC01NUJIYUZBbXhXWEh3d1NaUDVVRllZaEtCUVZmbm95Smh2WG5BUnc?oc=5",
+    "S25": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5fZDc0R2pSRV91Y0lrZ0tHSnkwZXBTMlhxRU56UW5kYUpTbEx5a1Byd2xVWEVjNWFpNmdPXzZ2LUxQLWVmV1VLRkZEblFfdlp4RG9NZnVqb3ZEd3FQblFtS2ZxblpDUQ?oc=5",
+    "S26": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNS0dTS2NfRmFDbHcwY25VM0dDVTJNZXVEVXZtZmVFUEZQR2o5elNVRnpLb1VENXNhaFpRNHppTDlfNDBleWpwNGt3MVpQM3ZXZGliNFh5S2pJSkVLYVNUMWFZMlBNYlVFcUh0U2JGTGVzR0xiby11QUp6S1ZnamJSNUFhalJaajVJUE1OZ1RLaE9EUVJUUVhick80Yk1Qay1YNEFyMWZPZUh3SHFOaGdqeUtKVjQ3TVFfRzZhbmI0eDM0MmZJX1BwdWRHaFZMTGpUaTlZckR6cE1ldzU4VEhvSkpaYzlLdTJxUHREYjFSaVY5d3RLemx5M25tUWJvUkszYndQUzVKNWxqYlljVGhIbnBkbmloSE5pNDgzY0dhTjd6Qm9BZF9jSlBZTQ?oc=5",
+    "S27": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6SExGQXlrV1Q0SHk1SUtkY0dIWUttNW51TDd4eGxUS2lJZGNUUDh5QUtOcC1zWGhJUnZoRl96UllDSWR3TDBkN0lfeXN6RU03UW1UVGdZbmU2OG8?oc=5",
+    "S28": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1FbUlieHFUbzFQRWkwMjhxZm1PdkxjQm5qc0FUeGRCdjEtdnpZYXB2UkVnYlZhQ21SX3BweFIwVGxlMWQ0cy15VlNCcXdKZFlzeGFYVnhn?oc=5",
+    "S29": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHN0laRi1zSVpFMF9YbnU1SXI2dG11NnVSaThfYUtJUUY4TW5lZWJVVGVDcEhrdWtmTzQyMVZVU0F2U1l1bHcyUTUteXFaYUZ2QmwzU0l1bDhBYUVpcjFnQmVZOExqZw?oc=5",
+    "S30": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94Yk50Q2JOQl9iRFR3S3B0cDNuMG5ONTVrdnV1ZW5JYlp0aEREa2htR3JCMW1QZ3paN1JhTWtiSnRrUjl1azdqRGZoWjg1Z2d1Z0RWZUlqSjc5SXF4Ullsb1dHVUh2b1pCbkZ0NGNn?oc=5",
+    "S31": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4tWU9ZY1A3Y29hdGdtOWZPTkt1dUI2d1RUc0pfb1FBT2J4LTVTaDd4WTktWFNZSjBQUjAwMHJBWHd5eTBVanVzRUg2d2VscmtTWldMYkRmTTJDMTdtdFFhM1dTd1BkQ2l6dTlib09veFJURHfSAXNBVV95cUxOLVlPWWNQN2NvYXRnbTlmT05LdXVCNndUVHNKX29RQU9ieC01U2g3eFk5LVhTWUowUFIwMDByQVh3eXkwVWp1c0VINndlbHJrU1pXTGJEZk0yQzE3bXRRYTNXU3dQZENpenU5Ym9Pb3hSVER3?oc=5",
+    "S32": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTd3MzZzNneUl3MEFWYmxJY2tqbGYwQS1RVnhTWFV1MUpUaHI4NExKSEhYN1VTR2lURHp5M2RZZVJKeUlxaHd5bVNRdjZYMFktVUdXV0JFc2Y4UEFPQl9ZV2s3ZnY4eWZ0QUE?oc=5",
+    "S33": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Uam5VZ0JUY2NNQmd1SFNyeUM5dlZ5c3cxSlBISmtQZXpCYlhtZDNaaTVqQWJyNWsxNFg3WF9MQUhqX0RGNHlIOUI1TWFKVFJKdnp2aGx0NV9ZZmZfajl1dWx5dTJWZUl3NnVYSGYzSEdaTHPSAXNBVV95cUxOVGpuVWdCVGNjTUJndUhTcnlDOXZWeXN3MUpQSEprUGV6QmJYbWQzWmk1akFicjVrMTRYN1hfTEFIal9ERjR5SDlCNU1hSlRSSnZ6dmhsdDVfWWZmX2o5dXVseXUyVmVJdzZ1WEhmM0hHWkxz?oc=5",
+    "S34": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11RWF4Q0xfcjY4amlvWnl3UlJSTnNqOTBZdDNTc0E2M2luR3JVdTBTaFphRWdPMnJkMVk4Qkl5SjIxak94dTFydHd2blNBektONWZZWVRjVTdxUQ?oc=5",
+    "S35": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5sRGJIQkw4WGpjSW1KU1FZUlFXTEJtdFlwaFpPcVh5RlJrekVUVUQ3MnNmd1hyZlFkZ2RhWWRVbzBUb1p2WG4xUDNGRFltTXB5SUdIQ3Z6WmcyajcxbE1XaXFESEZseUNVc0RqTVZQTWxmdFRlWkxCaUlGaUNyMFHSAX9BVV95cUxObERiSEJMOFhqY0ltSlNRWVJRV0xCbXRZcGhaT3FYeUZSa3pFVFVENzJzZndYcmZRZGdkYVlkVW8wVG9adlhuMVAzRkRZbU1weUlHSEN2elpnMmo3MWxNV2lxREhGbHlDVXNEak1WUE1sZnRUZVpMQmlJRmlDcjBR?oc=5",
+    "S36": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4NDZnTTBrMFMtUTREemFXVk5MRjlwdFR4aFBKYzlzMkxRWGNFQ2JXNGJMQUtPcnBSVUwzMU1JSklWZXN6Vk9kUWRTc2tjMEZTV1lDYkNybDZWQQ?oc=5",
+    "S37": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91eEZucjY0V01BUG94Ynd4YVNVY2JWcjl0cEE4MzhBclhYcm9iQVJMdksxVUNvdW04VzMzRGlDSUNmMDZXRHJKSzgzNGhhNUdCOHI2UEZiMVY5Qmt5bVZmTV9BVzVXRTlWcXhZ?oc=5",
+    "S38": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE80aEpSZk91UTFTbEZIMURuZVV1aVJJbnZ4SFl4UmxwY1pNN0V5bHNWN290dGtuTHVtc0c3SGxwTy1MTmotVUg0OHd5c3gzRkhHeHN5MA?oc=5",
+    "S39": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qNHBwVlN6MUthX2RibnFiRXZMZUMwUi1iZXpkWkpha3hVS1YzajhvejRLWlY5czFUYlJDU19fUFIyNl9EallyTkh4OXJCZFM4R0R5bVBYNDZRX2oyc1FqejBzaExPLXdSN0HSAW5BVV95cUxOOHdQWFVHdzZEUnlEay1JcWI1T1owY1JEcU1Dc3RaU3VLQkk5Z0tVZHYxTXZjdWVJSHQ4QmliajJiekxsZU8zX1loa196MFVnODZldGVDd3RrUEUwN1lkaFVGUk1hN1dEQnJDeG0xZw?oc=5",
+    "S40": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5lVTIxWFJRTElheWZ0SERrWXVmU241SjVXMndvWVNRTEtTcEhmMFVTLTNOMXowMVR3Tlo5ZGVjOWE2LTZyUjM3ZzFkVnl1Mnd4X0Q2ejEtN21mZUtLcGZXaWExZVNLbWtxQVE?oc=5"
+  },
+  "related_searches": [
+    {
+      "phrase": "피지컬 ai 관련주",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 대장주",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 전망",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai etf",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 로봇",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 기업",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 예시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "피지컬 ai 뜻",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 교육",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련주 한국",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련주 미국",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련주 etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 공부",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 관련 etf",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 기술",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 글로벌 얼라이언스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 나무위키",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 논문",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 뉴스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 대학원",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai etf 추천",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 동향",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 데이터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 대회",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 드론",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 란",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 관련주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 랩실",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로보틱스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 리얼월드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇팔",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 차이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 교육",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 로봇 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 메가 트렌드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 뭐야",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 미국 주식",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 미래",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 메모리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 모델 학습을 위한 월드 파운데이션 모델 기술개발",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 물류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 미국 대장주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 메가프로젝트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 부트캠프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 반대",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 보안",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 보고서",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 반도체",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 분야",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 밸류체인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 방산",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 시스템 설계",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 사례",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 세미나",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 시장 전망",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 스타트업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 시장 규모",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 수혜주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 산업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 사업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 신입사원이 되다",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 얼라이언스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 영어로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 얼라이언스 2기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 월드모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 액추에이터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 연구실",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 이미지",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 아이콘",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 의미",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 주식",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 정의",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 제조 ax 캠퍼스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 종류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 전북",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 주도주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 제조 ax 캠퍼스 후기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 자율주행",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 종목",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 책",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 채용",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 취업",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 취업 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 챌린지",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 컨퍼런스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 컨퍼런스 2026",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 키트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 코딩",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 특별법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 트레이닝 센터",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 특징",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 투자",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 패권 전쟁",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 파운데이션 모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 포럼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai vla",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 플랫폼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 풀스택",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 프로젝트",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 풀스택 체계",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 프론티어 강국 신기술 전략 포럼",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 회사",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 휴머노이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 협회",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 항만 전략",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 활용 사례",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 현대차",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 해커톤",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 학습",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 핵심 경쟁력 확보 전략(안)",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "피지컬 ai 현대",
+      "times_suggested": 1
+    }
+  ],
+  "explanation": {
+    "why_people_search": [
+      {
+        "claim": "자동완성에서는 뜻·예시 등 정의 검색(17%)과 관련주·대장주·ETF 등 투자 검색(16%)이 가장 큰 비중을 차지했다. 개념을 알아보려는 수요와 투자 수요가 함께 있다.",
+        "cites": [
+          "D2"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.85,
+        "check_uncertain": false
+      },
+      {
+        "claim": "기업 협력과 정부 포상, 지자체 간담회, 입법 움직임 보도가 이어졌다. 산업 적용 사례와 정책 방향을 확인하려는 검색 수요로 이어졌다.",
+        "cites": [
+          "S11",
+          "S9",
+          "S36",
+          "D2"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.8,
+        "check_uncertain": false
+      },
+      {
+        "claim": "교육·공부·채용·대회 관련 검색어도 나타났다. 서울대 공개강좌와 전북 미래 인재 챌린지 등 학습·행사 소식과 맞닿아 있다.",
+        "cites": [
+          "D2",
+          "S2",
+          "S5"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.33,
+        "check_uncertain": true
+      }
+    ],
+    "what_is_happening": [
+      {
+        "claim": "최근 24시간 기사 수는 120건으로 기준 평균 68.33건을 웃돌았다. 통계 판정은 '불확실'(p=0.0656)이다.",
+        "cites": [
+          "D1"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.98,
+        "check_uncertain": false
+      },
+      {
+        "claim": "전북도가 피지컬 AI 혁신기업 간담회를 열고 기업 애로를 청취했다. 로봇 연구 거점 구축 협력도 논의했다. 관련 보도가 다수 매체에서 나왔다.",
+        "cites": [
+          "S9",
+          "S12",
+          "S21",
+          "S23"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.35,
+        "check_uncertain": true
+      },
+      {
+        "claim": "대구 글로벌 로봇 비즈니스 포럼이 10주년을 맞아 21일 개막한다. 피지컬 AI와 자율제조 사업화를 다룬다. 20개국 로봇 전문가가 참여한다고 보도됐다.",
+        "cites": [
+          "S10",
+          "S33",
+          "S34"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.58,
+        "check_uncertain": true
+      },
+      {
+        "claim": "EY한영이 '피지컬 AI 포럼 2026'을 열어 제조·물류 현장 적용 전략을 공유했다.",
+        "cites": [
+          "S4",
+          "D3"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.98,
+        "check_uncertain": false
+      },
+      {
+        "claim": "로바이가 중국 링커봇과 피지컬 AI 제어 기술 업무협약을 체결했다. 마음AI는 과기정통부 장관상을 받았다. 티로보틱스는 102억원 규모 자율제조 R&D에 참여한다고 보도됐다.",
+        "cites": [
+          "S38",
+          "S25",
+          "S11",
+          "S16"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.76,
+        "check_uncertain": false
+      }
+    ],
+    "outlook": [
+      {
+        "claim": "대구 글로벌 로봇 비즈니스 포럼이 21일 열리면서 피지컬 AI·자율제조 관련 기사가 이어질 가능성이 높다.",
+        "basis": "21일 개막이 예정된 대구 포럼 보도를 근거로 한다.",
+        "confidence": "high",
+        "cites": [
+          "S10",
+          "S22",
+          "D3"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.58,
+        "check_uncertain": true
+      },
+      {
+        "claim": "전북도 기업 소통과 국회 맞춤형 지원 입법 논의가 이어지며 정책 관련 보도가 추가될 가능성이 있다.",
+        "basis": "전북도 간담회에서 나온 협력 논의와 여야 입법 움직임 보도를 확장한 전망이다.",
+        "confidence": "medium",
+        "cites": [
+          "S9",
+          "S15",
+          "S36"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.51,
+        "check_uncertain": true
+      },
+      {
+        "claim": "기사량은 과거 실행의 모멘텀 값(2.17, 1.76)이 낮아지는 흐름이어서 뚜렷한 추가 확대 여부는 불확실하다.",
+        "basis": "이전 실행의 모멘텀 값 하락과 '불확실' 판정을 근거로 한다.",
+        "confidence": "low",
+        "cites": [
+          "D5",
+          "D1"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.72,
+        "check_uncertain": false
+      }
+    ],
+    "caveats": [
+      "기사 수 증가는 통계적으로 확정되지 않았다(p=0.0656).",
+      "헤드라인 상당수가 전북도 간담회와 대구 포럼 등 같은 사안의 중복 보도여서 실제 이슈 폭보다 커 보일 수 있다.",
+      "자동완성 비율은 검색 의도를 보여줄 뿐 검색량 자체를 나타내지 않는다."
+    ],
+    "unsupported_claims_removed": 0,
+    "summary": {
+      "claim": "피지컬 AI 관련 포럼·전시와 전북도·대구시의 산업 육성 행사, 기업 협약 보도가 19일 하루에 몰렸다. 최근 24시간 기사 수는 120건으로 기준 평균 68.33건보다 많지만, 통계 판정은 '불확실'이다.",
+      "cites": [
+        "D1",
+        "S4",
+        "S9",
+        "S10",
+        "S38"
+      ],
+      "check": "supported",
+      "check_reason": "",
+      "check_confidence": 0.59,
+      "check_uncertain": true
+    },
+    "surge_claims_removed": 0,
+    "checked_by": "jev",
+    "failed_check_removed": 0
+  }
+}
