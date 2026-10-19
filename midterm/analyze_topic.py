@@ -34,6 +34,7 @@ from pathlib import Path
 import jev_api
 from intent import search_intent
 from model_api import ModelRequestError, parse_json_reply, request_model
+from eval.forecast import log_prediction
 from eval.spike import spike_test
 from topic_trends import RESULT_DIR, analyze_topic, save_result
 
@@ -459,6 +460,12 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
 
 
 def save_analysis(analysis):
+    # Every saved live analysis also logs one falsifiable, scoreable prediction
+    # (next 7 days of Wikipedia pageviews; see eval/forecast.py and eval/score_predictions.py).
+    try:
+        analysis["prediction"] = log_prediction(analysis["topic"])
+    except Exception as error:  # a forecast failure must not lose the analysis
+        analysis["prediction"] = {"error": str(error)}
     ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
     slug = re.sub(r"[^\w]+", "-", analysis["topic"]).strip("-").lower()
     path = ANALYSIS_DIR / f"{slug}_{datetime.now():%Y-%m-%d_%H%M}.json"

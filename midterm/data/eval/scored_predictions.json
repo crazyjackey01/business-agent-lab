@@ -1,0 +1,60 @@
+{
+  "scored": [],
+  "pending": [
+    {
+      "topic": "전기차",
+      "made_at": "2026-10-19T11:59:02+00:00",
+      "metric": "wikipedia_pageviews_sum:ko.wikipedia/전기자동차",
+      "window_start": "2026-10-19",
+      "window_days": 7,
+      "point": 40.0,
+      "low": 26.4,
+      "high": 56.8,
+      "model": "naive"
+    },
+    {
+      "topic": "갤럭시",
+      "made_at": "2026-10-19T11:59:02+00:00",
+      "metric": "wikipedia_pageviews_sum:ko.wikipedia/삼성 갤럭시",
+      "window_start": "2026-10-19",
+      "window_days": 7,
+      "point": 372.6,
+      "low": 247.0,
+      "high": 544.4,
+      "model": "ses"
+    },
+    {
+      "topic": "스마트 안경",
+      "made_at": "2026-10-19T11:59:03+00:00",
+      "metric": "wikipedia_pageviews_sum:ko.wikipedia/스마트글래스",
+      "window_start": "2026-10-19",
+      "window_days": 7,
+      "point": 126.2,
+      "low": 82.3,
+      "high": 206.4,
+      "model": "ses"
+    },
+    {
+      "topic": "피지컬 AI",
+      "made_at": "2026-10-19T11:59:03+00:00",
+      "metric": "wikipedia_pageviews_sum:ko.wikipedia/피지컬 AI",
+      "window_start": "2026-10-19",
+      "window_days": 7,
+      "point": 303.0,
+      "low": 183.3,
+      "high": 517.8,
+      "model": "naive"
+    },
+    {
+      "topic": "physical AI",
+      "made_at": "2026-10-19T11:59:03+00:00",
+      "metric": "wikipedia_pageviews_sum:en.wikipedia/Physical AI",
+      "window_start": "2026-10-19",
+      "window_days": 7,
+      "point": 43.5,
+      "low": 40.0,
+      "high": 100.4,
+      "model": "mean28"
+    }
+  ]
+}
