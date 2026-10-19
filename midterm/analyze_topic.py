@@ -7,7 +7,8 @@ Two layers, so the conclusions rest on facts and not on guesses:
   1. Measured facts (plain code, no AI):
      - search intent: what people want from the topic (buying, how-to, investing, ...),
        from autocomplete phrases; Jev sorts every phrase (intent.py)
-     - news drivers: words that appear much more in today's headlines than before
+     - news drivers: words significantly more frequent in the last 24 hours' headlines
+       (log-odds with a Dirichlet prior, eval/fightin.py)
      - scheduled events: dates and launch/event words found in headlines
      - coverage trend: daily article counts and momentum, across saved runs too
   2. Explanation (language model through OpenRouter):
@@ -34,9 +35,10 @@ from pathlib import Path
 import jev_api
 from intent import search_intent
 from model_api import ModelRequestError, parse_json_reply, request_model
+from eval.fightin import Z_CUTOFF, log_odds_z
 from eval.forecast import log_prediction
 from eval.spike import spike_test
-from topic_trends import RESULT_DIR, analyze_topic, save_result
+from topic_trends import RESULT_DIR, analyze_topic, is_spam, save_result
 
 HERE = Path(__file__).resolve().parent
 ANALYSIS_DIR = HERE / "data" / "analysis"
@@ -64,10 +66,15 @@ def headline_words(title, topic_words):
     return words
 
 
-def news_drivers(news, topic, top=12):
-    """Words that are much more common in the last 24 hours' headlines than in earlier ones."""
+def news_drivers(news, topic, top=12, now=None):
+    """Words significantly more frequent in the last 24 hours' headlines than in earlier ones.
+
+    Log-odds with an informative Dirichlet prior ("Fightin' Words", eval/fightin.py) on
+    headline counts; words with z > 1.96 are kept. Unlike a share ratio, a word seen in
+    3 recent headlines and none before does not get an infinite score.
+    """
     topic_words = {w.lower() for w in re.split(r"\s+", topic)} | {topic.lower().replace(" ", "")}
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+    cutoff = (now or datetime.now(timezone.utc)) - timedelta(hours=24)
     today_count, before_count = Counter(), Counter()
     today_n = before_n = 0
     for a in news:
@@ -79,23 +86,18 @@ def news_drivers(news, topic, top=12):
             before_count.update(words)
             before_n += 1
 
-    drivers = []
-    for word, n in today_count.most_common():
-        if n < 3:
-            break
-        share_today = n / today_n
-        share_before = before_count[word] / before_n if before_n else 0
-        drivers.append(
-            {
-                "word": word,
-                "headlines_today": n,
-                "share_today": round(share_today, 2),
-                "share_before": round(share_before, 3),
-                "lift": round(share_today / share_before, 1) if share_before else None,  # None = new today
-            }
-        )
-    # New-today and big-lift words first.
-    drivers.sort(key=lambda d: (d["lift"] is not None, -(d["lift"] or 0), -d["headlines_today"]))
+    z = log_odds_z(today_count, before_count)
+    drivers = [
+        {
+            "word": word,
+            "headlines_today": today_count[word],
+            "share_today": round(today_count[word] / today_n, 2),
+            "share_before": round(before_count[word] / before_n, 3) if before_n else 0,
+            "z": round(z[word], 2),
+        }
+        for word in today_count if z.get(word, 0) > Z_CUTOFF
+    ]
+    drivers.sort(key=lambda d: -d["z"])
     return drivers[:top]
 
 
@@ -190,10 +192,10 @@ def build_evidence(facts, news, max_headlines=40):
     evidence["D2"] = "Search intent from Google autocomplete (share of suggestions): " + "; ".join(
         f"{i['intent']} {int(i['share'] * 100)}% (e.g. {', '.join(i['examples'][:3])})" for i in facts["intent"]
     )
-    evidence["D3"] = "Words much more common in today's headlines than earlier (lift = times more common, new = absent before): " + "; ".join(
-        f"{d['word']} in {d['headlines_today']} headlines ({'new' if d['lift'] is None else str(d['lift']) + 'x'})"
-        for d in facts["drivers"]
-    )
+    evidence["D3"] = ("Words significantly more frequent in the last 24 hours' headlines than earlier "
+                      "(log-odds z > 1.96): " + ("; ".join(
+                          f"{d['word']} in {d['headlines_today']} headlines (z={d['z']})" for d in facts["drivers"])
+                          or "none"))
     if facts["trends_matches"]:
         evidence["D4"] = "Matching Google Trends searches right now: " + "; ".join(
             f"{t['term']} ({t['traffic_text']})" for t in facts["trends_matches"]
@@ -418,9 +420,13 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
         data = analyze_topic(topic, lang, geo)
         save_result(data)
 
+    # Re-apply the spam filter: saved collections made before it existed (or reused without
+    # --refresh) still contain keyword-stuffed gambling headlines ('카지노' in 전기차, 2026-10-11).
+    data = {**data, "news": [a for a in data["news"] if not is_spam(a["title"], topic)]}
     kept, dropped, relevance_method = relevant_news(data["news"], topic)
     data = {**data, "news": kept}
-    drivers = news_drivers(data["news"], topic)
+    # "Last 24 hours" relative to when the news was collected, not to now.
+    drivers = news_drivers(data["news"], topic, now=datetime.fromisoformat(data["collected_at"]))
     intent_method, intents = search_intent(data["related_searches"], topic)
     m = data["news_momentum"]
     facts = {
@@ -479,8 +485,7 @@ def print_analysis(a):
     print("\nMeasured facts")
     print(f"  coverage per day, today first: {f['coverage']['per_day']} -> momentum {f['coverage']['momentum']}")
     print("  search intent: " + ", ".join(f"{i['intent']} {int(i['share'] * 100)}%" for i in f["intent"]))
-    print("  news drivers today: " + ", ".join(
-        f"{d['word']}({d['headlines_today']}{', new' if d['lift'] is None else ''})" for d in f["drivers"]))
+    print("  news drivers (log-odds z): " + (", ".join(f"{d['word']}({d['z']})" for d in f["drivers"]) or "none"))
     print(f"  scheduled-event headlines: {len(f['events'])}")
     for ev in f["events"][:5]:
         print(f"    - {ev['title'][:70]} ({', '.join(ev['dates_mentioned'])})")
