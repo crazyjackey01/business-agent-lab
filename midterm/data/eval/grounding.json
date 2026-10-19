@@ -1,0 +1,102 @@
+{
+  "analyses": 12,
+  "claims": 217,
+  "numbers": 192,
+  "grounded": 192,
+  "grounded_pct": 100.0,
+  "own": {
+    "all": [
+      192,
+      192
+    ],
+    "distinctive": [
+      79,
+      79
+    ]
+  },
+  "chance_other_topic": {
+    "all": [
+      1050,
+      1750
+    ],
+    "distinctive": [
+      176,
+      713
+    ]
+  },
+  "per_run": {
+    "physical-ai_2026-10-11_2211.json": {
+      "topic": "physical AI",
+      "claims": 27,
+      "numbers": 16,
+      "grounded": 16
+    },
+    "physical-ai_2026-10-11_2213.json": {
+      "topic": "physical AI",
+      "claims": 10,
+      "numbers": 16,
+      "grounded": 16
+    },
+    "갤럭시_2026-10-12_0221.json": {
+      "topic": "갤럭시",
+      "claims": 13,
+      "numbers": 17,
+      "grounded": 17
+    },
+    "갤럭시_2026-10-12_0244.json": {
+      "topic": "갤럭시",
+      "claims": 13,
+      "numbers": 15,
+      "grounded": 15
+    },
+    "스마트-안경_2026-10-12_0109.json": {
+      "topic": "스마트 안경",
+      "claims": 16,
+      "numbers": 10,
+      "grounded": 10
+    },
+    "전기차_2026-10-11_2221.json": {
+      "topic": "전기차",
+      "claims": 22,
+      "numbers": 24,
+      "grounded": 24
+    },
+    "전기차_2026-10-11_2223.json": {
+      "topic": "전기차",
+      "claims": 27,
+      "numbers": 14,
+      "grounded": 14
+    },
+    "전기차_2026-10-11_2335.json": {
+      "topic": "전기차",
+      "claims": 21,
+      "numbers": 18,
+      "grounded": 18
+    },
+    "피지컬-ai_2026-10-11_2209.json": {
+      "topic": "피지컬 AI",
+      "claims": 23,
+      "numbers": 13,
+      "grounded": 13
+    },
+    "피지컬-ai_2026-10-11_2211.json": {
+      "topic": "피지컬 AI",
+      "claims": 13,
+      "numbers": 13,
+      "grounded": 13
+    },
+    "피지컬-ai_2026-10-11_2214.json": {
+      "topic": "피지컬 AI",
+      "claims": 17,
+      "numbers": 17,
+      "grounded": 17
+    },
+    "피지컬-ai_2026-10-19_2055.json": {
+      "topic": "피지컬 AI",
+      "claims": 15,
+      "numbers": 19,
+      "grounded": 19
+    }
+  },
+  "ungrounded": []
+}
