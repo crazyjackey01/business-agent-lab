@@ -34,7 +34,9 @@ Validation (`midterm/eval/`, numpy + scipy; each module runs assert self-checks 
 
 ```sh
 python midterm/eval/spike.py                 # negative binomial spike test on saved topics
-python midterm/eval/groundtruth.py           # news counts vs Wikipedia pageviews (Spearman, lead-lag)
+python midterm/eval/gtrends.py               # Google Trends search interest (unofficial endpoints, cached)
+python midterm/eval/groundtruth.py --days 90 # news counts vs Google interest + Wikipedia (Spearman, lead-lag)
+python midterm/eval/prediction_test.py       # holdout prediction accuracy (Google weekly, Wikipedia 7-day)
 python midterm/eval/forecast.py              # 7-day pageview forecasts, rolling backtest
 python midterm/eval/score_predictions.py     # score data/predictions.jsonl once windows end
 python midterm/eval/grounding.py             # numbers in generated text vs the run's facts
