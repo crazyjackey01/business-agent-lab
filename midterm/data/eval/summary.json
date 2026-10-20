@@ -1,0 +1,464 @@
+{
+ "made_at": "2026-10-20T08:30+00:00",
+ "groundtruth": {
+  "days": 90,
+  "rows": [
+   {
+    "topic": "전기차",
+    "source": "google",
+    "series": "Google Trends: 전기차",
+    "n": 90,
+    "rho": 0.24,
+    "p": 0.022985889695996353,
+    "best_lag": 0,
+    "significant": true
+   },
+   {
+    "topic": "전기차",
+    "source": "wikipedia",
+    "series": "ko.wikipedia/전기자동차",
+    "n": 90,
+    "rho": -0.14,
+    "p": 0.17918451909344696,
+    "best_lag": -3,
+    "significant": false
+   },
+   {
+    "topic": "갤럭시",
+    "source": "google",
+    "series": "Google Trends: 갤럭시",
+    "n": 90,
+    "rho": -0.09,
+    "p": 0.3875755314000898,
+    "best_lag": -2,
+    "significant": false
+   },
+   {
+    "topic": "갤럭시",
+    "source": "wikipedia",
+    "series": "ko.wikipedia/삼성 갤럭시",
+    "n": 90,
+    "rho": 0.13,
+    "p": 0.2329511926585962,
+    "best_lag": 0,
+    "significant": false
+   },
+   {
+    "topic": "스마트 안경",
+    "source": "google",
+    "series": "Google Trends: 스마트 안경",
+    "n": 90,
+    "rho": 0.23,
+    "p": 0.03070920558900733,
+    "best_lag": -3,
+    "significant": true
+   },
+   {
+    "topic": "스마트 안경",
+    "source": "wikipedia",
+    "series": "ko.wikipedia/스마트글래스",
+    "n": 90,
+    "rho": 0.03,
+    "p": 0.7808242797539707,
+    "best_lag": 0,
+    "significant": false
+   },
+   {
+    "topic": "피지컬 AI",
+    "source": "google",
+    "series": "Google Trends: 피지컬 AI",
+    "n": 90,
+    "rho": 0.4,
+    "p": 7.510867578464345e-05,
+    "best_lag": 0,
+    "significant": true
+   },
+   {
+    "topic": "피지컬 AI",
+    "source": "wikipedia",
+    "series": "ko.wikipedia/피지컬 AI",
+    "n": 90,
+    "rho": 0.27,
+    "p": 0.010866737961284624,
+    "best_lag": 0,
+    "significant": true
+   },
+   {
+    "topic": "physical AI",
+    "source": "google",
+    "series": "Google Trends: physical AI",
+    "n": 90,
+    "rho": 0.14,
+    "p": 0.19578911835626384,
+    "best_lag": 0,
+    "significant": false
+   },
+   {
+    "topic": "physical AI",
+    "source": "wikipedia",
+    "series": "en.wikipedia/Physical AI",
+    "n": 90,
+    "rho": 0.32,
+    "p": 0.001835514882236625,
+    "best_lag": 0,
+    "significant": true
+   }
+  ],
+  "topics": 5,
+  "significant_topics": 4
+ },
+ "prediction_test": {
+  "rows": [
+   {
+    "source": "google",
+    "topic": "전기차",
+    "model": "ses",
+    "n": 52,
+    "mape": 7.9,
+    "mase": 1.055,
+    "coverage_80": 0.827,
+    "direction": 0.577,
+    "direction_p": 0.1659,
+    "example": {
+     "made_with_data_up_to": "2026-10-04",
+     "model": "ses",
+     "predicted": 55.8,
+     "interval_80": [
+      47.6,
+      63.5
+     ],
+     "actual": 54.0,
+     "naive_predicted": 53.0
+    }
+   },
+   {
+    "source": "google",
+    "topic": "갤럭시",
+    "model": "naive",
+    "n": 52,
+    "mape": 9.2,
+    "mase": 1.0,
+    "coverage_80": 0.596,
+    "direction": null,
+    "direction_p": null,
+    "example": {
+     "made_with_data_up_to": "2026-10-04",
+     "model": "naive",
+     "predicted": 56.0,
+     "interval_80": [
+      51.8,
+      60.1
+     ],
+     "actual": 55.0,
+     "naive_predicted": 56.0
+    }
+   },
+   {
+    "source": "google",
+    "topic": "스마트 안경",
+    "model": "mean4",
+    "n": 52,
+    "mape": 26.7,
+    "mase": 1.011,
+    "coverage_80": 0.942,
+    "direction": 0.608,
+    "direction_p": 0.0804,
+    "example": {
+     "made_with_data_up_to": "2026-10-04",
+     "model": "mean4",
+     "predicted": 26.0,
+     "interval_80": [
+      0.0,
+      62.9
+     ],
+     "actual": 100.0,
+     "naive_predicted": 33.0
+    }
+   },
+   {
+    "source": "google",
+    "topic": "피지컬 AI",
+    "model": "mean4",
+    "n": 52,
+    "mape": 38.5,
+    "mase": 1.114,
+    "coverage_80": 0.981,
+    "direction": 0.5,
+    "direction_p": 0.5551,
+    "example": {
+     "made_with_data_up_to": "2026-10-04",
+     "model": "mean4",
+     "predicted": 15.5,
+     "interval_80": [
+      0.0,
+      44.0
+     ],
+     "actual": 19.0,
+     "naive_predicted": 14.0
+    }
+   },
+   {
+    "source": "google",
+    "topic": "physical AI",
+    "model": "naive",
+    "n": 52,
+    "mape": 14.9,
+    "mase": 1.0,
+    "coverage_80": 0.981,
+    "direction": null,
+    "direction_p": null,
+    "example": {
+     "made_with_data_up_to": "2026-10-04",
+     "model": "naive",
+     "predicted": 17.0,
+     "interval_80": [
+      11.3,
+      25.5
+     ],
+     "actual": 16.0,
+     "naive_predicted": 17.0
+    }
+   },
+   {
+    "source": "wiki",
+    "topic": "전기차",
+    "model": "naive",
+    "n": 180,
+    "mape": 40.2,
+    "mase": 1.0,
+    "coverage_80": 0.6,
+    "direction": null,
+    "direction_p": null,
+    "example": {
+     "made_with_data_up_to": "2026-10-11",
+     "model": "naive",
+     "predicted": 35.0,
+     "interval_80": [
+      23.0,
+      49.3
+     ],
+     "actual": 40.0,
+     "naive_predicted": 35.0
+    }
+   },
+   {
+    "source": "wiki",
+    "topic": "갤럭시",
+    "model": "ses",
+    "n": 180,
+    "mape": 50.0,
+    "mase": 0.878,
+    "coverage_80": 0.489,
+    "direction": 0.622,
+    "direction_p": 0.0006,
+    "example": {
+     "made_with_data_up_to": "2026-10-11",
+     "model": "ses",
+     "predicted": 361.1,
+     "interval_80": [
+      252.4,
+      509.8
+     ],
+     "actual": 389.0,
+     "naive_predicted": 142.0
+    }
+   },
+   {
+    "source": "wiki",
+    "topic": "스마트 안경",
+    "model": "decay",
+    "n": 180,
+    "mape": 34.3,
+    "mase": 1.223,
+    "coverage_80": 0.778,
+    "direction": 0.55,
+    "direction_p": 0.1025,
+    "example": {
+     "made_with_data_up_to": "2026-10-11",
+     "model": "decay",
+     "predicted": 45.3,
+     "interval_80": [
+      27.8,
+      74.6
+     ],
+     "actual": 152.0,
+     "naive_predicted": 99.0
+    }
+   },
+   {
+    "source": "wiki",
+    "topic": "피지컬 AI",
+    "model": "naive",
+    "n": 180,
+    "mape": 41.7,
+    "mase": 1.0,
+    "coverage_80": 0.611,
+    "direction": null,
+    "direction_p": null,
+    "example": {
+     "made_with_data_up_to": "2026-10-11",
+     "model": "naive",
+     "predicted": 293.0,
+     "interval_80": [
+      203.6,
+      493.7
+     ],
+     "actual": 303.0,
+     "naive_predicted": 293.0
+    }
+   }
+  ],
+  "mean_coverage_80": 0.756
+ },
+ "prediction_log": [
+  {
+   "topic": "전기차",
+   "made_at": "2026-10-19T12:03:01+00:00",
+   "metric": "wikipedia_pageviews_sum:ko.wikipedia/전기자동차",
+   "window_start": "2026-10-19",
+   "window_days": 7,
+   "point": 40.0,
+   "low": 26.4,
+   "high": 56.8,
+   "model": "naive",
+   "status": "pending",
+   "actual": null,
+   "inside_interval": null
+  },
+  {
+   "topic": "스마트 안경",
+   "made_at": "2026-10-19T11:59:03+00:00",
+   "metric": "wikipedia_pageviews_sum:ko.wikipedia/스마트글래스",
+   "window_start": "2026-10-19",
+   "window_days": 7,
+   "point": 126.2,
+   "low": 82.3,
+   "high": 206.4,
+   "model": "ses",
+   "status": "pending",
+   "actual": null,
+   "inside_interval": null
+  },
+  {
+   "topic": "피지컬 AI",
+   "made_at": "2026-10-19T11:59:03+00:00",
+   "metric": "wikipedia_pageviews_sum:ko.wikipedia/피지컬 AI",
+   "window_start": "2026-10-19",
+   "window_days": 7,
+   "point": 303.0,
+   "low": 183.3,
+   "high": 517.8,
+   "model": "naive",
+   "status": "pending",
+   "actual": null,
+   "inside_interval": null
+  },
+  {
+   "topic": "physical AI",
+   "made_at": "2026-10-19T11:59:03+00:00",
+   "metric": "wikipedia_pageviews_sum:en.wikipedia/Physical AI",
+   "window_start": "2026-10-19",
+   "window_days": 7,
+   "point": 43.5,
+   "low": 40.0,
+   "high": 100.4,
+   "model": "mean28",
+   "status": "pending",
+   "actual": null,
+   "inside_interval": null
+  },
+  {
+   "topic": "전기차",
+   "made_at": "2026-10-19T11:59:02+00:00",
+   "metric": "wikipedia_pageviews_sum:ko.wikipedia/전기자동차",
+   "window_start": "2026-10-19",
+   "window_days": 7,
+   "point": 40.0,
+   "low": 26.4,
+   "high": 56.8,
+   "model": "naive",
+   "status": "pending",
+   "actual": null,
+   "inside_interval": null
+  },
+  {
+   "topic": "갤럭시",
+   "made_at": "2026-10-19T11:59:02+00:00",
+   "metric": "wikipedia_pageviews_sum:ko.wikipedia/삼성 갤럭시",
+   "window_start": "2026-10-19",
+   "window_days": 7,
+   "point": 372.6,
+   "low": 247.0,
+   "high": 544.4,
+   "model": "ses",
+   "status": "pending",
+   "actual": null,
+   "inside_interval": null
+  }
+ ],
+ "grounding": {
+  "analyses": 13,
+  "claims": 232,
+  "numbers": 205,
+  "grounded": 205,
+  "own": {
+   "all": [
+    205,
+    205
+   ],
+   "distinctive": [
+    82,
+    82
+   ]
+  },
+  "chance_other_topic": {
+   "all": [
+    1223,
+    2003
+   ],
+   "distinctive": [
+    202,
+    800
+   ]
+  }
+ },
+ "jev_agreement": {
+  "n": 30,
+  "agreement": 0.5,
+  "kappa": -0.098,
+  "calibration": [
+   {
+    "band": "0.0-0.6",
+    "n": 12,
+    "agreement": 0.33
+   },
+   {
+    "band": "0.6-0.8",
+    "n": 8,
+    "agreement": 0.5
+   },
+   {
+    "band": "0.8-1.0",
+    "n": 10,
+    "agreement": 0.7
+   }
+  ],
+  "confusion_jev_by_human": {
+   "supported": {
+    "supported": 14,
+    "partly": 6,
+    "unsupported": 0
+   },
+   "partly": {
+    "supported": 7,
+    "partly": 1,
+    "unsupported": 2
+   },
+   "unsupported": {
+    "supported": 0,
+    "partly": 0,
+    "unsupported": 0
+   }
+  }
+ }
+}

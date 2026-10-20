@@ -103,6 +103,11 @@ binomial spike test, news-vs-pageviews correlation, 7-day forecasts with a rolli
 and a prediction log, number grounding of generated text, log-odds driver words, and a
 Jev-vs-human agreement check. Results and one command per test: [`eval/README.md`](eval/README.md).
 
+On the page: the **지난 분석·예측 / History & accuracy** tab shows the eval results, every past
+analysis (spike verdict, sentences matching sources, numbers found in the data, its
+prediction) and the prediction log. Hovering any part of an analysis (facts, headings,
+sentences, side panels) explains how it was made.
+
 **Worker not ported yet:** the Python version has these; `worker/` still uses the momentum
 ratio and share-ratio drivers, and has no surge-word filter or prediction log (details at the
 end of `eval/README.md`).

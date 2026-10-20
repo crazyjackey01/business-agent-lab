@@ -2,7 +2,9 @@
 //   GET  /             dashboard with a search box (same template as the Python version)
 //   POST /api/analyze  {topic, region, password} -> collect + analyze + save, returns the analysis
 // Analyses and the general-trends snapshot are kept in Workers KV (binding ANALYSES).
+// Eval results come from the Python side (python midterm/eval/summary.py before deploying).
 import template from "../../dashboard_template.html";
+import evalSummary from "../../data/eval/summary.json";
 import { analyze, analyzeOverview } from "./analyze.js";
 import { collectSnapshot, collectTopic } from "./collect.js";
 
@@ -58,6 +60,7 @@ async function page(env) {
   const data = {
     built_at: new Date().toISOString().slice(0, 16),
     analyses, snapshot, overview,
+    eval: evalSummary,
     live: true,
     needs_password: Boolean(env.SEARCH_PASSWORD),
   };

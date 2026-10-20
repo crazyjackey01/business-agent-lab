@@ -55,6 +55,17 @@
       "low": 40.0,
       "high": 100.4,
       "model": "mean28"
+    },
+    {
+      "topic": "전기차",
+      "made_at": "2026-10-19T12:03:01+00:00",
+      "metric": "wikipedia_pageviews_sum:ko.wikipedia/전기자동차",
+      "window_start": "2026-10-19",
+      "window_days": 7,
+      "point": 40.0,
+      "low": 26.4,
+      "high": 56.8,
+      "model": "naive"
     }
   ]
 }

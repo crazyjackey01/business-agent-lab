@@ -27,7 +27,7 @@ Cloudflare Worker (`midterm/worker/`, Node at `~/.local/node/bin`):
 
 ```sh
 cd midterm/worker && npx wrangler dev      # local, reads secrets from .dev.vars (git-ignored)
-cd midterm/worker && npx wrangler deploy   # production
+cd midterm/worker && npx wrangler deploy   # production (run eval/summary.py first: the Worker bundles its JSON)
 ```
 
 Validation (`midterm/eval/`, numpy + scipy; each module runs assert self-checks first):
@@ -41,6 +41,7 @@ python midterm/eval/forecast.py              # 7-day pageview forecasts, rolling
 python midterm/eval/score_predictions.py     # score data/predictions.jsonl once windows end
 python midterm/eval/grounding.py             # numbers in generated text vs the run's facts
 python midterm/eval/jev_agreement.py export|score   # hand-label CSV, Cohen's kappa
+python midterm/eval/summary.py              # collect all results -> data/eval/summary.json (page + Worker)
 ```
 
 There is no other test suite or linter. Rule for eval/: no LLM decides whether a spike is
@@ -53,7 +54,8 @@ real, a prediction was right, or a number is correct; results are in midterm/eva
 - Pipeline: `collect_trends.py` / `topic_trends.py` collect → `data/` JSON →
   `analyze_topic.py` (Jev relevance filter → measured facts → Sonnet writes with citations →
   Jev checks each claim; `jev_api.py`) →
-  `build_dashboard.py` fills `dashboard_template.html` with the newest files.
+  `build_dashboard.py` fills `dashboard_template.html` with every saved analysis and the eval
+  summary (history tab). Elements with `data-how` explain on hover how that part was made.
   `app.py` serves the same template with `live: true`, which shows a search box that
   POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
 - Search purpose lives in `intent.py` / `worker/src/intent.js`: Jev sorts every autocomplete

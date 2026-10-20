@@ -5,6 +5,8 @@ file (no server needed, open it in a browser):
   - one section per analyzed topic: coverage chart, search intent, news drivers,
     scheduled events, and the cited explanation (every citation links to its source)
   - the latest general trends: Google Trends and most-viewed Wikipedia articles
+  - history: every saved analysis (with how many of its numbers are in its own facts),
+    the prediction log and the eval results (eval/summary.py)
 
 Usage:
     python midterm/build_dashboard.py
@@ -18,19 +20,26 @@ import webbrowser
 from datetime import datetime
 from pathlib import Path
 
+from eval.grounding import check_run
+from eval.summary import summary
+
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
 OUTPUT = HERE / "dashboard.html"
 TEMPLATE = HERE / "dashboard_template.html"
 
 
-def newest_per_topic(folder):
-    """The newest file for each topic in a folder, keyed by topic."""
-    latest = {}
-    for path in sorted(folder.glob("*.json")):  # names end with the time, so sorted = oldest first
-        data = json.loads(path.read_text(encoding="utf-8"))
-        latest[data["topic"]] = data
-    return list(latest.values())
+def add_grounding(analysis):
+    """How many numbers in the analysis's sentences appear in its own facts (eval/grounding.py)."""
+    rows = check_run(analysis)
+    analysis["grounding"] = {"numbers": len(rows), "grounded": sum(r["grounded"] for r in rows)}
+    return analysis
+
+
+def all_analyses(folder):
+    """Every saved analysis, newest first, each with its number-grounding count."""
+    analyses = [add_grounding(json.loads(path.read_text(encoding="utf-8"))) for path in folder.glob("*.json")]
+    return sorted(analyses, key=lambda a: a.get("analyzed_at") or a.get("source_collected_at") or "", reverse=True)
 
 
 def newest_file(folder):
@@ -39,11 +48,11 @@ def newest_file(folder):
 
 
 def payload():
-    analyses = newest_per_topic(DATA / "analysis") if (DATA / "analysis").exists() else []
-    analyses.sort(key=lambda a: a["facts"]["coverage"]["momentum"], reverse=True)  # hottest topic first
+    analyses = all_analyses(DATA / "analysis") if (DATA / "analysis").exists() else []
     return {
         "built_at": datetime.now().astimezone().isoformat(timespec="minutes"),
         "analyses": analyses,
+        "eval": summary(),
         "snapshot": newest_file(DATA / "snapshots") if (DATA / "snapshots").exists() else None,
     }
 

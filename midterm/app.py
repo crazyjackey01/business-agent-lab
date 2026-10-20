@@ -21,7 +21,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from analyze_topic import analyze, save_analysis
-from build_dashboard import payload, render
+from build_dashboard import add_grounding, payload, render
 from overview import analyze_overview
 
 MAX_TOPIC_LENGTH = 60
@@ -78,6 +78,7 @@ class Handler(BaseHTTPRequestHandler):
             print(f"searching: {topic} ({geo})")
             result = analyze(topic, lang, geo, refresh=True)
             save_analysis(result)
+            add_grounding(result)
         except Exception as error:  # show any failure on the page instead of a dead request
             return self.send_json(500, {"error": f"{type(error).__name__}: {error}"})
         finally:

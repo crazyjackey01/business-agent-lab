@@ -100,7 +100,9 @@ def score():
                       "agreement": round(sum(band) / len(band), 2) if band else None})
         print(f"  {table[-1]['band']}: n={len(band):2}  agreement {'-' if not band else f'{sum(band) / len(band):.0%}'}")
     (OUT / "jev_agreement.json").write_text(json.dumps(
-        {"n": len(rows), "agreement": round(agree, 3), "kappa": round(kappa, 3), "calibration": table},
+        {"n": len(rows), "agreement": round(agree, 3), "kappa": round(kappa, 3), "calibration": table,
+         "confusion_jev_by_human": {j: {h: sum(1 for a, b in zip(jev, human) if a == j and b == h) for h in LABELS}
+                                    for j in LABELS}},
         indent=2), encoding="utf-8")
 
 

@@ -18,5 +18,22 @@
       "n": 10,
       "agreement": 0.7
     }
-  ]
+  ],
+  "confusion_jev_by_human": {
+    "supported": {
+      "supported": 14,
+      "partly": 6,
+      "unsupported": 0
+    },
+    "partly": {
+      "supported": 7,
+      "partly": 1,
+      "unsupported": 2
+    },
+    "unsupported": {
+      "supported": 0,
+      "partly": 0,
+      "unsupported": 0
+    }
+  }
 }
