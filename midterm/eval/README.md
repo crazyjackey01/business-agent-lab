@@ -27,6 +27,11 @@ runs its own assert-based self-check first.
 3. **100% of the numbers in generated text are grounded in the run's own facts**:
    192 of 192, including 79 of 79 distinctive numbers (≥ 100 or with decimals). By
    chance, checked against another topic's facts, only 25% of distinctive numbers match.
+4. **Jev's supported/partly verdicts do not match a human's** (30 hand-scored claims):
+   Cohen's kappa −0.10 (no better than chance), 50% raw agreement. Jev is more reliable when
+   confident (70% agreement at confidence ≥ 0.8, 33% below 0.6), and it never rated as
+   supported a claim the human called unsupported. So Jev's dot is a weak signal, which is why the
+   numbers in the text are checked by code (point 3), not by Jev.
 
 **Google Trends** gives a relative 0–100 index of how much people searched a term, not raw
 counts (Google publishes none; Keyword Planner gives monthly ranges with an Ads account).
@@ -202,6 +207,21 @@ partly / unsupported), then run `python midterm/eval/jev_agreement.py score` for
 kappa, a confusion table and agreement per Jev-confidence band. Limit: claims Jev rated
 unsupported were deleted before saving, so the sample holds only claims Jev kept.
 
+Result (2026-10-20): the human scored each claim 0–1 for how well its sources support it
+(column `human_score`), converted with a fixed rule: ≥ 0.7 supported, 0.4–0.69 partly,
+< 0.4 unsupported.
+
+| | human: supported | partly | unsupported |
+|---|---|---|---|
+| Jev: supported | 14 | 6 | 0 |
+| Jev: partly | 7 | 1 | 2 |
+
+Agreement 50%, **kappa −0.10**. The cut-off does not change the conclusion: kappa is +0.06 at
+0.6 and −0.08 at 0.8. Human scores are about the same for claims Jev called supported (mean
+0.73) and partly (0.66; Mann-Whitney p = 0.75). Calibration: agreement 33% when Jev's
+confidence is under 0.6, 50% at 0.6–0.8, 70% at 0.8 and above. The two claims the human
+called unsupported were both rated partly by Jev (kept, with a yellow dot), not supported.
+
 ## Not covered yet
 
 - **The Cloudflare Worker (`midterm/worker/`) is not ported.** It still shows the momentum
@@ -210,4 +230,4 @@ unsupported were deleted before saving, so the sample holds only claims Jev kept
   (needs counts the Worker cannot get; at least drop surge words, since without counts nothing
   can support them), log-odds drivers (`fightin.py` → JS), and the prediction log.
 - Predictions can't be scored before 2026-10-26.
-- Kappa needs your 30 labels.
+- Kappa is from one labeller; a second person's labels would show how much humans agree.

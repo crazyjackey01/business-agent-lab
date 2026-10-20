@@ -1,0 +1,22 @@
+{
+  "n": 30,
+  "agreement": 0.5,
+  "kappa": -0.098,
+  "calibration": [
+    {
+      "band": "0.0-0.6",
+      "n": 12,
+      "agreement": 0.33
+    },
+    {
+      "band": "0.6-0.8",
+      "n": 8,
+      "agreement": 0.5
+    },
+    {
+      "band": "0.8-1.0",
+      "n": 10,
+      "agreement": 0.7
+    }
+  ]
+}
