@@ -1,12 +1,12 @@
 {
   "n": 30,
-  "agreement": 0.633,
-  "kappa": 0.057,
+  "agreement": 0.5,
+  "kappa": -0.098,
   "calibration": [
     {
       "band": "0.0-0.6",
       "n": 12,
-      "agreement": 0.67
+      "agreement": 0.33
     },
     {
       "band": "0.6-0.8",

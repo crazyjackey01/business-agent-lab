@@ -27,12 +27,11 @@ runs its own assert-based self-check first.
 3. **100% of the numbers in generated text are grounded in the run's own facts**:
    192 of 192, including 79 of 79 distinctive numbers (≥ 100 or with decimals). By
    chance, checked against another topic's facts, only 25% of distinctive numbers match.
-4. **Jev's supported/partly verdicts barely match a human's** (30 hand-scored claims):
-   63% raw agreement but Cohen's kappa 0.06, i.e. about what chance gives. Jev calls most
-   claims supported and so does the human, so agreeing on those proves little; on the claims
-   Jev marked partly the human disagreed in all 10. Jev never rated as supported a claim the
-   human called unsupported. So Jev's dot is a weak signal, which is why the numbers in the
-   text are checked by code (point 3), not by Jev.
+4. **Jev's supported/partly verdicts do not match a human's** (30 hand-scored claims):
+   50% raw agreement, Cohen's kappa −0.10, i.e. no better than chance. Jev is more often
+   right when confident (70% agreement at confidence ≥ 0.8, 33% below 0.6), and it never rated
+   as supported a claim the human called unsupported. So Jev's dot is a weak signal, which is
+   why the numbers in the text are checked by code (point 3), not by Jev.
 
 **Google Trends** gives a relative 0–100 index of how much people searched a term, not raw
 counts (Google publishes none; Keyword Planner gives monthly ranges with an Ads account).
@@ -209,20 +208,20 @@ kappa, a confusion table and agreement per Jev-confidence band. Limit: claims Je
 unsupported were deleted before saving, so the sample holds only claims Jev kept.
 
 Result (2026-10-20): the human scored each claim 0–1 for how well its sources support it
-(column `human_score`), with 0.5 as the middle: above 0.5 supported, exactly 0.5 partly,
-below 0.5 unsupported.
+(column `human_score`), with a band around 0.5 as the middle: above 0.6 supported, 0.4–0.6
+partly, below 0.4 unsupported.
 
 | | human: supported | partly | unsupported |
 |---|---|---|---|
-| Jev: supported | 19 | 1 | 0 |
-| Jev: partly | 8 | 0 | 2 |
+| Jev: supported | 14 | 6 | 0 |
+| Jev: partly | 7 | 1 | 2 |
 
-Agreement 63%, **kappa 0.06**. Other cut-offs give the same conclusion (kappa −0.10 to +0.06
-for supported at ≥ 0.6, 0.7 or 0.8). Human scores are about the same for claims Jev called
-supported (mean 0.73) and partly (0.66; Mann-Whitney p = 0.75). Calibration: agreement 67%
-when Jev's confidence is under 0.6, 50% at 0.6–0.8, 70% at 0.8 and above, so Jev's confidence
-does not tell reliable verdicts apart either. The two claims the human called unsupported
-were both rated partly by Jev (kept, with a yellow dot), not supported.
+Agreement 50%, **kappa −0.10**. Other cut-offs give the same conclusion (kappa −0.10 to +0.06,
+e.g. +0.06 with only exactly 0.5 as partly). Human scores are about the same for claims Jev
+called supported (mean 0.73) and partly (0.66; Mann-Whitney p = 0.75). Calibration: agreement
+33% when Jev's confidence is under 0.6, 50% at 0.6–0.8, 70% at 0.8 and above. The two claims
+the human called unsupported were both rated partly by Jev (kept, with a yellow dot), not
+supported.
 
 ## Not covered yet
 
