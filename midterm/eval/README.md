@@ -25,7 +25,7 @@ runs its own assert-based self-check first.
    on average (49–98% by topic). Sudden jumps are missed: 스마트 안경 went to 100 against a
    forecast of 26.
 3. **100% of the numbers in generated text are grounded in the run's own facts**:
-   192 of 192, including 79 of 79 distinctive numbers (≥ 100 or with decimals). By
+   205 of 205, including 82 of 82 distinctive numbers (≥ 100 or with decimals). By
    chance, checked against another topic's facts, only 25% of distinctive numbers match.
 4. **Jev's supported/partly verdicts do not match a human's** (30 hand-scored claims):
    50% raw agreement, Cohen's kappa −0.10, i.e. no better than chance. Jev is more often
@@ -180,12 +180,12 @@ to show how often a number matches by chance.
 
 **Run:** `python midterm/eval/grounding.py` → `data/eval/grounding.{md,json}`
 
-12 analyses, 217 claims, 192 numbers: **192 grounded (100%)**, none ungrounded.
+13 analyses, 232 claims, 205 numbers: **205 grounded (100%)**, none ungrounded.
 
 | numbers checked against | all numbers | distinctive (≥ 100 or decimal) |
 |---|---|---|
-| the run's own facts | 192/192 (100%) | 79/79 (100%) |
-| another topic's facts (chance) | 1050/1750 (60%) | 176/713 (25%) |
+| the run's own facts | 205/205 (100%) | 82/82 (100%) |
+| another topic's facts (chance) | 1223/2003 (61%) | 202/800 (25%) |
 
 Grounded means the number exists in the evidence, not that the sentence uses it correctly
 (a right number in a wrong claim still passes).
