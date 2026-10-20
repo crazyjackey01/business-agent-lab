@@ -156,7 +156,8 @@
 
   /* "How was this made": any element with data-how explains itself on hover or focus. */
   [data-how] { cursor: help; }
-  [data-how]:hover { background: var(--accent-soft); border-radius: 4px; }
+  .fact[data-how] span, .card[data-how] span { text-decoration: underline dotted var(--ink-soft); text-underline-offset: 3px; }
+  .hint { font-size: 12px; color: var(--ink-soft); margin: -4px 0 14px; }
   h2.sec[data-how]::after { content: " ⓘ"; font-weight: 400; color: var(--ink-soft); }
   #how-tip { position: fixed; z-index: 10; max-width: min(380px, calc(100vw - 32px)); padding: 10px 12px;
     background: var(--ink); color: var(--sheet); border-radius: 6px; font: 400 13px/1.55 var(--sans);
@@ -166,6 +167,7 @@
   /* History: eval results */
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 0 0 12px; }
   .card { border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
+  .card strong { display: block; font: 600 15px/1.4 var(--sans); margin-bottom: 8px; }
   .card b { display: block; font: 700 26px/1.2 var(--sans); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
   .card span { font-size: 13px; color: var(--ink-soft); }
   .hist-sec + .hist-sec { margin-top: 40px; }
@@ -175,6 +177,8 @@
   table.ev td, table.ev th { padding: 7px 12px 7px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   table.ev .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
   table.ev .sig { font-weight: 700; }
+  details.details > summary { font-size: 14px; }
+  details.details h3 { font: 700 14px var(--sans); margin: 24px 0 8px; }
 
 </style>
 </head>
@@ -216,6 +220,8 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const pct = x => Math.round(x * 100) + "%";
 // A logged prediction's window ends window_days after window_start (YYYY-MM-DD).
+const md = d => new Intl.DateTimeFormat(LANG === "ko" ? "ko-KR" : "en-US", { month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(d + "T00:00:00Z"));
+const chance = p => p < 0.001 ? (LANG === "ko" ? "0.1% 미만" : "under 0.1%") : (p * 100).toFixed(1) + "%";
 const windowEnd = p => { const d = new Date(p.window_start + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + p.window_days); return d.toISOString().slice(0, 10); };
 // Times in the searchers' own zone, the way a Korean reader writes them.
 const ZONES = { KR: "Asia/Seoul", US: "America/New_York" };
@@ -237,8 +243,8 @@ const STR = {
     no_claims: "출처로 뒷받침되는 내용이 없다.", likely: "가능성", conf_low: "낮음", conf_medium: "보통", conf_high: "높음",
     sources: "출처", usage: "사용량", step: "단계", model: "모델", tokens: "토큰 입력 / 출력", cost: "비용", free: "무료",
     f_articles: n => [`${n}건`, "구글 검색으로 찾은 기사"], f_momentum: (x, n) => [`${x}배`, `평소 대비 기사량 (최근 24시간 ${n}건)`],
-    f_spike: (v, p, n, mean) => [v, `기사량 검정 p=${p.toPrecision(2)} (최근 24시간 ${n}건, 평소 ${mean}건)`],
-    verdict_spike: "급증", verdict_elevated: "다소 많음", verdict_normal: "평소 수준", verdict_uncertain: "판단 보류 (상한 걸림)",
+    f_spike: (v, p, n, mean) => [v, `기사량 (최근 24시간 ${n}건, 평소 하루 ${Math.round(mean)}건)`],
+    verdict_spike: "급증", verdict_elevated: "다소 많음", verdict_normal: "평소 수준", verdict_uncertain: "판단 보류",
     f_intent: (p, k) => [p, `검색 목적 1위: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "출처와 일치한 문장"],
     f_dropped: n => [`${n}건`, "관련 없어 뺀 기사"],
     per_day: "24시간별 기사 수", today: "최근 24h", days_ago: n => `${n}일 전`,
@@ -258,49 +264,52 @@ const STR = {
     need_pw: "비밀번호를 입력해야 분석할 수 있다.",
     busy_topic: (q, s) => `"${q}" 구글 검색과 분석 중… ${s}초 (보통 1~2분)`, busy_now: s => `지금 뜨는 검색어를 모으고 이유를 찾는 중… ${s}초 (보통 30초 안)`,
     done: s => `${s}초 만에 끝났다.`, failed: "분석 실패: ", switch_to: "EN",
-    // Hover: how each part was made
-    how_kicker: (c, a) => `데이터 수집: ${c}\n분석: ${a}`,
-    how_answer: w => `요약 문장. 작성 모델(${w})이 번호 붙은 측정 데이터(D)와 기사(S)만 보고 썼고, 문장마다 근거 번호를 달아야 한다. 번호가 없거나 없는 번호를 단 문장은 버렸다.`,
-    how_claim: (cites, check) => `근거:\n${cites}\n\nJev 검사: ${check}`,
-    how_spike: s => `코드로 판정한 통계 검정 (AI 모델이 판정하지 않는다).\n최근 24시간 기사 ${s.today}건을 앞선 ${s.baseline.length}개 24시간 구간(평균 ${s.baseline_mean}건)과 비교했다. 음이항 분포로 계산한 '평소라면 이만큼 이상 나올 확률' p = ${s.p_value.toPrecision(2)}.\np < 0.01 급증, p < 0.05 다소 많음, 그 외 평소 수준. 구글 뉴스 100건 상한에 걸린 구간이 있으면 판단 보류.`,
-    how_momentum: (n, avg) => `최근 24시간 기사 수 ÷ 앞선 구간 하루 평균 (${n} ÷ ${avg}).`,
-    how_intent: m => `구글 자동완성: 주제에 ㄱ–ㅎ / a–z를 붙여 사람들이 함께 치는 문구를 모았다. 단어 목록으로 목적을 나누고, 목록에 없는 문구는 Jev가 분류했다 (${m}). 비율 = 그 목적의 문구 수 ÷ 전체 문구 수.`,
-    how_supported: (removed, g) => `문장마다 Jev가 그 문장이 인용한 출처만 보고 일치 / 일부 / 불일치와 확률을 냈다. 불일치로 판정된 문장 ${removed}개는 뺐다.` + (g ? `\n숫자 검사 (코드): 문장 속 숫자 ${g.grounded}/${g.numbers}개가 수집 데이터에 그대로 있다.` : ""),
-    how_dropped: (kept, n) => `기사마다 Jev에게 '주로 이 주제에 관한 기사인가?'를 물어 확률 50% 미만인 ${n}건을 뺐다. 남은 기사 ${kept}건.`,
-    how_section: (w, surge) => `작성 모델(${w})이 측정 데이터와 기사만 보고 썼고, 문장마다 근거 번호가 있어야 한다. 기사량 검정 결과가 '급증'이 아니면 '급증·폭증' 같은 말을 쓸 수 없다${surge ? ` (그런 문장 ${surge}개 삭제)` : ""}. 각 문장에 마우스를 올리면 근거와 검사 결과가 보인다.`,
-    how_outlook: "가능성(낮음/보통/높음)은 작성 모델이 붙였고, 회색 줄이 그 근거다. 맞았는지는 '지난 분석·예측' 탭의 예측 기록으로 채점한다.",
-    how_coverage: (cap, spam) => `구글 뉴스 RSS에서 24시간 구간마다 주제를 검색해 센 기사 수. 한 번에 100건까지만 주므로 상한에 걸린 구간 ${cap}개는 실제보다 적다.${spam ? ` 도박 스팸 ${spam}건은 세기 전에 뺐다.` : ""}`,
-    how_typed: "구글 자동완성에 나온 문구.",
-    how_dates: "기사 제목에서 날짜 표현을 정규식으로 찾아, 앞으로 있을 일정을 모았다.",
-    drivers: "최근 24시간에 갑자기 많아진 말",
-    how_drivers: "최근 24시간 헤드라인과 그 전 헤드라인의 단어 빈도를 비교한 로그 오즈 z 점수 (Fightin' Words, 사전분포 α0 = 500). z > 1.96 (유의수준 5%)인 단어만 남긴다. 코드로 계산했다.",
-    prediction: "예측: 다음 7일 위키백과 조회수",
-    pred_value: p => `${p.point} (80% 범위 ${p.low}–${p.high})`,
-    how_pred: (model, end) => `위키백과 조회수 3년치로 여러 모델(지난주와 같음, 28일 평균, 지수평활, 급증 후 감소)을 과거 시점마다 시험해 오차가 가장 작은 '${model}'을 골랐다. 범위는 과거 오차의 10–90% 구간. ${end} 이후 실제 값으로 채점한다.`,
-    how_now_kicker: "구글 트렌드 실시간 인기 검색어(RSS)와, 구글이 각 검색어에 연결한 기사.",
-    how_category: c => `Jev가 검색어와 연결 기사 제목을 보고 고른 분류${c ? ` (확률 ${c})` : ""}.`,
-    how_now_why: (w, check) => `작성 모델(${w})이 연결 기사만 보고 쓴 한 줄 설명.\nJev 검사: ${check}`,
-    // History tab: past analyses, predictions, eval
-    ev_title: "검증 결과", ev_note: "모든 판정은 통계 코드로 했다. AI 모델은 맞고 틀림을 판정하지 않는다. 카드에 마우스를 올리면 방법이 보인다.",
-    card_corr: (s, n, d) => [`${s}/${n}`, `주제에서 기사량이 실제 검색 관심과 함께 움직였다 (${d}일, p < 0.05)`],
-    card_cov: c => [pct(c), "80% 예측 범위가 실제 값을 맞힌 비율 (모델이 못 본 기간)"],
-    card_ground: (g, n, ch) => [`${g}/${n}`, `생성 문장 속 숫자가 수집 데이터에 있었다 (우연이면 ${ch})`],
-    card_kappa: (k, a) => [k.toFixed(2), `Jev와 사람 판정의 일치도 κ (0 = 우연 수준, 단순 일치 ${a})`],
-    how_corr: "매일 기사 수를 구글 트렌드 검색 관심(0–100)과 위키백과 조회수에 90일 동안 비교했다. 스피어만 순위상관(ρ)과 p값을 계산하고, ±3일 어긋나게 해서 어느 쪽이 먼저 움직이는지도 봤다.",
-    how_cov: "주별 구글 트렌드(5년)와 일별 위키백과 조회수(3년). 모델과 범위는 앞부분 데이터로만 고르고, 마지막 52주 / 180일(모델이 못 본 기간)로 채점했다. 80%에 가까울수록 범위가 정직하다.",
-    how_ground: "정규식으로 문장의 모든 숫자를 뽑아 그 분석에 준 데이터와 기사에서 같은 값을 찾았다 (표시된 자릿수 기준). 대조군: 다른 주제의 데이터로 검사하면 100 이상이거나 소수인 숫자가 우연히 맞는 비율.",
-    how_kappa: "Jev가 검사한 문장 30개를 무작위로 뽑아 사람이 0–1 점수를 매겼다 (0.6 초과 일치, 0.4–0.6 일부, 0.4 미만 불일치). 코헨 카파는 우연히 맞는 만큼을 뺀 일치도다: 1 완벽, 0 우연 수준.",
-    past_title: "지난 분석", past_note: "분석을 누르면 주제 분석 탭에서 다시 볼 수 있다.",
-    badge_sentences: (a, b) => `문장 ${a}/${b} 일치`, badge_numbers: (g, n) => `숫자 ${g}/${n} 확인`,
-    log_title: "예측 기록", log_note: "분석할 때마다 다음 7일 위키백과 조회수 합계를 예측해 기록한다. 기간이 끝나면 실제 값으로 채점한다.",
-    col_topic: "주제", col_made: "예측한 때", col_window: "기간", col_pred: "예측 (80% 범위)", col_actual: "실제", col_result: "결과",
-    pending: d => `${d} 이후 채점`, inside: "범위 안", outside: "범위 밖",
-    pt_title: "예측 정확도: 모델이 못 본 기간", pt_note: "모델과 범위는 이전 데이터로만 골랐다. MASE 1 미만이면 '지난번과 같다'는 단순 예측보다 낫다.",
-    col_source: "데이터", col_model: "모델", col_mape: "평균 오차율", col_mase: "MASE", col_cov: "80% 범위 적중", col_dir: "오르내림 적중 (p)", col_example: "실제 예시",
-    src_google: "구글 트렌드 (다음 주)", src_wiki: "위키백과 (다음 7일)", src_wikipedia: "위키백과",
-    gt_title: d => `기사량 vs 실제 관심 (${d}일)`, gt_note: "굵은 글씨는 p < 0.05. 시차: 가장 잘 맞는 어긋남 (일).",
-    col_rho: "순위상관 ρ", col_p: "p", col_lag: "시차",
-    kappa_title: "Jev 판정 vs 사람 판정", jev_rows: "Jev ↓ / 사람 →", calib: "Jev 확신도별 일치율",
+    // Hover: how each part was made (plain words first; the method in one short line)
+    hint: "ⓘ 표시나 점선 친 부분에 마우스를 올리면 어떻게 만들었는지 보인다.",
+    how_kicker: (c, a) => `데이터를 모은 때: ${c}\n분석한 때: ${a}`,
+    how_answer: w => `한 줄 요약. AI(${w})가 모은 기사와 숫자만 보고 썼다. 근거를 달지 못한 문장은 자동으로 지웠다.`,
+    how_claim: (n, check) => `이 문장의 근거: 기사·데이터 ${n}개 (문장 끝 번호를 누르면 기사로 간다)\nAI 검사기 판정: ${check}`,
+    how_spike: s => `최근 24시간 기사 ${s.today}건, 평소 하루 ${Math.round(s.baseline_mean)}건.\n이 정도 차이가 우연히 생길 확률은 ${chance(s.p_value)}. 5%보다 낮으면 '다소 많음', 1%보다 낮으면 '급증'이다.\nAI가 아니라 통계 계산으로 판정했다.`,
+    how_momentum: (n, avg) => `최근 24시간 기사 ${n}건 ÷ 평소 하루 ${avg}건.`,
+    how_intent: () => "구글 검색창 자동완성에 뜨는 문구를 모아, 무엇을 알고 싶어 하는지 목적별로 나눈 비율.",
+    how_supported: (removed, g) => `AI 검사기(Jev)가 문장마다 인용한 기사와 내용이 맞는지 확인했다.${removed ? ` 맞지 않는 문장 ${removed}개는 지웠다.` : ""}` + (g ? `\n문장 속 숫자 ${g.numbers}개 중 ${g.grounded}개가 실제 데이터와 같다 (코드로 확인).` : ""),
+    how_dropped: (kept, n) => `주제와 상관없는 기사 ${n}건을 뺐다 (AI 검사기가 판단). 남은 기사 ${kept}건.`,
+    how_section: w => `AI(${w})가 모은 기사와 숫자만 보고 썼다.\n문장 앞 점: 초록 = 기사와 일치, 노랑 = 일부만 일치, 회색 = 확실하지 않음.\n문장에 마우스를 올리면 근거가 보인다.`,
+    how_outlook: "'가능성'은 AI의 추정이다. 실제로 맞았는지는 '지난 분석·예측' 탭에서 확인한다.",
+    how_coverage: (cap, spam) => `구글 뉴스에서 24시간마다 찾은 기사 수.${cap ? ` 구글 뉴스는 한 번에 100건까지만 보여 줘서 ${cap}일은 실제보다 적게 셌다.` : ""}${spam ? ` 도박 광고 기사 ${spam}건은 뺐다.` : ""}`,
+    how_typed: "구글 검색창 자동완성에 뜨는 문구.",
+    how_dates: "기사 제목에 나온 날짜로 찾은 앞으로의 일정.",
+    drivers: "오늘 갑자기 많이 나온 말", driver_n: n => `${n}건`,
+    how_drivers: "최근 24시간 기사 제목에 평소보다 눈에 띄게 많이 나온 단어. 우연으로 보기 어려운 것만 남겼다 (통계 계산). 숫자는 오늘 그 단어가 나온 제목 수.",
+    prediction: "다음 7일 관심도 예측",
+    pred_value: p => `위키백과 조회수 약 ${Math.round(p.point)}회 (${Math.round(p.low)}–${Math.round(p.high)})`,
+    how_pred: end => `관심도는 위키백과 조회수로 잰다. 지난 3년치 조회수로 여러 예측 방법을 시험해 가장 잘 맞은 방법을 썼다.\n괄호는 10번 중 8번 들어가야 하는 범위. ${md(end)}에 실제 값과 비교한다.`,
+    how_now_kicker: "구글 트렌드의 실시간 인기 검색어와, 구글이 각 검색어에 연결한 기사.",
+    how_category: c => `AI 검사기(Jev)가 붙인 분류${c ? ` (확신 ${c})` : ""}.`,
+    how_now_why: (w, check) => `AI(${w})가 연결된 기사만 보고 쓴 설명.\nAI 검사기 판정: ${check}`,
+    // History tab
+    ev_title: "이 서비스는 얼마나 믿을 만한가?", ev_note: "아래 점검은 모두 AI가 아니라 통계 계산으로 했다. 카드에 마우스를 올리면 방법이 보인다.",
+    card_ground: (g, n) => [g === n ? "숫자를 지어내지 않았다" : "숫자 일부는 데이터에 없었다", `${g}/${n}`, "AI가 쓴 문장 속 숫자 중 모은 데이터에 그대로 있는 것"],
+    card_corr: (s, n) => ["뉴스가 늘면 실제 검색도 늘었다", `${s}/${n}개 주제`, "90일 동안 기사 수와 실제 검색량이 함께 움직인 주제"],
+    card_cov: c => ["예측은 대체로 범위 안에 들었다", `10번 중 ${Math.round(c * 10)}번`, "예측 모델이 보지 못한 최근 기간에서, 실제 값이 예측 범위 안에 든 횟수 (목표: 10번 중 8번)"],
+    card_kappa: (k, a) => [k < 0.2 ? "AI 검사기는 사람과 자주 달랐다" : k < 0.6 ? "AI 검사기는 사람과 어느 정도 같았다" : "AI 검사기는 사람과 대체로 같았다",
+      `${pct(a)} 같음`, "문장 30개를 사람이 직접 판정해 AI 검사기(Jev)와 비교했다. 우연을 뺀 일치도 κ = " + k.toFixed(2)],
+    how_corr: "날마다 기사 수를 구글 트렌드 검색량, 위키백과 조회수와 비교했다 (스피어만 순위상관). 우연일 확률이 5% 미만인 것만 '함께 움직였다'고 셌다.",
+    how_cov: "주별 구글 트렌드 5년치, 일별 위키백과 조회수 3년치. 예측 방법은 앞부분 데이터로만 고르고, 마지막 1년 / 180일로 채점했다.",
+    how_ground: "문장의 숫자를 모두 뽑아 그 분석에 준 데이터에서 같은 값을 찾았다. 다른 주제의 데이터로 똑같이 해 보면 큰 숫자는 25%만 우연히 맞는다. 그러니 100%는 우연이 아니다.",
+    how_kappa: "사람이 0–1로 점수를 매겼다 (0.6 초과 = 일치, 0.4–0.6 = 일부, 0.4 미만 = 불일치). 그래서 숫자 확인은 AI 검사기가 아니라 코드로 한다.",
+    past_title: "지난 분석", past_note: "누르면 다시 볼 수 있다.",
+    badge_numbers: (g, n) => `숫자 ${g}/${n} 확인`, badge_volume: v => `기사량 ${v}`,
+    log_title: "예측 기록", log_note: "분석할 때마다 다음 7일 관심도(위키백과 조회수)를 미리 적어 두고, 7일이 지나면 맞았는지 확인한다.",
+    col_topic: "주제", col_pred: "예측", col_result: "결과",
+    pending: d => `${md(d)}에 확인`, inside: a => `맞음 (실제 ${a})`, outside: a => `빗나감 (실제 ${a})`,
+    details: "자세한 수치 보기",
+    pt_title: "예측 정확도 (모델이 보지 못한 기간)",
+    col_source: "데이터", col_error: "평균 오차", col_inrange: "범위 안", col_example: "예시: 예측 → 실제",
+    src_google: "구글 검색량 (다음 주)", src_wiki: "위키백과 (다음 7일)", src_wikipedia: "위키백과 조회수", src_gtrends: "구글 검색량",
+    gt_title: "기사 수와 실제 검색량 (90일)", col_vs: "비교 대상", col_strength: "함께 움직인 정도", col_real: "우연이 아님?",
+    strength: r => Math.abs(r) < 0.1 ? "없음" : Math.abs(r) < 0.3 ? "약함" : Math.abs(r) < 0.5 ? "보통" : "강함", yes: "예", no: "아니오",
+    kappa_title: "AI 검사기 vs 사람 (문장 30개)", jev_rows: "AI 검사기 ↓ / 사람 →",
   },
   en: {
     brand: "Trend Signals", topic_ph: "Topic to analyze (e.g. physical AI) · empty = trending now", password: "Password",
@@ -310,8 +319,8 @@ const STR = {
     no_claims: "Nothing the sources support.", likely: "likelihood", conf_low: "low", conf_medium: "medium", conf_high: "high",
     sources: "Sources", usage: "Usage", step: "Step", model: "Model", tokens: "Tokens in / out", cost: "Cost", free: "free",
     f_articles: n => [String(n), "articles found with Google Search"], f_momentum: (x, n) => [`${x}×`, `news vs usual (${n} in the last 24h)`],
-    f_spike: (v, p, n, mean) => [v, `news-volume test p=${p.toPrecision(2)} (${n} in last 24h, usual ${mean})`],
-    verdict_spike: "spike", verdict_elevated: "elevated", verdict_normal: "normal", verdict_uncertain: "uncertain (capped)",
+    f_spike: (v, p, n, mean) => [v, `news volume (${n} in the last 24h, ${Math.round(mean)} on a usual day)`],
+    verdict_spike: "spike", verdict_elevated: "elevated", verdict_normal: "normal", verdict_uncertain: "can't tell",
     f_intent: (p, k) => [p, `top search purpose: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "sentences matching sources"],
     f_dropped: n => [String(n), "off-topic articles dropped"],
     per_day: "Articles per 24 hours", today: "last 24h", days_ago: n => `-${n}d`,
@@ -331,49 +340,52 @@ const STR = {
     need_pw: "Enter the password to run an analysis.",
     busy_topic: (q, s) => `Searching Google and analyzing "${q}"… ${s}s (usually 1–2 min)`, busy_now: s => `Collecting trending searches and finding why… ${s}s (usually under 30 s)`,
     done: s => `Done in ${s} s.`, failed: "Analysis failed: ", switch_to: "한국어",
-    // Hover: how each part was made
+    // Hover: how each part was made (plain words first; the method in one short line)
+    hint: "Hover anything marked ⓘ or underlined with dots to see how it was made.",
     how_kicker: (c, a) => `Data collected: ${c}\nAnalyzed: ${a}`,
-    how_answer: w => `Summary sentence. ${w} saw only the numbered measured facts (D) and articles (S) and had to cite ids for every sentence. Sentences citing nothing or nonexistent ids were dropped.`,
-    how_claim: (cites, check) => `Sources:\n${cites}\n\nJev check: ${check}`,
-    how_spike: s => `A statistical test decided by code (no AI model decides it).\nThe last 24 hours' ${s.today} articles vs the ${s.baseline.length} earlier 24-hour windows (mean ${s.baseline_mean}). Negative binomial model: p = ${s.p_value.toPrecision(2)} is the chance of at least this many on a usual day.\np < 0.01 spike, p < 0.05 elevated, otherwise normal. Uncertain if a window hit Google News' 100-article cap.`,
-    how_momentum: (n, avg) => `Articles in the last 24 hours ÷ daily average before (${n} ÷ ${avg}).`,
-    how_intent: m => `Google autocomplete: the topic plus each letter (ㄱ–ㅎ / a–z) shows what people type with it. Word lists sort phrases by purpose; Jev labels the ones they miss (${m}). Share = phrases with that purpose ÷ all phrases.`,
-    how_supported: (removed, g) => `Jev rated each sentence against only the sources it cites: supported / partly / unsupported, with a probability. ${removed} unsupported sentence(s) removed.` + (g ? `\nNumber check (code): ${g.grounded} of ${g.numbers} numbers in the text appear in the collected data.` : ""),
-    how_dropped: (kept, n) => `For each article Jev was asked "is this mainly about the topic?"; ${n} under 50% were dropped, ${kept} kept.`,
-    how_section: (w, surge) => `Written by ${w} from the measured facts and articles only; every sentence must cite ids. Surge words ("spike", "soaring") are only allowed when the news-volume test says spike${surge ? ` (${surge} such sentence(s) removed)` : ""}. Hover a sentence to see its sources and check.`,
-    how_outlook: "The likelihood (low / medium / high) is the writer's; the grey line is its basis. Whether it came true is scored in the prediction log on the History tab.",
-    how_coverage: (cap, spam) => `Google News RSS searched for the topic in each 24-hour window. It returns at most 100 articles, so ${cap} capped window(s) are undercounted.${spam ? ` ${spam} gambling spam headlines were removed before counting.` : ""}`,
-    how_typed: "Phrases from Google autocomplete.",
-    how_dates: "Dates found in headlines with a regular expression: upcoming scheduled events.",
-    drivers: "Words suddenly frequent in the last 24h",
-    how_drivers: "Log-odds z-scores comparing word frequency in the last 24 hours' headlines with earlier ones (Fightin' Words, prior α0 = 500). Only words with z > 1.96 (5% level) are kept. Computed by code.",
-    prediction: "Prediction: Wikipedia views, next 7 days",
-    pred_value: p => `${p.point} (80% range ${p.low}–${p.high})`,
-    how_pred: (model, end) => `Several models (same as last week, 28-day mean, exponential smoothing, decay after a spike) were tested at every past point on 3 years of Wikipedia pageviews; '${model}' had the smallest error. The range is the 10th–90th percentile of past errors. Scored against the real views after ${end}.`,
-    how_now_kicker: "Google Trends' live trending searches (RSS) and the articles Google links to each.",
-    how_category: c => `Category chosen by Jev from the search term and its linked headlines${c ? ` (probability ${c})` : ""}.`,
-    how_now_why: (w, check) => `One-line explanation by ${w} from the linked articles only.\nJev check: ${check}`,
-    // History tab: past analyses, predictions, eval
-    ev_title: "Validation", ev_note: "Every verdict here is made by statistics in code; no AI model decides what is right. Hover a card to see the method.",
-    card_corr: (s, n, d) => [`${s}/${n}`, `topics where news volume moved with real search interest (${d} days, p < 0.05)`],
-    card_cov: c => [pct(c), "of actual values inside the 80% prediction range (period the model never saw)"],
-    card_ground: (g, n, ch) => [`${g}/${n}`, `numbers in generated text found in the collected data (by chance: ${ch})`],
-    card_kappa: (k, a) => [k.toFixed(2), `Jev vs human agreement, Cohen's κ (0 = chance; raw agreement ${a})`],
-    how_corr: "Daily article counts compared with Google Trends search interest (0–100) and Wikipedia pageviews over 90 days: Spearman rank correlation (ρ) with p-value, also shifted ±3 days to see which moves first.",
-    how_cov: "Weekly Google Trends (5 years) and daily Wikipedia pageviews (3 years). Model and range were chosen on earlier data only and scored on the last 52 weeks / 180 days, which the model never saw. Close to 80% means the range is honest.",
-    how_ground: "Every number in each sentence is extracted with a regular expression and looked up in the data and articles that analysis was given (at the precision shown). Control: checked against another topic's data, how many numbers ≥ 100 or with decimals match by chance.",
-    how_kappa: "30 random Jev-checked sentences were scored 0–1 by a human (above 0.6 supported, 0.4–0.6 partly, below 0.4 unsupported). Cohen's kappa is agreement after removing what chance gives: 1 perfect, 0 chance level.",
-    past_title: "Past analyses", past_note: "Click one to open it in the Topic tab.",
-    badge_sentences: (a, b) => `${a}/${b} sentences match`, badge_numbers: (g, n) => `${g}/${n} numbers found`,
-    log_title: "Prediction log", log_note: "Each analysis logs a forecast of the next 7 days of Wikipedia pageviews. It is scored against the real number once the week is over.",
-    col_topic: "Topic", col_made: "Made", col_window: "Window", col_pred: "Predicted (80% range)", col_actual: "Actual", col_result: "Result",
-    pending: d => `scored after ${d}`, inside: "inside range", outside: "outside range",
-    pt_title: "Prediction accuracy on data the model never saw", pt_note: "Model and range chosen on earlier data only. MASE below 1 beats 'same as last time'.",
-    col_source: "Data", col_model: "Model", col_mape: "Mean error", col_mase: "MASE", col_cov: "80% range hit", col_dir: "Up/down hit (p)", col_example: "Worked example",
-    src_google: "Google Trends (next week)", src_wiki: "Wikipedia (next 7 days)", src_wikipedia: "Wikipedia",
-    gt_title: d => `News volume vs real interest (${d} days)`, gt_note: "Bold: p < 0.05. Lag: the shift (days) that matches best.",
-    col_rho: "Spearman ρ", col_p: "p", col_lag: "Lag",
-    kappa_title: "Jev vs a human", jev_rows: "Jev ↓ / human →", calib: "Agreement by Jev confidence",
+    how_answer: w => `One-line summary. The AI (${w}) saw only the collected articles and numbers. Sentences without a source were removed automatically.`,
+    how_claim: (n, check) => `Backed by ${n} article(s) / data point(s) (click the number at the end to open the article)\nAI checker's verdict: ${check}`,
+    how_spike: s => `${s.today} articles in the last 24 hours; a usual day has ${Math.round(s.baseline_mean)}.\nThe chance of a gap this big happening by luck is ${chance(s.p_value)}. Under 5% = 'elevated', under 1% = 'spike'.\nDecided by a statistical calculation, not by AI.`,
+    how_momentum: (n, avg) => `${n} articles in the last 24 hours ÷ ${avg} on a usual day.`,
+    how_intent: () => "Phrases from Google's search-box autocomplete, sorted by what people want to know.",
+    how_supported: (removed, g) => `An AI checker (Jev) compared each sentence with the articles it cites.${removed ? ` ${removed} sentence(s) that didn't match were removed.` : ""}` + (g ? `\n${g.grounded} of ${g.numbers} numbers in the text match the real data (checked by code).` : ""),
+    how_dropped: (kept, n) => `${n} articles unrelated to the topic were removed (the AI checker decided). ${kept} kept.`,
+    how_section: w => `Written by AI (${w}) from the collected articles and numbers only.\nDot before a sentence: green = matches its sources, yellow = partly, grey = not sure.\nHover a sentence to see its sources.`,
+    how_outlook: "'Likelihood' is the AI's estimate. Whether it came true is checked on the History tab.",
+    how_coverage: (cap, spam) => `Articles Google News found for each 24 hours.${cap ? ` Google News shows at most 100 at a time, so ${cap} day(s) are undercounted.` : ""}${spam ? ` ${spam} gambling-ad articles were removed.` : ""}`,
+    how_typed: "Phrases from Google's search-box autocomplete.",
+    how_dates: "Upcoming events, found from dates in the headlines.",
+    drivers: "Words suddenly common today", driver_n: n => String(n),
+    how_drivers: "Words that appear in the last 24 hours' headlines much more than usual. Only ones unlikely to be luck are kept (statistical calculation). The number is how many of today's headlines have the word.",
+    prediction: "Interest forecast, next 7 days",
+    pred_value: p => `about ${Math.round(p.point)} Wikipedia views (${Math.round(p.low)}–${Math.round(p.high)})`,
+    how_pred: end => `Interest is measured by Wikipedia views. Several forecasting methods were tested on 3 years of views and the best one is used.\nThe range should contain the real value 8 times out of 10. Checked against the real number on ${md(end)}.`,
+    how_now_kicker: "Google Trends' live trending searches and the articles Google links to each.",
+    how_category: c => `Category given by the AI checker (Jev)${c ? ` (confidence ${c})` : ""}.`,
+    how_now_why: (w, check) => `Explanation by AI (${w}) from the linked articles only.\nAI checker's verdict: ${check}`,
+    // History tab
+    ev_title: "How much can you trust this?", ev_note: "Every check below is a statistical calculation, not an AI's opinion. Hover a card to see the method.",
+    card_ground: (g, n) => [g === n ? "It doesn't make up numbers" : "Some numbers weren't in the data", `${g}/${n}`, "numbers in the AI's sentences that appear in the collected data"],
+    card_corr: (s, n) => ["More news meant more real searches", `${s}/${n} topics`, "topics where news volume and real search volume moved together over 90 days"],
+    card_cov: c => ["Forecasts mostly landed in range", `${Math.round(c * 10)} in 10`, "times the real value fell inside the forecast range, in a recent period the model never saw (target: 8 in 10)"],
+    card_kappa: (k, a) => [k < 0.2 ? "The AI checker often disagreed with a human" : k < 0.6 ? "The AI checker partly agreed with a human" : "The AI checker mostly agreed with a human",
+      `${pct(a)} same`, "a human judged 30 sentences and was compared with the AI checker (Jev). Agreement beyond chance κ = " + k.toFixed(2)],
+    how_corr: "Daily article counts compared with Google Trends search volume and Wikipedia views (Spearman rank correlation). Counted only when the chance of luck is under 5%.",
+    how_cov: "5 years of weekly Google Trends and 3 years of daily Wikipedia views. Methods were chosen on the earlier data only and scored on the last year / 180 days.",
+    how_ground: "Every number in each sentence was looked up in the data that analysis was given. Doing the same with another topic's data, only 25% of large numbers match by luck, so 100% is not luck.",
+    how_kappa: "The human scored each sentence 0–1 (above 0.6 = matches, 0.4–0.6 = partly, below 0.4 = doesn't). That is why numbers are checked by code, not by the AI checker.",
+    past_title: "Past analyses", past_note: "Click one to open it again.",
+    badge_numbers: (g, n) => `${g}/${n} numbers checked`, badge_volume: v => `news: ${v}`,
+    log_title: "Prediction log", log_note: "Each analysis writes down a forecast of the next 7 days of interest (Wikipedia views); after 7 days it is checked against what really happened.",
+    col_topic: "Topic", col_pred: "Forecast", col_result: "Result",
+    pending: d => `checked on ${md(d)}`, inside: a => `right (actual ${a})`, outside: a => `missed (actual ${a})`,
+    details: "Show detailed numbers",
+    pt_title: "Forecast accuracy (period the model never saw)",
+    col_source: "Data", col_error: "Average error", col_inrange: "In range", col_example: "Example: forecast → actual",
+    src_google: "Google searches (next week)", src_wiki: "Wikipedia (next 7 days)", src_wikipedia: "Wikipedia views", src_gtrends: "Google searches",
+    gt_title: "News volume vs real searches (90 days)", col_vs: "Compared with", col_strength: "Moved together", col_real: "Not luck?",
+    strength: r => Math.abs(r) < 0.1 ? "no" : Math.abs(r) < 0.3 ? "weakly" : Math.abs(r) < 0.5 ? "moderately" : "strongly", yes: "yes", no: "no",
+    kappa_title: "AI checker vs a human (30 sentences)", jev_rows: "AI checker ↓ / human →",
   },
 };
 const t = (k, ...a) => { const v = STR[LANG][k] ?? STR.ko[k]; return typeof v === "function" ? v(...a) : v; };
@@ -439,11 +451,9 @@ function dotTitle(c) {
     : c.check === "partly" ? "partly" : "unchecked");
   return label + p + (c.check_reason ? ` · ${c.check_reason}` : "");
 }
-// "S12 · 2026-10-19 | outlet | headline" lines for a claim's hover.
-const citesText = (result, ids) => (ids || []).map(id => `${id} · ${(result.evidence?.[id] || "").slice(0, 110)}`).join("\n");
 function claimList(list, refs, outlook) {
   if (!list || !list.length) return `<p class="muted">${t("no_claims")}</p>`;
-  return `<ul class="claims">${list.map(c => `<li${how(t("how_claim", citesText(refs.result, c.cites), dotTitle(c)))}>
+  return `<ul class="claims">${list.map(c => `<li${how(t("how_claim", (c.cites || []).length, dotTitle(c)))}>
       <span class="dot ${dotClass(c)}"></span>
       <div>${esc(c.claim)}${refs.html(c.cites)}${outlook && c.confidence ? `<span class="conf">${t("likely")} ${esc(t("conf_" + c.confidence) || c.confidence)}</span>` : ""}
         ${outlook && c.basis ? `<span class="basis">${esc(c.basis)}</span>` : ""}</div>
@@ -485,14 +495,14 @@ function topicSheet(a) {
   const writer = a.writer_model || "Claude Sonnet";
   const removed = (e.unsupported_claims_removed || 0) + (e.failed_check_removed || 0);
   const summary = e.summary || (e.what_is_happening || [])[0];
-  const answer = summary ? `<p class="answer"${how(t("how_answer", writer) + "\n\n" + t("how_claim", citesText(a, summary.cites), dotTitle(summary)))}>${esc(summary.claim)}${refs.html(summary.cites)}</p>` : "";
+  const answer = summary ? `<p class="answer"${how(t("how_answer", writer) + "\n" + t("how_claim", (summary.cites || []).length, dotTitle(summary)))}>${esc(summary.claim)}${refs.html(summary.cites)}</p>` : "";
 
   const facts = [
     f.news_unavailable
       ? fact(t("f_articles", articleCount))
       : f.spike ? fact(t("f_spike", t("verdict_" + f.spike.verdict.split(" ")[0]), f.spike.p_value, f.spike.today, f.spike.baseline_mean), t("how_spike", f.spike))
       : fact(t("f_momentum", m.momentum, m.today), t("how_momentum", m.today, m.previous_daily_average)),
-    topIntent ? fact(t("f_intent", pct(topIntent.share), intentName(topIntent.intent)), t("how_intent", f.intent_method || "word lists")) : "",
+    topIntent ? fact(t("f_intent", pct(topIntent.share), intentName(topIntent.intent)), t("how_intent")) : "",
     allClaims.length ? fact(t("f_supported", supported, allClaims.length), t("how_supported", removed, a.grounding)) : "",
     f.relevance?.method === "Jev" ? fact(t("f_dropped", f.relevance.dropped.length), t("how_dropped", f.relevance.kept, f.relevance.dropped.length)) : "",
   ].join("");
@@ -514,15 +524,15 @@ function topicSheet(a) {
       </svg></div>`;
   }
   const drivers = (f.drivers || []).slice(0, 8).map(d =>
-    `<div class="bar-row"><span>${esc(d.word)}</span><span class="track"><i style="width:${Math.min(100, d.z / 4 * 100)}%"></i></span><span class="n">z ${esc(d.z)}</span></div>`).join("");
+    `<div class="bar-row"><span>${esc(d.word)}</span><span class="track"><i style="width:${Math.min(100, d.z / 4 * 100)}%"></i></span><span class="n">${esc(t("driver_n", d.headlines_today))}</span></div>`).join("");
   const p = a.prediction && !a.prediction.error ? a.prediction : null;
-  const prediction = p ? `<div class="panel"><h2 class="sec"${how(t("how_pred", p.model, windowEnd(p)))}>${t("prediction")}</h2>
+  const prediction = p ? `<div class="panel"><h2 class="sec"${how(t("how_pred", windowEnd(p)))}>${t("prediction")}</h2>
       <p class="muted" style="margin:0">${esc(t("pred_value", p))}</p></div>` : "";
 
   const body = e.error ? `<p class="muted">${t("write_failed")}: ${esc(e.error)}</p>` : `
-    <div class="block"><h2 class="sec"${how(t("how_section", writer, e.surge_claims_removed))}>${t("why")}</h2>${claimList(e.why_people_search, refs)}</div>
-    <div class="block"><h2 class="sec"${how(t("how_section", writer, e.surge_claims_removed))}>${t("happening")}</h2>${claimList(e.what_is_happening, refs)}</div>
-    <div class="block"><h2 class="sec"${how(t("how_section", writer, e.surge_claims_removed) + "\n" + t("how_outlook"))}>${t("next")}</h2>${claimList(e.outlook, refs, true)}</div>`;
+    <div class="block"><h2 class="sec"${how(t("how_section", writer))}>${t("why")}</h2>${claimList(e.why_people_search, refs)}</div>
+    <div class="block"><h2 class="sec"${how(t("how_section", writer))}>${t("happening")}</h2>${claimList(e.what_is_happening, refs)}</div>
+    <div class="block"><h2 class="sec"${how(t("how_section", writer) + "\n" + t("how_outlook"))}>${t("next")}</h2>${claimList(e.outlook, refs, true)}</div>`;
   const howMade = `<details class="how"><summary>${t("how")}</summary><div class="how-grid">
       <div><h3>${t("process")}</h3>${esc(t("process_text", a.news_source || "Google News feed", f.intent_method || "word lists",
         a.writer_model || "text model", e.checked_by === "jev" ? "Jev" : t("second_model"), removed))}</div>
@@ -543,12 +553,13 @@ function topicSheet(a) {
   return `<article class="sheet">
     <div class="kicker"${how(t("how_kicker", when(a.source_collected_at, a.geo), when(a.analyzed_at, a.geo)))}>${esc(region(a.geo))} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))} ${t("as_of")}</div>
     <h1 class="q">${esc(a.topic)}</h1>
+    <p class="hint">${t("hint")}</p>
     ${answer}
     <div class="facts-row">${facts}</div>
     <div class="cols">
       <div>${body}</div>
       <aside>
-        ${intents ? `<div class="panel"><h2 class="sec"${how(t("how_intent", f.intent_method || "word lists"))}>${t("intent_title")}</h2>${intents}<p class="muted">${t("intent_note")}</p></div>` : ""}
+        ${intents ? `<div class="panel"><h2 class="sec"${how(t("how_intent"))}>${t("intent_title")}</h2>${intents}<p class="muted">${t("intent_note")}</p></div>` : ""}
         ${coverage}
         ${drivers ? `<div class="panel"><h2 class="sec"${how(t("how_drivers"))}>${t("drivers")}</h2>${drivers}</div>` : ""}
         ${prediction}
@@ -576,7 +587,7 @@ function overviewSheet(o) {
       <span class="term">${esc(r.term)}</span><span class="vol">${esc(r.traffic_text)}</span>
       ${r.category ? `<span class="chip"${how(t("how_category", r.category_confidence != null ? pct(r.category_confidence) : ""))}>${esc(categoryName(r.category))}</span>` : ""}
       ${r.on_wikipedia ? `<span class="chip">${t("wiki_top")}</span>` : ""}
-      ${why ? `<span class="why"${how(t("how_now_why", o.writer_model || "text model", dotTitle(why)) + "\n\n" + citesText(o, why.cites.filter(id => id !== r.id)))}><span class="dot ${dotClass(why)}"></span>${esc(why.claim)}${refs.html(why.cites, r.id)}</span>`
+      ${why ? `<span class="why"${how(t("how_now_why", o.writer_model || "text model", dotTitle(why)))}><span class="dot ${dotClass(why)}"></span>${esc(why.claim)}${refs.html(why.cites, r.id)}</span>`
             : r.top_article ? `<span class="why muted"><a href="${esc(r.top_article.url)}" target="_blank" rel="noopener">${esc(r.top_article.title)}</a></span>` : ""}
     </td></tr>`;
   }).join("");
@@ -620,19 +631,19 @@ function renderTopic() {
   document.getElementById("view-topic").innerHTML = current ? topicSheet(current)
     : `<p class="empty">${t("no_topic")}</p>`;
 }
-// History: eval results, past analyses, prediction log, accuracy tables ------------
+// History: is it trustworthy, past analyses, prediction log, details -----------
 const fixed = (x, n = 2) => x == null ? "–" : Number(x).toFixed(n);
 const pValue = p => p == null ? "–" : p < 0.001 ? "<0.001" : p.toFixed(3);
 
 function evalCards(ev) {
   const g = ev.groundtruth, pt = ev.prediction_test, gr = ev.grounding, k = ev.jev_agreement;
-  const chance = gr?.chance_other_topic?.distinctive;
-  const card = ([big, label], explain) => `<div class="card"${how(explain)}><b>${esc(big)}</b><span>${esc(label)}</span></div>`;
+  const card = ([verdict, big, label], explain) =>
+    `<div class="card"${how(explain)}><strong>${esc(verdict)}</strong><b>${esc(big)}</b><span>${esc(label)}</span></div>`;
   return `<div class="cards">
-    ${g?.topics ? card(t("card_corr", g.significant_topics, g.topics, g.days), t("how_corr")) : ""}
+    ${gr?.numbers ? card(t("card_ground", gr.grounded, gr.numbers), t("how_ground")) : ""}
+    ${g?.topics ? card(t("card_corr", g.significant_topics, g.topics), t("how_corr")) : ""}
     ${pt?.mean_coverage_80 != null ? card(t("card_cov", pt.mean_coverage_80), t("how_cov")) : ""}
-    ${gr?.numbers ? card(t("card_ground", gr.grounded, gr.numbers, chance ? pct(chance[0] / chance[1]) : "–"), t("how_ground")) : ""}
-    ${k ? card(t("card_kappa", k.kappa, pct(k.agreement)), t("how_kappa")) : ""}
+    ${k ? card(t("card_kappa", k.kappa, k.agreement), t("how_kappa")) : ""}
   </div>`;
 }
 
@@ -640,14 +651,10 @@ function pastAnalyses() {
   if (!results.length) return `<p class="empty">${t("no_history")}</p>`;
   return `<ul class="history">${results.map((a, i) => {
     const s = a.explanation?.summary || (a.explanation?.what_is_happening || [])[0];
-    const claims = ["why_people_search", "what_is_happening", "outlook"].flatMap(k => a.explanation?.[k] || []);
-    const ok = claims.filter(c => c.check === "supported" && !c.check_uncertain).length;
-    const sp = a.facts?.spike, g = a.grounding, p = a.prediction && !a.prediction.error ? a.prediction : null;
+    const sp = a.facts?.spike, g = a.grounding;
     const badges = [
-      sp ? `<span class="badge${sp.verdict === "spike" ? " warn" : ""}">${esc(t("verdict_" + sp.verdict.split(" ")[0]))} · p=${sp.p_value.toPrecision(2)}</span>` : "",
-      claims.length ? `<span class="badge">${esc(t("badge_sentences", ok, claims.length))}</span>` : "",
+      sp ? `<span class="badge${sp.verdict === "spike" ? " warn" : ""}">${esc(t("badge_volume", t("verdict_" + sp.verdict.split(" ")[0])))}</span>` : "",
       g?.numbers ? `<span class="badge${g.grounded === g.numbers ? " ok" : " warn"}">${esc(t("badge_numbers", g.grounded, g.numbers))}</span>` : "",
-      p ? `<span class="badge">${esc(t("prediction"))}: ${esc(t("pred_value", p))}</span>` : "",
     ].join("");
     return `<li><button data-i="${i}"><span class="t">${esc(a.topic)}</span><span class="d">${esc(region(a.geo))} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))}</span>
       ${s ? `<span class="s">${esc(s.claim)}</span>` : ""}${badges ? `<span class="badges">${badges}</span>` : ""}</button></li>`;
@@ -656,39 +663,34 @@ function pastAnalyses() {
 
 function predictionLog(log) {
   if (!log?.length) return "";
-  const rows = log.map(p => `<tr><td>${esc(p.topic)}</td><td>${esc(when(p.made_at))}</td>
-    <td>${esc(p.window_start)} – ${esc(windowEnd(p))}</td><td class="num">${esc(t("pred_value", p))}</td>
-    <td class="num">${p.actual ?? "–"}</td>
-    <td>${p.status === "scored" ? (p.inside_interval ? `<span class="badge ok">${t("inside")}</span>` : `<span class="badge warn">${t("outside")}</span>`)
-      : `<span class="muted">${esc(t("pending", windowEnd(p)))}</span>`}</td></tr>`).join("");
+  // One row per topic and week: a repeated analysis logs the same forecast again.
+  const seen = new Set(), rows = log.filter(p => { const k = p.topic + p.window_start; return !seen.has(k) && seen.add(k); });
   return `<div class="hist-sec"><h2 class="sec">${t("log_title")}</h2><p class="muted">${t("log_note")}</p>
-    <div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_made")}</th><th>${t("col_window")}</th>
-      <th class="num">${t("col_pred")}</th><th class="num">${t("col_actual")}</th><th>${t("col_result")}</th></tr>${rows}</table></div></div>`;
+    <div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_pred")}</th><th>${t("col_result")}</th></tr>
+    ${rows.map(p => `<tr><td>${esc(p.topic)}</td><td>${esc(t("pred_value", p))}</td>
+      <td>${p.status === "scored" ? `<span class="badge ${p.inside_interval ? "ok" : "warn"}">${esc(t(p.inside_interval ? "inside" : "outside", Math.round(p.actual)))}</span>`
+        : `<span class="muted">${esc(t("pending", windowEnd(p)))}</span>`}</td></tr>`).join("")}</table></div></div>`;
 }
 
 function predictionTest(pt) {
   if (!pt?.rows?.length) return "";
   const rows = pt.rows.map(r => {
     const x = r.example;
-    return `<tr><td>${t("src_" + r.source)}</td><td>${esc(r.topic)}</td><td>${esc(r.model)}</td>
-      <td class="num">${r.mape == null ? "–" : r.mape + "%"}</td><td class="num${r.mase < 1 ? " sig" : ""}">${fixed(r.mase)}</td>
-      <td class="num">${pct(r.coverage_80)}</td><td class="num">${r.direction == null ? "–" : `${pct(r.direction)} (${pValue(r.direction_p)})`}</td>
-      <td>${x ? `${esc(x.made_with_data_up_to)}: ${x.predicted} [${x.interval_80[0]}–${x.interval_80[1]}] → ${x.actual}` : "–"}</td></tr>`;
+    return `<tr><td>${esc(r.topic)}</td><td>${t("src_" + r.source)}</td><td class="num">${r.mape == null ? "–" : r.mape + "%"}</td>
+      <td class="num">${pct(r.coverage_80)}</td>
+      <td>${x ? `${Math.round(x.predicted)} (${Math.round(x.interval_80[0])}–${Math.round(x.interval_80[1])}) → ${Math.round(x.actual)}` : "–"}</td></tr>`;
   }).join("");
-  return `<div class="hist-sec"><h2 class="sec"${how(t("how_cov"))}>${t("pt_title")}</h2><p class="muted">${t("pt_note")}</p>
-    <div class="scroll-x"><table class="ev"><tr><th>${t("col_source")}</th><th>${t("col_topic")}</th><th>${t("col_model")}</th>
-      <th class="num">${t("col_mape")}</th><th class="num">${t("col_mase")}</th><th class="num">${t("col_cov")}</th>
-      <th class="num">${t("col_dir")}</th><th>${t("col_example")}</th></tr>${rows}</table></div></div>`;
+  return `<h3>${t("pt_title")}</h3><div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_source")}</th>
+      <th class="num">${t("col_error")}</th><th class="num">${t("col_inrange")}</th><th>${t("col_example")}</th></tr>${rows}</table></div>`;
 }
 
 function groundTruth(g) {
   if (!g?.rows?.length) return "";
-  const rows = g.rows.map(r => `<tr class="${r.significant ? "sig" : ""}"><td>${esc(r.topic)}</td>
-    <td>${r.source === "google" ? t("google_trends") : t("src_wikipedia")}</td><td class="num">${r.rho > 0 ? "+" : ""}${fixed(r.rho)}</td>
-    <td class="num">${pValue(r.p)}</td><td class="num">${r.best_lag > 0 ? "+" : ""}${r.best_lag}</td><td class="num">${r.n}</td></tr>`).join("");
-  return `<div class="hist-sec"><h2 class="sec"${how(t("how_corr"))}>${t("gt_title", g.days)}</h2><p class="muted">${t("gt_note")}</p>
-    <div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_source")}</th><th class="num">${t("col_rho")}</th>
-      <th class="num">${t("col_p")}</th><th class="num">${t("col_lag")}</th><th class="num">n</th></tr>${rows}</table></div></div>`;
+  const rows = g.rows.map(r => `<tr><td>${esc(r.topic)}</td><td>${t(r.source === "google" ? "src_gtrends" : "src_wikipedia")}</td>
+    <td>${esc(t("strength", r.rho))} <span class="muted">(ρ ${r.rho > 0 ? "+" : ""}${fixed(r.rho)})</span></td>
+    <td class="${r.significant ? "sig" : ""}">${r.significant ? t("yes") : t("no")} <span class="muted">(p ${pValue(r.p)})</span></td></tr>`).join("");
+  return `<h3>${t("gt_title")}</h3><div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_vs")}</th>
+      <th>${t("col_strength")}</th><th>${t("col_real")}</th></tr>${rows}</table></div>`;
 }
 
 function kappaTable(k) {
@@ -696,10 +698,7 @@ function kappaTable(k) {
   const labels = ["supported", "partly", "unsupported"];
   const rows = labels.filter(j => labels.some(h => k.confusion_jev_by_human[j][h])).map(j =>
     `<tr><th>${t(j)}</th>${labels.map(h => `<td class="num${j === h ? " sig" : ""}">${k.confusion_jev_by_human[j][h]}</td>`).join("")}</tr>`).join("");
-  const calib = k.calibration.map(b => `<tr><td>${esc(b.band)}</td><td class="num">${b.n}</td><td class="num">${b.agreement == null ? "–" : pct(b.agreement)}</td></tr>`).join("");
-  return `<div class="hist-sec"><h2 class="sec"${how(t("how_kappa"))}>${t("kappa_title")} · κ = ${fixed(k.kappa)}</h2>
-    <div class="cols"><div class="scroll-x"><table class="ev"><tr><th>${t("jev_rows")}</th>${labels.map(h => `<th class="num">${t(h)}</th>`).join("")}</tr>${rows}</table></div>
-    <div><table class="ev"><tr><th>${t("calib")}</th><th class="num">n</th><th class="num">%</th></tr>${calib}</table></div></div></div>`;
+  return `<h3>${t("kappa_title")}</h3><div class="scroll-x"><table class="ev"><tr><th>${t("jev_rows")}</th>${labels.map(h => `<th class="num">${t(h)}</th>`).join("")}</tr>${rows}</table></div>`;
 }
 
 function renderHistory() {
@@ -708,7 +707,9 @@ function renderHistory() {
   document.getElementById("view-history").innerHTML = `
     ${ev ? `<div class="hist-sec"><h2 class="sec">${t("ev_title")}</h2><p class="muted">${t("ev_note")}</p>${evalCards(ev)}</div>` : ""}
     <div class="hist-sec"><h2 class="sec">${t("past_title")}</h2>${results.length ? `<p class="muted">${t("past_note")}</p>` : ""}${pastAnalyses()}</div>
-    ${ev ? predictionLog(ev.prediction_log) + predictionTest(ev.prediction_test) + groundTruth(ev.groundtruth) + kappaTable(ev.jev_agreement) : ""}`;
+    ${ev ? predictionLog(ev.prediction_log) : ""}
+    ${ev ? `<div class="hist-sec"><details class="how details"><summary>${t("details")}</summary>
+      ${predictionTest(ev.prediction_test)}${groundTruth(ev.groundtruth)}${kappaTable(ev.jev_agreement)}</details></div>` : ""}`;
   document.querySelectorAll("ul.history button").forEach(b => b.addEventListener("click", () => {
     current = results[+b.dataset.i]; renderTopic(); show("topic");
   }));
