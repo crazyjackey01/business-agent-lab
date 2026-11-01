@@ -147,10 +147,10 @@ filter existed, or reused it without `--refresh`. No frequency statistic can rej
 fix is that the analysis now re-applies the spam filter to any loaded collection. On the
 same data the drivers become 모델 (z = 2.35) and 중국차 (z = 2.06).
 
-**Spike note** (`eval/spike.py`): a negative binomial test on the last 7 days of article counts
-gives the page a rough note ("looks like a spike", "about usual"). Six earlier windows and the
-100-article cap can't support a firm result, so it changes nothing in the analysis and is not
-a validation result.
+**Spike note** (`eval/spike.py`): a negative binomial test on the last 7 days of article counts.
+When p < 0.01 the page says it looks like a spike; otherwise it says nothing. Six earlier windows
+and the 100-article cap can't support a firm result, so it changes nothing in the analysis and is
+not a validation result.
 
 ## Not covered
 

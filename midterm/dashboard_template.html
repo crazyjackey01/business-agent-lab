@@ -265,10 +265,8 @@ const STR = {
     how_kicker: (c, a) => `데이터를 모은 때: ${c}\n분석한 때: ${a}`,
     how_answer: w => `한 줄 요약. AI(${w})가 모은 기사와 숫자만 보고 썼다. 근거를 달지 못한 문장은 자동으로 지웠다.`,
     how_claim: (n, check) => `이 문장의 근거: 기사·데이터 ${n}개 (문장 끝 번호를 누르면 기사로 간다)\nAI 검사기 판정: ${check}`,
-    note_spike: "참고: 기사가 평소보다 크게 늘어 급증처럼 보인다", note_elevated: "참고: 기사가 평소보다 조금 많아 보인다",
-    note_normal: "참고: 기사량은 평소와 비슷해 보인다", note_uncertain: "참고: 구글 뉴스가 100건까지만 보여 줘 기사량을 판단하기 어렵다",
-    note_counts: (n, avg) => ` (최근 24시간 ${n}건, 평소 하루 ${avg}건)`,
-    how_note: "대략적인 참고용이다. 최근 며칠 기사 수만 보고 계산했기 때문에 확실한 판정이 아니며, 분석 내용을 바꾸지 않는다.",
+    note_spike: (n, avg) => `기사가 평소보다 크게 늘어 급증처럼 보인다 (최근 24시간 ${n}건, 평소 하루 ${avg}건)`,
+    how_note: "대략적인 참고용이다. 최근 며칠 기사 수만 보고 계산했고, 구글 뉴스가 100건까지만 보여 줘서 실제 수는 더 많을 수 있다. 분석 내용을 바꾸지 않는다.",
     how_momentum: (n, avg) => `최근 24시간 기사 ${n}건 ÷ 평소 하루 ${avg}건.`,
     how_intent: () => "구글 검색창 자동완성에 뜨는 문구를 모아, 무엇을 알고 싶어 하는지 목적별로 나눈 비율.",
     how_supported: removed => `AI 검사기(Jev)가 문장마다 인용한 기사와 내용이 맞는지 확인했다.${removed ? ` 맞지 않는 문장 ${removed}개는 지웠다.` : ""}`,
@@ -346,10 +344,8 @@ const STR = {
     how_kicker: (c, a) => `Data collected: ${c}\nAnalyzed: ${a}`,
     how_answer: w => `One-line summary. The AI (${w}) saw only the collected articles and numbers. Sentences without a source were removed automatically.`,
     how_claim: (n, check) => `Backed by ${n} article(s) / data point(s) (click the number at the end to open the article)\nAI checker's verdict: ${check}`,
-    note_spike: "Note: articles are well above usual, so this looks like a spike", note_elevated: "Note: articles look a little above usual",
-    note_normal: "Note: article volume looks about usual", note_uncertain: "Note: Google News shows at most 100 articles, so article volume is hard to judge",
-    note_counts: (n, avg) => ` (${n} in the last 24 hours, ${avg} on a usual day)`,
-    how_note: "A rough remark only. It looks at just a few days of article counts, so it is not a firm result and changes nothing in the analysis.",
+    note_spike: (n, avg) => `This looks like a spike: articles are well above usual (${n} in the last 24 hours, ${avg} on a usual day)`,
+    how_note: "A rough remark only. It looks at just a few days of article counts, and Google News shows at most 100 articles, so real counts can be higher. It changes nothing in the analysis.",
     how_momentum: (n, avg) => `${n} articles in the last 24 hours ÷ ${avg} on a usual day.`,
     how_intent: () => "Phrases from Google's search-box autocomplete, sorted by what people want to know.",
     how_supported: removed => `An AI checker (Jev) compared each sentence with the articles it cites.${removed ? ` ${removed} sentence(s) that didn't match were removed.` : ""}`,
@@ -516,8 +512,10 @@ function topicSheet(a) {
     f.relevance?.method === "Jev" ? fact(t("f_dropped", f.relevance.dropped.length), t("how_dropped", f.relevance.kept, f.relevance.dropped.length)) : "",
   ].join("");
 
-  const spikeNote = f.spike && !f.news_unavailable
-    ? `<p class="hint"${how(t("how_note"))}>${esc(t("note_" + f.spike.verdict.split(" ")[0]) + t("note_counts", f.spike.today, Math.round(f.spike.baseline_mean)))}</p>` : "";
+  // Shown only when it looks like a spike (same p < 0.01 as eval/spike.py). The 100-article cap
+  // marks busy topics' windows as capped, so the verdict alone would hide their spikes.
+  const spikeNote = f.spike && !f.news_unavailable && f.spike.p_value < 0.01
+    ? `<p class="hint"${how(t("how_note"))}>${esc(t("note_spike", f.spike.today, Math.round(f.spike.baseline_mean)))}</p>` : "";
 
   const intents = (f.intent || []).filter(i => i.share >= 0.02).slice(0, 7).map(i =>
     `<div class="bar-row" title="${esc(i.examples.join(", "))}"><span>${esc(intentName(i.intent))}</span>

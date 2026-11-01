@@ -107,7 +107,7 @@ on unseen data, and a blind test of Jev against a human. One command per test an
 
 On the page, the **지난 분석·예측 / History & accuracy** tab shows the results, every past
 analysis and the prediction log. Hovering any part of an analysis explains how it was made.
-The article-count spike test is only a rough note under the summary.
+If the article counts look like a spike, a rough note under the summary says so.
 
 ## Known limits
 

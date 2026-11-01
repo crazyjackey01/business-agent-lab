@@ -37,7 +37,7 @@ from intent import search_intent
 from model_api import ModelRequestError, parse_json_reply, request_model
 from eval.fightin import Z_CUTOFF, log_odds_z
 from eval.score_predictions import log_prediction
-from eval.spike import spike_test
+from eval.spike import SPIKE_P, spike_test
 from topic_trends import RESULT_DIR, analyze_topic, is_spam, save_result
 
 HERE = Path(__file__).resolve().parent
@@ -180,16 +180,6 @@ Reply with JSON only, in this shape:
 }"""
 
 
-# The spike test is only a rough remark: 6 earlier windows are little history, and
-# Google News caps each query at 100 articles. It never removes or decides anything.
-SPIKE_NOTES = {
-    "spike": "this looks like a spike",
-    "elevated": "this looks a little above usual",
-    "normal": "this looks about usual",
-    "uncertain (capped)": "hard to say, because Google News shows at most 100 articles per query",
-}
-
-
 def build_evidence(facts, news, max_headlines=40):
     """Number every fact and headline so the model can cite them.
 
@@ -200,8 +190,9 @@ def build_evidence(facts, news, max_headlines=40):
     sp = facts["spike"]
     evidence["D1"] = (
         f"News articles per 24-hour window for the last {len(m['per_day'])} days, newest first: {m['per_day']}. "
-        f"Rough note from these counts, not a firm result: {SPIKE_NOTES[sp['verdict']]}. "
-        "Give the counts rather than presenting this note as a finding."
+        # Only a rough remark: it never removes or decides anything, and capped counts are minimums.
+        + ("Rough note from these counts, not a firm result: this looks like a spike."
+           if sp["p_value"] < SPIKE_P else "")
     )
     evidence["D2"] = "Search intent from Google autocomplete (share of suggestions): " + "; ".join(
         f"{i['intent']} {int(i['share'] * 100)}% (e.g. {', '.join(i['examples'][:3])})" for i in facts["intent"]
