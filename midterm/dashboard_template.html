@@ -150,7 +150,6 @@
   ul.history .s { grid-column: 1 / -1; font-size: 13px; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   ul.history .d { font: 400 12px var(--mono); color: var(--ink-soft); }
   .empty { color: var(--ink-soft); padding: 40px 0; text-align: center; }
-  .badges { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 6px; }
   .badge { font: 500 11px var(--sans); color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 4px; padding: 0 6px; }
   .badge.ok { color: var(--ok); border-color: currentColor; } .badge.warn { color: var(--warn); border-color: currentColor; }
 
@@ -221,7 +220,6 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const pct = x => Math.round(x * 100) + "%";
 // A logged prediction's window ends window_days after window_start (YYYY-MM-DD).
 const md = d => new Intl.DateTimeFormat(LANG === "ko" ? "ko-KR" : "en-US", { month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(d + "T00:00:00Z"));
-const chance = p => p < 0.001 ? (LANG === "ko" ? "0.1% 미만" : "under 0.1%") : (p * 100).toFixed(1) + "%";
 const windowEnd = p => { const d = new Date(p.window_start + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + p.window_days); return d.toISOString().slice(0, 10); };
 // Times in the searchers' own zone, the way a Korean reader writes them.
 const ZONES = { KR: "Asia/Seoul", US: "America/New_York" };
@@ -243,8 +241,6 @@ const STR = {
     no_claims: "출처로 뒷받침되는 내용이 없다.", likely: "가능성", conf_low: "낮음", conf_medium: "보통", conf_high: "높음",
     sources: "출처", usage: "사용량", step: "단계", model: "모델", tokens: "토큰 입력 / 출력", cost: "비용", free: "무료",
     f_articles: n => [`${n}건`, "구글 검색으로 찾은 기사"], f_momentum: (x, n) => [`${x}배`, `평소 대비 기사량 (최근 24시간 ${n}건)`],
-    f_spike: (v, p, n, mean) => [v, `기사량 (최근 24시간 ${n}건, 평소 하루 ${Math.round(mean)}건)`],
-    verdict_spike: "급증", verdict_elevated: "다소 많음", verdict_normal: "평소 수준", verdict_uncertain: "판단 보류",
     f_intent: (p, k) => [p, `검색 목적 1위: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "출처와 일치한 문장"],
     f_dropped: n => [`${n}건`, "관련 없어 뺀 기사"],
     per_day: "24시간별 기사 수", today: "최근 24h", days_ago: n => `${n}일 전`,
@@ -269,7 +265,10 @@ const STR = {
     how_kicker: (c, a) => `데이터를 모은 때: ${c}\n분석한 때: ${a}`,
     how_answer: w => `한 줄 요약. AI(${w})가 모은 기사와 숫자만 보고 썼다. 근거를 달지 못한 문장은 자동으로 지웠다.`,
     how_claim: (n, check) => `이 문장의 근거: 기사·데이터 ${n}개 (문장 끝 번호를 누르면 기사로 간다)\nAI 검사기 판정: ${check}`,
-    how_spike: s => `최근 24시간 기사 ${s.today}건, 평소 하루 ${Math.round(s.baseline_mean)}건.\n이 정도 차이가 우연히 생길 확률은 ${chance(s.p_value)}. 5%보다 낮으면 '다소 많음', 1%보다 낮으면 '급증'이다.\nAI가 아니라 통계 계산으로 판정했다.`,
+    note_spike: "참고: 기사가 평소보다 크게 늘어 급증처럼 보인다", note_elevated: "참고: 기사가 평소보다 조금 많아 보인다",
+    note_normal: "참고: 기사량은 평소와 비슷해 보인다", note_uncertain: "참고: 기사가 많아 보이지만, 구글 뉴스가 100건까지만 보여 줘 확실하지 않다",
+    note_counts: (n, avg) => ` (최근 24시간 ${n}건, 평소 하루 ${avg}건)`,
+    how_note: "대략적인 참고용이다. 최근 며칠 기사 수만 보고 계산했기 때문에 확실한 판정이 아니며, 분석 내용을 바꾸지 않는다.",
     how_momentum: (n, avg) => `최근 24시간 기사 ${n}건 ÷ 평소 하루 ${avg}건.`,
     how_intent: () => "구글 검색창 자동완성에 뜨는 문구를 모아, 무엇을 알고 싶어 하는지 목적별로 나눈 비율.",
     how_supported: removed => `AI 검사기(Jev)가 문장마다 인용한 기사와 내용이 맞는지 확인했다.${removed ? ` 맞지 않는 문장 ${removed}개는 지웠다.` : ""}`,
@@ -295,7 +294,7 @@ const STR = {
     how_cov: "주별 구글 트렌드 5년치, 일별 위키백과 조회수 3년치. 예측 방법은 앞부분 데이터로만 고르고, 마지막 1년 / 180일로 채점했다.",
     how_kappa: "사람이 0–1로 점수를 매겼다 (0.6 초과 = 일치, 0.4–0.6 = 일부, 0.4 미만 = 불일치). ",
     past_title: "지난 분석", past_note: "누르면 다시 볼 수 있다.",
-    badge_volume: v => `기사량 ${v}`,
+    
     log_title: "예측 기록", log_note: "분석할 때마다 다음 7일 관심도(위키백과 조회수)를 미리 적어 두고, 7일이 지나면 맞았는지 확인한다.",
     col_topic: "주제", col_pred: "예측", col_result: "결과",
     pending: d => `${md(d)}에 확인`, inside: a => `맞음 (실제 ${a})`, outside: a => `빗나감 (실제 ${a})`,
@@ -313,8 +312,6 @@ const STR = {
     no_claims: "Nothing the sources support.", likely: "likelihood", conf_low: "low", conf_medium: "medium", conf_high: "high",
     sources: "Sources", usage: "Usage", step: "Step", model: "Model", tokens: "Tokens in / out", cost: "Cost", free: "free",
     f_articles: n => [String(n), "articles found with Google Search"], f_momentum: (x, n) => [`${x}×`, `news vs usual (${n} in the last 24h)`],
-    f_spike: (v, p, n, mean) => [v, `news volume (${n} in the last 24h, ${Math.round(mean)} on a usual day)`],
-    verdict_spike: "spike", verdict_elevated: "elevated", verdict_normal: "normal", verdict_uncertain: "can't tell",
     f_intent: (p, k) => [p, `top search purpose: ${k}`], f_supported: (a, b) => [`${a}/${b}`, "sentences matching sources"],
     f_dropped: n => [String(n), "off-topic articles dropped"],
     per_day: "Articles per 24 hours", today: "last 24h", days_ago: n => `-${n}d`,
@@ -339,7 +336,10 @@ const STR = {
     how_kicker: (c, a) => `Data collected: ${c}\nAnalyzed: ${a}`,
     how_answer: w => `One-line summary. The AI (${w}) saw only the collected articles and numbers. Sentences without a source were removed automatically.`,
     how_claim: (n, check) => `Backed by ${n} article(s) / data point(s) (click the number at the end to open the article)\nAI checker's verdict: ${check}`,
-    how_spike: s => `${s.today} articles in the last 24 hours; a usual day has ${Math.round(s.baseline_mean)}.\nThe chance of a gap this big happening by luck is ${chance(s.p_value)}. Under 5% = 'elevated', under 1% = 'spike'.\nDecided by a statistical calculation, not by AI.`,
+    note_spike: "Note: articles are well above usual, so this looks like a spike", note_elevated: "Note: articles look a little above usual",
+    note_normal: "Note: article volume looks about usual", note_uncertain: "Note: looks busy, but Google News shows at most 100 articles, so it's hard to say",
+    note_counts: (n, avg) => ` (${n} in the last 24 hours, ${avg} on a usual day)`,
+    how_note: "A rough remark only. It looks at just a few days of article counts, so it is not a firm result and changes nothing in the analysis.",
     how_momentum: (n, avg) => `${n} articles in the last 24 hours ÷ ${avg} on a usual day.`,
     how_intent: () => "Phrases from Google's search-box autocomplete, sorted by what people want to know.",
     how_supported: removed => `An AI checker (Jev) compared each sentence with the articles it cites.${removed ? ` ${removed} sentence(s) that didn't match were removed.` : ""}`,
@@ -365,7 +365,7 @@ const STR = {
     how_cov: "5 years of weekly Google Trends and 3 years of daily Wikipedia views. Methods were chosen on the earlier data only and scored on the last year / 180 days.",
     how_kappa: "The human scored each sentence 0–1 (above 0.6 = matches, 0.4–0.6 = partly, below 0.4 = doesn't).",
     past_title: "Past analyses", past_note: "Click one to open it again.",
-    badge_volume: v => `news: ${v}`,
+    
     log_title: "Prediction log", log_note: "Each analysis writes down a forecast of the next 7 days of interest (Wikipedia views); after 7 days it is checked against what really happened.",
     col_topic: "Topic", col_pred: "Forecast", col_result: "Result",
     pending: d => `checked on ${md(d)}`, inside: a => `right (actual ${a})`, outside: a => `missed (actual ${a})`,
@@ -488,12 +488,15 @@ function topicSheet(a) {
   const facts = [
     f.news_unavailable
       ? fact(t("f_articles", articleCount))
-      : f.spike ? fact(t("f_spike", t("verdict_" + f.spike.verdict.split(" ")[0]), f.spike.p_value, f.spike.today, f.spike.baseline_mean), t("how_spike", f.spike))
+      : f.spike ? ""
       : fact(t("f_momentum", m.momentum, m.today), t("how_momentum", m.today, m.previous_daily_average)),
     topIntent ? fact(t("f_intent", pct(topIntent.share), intentName(topIntent.intent)), t("how_intent")) : "",
     allClaims.length ? fact(t("f_supported", supported, allClaims.length), t("how_supported", removed)) : "",
     f.relevance?.method === "Jev" ? fact(t("f_dropped", f.relevance.dropped.length), t("how_dropped", f.relevance.kept, f.relevance.dropped.length)) : "",
   ].join("");
+
+  const spikeNote = f.spike && !f.news_unavailable
+    ? `<p class="hint"${how(t("how_note"))}>${esc(t("note_" + f.spike.verdict.split(" ")[0]) + t("note_counts", f.spike.today, Math.round(f.spike.baseline_mean)))}</p>` : "";
 
   const intents = (f.intent || []).filter(i => i.share >= 0.02).slice(0, 7).map(i =>
     `<div class="bar-row" title="${esc(i.examples.join(", "))}"><span>${esc(intentName(i.intent))}</span>
@@ -543,6 +546,7 @@ function topicSheet(a) {
     <h1 class="q">${esc(a.topic)}</h1>
     <p class="hint">${t("hint")}</p>
     ${answer}
+    ${spikeNote}
     <div class="facts-row">${facts}</div>
     <div class="cols">
       <div>${body}</div>
@@ -620,7 +624,6 @@ function renderTopic() {
     : `<p class="empty">${t("no_topic")}</p>`;
 }
 // History: is it trustworthy, past analyses, prediction log, details -----------
-const fixed = (x, n = 2) => x == null ? "–" : Number(x).toFixed(n);
 
 function evalCards(ev) {
   const pt = ev.prediction_test, k = ev.jev_agreement;
@@ -636,12 +639,8 @@ function pastAnalyses() {
   if (!results.length) return `<p class="empty">${t("no_history")}</p>`;
   return `<ul class="history">${results.map((a, i) => {
     const s = a.explanation?.summary || (a.explanation?.what_is_happening || [])[0];
-    const sp = a.facts?.spike;
-    const badges = [
-      sp ? `<span class="badge${sp.verdict === "spike" ? " warn" : ""}">${esc(t("badge_volume", t("verdict_" + sp.verdict.split(" ")[0])))}</span>` : "",
-    ].join("");
     return `<li><button data-i="${i}"><span class="t">${esc(a.topic)}</span><span class="d">${esc(region(a.geo))} · ${esc(when(a.analyzed_at || a.source_collected_at, a.geo))}</span>
-      ${s ? `<span class="s">${esc(s.claim)}</span>` : ""}${badges ? `<span class="badges">${badges}</span>` : ""}</button></li>`;
+      ${s ? `<span class="s">${esc(s.claim)}</span>` : ""}</button></li>`;
   }).join("")}</ul>`;
 }
 

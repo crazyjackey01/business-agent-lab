@@ -1,4 +1,6 @@
-"""Is today's news count a real spike? A negative binomial test instead of a ratio.
+"""Does today's news count look like a spike? A rough note for the page, not a firm result.
+
+A negative binomial test instead of a ratio.
 
 Daily article counts are overdispersed (the variance is far above the mean), so a
 Poisson test calls almost every busy day a spike. The baseline days (today excluded)

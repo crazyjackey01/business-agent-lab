@@ -172,6 +172,16 @@ Reply with JSON only, in this shape:
 }"""
 
 
+# The spike test is only a rough remark: 6 earlier windows are little history, and
+# Google News caps each query at 100 articles. It never removes or decides anything.
+SPIKE_NOTES = {
+    "spike": "this looks like a spike",
+    "elevated": "this looks a little above usual",
+    "normal": "this looks about usual",
+    "uncertain (capped)": "hard to say, because Google News shows at most 100 articles per query",
+}
+
+
 def build_evidence(facts, news, max_headlines=40):
     """Number every fact and headline so the model can cite them.
 
@@ -182,12 +192,8 @@ def build_evidence(facts, news, max_headlines=40):
     sp = facts["spike"]
     evidence["D1"] = (
         f"News articles per 24-hour window for the last {len(m['per_day'])} days, newest first: {m['per_day']}. "
-        f"Spike test (negative binomial fit to the earlier days, decided by statistics, not by you): "
-        f"last 24 hours {sp['today']} vs baseline mean {sp['baseline_mean']}, p = {sp['p_value']:.3g}, "
-        f"verdict: {sp['verdict']}. State this verdict as given. "
-        + ("Only because the verdict is 'spike' may you call it a surge (급증)."
-           if sp["verdict"] == "spike" else
-           "Do NOT call it a surge, spike, jump or 급증/급등/폭증; describe it as the verdict says.")
+        f"Rough note from these counts, not a firm result: {SPIKE_NOTES[sp['verdict']]}. "
+        "Give the counts rather than presenting this note as a finding."
     )
     evidence["D2"] = "Search intent from Google autocomplete (share of suggestions): " + "; ".join(
         f"{i['intent']} {int(i['share'] * 100)}% (e.g. {', '.join(i['examples'][:3])})" for i in facts["intent"]
@@ -230,24 +236,7 @@ def keep_supported(claims, evidence):
     return kept, dropped
 
 
-# Words that claim a spike. Allowed only when the spike test's verdict is "spike";
-# this is checked in code, not left to the model.
-SURGE_WORDS = re.compile(r"급증|급등|폭증|폭발적|치솟|surg|spik|soar|skyrocket|explod", re.IGNORECASE)
-
-
-def drop_surge_claims(result, sections, verdict):
-    """Remove claims that call it a surge when the measured verdict is not 'spike'."""
-    if verdict == "spike":
-        return 0
-    removed = 0
-    for section in sections:
-        kept = [c for c in result.get(section, []) if not SURGE_WORDS.search(c["claim"])]
-        removed += len(result.get(section, [])) - len(kept)
-        result[section] = kept
-    return removed
-
-
-def explain(topic, evidence, language, verdict=None):
+def explain(topic, evidence, language):
     evidence_text = "\n".join(f"[{k}] {v}" for k, v in evidence.items())
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT.replace("{language}", language)},
@@ -262,7 +251,6 @@ def explain(topic, evidence, language, verdict=None):
     result["caveats"] = reply.get("caveats", [])
     result["unsupported_claims_removed"] = dropped
     result["summary"], _ = keep_supported([reply["summary"]] if reply.get("summary") else [], evidence)
-    result["surge_claims_removed"] = drop_surge_claims(result, ("summary",) + SECTIONS, verdict)
     result["failed_check_removed"] = check_claims(result, evidence, language, ("summary",) + SECTIONS)
     result["summary"] = result["summary"][0] if result["summary"] else None
     return result
@@ -448,7 +436,7 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
     }
     evidence, links = build_evidence(facts, data["news"])
     try:
-        explanation = explain(topic, evidence, "Korean" if lang == "ko" else "English", facts["spike"]["verdict"])
+        explanation = explain(topic, evidence, "Korean" if lang == "ko" else "English")
     except (ModelRequestError, ValueError) as error:
         explanation = {"error": str(error)}
 
