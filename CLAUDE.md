@@ -33,19 +33,17 @@ cd midterm/worker && npx wrangler deploy   # production (run eval/summary.py fir
 Validation (`midterm/eval/`, numpy + scipy; each module runs assert self-checks first):
 
 ```sh
-python midterm/eval/spike.py                 # negative binomial spike test on saved topics
+python midterm/eval/spike.py                 # the rough spike note, on saved topics
 python midterm/eval/gtrends.py               # Google Trends search interest (unofficial endpoints, cached)
-python midterm/eval/groundtruth.py --days 90 # news counts vs Google interest + Wikipedia (Spearman, lead-lag)
 python midterm/eval/prediction_test.py       # holdout prediction accuracy (Google weekly, Wikipedia 7-day)
 python midterm/eval/forecast.py              # 7-day pageview forecasts, rolling backtest
-python midterm/eval/score_predictions.py     # score data/predictions.jsonl once windows end
-python midterm/eval/grounding.py             # numbers in generated text vs the run's facts
-python midterm/eval/jev_agreement.py export|score   # hand-label CSV, Cohen's kappa
+python midterm/eval/score_predictions.py     # did each analysis's forecasts come true? (local log + Worker's)
+python midterm/eval/jev_agreement.py export|score   # blind hand-label CSV, Cohen's kappa
 python midterm/eval/summary.py              # collect all results -> data/eval/summary.json (page + Worker)
 ```
 
-There is no other test suite or linter. Rule for eval/: no LLM decides whether a spike is
-real, a prediction was right, or a number is correct; results are in midterm/eval/README.md.
+There is no other test suite or linter. Rule for eval/: no LLM decides whether a prediction
+was right; results are in midterm/eval/README.md.
 
 ## Notes
 

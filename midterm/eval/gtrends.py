@@ -45,12 +45,15 @@ def _get(session, url, tries=4):
     raise RuntimeError("Google Trends kept answering 429 (rate limited); try again later")
 
 
-def interest(topic, resolution="daily"):
-    """{date (YYYY-MM-DD, start of the day or week): index 0-100}, or None if unmapped."""
-    if topic not in KEYWORDS:
+def interest(topic, resolution="daily", geo=None):
+    """{date (YYYY-MM-DD, start of the day or week): index 0-100}, or None if unmapped.
+
+    Without geo, topic must be one of the demo KEYWORDS; with it, the topic itself is searched.
+    """
+    if geo is None and topic not in KEYWORDS:
         print(f"no Google Trends keyword mapped for {topic!r}; skipped")
         return None
-    keyword, geo = KEYWORDS[topic]
+    keyword, geo = KEYWORDS[topic] if geo is None else (topic, geo)
     CACHE.mkdir(parents=True, exist_ok=True)
     cache = CACHE / f"{keyword.replace(' ', '_')}_{geo or 'world'}_{resolution}.json"
     if cache.exists() and time.time() - cache.stat().st_mtime < 86400:

@@ -36,7 +36,7 @@ import jev_api
 from intent import search_intent
 from model_api import ModelRequestError, parse_json_reply, request_model
 from eval.fightin import Z_CUTOFF, log_odds_z
-from eval.forecast import log_prediction
+from eval.score_predictions import log_prediction
 from eval.spike import spike_test
 from topic_trends import RESULT_DIR, analyze_topic, is_spam, save_result
 
@@ -151,6 +151,12 @@ Rules:
 - "outlook" items are forecasts. Base each one on a scheduled event or a measured trend in the evidence,
   give a confidence (low / medium / high), and say in "basis" which evidence it extends.
   Do not forecast prices or anything the evidence does not touch.
+- Each "outlook" item also needs a "test", so it can be checked a week from now: "query" is 1-4 search
+  words for what the forecast is about, "min_articles" is the number of Google News articles matching
+  them over the next 7 days at which the forecast came true. Pick a number a false forecast would miss,
+  not one that is easy to reach anyway.
+- "search_interest" is your forecast of Google search interest in the topic over the next 7 days compared
+  with the last 7: "up" (more than 10% higher), "down" (more than 10% lower) or "flat".
 - Be brief. "summary": one or two sentences answering "why is this being searched now?".
   At most 3 why_people_search, 5 what_is_happening, 3 outlook items, each one or two short
   sentences. Do not repeat a number the reader already sees in the data (like intent shares)
@@ -167,7 +173,9 @@ Reply with JSON only, in this shape:
   "summary": {"claim": "...", "cites": ["D2", "S1"]},
   "why_people_search": [{"claim": "...", "cites": ["D1", "S3"]}],
   "what_is_happening": [{"claim": "...", "cites": ["S1", "S2"]}],
-  "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"]}],
+  "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"],
+               "test": {"query": "...", "min_articles": 10}}],
+  "search_interest": {"direction": "flat", "confidence": "medium"},
   "caveats": ["..."]
 }"""
 
@@ -249,6 +257,7 @@ def explain(topic, evidence, language):
         result[section], n = keep_supported(reply.get(section), evidence)
         dropped += n
     result["caveats"] = reply.get("caveats", [])
+    result["search_interest"] = reply.get("search_interest")
     result["unsupported_claims_removed"] = dropped
     result["summary"], _ = keep_supported([reply["summary"]] if reply.get("summary") else [], evidence)
     result["failed_check_removed"] = check_claims(result, evidence, language, ("summary",) + SECTIONS)
@@ -464,12 +473,9 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
 
 
 def save_analysis(analysis):
-    # Every saved live analysis also logs one falsifiable, scoreable prediction
-    # (next 7 days of Wikipedia pageviews; see eval/forecast.py and eval/score_predictions.py).
-    try:
-        analysis["prediction"] = log_prediction(analysis["topic"])
-    except Exception as error:  # a forecast failure must not lose the analysis
-        analysis["prediction"] = {"error": str(error)}
+    # What this analysis said will happen goes in the prediction log; eval/score_predictions.py
+    # checks it against Google a week later.
+    analysis["prediction"] = log_prediction(analysis)
     ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
     slug = re.sub(r"[^\w]+", "-", analysis["topic"]).strip("-").lower()
     path = ANALYSIS_DIR / f"{slug}_{datetime.now():%Y-%m-%d_%H%M}.json"

@@ -37,27 +37,22 @@ def prediction_rows(p):
 
 
 def prediction_log(scored):
-    """Every logged prediction, newest first, with its score once the window has ended."""
-    log = DATA / "predictions.jsonl"
-    rows = [json.loads(line) for line in log.read_text(encoding="utf-8").splitlines() if line.strip()] if log.exists() else []
-    done = {(r["topic"], r["made_at"]): r for r in (scored or {}).get("scored", [])}
-    out = []
-    for p in rows:
-        r = done.get((p["topic"], p["made_at"]))
-        out.append({**p, "status": "scored" if r else "pending",
-                    "actual": r and r.get("actual"), "inside_interval": r and r.get("inside_interval")})
-    return sorted(out, key=lambda r: r["made_at"], reverse=True)
+    """Every logged prediction, newest first; scored ones carry their results."""
+    scored = scored or {}
+    rows = [{**p, "status": "scored"} for p in scored.get("scored", [])] + [{**p, "status": "pending"} for p in scored.get("pending", [])]
+    return sorted(rows, key=lambda r: r["made_at"], reverse=True)
 
 
 def summary():
     pred = prediction_rows(_load("prediction_test.json"))
-    log = prediction_log(_load("scored_predictions.json"))
+    scored = _load("scored_predictions.json")
     coverage = [r["coverage_80"] for r in pred]
     return {
         "made_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "prediction_test": {"rows": pred,
                             "mean_coverage_80": round(sum(coverage) / len(coverage), 3) if coverage else None},
-        "prediction_log": log,
+        "prediction_log": prediction_log(scored),
+        "prediction_totals": (scored or {}).get("totals"),
         "jev_agreement": _load("jev_agreement.json"),
     }
 

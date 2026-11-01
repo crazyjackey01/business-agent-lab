@@ -90,6 +90,12 @@ Rules:
 - "outlook" items are forecasts. Base each one on a scheduled event or a measured trend in the evidence,
   give a confidence (low / medium / high), and say in "basis" which evidence it extends.
   Do not forecast prices or anything the evidence does not touch.
+- Each "outlook" item also needs a "test", so it can be checked a week from now: "query" is 1-4 search
+  words for what the forecast is about, "min_articles" is the number of Google News articles matching
+  them over the next 7 days at which the forecast came true. Pick a number a false forecast would miss,
+  not one that is easy to reach anyway.
+- "search_interest" is your forecast of Google search interest in the topic over the next 7 days compared
+  with the last 7: "up" (more than 10% higher), "down" (more than 10% lower) or "flat".
 - Be brief. "summary": one or two sentences answering "why is this being searched now?".
   At most 3 why_people_search, 5 what_is_happening, 3 outlook items, each one or two short
   sentences. Do not repeat a number the reader already sees in the data (like intent shares)
@@ -106,7 +112,9 @@ Reply with JSON only, in this shape:
   "summary": {"claim": "...", "cites": ["D2", "S1"]},
   "why_people_search": [{"claim": "...", "cites": ["D1", "S3"]}],
   "what_is_happening": [{"claim": "...", "cites": ["S1", "S2"]}],
-  "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"]}],
+  "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"],
+               "test": {"query": "...", "min_articles": 10}}],
+  "search_interest": {"direction": "flat", "confidence": "medium"},
   "caveats": ["..."]
 }`;
 
@@ -249,6 +257,19 @@ async function checkClaims(env, result, evidence, language, sections = SECTIONS)
   return removed;
 }
 
+// What an analysis said will happen, in the shape eval/score_predictions.py scores.
+export function predictionFrom(analysis) {
+  const e = analysis.explanation || {};
+  const tests = (e.outlook || []).filter(c => c.test?.query && Number.isInteger(c.test.min_articles) && c.test.min_articles > 0)
+    .map(c => ({ claim: c.claim, confidence: c.confidence, query: String(c.test.query), min_articles: c.test.min_articles }));
+  const direction = e.search_interest?.direction;
+  const search = ["up", "flat", "down"].includes(direction) ? { direction, confidence: e.search_interest.confidence } : null;
+  if (!tests.length && !search) return null;
+  const start = new Date(Date.parse(analysis.analyzed_at) + 86400000).toISOString().slice(0, 10);
+  return { topic: analysis.topic, geo: analysis.geo, made_at: analysis.analyzed_at, window_start: start, window_days: 7,
+    search_interest: search, tests };
+}
+
 async function explain(env, topic, evidence, language) {
   const evidenceText = Object.entries(evidence).map(([k, v]) => `[${k}] ${v}`).join("\n");
   const reply = parseJsonReply(await requestModel(env, [
@@ -263,6 +284,7 @@ async function explain(env, topic, evidence, language) {
     dropped += n;
   }
   result.caveats = reply.caveats || [];
+  result.search_interest = reply.search_interest || null;
   result.unsupported_claims_removed = dropped;
   [result.summary] = keepSupported(reply.summary ? [reply.summary] : [], evidence)[0];
   result.summary = result.summary ? [result.summary] : [];

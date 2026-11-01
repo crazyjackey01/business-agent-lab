@@ -280,15 +280,27 @@ const STR = {
     how_dates: "기사 제목에 나온 날짜로 찾은 앞으로의 일정.",
     drivers: "오늘 갑자기 많이 나온 말", driver_n: n => `${n}건`,
     how_drivers: "최근 24시간 기사 제목에 평소보다 눈에 띄게 많이 나온 단어. 우연으로 보기 어려운 것만 남겼다 (통계 계산). 숫자는 오늘 그 단어가 나온 제목 수.",
-    prediction: "다음 7일 관심도 예측",
-    pred_value: p => `위키백과 조회수 약 ${Math.round(p.point)}회 (${Math.round(p.low)}–${Math.round(p.high)})`,
-    how_pred: end => `관심도는 위키백과 조회수로 잰다. 지난 3년치 조회수로 여러 예측 방법을 시험해 가장 잘 맞은 방법을 썼다.\n괄호는 10번 중 8번 들어가야 하는 범위. ${md(end)}에 실제 값과 비교한다.`,
     how_now_kicker: "구글 트렌드의 실시간 인기 검색어와, 구글이 각 검색어에 연결한 기사.",
     how_category: c => `AI 검사기(Jev)가 붙인 분류${c ? ` (확신 ${c})` : ""}.`,
     how_now_why: (w, check) => `AI(${w})가 연결된 기사만 보고 쓴 설명.\nAI 검사기 판정: ${check}`,
+    prediction: "일주일 뒤 확인할 예측", dir_up: "늘어남", dir_flat: "그대로", dir_down: "줄어듦",
+    pred_search: d => `구글 검색량이 지난 7일보다 ${d}`, pred_tests: n => `전망 ${n}개 (아래 '다음은'의 확인 기준)`,
+    test_line: (q, n) => `확인 기준: 7일 동안 구글 뉴스에 "${q}" 기사 ${n}건 이상`,
+    how_pred: end => `이 분석의 예측을 ${md(end)} 이후 실제 구글 데이터와 코드로 비교한다. 결과는 '지난 분석·예측' 탭에 나온다.`,
+    card_tests: (h, n, e) => ["전망이 실제로 맞았나", `${h}/${n}`, `일주일 뒤 기준을 넘긴 전망. 전체 중 ${e}개는 지난주에도 이미 넘었던 쉬운 기준이다`],
+    card_tests_wait: n => ["전망이 실제로 맞았나", "채점 대기", n ? `${n}개 분석의 전망이 일주일 뒤 채점된다` : "새 방식의 첫 분석을 기다린다. 분석을 실행하면 전망이 기록되고 일주일 뒤 채점된다."],
+    card_search: (h, f, n) => ["검색량 방향을 맞혔나", `${h}/${n}`, `늘어남·그대로·줄어듦 예측. 항상 '그대로'라고 했다면 ${f}/${n}`],
+    how_tests: "AI가 전망마다 확인 기준(구글 뉴스 검색어와 기사 수)을 미리 적는다. 일주일 뒤 코드가 실제 기사 수를 센다. AI가 자기 전망을 채점하지 않는다.",
+    how_search: "구글 트렌드에서 지난 7일과 다음 7일을 비교한다. 10% 넘게 달라지면 늘어남·줄어듦, 아니면 그대로다.",
+    card_cov: (c, lo, hi, beat, n) => [beat ? `구글 검색량 예측이 ${n}개 주제 중 ${beat}개에서 단순 추측을 이겼다` : "구글 검색량 예측은 단순 추측을 이기지 못했다", pct(c), `실제 값이 예측 범위 안에 든 비율 (목표 80%, 주제별 ${pct(lo)}–${pct(hi)}). 단순 추측 = '지난주와 같음'`],
+    log_title: "예측 기록", log_note: "분석마다 예측과 확인 기준을 미리 적어 두고, 7일이 지나면 코드가 구글 뉴스와 구글 트렌드로 확인한다.",
+    no_log: "아직 기록이 없다. 분석을 실행하면 여기에 쌓인다.",
+    col_topic: "주제", col_pred: "예측", col_test: "확인 기준", col_result: "결과",
+    pending: d => `${md(d)} 이후 확인`, right: "맞음", missed: "빗나감",
+    test_short: (q, n) => `구글 뉴스 "${q}" ${n}건 이상`, test_search: "구글 트렌드, 지난 7일과 비교",
+    test_count: (n, last, easy) => `${n}건 (지난주 ${last}건${easy ? ", 이미 넘음" : ""})`, search_actual: d => `실제: ${d}`, no_data: "데이터 없음",
     // History tab
-    ev_title: "이 서비스는 얼마나 믿을 만한가?", ev_note: "아래 점검은 모두 AI가 아니라 통계 계산으로 했다. 카드에 마우스를 올리면 방법이 보인다.",
-    card_cov: c => ["예측은 대체로 범위 안에 들었다", `10번 중 ${Math.round(c * 10)}번`, "예측 모델이 보지 못한 최근 기간에서, 실제 값이 예측 범위 안에 든 횟수 (목표: 10번 중 8번)"],
+    ev_title: "이 서비스는 얼마나 믿을 만한가?", ev_note: "맞고 틀림은 AI가 아니라 코드와 사람이 판정한다. 카드에 마우스를 올리면 방법이 보인다.",
     card_kappa: (k, a) => [k < 0.2 ? "AI 검사기는 사람과 자주 달랐다" : k < 0.6 ? "AI 검사기는 사람과 어느 정도 같았다" : "AI 검사기는 사람과 대체로 같았다",
       `${pct(a)} 같음`, "문장 30개를 사람이 직접 판정해 AI 검사기(Jev)와 비교했다. 우연을 뺀 일치도 κ = " + k.toFixed(2)],
     how_cov: "주별 구글 트렌드 5년치, 일별 위키백과 조회수 3년치. 예측 방법은 앞부분 데이터로만 고르고, 마지막 1년 / 180일로 채점했다.",
@@ -296,9 +308,6 @@ const STR = {
     card_kappa_wait: ["AI 검사기(Jev)는 다시 시험 중이다", "판정 대기", "지난 시험은 사람이 Jev의 답을 볼 수 있어서 버렸다. Jev 규칙을 고치고 문장 30개로 다시 시험한다."],
     past_title: "지난 분석", past_note: "누르면 다시 볼 수 있다.",
     
-    log_title: "예측 기록", log_note: "분석할 때마다 다음 7일 관심도(위키백과 조회수)를 미리 적어 두고, 7일이 지나면 맞았는지 확인한다.",
-    col_topic: "주제", col_pred: "예측", col_result: "결과",
-    pending: d => `${md(d)}에 확인`, inside: a => `맞음 (실제 ${a})`, outside: a => `빗나감 (실제 ${a})`,
     details: "자세한 수치 보기",
     pt_title: "예측 정확도 (모델이 보지 못한 기간)",
     col_source: "데이터", col_error: "평균 오차", col_inrange: "범위 안", col_example: "예시: 예측 → 실제",
@@ -352,15 +361,27 @@ const STR = {
     how_dates: "Upcoming events, found from dates in the headlines.",
     drivers: "Words suddenly common today", driver_n: n => String(n),
     how_drivers: "Words that appear in the last 24 hours' headlines much more than usual. Only ones unlikely to be luck are kept (statistical calculation). The number is how many of today's headlines have the word.",
-    prediction: "Interest forecast, next 7 days",
-    pred_value: p => `about ${Math.round(p.point)} Wikipedia views (${Math.round(p.low)}–${Math.round(p.high)})`,
-    how_pred: end => `Interest is measured by Wikipedia views. Several forecasting methods were tested on 3 years of views and the best one is used.\nThe range should contain the real value 8 times out of 10. Checked against the real number on ${md(end)}.`,
     how_now_kicker: "Google Trends' live trending searches and the articles Google links to each.",
     how_category: c => `Category given by the AI checker (Jev)${c ? ` (confidence ${c})` : ""}.`,
     how_now_why: (w, check) => `Explanation by AI (${w}) from the linked articles only.\nAI checker's verdict: ${check}`,
+    prediction: "To be checked in a week", dir_up: "up", dir_flat: "about the same", dir_down: "down",
+    pred_search: d => `Google searches vs the last 7 days: ${d}`, pred_tests: n => `${n} forecast(s), with the checks under 'What is next'`,
+    test_line: (q, n) => `Check: at least ${n} Google News articles for "${q}" in 7 days`,
+    how_pred: end => `This analysis's forecasts are compared with real Google data by code after ${md(end)}. Results appear on the History tab.`,
+    card_tests: (h, n, e) => ["Did the forecasts come true?", `${h}/${n}`, `forecasts that met their bar a week later. ${e} of all of them had an easy bar that last week already met`],
+    card_tests_wait: n => ["Did the forecasts come true?", "waiting", n ? `forecasts from ${n} analyses are scored a week after they ran` : "Waiting for the first analysis under the new method. Run one, and its forecasts are logged and scored a week later."],
+    card_search: (h, f, n) => ["Did it call the search direction?", `${h}/${n}`, `up / same / down calls. Always saying 'same' would get ${f}/${n}`],
+    how_tests: "For each forecast the AI writes its check in advance: a Google News search and an article count. A week later code counts the real articles. The AI never scores itself.",
+    how_search: "Google Trends, the last 7 days vs the next 7. More than 10% apart is up or down, otherwise about the same.",
+    card_cov: (c, lo, hi, beat, n) => [beat ? `Google search forecasts beat a simple guess on ${beat} of ${n} topics` : "Google search forecasts did not beat a simple guess", pct(c), `of real values inside the forecast range (target 80%, ${pct(lo)}–${pct(hi)} by topic). Simple guess = 'same as last week'`],
+    log_title: "Prediction log", log_note: "Each analysis writes down its forecasts and how to check them; after 7 days code checks them against Google News and Google Trends.",
+    no_log: "Nothing logged yet. Run an analysis and it appears here.",
+    col_topic: "Topic", col_pred: "Forecast", col_test: "Check", col_result: "Result",
+    pending: d => `checked after ${md(d)}`, right: "right", missed: "missed",
+    test_short: (q, n) => `Google News "${q}": at least ${n}`, test_search: "Google Trends vs the last 7 days",
+    test_count: (n, last, easy) => `${n} (last week ${last}${easy ? ", already met" : ""})`, search_actual: d => `actual: ${d}`, no_data: "no data",
     // History tab
-    ev_title: "How much can you trust this?", ev_note: "Every check below is a statistical calculation, not an AI's opinion. Hover a card to see the method.",
-    card_cov: c => ["Forecasts mostly landed in range", `${Math.round(c * 10)} in 10`, "times the real value fell inside the forecast range, in a recent period the model never saw (target: 8 in 10)"],
+    ev_title: "How much can you trust this?", ev_note: "Right or wrong is decided by code and people, not by an AI. Hover a card to see the method.",
     card_kappa: (k, a) => [k < 0.2 ? "The AI checker often disagreed with a human" : k < 0.6 ? "The AI checker partly agreed with a human" : "The AI checker mostly agreed with a human",
       `${pct(a)} same`, "a human judged 30 sentences and was compared with the AI checker (Jev). Agreement beyond chance κ = " + k.toFixed(2)],
     how_cov: "5 years of weekly Google Trends and 3 years of daily Wikipedia views. Methods were chosen on the earlier data only and scored on the last year / 180 days.",
@@ -368,9 +389,6 @@ const STR = {
     card_kappa_wait: ["The AI checker (Jev) is being retested", "waiting", "The last test was dropped because the human could see Jev's answers. Jev's rules were fixed and it is being retested on 30 sentences."],
     past_title: "Past analyses", past_note: "Click one to open it again.",
     
-    log_title: "Prediction log", log_note: "Each analysis writes down a forecast of the next 7 days of interest (Wikipedia views); after 7 days it is checked against what really happened.",
-    col_topic: "Topic", col_pred: "Forecast", col_result: "Result",
-    pending: d => `checked on ${md(d)}`, inside: a => `right (actual ${a})`, outside: a => `missed (actual ${a})`,
     details: "Show detailed numbers",
     pt_title: "Forecast accuracy (period the model never saw)",
     col_source: "Data", col_error: "Average error", col_inrange: "In range", col_example: "Example: forecast → actual",
@@ -446,7 +464,8 @@ function claimList(list, refs, outlook) {
   return `<ul class="claims">${list.map(c => `<li${how(t("how_claim", (c.cites || []).length, dotTitle(c)))}>
       <span class="dot ${dotClass(c)}"></span>
       <div>${esc(c.claim)}${refs.html(c.cites)}${outlook && c.confidence ? `<span class="conf">${t("likely")} ${esc(t("conf_" + c.confidence) || c.confidence)}</span>` : ""}
-        ${outlook && c.basis ? `<span class="basis">${esc(c.basis)}</span>` : ""}</div>
+        ${outlook && c.basis ? `<span class="basis">${esc(c.basis)}</span>` : ""}
+        ${outlook && c.test?.query ? `<span class="basis">${esc(t("test_line", c.test.query, c.test.min_articles))}</span>` : ""}</div>
     </li>`).join("")}</ul>`;
 }
 const legend = () => `<div class="legend"><span><i style="background:var(--ok)"></i>${t("supported")}</span>
@@ -518,9 +537,9 @@ function topicSheet(a) {
   }
   const drivers = (f.drivers || []).slice(0, 8).map(d =>
     `<div class="bar-row"><span>${esc(d.word)}</span><span class="track"><i style="width:${Math.min(100, d.z / 4 * 100)}%"></i></span><span class="n">${esc(t("driver_n", d.headlines_today))}</span></div>`).join("");
-  const p = a.prediction && !a.prediction.error ? a.prediction : null;
+  const p = a.prediction?.window_start && (a.prediction.search_interest || a.prediction.tests) ? a.prediction : null;
   const prediction = p ? `<div class="panel"><h2 class="sec"${how(t("how_pred", windowEnd(p)))}>${t("prediction")}</h2>
-      <p class="muted" style="margin:0">${esc(t("pred_value", p))}</p></div>` : "";
+      <p class="muted" style="margin:0">${p.search_interest ? esc(t("pred_search", t("dir_" + p.search_interest.direction))) + "<br>" : ""}${p.tests?.length ? esc(t("pred_tests", p.tests.length)) : ""}</p></div>` : "";
 
   const body = e.error ? `<p class="muted">${t("write_failed")}: ${esc(e.error)}</p>` : `
     <div class="block"><h2 class="sec"${how(t("how_section", writer))}>${t("why")}</h2>${claimList(e.why_people_search, refs)}</div>
@@ -628,11 +647,15 @@ function renderTopic() {
 // History: is it trustworthy, past analyses, prediction log, details -----------
 
 function evalCards(ev) {
-  const pt = ev.prediction_test, k = ev.jev_agreement;
+  const pt = ev.prediction_test, k = ev.jev_agreement, done = ev.prediction_totals;
+  const pending = (ev.prediction_log || []).filter(p => p.status === "pending").length;
+  const google = (pt?.rows || []).filter(r => r.source === "google"), cover = (pt?.rows || []).map(r => r.coverage_80);
   const card = ([verdict, big, label], explain) =>
     `<div class="card"${how(explain)}><strong>${esc(verdict)}</strong><b>${esc(big)}</b><span>${esc(label)}</span></div>`;
   return `<div class="cards">
-    ${pt?.mean_coverage_80 != null ? card(t("card_cov", pt.mean_coverage_80), t("how_cov")) : ""}
+    ${card(done?.tests ? t("card_tests", done.tests_passed, done.tests, done.tests_already_met) : t("card_tests_wait", pending), t("how_tests"))}
+    ${done?.search_calls ? card(t("card_search", done.search_hits, done.search_flat_hits, done.search_calls), t("how_search")) : ""}
+    ${pt?.mean_coverage_80 != null ? card(t("card_cov", pt.mean_coverage_80, Math.min(...cover), Math.max(...cover), google.filter(r => r.mase < 1).length, google.length), t("how_cov")) : ""}
     ${card(k ? t("card_kappa", k.kappa, k.agreement) : t("card_kappa_wait"), t("how_kappa"))}
   </div>`;
 }
@@ -647,14 +670,24 @@ function pastAnalyses() {
 }
 
 function predictionLog(log) {
-  if (!log?.length) return "";
-  // One row per topic and week: a repeated analysis logs the same forecast again.
-  const seen = new Set(), rows = log.filter(p => { const k = p.topic + p.window_start; return !seen.has(k) && seen.add(k); });
+  const result = (ok, detail) => `<span class="badge ${ok ? "ok" : "warn"}">${t(ok ? "right" : "missed")}</span> <span class="muted">${esc(detail)}</span>`;
+  const rows = (log || []).flatMap(p => {
+    const waiting = `<span class="muted">${esc(t("pending", windowEnd(p)))}</span>`, row = [];
+    const s = p.search_interest;
+    if (s) {
+      const outcome = p.status !== "scored" ? waiting : s.hit == null ? `<span class="muted">${t("no_data")}</span>`
+        : result(s.hit, t("search_actual", t("dir_" + s.actual)));
+      row.push(`<tr><td>${esc(p.topic)}</td><td>${esc(t("pred_search", t("dir_" + s.direction)))}</td><td>${t("test_search")}</td><td>${outcome}</td></tr>`);
+    }
+    for (const c of p.tests || []) {
+      const outcome = p.status !== "scored" ? waiting : result(c.passed, t("test_count", c.count, c.last_week, c.already_met));
+      row.push(`<tr><td>${esc(p.topic)}</td><td>${esc(c.claim)}</td><td>${esc(t("test_short", c.query, c.min_articles))}</td><td>${outcome}</td></tr>`);
+    }
+    return row;
+  });
   return `<div class="hist-sec"><h2 class="sec">${t("log_title")}</h2><p class="muted">${t("log_note")}</p>
-    <div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_pred")}</th><th>${t("col_result")}</th></tr>
-    ${rows.map(p => `<tr><td>${esc(p.topic)}</td><td>${esc(t("pred_value", p))}</td>
-      <td>${p.status === "scored" ? `<span class="badge ${p.inside_interval ? "ok" : "warn"}">${esc(t(p.inside_interval ? "inside" : "outside", Math.round(p.actual)))}</span>`
-        : `<span class="muted">${esc(t("pending", windowEnd(p)))}</span>`}</td></tr>`).join("")}</table></div></div>`;
+    ${rows.length ? `<div class="scroll-x"><table class="ev"><tr><th>${t("col_topic")}</th><th>${t("col_pred")}</th><th>${t("col_test")}</th><th>${t("col_result")}</th></tr>${rows.join("")}</table></div>`
+      : `<p class="muted">${t("no_log")}</p>`}</div>`;
 }
 
 function predictionTest(pt) {

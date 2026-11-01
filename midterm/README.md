@@ -38,12 +38,13 @@ Two versions of the same app share one page template (`dashboard_template.html`)
    are removed (for 스마트 안경 that was 72 of 180 Google News results).
 2. **Filter (Jev)**: for each article, "is this mainly about the topic?"; under 50% is dropped.
 3. **Measure (plain code)**: search-purpose shares (word lists; Jev labels what they miss),
-   words suddenly frequent in the last 24 hours' headlines, dates in the news, momentum.
+   words suddenly frequent in the last 24 hours' headlines, dates in the news, article counts.
 4. **Write (Claude Sonnet 5.5)**: sees only those numbered facts and articles and must cite ids
    for every sentence; sentences citing nothing or nonexistent ids are dropped. Wire-news style,
    a summary plus at most 3 / 5 / 3 points.
 5. **Check (Jev)**: each sentence is rated supported / partly / unsupported against its own
-   sources, with a probability. Unsupported sentences are removed; the page shows a colored dot.
+   sources, with a probability; a forecast is rated on whether its basis is in them. Unsupported
+   sentences are removed; the page shows a colored dot.
 
 ### Leaving the box empty
 
@@ -98,19 +99,15 @@ Cloudflare, so the Worker uses paid `jev-1.13` (`JEV_MODEL`).
 
 ## Measurable validation (`eval/`)
 
-Deterministic statistics against external ground truth (Wikipedia pageviews): a negative
-binomial spike test, news-vs-pageviews correlation, 7-day forecasts with a rolling backtest
-and a prediction log, number grounding of generated text, log-odds driver words, and a
-Jev-vs-human agreement check. Results and one command per test: [`eval/README.md`](eval/README.md).
+Three checks on the analysis itself, decided by code and people, not by a model: whether its
+forecasts came true a week later (each "what is next" sentence carries a Google News test, plus a
+search-direction call scored against Google Trends and "same as last week"), forecast accuracy
+on unseen data, and a blind test of Jev against a human. One command per test and the results:
+[`eval/README.md`](eval/README.md).
 
-On the page: the **지난 분석·예측 / History & accuracy** tab shows the eval results, every past
-analysis (spike verdict, sentences matching sources, numbers found in the data, its
-prediction) and the prediction log. Hovering any part of an analysis (facts, headings,
-sentences, side panels) explains how it was made.
-
-**Worker not ported yet:** the Python version has these; `worker/` still uses the momentum
-ratio and share-ratio drivers, and has no surge-word filter or prediction log (details at the
-end of `eval/README.md`).
+On the page, the **지난 분석·예측 / History & accuracy** tab shows the results, every past
+analysis and the prediction log. Hovering any part of an analysis explains how it was made.
+The article-count spike test is only a rough note under the summary.
 
 ## Known limits
 
@@ -126,7 +123,7 @@ end of `eval/README.md`).
 |-------|------|--------|
 | 1–2   | Repo setup, trend collector | done |
 | 3–5   | "Why it's trending" agent | done (cited analysis, Jev checks) |
-| 6–7   | Spike detection, lifespan prediction | momentum done; predictions not logged yet |
+| 6–7   | Spike note, prediction log | done (`eval/`) |
 | 8–9   | Dashboard | done (live on Cloudflare) |
 | —     | Publish demo pages | **not started: most time-critical** |
 | 10–12 | Daily demo-term checks across AI search tools | |

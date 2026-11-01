@@ -24,7 +24,7 @@ Usage:
 """
 import json
 import sys
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -35,7 +35,6 @@ from eval.wiki import ARTICLES, pageviews  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "data" / "eval"
-PREDICTIONS = HERE.parent / "data" / "predictions.jsonl"
 H = 7                      # forecast window, days
 WARMUP = 56                # history needed before the first origin
 MAX_ORIGINS = 730          # backtest at most the last 2 years
@@ -177,62 +176,6 @@ def summarize(rows):
 
 
 # Live forecast + prediction log ---------------------------------------------------
-
-def best_model(topic):
-    """The model with the lowest MASE in the latest backtest (ses if none yet)."""
-    files = sorted(OUT.glob("backtest_*.json"))
-    if not files:
-        return "ses", None
-    result = json.loads(files[-1].read_text(encoding="utf-8"))["topics"].get(topic)
-    if not result or not result["all"]:
-        return "ses", None
-    model = min(MODELS, key=lambda m: result["all"][m]["mase"])  # naive included: it is often best
-    return model, result["all"][model]["ratio_q10_q90"]
-
-
-def forecast_now(topic):
-    """One falsifiable prediction: next 7 days' pageviews, with an 80% interval from the backtest."""
-    views = pageviews(topic)
-    if not views:
-        return None
-    days = sorted(views)
-    y = np.array([views[d] for d in days], float)
-    model, ratio = best_model(topic)
-    t = len(y) - 1
-    if model == "naive":
-        point = y[-H:].sum()
-    elif model == "mean28":
-        point = y[-28:].mean() * H
-    else:
-        point = SES(y).forecast(t)[0]
-        if model == "decay":
-            peak = recent_peak(y, spike_days(y), t)
-            if peak is not None:
-                point = decay_forecast(y, t, peak)[0] or point
-    low, high = (point * ratio[0], point * ratio[1]) if ratio else (None, None)
-    start = date.fromisoformat(days[-1]) + timedelta(days=1)
-    return {
-        "topic": topic,
-        "made_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "metric": "wikipedia_pageviews_sum:" + "/".join(ARTICLES[topic]),
-        "window_start": start.isoformat(), "window_days": H,
-        "point": round(float(point), 1),
-        "low": None if low is None else round(float(low), 1),
-        "high": None if high is None else round(float(high), 1),
-        "model": model,
-    }
-
-
-def log_prediction(topic):
-    """Append today's prediction for a topic to data/predictions.jsonl (skips unmapped topics)."""
-    if topic not in ARTICLES:
-        return None
-    prediction = forecast_now(topic)
-    if prediction:
-        with PREDICTIONS.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(prediction, ensure_ascii=False) + "\n")
-    return prediction
-
 
 # Self-check and report --------------------------------------------------------------
 
