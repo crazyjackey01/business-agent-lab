@@ -1,112 +1,5 @@
 {
- "made_at": "2026-10-20T08:30+00:00",
- "groundtruth": {
-  "days": 90,
-  "rows": [
-   {
-    "topic": "전기차",
-    "source": "google",
-    "series": "Google Trends: 전기차",
-    "n": 90,
-    "rho": 0.24,
-    "p": 0.022985889695996353,
-    "best_lag": 0,
-    "significant": true
-   },
-   {
-    "topic": "전기차",
-    "source": "wikipedia",
-    "series": "ko.wikipedia/전기자동차",
-    "n": 90,
-    "rho": -0.14,
-    "p": 0.17918451909344696,
-    "best_lag": -3,
-    "significant": false
-   },
-   {
-    "topic": "갤럭시",
-    "source": "google",
-    "series": "Google Trends: 갤럭시",
-    "n": 90,
-    "rho": -0.09,
-    "p": 0.3875755314000898,
-    "best_lag": -2,
-    "significant": false
-   },
-   {
-    "topic": "갤럭시",
-    "source": "wikipedia",
-    "series": "ko.wikipedia/삼성 갤럭시",
-    "n": 90,
-    "rho": 0.13,
-    "p": 0.2329511926585962,
-    "best_lag": 0,
-    "significant": false
-   },
-   {
-    "topic": "스마트 안경",
-    "source": "google",
-    "series": "Google Trends: 스마트 안경",
-    "n": 90,
-    "rho": 0.23,
-    "p": 0.03070920558900733,
-    "best_lag": -3,
-    "significant": true
-   },
-   {
-    "topic": "스마트 안경",
-    "source": "wikipedia",
-    "series": "ko.wikipedia/스마트글래스",
-    "n": 90,
-    "rho": 0.03,
-    "p": 0.7808242797539707,
-    "best_lag": 0,
-    "significant": false
-   },
-   {
-    "topic": "피지컬 AI",
-    "source": "google",
-    "series": "Google Trends: 피지컬 AI",
-    "n": 90,
-    "rho": 0.4,
-    "p": 7.510867578464345e-05,
-    "best_lag": 0,
-    "significant": true
-   },
-   {
-    "topic": "피지컬 AI",
-    "source": "wikipedia",
-    "series": "ko.wikipedia/피지컬 AI",
-    "n": 90,
-    "rho": 0.27,
-    "p": 0.010866737961284624,
-    "best_lag": 0,
-    "significant": true
-   },
-   {
-    "topic": "physical AI",
-    "source": "google",
-    "series": "Google Trends: physical AI",
-    "n": 90,
-    "rho": 0.14,
-    "p": 0.19578911835626384,
-    "best_lag": 0,
-    "significant": false
-   },
-   {
-    "topic": "physical AI",
-    "source": "wikipedia",
-    "series": "en.wikipedia/Physical AI",
-    "n": 90,
-    "rho": 0.32,
-    "p": 0.001835514882236625,
-    "best_lag": 0,
-    "significant": true
-   }
-  ],
-  "topics": 5,
-  "significant_topics": 4
- },
+ "made_at": "2026-11-01T09:56+00:00",
  "prediction_test": {
   "rows": [
    {
@@ -321,9 +214,9 @@
    "low": 26.4,
    "high": 56.8,
    "model": "naive",
-   "status": "pending",
-   "actual": null,
-   "inside_interval": null
+   "status": "scored",
+   "actual": 22,
+   "inside_interval": false
   },
   {
    "topic": "스마트 안경",
@@ -335,9 +228,9 @@
    "low": 82.3,
    "high": 206.4,
    "model": "ses",
-   "status": "pending",
-   "actual": null,
-   "inside_interval": null
+   "status": "scored",
+   "actual": 112,
+   "inside_interval": true
   },
   {
    "topic": "피지컬 AI",
@@ -349,9 +242,9 @@
    "low": 183.3,
    "high": 517.8,
    "model": "naive",
-   "status": "pending",
-   "actual": null,
-   "inside_interval": null
+   "status": "scored",
+   "actual": 248,
+   "inside_interval": true
   },
   {
    "topic": "physical AI",
@@ -363,9 +256,9 @@
    "low": 40.0,
    "high": 100.4,
    "model": "mean28",
-   "status": "pending",
-   "actual": null,
-   "inside_interval": null
+   "status": "scored",
+   "actual": 37,
+   "inside_interval": false
   },
   {
    "topic": "전기차",
@@ -377,9 +270,9 @@
    "low": 26.4,
    "high": 56.8,
    "model": "naive",
-   "status": "pending",
-   "actual": null,
-   "inside_interval": null
+   "status": "scored",
+   "actual": 22,
+   "inside_interval": false
   },
   {
    "topic": "갤럭시",
@@ -391,37 +284,11 @@
    "low": 247.0,
    "high": 544.4,
    "model": "ses",
-   "status": "pending",
-   "actual": null,
-   "inside_interval": null
+   "status": "scored",
+   "actual": 350,
+   "inside_interval": true
   }
  ],
- "grounding": {
-  "analyses": 13,
-  "claims": 232,
-  "numbers": 205,
-  "grounded": 205,
-  "own": {
-   "all": [
-    205,
-    205
-   ],
-   "distinctive": [
-    82,
-    82
-   ]
-  },
-  "chance_other_topic": {
-   "all": [
-    1223,
-    2003
-   ],
-   "distinctive": [
-    202,
-    800
-   ]
-  }
- },
  "jev_agreement": {
   "n": 30,
   "agreement": 0.5,

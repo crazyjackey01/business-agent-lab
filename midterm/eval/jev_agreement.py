@@ -17,14 +17,14 @@ Usage:
 import csv
 import json
 import random
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # midterm/ modules
-from eval.grounding import all_runs  # noqa: E402
-
-OUT = Path(__file__).resolve().parent.parent / "data" / "eval"
+MIDTERM = Path(__file__).resolve().parent.parent
+ANALYSIS_DIR = MIDTERM / "data" / "analysis"
+OUT = MIDTERM / "data" / "eval"
 CSV = OUT / "jev_agreement.csv"
 LABELS = ("supported", "partly", "unsupported")
 SECTIONS = ("summary", "why_people_search", "what_is_happening", "outlook")
@@ -38,6 +38,21 @@ def cohens_kappa(a, b):
     ca, cb = Counter(a), Counter(b)
     expected = sum(ca[k] * cb[k] for k in set(a) | set(b)) / n ** 2
     return 1.0 if expected == 1 else (observed - expected) / (1 - expected)
+
+
+def all_runs():
+    """{label: run} for current files and every earlier version in git history."""
+    runs = {}
+    listing = subprocess.run(["git", "rev-list", "--all", "--objects", "--", str(ANALYSIS_DIR)],
+                             capture_output=True, text=True, cwd=MIDTERM).stdout
+    for line in listing.splitlines():
+        parts = line.split(" ", 1)
+        if len(parts) == 2 and parts[1].endswith(".json"):
+            blob = subprocess.run(["git", "cat-file", "-p", parts[0]], capture_output=True, cwd=MIDTERM).stdout
+            runs.setdefault(parts[1].split("/")[-1], json.loads(blob.decode("utf-8")))
+    for path in ANALYSIS_DIR.glob("*.json"):  # files not committed yet
+        runs.setdefault(path.name, json.loads(path.read_text(encoding="utf-8")))
+    return runs
 
 
 def jev_checked_claims():

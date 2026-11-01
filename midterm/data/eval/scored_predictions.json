@@ -1,6 +1,5 @@
 {
-  "scored": [],
-  "pending": [
+  "scored": [
     {
       "topic": "전기차",
       "made_at": "2026-10-19T11:59:02+00:00",
@@ -10,7 +9,11 @@
       "point": 40.0,
       "low": 26.4,
       "high": 56.8,
-      "model": "naive"
+      "model": "naive",
+      "actual": 22,
+      "error": -18.0,
+      "abs_pct_error": 81.8,
+      "inside_interval": false
     },
     {
       "topic": "갤럭시",
@@ -21,7 +24,11 @@
       "point": 372.6,
       "low": 247.0,
       "high": 544.4,
-      "model": "ses"
+      "model": "ses",
+      "actual": 350,
+      "error": -22.6,
+      "abs_pct_error": 6.5,
+      "inside_interval": true
     },
     {
       "topic": "스마트 안경",
@@ -32,7 +39,11 @@
       "point": 126.2,
       "low": 82.3,
       "high": 206.4,
-      "model": "ses"
+      "model": "ses",
+      "actual": 112,
+      "error": -14.2,
+      "abs_pct_error": 12.7,
+      "inside_interval": true
     },
     {
       "topic": "피지컬 AI",
@@ -43,7 +54,11 @@
       "point": 303.0,
       "low": 183.3,
       "high": 517.8,
-      "model": "naive"
+      "model": "naive",
+      "actual": 248,
+      "error": -55.0,
+      "abs_pct_error": 22.2,
+      "inside_interval": true
     },
     {
       "topic": "physical AI",
@@ -54,7 +69,11 @@
       "point": 43.5,
       "low": 40.0,
       "high": 100.4,
-      "model": "mean28"
+      "model": "mean28",
+      "actual": 37,
+      "error": -6.5,
+      "abs_pct_error": 17.6,
+      "inside_interval": false
     },
     {
       "topic": "전기차",
@@ -65,7 +84,12 @@
       "point": 40.0,
       "low": 26.4,
       "high": 56.8,
-      "model": "naive"
+      "model": "naive",
+      "actual": 22,
+      "error": -18.0,
+      "abs_pct_error": 81.8,
+      "inside_interval": false
     }
-  ]
+  ],
+  "pending": []
 }

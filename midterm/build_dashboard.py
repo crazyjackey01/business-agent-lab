@@ -5,8 +5,7 @@ file (no server needed, open it in a browser):
   - one section per analyzed topic: coverage chart, search intent, news drivers,
     scheduled events, and the cited explanation (every citation links to its source)
   - the latest general trends: Google Trends and most-viewed Wikipedia articles
-  - history: every saved analysis (with how many of its numbers are in its own facts),
-    the prediction log and the eval results (eval/summary.py)
+  - history: every saved analysis, the prediction log and the eval results (eval/summary.py)
 
 Usage:
     python midterm/build_dashboard.py
@@ -20,7 +19,6 @@ import webbrowser
 from datetime import datetime
 from pathlib import Path
 
-from eval.grounding import check_run
 from eval.summary import summary
 
 HERE = Path(__file__).resolve().parent
@@ -29,16 +27,9 @@ OUTPUT = HERE / "dashboard.html"
 TEMPLATE = HERE / "dashboard_template.html"
 
 
-def add_grounding(analysis):
-    """How many numbers in the analysis's sentences appear in its own facts (eval/grounding.py)."""
-    rows = check_run(analysis)
-    analysis["grounding"] = {"numbers": len(rows), "grounded": sum(r["grounded"] for r in rows)}
-    return analysis
-
-
 def all_analyses(folder):
-    """Every saved analysis, newest first, each with its number-grounding count."""
-    analyses = [add_grounding(json.loads(path.read_text(encoding="utf-8"))) for path in folder.glob("*.json")]
+    """Every saved analysis, newest first."""
+    analyses = [json.loads(path.read_text(encoding="utf-8")) for path in folder.glob("*.json")]
     return sorted(analyses, key=lambda a: a.get("analyzed_at") or a.get("source_collected_at") or "", reverse=True)
 
 

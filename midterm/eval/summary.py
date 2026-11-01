@@ -16,25 +16,11 @@ HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "data"
 EVAL = DATA / "eval"
 OUT = EVAL / "summary.json"
-ALPHA = 0.05
 
 
 def _load(name):
     path = EVAL / name
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
-
-
-def groundtruth_rows(g):
-    """One row per topic and source: Spearman rho, p, best lag."""
-    rows = []
-    for topic, sources in (g or {}).get("results", {}).items():
-        for source, r in sources.items():
-            if not r or "spearman" not in r:
-                continue
-            rows.append({"topic": topic, "source": source, "series": r.get("series"), "n": r["overlap_days"],
-                         "rho": round(r["spearman"], 2), "p": r["p_value"], "best_lag": r["best_lag"],
-                         "significant": r["p_value"] < ALPHA})
-    return rows
 
 
 def prediction_rows(p):
@@ -64,30 +50,19 @@ def prediction_log(scored):
 
 
 def summary():
-    grounding = _load("grounding.json") or {}
     pred = prediction_rows(_load("prediction_test.json"))
     log = prediction_log(_load("scored_predictions.json"))
-    gt = groundtruth_rows(_load("groundtruth.json"))
     coverage = [r["coverage_80"] for r in pred]
     return {
         "made_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-        "groundtruth": {"days": (_load("groundtruth.json") or {}).get("days"), "rows": gt,
-                        "topics": len({r["topic"] for r in gt}),
-                        "significant_topics": len({r["topic"] for r in gt if r["significant"]})},
         "prediction_test": {"rows": pred,
                             "mean_coverage_80": round(sum(coverage) / len(coverage), 3) if coverage else None},
         "prediction_log": log,
-        "grounding": {k: grounding.get(k) for k in ("analyses", "claims", "numbers", "grounded", "own", "chance_other_topic")},
         "jev_agreement": _load("jev_agreement.json"),
     }
 
 
 def self_check():
-    g = {"results": {"a": {"google": {"overlap_days": 90, "spearman": 0.4, "p_value": 0.001, "best_lag": 0},
-                           "wikipedia": None},
-                     "b": {"google": {"overlap_days": 90, "spearman": 0.1, "p_value": 0.3, "best_lag": -2}}}}
-    rows = groundtruth_rows(g)
-    assert [r["significant"] for r in rows] == [True, False], rows
     assert prediction_rows({"results": {"google": {"x": {"note": "too short"}}}}) == []
 
 
