@@ -370,35 +370,24 @@ def check_claims(result, evidence, language, sections=SECTIONS):
 
 
 # Relevance filter -----------------------------------------------------------------
-# Before the writer sees any news, Jev answers yes/no for each article: is it mainly
-# about the topic? Off-topic articles are dropped, so the writer reads less and cannot
-# cite something unrelated. The daily counts were measured before this step.
+# Before the writer sees any news, articles whose headline does not name the topic are
+# dropped, so the writer reads less and cannot cite something unrelated. No model involved.
+# The daily counts were measured before this step.
 
-RELEVANT_AT = 0.5  # Jev's probability of "yes" needed to keep an article
+MIN_KEPT = 10  # fewer headlines than this name the topic: other wording is likely, so keep all
+
+
+def mentions_topic(title, topic):
+    title, words = title.lower(), topic.lower().split()
+    return all(w in title for w in words) or "".join(words) in title.replace(" ", "")
 
 
 def relevant_news(news, topic):
     """Returns (kept articles, dropped articles, method)."""
-    if not news or not jev_api.available():
+    kept = [a for a in news if mentions_topic(a["title"], topic)]
+    if len(kept) < MIN_KEPT:
         return news, [], "not filtered"
-    state = f'News articles found for the search topic "{topic}":\n\n' + "\n".join(
-        f"[{n}] {a['source']} | {a['title']}" + (f" | {a['summary']}" if a.get("summary") else "")
-        for n, a in enumerate(news))
-    questions = {
-        f"a{n}": {"type": "noul",
-                  "instructions": f"Is article [{n}] mainly about {topic}, rather than mentioning it "
-                                  "in passing or being unrelated?"}
-        for n in range(len(news))
-    }
-    try:
-        answers = jev_api.ask(state, questions)
-    except jev_api.JevError as error:
-        return news, [], f"not filtered ({error})"
-    kept, dropped = [], []
-    for n, a in enumerate(news):
-        p = answers.get(f"a{n}", {}).get("noul")
-        (kept if p is None or p >= RELEVANT_AT else dropped).append({**a, "relevance": p})
-    return kept, dropped, "Jev"
+    return kept, [{**a, "relevance": None} for a in news if not mentions_topic(a["title"], topic)], "headline"
 
 
 # Run ----------------------------------------------------------------------------
