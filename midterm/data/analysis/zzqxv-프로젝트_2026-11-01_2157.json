@@ -1,0 +1,123 @@
+{
+  "topic": "zzqxv 프로젝트",
+  "geo": "KR",
+  "source_collected_at": "2026-11-01T12:57:15+00:00",
+  "analyzed_at": "2026-11-01T12:57:20+00:00",
+  "facts": {
+    "coverage": {
+      "today": 0,
+      "previous_daily_average": 0.0,
+      "momentum": 0.0,
+      "per_day": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "capped_queries": 0,
+      "capped_windows": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "spike": {
+      "today": 0,
+      "baseline": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_mean": 0.0,
+      "baseline_variance": 0.0,
+      "model": "poisson",
+      "p_value": 1.0,
+      "robust_z": null,
+      "verdict": "normal"
+    },
+    "spam_removed": 0,
+    "intent": [],
+    "intent_method": "word lists",
+    "drivers": [],
+    "events": [],
+    "relevance": {
+      "method": "not filtered",
+      "kept": 0,
+      "dropped": []
+    },
+    "trends_matches": [],
+    "history": [
+      {
+        "collected_at": "2026-11-01T12:57:15+00:00",
+        "today": 0,
+        "momentum": 0.0
+      }
+    ]
+  },
+  "evidence": {
+    "D1": "News articles per 24-hour window for the last 7 days, newest first: [0, 0, 0, 0, 0, 0, 0]. ",
+    "D2": "Search intent from Google autocomplete (share of suggestions): ",
+    "D3": "Words significantly more frequent in the last 24 hours' headlines than earlier (log-odds z > 1.96): none"
+  },
+  "evidence_links": {},
+  "related_searches": [],
+  "explanation": {
+    "why_people_search": [],
+    "what_is_happening": [
+      {
+        "claim": "최근 7일 동안 매일 집계된 관련 뉴스 기사는 0건이다.",
+        "cites": [
+          "D1"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 1,
+        "check_uncertain": false
+      },
+      {
+        "claim": "최근 24시간 헤드라인에서 이전보다 유의하게 많이 등장한 단어는 없다.",
+        "cites": [
+          "D3"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.97,
+        "check_uncertain": false
+      }
+    ],
+    "caveats": [
+      "검색 의도를 보여주는 자동완성 데이터(D2)가 비어 있어 검색 이유를 판단할 수 없다.",
+      "뉴스 기사와 헤드라인이 없어 사건이나 배경을 확인할 수 없다.",
+      "주제어가 새로 생긴 이름이거나 표기가 달라 수집에서 누락됐을 가능성이 있다."
+    ],
+    "unsupported_claims_removed": 0,
+    "summary": {
+      "claim": "'zzqxv 프로젝트'에 대한 뉴스 보도는 최근 7일간 하루 평균 0건이다. 검색 급증의 원인을 설명할 근거가 없다.",
+      "cites": [
+        "D1"
+      ],
+      "check": "partly",
+      "check_reason": "",
+      "check_confidence": 0.8,
+      "check_uncertain": false
+    },
+    "checked_by": "jev",
+    "failed_check_removed": 0
+  },
+  "prediction": {
+    "topic": "zzqxv 프로젝트",
+    "geo": "KR",
+    "made_at": "2026-11-01T12:57:20+00:00",
+    "note": "no search interest in Google Trends"
+  }
+}

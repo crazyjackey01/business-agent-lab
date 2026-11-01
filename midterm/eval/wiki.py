@@ -18,7 +18,7 @@ import requests
 HERE = Path(__file__).resolve().parent
 CACHE = HERE.parent / "data" / "eval" / "wiki"
 API = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{project}/all-access/user/{title}/daily/{start}/{end}"
-HEADERS = {"User-Agent": "business-agent-lab-midterm/0.1 (student project; https://github.com/crazyjackey01/business-agent-lab)"}
+HEADERS = {"User-Agent": "trend-signals/0.1 (student project; https://github.com/crazyjackey01/trend-signals)"}
 
 # Demo topic -> (Wikipedia project, article title). Chosen by checking which article
 # exists and gets the most views (2026-09-01..10-18 averages in the comment).

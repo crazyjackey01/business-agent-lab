@@ -1,9 +1,7 @@
-"""Send a request to a language model through the OpenRouter API.
+"""Claude Sonnet through OpenRouter, for writing the analysis.
 
-Copied from week-05. analyze_topic.py uses request_model() from this file.
-
-The API key comes from the .env file in the project root (business-agent-lab/.env).
-This file never prints the key.
+The key comes from OPENROUTER_API_KEY in the .env file one folder above this one and is never
+printed. To use another model, set OPENROUTER_MODEL there.
 """
 import json
 import os
@@ -14,64 +12,20 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
-# The endpoint is the address of the OpenRouter API.
 ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
-
-# Claude Sonnet writes the analysis: strong at following the cite-everything rules.
-# Paid (about $0.04 per search). To use another model, add a line such as
-# OPENROUTER_MODEL=nvidia/nemotron-3-super-120b-a12b:free to the .env file.
-DEFAULT_MODEL = "anthropic/claude-sonnet-5.5"
-
-# business-agent-lab/.env is one folder above this file, wherever you run the script from.
 ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(ENV_FILE)
-MODEL = os.getenv("OPENROUTER_MODEL") or DEFAULT_MODEL
-MAX_REPLY_TOKENS = 4000  # analyses use about 2,000
+MODEL = os.getenv("OPENROUTER_MODEL") or "anthropic/claude-sonnet-5.5"
+MAX_REPLY_TOKENS = 4000  # analyses use about 2,000; without a cap OpenRouter reserves credit for 65k
+TRIES = 3
 
 
 class ModelRequestError(Exception):
-    """The model request did not return a reply."""
-
-
-def api_key():
-    key = os.getenv("OPENROUTER_API_KEY", "").strip()
-    if not key:
-        raise ModelRequestError(f"OPENROUTER_API_KEY is missing. Add it to {ENV_FILE}")
-    return key
-
-
-def request_model(messages):
-    """Send the conversation to the model. Returns its reply message as a dict, text in "content"."""
-    # max_tokens caps the reply; without it OpenRouter reserves credit for a 65k-token reply.
-    body = {"model": MODEL, "messages": messages, "max_tokens": MAX_REPLY_TOKENS}
-    headers = {"Authorization": f"Bearer {api_key()}"}
-
-    for attempt in range(3):
-        try:
-            response = requests.post(ENDPOINT, headers=headers, json=body, timeout=60)
-        except requests.RequestException as error:
-            raise ModelRequestError(f"could not reach OpenRouter ({type(error).__name__})")
-        if response.status_code != 429 or attempt == 2:
-            break
-        # 429 means "too many requests". Wait, then try again (at most three tries).
-        wait = retry_after(response, default=2 ** (attempt + 1))
-        print(f"(rate limited, waiting {wait} seconds)")
-        time.sleep(wait)
-
-    data = read_json(response)
-    if response.status_code != 200 or "error" in data:
-        raise ModelRequestError(f"HTTP {response.status_code}: {error_message(data)}")
-    return data["choices"][0]["message"]
-
-
-def retry_after(response, default):
-    try:
-        return min(float(response.headers.get("Retry-After", default)), 30)
-    except ValueError:
-        return default
+    """The model did not reply."""
 
 
 def read_json(response):
+    """The response body as a dict, even when the server answered with something else."""
     try:
         return response.json()
     except ValueError:
@@ -80,12 +34,31 @@ def read_json(response):
 
 def error_message(data):
     error = data.get("error") or {}
-    if isinstance(error, dict):
-        return error.get("message") or "no message"
-    return str(error)
+    return (error.get("message") or "no message") if isinstance(error, dict) else str(error)
+
+
+def request_model(messages):
+    """Returns the model's reply message as a dict, with its text in "content"."""
+    key = os.getenv("OPENROUTER_API_KEY", "").strip()
+    if not key:
+        raise ModelRequestError(f"OPENROUTER_API_KEY is missing. Add it to {ENV_FILE}")
+    body = {"model": MODEL, "messages": messages, "max_tokens": MAX_REPLY_TOKENS}
+    for attempt in range(TRIES):
+        try:
+            response = requests.post(ENDPOINT, headers={"Authorization": f"Bearer {key}"}, json=body, timeout=60)
+        except requests.RequestException as error:
+            raise ModelRequestError(f"could not reach OpenRouter ({type(error).__name__})")
+        if response.status_code != 429 or attempt == TRIES - 1:
+            break
+        time.sleep(2 ** (attempt + 1))  # rate limited: wait, then try again
+    data = read_json(response)
+    if response.status_code != 200 or "error" in data:
+        raise ModelRequestError(f"HTTP {response.status_code}: {error_message(data)}")
+    return data["choices"][0]["message"]
 
 
 def parse_json_reply(text):
+    """The JSON object in a reply, ignoring any text around it."""
     match = re.search(r"\{.*\}", text or "", re.DOTALL)
     if not match:
         raise ValueError("the model did not reply with JSON")

@@ -1,7 +1,7 @@
 // Data collection: the JavaScript port of collect_trends.py and topic_trends.py.
 // Same sources, same output shape, so the dashboard template works for both.
 
-const HEADERS = { "User-Agent": "business-agent-lab-midterm/0.1 (student project)" };
+const HEADERS = { "User-Agent": "trend-signals/0.1 (student project)" };
 const TRENDS_RSS = "https://trends.google.com/trending/rss?geo=";
 const SUGGEST_URL = "https://suggestqueries.google.com/complete/search";
 const WIKI_TOP = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top";

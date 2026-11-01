@@ -1,1 +1,2 @@
 {"topic": "갤럭시", "geo": "KR", "made_at": "2026-11-01T10:35:31+00:00", "method": "naive", "direction": "flat", "change": 0.0, "change_low": -0.098, "change_high": 0.108, "week_start": "2026-11-01", "week_days": 7}
+{"topic": "스마트 안경", "geo": "KR", "made_at": "2026-11-01T12:57:13+00:00", "method": "ses", "direction": "flat", "change": -0.03, "change_low": -1.0, "change_high": 0.853, "week_start": "2026-11-01", "week_days": 7}

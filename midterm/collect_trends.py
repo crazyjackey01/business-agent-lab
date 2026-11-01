@@ -27,7 +27,7 @@ WIKI_TOP = (
     "{wiki}.wikipedia/all-access/{y}/{m}/{d}"
 )
 # Wikimedia asks API users to identify themselves.
-HEADERS = {"User-Agent": "business-agent-lab-midterm/0.1 (student project)"}
+HEADERS = {"User-Agent": "trend-signals/0.1 (student project)"}
 HT = "{https://trends.google.com/trending/rss}"  # namespace of the ht: tags
 
 SNAPSHOT_DIR = Path(__file__).resolve().parent / "data" / "snapshots"

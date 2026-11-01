@@ -1,0 +1,34 @@
+{
+  "topic": "zzqxv 프로젝트",
+  "lang": "ko",
+  "geo": "KR",
+  "collected_at": "2026-11-01T12:57:15+00:00",
+  "related_searches": [],
+  "news_momentum": {
+    "today": 0,
+    "previous_daily_average": 0.0,
+    "momentum": 0.0,
+    "per_day": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "capped_queries": 0,
+    "capped_windows": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "news": [],
+  "news_spam_removed": 0,
+  "google_trends_matches": []
+}

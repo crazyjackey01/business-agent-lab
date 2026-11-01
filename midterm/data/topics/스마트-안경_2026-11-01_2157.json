@@ -1,0 +1,2354 @@
+{
+  "topic": "스마트 안경",
+  "lang": "ko",
+  "geo": "KR",
+  "collected_at": "2026-11-01T12:57:03+00:00",
+  "related_searches": [
+    {
+      "phrase": "스마트 안경 가격",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 디시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 수능 디시",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 후기",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 시험",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 수능",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 시력 교정",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 추천",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 도수",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "스마트 안경 기능",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 게임",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 관련주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 기사",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 가성비",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 나무위키",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 녹화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 노안",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 도수 조절",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 대여",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 디스플레이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 대장주",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 렌즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 ai",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 문제점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 메타",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 부정행위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 번역",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 브랜드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 비교",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 배터리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 삼성",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 실시간 번역",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 사용법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 시력",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 시험 부정행위",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 성능",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 원리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 자동 초점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 종류",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 장단점",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 촬영",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 추천 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 출시일",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 컨닝",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 카메라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 컨닝 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 토익",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 효과",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "스마트 안경 후기 디시",
+      "times_suggested": 1
+    }
+  ],
+  "news_momentum": {
+    "today": 50,
+    "previous_daily_average": 50.5,
+    "momentum": 0.99,
+    "per_day": [
+      50,
+      11,
+      48,
+      121,
+      41,
+      50,
+      32
+    ],
+    "capped_queries": 2,
+    "capped_windows": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  "news": [
+    {
+      "title": "수능 시험장 스마트 안경 전담 요원 추가 배치",
+      "source": "울산신문",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBnVTFrNVFtV253cnhOMzFSTkJXOGNkdUsxLThKRGRHWHY1S1BSd203bkk3a3hvSEd0bnc5dE5ma0NySHdrTTg1TjZoUXc1UFNPdXpBaWRuUF9zSXNFbElzN0hfdENlaGJDTjVDN1Z30gFyQVVfeXFMTWM4Q1pza3ZRYjBScUdrd2g5cHQyY3Jqck9DT3NJellPUjdkdzdwdlVySU1lbWFpNmVGLURia09wM1lqQS1fSUI5QmtOckNNdmh2a2h0UXJoTC0zeTZfOTJfV25wc2UxQTV5LUJTN0JPdXJn?oc=5",
+      "published": "2026-11-01T11:10:00+00:00"
+    },
+    {
+      "title": "AI 스마트안경, 미국 대학입학시험서 80% 정답률 기록",
+      "source": "진주뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9paUZSaEhuUWlMd0VIRHEtQklSTTlNQ0ctbHppazhOb201YzhOMDRGa3oweHp4VmlNMXhmc2d2RERlamg3dG0zYktJRW8wVWlfNktQeXA5bGdoNldCQnlHRU5UeTNCakxoR1E?oc=5",
+      "published": "2026-11-01T10:16:51+00:00"
+    },
+    {
+      "title": "스마트안경 쓰고 미 대입시험 커닝하면 몇 점 나올까",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE10T1U0SENmZW9ad2ZpTklkak1XQ045ZnVrcGlkczFNQWkzS0lVVHZlYTV4dXZzbGNKWWd0clRTN2VSY2pJVDRoRzAwRV9pRjR2cUtqcjFTNnlCQQ?oc=5",
+      "published": "2026-11-01T09:30:26+00:00"
+    },
+    {
+      "title": "서울 수능 응시 'N수생' 늘어...'스마트안경' 전담 배치",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NVV9VVHhoQWdkemNYZzYxRnJ0RlVRN2FsX0MxSm5tTEg3X1E4OXpVZUZvNTI4X3NaZ1BkME9hdU5lVTBxT09PdVI4ak9qc084aGxBblVEcjZBN1pmMXc?oc=5",
+      "published": "2026-11-01T07:50:00+00:00"
+    },
+    {
+      "title": "서울 수능 응시생 43.6%가 졸업생…시험장에 AI 안경 전담요원 투입",
+      "source": "시티타임스 CityTimes",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BRnk1cjg3NTd6U0ktM3NwdWp4RXhLWEN0Ynh6b3JTRE9sNjdBTHhyR3pMckxTbjJjaTdDMl9lQTZxQ3g2V1BjenN1aURCMFRXQXFnU1JqRFUzanZBN1AzVTE2N2Y5VnhXQjVCV1pn0gFyQVVfeXFMTjMyeTJTbng1Mjk3UzhCLTYzZ3lLMkx6WXA1ZjJWcGNzUnluRWNpbC03WGJ5bW90MThQVEEyUmtCd2VpWTFUTGVNTGdSWHZKeVV0VnhlUTcxRXdqTVZXSktNVXV6ZUlVWk1aRXM1enFPZUhB?oc=5",
+      "published": "2026-11-01T07:38:00+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경 단속’에 수험생들 “의심 받을까 금속테로 바꿔”",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LWkpaVUgwa2FhWWVoTE5jalpMYXNRdjFydFNxNDZlU3dxb3puOTA1MlpqUGx1Y1p4UkdkVk5Ic2JONDFYUDB4elQ4YjhYZmtfdUR3STJB?oc=5",
+      "published": "2026-11-01T07:04:07+00:00"
+    },
+    {
+      "title": "스마트안경, 실제 시험과 유사한 환경에서 전체 정답률 80% 넘었다 : 2027학년도 수능 별 탈 없이 지나갈까?",
+      "source": "Howl.Link",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE15MndXZEVMRU83TkJWYWtZQVlaNzlndU1sRk9mY2E1YWhnQkVBaGJqaWJRS0lLdDd3Q19n?oc=5",
+      "published": "2026-11-01T06:36:30+00:00"
+    },
+    {
+      "title": "서울서 수능 11만 3천 명 응시‥'스마트안경' 전담요원 배치",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE80ODhqcFlhMXhnYktJOTlEZUk1RnNOekZjZGRUb3hzbDc0NzhySmplM2Q0WkF2eW9BejhVN0tNWHprRGxDTWR6bDV5Q3dwRHlZOFo2RzBIUGJRdElCS0FCX3VGWDM0dWpjc0oybFhPMFd5d0JtUjVF0gF3QVVfeXFMTzQ4OGpwWWExeGdiS0k5OURlSTVGc056RmNkZFRveHNsNzQ3OHJKamUzZDRaQXZ5b0F6OFU3S01YemtEbENNZHpsNXlDd3BEeVk4WjZHMEhQYlF0SUJLQUJfdUZYMzR1amNzSjJsWE8wV3l3Qm1SNUU?oc=5",
+      "published": "2026-11-01T06:06:58+00:00"
+    },
+    {
+      "title": "\"AI 안경으로 美 수능 83% 정답\" 수능 앞두고 부정행위 우려 확산",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeE9YNGlfVkliQkFuN05jSDhpZEpURHQ1THUzWGh0MTlSSmJjR1FGaHRLSGhrR2lGVWhWZkExWlJkNEIySS1lN2pJdktxZFBUZTBTLVVkYkhoci05aXA3YjR2QXdUaFlrUFBOWjJWSk9jWnZ2VzJ5SFVSY2IyX1I1NzFDaw?oc=5",
+      "published": "2026-11-01T05:54:30+00:00"
+    },
+    {
+      "title": "서울 수능 응시생 10명 중 4명은 졸업생... AI 안경 전담요원도 배치",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55ZEJlQkZjTS15UVNNZUhKXzhfWGNkN2FnbGs1aE10RU85cTFyYmFIVHpMcFVsQjJOT19OTzFsSUg2UlpQdk1Gc0d4TG0wUFR6THlyMllHZTJPY0t5QnZhSmxpX0YzcldEalhRYnNYcnZvUVHSAXNBVV95cUxOeWRCZUJGY00teVFTTWVISl84X1hjZDdhZ2xrNWhNdEVPOXExcmJhSFR6THBVbEIyTk9fTk8xbElINlJaUHZNRnNHeExtMFBUekx5cjJZR2UyT2NLeUJ2YUpsaV9GM3JXRGpYUWJzWHJ2b1FR?oc=5",
+      "published": "2026-11-01T05:24:00+00:00"
+    },
+    {
+      "title": "2027 수능 서울 응시자 감소 속 재수생 비중 상승",
+      "source": "https://www.2news.co.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GSVpDSHgyR0lqS0xnR3N2cWtIUXJ2Sm1IRHk4Y04wY2pWNnRrZHFVNjJrNU05XzBSMF9ycm9MY2ItNVBwZ2hWeDVvNXVFdTJfd1k0Sm5VSER6SjdjazNnMm1za29SeVV4?oc=5",
+      "published": "2026-11-01T05:07:00+00:00"
+    },
+    {
+      "title": "수능 D-데이 다가오는데…수험생들 덮친 ‘수능 안경테 공포’",
+      "source": "전북도민일보",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWUdtSUk5elFYMWlCbHE0ZzRuZlVta3BuNkpHS24wbzhrSEUyR0FzZFh4TkcwTEdlTFI3QS04RW1hQkFraFZZTjhDakd2R3ZUY1AxcldXd0kxQWNoclVqVmxucDJMYnpiZUttY1RyYzZuZS1yZTliOXNZYXFheTBYNlN5OWpJUQ?oc=5",
+      "published": "2026-11-01T05:00:00+00:00"
+    },
+    {
+      "title": "2027학년도 수능 서울 응시자 11만3454명",
+      "source": "퍼블릭뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE16b3hObkxkeU9XVkZZWXBqamZWVV8zNF9GMnlDa3ZmYVM4Y1F4cE9vNEFIT0F4T01pNURjdHZEbV9ja2VUM3R3TVdMQUtFdVVPZTFGeVBURnhVQkZvdkFJR0hVTms4emZQd1ZZ?oc=5",
+      "published": "2026-11-01T04:56:02+00:00"
+    },
+    {
+      "title": "서울시교육청, 2027학년도 대학수학능력시험 응시 현황 및 수험생 유의사항 안내",
+      "source": "대한일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1LMHdBeDZFUmpOVUhsN2FYOGxvV3VKZ2pWdlFwMWVkenZWZ01hY2xmR2VVVk5JTE9CMk5TZnpmM2FDMWdtNnl1MHlfeG9ZS3lDX3BWc3VWNFFad09oUjRRUG1vTWdVQkxWRmJIMGlXRQ?oc=5",
+      "published": "2026-11-01T04:38:46+00:00"
+    },
+    {
+      "title": "브랜즈컴퍼니, 5만원 미만 가성비 스마트안경 ‘스카이 핏 스마트 글라스 S1’ 출시",
+      "source": "미디어픽",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1DTmJidFpUZnpqU3ZHUi15SmdWN1lzSnRZZXpHN1NTQXpCdnJfWjdzM2hFRnEtcjUwNnBORHRRMm9JM3NoQ3N3S24yVk9QU29QTmNrN2M4QTZMVnk0cEVYRy1uMVMxM3ZSNXVr?oc=5",
+      "published": "2026-11-01T04:10:07+00:00"
+    },
+    {
+      "title": "서울 지역 수능 응시자, 재학생 줄고 졸업생 늘었다",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLeUQ2MW5ZNS1uRzFBQ0UwX0ctNHd1NW1hd0FHal9OTHlRUThlRzV5cDVRbktyZ1BsbFQzVDBNQlpqajNWNW8za2dfeDFqbXNKbHpDa29SV1RiZEVkODczOUJEMGVic194TWc?oc=5",
+      "published": "2026-11-01T03:40:00+00:00"
+    },
+    {
+      "title": "서울 수능 228개 시험장에 ‘스마트안경’ 전담요원 투입",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51b2lMQTFYbC1Pc3BiSG5jYXRoYWRneF9ZTFFzVEFxR2trYURlaVpJMEdVamM2NFN1TDNnZkJELWVXcXVTVEZtalI5RWlCRTBld1Z3aXBMMFB0eGJnMU5MSnd6VjV6Z9IBZkFVX3lxTE51b2lMQTFYbC1Pc3BiSG5jYXRoYWRneF9ZTFFzVEFxR2trYURlaVpJMEdVamM2NFN1TDNnZkJELWVXcXVTVEZtalI5RWlCRTBld1Z3aXBMMFB0eGJnMU5MSnd6VjV6Zw?oc=5",
+      "published": "2026-11-01T03:06:43+00:00"
+    },
+    {
+      "title": "수능 'D-18'…오답노트 복습·실전 연습으로 최종 점검 필요",
+      "source": "뉴스웍스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ULUs2TEZzdXNOMEV2WGpyUkdISk5zdmJzMDBtMS1meEVya1hCUmhWZXdnRWFjenNkNVI5Q1NrNlFIQXdTaENtd1dQLW5hMDk2Mzk0Si1ma1ZITnhuX2cxT3pOS1FWR0RQOXFNYjZhV1p2R2PSAXNBVV95cUxNVC1LNkxGc3VzTjBFdlhqclJHSEpOc3ZiczAwbTEtZnhFcmtYQlJoVmV3Z0VhY3pzZDVSOUNTazZRSEF3U2hDbXdXUC1uYTA5NjM5NEotZmtWSE54bl9nMU96TktRVkdEUDlxTWI2YVdadkdj?oc=5",
+      "published": "2026-11-01T03:00:00+00:00"
+    },
+    {
+      "title": "서울시교육청, 수능 때 AI안경 감독 전담요원 배치",
+      "source": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uZXR4djhBOG9uSGQ4ZUJ2cjdXbFhNRmxMV0lYcmtGcVc5bDhYU2tubUxGQ3VqdGhrMlZHN3VpWXdzaFhwXzRtVGdWTFZWTmdNZlk5TDAtczZFM0ctWE1XeDVieXhxdUFZYUNQei13?oc=5",
+      "published": "2026-11-01T02:56:35+00:00"
+    },
+    {
+      "title": "서울 수능 응시생 11만 3454명… 스마트안경 전담 요원 배치",
+      "source": "천지일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tNFFFcXNXa0d3ODRyTnRZRlhoY0ZyTjFXVFM5VW1LRC03TC0xS2lISDh0dTZIVE5SUWZZUHJGVVg0aWFzMFRIWjJLYzBJbmJjbmR3NmpWQjQ4Q0M4U3RpbXg3aUJXc2d6U2c?oc=5",
+      "published": "2026-11-01T02:52:54+00:00"
+    },
+    {
+      "title": "AI 스마트안경 썼더니 성격 '쭉' 올라…미 SAT 정답률 약 80%",
+      "source": "동행미디어 시대",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5hNnUxLUtnb1dmTjJCNGRjbkhwc0lJM2RCTVVQaUM3Z0JWOHNmdnRnMDloUVNZODB1YkNVOWNNbEU4dDBOU19pNzlZM0VJQVNuVmxWLW1zdEw0UHQxOVE?oc=5",
+      "published": "2026-11-01T02:08:14+00:00"
+    },
+    {
+      "title": "스마트안경으로 미 대입 자격시험 풀었더니…문제 80% ’술술’",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9EWks2Y1hxMGt6TjlTZmpUb1VQSkV5cU1tRlkxZ1pTdktZcHljeEZjeUF5alc3VDFXV3pFeUNFNlRqRk90VDZuRWZGNjRyZDR1MVdKaTJ0cU5Bb2ZVeERpcldjTnE2SnM?oc=5",
+      "published": "2026-11-01T02:05:00+00:00"
+    },
+    {
+      "title": "설마했는데…“진짜와 구별 어렵다” SAT까지 정답률 82%, 커지는 ‘커닝 공포’",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pdjAxQmFhakVZVE1XdUhfaWhaWTJFM3h2Z0pLYWlQclNmUzJmUWtpZDc1QlVTN1hwdEI0Zk1wc09CWkRYYUotYmdFUGZJZTIySmg2NDJn?oc=5",
+      "published": "2026-11-01T01:56:13+00:00"
+    },
+    {
+      "title": "＂공부한 사람만 억울하다?＂…AI 안경으로 시험 봤더니 ＇깜짝＇",
+      "source": "한국경제TV",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zN25XN3BSY1Q1WE9sZnJrM0hTZGhaWnlxektCNk9jaGd0Vjk3RjlZSjVObXdyT0ktU1htYS1JcXBIUVdkN1FyU1R3OTZhV3FUSWc5NEY5Q2R1U3V5OWZRRmlfMFZpMjdoT3ZkLUN0MExCTG8?oc=5",
+      "published": "2026-11-01T01:52:00+00:00"
+    },
+    {
+      "title": "서울 수능 응시자 10명 중 4명은 '졸업생'…스마트안경 전담요원 배치",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzajRrd29la2gycVBSaTJ6eU9PS0FvZTVIYUdIQ0tjdzZxREphSWpwMlZVQXNCMldNU0dqWm4zeFIweVB0dW9lZXllTGFkdllJWlIzUnUwT0FCZUZRSzZ6U29WSFc5OV9sVUFuQmdMOHY?oc=5",
+      "published": "2026-11-01T01:41:28+00:00"
+    },
+    {
+      "title": "'AI안경' 쓰고 SAT 커닝해보니…제미나이 83% 정답",
+      "source": "노컷뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE54Q2ROSWYyWUZGM3l0aHNEbG1mUWFoQUZxWm5JTDlHa0pNRml0ZkpTX2FlRURoTGw3NmV1VzhTODFUZGoyWHE4RmFXRjhfcjFybHdUQw?oc=5",
+      "published": "2026-11-01T01:34:00+00:00"
+    },
+    {
+      "title": "AI 안경으로 커닝하면 몇 점?…제미나이, SAT 문제 83% 정답",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3cnozd0U1Rzh4WElocUtsNl9hTWMyYW9lSkotVzU3UzN5MGpkNy10SXViNzd5UXNsMUN5VS1BZjliTjNJWUFsTTNsMW9idzhhNER5eW530gFUQVVfeXFMTk5wZ0owNlNhZmp4OGJXWDhGakV1dnlza3BtR3RIMFZ4TENnTWQzOXlUMk1oZDlMVENXTU51RmxfLVJjODJsckVtbXN3RHFCZUx5TG4x?oc=5",
+      "published": "2026-11-01T01:15:44+00:00"
+    },
+    {
+      "title": "서울 수능 응시생 졸업생 늘어…시험장 AI 안경 전담요원 투입",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RM0E4THhRakhnWW1hcjJ3REE3SWY4TWd2VUpaOGN3OThjZVo3UFNmcnItMVBneWZ4NzVULTdRWFJrbXJEWDZ6RHU3Rnhvd2JqN2g5Y2M5dlRWbkwyYWhV0gFfQVVfeXFMTVEzQThMeFFqSGdZbWFyMndEQTdJZjhNZ3ZVSlo4Y3c5OGNlWjdQU2Zyci0xUGd5Zng3NVQtN1FYUmttckRYNnpEdTdGeG93Ymo3aDljYzl2VFZuTDJhaFU?oc=5",
+      "published": "2026-11-01T01:12:00+00:00"
+    },
+    {
+      "title": "AI 스마트안경 부정행위 잡는다…수능 시험장마다 전담요원 배치",
+      "source": "ABC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1GdFJRTVAxamd0TFg5bDUwbFNXcVFpUE1GckZqNk92TUhQNjhuMlBjOUYwTF9vT1lKQW5JRklESEttZkhXellvdUUzY2ZOV0tmdUFJbXBVclBrRHMyY05mWXd1YV95VjDSAWdBVV95cUxNRnRSUU1QMWpndExYOWw1MGxTV3FRaVBNRnJGajZPdk1IUDY4bjJQYzlGMExfb09ZSkFuSUZJREhLbWZIV3pZb3VFM2NmTldLZnVBSW1wVXJQa0RzMmNOZll3dWFfeVYw?oc=5",
+      "published": "2026-11-01T00:58:32+00:00"
+    },
+    {
+      "title": "AI 스마트안경의 대두, 시험 공정성 위협하는 새로운 도전",
+      "source": "공감신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE14UFkzakRFUG9FT3R4dllyNnhtSzlkTUUteHhXOGhabXVISFdpdENsVWV5SUhzNG9mMkRsaFV6a2FKdnB2WlJKY1R0WEJkNWViTjkzWG00Q1BRSjJqOG5TN0lad2dxMWV3?oc=5",
+      "published": "2026-11-01T00:50:36+00:00"
+    },
+    {
+      "title": "서울시교육청, 2027학년도 수능 11개 시험지구·228개 시험장 운영",
+      "source": "핀포인트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE92RXdkZzREQl95UmJZWmlYa3BlZVJ6bXNabUpGZWloVU4yaGxpX0FsVk5CQlpPNU9jUW56eHdxdTNrcUJVSEJJRG5IamFKWnJHVmd1RDNDQUQ1YVZVSm96X3lkVW5vMklXQVh0NzdRQ1hRY2vSAXdBVV95cUxQaVRBa1ZpR3FNbHFZcVI2WVRyWEFmVWFWSklTM2ZaVzZydWIxelRqdjI5MDJUank2aE9rQW00ZlJ5aXVmUlhPcDBDa0VRc2ZmTXkxd3hqcUR0cDNJdE5iLTkzUUhoWlppV0Z2U1A0blFMUnZnc3JLcw?oc=5",
+      "published": "2026-11-01T00:45:22+00:00"
+    },
+    {
+      "title": "스마트안경으로 시험지 봤더니…AI가 SAT 문제 83% 맞혔다",
+      "source": "ABC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WNzdFOEQ5czNma1ZvQmFYcl93a1NIc2g0OTlsQWFPcHp5OEhKaTdLQ0o3bVo1anp6X0xlQXVMMnU2a0Qxdnc2V1Zoci1kUERIcHZsZWNTUG5QY19qZnY3Ylh4OXV5aUXSAWdBVV95cUxPVjc3RThEOXMzZmtWb0JhWHJfd2tTSHNoNDk5bEFhT3B6eThISmk3S0NKN21aNWp6el9MZUF1TDJ1NmtEMXZ3NldWaHItZFBESHB2bGVjU1BuUGNfamZ2N2JYeDl1eWlF?oc=5",
+      "published": "2026-11-01T00:42:00+00:00"
+    },
+    {
+      "title": "AI 안경으로 커닝하면 몇 점?…SAT 문제 80%이상 맞춰",
+      "source": "강원도민일보",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aTWNHZ0xwM09sYnlrMzBKb2NHRHpMWEdRZFZkbkdCQnhHcTNhLVdaR3ZDeHNCNWRhUjYwR3g3T1VUSWlzRHhHSDN3S2NiODlHXzRmaHVPNG53SVBPODFJNWZGN2VpVk1H?oc=5",
+      "published": "2026-11-01T00:39:01+00:00"
+    },
+    {
+      "title": "서울시교육청, 2027학년도 대학수학능력시험 응시 현황·수험생 유의사항 안내",
+      "source": "매일일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE93SGY5aDhpNkxJTnJodnpXb2t1ZWxSS09QSDNWbUZabU8zeGJ6akY2S0JLQzh1ZUZGak0wQXZVdDA3Y2YycmtqbXVZSDl3d2FCc0VMUjZqbjNvaDNDZUoxbG5LMTU?oc=5",
+      "published": "2026-11-01T00:37:54+00:00"
+    },
+    {
+      "title": "\"공부 안 해도 83점?\"…시험장 뒤흔들 AI 안경의 위력",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZWY3RXk4eW94dFV1cjMzNEhkdlJvR2ZLelc2VncxSWNLdC02OXpnQjY2ZUs3MUxiLThuXzVCbTFMeWpTQzJ2dHhUajBiNE1oSHZvUVhJQlBpVDkwT1lGdg?oc=5",
+      "published": "2026-11-01T00:24:08+00:00"
+    },
+    {
+      "title": "스마트안경 쓰다 걸리면 수능 무효…서울 모든 시험장에 전담요원",
+      "source": "콜뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9BbmFOa09uam82MlE3MkhlWTN0aHdZZHlaVEVRUVlOMHhtVEpsTUVZcW91akc4TUFyRFdIRlhESXNaODdDZEY0RW5vTE5sTThhVWZTYVRjVFpPNnA4TGF6dWw1dkdUNVBtMGMwbg?oc=5",
+      "published": "2026-11-01T00:06:30+00:00"
+    },
+    {
+      "title": "올해 수능, 서울서 11.3만명 응시…AI 안경 판별 인력 투입",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ2xVMXhldkd5akJOY3UyczZmS25kZkY3MHV4WGMtdlotZ0wtMTF0cC1nVHVqaXVwQ0dlNTRwRVFHdERFb0pSZ3ZfNnZwQnBSZHJPMWhESkdaa2VQT1ZvLUU4amxxNGxsOTJZM1VRNnh0ZmFkUlZxTEdQNnpoMEpJdw?oc=5",
+      "published": "2026-11-01T00:00:05+00:00"
+    },
+    {
+      "title": "올해 수능 서울 응시생 11만3천454명…졸업생 늘고 재학생 줄어",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JTWh6RHVUWExvd0ZscW84bW1hU2piRF80VV9LdHl1Rl8tMkdZaDJwQm4wUXFhZVIxZmZyQmUtendfb0RCWG1RTkg5V2M4OVpRdm9rVjh3UllxZi16UDJFLdIBYEFVX3lxTE1JTWh6RHVUWExvd0ZscW84bW1hU2piRF80VV9LdHl1Rl8tMkdZaDJwQm4wUXFhZVIxZmZyQmUtendfb0RCWG1RTkg5V2M4OVpRdm9rVjh3UllxZi16UDJFLQ?oc=5",
+      "published": "2026-11-01T00:00:03+00:00"
+    },
+    {
+      "title": "스마트안경 착용 시 내년 수능까지 응시 정지 … 서울교육청, 전담요원 배치 부정행위 잡는다",
+      "source": "뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3c2NtZ0VFVEVpaE92MnVsaFF6MUJScXN1c01rMFExM2pId0NuWXlmOFg4dDZvdjN1aml0anNvOC1yU21kUVp6VHYzUFE5NHRvTGo4aVRkQmFLQ0FOSHdOQzA0RGNDR1VfWHdGTHVVYWdWYU03MTZEWUxVa9IBgAFBVV95cUxNU2tkU0xKVDNfaEtVdmJGLU9lemN3Rkt1NDQtd05UUF9wRjdGUjhZOVZBcFhPSUpEXzNvOFJHQU9fQjI0WGMyZUdGQjYxOXdTeXhocnZWWHB4eTJPbHVEN1FyX1RsUGoxRTUzTF9TOGROckJQdzRNTkZaMUZ1eFJBMg?oc=5",
+      "published": "2026-11-01T00:00:00+00:00"
+    },
+    {
+      "title": "수능 응시 3년 제한은 기본…AI 안경 쓰다 걸리면 '이 처벌'까지 받는다",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12Z2EzaFNVQ2xnVE9CWkJfTEY2eFZqYXVDM3p2bWhEaVFQMWRPVWl3U0tlTENuZ0pZbnZaeTZYcndmYktHZ2tEMWJGS29McFVXZExNZlJR?oc=5",
+      "published": "2026-11-01T00:00:00+00:00"
+    },
+    {
+      "title": "서울 수능 응시생, 재학생 5.8% 줄고 N수생 5.8% 늘었다 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5LemZMWkd2dTkyVlRrZkRJUUFKci1wX1psT1F1T25Ram9ycEd3TllOVUMwNFNmSkJLRFJUVnQ4TDNTNDFWRVI1SXA4b0gxY29GNVBWc0NYYzZpOG9HUkxCR2FzY2dNOGM3bGZNLS1MMNIBb0FVX3lxTE5LemZMWkd2dTkyVlRrZkRJUUFKci1wX1psT1F1T25Ram9ycEd3TllOVUMwNFNmSkJLRFJUVnQ4TDNTNDFWRVI1SXA4b0gxY29GNVBWc0NYYzZpOG9HUkxCR2FzY2dNOGM3bGZNLS1MMA?oc=5",
+      "published": "2026-11-01T00:00:00+00:00"
+    },
+    {
+      "title": "한국, 시험 부정행위에 대한 강력한 단속 시행.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVZ2d0elF1SWFaRWh3cHYtQUNISkJwaldXS2JZR2wzSGswWkd4Y1JJeXVLb0k4bTR0TXptYzRCTGFOeHpUd196OHhSV193enlqaHQ1a2Y4UDEwQk9PV2p4UWlYSEJUWE9MWC1DVA?oc=5",
+      "published": "2026-10-31T23:58:03+00:00"
+    },
+    {
+      "title": "‘AI안경’ 쓰고 SAT문제 커닝해보니…정답률 83% 달한 AI는",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ROWpxNXRCeURjZFVMTHRVd0VfcldaaGNuX3BzU1hkN0dDTEt3WmlHNzluclBNUFFkVkhOYjZUWHN1c3dxZHJEQ2trN2FOVE1JUlp5MkdR?oc=5",
+      "published": "2026-10-31T23:53:55+00:00"
+    },
+    {
+      "title": "AI 안경으로 커닝하면 몇 점? 제미나이, 왜곡된 SAT 문제 82.78% 정답..스마트안경 부정해위 우려 커져…",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9JUnA4Rng0WUFuSW9YMkljVkhGZVZPMHY1XzRxWlp2QmlvaUsyR0wwMERpQzd5TG5zUDlzX01jdUNfT01LaHFuM2RTcw?oc=5",
+      "published": "2026-10-31T23:29:00+00:00"
+    },
+    {
+      "title": "진화하는 부정행위…적발은 여전히 '육안'에 의존[수능부정 해부②]",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZMHN0TTRKQ3Q5YVpsaEFlYkVEOWhOWm96RFR5TEtWQ2l0TUZ0RmdwVWN2OFE4cmxQN0hLeldxQmY3S2pLQ1FHYzJaMGgxUWdIVXdUTHlMdGVCb202eEpYdtIBeEFVX3lxTE4tbVVCTUExUGJGVlpIdHh6bDZzUHZDdlFFY0szazY2eVFjYnE1SUlpcEQ3ckRNaEx1RlpINjUyZ1hqc0E0cUg3RW5melMwVzZTSzVHVEN6RlUxaE16aV96cjNYcXFTSjh1Z3pUMEtLdTh1WHdqLXlRRw?oc=5",
+      "published": "2026-10-31T23:02:00+00:00"
+    },
+    {
+      "title": "시험지 흐려도 83% 맞혔다…‘AI 안경’에 시험장 비상",
+      "source": "진일보 | 전남일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1BcmRYSG1DUmI0N3lFdkxfanExOVpfc0kxVUtnVHNELTF4NUJmN3pkNnJ4SDFNYmswVmNyb0VBSTZ4YkVrcHNDeFFBTUg3RGxmOTJGM2wtRW9EcXNQYXo0OTlTb3ZUcDVWWmx3dDk0dw?oc=5",
+      "published": "2026-10-31T22:59:26+00:00"
+    },
+    {
+      "title": "스마트안경으로 커닝하면 몇 점일까?…제미나이 \"SAT 문제 83% 맞춰\"",
+      "source": "KBC광주방송",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85ZDRJejh4dTIyeXZBbTdsQWMtS2FWVGVUeEcwQkNkdGhyWkR2aTRTbnJIVWU5OXBZeHBGclNpYkdSdDZPTUJlbjJPbzkxZkxKYURYXzNHMXByWVF0ZTREeg?oc=5",
+      "published": "2026-10-31T22:25:18+00:00"
+    },
+    {
+      "title": "[T나는 과학] 'AI 안경 커닝' 미국 수능 봤더니…제미나이, 82% 넘게 정답",
+      "source": "티제이비",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9KT3dKWlFJV3ctT2YwWXNKMDlkZVpCSFBBbi13Vk9xWDVWMjZxTjdUNTkwbnFKY3cxS1dXek5NenVPU1ctY0t5UWNOSTRqOHZxRlBkWjZUanVTbV9j?oc=5",
+      "published": "2026-10-31T21:48:01+00:00"
+    },
+    {
+      "title": "AI 안경으로 커닝하면 몇 점?…제미나이, SAT 문제 83% 정답",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84VXdZMENUa2RZSTZMbG5kNl9MOVdPR3VLTVQ4ZWZjd2R3cHRUS3JJZ0tWemlqQmtlZTJqcXJDQnNnWVhtR0c3TlN3NnZRRWlXVEs3NTVVSGgtcXVGQTJuTNIBYEFVX3lxTE84VXdZMENUa2RZSTZMbG5kNl9MOVdPR3VLTVQ4ZWZjd2R3cHRUS3JJZ0tWemlqQmtlZTJqcXJDQnNnWVhtR0c3TlN3NnZRRWlXVEs3NTVVSGgtcXVGQTJuTA?oc=5",
+      "published": "2026-10-31T21:04:00+00:00"
+    },
+    {
+      "title": "“잠깐 뿔테 안경 좀 봅시다” 두려운 이장면…수능 앞두고 멀쩡한 안경 바꾸는 수험생들 [세상&]",
+      "source": "헤럴드경제 미주판",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GdFNBUnV6a0J5aEl5WFJvMEpRQnNvdndJSGx1bml6YmxyV2psWThNTjc5V3owLXh4YVNQdVVnR00ySEhNZ1lGMVpUSlk2V01mal9lWV9vUEhUbUs5emFaWQ?oc=5",
+      "published": "2026-10-31T16:45:00+00:00"
+    },
+    {
+      "title": "교육부, 2026학년도 수능 스마트안경 활용 부정행위 철저 차단",
+      "source": "교육연합신문",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Ca3pGakNHY2FMSGo4VXlfdjNSYjVKVlZPMWJTeDJPVmxfZDdMU0hDWnNFaXlkNzVBRkxMZFRUTW9qWkdBZnBWTVdCd2VOb2NQX2YwSVZDcnNJZ29N?oc=5",
+      "published": "2026-10-31T11:01:00+00:00"
+    },
+    {
+      "title": "대한민국: 스마트 안경을 이용해 대학 입학 시험에서 부정행위를 할 경우 형사 처벌을 받게 됩니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMWZIMWc1YWRFd3V1ejI0OFpSNXZyeTlFUWxUTXdzVFdBQzBHZGc2UEItWFREOXkxc1J6ajZIdjlHV25mVWV0ZHgtWUxFTE9yYklTY2RHNGZVY0ZTLXo0Q3otdVZIRlBuMXFnRXFST0hpZGEtSmd1NHhra2htVTlHYnhMSEFXcmw3Y3FxMDFBNGdhZkE3QmlUSFNLQlVhT0ZsWkdWVjFPZm9fVkZpVVBsNA?oc=5",
+      "published": "2026-10-31T10:37:26+00:00"
+    },
+    {
+      "title": "대학수학능력시험 스마트안경 활용 부정행위 관련 대응계획",
+      "source": "교육앤시민",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtdENkRnRUOXZHZ1VhYUt3N3JzbzlsZlF4eVpNYjhSQXZDQmZHMmNmZ3I1OERPVnlHZGZSTWV2c1lTLVdTZlBNeS04THJqUVdBV2RWdmN4ZUV0NFJ2b2tj?oc=5",
+      "published": "2026-10-31T06:02:41+00:00"
+    },
+    {
+      "title": "레이븐 프리즘 1, 스마트폰 없이 작동하는 리눅스 AR 안경 출시",
+      "source": "디지털포커스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5abEJjNVFLbHRpeWpHbVpocUVsN2ZkVEp6cTlmMDJYQ2YyUGtoNVhBZzNMbjJULWg1UTJMdTUtekNLdmZMby1yZU51N0NZRHN2QWtQZDQ3ZHZ5RHFKTzZPTzFuUWlRQWNyb29MVWNJY28?oc=5",
+      "published": "2026-10-31T03:09:44+00:00"
+    },
+    {
+      "title": "손 안 대고 '눈짓'으로 켠다…55g 괴물 AI 안경 등장",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03SlZaQmZ4Q0FtWExlNzJnWVNtbjllcmVlZ1AxSHZFVG5fUDdDMzBJWGtaQWRKOUxadDBIeWZ0QTcyZC1vam8tMXF4UXV2UW9INTMxUll3?oc=5",
+      "published": "2026-10-31T01:06:17+00:00"
+    },
+    {
+      "title": "[김준환의 교육&시선] 수능 앞두고 AI 안경 공포에 떠는데…교육부 장관의 한가한 현실 인식 수준",
+      "source": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE12VmZLc1E3RnE1QkJUc0RMdWh0ajFEMHlsS3RsaEpZZmp5LTNjN3REdTlFM2tJcHRnamZRalhFMWh3NFNTZDZRNkdCdlBVcGdQRDlnNlRFZHfSAVhBVV95cUxNdlZmS3NRN0ZxNUJCVHNETHVodGoxRDB5bEt0bGhKWWZqeS0zYzd0RHU5RTNrSXB0Z2pmUWpYRTFodzRTU2Q2UTZHQnZQVXBnUEQ5ZzZURWR3?oc=5",
+      "published": "2026-10-31T00:00:00+00:00"
+    },
+    {
+      "title": "구글, AI 기반 스마트 안경과 연결되는 안드로이드 폰 준비",
+      "source": "VOI.ID",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1vRUJlZVJJWERmZDJwZ0NCUTVFY1kteV9Gc1hybEhDVE5mTUFMdkllTnBPWmZDaE55enRfQ1h2Umt1UdIBQkFVX3lxTE1vRUJlZVJJWERmZDJwZ0NCUTVFY1kteV9Gc1hybEhDVE5mTUFMdkllTnBPWmZDaE55enRfQ1h2Umt1UQ?oc=5",
+      "published": "2026-10-30T21:32:04+00:00"
+    },
+    {
+      "title": "“세척기로 씻어 가려내자”…수능 AI안경 단속 강화에도 사전 차단 ‘숙제’",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1zQmxDWGZ6S2JfVUVEUGRiWERDMXNVbU5XekQzS0NGWVRybkkzbG9LYkhfMkVndGNna0wwUkFFRUttanp3cWlHT1hBczU3Zno5TkgyQ2d5SlA4bTlFSWYzNF8zRQ?oc=5",
+      "published": "2026-10-30T21:00:05+00:00"
+    },
+    {
+      "title": "쿠키뉴스",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00TWlibjFhR3MyTDA2UGk1djNaaDFXRkxQSTM0YTlyaVpaRVpKWGx1ZHhhN3BPUjdYX2ZTSkMzVXpPQzVOSWtrUW1jVDNrZy1DeDA0WjQ3cE5CcWxnSDNaMHFXR2U?oc=5",
+      "published": "2026-10-30T21:00:05+00:00"
+    },
+    {
+      "title": "[울산교육청] 수능 스마트 안경 부정행위 차단…국가 보안감사 최우수기관 선정",
+      "source": "웹이코노미",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HekRkNEhOMk43ZXBxeXc3OHJpcnE2SHVPdTU4alR4eXNTc21ORW8za0ZKUlJOalNMTnFFS2Y4dENQajdvZ2s3RXpMUlRSckJmVXc1UnJFZGFBR2NMalFNMmtkSWdPRW5qQjJLUUtGS1FfZw?oc=5",
+      "published": "2026-10-30T15:32:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 엄정 대응",
+      "source": "경기헤드뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfcEV4eTVXdXZydUNCc05JdkxqZHI4UTJxS2dQVm1oR3JqQzhoeFdRdDhSZ1JTeDB2SUJ4SDBMMjU2QXcxdkU4a3lIMVZsNmo1bWVkZ2pMWnN3UQ?oc=5",
+      "published": "2026-10-30T14:19:13+00:00"
+    },
+    {
+      "title": "“잠깐 뿔테 안경 좀 봅시다” 두려운 이장면…수능 앞두고 멀쩡한 안경 바꾸는 수험생들 [세상&]",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yT2dNTm9qV2tVMHpzOEphTHJhVk9xWFpES0NXUnpCU3BVb1lHT2RmSlhldE8zdkN0aGhreW95YjNlMUE1MWpyaElOQnVuekM0T2NLMVlR?oc=5",
+      "published": "2026-10-30T10:56:38+00:00"
+    },
+    {
+      "title": "[단독]“시험에 안경 착용 금지…얼굴 가까이 대라”",
+      "source": "채널A",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLQkVxQnhBUWdRMlRZbnFSQUYxM0lyYWtXNnMzb2JuU2dKQUhZVlJSOTZDN1R2TVljbEo2S2VsMmtza3BBbXR4dkVfcXFSNlhrWEEzYWZMdXFodlhGb3fSAWNBVV95cUxNUUJlTjBvNHJyLVB2NnFSdGdSbUxWaGF2eEw0alNHX2pZWlhXUzF4QXJ4aVh2TUl6em9nTmRlVnlNakQ4MEZvUE5RZ1N0ZnNiQjJDclM5Y3M2MXBJXzQwWmJ2ZG8?oc=5",
+      "published": "2026-10-30T10:28:00+00:00"
+    },
+    {
+      "title": "수능 부정행위 첨단화… 교육당국 비상",
+      "source": "용인신문",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JNlhIeFQya1hjZzE2VldWcWxlRlZab2NVM1RzLXJ3NUV4cnB4Mm5pWlFRZkwyVmYwTjFSdm1MWTg2VWsyTWdDV3RYN290SmJVUlpvTXBBel93b0xSUjF2YmNBNDk?oc=5",
+      "published": "2026-10-30T09:50:03+00:00"
+    },
+    {
+      "title": "수능 'AI 안경' 부정행위 막는다…교육부 \"적발 방법은 비공개\" > 뉴스포커스",
+      "source": "SeattleN",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBzUE1XX2RBLVRic3VUOE04QmlIVGstVTZtN0hpZVVlRFlZWkcwLWpjcUE1NENOdnJXVklkQlpMeV90NFhKdHlfZVhKTnk?oc=5",
+      "published": "2026-10-30T08:55:35+00:00"
+    },
+    {
+      "title": "[2027수능] 스마트안경 부정행위 대응 강화.. 응시 제한 3년 확대 추진",
+      "source": "한입신문",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nc0pld1p0LXZiSEYyRHNTeG12cll3bXQxZjZYNDBnSUVpVXRhTlVKaV9iS21iQ19QYi0wQWF3RzRNdTBjN1NmUVpGeW5nb3NlZFUtQjFJY1JrNVV3cEFIbTE1QVUzR3R0MWc?oc=5",
+      "published": "2026-10-30T08:19:56+00:00"
+    },
+    {
+      "title": "[이연숙 칼럼] 수능으로 들어온 스마트안경, 진짜 감독관은 아이 안에 있어야 한다",
+      "source": "에듀프레스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqYzUweXd0YzlsWnZhN1lycVZveXljbWt0UjliajRTNjM4NGVBZHdZUk5XVGtMZWpSMzU1dE1mWEdmSGNmRGZRTk9tT2wxOFNibmUxUHFmd0ZJeWVVb2Y2TkdiQWNkTVJL?oc=5",
+      "published": "2026-10-30T07:50:32+00:00"
+    },
+    {
+      "title": "한국 정부는 인공지능 안경을 이용해 시험에서 부정행위를 한 응시자에 대해 3년간 시험 응시 금지 및 형사 처벌을 제안했다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV21YUXNPZDFkQ2pnYlp0eEc3dkNESm5WUU1JUm5vWG9EOGlHaE1rY1g5VUdyUW15REw0bUx1QkFIUmNxamJkT3hXSGpzQlZZd3hQM3AzeWI1Q256UlNhVEVoYjBIUnFfeWNvUlFyUmVhMnBrM2pGVHF4X0M2dlpvY1ZPM0VUdGx1WGYwdEhtdjBhRkk1U0hkbDRSWFB5MHJrM2RrZWU2SEdRWGs?oc=5",
+      "published": "2026-10-30T06:39:30+00:00"
+    },
+    {
+      "title": "울산교육청, 수능 스마트 안경 부정행위 3중 단속",
+      "source": "BBS",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vTXpfZFJDM2t2MmZhblBVSHZqSm5Mbm9LVEVMckYzNGxjT3o1MUcwRjk1VHY2UUNMNk5vU0l4TUdoUnZMeDdLdGtYcDVHNDBHR29Ib2FqMUM1X0RQVGlzNUp5MjdicG9TUTJn?oc=5",
+      "published": "2026-10-30T06:25:10+00:00"
+    },
+    {
+      "title": "울산교육청, 부정행위 예방 3중 대응 체계 가동",
+      "source": "엔디엔뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9rWlZ6ZExOTEZOTDBOQktBNVYtTzlBbGFjWVNhYUUxQ1kyb1I3ZUNlSDlFbS1LU2cwR0tvRFBaNEppNTNsbFczaWdDWjE1dEtfNjNiNUZ6a2pzdXdWMEJ0V3c3Wkh5cHN2c0dDWWJ3WWlPUdIBckFVX3lxTE9rWlZ6ZExOTEZOTDBOQktBNVYtTzlBbGFjWVNhYUUxQ1kyb1I3ZUNlSDlFbS1LU2cwR0tvRFBaNEppNTNsbFczaWdDWjE1dEtfNjNiNUZ6a2pzdXdWMEJ0V3c3Wkh5cHN2c0dDWWJ3WWlPUQ?oc=5",
+      "published": "2026-10-30T06:22:00+00:00"
+    },
+    {
+      "title": "AI 안경으로 커닝하면 몇 점?…제미나이, SAT 문제 83% 정답",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWWWZQNHhJa2JDQU9yQVN1MXNOSWs1U2ZLLXVnWHV4dnlBQVUtWHl5MV82bGFNUnFjS1lzeVp1Q2xjYzg5cVE1R3pmN2lFUTJENjNFT0daR1lic2fSAWBBVV95cUxPOFV3WTBDVGtkWUk2TGxuZDZfTDlXT0d1S01UOGVmY3dkd3B0VEtySWdLVnppakJrZWUyanFyQ0JzZ1lYbUdHN05TdzZ2UUVpV1RLNzU1VUhoLXF1RkEybkw?oc=5",
+      "published": "2026-10-30T06:08:00+00:00"
+    },
+    {
+      "title": "[단독] 삼성 첫 스마트글래스 올해 12월 중순 출시… 한국·미국서 먼저 나온다",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYTBRVVpEdWp2Y00zU0laOTFWV0ctbHllLThONXJMcDZwWXlzWktWVHJOaHNRX3EtSE1jVS1faDBndWh5Q3hzZ0lKVVgtaGtWMWxZUUNXeE11LVBWb1RQZm01ZEN2VUhxWXZsc19lV3JMcHhOdnZDdUJWSmh6RWRuR3ZB0gGWAUFVX3lxTE9SRlpmOGgzRmhJUUREcXlmUjBHbFlFRHNRZmhXX0FGX3VjOTQ0NGN6Q2ZjNTRSbktxUVBUcWxkblR0blZiOENDdWZ2Y3JVV251QlFqSXBZd1hVTmZxODZoSzREcm5VRzdhekdIdF9RMzk2aE5BV05pVVlOWHVVZmhCcEV2c3ZOR3lncDk5TV9QMDVBQnVUdw?oc=5",
+      "published": "2026-10-30T05:58:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 쓰다 걸리면 형사고발…응시제한 1년→3년 추진",
+      "source": "프리진경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xR0RJTEoya0V5dHhSUmNjMVRIeTFLYmtBQXNwcnlsR1AwMmFadmRhMkphYkRNbDg2YUhyTm1GZVJib3JMbXVrSHNqQlpHdlpsS2NWQUFPbnQ3cFhjcjF0dnBEMk1zWUZyMUFOUg?oc=5",
+      "published": "2026-10-30T05:27:52+00:00"
+    },
+    {
+      "title": "안경이 컴퓨터로…엑스리얼, 구글 손잡고 차세대 XR 승부 [현장+]",
+      "source": "블로터",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EVG5TVk1SS2JQcWdJM1p2WHZjV2w4cC1vREgzWDFVZE5WbWdTTDM0M1l3V0ZmckM4N2pkQ0pSdXlUSi1oamJwelJXTVhETXhOU0pibV92WXlRNU9aZUJ3QlFXVEdjRmpjSUVDT9IBbEFVX3lxTE5EVG5TVk1SS2JQcWdJM1p2WHZjV2w4cC1vREgzWDFVZE5WbWdTTDM0M1l3V0ZmckM4N2pkQ0pSdXlUSi1oamJwelJXTVhETXhOU0pibV92WXlRNU9aZUJ3QlFXVEdjRmpjSUVDTw?oc=5",
+      "published": "2026-10-30T05:22:46+00:00"
+    },
+    {
+      "title": "AI 안경 판별 전담인력 둔다지만…교원단체 “감독교사 부담 여전”",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNV9CUG5JZlpDMEhSdmc3R3F6ZFFCdjB2X3VINkh6bk5EeVBOeHJPZTYzMF9GcTRROFVGTTkyM0VxUFNURmZBVk50bGJnQ2RJY3lqQVhkTmdjZ3BDTnVfN0NmYnVFMVdlSXNLQVNpRlQxYmpwUHp6RV9XTmJMZGVadg?oc=5",
+      "published": "2026-10-30T04:55:50+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…응시정지 1→3년 상향 추진",
+      "source": "경북신문",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EV25FcGRWczZIR2ZMdUZaOEZxWGRpbDluYmN3ekotcUZ0NEExQk5MdzdIaWRMbU0xcnZta2ZlOHNaZWpIU3ZOLXFxRThqYTdsS1JIRTMtQk4?oc=5",
+      "published": "2026-10-30T04:10:42+00:00"
+    },
+    {
+      "title": "울산시교육청, 부정행위 예방 3중 대응 체계 가동",
+      "source": "울산종합일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4zUzhpWmU4MUlkZGkySkx3cVNOZC1mM2N1aWpVUFBBZXRvSEdDQ1RvQ2tudm5uTkhYd2RBZkRrNFBMVGkwQUM5bmNUWFFZOGpQMWpPUEZEY1pYRF9BVFVHcVVHb0lMUjQ1MGxESUV3?oc=5",
+      "published": "2026-10-30T03:30:24+00:00"
+    },
+    {
+      "title": "[AI 이슈] 국가시험장에 ‘AI 안경 탐지기’ 뜬다…블루투스·와이파이 실시간 포착",
+      "source": "AI라이프경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFByX1Y1SWU4dk9SclZPWEF6QmRlc2ZxeFpEbEVNOUZZZ1g1SklST3M0OVVjRXZoRjRYRjNnZVhoTHNfaWJtWVVwTUxqcDlrZ0x0NHhBWE1LRGVPZGtFZUFpR0FrTWpWRlFvMzBF0gFvQVVfeXFMUFRoOERsaWhkalpqZXRObTZtSDVtQmlRTVNwZjRWZzhwV2RBd0tuQ0lzNW5MS0U3RXJvZzgtZTJTbmJ1QWFyU1o2RGFKQjhQeGR0bkhUU054M2NrczNZYmhNNjRQT2hxN190Um9FTUtj?oc=5",
+      "published": "2026-10-30T03:10:22+00:00"
+    },
+    {
+      "title": "울산교육청, 수능 스마트 안경 차단 총력…정밀탐지장비·전담요원 배치",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rUFcycUlEU0NkS21scmF0NnJnc1F5akZ5MkxodF9Ybl9yWHJrWGxEVHlvTnJMaWRtMDg1UlgtMXpKbmRsNzZ0dTVLb3RNUlZhWnc?oc=5",
+      "published": "2026-10-30T02:42:42+00:00"
+    },
+    {
+      "title": "울산교육청, 수능시험장 스마트안경 전담요원 추가 배치",
+      "source": "교육언론[창]",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFUGNmUWZJZDJOemQtSTU1STA1aGwzSEdweTlzQzZUTEQwVDQySHg1YjRoOUtrbzRCM0xQYVM3dlRieGpYY2R5U1V0NXRwNHNRT1phUnV5Mjc2RWphczdVVnRqWU9LREhTY2lSN2QzRjHSAXBBVV95cUxQRVBjZlFmSWQyTnpkLUk1NUkwNWhsM0hHcHk5c0M2VExEMFQ0Mkh4NWI0aDlLa280QjNMUGFTN3ZUYnhqWGNkeVNVdDV0cDRzUU9aYVJ1eTI3NkVqYXM3VVZ0allPS0RIU2NpUjdkM0Yx?oc=5",
+      "published": "2026-10-30T02:38:20+00:00"
+    },
+    {
+      "title": "울산 수능 시험장에 스마트 안경 부정행위 전담요원 배치",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUVTl1Q0x6N3hYM3ZrdEJqLTYtRTlNRUdhSTR4UFY1czQ0a1NfT00tM3REQm9Gcm1LTzdzVF9BakxVV2FCZkY0OXNUWVNrUGc4bTJLdm0xaFdtM1k4ZmZJS9IBYEFVX3lxTFBUVTl1Q0x6N3hYM3ZrdEJqLTYtRTlNRUdhSTR4UFY1czQ0a1NfT00tM3REQm9Gcm1LTzdzVF9BakxVV2FCZkY0OXNUWVNrUGc4bTJLdm0xaFdtM1k4ZmZJSw?oc=5",
+      "published": "2026-10-30T02:26:34+00:00"
+    },
+    {
+      "title": "\"스마트폰 다음은 안경\"...혁신 경쟁 속 짙어지는 그늘",
+      "source": "YTN 사이언스",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNGxHODBMWi1kSnhhN2M4dzJ0T2Z1ZFEtR28yRDhXM0F5Z25FUUVxQy1tRXp1Q3JyLWVoekVPUGhqWjBxS2VacUJoSy1Bb0JBNnVIM090aTYtdTBUclJPVWRzY0hibldlNldtMDRKbEM3R2o5SDVRT1YwRFQwWXpmYXUzdV9fSEhycGdMSg?oc=5",
+      "published": "2026-10-30T02:02:22+00:00"
+    },
+    {
+      "title": "교육부, 스마트안경 활용 수능 부정행위 강력 대응…시험 공정성 확보 나선다",
+      "source": "한국강사신문",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Ed2tTWVJIS3gyX3ZCaEpHTkNpYVJVVnlaRHVvNnJqdU5EeEZRZFJwWkJ0UXlEUlF2RGxMNWUyQzIwN3VGbUh4S0tTNXMyWkdoMFNaMWhPc2tkNXo0WVd4TXY0SVlXTU52YzNkenpxblY?oc=5",
+      "published": "2026-10-30T01:52:00+00:00"
+    },
+    {
+      "title": "삼성전자 뛰어들자 중국도 '도전장'...안경의 시대 온다 [자막뉴스]",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5RUkVINXZwTDV2RFFHTlhtczUzQkdlZ0t5RTYzVnBkQ0hEei1lcXVVOGRBTVQxZ2RaQkpmWUxHNnl6YVJUaTJSVFVoR2dzVTM4ZUFGb1oxYkN0VG9vWWc?oc=5",
+      "published": "2026-10-30T01:49:00+00:00"
+    },
+    {
+      "title": "수능 AI 안경 전담인력 배치한다지만…1일 연수·교사 추가 차출 논란",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCRnpabjJyZms4R1A3THdCU2NFZTNVRlFVYzJlVHBfNHF4X1hURmtxOXZNODI0WjBOTmxkOTJndDk5dWVwTHktYlprNkVRZDg4VHZmY2IwbDdMQQ?oc=5",
+      "published": "2026-10-30T01:35:35+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경’ 잡는다…시험장마다 전담 인력 배치",
+      "source": "광주드림",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qbWdqZ2VfYmtvSnZTSlNFMTUzNXEwampPUExKUlU1dmZaWmhlNnFBZjhwNFhmVVY0Q01DQkg2NVREdm9PYVFrQmNFU1BTRzJEbjh6RGVWOUpZbk9XNFRpV2YxZW9Zb2UzRlE?oc=5",
+      "published": "2026-10-30T01:25:51+00:00"
+    },
+    {
+      "title": "AI 안경 때문에 애꿎은 수험생들만 날벼락...'뿔테 주의보' [자막뉴스]",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12bWhQZzR2X3dmTW1udHNXcDF3TmJOYndJbDZNM0xFTVA2eHpjdDRXbUZDNVZ6a2dXOUVUZFNuanNjcTFSSXBvQzNqSVF3dUdYaEgxaUh3S1lSWlkyandYSVBJcTRTQ1RMMXNkSGlYZTZIWWNseGc?oc=5",
+      "published": "2026-10-30T01:25:00+00:00"
+    },
+    {
+      "title": "AI 안경 때문에 애꿎은 수험생들만 날벼락...'뿔테 주의보' [자막뉴스]",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5yc1FoMmhwT1NGVGVpNnVGSFR3QnZNWHozSVhVc1lua2hONEZGU0lOM1c0ajFDVVZLR2xycTRuX0x0WUp2NHVEbE9PRXNjbHo4MHhHM1lQRnlRTXBscGc?oc=5",
+      "published": "2026-10-30T01:25:00+00:00"
+    },
+    {
+      "title": "제주 공립교사 임용시험 코앞 ‘스마트 안경도 반입 금지’",
+      "source": "뉴스프리존",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA5ZE1vYm4xQWxhXzR2YW1sZXhrcWZlSDhCVHJjVEVpQ0RuUzI4dGd5Q3VjaTJHTExWSGF4eGotSmw1dXVNc19YYll5WGJHRTI1dWZEdEI0YUI1TnZBRVl3c2lMM0dJT3VZdHFYeFZMckNaVm_SAXdBVV95cUxPTjdpcVlnRzVWY3c5QWRudU1qWG5nM1Z3NUxRbm5rSXMwR3lNeDNaQ3RtR2p0WDF2aDhlaGhqa2g5bTY1SDgyNGdlNFlrSkpBTkl2S2FteFduM0JCUy1hTHlYVFhNWXJqZ0JkRFZBT1dLWmlVTkk2Zw?oc=5",
+      "published": "2026-10-30T01:20:41+00:00"
+    },
+    {
+      "title": "울산교육청, 올 수능시험장 '스마트안경 전담요원' 추가 배치",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHd1JoNzNDUlJ0cEJjTHVHSS12YmkyT2pDRWNLMkpXMkJDeVNqcVRvdm9LZjBVZmczcjVTMG94dzYxX2dUZ3RRaXVNNUNESHVFU1FGQnJ3ODZtS09yWDdJaVlGaFlMR1hfMkxPZkozVEFiNXBjWU5redIBeEFVX3lxTFBHd1JoNzNDUlJ0cEJjTHVHSS12YmkyT2pDRWNLMkpXMkJDeVNqcVRvdm9LZjBVZmczcjVTMG94dzYxX2dUZ3RRaXVNNUNESHVFU1FGQnJ3ODZtS09yWDdJaVlGaFlMR1hfMkxPZkozVEFiNXBjWU5reQ?oc=5",
+      "published": "2026-10-30T01:02:27+00:00"
+    },
+    {
+      "title": "허공에 뜬 자판, 귀에 속삭이는 정답…손석희도 놀란 'AI 안경' 수능 비상",
+      "source": "와이드경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9nbko3aHU1Z1VVaVk0WkxPX0RMeWZVWW1mdjFnTm90SE9QUVNDSVBpQjlRc1JKeDlCR2lRNVpMOFpJd0Fnb1NJcTBlcTVQQXhzNWZsejBsWE1NQndxS0huRGJ6QmZ5OUlVd2VSWA?oc=5",
+      "published": "2026-10-30T00:55:32+00:00"
+    },
+    {
+      "title": "수능 시험장에 '스마트 안경' 부정행위 전담 감시",
+      "source": "울산MBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Zdy1xLVpaQk9zM2o4N2JITUhobUtwLXk4MWlaNnlzYW16bE1EVWwzM3NBc0c1UkVfNVdRbG9ZblViOUQ3SEptVUk3TkwzeTh3OGVSRA?oc=5",
+      "published": "2026-10-30T00:50:51+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 적발 시 형사고발 및 응시정지 3년 추진",
+      "source": "nbn 시사경제",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBPbnVhb0t6RVg0WWRhMVV6cnVyeU1lUjJLWjJsa2ZrY194TGxBdnhNUHM3eDFRbXJieVhyTDBQNTQxZEVHbXlHZ2JWTjZKcHAybVBkNjMwZTNlWGdrOXlqd0s2VnRrdXhKUkE?oc=5",
+      "published": "2026-10-30T00:25:41+00:00"
+    },
+    {
+      "title": "\"스마트폰 다음은 안경\"...혁신 경쟁 속 짙어지는 그늘",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1hVFFEaDYwSFh2VFBnQ21Eb1lFRHZtbTVTSDhnSGg0TXdJUkxIZmJRVWwzeXhrMWdBODNfaFp2akFzMVJES3FhVnItandsTkRjRzJ3Z3hZaVVkdXFFN3hSNFI5aGUzSnJ5cm1LLUhTNS1TY09IR2c?oc=5",
+      "published": "2026-10-29T23:42:00+00:00"
+    },
+    {
+      "title": "\"헤이 메타\" 부른 손석희…수능 앞 'AI 안경' 경고음",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9CSG01TXZLLThVRE5wX0RQZWRQQkVUTThZRFBkeGpKdWJpWGFwUTdEeXNjWnEweUVlY3dmNGQtNmdCQWJoSUphSzNULWw2M3g1NkpNdnEtWFRtLUpaby0yWA?oc=5",
+      "published": "2026-10-29T23:30:04+00:00"
+    },
+    {
+      "title": "스마트 글래스는 왜 거울 앞에서 멈추는가",
+      "source": "패션포스트",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBWjVZTUc5TF9kQ0pTSVZ1T214TEo4WHJ2am4tc3NTTGtNclFRcU85dXZLb05TY3p5cnhZWUhPTENrUXkxMnVKcGtScm9SQ1lrZkdFYWRPemhTWndHeDhDX1owa0xoVzV3X29JRGxMR3NhSDNK?oc=5",
+      "published": "2026-10-29T23:24:55+00:00"
+    },
+    {
+      "title": "\"안 쓰고 갖고만 있어도 무효\"...수능 AI 안경에 초강수 [자막뉴스]",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81Wm91TTduaV9jV3p5RHNDMG5RMTBaUHFodzlaM2dHUGhKTXkzNlgweEtRZnVnSXloUTJiaFJ4b0dZczdfSWthWndUYzFmMTRLRTRsLUVheWhkNHVXMXc?oc=5",
+      "published": "2026-10-29T23:10:00+00:00"
+    },
+    {
+      "title": "‘스마트안경’ 수능 부정행위에 형사고발·응시정지 3년 ‘초강수’...교육부, 감독관 보호 대책도 강화",
+      "source": "대전투데이",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTTUowSHBkZ2dhMUJfWFhwa1l0Y2UyQ1NWa0R4UUxQa0tnSzg1c0VMdUtGNjlzeEhLY2I3UF9nV1NPZmtjeGJqSHk3ZDlweEtkbS1vSHZXbWE0NWxEblhzYzZqelpkRmtMSG10U2JiVFFQamPSAXNBVV95cUxQU01KMEhwZGdnYTFCX1hYcGtZdGNlMkNTVmtEeFFMUGtLZ0s4NXNFTHVLRjY5c3hIS2NiN1BfZ1dTT2ZrY3hiakh5N2Q5cHhLZG0tb0h2V21hNDVsRG5Yc2M2anpaZEZrTEhtdFNiYlRRUGpj?oc=5",
+      "published": "2026-10-29T22:36:32+00:00"
+    },
+    {
+      "title": "“수능서 스마트안경 쓰다 걸리면 형사고발”…응시 제한 최대 3년 추진",
+      "source": "데일리25",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1sMFNoU2RZZDNWLTJNOGp4NnBmYk5jc0pCcXl5ZHdfQ1VSdmo4X3lCRVlXbzYzbUV6MG03eTVkeUowRmNkVzFUbEhuTHdNSW5mSjlWQVdxRUtzTk5Zb2F4Sll6R3FHZkhxUjB2OQ?oc=5",
+      "published": "2026-10-29T22:28:39+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 적발 시 형사고발…응시정지 3년 확대 추진",
+      "source": "시사타파NEWS",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GQldQb1Z1YmF3eXk3MmFEaWx4NmZ3bndpWF8tVktQaVh0RmJYSGMyRll3bkZSaUJqVXpKUGs4Q2k0YVRsSTFsbFdXNTRpam5INl9EMHlNZWM5TjBYc0Y1VmxheXRGTXB4cF800gFrQVVfeXFMTkZCV1BvVnViYXd5eTcyYURpbHg2Zndud2lYXy1WS1BpWHRGYlhIYzJGWXduRlJpQmpVekpQazhDaTRhVGxJMWxsV1c1NGlqbkg2X0QweU1lYzlOMFhzRjVWbGF5dEZNcHhwXzQ?oc=5",
+      "published": "2026-10-29T22:00:17+00:00"
+    },
+    {
+      "title": "스마트안경 걸리면 '징역 5년'‥응시 제한도 3년",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB1ZThRRlpoR2NLeVhDMkFDOVdkVXBKRlZpenE4dHd4aHByYlNoZ3VVLWZwbkkyeWR2a2JuTm9RVEFjQmROYXRXSWQ5TFpRX2wtWkVmTmtFeFJzc0prTE9hUWk2VDl1ZnJBdWlyS2paaERuZ2FsQ1pxdzZB0gF6QVVfeXFMUDA4MExhWHJ1NzVUOGRWTHIxN1VFWk5GV0UxcGNoakZOZ2RvWWRDbDRaNnQzVmJkV1FjNFBMa3lPdTNhbHpDbFByVGljamRuREpSVUx2UUxWU2NJb1ZlS3pRVFRWQnZlMXJKTFVLWkNmajNaNWp0eXdnSEE?oc=5",
+      "published": "2026-10-29T21:46:47+00:00"
+    },
+    {
+      "title": "수능 시험장 스마트안경 부정행위 원천 차단…착용부터 소지·감독 불응까지 엄정 대응",
+      "source": "복지TV부울경방송",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pZUZIWUdPNG5udm1QSDRuVDc3MGJxUnNzRFdGaVN3YXctYTNWTmlMOFFRMHJvaWtaNS1keGhkWEZMb1ZMOTRLZzg5aTRCZHpEQ29HNGJQYzQ1aGFXSnBqenZtaGFzcTFK?oc=5",
+      "published": "2026-10-29T19:48:00+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경’ 부정행위, 형사처벌-응시정지 3년 추진",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0xR3dpTk1rNWFUb0x0ckxuRFpnTnMwTFRjajhNb0FpczJSNzlxVzZGZjlRcWJhQWx3VnlZMS1SNHpfcG1HM01wMjF5a2NNZWZBM2tCZS1RTWZaeERjRzZKUzZLOWVXZ9IBZkFVX3lxTE0xR3dpTk1rNWFUb0x0ckxuRFpnTnMwTFRjajhNb0FpczJSNzlxVzZGZjlRcWJhQWx3VnlZMS1SNHpfcG1HM01wMjF5a2NNZWZBM2tCZS1RTWZaeERjRzZKUzZLOWVXZw?oc=5",
+      "published": "2026-10-29T19:30:00+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경’ 부정행위, 형사처벌-응시정지 3년 추진",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA3a1hfXzRqaDZrdjdVTU1GUmFZN3dTcXRMcWxqbDQ1REcwSkNTMUhSdlFRZDQwX1FCMFFjZ0Q0cHB2eUYyNFVSNXdNeVZVWFRzUEdtYXM2UEpSUXRXbkhYQTEtaEZZQk9fNy1Ua0s1aWdPaXVqYnfSAWZBVV95cUxNMUd3aU5NazVhVG9MdHJMbkRaZ05zMExUY2o4TW9BaXMyUjc5cVc2RmY5UXFiYUFsd1Z5WTEtUjR6X3BtRzNNcDIxeWtjTWVmQTNrQmUtUU1mWnhEY0c2SlM2SzllV2c?oc=5",
+      "published": "2026-10-29T19:30:00+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 쓰면 최대 3년 응시 못 해",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUWp4S1RCMm5qazJxS1hMbUF3WU11MC02ZEkta0NjQUU0Znk1Yjh2ajk1c1VPSjlJVml6MmJaQ3RSaFlIdjliZVBwa1QzRUhpSG9rdGtJOG5xU2VJMnRrczJqcENQTFhMYnRicG1xZVJYMkhSY01Lak5ueFlybENVX0hMUW0wSEk?oc=5",
+      "published": "2026-10-29T15:52:02+00:00"
+    },
+    {
+      "title": "AI 안경 전담 감독관⋯ 올 수능 시험장 배치",
+      "source": "국민일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWd3pfQUFXMmtWb01WYjdSQ1VQRGxOMkVaVVp4OF9FZ182dkdndm4tS1o5VGZqUWdqQkU5UjdsTDNpckVvcEpEOXNYd1dpeXowWHhvdGxVVUc?oc=5",
+      "published": "2026-10-29T15:05:00+00:00"
+    },
+    {
+      "title": "수능 때 스마트안경 쓰면 3년간 시험 못 본다",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeWExa3BTWXE0bUlkQ1ZrdWlDdE5KV05kMDBWZDAwV0xSWV8zSU1pRlJCT3ZsNjdpd0xBRTRSWElqSmJFNmhQR3R4TUdfdko1d0lFSldSbzNkQmVvRlV6SVV6cml0aUVSNWhFQUdub2NJUkt6b1hDMWx4NW1fdzI3TUlWdw?oc=5",
+      "published": "2026-10-29T14:20:51+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발 방침...응시정지 3년 추진",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ONGRQR0Y2TDRYT2hSY1ZwamNrY1hXaGVRWmlINW9DLWxkX1k5S01pemxYaDkwdE0ySnFxRHo2TmhhNV9LRDEySFlzSXU5VW5LVzZBb3lYSjRORkJ3bFE?oc=5",
+      "published": "2026-10-29T13:49:00+00:00"
+    },
+    {
+      "title": "스마트안경 오해받을까 봐...수능 '뿔테 안경 주의보' [앵커리포트]",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3VnMxanJja2c3eHo1X2FsUzFBeFlWVC1VZW10TkFwQTJRUEdzME1GMWNKdGtsSEdnb2NtcjlGWkZsV0lqTG5QX3lBVzRJNTZ1XzYxc2ZVWExab1JFaHc?oc=5",
+      "published": "2026-10-29T13:49:00+00:00"
+    },
+    {
+      "title": "한 번 보면, 세 번 못 봐···수능 ‘스마트안경 부정행위’ 땐 응시자격 정지 3년으로 늘린다",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wa3FPaF9lX1o5WnJaUFNUYV9OU0RJN1VyNkdHZmxPN0FXd25aNE1STjVqWHRMMlZXWnUxVWF5eWNDWERfLTJMeXhMSWpIVHhLc3ZUY2twa2toQdIBX0FVX3lxTE1ERFhmcGJPWkdCOEVUMjF6akNZbjFHU0NzNjF0SVJ3M0dZZDJ1WlFaM0lfX3FjMktxNE9DdUtmNzJpVm9RYklWbGM1WUxQdEtPZ2c4OFdNcUZhSXM3V213?oc=5",
+      "published": "2026-10-29T12:43:00+00:00"
+    },
+    {
+      "title": "스마트안경 부정행위, 응시자격 정지 '1→3년'",
+      "source": "경남매일",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBhdnJ3MzYxOG5OSGduaWFndnhUcUpGYnVTbHVmU2Z0Q3FkLS14TEZpRkJoTGw0ejhCcU96SjlIakg1X1ozTG1UUmJYbXprSHhkLWtyUHdKRXdUcV9fZENIeFVZWFpsdjI3Ymc?oc=5",
+      "published": "2026-10-29T12:10:04+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위, 형사처벌까지…응시정지 3년 추진",
+      "source": "뉴스N연합",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE81N0JROVVMOUFCaU9wX1pyY3ctWmpvT0xBTE5kWFduejdLRTZYajBFS2Rjd1VFdVhraVFLVGk4Ym1JY2h6SEo5MVpn?oc=5",
+      "published": "2026-10-29T12:03:00+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경’ 부정행위 땐 형사고발…응시 제한 1→3년 확대 추진",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LejJySnJza1NXZnUxNnl4b1p0LUd5YnRBRGVHd1ROMWVucG9ZOUNBX2pCQ3Y4ZUVLdXpralgyVXBTU1dCR3BQWVh1VERXcE83d2NEaUZ1MVlSQU15RjNMN3gtZGZjQnRfYnc?oc=5",
+      "published": "2026-10-29T11:06:00+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경 커닝’ 막는다…교육부 ‘형사처벌’ 엄정 대응",
+      "source": "JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE50emMtb21SaW0xVnFIdFgxWFh4SXJSVV9SVVROaDh4b0lhaUFNM3RJNm9wbmhuUmJCSk16VHI4WW9IdHZHM3NSbnJKTGx3SE5TUWNiRg?oc=5",
+      "published": "2026-10-29T11:01:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…응시정지 3년 추진",
+      "source": "경북일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1adnZhcUcxN0diWnBLZ1BOOUxONm1sckRmT19Xa1Q5NzdOTGxKYjFiVVZnSjZPR2RvZ1pkWlJKY1o2dUR0QnoyYldRSGxuUDFXdFhUNVQwOHl4NGJDV2VMR0RjTjJXVEE4cm9uMTg5Zw?oc=5",
+      "published": "2026-10-29T10:14:58+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경’ 부정행위에 칼 빼들었다",
+      "source": "남도일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9BOXBMOVh1X05vMkFxajFuSExLR09rRXM3RFd3aGtsTmJUdi0wNmFabFdnZGpQNC1SaEFBdjR0MmN3cFB4WDNBZ3hiMnVlSzRUQnRwY183eE9ON3dhYnBGallySkpRN0xEZEZ3V9IBcEFVX3lxTE1RaEtsVU9MXzJoLVBuTHAyd0p2YkF6eTAwQWEzeFFVdnJPQTVuRHl4Z1VBVGticVdnME5WT1dZUVRKMC1NWlhzWW5SSWRjQVoyaGZrSmx4R2k4aTQxUDNrYzJTU3hzcEcyRzBGakNha0Q?oc=5",
+      "published": "2026-10-29T10:05:10+00:00"
+    },
+    {
+      "title": "AI 안경 쓰고 수능 부정행위 땐 형사고발…응시 제한 3년 추진",
+      "source": "울산매일 - 울산최초, 최고의 조간신문",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TUk50V1U5cE5EUlFKenBET3ZTSVBoaFR1NWFXeXRaZVQ0aTdmY0RrVjBFazl2VUZjQW1Cd09PMlljd1poWmFKZkZDbVBFNjFBaVF0STIySEQxRWFsRWF0eW1NTlFwQTlDRGfSAW5BVV95cUxNVVltRG9PNU5vQzVMY3lpTXlBbW41TGdFRTh3RnlBSjhfb3RUdDJTUUlOc3JPN2NPYkcxME5OaHExRXRwSks4V1hxZUoyMGNjTVN4X0JHZWIzZDdBVkNRRXZlbDdWS2hQeW9sbE5HZw?oc=5",
+      "published": "2026-10-29T09:44:23+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 고발 '3년 응시 정지'",
+      "source": "세이프타임즈",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xUWJLdFhXaXdUY1pDRlctUUo3d0wwU21taDJLUXpEYmt2eGRWRkM3NWNwNGFiYi1NUkY5aXZGTmMtNHRrR092TXpkalVsanYycTdsZjhRYUtZdUNXd1cxMVJjcEJHenFESi1DUFo0UdIBc0FVX3lxTE5pcDFDRkxkTDFIWnZfQmhXNGctUW53TWNET1hBLTF5UjNyMHFqUXdtNUZTOGxKN1A1eWszaXhJc0VNbjNBUkVJaUZHRzRFbVhMbm80WjVZQzFISGNPLWlEbmxNN3pRRks0YUtTUjI5V29UTnM?oc=5",
+      "published": "2026-10-29T09:36:55+00:00"
+    },
+    {
+      "title": "스마트안경 쓰고 수능 부정행위 땐 형사처벌",
+      "source": "부산일보",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9SMkh6ODhRYm9BNEJrMzRJaVNOaVR6endrNDBhelhkY3VSNmV2a1RIWUJfMy1FSlNUUTBqdnMtZ09rZjAzWDNJMFpQSDZCdm5DNkdQa0swQkU0NXg4enFYR1hET0kzWXBuaTV1b2Vxc0dwZjJy?oc=5",
+      "published": "2026-10-29T09:28:06+00:00"
+    },
+    {
+      "title": "교육부 AI안경 대응책 발표⋯형사고발에 응시제한도",
+      "source": "강원일보",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SRnpTUVhVTHB6X2ktakppSmZSaE5qU1U5bG1mdWRxUHZsZlRCdmgyakVuTHJJS1BjMW5HWVRYcXo1M2ExMlNnTjFtMW5iTlhwa3dOLW5SYmhjOEU?oc=5",
+      "published": "2026-10-29T09:27:57+00:00"
+    },
+    {
+      "title": "[사설]수능 부정행위 대응 강화, 현장 혼란 없도록 만전 기하길",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5BMzZqSDNuY2N1M2twbjJQd1hibGt6MzN4c3ZrWlpUaFQybXJOQm52UlE4OHdDQzBJeXJ5ZkJRZ3N4dkpwWlZDUnNhTFlCUXBPcXBkcEtsUTNhYnVwU19F0gFfQVVfeXFMTkEzNmpIM25jY3Uza3BuMlB3WGJsa3ozM3hzdmtaWlRoVDJtck5CbnZSUTg4d0NDMEl5cnlmQlFnc3h2SnBaVkNSc2FMWUJRcE9xcGRwS2xRM2FidXBTX0U?oc=5",
+      "published": "2026-10-29T09:15:00+00:00"
+    },
+    {
+      "title": "[사설]수능 부정행위 대응 강화, 현장 혼란 없도록 만전 기하길",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xc0IxOWdPd2twd19LMmk5MTBMN2oyb1ZjRnVUVjdHY1ppUHl4UjNRMjRkQ3A4Z2M4RTl2c3FqcFNGZUlHZGhRLVkyMXl1dl9MY0cyLXlfcHh6UdIBX0FVX3lxTE5BMzZqSDNuY2N1M2twbjJQd1hibGt6MzN4c3ZrWlpUaFQybXJOQm52UlE4OHdDQzBJeXJ5ZkJRZ3N4dkpwWlZDUnNhTFlCUXBPcXBkcEtsUTNhYnVwU19F?oc=5",
+      "published": "2026-10-29T09:15:00+00:00"
+    },
+    {
+      "title": "교육부, AI 안경 수능 부정행위 땐 ‘형사고발’…응시자격 정지 3년으로 강화",
+      "source": "경기일보",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsVlNqYTBsTVdEczRnYVBMa2c4ZG0zYXVxNGg5cUVHdFZKcWRSNDJKRWc2M3dYTjJaQTFnZEVXR3VCZWZidjI5NVg4Skd6SHQtSno5YVVFM2dLbTQ?oc=5",
+      "published": "2026-10-29T08:58:17+00:00"
+    },
+    {
+      "title": "“수능 시험장 스마트안경 적발, 교사에 책임 전가 안 돼”",
+      "source": "호남교육신문",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TVC1ET1Rqc2cwc25NYkxWQXVhb2N1bWFaWUZraTlxd0xqYXRGTldnMVhnZ1pYYjZpQWRfQW1BazBhSXE2UzNBMTM1eUZwLW1Id25nS21iSGZPQVlMYUMxQzBPd2VNQzhvNkItbg?oc=5",
+      "published": "2026-10-29T08:53:16+00:00"
+    },
+    {
+      "title": "수능때 AI안경 쓰면 형사처벌",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwV1JQTDQwZkd4MUJwaGxaTnFNaHg4VlpWcGRDTUtaT0dTQ1BfallCZnJneFZQakk4Mm92cFZ2WERTX2VUMnI5X3U4NllfblJIZnlSekxTNlV0Zw?oc=5",
+      "published": "2026-10-29T08:45:07+00:00"
+    },
+    {
+      "title": "수능 AI 안경 부정행위 형사고발 '강수'…시험장마다 전담 인력",
+      "source": "하이테크정보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9QRUFiOWhlS1EzT1BYSTE4ZWxUTkwyMUY2c0FWNHFpVHQ1MlVZNndOUk9SUWxTenUxNGxlTVdjbkV0SmhMdHpiVERLcGpsMHBNWHZoVmtIbXQzbUp1SXJVV2ItYVFoM3FDYWtzYtIBbEFVX3lxTE9QRUFiOWhlS1EzT1BYSTE4ZWxUTkwyMUY2c0FWNHFpVHQ1MlVZNndOUk9SUWxTenUxNGxlTVdjbkV0SmhMdHpiVERLcGpsMHBNWHZoVmtIbXQzbUp1SXJVV2ItYVFoM3FDYWtzYg?oc=5",
+      "published": "2026-10-29T08:37:32+00:00"
+    },
+    {
+      "title": "AI안경 썼다간 수능 3년 금지",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5HVXR6U2llWjNVYl9wNXI5WlBSYTR3aTF6MjdZc3F1MFhlRWNFUWdqd2pZd2pMTmc4ZGpvOXRhWXpxemlhYVE?oc=5",
+      "published": "2026-10-29T08:35:46+00:00"
+    },
+    {
+      "title": "수능 AI 부정행위 차단 강화…스마트안경 적발 땐 형사고발·응시 제한 확대",
+      "source": "서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnYjE1a01IUGVKUWhVR0ppZ21FazBVaUgxRDJOOFBiSzQtckN0S0tFaFpwNWVtc1NQOVl2bl9KV0JxYkh3bHFtbGdJVVBQakJUUGhDLVR4dFVsbk5OYlJXX083U3NORzRLQ3Z3?oc=5",
+      "published": "2026-10-29T08:32:34+00:00"
+    },
+    {
+      "title": "온라인 감독 ‘모니토’ 21개사 도입···그렙, 2028년 상장 도전",
+      "source": "시사저널e",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBUQXFBZjUyMGxJTWxFZ1pRNExmVXRLV2N6SUFJRTNBSVFFZ1JwZkJQa0JIckNmWGZ0dVg2Z3JCZkdhZk5uN3BCUWZNRThJazh6dXN2SzF0SmdORHYwYVpjbml4Q2IwOS1VU2dDZ2RDdEtoQdIBdkFVX3lxTE1pYkQzS3hyaVlkaFdNQVl2N3gweWhUQm5NUjhTb2pWMV92bm9WNE1mNWNoc0hIWTZVdkQ1NndNRVk1dFMyblpBRUNla0pCTEJMNXNWanBNUWtOSHZEbEpXQkZ6dHlQRndrZkRrMHJvSW1KYnFnb1E?oc=5",
+      "published": "2026-10-29T08:26:57+00:00"
+    },
+    {
+      "title": "수능 스마트안경 적발 시 응시정지 3년으로…교육부 형사고발 방침",
+      "source": "팸타임스 FAM Times",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00S1JnZ2MyWTlqUVprQjNBQVNyaEdkZUV6MGplOFB0UFI3RlZsOElQSFNqTjkyU3hEaFJXajNhcTFfWHlrVW8yR0xnc2p5WEJ6dU9jSHI5bzdIYVkzdUJHcEJOTWI2Yk9BOURhX1BR?oc=5",
+      "published": "2026-10-29T08:21:35+00:00"
+    },
+    {
+      "title": "수능 앞두고 ‘스마트안경’ 경계령…감독관도 골머리",
+      "source": "기호일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01dXhaRElTZlFVUldGUUd3alphN3ZscHRjdlREaWtYRURBYnVObm9Zb0FqT3RONTM4OTJiU21jV0hfQnk1aVZYa2g4MnNxVTZsZThHZ3VIb2FyY3NDLUJHT2ZmSVkyeHdjWXFDZ1BKMA?oc=5",
+      "published": "2026-10-29T08:16:14+00:00"
+    },
+    {
+      "title": "Samsung, Galaxy S27 계획 시사… 폴더블 확대하고 스마트 안경도 준비",
+      "source": "Mezha.net",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOUd5U1Z1YWVNTUVTN1h5RzdxazQyYkhYTVh5a21OZVU1TkRCLWNZbnNiQU43WGRHMDV4NF9leUlCOWxHbUU5N3B6S2tGeE5MSWxDcm1yMThGT2w5SmtxODVobTNFQ0VRV2o4Yzk2TE9KMzh6TWluMjRuX0sxb3lsV2M0Mk1XMGlZSHRiamdiNGJqUzllcEE?oc=5",
+      "published": "2026-10-29T08:13:00+00:00"
+    },
+    {
+      "title": "스마트안경으로 수능 보다 적발되면 형사처벌, '응시자격 정지도 강화'",
+      "source": "이코리아",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IeTREUlJnRWRjMFd4QjVSTkplcHhpZl94U0RBLTZoNElRdXg4SmJnNWVmQTlQT1hZYUhlUzZkTnpXWWlxTEZVSkM2VkU2OEhmODBMUGU5UTJrWGxpbFVHdS0tenNiZEVpV1dfSWIyaw?oc=5",
+      "published": "2026-10-29T08:12:42+00:00"
+    },
+    {
+      "title": "수능 '스마트안경' 적발시 형사고발…응시제한 '1년→3년'",
+      "source": "광주타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pLWJsRS1iMzFySDQ5X1MxeEZQRkpBNVl1ZlhNanFLZTNxYXR4aHhsb1pUbnFtZlVXb0dTMEoxVEw2dUNiS1RrZ3pNSExTZ2ZPdS10UFU0S3ZYYkhtQ3I5cGxpeXV2YWlyMHc?oc=5",
+      "published": "2026-10-29T08:02:09+00:00"
+    },
+    {
+      "title": "수능에 스마트안경 소지만 해도 '퇴실'...\"형사처벌 강경대응\" - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5CRmFENzFkNTI4YTNiTDdpWGllM0JXNjZMMkJyQU1KbDdFUFBSbHBhcnhHaEdvek5VRGVraXpTNjZhblZwTnV4czBJLVBTUk9BbHRFb0xvcTMyamdnVWdQR3k3Zk13aTJ4bEdzbXlHWdIBb0FVX3lxTE5CRmFENzFkNTI4YTNiTDdpWGllM0JXNjZMMkJyQU1KbDdFUFBSbHBhcnhHaEdvek5VRGVraXpTNjZhblZwTnV4czBJLVBTUk9BbHRFb0xvcTMyamdnVWdQR3k3Zk13aTJ4bEdzbXlHWQ?oc=5",
+      "published": "2026-10-29T08:00:00+00:00"
+    },
+    {
+      "title": "수능에 스마트안경 소지만 해도 '퇴실'...\"형사처벌 강경대응\" - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9MUXZqNnk0TmZDSUtxSEtGOWVyR1E5eTdZMm9mZks3aUdKMUdEb3UzZF9BOGppWTl5U2xDUXN0dVo4UDgtQ1RLcF93ZThRT3JsZGhPRmtEWUMxVzQzeGdxMHIyOG5PNGhHYXfSAW9BVV95cUxOQkZhRDcxZDUyOGEzYkw3aVhpZTNCVzY2TDJCckFNSmw3RVBQUmxwYXJ4R2hHb3pOVURla2l6UzY2YW5WcE51eHMwSS1QU1JPQWx0RW9Mb3EzMmpnZ1VnUEd5N2ZNd2kyeGxHc215R1k?oc=5",
+      "published": "2026-10-29T08:00:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위, 형사책임 묻는다…응시 제한 3년으로 강화 추진",
+      "source": "미디어이슈",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBoZml1akVtYks2TUNOSTZEaUVRazVCLXZnTXVtSkJjejZJN0Z5STY4cFllaHZib0EyVWtlakYwTEFUeU9Dc21kWg?oc=5",
+      "published": "2026-10-29T07:53:00+00:00"
+    },
+    {
+      "title": "교육부, 수능 스마트안경 부정행위 '형사처벌' 예고..고발·수사의뢰 등 엄정 대응",
+      "source": "교육언론[창]",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xRzMxN1p6a2JSM2xsUGRTYnZNTjl4amhpREJKeWJHTnN6TmlhcDk3WUhIYW9OR3lOM2piREdjUFpYcXh4RjY1eWlfem45Z3JjTS1FMkFvWUFjUllSSVgzNWFYOEJXTGx3MHdvZzMwcVLSAXBBVV95cUxPMUczMTdaemtiUjNsbFBkU2J2TU45eGpoaURCSnliR05zek5pYXA5N1lISGFvTkd5TjNqYkRHY1BaWHF4eEY2NXlpX3puOWdyY00tRTJBb1lBY1JZUklYMzVhWDhCV0xsdzB3b2czMHFS?oc=5",
+      "published": "2026-10-29T07:50:52+00:00"
+    },
+    {
+      "title": "[그래픽] 수능때 AI 스마트안경 적발 시 응시 제한 '1년→3년'",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5QcmZtMEhhNGhmc2l4V25wOW9iTXNnMHVTS0dWY0ZQeEw1djV5b2dUWWUtY1NGMmRNc3hVZV9YRFlWdzNLRWppRkF4M0gzMjJiTVF6ZDZPUnBpSTZRZEhlckVB?oc=5",
+      "published": "2026-10-29T07:44:39+00:00"
+    },
+    {
+      "title": "수능때 스마트안경 착용하면 '빨간 줄'···응시정지도 3년",
+      "source": "전라일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TUGN4d1AxcVlxT3JidHpUY2V2MFpWc3g5dTBWUHVTUmlyNjJLa0M5UlM5OWo2U3NOb3cyRjZlOUtWWjladHJtV3F1TlRXRW5IaTlhUzY2X0RNenVOdlNpZlBpTk04NkVkR1M2SWhaMEjSAXBBVV95cUxPU1BjeHdQMXFZcU9yYnR6VGNldjBaVnN4OXUwVlB1U1JpcjYyS2tDOVJTOTlqNlNzTm93MkY2ZTlLVlo5WnRybVdxdU5UV0VuSGk5YVM2Nl9ETXp1TnZTaWZQaU5NODZFZEdTNkloWjBI?oc=5",
+      "published": "2026-10-29T07:38:41+00:00"
+    },
+    {
+      "title": "스마트안경 끼고 수능 보면 '형사고발'",
+      "source": "충북일보",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoYjczZWd6OGpWOVJHdU1iSEdvTmRtd0JkZE5RUnNQTGVrNnhhaXF6djdxX2VpV0tKUm4tRXdfWTBlTGdLU2hOXzVWbDQ2Ti13MTFpQzBoeFF5NFBTVTVlbVJR?oc=5",
+      "published": "2026-10-29T07:38:28+00:00"
+    },
+    {
+      "title": "교육부 “수능서 스마트안경 적발시 형사고발…3년 응시제한 추진”",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjSm1aalhoRlVmeGRDR3VTNWRKUzlXeFVDRE1BQ1ZTRkVnTUcxVHJGeDJ4UllObE5WXzcwRmxNZi01cldMTU5XdjQybUVIU3NjWHA5VHk0ZFVNRmdkUC0wYV9qTnREVU51YXUw0gFmQVVfeXFMTTBnZDJRSmZlUnBnN1BhOFExNUNIZVRJaGE5UzBFdjJfWUlWMTJrUDFDRGxZMk9xbHJiNThNVHB3ZmYybnJQeHIwdjJhUEFxTFR0MUFoWUxEUE1hTjRkTTJzR0NrTnRB?oc=5",
+      "published": "2026-10-29T07:36:00+00:00"
+    },
+    {
+      "title": "수능 부정행위 응시 제한 1년→3년… 스마트안경 적발 땐 형사처벌",
+      "source": "대전일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aWnRCY3NJMDBxUC13cFNCQVpaVzRVUXh6Vk5VeGctWUgwMzFkWkJZV3RUdVRDYndXeUZUUC1zd2ZNODhyUGNkaDl4NFYwLXN5bmlkeHg2MVZtaGdjVWFKTWwtMC1ZYkUyTWVKR2Z5TdIBc0FVX3lxTE1iYmd3UkRqdkowY1BLMTI5SG9NRGltM2owSjdNYV9RSWdfVENmMTJ1RVhlMHp1MjZTNU84ZkFXRGRkRjlKQWo4SFZXNGZvdTVPWjVQOEh6Yi1fd1ZiUFB6a1luMWhxc2FyMlBPQVpaUTRBU0E?oc=5",
+      "published": "2026-10-29T07:35:00+00:00"
+    },
+    {
+      "title": "수능 AI 안경 부정행위 형사고발…응시 정지 1년→3년 강화",
+      "source": "금강일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yeVRmNkJOQ0FzM0Q1SzNYODNlWUMzVlBOSnJmNUI2TW5WX3l4ckJYdVFxdUxncHk3VWdzaW81YWcwYkhCZUExSG51OExHeFc4OWlMOUlZczgyTWtCdDJQS0dYR01xRTRJMXc?oc=5",
+      "published": "2026-10-29T07:32:14+00:00"
+    },
+    {
+      "title": "“세 사람 중 범인은 누구?”…국회도 눈앞에서 당했던 ‘AI 안경’ 구별법",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE45eVBpV04wQ0toNjgtZ3A3M0pYVndyTWc5NHlQQ3E5bjY4NndLUGl5eHp0dU1zUFdUMlNRcjdacVJHSlJVZFE?oc=5",
+      "published": "2026-10-29T07:12:32+00:00"
+    },
+    {
+      "title": "\"선생님도 뿔테 바꾸래요\"…AI 안경 논란에 수험생들 안경원으로 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBINGNoN3F5VFlKUW5fTkxzUnBIOVBJMXJmeFQybC1zaHFYSWhxMU1SOVFkVVR5TkRPTXZMWUludVNwQkRJbHlhVnhWeWFvMnRoV0RZam1ZdUxWYk5RT0I1dzlNeVJUQy14RlRfdVM5R2nSAXBBVV95cUxQSDRjaDdxeVRZSlFuX05Mc1JwSDlQSTFyZnhUMmwtc2hxWElocTFNUjlRZFVUeU5ET012TFlJbnVTcEJESWx5YVZ4VnlhbzJ0aFdEWWptWXVMVmJOUU9CNXc5TXlSVEMteEZUX3VTOUdp?oc=5",
+      "published": "2026-10-29T07:05:34+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발 방침...응시정지 3년 추진",
+      "source": "YTN 사이언스",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOC1HQmR0Q0hVcjlqMzFrRk9LbWFQRXN0c3RYZ1MyVl9uTE1VdGlnVHVDU1JZWmdMb3otX1lKZTN4OFBEWXoxVFhDcWRLT05WUERaVUV3RGU1TTJZUzJZSnZPZE9oT2tEOXhaQTdWdENoaVhqWnJMMXRWR2l4WjhvRUpQSjJHN2wyRl90dQ?oc=5",
+      "published": "2026-10-29T07:00:01+00:00"
+    },
+    {
+      "title": "면접서 ‘AI 안경’ 금지해야…구직자는 ‘공정’, 기업은 ‘정보 유출’ 우려",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rQzNMQl9HYWIyenViaTZ6WjIwbU5GZWxRazdPUm4taENod3NvbWJNbFNrUTVUaUN1VVFNX1kwbkxYQ0h0RU9DcWJ2UE1Tci1l?oc=5",
+      "published": "2026-10-29T06:59:29+00:00"
+    },
+    {
+      "title": "면접서 ‘AI 안경’ 금지해야…구직자는 ‘공정’, 기업은 ‘정보 유출’ 우려",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5scjIwdGRULUVYUzI0VnZ1S0VGejZCcFlHOVRpOFZCVzI2Q1BrRHlZR2lKWHBZLVRZRlp3Snoxa2xjZXItbWhyUDlYZ1I3YWVJemhELVdfMy3SAVRBVV95cUxOT3ZSMndXRzJRVXgxUS1HUVlOMjhjbHNYRm5Xc0ZqOERXUC1RUnZleERIN0VFWkJuOHgyM3hHdWdkdXFIRkE4MmU1NTMxRXNPVDZtbW8?oc=5",
+      "published": "2026-10-29T06:59:29+00:00"
+    },
+    {
+      "title": "수능 스마트안경 어떻게 하나? 형사고발, 응시정지 1→3년",
+      "source": "SBS Biz",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpcW41Zl9rN2lVNWw0UDNEM3JBOGVzT3ZvdkQtc19QSWdOMTJFTHhpeE9yaXZ0Z1djM21xMnlCb1g1RmR0Nm5GeHpTd2ZGd0VEWExF0gFYQVVfeXFMTkd2UWhFMmM4UEhodHBvby1UM0lQaW0xT1JGTGpXVlU2ZGR2eWxsM3NWRDFhd19aeElFNFVxaEt2UTNlRmZCZERfa28wRmVoUnpILUJtNGczdw?oc=5",
+      "published": "2026-10-29T06:48:00+00:00"
+    },
+    {
+      "title": "수능 AI 스마트안경 부정행위 형사처벌 대상…응시정지도 1→3년 추진",
+      "source": "매일신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9hWXJIRlBfUFVHNW5ZM1RRU2MyR3NSVG5vWFFFYTZEc1d1bkNsVzNLY19oU1ZULWdYZUpQb1JXX1ZSaENBN25vYU5TbFlFWG56a0FWUFJoOFd4QXJab2kwUTJR?oc=5",
+      "published": "2026-10-29T06:40:43+00:00"
+    },
+    {
+      "title": "수능때 스마트안경 착용하면 '빨간 줄'···응시정지도 3년",
+      "source": "전라일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nLVRnZGhXSHUxMEk0VGdCNzFPNFk5dVhkN2xaQU9zN1VDNGZMNnlQb0EwUnRmR3VVSHF5LTF3M3A1VTlPaDZKcERKN2VjV1p5MGFXQ1VzSUJfb3V6NVZQRF93U0xVRl9HQlVrVdIBcEFVX3lxTE9TUGN4d1AxcVlxT3JidHpUY2V2MFpWc3g5dTBWUHVTUmlyNjJLa0M5UlM5OWo2U3NOb3cyRjZlOUtWWjladHJtV3F1TlRXRW5IaTlhUzY2X0RNenVOdlNpZlBpTk04NkVkR1M2SWhaMEg?oc=5",
+      "published": "2026-10-29T06:25:04+00:00"
+    },
+    {
+      "title": "수능 ‘스마트안경’ 비상...교육부, 형사처벌 등 부정행위 ‘철퇴’",
+      "source": "뉴스경남",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FRUo3Tlc5bF9mTmhYUWQ0cDVWWVdSWTA2UzRaUmlJTURkTXN1TGFpdE9oOGNZM1ZLN1BuZDNpTFJaZjhaUzREQnBsQzlQOW9USjR1MGZaeEdQSkN3ZUl3S0sxdW1hQnBF?oc=5",
+      "published": "2026-10-29T06:06:13+00:00"
+    },
+    {
+      "title": "스마트안경 쓰고 수능 보면 형사처벌… 응시자격 정지도 1년→3년",
+      "source": "충청게릴라뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAyNFFEUkhERmhoTVJjcDFhVUJyZDJCWF8ydWZQaTlTVUQ2aFJhMktsb2Y1VE5xSHZmcE5tQ01KUXpRdTRlTEU0WDRyMDdRWnc2d1hPREcxQnlLTG01TVN4azctZjRuZw?oc=5",
+      "published": "2026-10-29T05:59:07+00:00"
+    },
+    {
+      "title": "수능 ‘스마트안경’ 부정행위 철퇴…교육부, 응시제한 3년 상향·형사고발 추진",
+      "source": "전북도민일보",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOXzFWMnJTaURpMGxqQmJlM3U2ZGREb0dNRnFPWnpaTzhNRm9pMURZTEpLNTJUbzlxNVFxNDVJclVqd0FYQlNmOUV6d0d0OEREOUF5eExFS0tjTkJLU1pySlJqenZteGQzTXIwM1ZKWkwtakNsb0VNRmlZeWl5akRQMzRCb0tiX00?oc=5",
+      "published": "2026-10-29T05:58:00+00:00"
+    },
+    {
+      "title": "수능서 스마트 안경 부정행위 형사고발키로…응시 정지 1년→3년 추진",
+      "source": "미주중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4ydTY2UU12Y0VYZXNxTUVocEFWRnl5SFZuc2hJNDhZTm5SYVVjZndzdzF6YzVjaU5lVWlXZmNTNWxocl9wN0pLUlVPWGtkeWlpU0YtZG1ERnJ6X2hTZVpnaXdB?oc=5",
+      "published": "2026-10-29T05:58:00+00:00"
+    },
+    {
+      "title": "수능 ‘스마트안경’ 부정행위 철퇴…교육부, 응시제한 3년 상향·형사고발 추진",
+      "source": "전북도민일보",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVlRWYUJwQk1ScTc2ODQyZXU1czViSVdnWU11OUdINmd4QnpiSS1OVkZsdEMxWGF2NkxLdGlrckhYSXM2cEl4TjNuOFUxWEh3NkMxaUNyRXBhU0hELWRDd1V5RUpuM3pzQUFjNGpxazQzRXJhSUp2aHI0RFZ0dS1kOWhaUVBXUQ?oc=5",
+      "published": "2026-10-29T05:58:00+00:00"
+    },
+    {
+      "title": "수능 ‘스마트안경’ 비상 대응... 적발시 형사고발ㆍ응시제한 3년",
+      "source": "한강타임즈",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zSENMTVdCMXlsT1RyenRKbFNnMUp0Vm13bTFZbU0wc3RfdUwtQnN0cnltV05LWnQ1b24waEwzSFNmUnhJZVpTN055N3FYbFhQNkdLU0JPWVE4SnFHakw5Y2FteVNYak1QRVow?oc=5",
+      "published": "2026-10-29T05:50:22+00:00"
+    },
+    {
+      "title": "수능 AI 안경 부정행위 막는다...형사처벌 강화·시험장마다 전담 인력 배치",
+      "source": "M이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8taFNEUGpBZmh6UVJITFIwcUJHV1hCQUtTbkduYUJ5YlcxMlg4bGpuc2piaWhQY3dKalBTbENNZkJhU1JmNUtMaWpjcjl4NE1JTUJKcGZPY2dLLVVFdUt0cFg0VmR4Nmc?oc=5",
+      "published": "2026-10-29T05:43:17+00:00"
+    },
+    {
+      "title": "수능 3주 앞 ‘AI 안경’ 전담원 투입…판별 책임·사전 예방은 과제",
+      "source": "메트로신문",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYOERqbllZSnM4NzRtOXhaODlRSERUY1Z6NGgtOUxwQzVVYXdkdjI0RFBJMU54eVo0Z0FJZ24tbFJJUVphRWNaemxzSm54WWhBSk8tZFFrZFkzdWxtLWRKeg?oc=5",
+      "published": "2026-10-29T05:34:05+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…응시정지 1→3년 추진",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlbUluejR6NkRnLVJoY01rT1g3eWRvZWxIaHA5dWU0VGRwX2Q0OGVUQk9DNllkUW5Vc2RLNjRuSXRQbVJxRGF5dHlYLUJnVllCdEFyMllBOW92YXdDZmo5V9IBYEFVX3lxTFBlbUluejR6NkRnLVJoY01rT1g3eWRvZWxIaHA5dWU0VGRwX2Q0OGVUQk9DNllkUW5Vc2RLNjRuSXRQbVJxRGF5dHlYLUJnVllCdEFyMllBOW92YXdDZmo5Vw?oc=5",
+      "published": "2026-10-29T05:28:13+00:00"
+    },
+    {
+      "title": "전교조 \"정부 수능 AI 안경 대응, 의미 있지만…감독교사 법적 보호 강화해야\"",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0SWxEdFc4Q18wX0NLamV4a2RsV2V3N3dmOEVxcXBmSTkwQnVETm9MSUE4SDFuUk95NGNrV1JiR1F2c1VHMFBMTzNoU0xpZWRlZmdRRFRlM2tCTmpI?oc=5",
+      "published": "2026-10-29T05:28:00+00:00"
+    },
+    {
+      "title": "[그래픽] 수능 스마트안경 활용 부정행위 처리 방안",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRTXZES2FzSGNVUWZXUVoyb01OdzNOWFdmaDhyWXhNYV9HMjFCQWFoMjVkcXZHT0d1SV9KYnBtcVBBSjI5ZDdHbHY4Nk5VMEtGc1VLUV9Yb1poV2fSAWBBVV95cUxNb1EzUTdXTVF4REVOQ0txVlp2TWlRQTdEaVdsem53QkFodE1MVGxsMkpxRlNwOHE4RlBndGxheWhfbEVDQUoyd3o0WS1ETlY4UW45eHJvOU1pSUFTZW9fVmo?oc=5",
+      "published": "2026-10-29T05:25:52+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 땐 형사고발··· 3년간 응시 정지도",
+      "source": "대경일보",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5WUXJYcEpxQTc1OEtrV3M1TXhQdG1GUkV2SzlKZWh4Mnl3UkFsU0RwamJJVE81dGVLS190cWNjQ0xud2pMWHZ1VEhLb2tjb05IZ09QaGZCWldndFo0M1FhOTVqYUpLSkk2?oc=5",
+      "published": "2026-10-29T05:22:08+00:00"
+    },
+    {
+      "title": "‘AI 안경’ 수능 부정행위에 철퇴 든 교육부…형사고발·응시 금지 기간 확대",
+      "source": "시사저널",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92U25XLTNZMjhvY2VWREZqd21QRWFZMS01MGVWRnRTdnJCdXFPajhNaEQ4bmxoYl96UHNUWlZYdnd3SHh5VnZnbXM2cmwtMUdvbUpMc0paYWV4c29KVjRXMkdGY0RvWU5fUHRoQnZQY9IBc0FVX3lxTE5qNk51bDVjTXhBM3h6TU5DeTVwbmNoMlNWLWkzV0J2X1ppcDV1YTY1OG1Lc2J1Q1R4Qm1ReHRZWHJyTGFzWjlBUzFPV3FQSExLdy1WeDA1QnZDOGsybzVLekoxM3ZqRnNIdkpmZFpQSXpEYWc?oc=5",
+      "published": "2026-10-29T05:11:45+00:00"
+    },
+    {
+      "title": "교육부, 수능 시험장마다 스마트안경 전담 인력 배치",
+      "source": "경기신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5IZ1I3WUI1YndJR0JRVENLVlhNWnR4NmhmVy1XOVp0X0o3eXhUUmVSclVjdnFUWnJQaTZNZG9vbU5BSXV5MXlObzRDZ0hFeEVpM3lSTFAwNkNZMGRVSl9taTJn?oc=5",
+      "published": "2026-10-29T05:09:17+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…판별 전담 인력 시험장별 배치",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EeTJlSmVXVU1xYzh2alRnZkx6dm95YXVDRWZQQXFIQWliOG91aHB6cWFfckdhT1MxSnB2MWpFZnVvU2dzTXBlWHg4UGdhbFNjRnBwanBfVnNWUjDSAWBBVV95cUxQWU1VcWJrVGZhc3FXR2lTNnZsYVQtdzRGUl9Ob0Q0cGluekFnVmlaTHVxcjhNUV9EbFBoYTJHVEVPNnZ0NFExdnh2aWEyYno4YnJQSURjLUZIRmlueEJtbVQ?oc=5",
+      "published": "2026-10-29T04:56:37+00:00"
+    },
+    {
+      "title": "“학생, 안경 벗어봐”…올 수능장에 ‘스마트안경 판단 감독관’ 배치",
+      "source": "농민신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xT0pmMUFmTFN0bjk3T2o5a25kQWc2WXN5UmYyQXFGWnYtX0N5c3JMR2Q3T0pSN0xYQ1JoWVgxb0oyZXhUU1V5T0ZqdGJXNVl6Q19jbE5CbGZHQQ?oc=5",
+      "published": "2026-10-29T04:56:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…판별 전담 인력 시험장별 배치",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xOVRYZEZFeG5nRnZiVHJjbE9TT0Q5bVdOZmtabTFBS244SmxJSElXNkNGaGc1ZVRRaWM5dzdEZEx6ZDFfNGszOU9nNWFMenA2QnFVQUpneWl6V25YaFBKMERYZnFzZWs?oc=5",
+      "published": "2026-10-29T04:56:00+00:00"
+    },
+    {
+      "title": "수능 '스마트안경' 꼼수 원천 차단…적발 시 형사고발·3년 응시 제한 추진",
+      "source": "와이드경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBlWUpBdFV4WU1HS0tHYWxYMUI3b1hwaUxmQ2cwS2JrUDdPc19BRTFpRnJCTnlqS1RPY2NaTzlOZkZIcGxscWphNE11d1JGTVVkbi1OX0o1ZjJxZ3JQOFA4Z3BPTnVieEZFYndjbQ?oc=5",
+      "published": "2026-10-29T04:49:34+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 땐 최대 3년 응시 제한 추진",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PTWxqSG9JRjV1R0Z3d1FQY0pycS13SG1LVUlJTUR4NERsT284X1BNWTAtQnBFRVpUR3JkWU00ZzFQY1g3ekVoOFNObWxkRVJnZVHSAVNBVV95cUxOb3dIcUZEMWRneVUzRUtibGRHR1dCU0p3bkpkU1pQN2xxdEhvQU5SXzFkZFROYWlZYmtvNENUWEcwSUtyak9rVGJNa0xKa3V1VHc2SQ?oc=5",
+      "published": "2026-10-29T04:46:39+00:00"
+    },
+    {
+      "title": "수능 '스마트안경' 적발시 형사고발···응시제한 '1년→3년'",
+      "source": "스마트비즈",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBWEI1MTdZVy1wcy1HUG1uZ0ZvZklQU2d6OVd5YXgwaFNCNW1NQk5RbDRqYk1XZlhYQTVoTVVqYmY2ZFFTRGxfVUJINzF2QmM5TnNNcVZJSVRFemhrb3VTUWw5NHhkSVRZUjZvYg?oc=5",
+      "published": "2026-10-29T04:45:04+00:00"
+    },
+    {
+      "title": "수능서 'AI 안경'으로 부정행위하면 형사고발…응시 제한도 3년으로",
+      "source": "경북도민일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XRVpmQ0Z2RmZYSUsxLVFUTEtNUmVOOWZmVzIxb0JGbHBCM1IyRnJvYTM4OVRfblp4blhPRGFZR0JkRDNRTVVhZ0x2Q0t6QjV0UkNKQkl5R3lvRDJZb1h2cndiUGNHbHhxT2c?oc=5",
+      "published": "2026-10-29T04:44:21+00:00"
+    },
+    {
+      "title": "수능 ’스마트안경’ 적발되면 형사고발…판별 인력 시험장마다 배치",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHX2w5MktrNnNldVZlSWFnZ0NPcGFiSXhSbmp0Sm5fSktqajlwQkdaRWt0WmdFbkVialBsTlYtVlhEVEZ4a0s1WXpfQnFKQWpUNFNfWHcxSVdkUEpRT1ViMjNXZjBZalU?oc=5",
+      "published": "2026-10-29T04:37:00+00:00"
+    },
+    {
+      "title": "스마트안경 끼고 수능 보다 걸리면… 3년 응시 박탈에 형사고발까지",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9oZHBCaEFzRXFvSDcxTS1sTkhwV0NxZVg4aFltVkx5VC1ZcmU1eTd1UjNXSGJWZzVPa3JpUV9ib1o0TFZwRlFaZHpUd0NtMUdab01tdldHX2_SAVRBVV95cUxOZ1pibGJnYUIwN2cyOVJ5UnFRTENiY09UaG5rZ0JqbTBuaHQtSjdGM1dZcTJrdGY0bk1EazNVM0ItVEV4VzMzTFd0dEhLZWJNZjh4VV8?oc=5",
+      "published": "2026-10-29T04:33:45+00:00"
+    },
+    {
+      "title": "수능 부정행위 적발되면 3년간 응시 못 한다? 스마트안경 막으려는 교육부 대책 총정리 📋",
+      "source": "뉴닉",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBmQ1FLSk52SGl6clhpUHZhS3N5WGxjdTZlSTJNSWFJc1JvNXl5a1d3UHBHa2FWb1JHRjAyTk96SVplakJSeXcxcklSZlF5aDlHRktj?oc=5",
+      "published": "2026-10-29T04:31:15+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 부정행위 적발 시 형사고발…응시제한 기간도 확대",
+      "source": "데일리안",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOdVQ4SUgtYlBONnRMZWJVVmZLSFUwdy1lcnNjWW9URjBfZldLTkRGX294aDY5eXNXZkdYOTVPN0ZNZ2Q0dTFlYUU3Rl91QWRKeWZaX2lHY250TDNuTjZab1dlbC11Ymh6eGVKeURIUWRkVy1xQXRuNEVwQm80dTNNeGlOQjd4UmNVVDktSlVoMEloVms1V2FOTUVrZjNOdlVjWi1WMnROa3FTVm5NMVBjTUJVaFpOZERyTUg1ZFl5cnp0dGlkemRhZnp1dWxQRGxnd1hkNVN2OW9FanpocnNiV1kxRXhGNEdtYml2bllYMjU4WWZxc240RTc4YkNzTm10MDFoWm1zeTRjUjFjOV9oODc3TEpodU0?oc=5",
+      "published": "2026-10-29T04:20:00+00:00"
+    },
+    {
+      "title": "수능서 AI안경 쓰다 걸리면 형사고발…응시정지 최대 3년 추진",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zdEQzbWtyeUtqamMzZWhUUTNESmM5ZUxBVkFpZ0tlS0JHVy12VHlMR1hfT0t3bng0OTZvN1VaUDlveTJwZFZabUxOTVpSemhtdnZ1NEdB?oc=5",
+      "published": "2026-10-29T04:18:31+00:00"
+    },
+    {
+      "title": "수능 AI안경 부정행위, 형사고발까지…교육부 '초강경 대응'",
+      "source": "교육플러스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LU1FpdDB2RDdlUkVfcnp3RUoxaU5OdkUtMnFHWUpKb3MzWVBjV3lFOUlqN3ZPUnN3RUtzU1g3MF9KXzA1RTV0TEx4M25kdmN6U1hZczZwWUFwVVNZT1FUYko5cXJYSG8?oc=5",
+      "published": "2026-10-29T04:02:10+00:00"
+    },
+    {
+      "title": "교육부, 스마트안경 부정행위 형사처벌 추진…응시정지 1년→3년",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9YSjN0SWsxXzZrVW13RDNHVFA3UTBOSnN6ckZVOFJPX2dCeTB0UXR6MFdKM0ZNNXd4WF9lbDRzSVhPRk04OGhhZFNHLVRfQQ?oc=5",
+      "published": "2026-10-29T03:50:59+00:00"
+    },
+    {
+      "title": "입시 파고든 ‘AI 안경‘…시험 앞둔 대학들 단속·지침 마련 분주",
+      "source": "동양일보",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YN2R0QkdDRmxJRkN0aEhVU2RVNTEtWUU4SFd1aUVmVV9PeGllZUlYYzVQSUw4WU1FUlgxa2V4TmRBOG5yUmhxdzVtZF85S3YyNEFzNXZGOENTYTZKRnNnQXoyS2QyVU5jNi13?oc=5",
+      "published": "2026-10-29T03:40:10+00:00"
+    },
+    {
+      "title": "수능 AI안경 형사고발 추진…응시자격 정지 3년으로 확대",
+      "source": "법치뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95bUJmR2xHUDFkT0FFNzFWUlJfMnk0dGx4aldvQl9LRmJyYjFWVTA0SFUyY3RIS294YVkxSVdQd2FjTXVwNzJBcmJkWE4xVHg4eVhrOHRMbzZZMjMtVW80dFpxMUlTYWJj0gFoQVVfeXFMT3ltQmZHbEdQMWRPQUU3MVZSUl8yeTR0bHhqV29CX0tGYnJiMVZVMDRIVTJjdEhLb3hhWTFJV1B3YWNNdXA3MkFyYmRYTjFUeDh5WGs4dExvNlkyMy1VbzR0WnExSVNhYmM?oc=5",
+      "published": "2026-10-29T03:37:06+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발 방침...응시정지 3년 추진",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBTQ19qZnJ0NFJJQkt5SGRMdEFfeE85R1ZHOFJWbjFUclBEX3hqa1gwa2FCRnMxMjdtb0l2Y1BsRi1MMVdDMTNEUGFGZWs5elhncDM1ZGd1UjJHRkN5YlE?oc=5",
+      "published": "2026-10-29T03:35:00+00:00"
+    },
+    {
+      "title": "교육부 \"수능서 스마트안경 적발 시 형사고발\"",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB6S01hSVN0VVRQYmd1NktxeXZjdlE0OXAwSkpMSUxhM0FnbHlabkFWQXBRNnRUakFNMXRLM3dtZmltRGU5elV6cUhfbk1Vd2FIbjRpXzF5WnBrbkZxMWVJWkE2M1VkSTZ2cHB1RXB1OTZwSmZzckU3V9IBeEFVX3lxTE93cTJQbFlvSTFySEcxblE5eUpWbnRERzlCT0I1VzVybGdIUG9XcndDU0NfT2lHU1E0X0hhaW41Ny1GRUJSNFRiaHcyN1phVnBfSGxWMEViMGJCRDlKTlNGWUJvSjU1bHVvRWh3RXN0ZWFPX0N6Yk5OaQ?oc=5",
+      "published": "2026-10-29T03:13:04+00:00"
+    },
+    {
+      "title": "교육부, 스마트안경 부정행위 ‘강수’…형사고발·응시정지 연장 추진",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9UdUNuR0NJd3d3RFVXT2xBYjNBM1A1a0wwRHRmaU9HN3NfWkpWS0ZPOXROQ1I2d0NkX25yRTFzb2pNNzcyZTdGMUowZHJBdXFFWEhLWmluU3dwdHZGMzJzZTN4aw?oc=5",
+      "published": "2026-10-29T03:07:39+00:00"
+    },
+    {
+      "title": "강원특별자치도교육청, 수능 '스마트안경' 부정행위 차단 강화",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mbF9VdmdjRS02djNveEdWdXAwd0ZOcVFLQVdrZE1FNy0tOVNLMnZvQjZiLWVqQy1JRkVnekFGOWcxMEhrc3hCRFRxRFduLWkzU3IwcXktU2hhYm9QVFlVTHdZN05HMUJTUTlUV2JHYkc?oc=5",
+      "published": "2026-10-29T03:02:33+00:00"
+    },
+    {
+      "title": "‘시험장에서 안경도 못 쓰겠네’…수능에서 스마트 안경 쓰면 ‘형사고발·응시정지 3년’",
+      "source": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE84cFFtVGQzWUFkdTNTWXNSeHdWbXdIcXhIbU1tbUc1N2lXTnpsb2N2VE9XU1pBS0UwZjV2N1BvUmFDemd2SlRLTUpJNmVETTJ3?oc=5",
+      "published": "2026-10-29T02:42:05+00:00"
+    },
+    {
+      "title": "시험장 이어 진료실까지 들어온 ‘스마트 안경’",
+      "source": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8zRGpnT1pGS2JDWHVNRDFzQWg5TF9oTHBiQklNNzRMTkpDVHEtSnBVMXZqTlJjbmZESkRmU05DcjVobFptN0VyMkI5c1c1UzNv?oc=5",
+      "published": "2026-10-29T02:42:03+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사 고발... 응시 정지 ‘최대 3년’ 추진",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRzV4S01kUC1Nc3I4TGJ6WnRndTZoc1N1LXVvZk5yWHVDQ3laODNuSE1iR2FzVk5EcHNEWG9fRUhoNUxmRVBHd29jWlJxX19paWRlMmhvNG5vdGhobmFqdWJzSWpGWjFSbHFzR1NTd2VjbzRPZS13UE1RV2VoakJzWlRYc3FYSmM?oc=5",
+      "published": "2026-10-29T02:41:19+00:00"
+    },
+    {
+      "title": "수능날 '스마트안경 부정행위' 응시제한 1년→3년 추진…전파탐지기도 검토",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5xbkRNNXgwWjRjTnFWU2c5MVloYXpHZlF4TVA4LTduLUo2cDY3SjB6Q0N6cUJtR29QQnhGeWhpX1hGOW1YT1lGaGtYLTR1eHRTWWdLUnNNc1FmT0ptSkJyaA?oc=5",
+      "published": "2026-10-29T02:23:38+00:00"
+    },
+    {
+      "title": "여전히 미흡한 ‘AI 안경 부정행위’ 대책…‘보험 확대’만 강조",
+      "source": "더에듀",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsQmtJY093OWtGWnJMVGNqaXJ1MVhHZ2o2X3dwR0hmNVhEMXA1UFZDelNacWp4QWJ0WjlfdTJhVWg5d3hjT3haRDdScnRyWW9WQWlHY0tuU29FWTQ?oc=5",
+      "published": "2026-10-29T02:21:22+00:00"
+    },
+    {
+      "title": "여전히 미흡한 ‘AI 안경 부정행위’ 대책…‘보험 확대’만 강조",
+      "source": "더에듀",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxLVJjUlVhVXQ4SG80bElmZ2FfTkh3dnNvUlRITnJGaFF0c2RBQ1NMUWI0dEhPQ3FCcW1NYjhIdGRyOVFSNlFNY1JhUHNsM0Z3N0kzdWloVG8?oc=5",
+      "published": "2026-10-29T02:21:22+00:00"
+    },
+    {
+      "title": "수능·대학 고사서 ‘스마트안경’ 부정행위 시 형사고발… 3년간 응시 제한 추진",
+      "source": "한국대학신문",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBtY3k3YWNWUjlRcUdUUEZ1Wkx1OVYwUkhBcUhGSk9ZZnFyODRlUUI2Qm1aajNPNWN3RkRuMS02bG1FY1RWd2xDakV6TGFVbU1Kd25KV2JCdFFER01xQ3VBejBKV1lqZw?oc=5",
+      "published": "2026-10-29T02:15:18+00:00"
+    },
+    {
+      "title": "수능 AI안경 부정행위 형사처벌…응시자격 정지 3년 확대",
+      "source": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9sQnRGc1E0U2FlVzFLUXZFYmZYZFdNamx2c1M4aVNYUkJDUlc2MTFOOEEtc1FVak9pTUJ1ek5ranhRYnJ6aDUyWGFHY1BMdktIdWF5bXpJczBMcXdtNkpmNTdmWXRfNlgxeXBLNEpn?oc=5",
+      "published": "2026-10-29T02:09:36+00:00"
+    },
+    {
+      "title": "수능 시험장에 스마트안경 전담자 배치…적발 땐 '형사고발·응시정지 3년 추진'",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54a085MklzSmg4cjJta1hjRS1mcFIxMFJuUTNfTGlNbkxZb2QwOWVDWUNwUE9DeEFkaGoxaE5zQTVGU01ONVczdlQ2SVJfZVFGX3U5TUJJbGhOemZfLVJnV2dhX1JsQzVfOV9WOGdR0gFzQVVfeXFMTUhNMVdUdlFHdkFiSVNkRV9sNEJYV1J5V1BPYjlqLVd4dFNkZ1ByTE5tXzVvN0RXMU5kTkdrTGRaY1RIMTRhZjFURlRZdjJHYTY5NDRpYTRLNUJoTXZ6cHBhb2ZNM2xIWlNpUHhUaW1rTlA0bw?oc=5",
+      "published": "2026-10-29T02:00:00+00:00"
+    },
+    {
+      "title": "수능 시험장에 스마트안경 전담자 배치…적발 땐 '형사고발·응시정지 3년 추진'",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ITTFXVHZRR3ZBYklTZEVfbDRCWFdSeVdQT2I5ai1XeHRTZGdQckxObV81bzdEVzFOZE5Ha0xkWmNUSDE0YWYxVEZUWXYyR2E2OTQ0aWE0SzVCaE12enBwYW9mTTNsSFpTaVB4VGlta05QNG_SAXNBVV95cUxNSE0xV1R2UUd2QWJJU2RFX2w0QlhXUnlXUE9iOWotV3h0U2RnUHJMTm1fNW83RFcxTmROR2tMZFpjVEgxNGFmMVRGVFl2MkdhNjk0NGlhNEs1QmhNdnpwcGFvZk0zbEhaU2lQeFRpbWtOUDRv?oc=5",
+      "published": "2026-10-29T02:00:00+00:00"
+    },
+    {
+      "title": "교육부 \"수능서 '스마트안경' 부정행위 적발되면 형사고발\"",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4zYlpiU3hEcHhhZFBHbk9QSzJlUnlvcC1rNExKZ285UVdvcDBnTUg2SDdjTXI1WklkUnRJbzdpV0U3M2RuUWhPTnVVMWJRaU1pVGtzbVRiTEdkSmVKQmNxUmlEQ0FWRzlRaGkzVXNpZkVfeDVsZVM00gF3QVVfeXFMTjNiWmJTeERweGFkUEduT1BLMmVSeW9wLWs0TEpnbzlRV29wMGdNSDZIN2NNcjVaSWRSdElvN2lXRTczZG5RaE9OdVUxYlFpTWlUa3NtVGJMR2RKZUpCY3FSaURDQVZHOVFoaTNVc2lmRV94NWxlUzQ?oc=5",
+      "published": "2026-10-29T01:58:12+00:00"
+    },
+    {
+      "title": "“결과 어떻게 믿나”…‘스마트안경’ 보험권 자격시험서도 적발",
+      "source": "농민신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45TUFFYWNDOUVpeWJDczFCWXlaMXhhOFljZjFMcWdLMFVqenFwazE2RFFRTVhOWXNrdVVjb0dINFRKNnFYeWx3eWRIQ3NBUEZSOHBtUkczLWYzZw?oc=5",
+      "published": "2026-10-29T01:56:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…응시정지 1→3년 추진",
+      "source": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9kWHBsbWtnTVhfQ0JkdkFFM1VUdm9jVm1EejVlNURvNkhPZXRZWklaVURsRGdDUGlidTVRV0dpTWtCYXdUdjBoMmQzZURpd0Vob1hnT1F5WmlrYXc?oc=5",
+      "published": "2026-10-29T01:54:00+00:00"
+    },
+    {
+      "title": "수능날 '스마트안경 부정행위' 응시제한 1년→3년 추진…전파탐지기도 검토",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVFc0TkR1dUgtNXJsUzFEYVVGT1VKZTFwVnMyM3RGdmFTVW1YbzRHXzZoeEtkWmozUlJCc1N3LVp3LWJCdmYwSms0bVlQM1VyU0lHSV9zUlg3Mjg0MVluTVdYdF9lSlNkaUdiUkg1eF9zVkJyeXVYaG1zSFlfVnpKbDBB?oc=5",
+      "published": "2026-10-29T01:53:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 시 형사고발...응시 제한 '최대 3년'",
+      "source": "KBC광주방송",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iZTdaVkpOMENhZ0tTd1JZY0FBVDIxcmdsVzg5dkRQVmJmWmZsSHFQQWdvMkZaOTRIRzZYWHhseXN2ZmlyNzIwOWhvLWYwbXQtejBycERsRkZnWndhMXJ4Zndn?oc=5",
+      "published": "2026-10-29T01:51:34+00:00"
+    },
+    {
+      "title": "수능 스마트안경 주의보...적발시 3년 응시금지·형사고발 추진",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBfSi03cEJET0hoN0RmcGhlN2NyZGpZNXRxTTdVbTFXQTNqa2hrZ2FiRmViZEtkdHViX3gzXzNEclktM0Q2TXAteUFUUnFYcnNUWVRPNVNEUXZqRjRHSGR4LXJyYmVOU3FtQk5Xa1VNNA?oc=5",
+      "published": "2026-10-29T01:48:00+00:00"
+    },
+    {
+      "title": "스마트안경 끼면 수능 3년간 못본다…형사 처벌 강화 추진 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5DdlNWRFJWUHZQd2RsbU11V3lQWXV4ajgxMlRRUFZ6RjdLWEhwNVc5Tl9DWWJrX0plbFZxY2daTlhtRzRyWGRYQnpMVXJDZVhWbVEwYnpQeXZmUWhmMXVtS1RYanJZN3Zzc3fSAW9BVV95cUxQZEQ5Rng3WWQ1dV9HNFBReXdpSEwyUXZ6MUtlUFBKcjg2SDA3bWJjd0pFd0dKWHdXdkVWMGlFbmN3bjBjTlpTa190VFpISEROTGd3QzMxdnBwc0JBZDlnVkdHOVBLVFNTRXZ4RXRwRW8?oc=5",
+      "published": "2026-10-29T01:47:48+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 부정행위 땐 형사고발…응시자격 정지 1→3년 확대",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWRHBFUzhweVo4M0FuakhSZnhwQWhtSHV2R0tBRUdaNTNoYkFWVV9lUmFDc0hoTzA0Y1BiNkFJZDN0eWhuSmcwc2dpbzc2blFSaDh1VXQzTDdoZ9IBX0FVX3lxTE1ScFFFekc0TmlPWG9Eam0zWXh2T2cyMVJWMkRjMVdqMEdtXzF0UGw1YVZ5Z1E0XzZqenNFbUNaV2NhMTJyVzM0MWJXUGdhRUxRM3RiQkRsR1lyNVQ4bGRr?oc=5",
+      "published": "2026-10-29T01:47:00+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 부정행위 땐 형사고발…응시자격 정지 1→3년 확대",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ScFFFekc0TmlPWG9Eam0zWXh2T2cyMVJWMkRjMVdqMEdtXzF0UGw1YVZ5Z1E0XzZqenNFbUNaV2NhMTJyVzM0MWJXUGdhRUxRM3RiQkRsR1lyNVQ4bGRr0gFfQVVfeXFMTVJwUUV6RzROaU9Yb0RqbTNZeHZPZzIxUlYyRGMxV2owR21fMXRQbDVhVnlnUTRfNmp6c0VtQ1pXY2ExMnJXMzQxYldQZ2FFTFEzdGJCRGxHWXI1VDhsZGs?oc=5",
+      "published": "2026-10-29T01:47:00+00:00"
+    },
+    {
+      "title": "수능 AI 안경 부정행위 적발시 응시정지 1→3년…형사고발 '엄정 대응'",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16eExOUGNaWXNiUG1LdkxDREZYbDRRdExhSV9hSkNNV1BJbkFsenpGa2lLWEZTLXdFc1pvX0xpYzZHeDNzVjUwSS1tNExrOGdGa0JvblowQmVlazlpcUVHQlVQUzQwYlFMV1BGbnlUQW0?oc=5",
+      "published": "2026-10-29T01:43:50+00:00"
+    },
+    {
+      "title": "대학 가려다 전과자 될 수도…수능 스마트안경 부정행위에 교육부 초강수",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZLUR3WGZrUUI1Z3c2MlJUMmlHQ1RtRlhQc0tDNXJ0Wk5Jdk9XdnNJcGhjdkQzblhyYUZadlpMUWtJZGtaNm1WNXdKTDNFRGNqek4tYl9B?oc=5",
+      "published": "2026-10-29T01:42:00+00:00"
+    },
+    {
+      "title": "스마트안경으로 수능 부정행위 땐 형사고발…응시 제한 1년→3년 추진",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5hLXdfWVQ1SEtXUXlneHlITHVudHBpU1Q4c0I4c1Z4cllCNzJyZ1B3TFJXRmJiNFBRa2ZGMzBjMXVQUll6a3luSnp5U2lrNmlzV2tvU24yOUNpQQ?oc=5",
+      "published": "2026-10-29T01:40:13+00:00"
+    },
+    {
+      "title": "교육부 “수능서 스마트안경 사용하면 형사처벌 추진”",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ1RReThXekh3dTJKNXdjbjNTNEo5NzF0SFRGLWlXbVBDR3FEelNnX01aci1jMEpxcWZDc0FXdG5ndk9xUnFJY1JMeFhNZDh6WXY0YnRad3ViXy1RRlVjUjhaelBCYXpSQmpWT0NOS25qZ2JDS242ejdzeGlaM3UzMk5PQzFWejF4R2fSAZ4BQVVfeXFMT1lTZU5IYUdFcWhkVldhMFJzOVZMc3hVTVNXVXZ1Wnlfall4YVBacHZaYzlkcDRaelVocnBFSnROSlg3eG1HaHlIVXRXQzd3WldXZXdxNW1KRmxXXzFYYUoxc01oZkFiWkdfWmF5aUJ3UWMzSlhKcWFtOWZSdGQtTHl4bmN4LXZBSnZyLS14b21pelJVcnFtLWY5ZkdXalE?oc=5",
+      "published": "2026-10-29T01:38:00+00:00"
+    },
+    {
+      "title": "교육부, 스마트안경 부정행위 고발·수사의뢰…감독관 보호도 강화",
+      "source": "에듀플러스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uV3l4SDFKVjJRUGRUMUhxWWhaMjhnQnJQN0RlVlVlVWlwUzJod1IzNF8yaFUzc1VnYTMyUDVuSVo0YlpEakRWalJ3NEtfaVlXZ0V0dlhQMzN5NEhmTWFFRkd2ZWdNYXNEZHhQYXpn0gFyQVVfeXFMTTJQZUdha3BpalZCU21aRG9jNXVCbkVzUDZaQ0E3UHprX1BqRXpfOXRrSW5RX2U2dTBGNmw1ZnUxd1h4d0RhX0tCUkdTMDNCSkt5amF2eUpUZFBOZzJReHU1LTVqUGJPZklzbDZaWkExVEZB?oc=5",
+      "published": "2026-10-29T01:38:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…응시 정지 1→3년 추진",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1WGFHT1hBYWhzY0c5dHhpeEhNbXc4MUNyTXlqV0ItdGN1cDJzM3RrVVpZWXZqUFhXb0h4VlhOX2xuYkpYTzZ3bmJ6NXh5SlF1OFpBRtIBVEFVX3lxTFA1WGFHT1hBYWhzY0c5dHhpeEhNbXc4MUNyTXlqV0ItdGN1cDJzM3RrVVpZWXZqUFhXb0h4VlhOX2xuYkpYTzZ3bmJ6NXh5SlF1OFpBRg?oc=5",
+      "published": "2026-10-29T01:34:44+00:00"
+    },
+    {
+      "title": "교육부, 대학수학능력시험 스마트안경 활용 부정행위 관련 대응계획",
+      "source": "시사일보",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0cFpRSERLbUJmcFktX21sVnU5N1hCSXduWF9FdGlUVXpGQ2FERHVPd1BLMlZYVVRFdVV6RGV3cTlrbE1rSlhKSW15RFJod9IBakFVX3lxTE5oQ0NxV1ZOeUo1Q19CVEVhdU1DVzg2ODRYbERYUVlsZUp0MDdNbTIwbjk2Sm5HRThyMDQzS2dRSjZsZEF0UmpxMURTbHpJeG5OeTdBd2lVT3EyUm1zM3R5dHpfbVlxOVFoc2c?oc=5",
+      "published": "2026-10-29T01:32:00+00:00"
+    },
+    {
+      "title": "교육부, 수능 AI안경 부정행위 무관용…형사처벌·응시자격 3년 정지 추진",
+      "source": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WcmV2aFN4VmhDQWtLRWZlU28yZFlfaDhTbzcxdTN0M0oxbmowclhIZmx5azZoemZNbmw0bHA0Wl9md1NaWFgwblN0aE1yaWFrcTZERW9sR3FHZ9IBWEFVX3lxTE92dXA3N0pSSEdETzJ6T05Ga1M4WnJVa0FFekxlcGlBX2daSk5YWkp1anNOUjBsV3lfX2hyY2pFcEE3Z3FWQmF5akRDbU53YlNJNEF2eV91MlE?oc=5",
+      "published": "2026-10-29T01:29:48+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 쓰고 부정행위하면 형사처벌…3년간 응시 제한 추진",
+      "source": "강원도민일보",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01VXdCbW9tTHVFR0pLNHFZT1RXMWJXQ040R0I4c3VPVDk5dVRUOEExRllCd3pZQ29IZjYxa0J0Tkx2ZzNyaXFHUmVrSWs5V2JaWUJkeFF2ekx4UlZrUzlpcmsyQlVmWlU?oc=5",
+      "published": "2026-10-29T01:28:43+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 부정행위땐 형사고발…응시제한 1년→3년",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lMXhpTVdHQ0R2NkVtWnlzdXpJMFhDVEY3ekRmc0pvZEtjSk9TVVZLc0t1LVIzdUJscEw5Yl83b2xtSWtleHJoUVNUM05UaHVVb1ItMlZ6VEQ4VldoWHBZWWdFcW5LZGN5VkNGWkV5WE5ncm9IVkHSAWZBVV95cUxOVjZkeS1UUm80YU8zNU5iUzBIa0d5bXplcmhNUTBuMnZFTWF3UHRxOTZrRWhwSmM4Q2RCYlFlYkZHUDhlUmczelZJR2Q1ZTBPbWg1dzIxc3BmYzR0c05jdnpsT2E4RVE?oc=5",
+      "published": "2026-10-29T01:26:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사고발…응시정지 1→3년 추진",
+      "source": "부산일보",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1jY2pwdWx2dHlGRGlDN3VUNEdwcHpvQ3JybjhCNUU4UU9HSG1UcXd4ME1GMHhPZDNyVjVxY2NyaVJYS1lOWFBBVW9VOXMzZ1VzMWR3WXpLX2U4Q1dVeU82ZlU3RW5FRV83VFVHdXhFbGtJckpHaXBfdlQtNWc?oc=5",
+      "published": "2026-10-29T01:25:24+00:00"
+    },
+    {
+      "title": "스마트안경 끼고 수능 부정행위 땐 '최대 3년 응시 자격 정지·형사처벌'",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVVDlITVpQSXZyajN1dHkyODJvUHdTM2RRVF9OVHppQVUyMkxsVm9jNmJNcUxLWW1tbkJRSGMzOTh4QXpuRFlYUXpvMWtoclBId0NjWkRCNWxTZw?oc=5",
+      "published": "2026-10-29T01:25:00+00:00"
+    },
+    {
+      "title": "수능 '스마트안경 부정행위' 형사처벌한다…응시제한 3년 추진",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9MbTUxY05tckQyVlJYaEpsenVoMzdhYWlSanllaGJRSnY2YkRNWG9vNksyQmEtS3Boek9TeHp2T3dEckpiUWRwT041OWc5WFFIT1kyUnVfSEI5eDJWRE13N3FPZzJkMk9EcFNJ?oc=5",
+      "published": "2026-10-29T01:24:35+00:00"
+    },
+    {
+      "title": "[속보] 수능 스마트안경 부정행위 형사고발…응시정지 1→3년 추진",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE50eFZpbTFYdHQ0b09QU3RQV1RxZUhoY3RCZ3hCbU5iRTZDSUlVQ3lXSzFYQ2JEc0M4MzdFVllLcWt2U19rV2V3aE5pc1FWVlNSZ2Fvbg?oc=5",
+      "published": "2026-10-29T01:24:32+00:00"
+    },
+    {
+      "title": "수능서 스마트안경 부정행위 땐 형사고발…응시 제한 3년 확대 추진",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MeE0tNVd6WFFjcWx2cENzQktScnQxWXM5WHhnbzM0Mm0zRHJRN0ZXNmVzYVU2M1czVHFyWG4xT3BCVWxvMnZmQUt0R2tNM0xOZEZuZ2s0NWZacy1Q?oc=5",
+      "published": "2026-10-29T01:23:00+00:00"
+    },
+    {
+      "title": "[속보] 수능 AI 안경 부정행위 형사고발…응시 제한 1년→3년 추진",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jdWQ5QW9xc3lXYUJLSTNKTU4xZklqX2pydF90cVZ5ZXdIMXE3YzhvRjBtNEpkaDV4cmJHQ09aaWZTVGJmRHIwT2VUdUpCQnEwUDFYeWZ1dWo4Zw?oc=5",
+      "published": "2026-10-29T01:15:48+00:00"
+    },
+    {
+      "title": "수능 ‘스마트안경’ 적발시 형사고발…응시제한 ‘1년→3년’",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DdTlSem4tVEpZVVN4ZW1tdTNGbmFobEdGTkxlLXZvT2lrcWJsRTA4cVFCMnNJNEdmR1o4bWw2TUNMOU85NFMtTE5FaWdEQWNnVkpQM0dZYi1McE9Qa3dYaXdyV3FGd9IBZkFVX3lxTE5DdTlSem4tVEpZVVN4ZW1tdTNGbmFobEdGTkxlLXZvT2lrcWJsRTA4cVFCMnNJNEdmR1o4bWw2TUNMOU85NFMtTE5FaWdEQWNnVkpQM0dZYi1McE9Qa3dYaXdyV3FGdw?oc=5",
+      "published": "2026-10-29T01:15:00+00:00"
+    },
+    {
+      "title": "수능 '스마트안경' 적발시 형사고발…응시제한 '1년→3년'",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lbGVnRmhMdENSYzZjNkI5QW1DWHdYdU9kN01uMFpxWjJmODVjYTl1VXpVTHlDS0g4a3dsYWE0b1hYeDNraGg5T2VDU3Zod2pKSjU3N2ZveVhrSHVmY2ZPbNIBeEFVX3lxTE5YWk5IZFdkTF9WVHZ5alM0OXhyOFRjckg4eHFVMVFsTFo5SHJic1BfUVlNQnNrYTNuSG82a0t5eG9ycjNfTVZ2SHVxUHhKSWxTZ2dBa01HU0M5TS1vVDRjYk45OE5ZUnZqd29Jb1ZER1B1ZW9odEVSYw?oc=5",
+      "published": "2026-10-29T01:09:41+00:00"
+    },
+    {
+      "title": "[속보]교육부 \"수능 스마트안경 부정행위 형사고발…응시제한 1년→3년 추진\"",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JUVh1RW5vanU3YUVJRmNWODA2REZCbTkydWVrNnRFbThDXzNIb3loaUdFbnhvd3ZfZFlONkNfZVU5bkZkdHNNQURRTkJmR0ptQkgyRFNVQ1ZFRFlfRlBjUdIBeEFVX3lxTE8yWjcxMDhHT0EwYS1WajdQVUZqVldrTUFUTjZKa2lRcG1SNzJfalFGd0FtdGpvTXQ2c1hGV0JBSEVUSjRJVGthNkFCMmFES3pZcGdzMVhJUWxMQ0RsdGxfVzBNLVpmQlVLRVRFLWpyNTFybmpkdE9BVA?oc=5",
+      "published": "2026-10-29T01:03:03+00:00"
+    },
+    {
+      "title": "\"면접 땐 벗어야죠\" 기업도 취준생도 반대…논란의 '이 안경'",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WSGluY1c0NWZpWTliNW5xeDdTczQwbURmbUJHRlpYb3YwNEZoRjFURTJwX0l5Wll2SHpwSFhMaW5oZ3JqWU1CZDZUN2FBS2x1bV9oaHJnNjFwdw?oc=5",
+      "published": "2026-10-29T00:09:15+00:00"
+    },
+    {
+      "title": "보험권 최초 ‘AI 안경’ 부정행위 적발…보험연수원, 시험 감독 강화",
+      "source": "이코노미톡뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9IUDlodFZNRng3WmJac0tfUXVqYlBCcmdWcm1nNzYwWTRtTDllN2lHLWFVaHM3Q1hZb0kteGNNdk1zYUhTQjRUZjNRUVgxWlc5WnIyX0ZmZDB1eFJKVFd0dGhmbGh6V0J4VFE1MA?oc=5",
+      "published": "2026-10-28T22:54:50+00:00"
+    },
+    {
+      "title": "\"수능 AI 안경 부정행위, 맨눈으론 못 잡아…사전등록·법적제재 필요\"",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wYmNmRmNVT29BMi1hWWNEYkdvbkhrNVo5OVI0TFZCOXpVZ21pQ0tsQUl4RzZjUTA2TkhFS3dBaG1MWjA4Q3lxM3gzeThrb2Z2Znc0NDZPRkVnZw?oc=5",
+      "published": "2026-10-28T21:17:00+00:00"
+    },
+    {
+      "title": "입시 파고든 'AI 안경'…시험 앞둔 대학들 단속·지침 마련 분주",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBpSUhBNm0xZmlNWUl4ZEQ2ZjlMbTRmV0p5VFZMd3k5UVc3MlhXcTR3V0twLWlFX3hkYUVPUHNlTDJyLU9JYjYxRXRqLWtMeWlGcDZVdnhOZnJFQnRsdXpKZzdPa0E0ODd0MHpaMzEyTFYtX3dGczcyRdIBeEFVX3lxTFBpSUhBNm0xZmlNWUl4ZEQ2ZjlMbTRmV0p5VFZMd3k5UVc3MlhXcTR3V0twLWlFX3hkYUVPUHNlTDJyLU9JYjYxRXRqLWtMeWlGcDZVdnhOZnJFQnRsdXpKZzdPa0E0ODd0MHpaMzEyTFYtX3dGczcyRQ?oc=5",
+      "published": "2026-10-28T21:00:00+00:00"
+    },
+    {
+      "title": "수능 ‘AI안경’ 감독관에게만 맡길 일 아니다",
+      "source": "광주드림",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QQk5tSzR0SVVmOVg3cEFzUVV5UEp1a3NEVkU1WkUyOTNmeVpSZnRZcmFhc0FJMGxQYUdBaVlucm5PSHYwVU1yb2puY2xjVkxQQVhFRHZ4UUd1NWxaNHNQZ0xkSWVDTTJBd1E?oc=5",
+      "published": "2026-10-28T15:00:00+00:00"
+    },
+    {
+      "title": "[시사천국] 드라마 '닥터X' 논란부터 스마트 안경 이슈까지…이상민의 풍자 '만물상'",
+      "source": "cpbc News",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBGOG13d0p3YngwZGJEaVo3NUNQUVV2Y2p4MEl4VW1GUzNKNnFJY2p6dzZXdHNkMndFQUZUYThMT0c0UC1tOTBwRU5KaTdIQXRp?oc=5",
+      "published": "2026-10-28T12:58:00+00:00"
+    },
+    {
+      "title": "‘AI 안경’ 오해 받을라…학생들 “뿔테 안경 피하자”",
+      "source": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOc0FtenFtek5sVW9qM1VOY0VwMHpFRXU0NkE0ZUpVU2ZVMnp3SzF3U2l5WEhRaS1zS2hvWTZOWXVMRm1kUW5UNUdTbXBTWlJkeVFibHdwaW9LeUk?oc=5",
+      "published": "2026-10-28T12:36:00+00:00"
+    },
+    {
+      "title": "‘AI 안경’ 오해 받을라…학생들 “뿔테 안경 피하자”",
+      "source": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5UWVdKS0FXeGtZalJxYUVfSEdlemgxckMwdDZKUFZUMXFVbW9PekR3RjRzaW9MLXAtU0k0VWJNakc3T0VLT2toWEdxcmg2N3F6ekJrVlRqRU1nZVU?oc=5",
+      "published": "2026-10-28T10:16:00+00:00"
+    },
+    {
+      "title": "교사 82% \"스마트안경 식별 어려워…전문 판별체계 필요\"",
+      "source": "광주타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKYTVOX1lMakVaZnhKQk1sOTVYeG9CdWpUS19uUExyTlRQeEluR0ltOHlpY0Ruamd4LWQ0UnhtYjduY19QRlZxY01FYUk4M0RHb25BNDF0U3VPa2JNVnlzUW9nSUJ0b3BEY0E?oc=5",
+      "published": "2026-10-28T08:46:35+00:00"
+    },
+    {
+      "title": "\"스마트안경 꼼짝마”…그렙, 4각 촬영 ‘안경 정밀 검증’으로 시험 보안 강화",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBwS0RrbVBBTk0xVGZhX1E5TXptVXdYdTZ0eFI2OVJVQ0pmOVRVTkh2ZW9NR3NJekJscFY1ei1VakE2VVRnTXVQbVM3ZmZ1YlZOTkxTWWdR?oc=5",
+      "published": "2026-10-28T08:40:43+00:00"
+    },
+    {
+      "title": "[수능, AI 안경 비상 걸렸다] 교사 82% \"현행 감독 절차로 스마트안경 식별 어렵다\"",
+      "source": "매일신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBX2NEYVRPOVkyaEF4WVdSMWhwb01DMF96NUhDaTVJMEtXc2ROQjY2clZWaVY0b05ScUl3dnIxN2RtbVNOa1RIVk9TSDN2RkJRbU9GWi1NcXRwaThGZzZ4NjNn?oc=5",
+      "published": "2026-10-28T08:04:15+00:00"
+    },
+    {
+      "title": "[수능, AI 안경 비상 걸렸다] `안경 잠깐 벗어봐`…학생은 `오해` 걱정, 교사는 `민원` 우려",
+      "source": "매일신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQN21JSy1lWlo4cjlyZ29oQWZtcXhjMFpwUnJsVS1sSEtCbzBkWk5pbFN0c0htaTlnTjhNZGNkQkdPSk9KTmZWT3hKaTBPX05IaHRmTGtPMERUZDB0cUZnTzN3?oc=5",
+      "published": "2026-10-28T07:56:44+00:00"
+    },
+    {
+      "title": "수능 앞두고 AI 안경 단속 비상…교사 82% “식별 어려워”",
+      "source": "https://www.seoulilbo.co.kr/",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TbXVBNG5mdDRpMHRvU1RObUtWOHFwNWNrTVE2d0Y2aXluZmNLU1lUcV9KbjFKOXhEMFZXQkgzUUZCN3FPdmtjZjRrZktTWjJoQTBtZGVMLVVEZlNSWXphNmU4ZWdTdFlMR2dYcGdn?oc=5",
+      "published": "2026-10-28T07:56:00+00:00"
+    },
+    {
+      "title": "저 안경 수상한데?…'불법 촬영' 스마트 안경 구별 공식",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE84X2toX3NxaWFpbUVUdmNOOVlBRVFYbldFc0g5ZUxHdW9peDhpLU02NGZuOGVSdHF2RGtxNXpodWZxUXd2MG5IeDFpQ1BiX2RMdjY5amRn?oc=5",
+      "published": "2026-10-28T07:55:47+00:00"
+    },
+    {
+      "title": "올해 수능 때 ‘스마트 안경’으로 커닝하면…형사고발까지 검토",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6a3NscHBUTE1abGtNM29OVW52bi1FRGZtQWFTdXlXTElJeW83eDFpQ3FNTlZEVUR5YW84RlZMc05UNTJfWlZoTXk1NE1GMnVSeTZobWFzczFuZFJ0Tm50eEExajEtSUdKRnc?oc=5",
+      "published": "2026-10-28T06:55:00+00:00"
+    },
+    {
+      "title": "디스플레이 뺀 스마트안경, 5만원 미만으로… 브랜즈컴퍼니 '스카이 핏 스마트 글라스 S1' 출시",
+      "source": "에이빙",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81dTE3QlZoSDg3OXc4ckJNS0dfQVNkWFdTb1NwVHBVeXpBS2IwXzdNMkFpY19nWEJwOHAwbFBGUlNjbXd6NDJVNEtaa2Qyb0JPY29oNHB0YlVhMUM1dVNDd1lTdE03XzDSAWtBVV95cUxQd2ZJbDhhUWRQVy1nZVRvR0loVHd2U1VPNlBqb2VjNHJqdGdaNWRyYWtaMS1IekN4LU9mSjBTZXpvdzJTM1puNHV2MnYxWGRXT29HWk9MNGt1MlZ1UjU1R3hVVk5NRWFzWEVnYw?oc=5",
+      "published": "2026-10-28T06:49:26+00:00"
+    },
+    {
+      "title": "강원교육청, 수능시험 부정행위 예방 교육…스마트안경 대응",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81OF9XY1EwQXl3UmdKV2g5ZG8wQzl5Y3N0aWNTQTRMTVcxa1BHOUlTSmhYN0VlZUp1anMyQ0xoWnF0dXVDM2RIT0NnOWpHQl8yUE8xQ3RCZVhBSm_SAWBBVV95cUxQMHA3UW1kNUx4ZUMtajgxdlB6THhjVVNnUU1WSU8zQ2dCU2psbkdpVEVub1VwR21ic3pCdjhPWUg2QkhGRlZ4LTE0dmsxRENUN29WSWVKWXVBS2dXQkR5M1k?oc=5",
+      "published": "2026-10-28T06:32:59+00:00"
+    },
+    {
+      "title": "수능 앞두고 스마트안경 논란…교사 82.3% “현행 절차로 식별 어려워”",
+      "source": "에듀플러스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mZHh1elJrd1ZwMzVmSjFkakpQYXBhR01Zbi1QbVZjSm01c2JKN1d5aWsxM1FwRXRpaEdvbGMwMlFPcXhXLWJrQVhPYjEyT1ZYdllpYkZFWXJKbkpNbG9ueXRHMmxFWEpnblU3YUR30gFyQVVfeXFMUGt0cEVrNjlQdjJUamZVZnlPM2tIeWp5MDZicmlfbmozSUJBal82SjVXNkVWQnRjeGptZjZ0V1NfMjFJbXV6STdkRjlBR2U5NE9zR2pmeE9UMExheWxjbmlVaFJ6azZLSzg5Vk44ZkZGWlVR?oc=5",
+      "published": "2026-10-28T06:00:00+00:00"
+    },
+    {
+      "title": "그렙, AI 오판 막고 감독관 최종 판단 결합한 안경 4부위 촬영 방식 공개",
+      "source": "헬로티",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RYW1sY3BnUkF1SDE1b3oyWnZoeHF0N2V1VG5DQkhUTTh5VHJIbFRzcEdLcmhNRXI4bWlEZndOalJHRlFJbGNTM2RoV0VhUjRFeW1ETW5UVmxzQUV4clpv?oc=5",
+      "published": "2026-10-28T05:52:47+00:00"
+    },
+    {
+      "title": "교사 82% \"스마트안경 착용 여부 식별 어려워\"",
+      "source": "SK브로드밴드 회사소개",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hMVoxQVJvU3lKbTBTNFZhNkNnaU1HTmFZX0lBQVVaVDg2amZoWnBnS0lFVnNPOHZVZTFsbGlJQkNlUkkxaG1sY2dkdFA0RU1qa0V0SGhUaTFZVlBzek9LZGVlc1JUUVBaVHVBZ3h2dkE?oc=5",
+      "published": "2026-10-28T05:48:57+00:00"
+    },
+    {
+      "title": "스카이 핏 스마트 글라스 S1 출시, 무게 33g·5만 원 미만 가성비 최고",
+      "source": "디지털포커스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5STmtqY3paZ0pRLWpCd2xzR04yUUhLN1hpOFcxT0ZBZzc4ZnVhaW1sbWloQ2FPaDJScU51TC1JNGdDRVpRcVMtcEU5Z0xVSVM5cEFlYVhuYmFwRXlxNEhheHgwZG1aNXRZUkY3VEpEYjI?oc=5",
+      "published": "2026-10-28T05:44:23+00:00"
+    },
+    {
+      "title": "그렙, AI 시험감독에 ‘안경 검증’ 추가…두 달 만에 21개사 도입 [이번주 스타트UP]",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5sblFUNTdWTkpaNW5iOHdCTEFkbWN6LXZNS0YycjN5U3ViRUFDUURyQVk4R0Q5NzVGM2lHb3A3d0JXcld0ZFV3TW5iYzZqSEhLdFHSAVNBVV95cUxPaW4ya3FJcjUyNzZ1UDRaRDVIY0x2djJrcVlQY2oxTEVjVzMweGRwd2hrOHJpcFdYbTRSOFhoMEhNbHdXUFB3c21Pdkg4TXdPQXVkZw?oc=5",
+      "published": "2026-10-28T05:43:51+00:00"
+    },
+    {
+      "title": "브랜즈컴퍼니 ‘스카이 핏 스마트 글라스 S1’ 스마트안경 출시…",
+      "source": "이슈투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12ODh1b0w5U01TWi1jWHpCZXBYUi1nbXNidUxodURyZlcyWk5HY01yNkZncVkxT0xZVkg0UDV3YnVXa19iZGpKaFpSa0RqWWpTNlVMeTV6aEU2dkY3VjNRdWJZSmRLZw?oc=5",
+      "published": "2026-10-28T05:40:07+00:00"
+    },
+    {
+      "title": "스마트안경 부정행위 대비, 온라인 시험 전 응시자 안경까지 촬영해 확인",
+      "source": "플래텀(Platum)",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Cb0NPU2w4N1prdWRIQ190clppRklqTGZucTZrWExUdTIxSm9VU1N6bDRhclpveFhzWFc3b2xtcmg0QWx0aVNIcQ?oc=5",
+      "published": "2026-10-28T05:36:36+00:00"
+    },
+    {
+      "title": "5만 원 아래 스마트글라스 나왔다…‘스카이 핏 S1’ 발매",
+      "source": "CNET Korea",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBXQVRhM2lUc3NUN2xGQ3p2LUwwdHBISUZqY25UTTc1TXNOWnQ4XzdLN1ktRVd5UGN0TVZwUUVLdXh3OURtSVgzSVk0UXozRlptRHJtQmd1Yw?oc=5",
+      "published": "2026-10-28T05:32:00+00:00"
+    },
+    {
+      "title": "AI 안경 탐지 장비 불발…수능은 '육안 검사'",
+      "source": "EBS",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcnhzdkFXX1UwX3pMdXJzWE1laTE4aHQxRndueFNNQzQxdFNBX0hNSXNzNWR1SlprT3NubFpkajZVY054RTROcFkyUXhJRzMwa2VFRjRJX3JiN2laVW13SW1wbUgwVDdtOEVnUkNtQXdZTDNsN0x1YTE5NE1QMm5zTU52TFRnd2lSS1dvOGxzQk9aVGtPbnFqcUY0RWs?oc=5",
+      "published": "2026-10-28T04:41:33+00:00"
+    },
+    {
+      "title": "\"AI 부정행위 잡아라\"...그렙, 스마트 안경 검사 솔루션 공급 확대",
+      "source": "AI타임스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ycmdkQ3QxMm5mcHNFMl9GeEQwZWxZSzhWR1FGU3M3S0tmb2NNMkQ3LXJhUDFyX2hLMVoxdXo2Ynd2MzVQZ2s2cklUYThLVWd2cE1hZ1RrRTNUT25ERnRMTlpOcHlyc1RHOEE?oc=5",
+      "published": "2026-10-28T03:07:11+00:00"
+    },
+    {
+      "title": "브랜즈컴퍼니, 5만 원 미만 오디오 스마트안경 ‘스카이 핏 S1’ 출시",
+      "source": "AI 매터스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IdmVzZXhlcXpQczA3NTdXNzRBazJBNElOZ0tsRXMtU1hUejloRkE5RVVpdUNNbnc0aUpER0c5X3ZRUUhTdFA5VmwtVlVyQUNONGQxdg?oc=5",
+      "published": "2026-10-28T02:26:20+00:00"
+    },
+    {
+      "title": "“33g 안경으로 통화·음악까지”…브랜즈컴퍼니, 5만원 미만 ‘스카이 스마트 글라스’ 출시",
+      "source": "더게이트",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83M2xGZ2R6em56clJWS3M3bnE5bVJGTG5HRDZnQ196Snh1WVpNMDl6amoxcEstTEVPQUE5MTlZS2stWUZGY2pzREpIeHNjTnFUaXotTUF2Q2VrUUNGVUNTSGZHVEpGSTBx0gFsQVVfeXFMTTZ0S21kVEU3N24tcmR2SVFIN0RuNXRrR0x4cG12REJLSnZKSXRQZWdtSXNZMXdnOGMweXlVLTRDN1BRNE5RUVpUT21FX21PZ0NhZUJYcmRzU3RkRVBBaDlmRWNoNnZSUW9EWDVF?oc=5",
+      "published": "2026-10-28T02:18:19+00:00"
+    },
+    {
+      "title": "스마트 안경도 패션을 품다…호피무늬 입고 날렵해진 AI 글래스",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YRlFRaTRjTnBEVEUyVVFvcTRNUmQwWXBxcnpObmpOYzhKMFNZQU4xNzBsNGEteGNEY29iZGxVeEFkLXJ2RlpYbEVHVHY4d1NmS3U2T25B?oc=5",
+      "published": "2026-10-28T01:10:51+00:00"
+    },
+    {
+      "title": "AI 에이전트 품은 스마트 안경, 포스트 스마트폰 시대 연다",
+      "source": "독립신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQV0JQcHBUX2dJWHQtMzhodktMQ1hiZlh1aHdZa25BTUdZOGN1LVM1aWhfNlhEY2cxcVdjNmFDcEVqQWh1YjZsWXJ4SDlpNGhMNGtqYndXUFZ1T1hHVTlhWVZkTExvd3hCU1kw?oc=5",
+      "published": "2026-10-28T00:56:34+00:00"
+    },
+    {
+      "title": "교사 82% \"스마트안경 식별 어려워\"…수능 감독 민원·문책 우려",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EOW1KYUo1amxoQlE3eEFrSDVhSGprY3RGcWNBSklhRWJRRXlHUEd5NDRFYXZUUXBsZF9WTGVfVkJHZnlWNElYVFFleFZGNjNwblRWVWJsaFQ4SHNF?oc=5",
+      "published": "2026-10-28T00:43:00+00:00"
+    },
+    {
+      "title": "교사 82.3%, “현 수능 감독 체제로 스마트안경 식별 불가”",
+      "source": "한국대학신문",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nREdiUlFHc2xHZmZ3SjZCZEhDbk84RUVwdzBVaGhkdEZEV05qdU5XUDJyMzI4RUwwWU82bW52amk5TEhkMk9zSUpYZlQyT251RGtnWlJIMHVQejdiRTlyMTBYME1zZw?oc=5",
+      "published": "2026-10-28T00:22:55+00:00"
+    },
+    {
+      "title": "삼성 스마트 안경, 구글 XR 연결 기능 추가로 출시 임박 신호",
+      "source": "디지털포커스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04V3FKRXVLWFJXMUZpYkdCVDZrbVc5S3NXUGFyTEFyM0RTZ18yQlM3VVdOVkVvckFVQXMwdVNVVkhDTEpEbTl1clhwMDdLMHRnU2xXaDJFZ0U3cTZwUnJUMmY0Q29jRE1ZNzhGeW9Dd24?oc=5",
+      "published": "2026-10-28T00:01:16+00:00"
+    },
+    {
+      "title": "그렙 모니토, 안경 정밀 검증 두 달 만에 21개사 도입",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WZlBYcy1vZFF5bFU0X0FjWGFpS2tSRWhoSktxXzF6QWJweFlfUVlmSmJKdURzUDJFemVOdGhSc1hqcUpibGszWXpzQXRHOGNIY21Rc1ZkNldrUVR6d3o0a2lOcXM?oc=5",
+      "published": "2026-10-27T23:57:01+00:00"
+    },
+    {
+      "title": "스마트안경 부정행위 막는다…그렙 '모니토' 21개사 도입",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBpbGI0b05oV1Fmc1FlSFpUZi13UFpXeHZKZTZXS1hodEdNVXpzZjN0VTNlY3FFYnlpdkxwMmVFa3ZhZnpjZDJFX2dkY25oRlQzcmhFS1U4Q3NrQzZxQS00VA?oc=5",
+      "published": "2026-10-27T23:23:00+00:00"
+    },
+    {
+      "title": "수능 앞두고‥스마트안경 부정행위 비상",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBJZ1MxdVZ6VnpUN21NcF83a1F2SmJqOW10bzNTcTBxMWJuYkFVRjBaTU9ITFpiMXFrX0xWT0NZV3FzM1J0bEdDMXRXUXhUTlVIQzkxVzJ6WFZDckFEcTRtWlR2NWZjNC0yd0lGbDJqQ3Z2NWhSVlY1anl30gF6QVVfeXFMTy1VbTN1RG1lYjktMWlaQ0Vud0Vhamo3bUliTWt3d3BYN1VnNTJTY1JfZ29UMWxZcmV2cFlXNWpnaldUdDJSVU1fMTdQVTU4MjdHc1ZfWVRfZUs0T2hoT0FTR2g0RlJPV1VKQzVFb1cwV1JyNWJWUWRMUXc?oc=5",
+      "published": "2026-10-27T21:52:23+00:00"
+    },
+    {
+      "title": "수능 앞두고 교사 82%…\"현행 지침으로 스마트 안경 식별 불가능\"",
+      "source": "이슈밸리",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lVkVYNXJpLVNMbHdFM3BOT09WZzAxalVKWGphT0J4WDRyVnlDWDMzY2hDYklrMnNpSmhwREpqbzVIb1ZkcWVWQzd3TENMcU5SeVB6TURTT2k2Z29iQzdvTmVKRllKTUVqeXlSOWhn?oc=5",
+      "published": "2026-10-27T20:25:29+00:00"
+    },
+    {
+      "title": "[목멱칼럼]AI 시대, 비판적사고·문제해결력 함양해야",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUmFoUmkwZG1rVURXcHQwZ1p1bWpETG40YWU0bnFYRF83MWVzajR1NmlrVjJLWWdNamNGNzRFWVFzUjJZeXRGcFBURkZDSzk4NUNRaVJEb2dOZVdrRXRzMk1CNTdSUnUyUWlFaEpqcktLcW1lRFJma3RDQ3hnSTFGbw?oc=5",
+      "published": "2026-10-27T20:00:06+00:00"
+    },
+    {
+      "title": "\"뿔테 썼다가 스마트안경 오해받을라\"… 수능 앞두고 안경점 달려가는 수험생들",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBiUnNJcTRQYUxWNVJhYnJJRDRHMGEyenVxWk85b0Zsbjk4WGlScDY5b3pJRnhsdk9BaTd5NnRKd2tCV3h4b1BPUXk2OGsyUFVpNTlMZUFXWFFkZ2lzVEF4WUNlQ0plM3VucTBqZzJB0gFzQVVfeXFMTS1yN2pfajJKbEhWaW9NMEtsZGhkZHBnMnVPb3c2ZmlZMENiSm9KZUM5c3RFYnMzYV9lRUtSWGxCTEhOQTVRMlBoa05od29ZMXFEVFNrSm1QR09ZZzFLZ3pxckxKNGt1blBfc1dYaGgwS3g4Yw?oc=5",
+      "published": "2026-10-27T19:30:00+00:00"
+    },
+    {
+      "title": "교사 82% “수능시험장 AI안경 식별 어려워”… 교원단체, 감독관 추가-탐지 장치 마련 요구",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IQWloemJVeDNhZDJ4YmRvalFXSWZZWFM3aUw5ZENETFdNbkVOVm5iWDNoNGxPNXdDZnNrcVBsb2tqM3BqRDVCMGtKN2NSRVVjcHVBSk80RGVmSHdSTUFKRHlUSGVkVW1jZzM4YWpLczhfdXY3T0HSAWZBVV95cUxPMjRCTXhNZUtMMzFLazE4TXFJUUZXTUtHcENDTHlfMVNwbTNLdXZTNUhYaDA3N1pseGhNMnJHS2ktbThGUlIxYmdsX2hnbjBzcURtU1U5eVdVdXdfYXd3dllMcUFDQWc?oc=5",
+      "published": "2026-10-27T19:30:00+00:00"
+    },
+    {
+      "title": "거품 걷어낸 AI 안경 '메타 퓨리'…똑똑하진 않아도 제법 쓸 만한 걸로",
+      "source": "월요신문",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTam9VZTVRMDZoMW03VjNRRi1YdVJqbjdYQnNqUGlSdWVCLTRwa05HdTA1SkFKLVM1RkFZQmFyYXJKSGd5NTF0V3pGbV80YzhGckQ5aEh0aDRPSnlKOE10UXBCRkRzRUFCMHc?oc=5",
+      "published": "2026-10-27T15:37:23+00:00"
+    },
+    {
+      "title": "[2026 선전 AI+AR 스마트안경 전시회] 프라젠, 단안 70도 시야각을 선글라스 두께에 담은 AR 광학 모듈… \"웨이브가이드 없이 넓고 싸게, 광학 전문가들이 10년 걸려 찾은 답\"",
+      "source": "에이빙",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TUUhiVXJ6c1k5bHFZY05HQVNHbjBNbVhwNUtjXy1FNnVpeElyckllTURDalo2MVdyNnpyTGVwQnN5WW92dTVYS0NhR2VGMm91cFp3VUVDYTJUZzJ0bGZYMVZTbXpqSjQ?oc=5",
+      "published": "2026-10-27T15:14:10+00:00"
+    },
+    {
+      "title": "수능 신종 변수 ‘AI 안경’ 감시 비상",
+      "source": "광주드림",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCcmYwdmZsR29ER2pmMXRtTFIwM0lhSkJJOWJQQWZwVmk0N09BTEFkTllmZXNrVGI3a29ERHhkczhHSk9xOWZ0UkN4MkJOc1g1dFd1QVN3eFI3cmFyT29NblBoeFd6aGMtQVE?oc=5",
+      "published": "2026-10-27T15:05:00+00:00"
+    },
+    {
+      "title": "AI안경 불똥, ‘뿔테’ 쓴 수험생들 지레 불안",
+      "source": "광주드림",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBiRXlVT3YwZ201SnZsWWdaTTRKbzRVZDFZYlEwZ25mNk1GaUY4akxwNVdTMGFhaHpaY3JRRTNReDlTWEF5Ri1fdjdNWkNCTndjbWxfckFsaS1NUW5QQ2VVZ2Z5aG8zTDhNdmc?oc=5",
+      "published": "2026-10-27T15:05:00+00:00"
+    },
+    {
+      "title": "[교단일기]나는 생각한다. 그러므로 존재한다?",
+      "source": "경상일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qNmY4cHFOMlV0ZFFqN0V2WW1uQ0RfYV91b2JXdjU5SThKWnd3SF9fRjlYbThqNW1NblltYV82X0JnNm1hMWFDVmVqUUsxZzNOU3ZsT0NVTlJWZWxDaUFZcHotSk1SZUpqLTNwLQ?oc=5",
+      "published": "2026-10-27T15:00:00+00:00"
+    },
+    {
+      "title": "[2026 선전 AI+AR 스마트안경 전시회] 우리덜, 아이가 보는 것을 아이의 말로 묻고 답하는 AI 안경 '보노'… \"아이 목소리를 알아듣는 음성 인식이 핵심\"",
+      "source": "에이빙",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mSklNUU9RZDZEN3FOZ3ZkSnNPdHB0YnQwUnlDRkFUelF3bndSSnhvWTZWX2RtZEFfam1taUVkLWxnVjl6Rno5Yzh1dlVPbzVZcWVtNWpnOGVmZ2hTVkJ3ckZVNks2TzA?oc=5",
+      "published": "2026-10-27T14:32:57+00:00"
+    },
+    {
+      "title": "보험연수원, 보험권 최초 'AI 안경' 부정행위 적발",
+      "source": "마일드경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1TWHVrcEZEcEthNXM2bWRGVnFOUElPT1dWNVh0WnVMV05wcmdqbk9GOVZvbzl4LUdGSjFBY2pFWDMyci11U3JaNkE4eHBOT3FQU0RsZDFudm9mLWsxUktQOXY2LU9kaVdiTVBJ?oc=5",
+      "published": "2026-10-27T12:56:06+00:00"
+    },
+    {
+      "title": "스마트안경 비상인데‥수능 코앞인데도 교육부는 '묵묵부답'",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4Rkk2ZFBMNDAyUlAwMGtoaDhHaEtrVFlYTGZKeEJ3Tll1RGlRVkNfeFU0d0hTbmpSdDM5TGtEVFJuaHYyWjRPU0tDUnRCOWU1M0Z6N29MV2FvRUl2bFdoZFd3MjFoMHlVcngyNk9HZEluMjEzNWMtWdIBeEFVX3lxTE9ISzU0RFgzd3ppWUJpZDZHdGUxcmoweG1sUzhVRy1YYVdfNkxVZWtYdFZFdmVRRm1QcjdwbW1nMGQ4ZzdrVDR2T0prUHZWb2hfZjJIN3hZTWYxNWRFZG5TN1pkWmpiMUpfc3R0Q1Q2eElsUllxWXotbg?oc=5",
+      "published": "2026-10-27T11:39:43+00:00"
+    },
+    {
+      "title": "수능 ‘AI 안경’ 부정행위 방지책 ‘깜깜’",
+      "source": "남도일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16bHc1OEZ5X0Ffb3M1Ujk3c0hlN25rVk95Y0NkZDlBVnVmWUprS2NreUYzNW42Q2JaV0xaUXdJb1ppcXI5bmI3M0hZeVhIZTdiTDJDLUFiZFFLQVB4WFVmd2ZBQ2dCM3h1NWZaddIBcEFVX3lxTE9PcUhFaEptczduOWhnNzJqMjlES09tZDJUdEtWVG1hVU1YaDFWRHVXQ3RLcnZHRUdEQ2JGejZOSTVKUjd0c0MxMlFJQWhVV0pkUTg1Q1lhSlFhR3JXQ0hlWEF3OTR2VWl5aGYyU0pHVkE?oc=5",
+      "published": "2026-10-27T09:52:42+00:00"
+    },
+    {
+      "title": "[사설] 수능 앞두고 AI 안경 비상, 현장 혼란 없어야",
+      "source": "전북일보 인터넷신문",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE44TjNsbWRjdTBSbzdIYU1IaEwyQ0NnQUtLNEdqRzBUbVpUcXZ6V3lBeDNtUk5ERzVvSE84RF82OE4tdjU2ZHA2SjZuVGxQZmxvdWdZb9IBWEFVX3lxTFBLRjVLa183R1FqT0pSZGhsX0Y0M0ctUnJyY2NJS2FWYzRCQkhORnc3US1qMGJXTFNVTjUwM3l1V0NNS2tjTjBNVHdnUjVlZWpVMi14OHFReFY?oc=5",
+      "published": "2026-10-27T09:26:57+00:00"
+    },
+    {
+      "title": "수능 'AI 안경 부정행위' 우려에도…교사 80% “구별 못 해”",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LSW1GclBTMkxuTzJGUy1MaU1mQmhzTVN1UVJkLXNydDRjbE1sWjlNNEpjS2tEODZ0Tnh5Q2psZ1NjWU5udkJRRTJteUhvSDhCcXBXb094Sk4?oc=5",
+      "published": "2026-10-27T09:21:52+00:00"
+    },
+    {
+      "title": "교사 82% '수능 스마트안경 식별 어려워'",
+      "source": "세이프타임즈",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBvVDljVjZMakVDNnJhU1ViZV9MaEhCRzU5eVRHNFVteHNEanlJMjk3T01ZZjBBYTM4Wk03Z2JQN0tidTlFbjF2MmdqWG5FYXZsaFM3c3VkSzVHNWZRRkxuOUFYUmdfeEttaW5uUEtGTdIBc0FVX3lxTE5UUE1QbnlHREhHTlBWb05XNTNybEdxY0pSTmx0WHJUWWlMbFQ1cUVnRVJHU0VVc3hVbXdqM2NyeEN2N3liZllSSkxWSjA3Mjc1OUtOUU5rQXBJRFRMRWxHVTBuNHpxQTB5WEIzZE0xMEZQTEU?oc=5",
+      "published": "2026-10-27T08:41:03+00:00"
+    },
+    {
+      "title": "‘AI안경 부정행위’ 중·고서도 적발…교육부, 교원단체들 만나 대응책 논의",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95THJET3lxTHVseS1xTExsdF81Q1QwSzQ3anU4Y2lWQS1qVldrX2NxcUd1OGNXby1iU0ZxQWs3czlkT0N2TThyb190OUUwdXNkdkR0VTZn?oc=5",
+      "published": "2026-10-27T08:28:39+00:00"
+    },
+    {
+      "title": "교사 82% \"스마트안경 식별 어려워…전문 판별체계 필요\"",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvV0E3WUN2cF8xN0tSRFc4d0htNmd3U3RRWHpWdWlzWkg5RW9jVENVdDVXeXUzWUxfM3ZUWHBqS1JLVFdfOHUxdzF4LUlxVTlYbmU5by1qbTRsODNUeTk4N9IBeEFVX3lxTFBJMTI0RWxydmhOblBPSHltaXp2U2tjcTMwZWU2d3djU2p5U3J5MkN3QkNxYkpUV2o1NmhObXk3WENNN08zdHJuM1JDd2JFT01Fd1o5aU1jc2tIRFpBZnpXSGpfWHJKanYzbjhQbTFBNzNWTDlxb0Y2MA?oc=5",
+      "published": "2026-10-27T08:19:14+00:00"
+    },
+    {
+      "title": "교사 10명 중 8명 \"수능서 스마트안경 구별 어렵다\"‥'민원·분쟁' 우려도",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9IU2Foc1p3bWx4eVFmcldENjJvSzVtT0FsVmh4VEZoWFhva2o1OTV6cEhzTTBWOFJqbFFqOWx4YlFZbzV3em1tSWJtcmVvQjJPQ1hYYTBDeEtBZ2dWUUhkcDBWWW14a3g4QnF0dXpPWGxiOS00RzNB0gF3QVVfeXFMTldMZk13WjBWS2lRcFZwUEFqSFhhbnc5VXd4OUVldHJwOWt5aFlWSFVCV3FGX3RWUUFhb2ZmbzNxMU1kcm52RkxIRFFQTzVncm80NGNMMlhvaWpiOTZJdjRkM2Y3ejg1RXFZWkUxU0JTcE5XNnBuS3M?oc=5",
+      "published": "2026-10-27T08:17:14+00:00"
+    },
+    {
+      "title": "교원 82% “현행 수능 감독 절차로 스마트안경 식별 어려워”…전문 탐지 체계 촉구",
+      "source": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VN2N4dEtHZHRMZnRlaUdIcEYtMU1QN0pTeTA0bTl6ZU5POVFsN2JZa1JlWnhMbHA0Znppa1FkNEdJbVRWdDJ3cG5CekVqZnlhUU1qMnVWWEIxd9IBX0FVX3lxTFBWMWdpOEZVZFN0QmNPUm0xUjhubTdONXE3M2JHcWZrSFFNQmwxNEYyS1RSazFEZmxqb19IZDlLWlhnb1ItbmNvUlRELTFHd0paV3NENnNUWHlkSXphQmYw?oc=5",
+      "published": "2026-10-27T08:01:00+00:00"
+    },
+    {
+      "title": "보험대리점 시험장서 수상한 시선 처리…보험연수원, 'AI 안경' 커닝 적발",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aRzRkdy1neUpid3NkenRWTHVhUTh2QkdRaXdvS19hT0sxSmpIaDAxUThBUElyYWVzN3VJQUZDWlBhNXkwUXFqUTZYWEhmNTcxX1luQWdhak1MT0RTVGd6Mg?oc=5",
+      "published": "2026-10-27T08:00:41+00:00"
+    },
+    {
+      "title": "수능 감독교사 82% “AI 스마트안경 식별 어려워”",
+      "source": "애드뉴스인천",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1pWWZ2TXB1MjA2NmFaWEQwLVpkY0JlVEk4eUE1d0huU3NsMWRjOXV6YUdiNzluX1lEQ2hrWHlKSnRmcFhyVTBYcWlUci1GaEVlV0h5cUM1OVd0dHJMU0s4Ti1fNS1BSzQyMGow?oc=5",
+      "published": "2026-10-27T07:59:00+00:00"
+    },
+    {
+      "title": "중고교 교사 82% \"수능·모의고사서 AI안경 식별 어려워\"",
+      "source": "SBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQVHhOYVgtdkVpbDk0Qm1zbkJadDJlc2pMV296OThJRFplaEs0cXJpSVFUUGpZX0hMMWE0ajFQS2R1UzROMExvd1NLRERvQzZXMzBZenZ5Z0l5bTNFdjNwRkp5bU5SMklsTGc?oc=5",
+      "published": "2026-10-27T07:56:39+00:00"
+    },
+    {
+      "title": "수능 앞두고 ‘AI 스마트안경’ 부정행위 비상...교사 82% “식별 어렵다”",
+      "source": "M이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xQkh3WlVXazZtM3RiOFNJMmtuelU0cm40aV9xSDFVQUpKdE95aUE1VTN5QTVRMWRoRnJMQ1FPMVdJOFhQLVljWDRhaW1DUW0tT0VwUnVIVEV1R0tGbk9XMWd2amktbGs?oc=5",
+      "published": "2026-10-27T07:55:46+00:00"
+    },
+    {
+      "title": "전교조 “교사 82%, 스마트안경 식별 어렵다 느껴”",
+      "source": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xSjhxei1JTWczSGpiMU1pYjRJbFJnNEt1U2J1cTFhX1YzQnF4LVBtVWFmTkdJNVNHRmRndEZmSUx2cS1fYTZpWU54NG9mRnVNcGptOWtXRHU0YTQ?oc=5",
+      "published": "2026-10-27T07:41:00+00:00"
+    },
+    {
+      "title": "“일반 안경인지 AI 안경인지”…중·고교 교사 82% “구별 어려워”",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQm0yNW9fdVRtTEtwMjQ4c1RicVlqekFjNUVqV011R2FXd0VsMkczOG1UeFQxX3dlSWJQQ2I2Tmx1WDlhbk93LVZmVlRBQ3Q5bkw0WlIyS0FvV2t1TFhsdnlRdTJDZjdjZVhIZmpONWxnZUpuY0hqNkNKVDJiejdZNQ?oc=5",
+      "published": "2026-10-27T07:40:14+00:00"
+    },
+    {
+      "title": "수능 AI안경 감독 비상…교사 82% 식별 난색",
+      "source": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40eVFPdHJ0a0FreFZDRmIzWi1pZ1F6NjJrcXltT3pMNTZfZ0YyVTlHQnp3ck1JYjh6Qm4xZGpxVlczeHh4bTNUVXFZQmVEc0V0OE9lbzhvRjRhR01SV29XVndINHRncmJXcFFDTmtR?oc=5",
+      "published": "2026-10-27T07:32:35+00:00"
+    },
+    {
+      "title": "‘스마트 안경’ 부정행위 중·고교 시험에서도 2건 적발…교육부 전수조사 예정",
+      "source": "JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55SjBOZkVvSVZSVkxKWS1jT2ZEdkw1Tm9INjhXU0g1Tm5Eb1dOd2lmc2VONVkwYzZIWDJ4QTZMY2QzaFZ4XzVDSldQZkJBTXVPQWpmcg?oc=5",
+      "published": "2026-10-27T07:32:00+00:00"
+    },
+    {
+      "title": "중고교 교사 82% \"수능·모의고사서 AI안경 식별 어려워\"",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qemRQaWVZbUhPODVwYklvM3dmY3pzSVVBcE5rTmJLWWl4enZtamVFWWVJM0d1RVdac3NsbDV2RjJoR0RvdWt0ZTA0TV9DWmhPWTI1WFg0THA3V2PSAWBBVV95cUxPZHBMQ0Y0VVNxRGFrMkxkakZRR19DNFctb01HQTZ2d05ZYVJyUlBwSTRtWFV6T0VnZmFPZ1hDRDhwZ19GOC1FOFNsM3pxUGZ1S0dvbFRNZVZTdVV4bHdlREg?oc=5",
+      "published": "2026-10-27T07:10:39+00:00"
+    },
+    {
+      "title": "첫 AI 안경 수능에 교사들 '긴장'…\"민원·책임 추궁 우려\"",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IVmN5OFpOQzBpS29BV3RBUXYxWl8yOTkwdmhKSi12c185cS0zTGdwbHJxUm80YTc1RENXa1hRY0FuWXdGUDNSMm83VFRVdF9nS2poV0lhZFIxZw?oc=5",
+      "published": "2026-10-27T07:03:08+00:00"
+    },
+    {
+      "title": "수능 감독할 교사 82% \"스마트안경 식별 어렵다\"",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE43bDJOT2hIX3dDc0E0OVRGUkl1Q0JXbDBmWWVsRVFRdXkwMmZYbzhIdlZXQzkxOTUxNWdlSEFETWF3Mmp5R2Y5a0tLVmRtd2ZIaGVwWHIySE1MVGhiNGc?oc=5",
+      "published": "2026-10-27T07:00:00+00:00"
+    },
+    {
+      "title": "스마트안경 쓰고 수능 보면 형사처벌… 응시자격 정지도 1년→3년",
+      "source": "충남일보",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9MdVRhaERvbEZJSlF2RTVHa2tSYVBjek5iWmVLZEZzek5TZVVpdmxYRC05R2FzMEJuYncwcGRIWTVSZDJMOTYxUVhweU5xMmxNVnFsaE9Ka0Z1YV9BR1JpUlJjeEhFVXpJV1R1TXkyTmFUbEU?oc=5",
+      "published": "2026-10-27T07:00:00+00:00"
+    },
+    {
+      "title": "수능 스마트안경 부정행위 형사처벌…응시 제한 3년 확대 추진",
+      "source": "싱글리스트",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjZVlQR01RZk44czJfaWVxZEdheEYwQ3M3ckR5WWlseEh5QUFwTl94MFBHV2JOcThMSGdtVUxtS2FRVEFEajRFeEN4cUp4RDU3MHBIOVFwaUs3R3BuR2xVZUpXUnNZUQ?oc=5",
+      "published": "2026-10-27T07:00:00+00:00"
+    },
+    {
+      "title": "Ray-Ban Meta Audio: 카메라 없는 스마트 안경, 배터리 12시간",
+      "source": "Foro3D",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNREFSNVBraWthbFd6cC1ES21nQUpnenZkSHV6eUZ0ZmpOYnlRZFJEemloQVlaS0dlaGpqX2NZXzBaMm5jaWxkV1E1MFZPVzJyZ1A3b0U0SDhqUlZYMnk5azdZTEhNTHhrcElGWTBQQWpFWVdGZ2JXZEgxWlRERkcxdnM2dEVoYUtEbEpuUkVQSEpNNFpuTEZ5WUF1eVQ5cGoxcTBWd1pueEwxOG4xQ3ZJ?oc=5",
+      "published": "2026-10-27T07:00:00+00:00"
+    },
+    {
+      "title": "교원단체 “수능 ‘AI 안경’ 적발, 감독관한테 책임 미뤄선 안돼”",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yVkVKaHRPbGhGM2ctRDJhY1FUZHR1SF9wSEI2TDVuVl9XZzJEaDl5TkhPQUpOdW94Q3puck5PM2d2Wmh6OW1nRFZ3cng2SXdybjBpLWVCdUZQTjF2SUtpU21PT2hoampsVmc?oc=5",
+      "published": "2026-10-27T06:59:00+00:00"
+    },
+    {
+      "title": "교사 82% “수능 스마트안경 식별 어",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEMkVFR0Q5TER6dlBOU3I2U0VPZHhkQ3RxdXltUmFiZlR5aWtZMFBXQUttYkZMVzRFaDctaUItREVoazA2N0IwX1JTU0N5XzFOV2UxYWJlNWE3YW1jSmg4dlV5MDlrM2Yy?oc=5",
+      "published": "2026-10-27T06:58:27+00:00"
+    },
+    {
+      "title": "‘AI 안경’ 오인해도 놓쳐도 문제…수능 감독, 책임은 교사 몫?",
+      "source": "더에듀",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sY2YwcWEzNzY1UVNITS1STTJTRWpQZ1otdXA1LTl4aDVGUEpsX1BSVUVpeUZOQ05XV3RfR0xvOUVHa3pTY1lqYXluTnNRaklWdEY1Q1o1STZqSTQ?oc=5",
+      "published": "2026-10-27T06:44:12+00:00"
+    },
+    {
+      "title": "[금융소식] 교보생명 ‘스마일 턱받이’·NH농협생명 농촌일손돕기·한화손보 해양 사이버보험 공동사업 MOU·보험연수원 스마트안경 부정행위 적발·생명보험협회 ‘숨은보험금 찾아주기’",
+      "source": "천지일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9GSVkxNW9FN1FpbVRMd3U4ODh3c241S3M0V0taZnZOUkVwZkZ0VE1pOVRBRDlGcWMwRHNXeER6Zy02SWotNTNVeHRGQzQ3cF9NOUIyVElxMFlkS0JEdi1iV0g4ck1kRXlvR1E?oc=5",
+      "published": "2026-10-27T06:37:17+00:00"
+    },
+    {
+      "title": "교사 10명 중 8명 “AI 안경 식별 어렵다…오인 시 민원·분쟁”",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kbG00LVozU2RndWMtVF90aTV1NHVKRVhuQmJFaDlTc3FvM2xyNGo3NE42bC1vR01jWnRwYVVmUTl5RWhQYmhucFk4N3FvSkZKTjYyYzktM2w3aUUtYjVBZ0w0WFBfbVBIdldXTFIwTHZ0QjFCT2fSAWZBVV95cUxPMDloWHRIY1g1ZWYtUWEyS3JiSFgtWjNTZUNFX1BZZGlieVVJaTI1VlpaenU2RlpBRTMzT29fd3Y5a1hOd25nc0dBbU1zLS1QakU3MkF0eVIzeFRuSzZIend3RHNybGc?oc=5",
+      "published": "2026-10-27T06:30:37+00:00"
+    },
+    {
+      "title": "책임지기도 부담… 수능 감독 스마트안경 딜레마",
+      "source": "뉴스클레임",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44ZEJpX1FCd05zbDEtOFNMYXdIMDQ3NkZpQkpOdEw3SElzbHluZkNpMDJRSlAxQUEwcXFWZzBheFdSSGx1djlyc3dhN3FjQ0tpWHZoT29ad0I0aUExUHlBc1d5MWRCQVBjRlBTZFM0eHXSAXRBVV95cUxQUFdoZlljdVZVZV9uQURHME80SXllelhTMVhYbm1Dcm1JaVFWQ0VSRHdseGRnX2VKdUlWNmpCU3hlb3U5Rm9iNEhTNkFSQ244YTJZdExodWJGdU01ZGJNNUh6M1NLY04yNkJqZFpmeHRWcVE3Uw?oc=5",
+      "published": "2026-10-27T06:27:47+00:00"
+    },
+    {
+      "title": "보험대리점시험서 'AI 안경'…보험연수원, 처벌 강화",
+      "source": "경제타임스",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYSHh2R0o5YzR0eWs2SExoTUJPbUg0UTJ0VDBOamlKeHNzUzg4cUlFM1JHZE15M0p6SnRjbklOdDFTM2xzV1BXU2hsWXg4WHRUdk4w?oc=5",
+      "published": "2026-10-27T06:13:37+00:00"
+    },
+    {
+      "title": "교사 82% “수능 스마트안경 식별 어렵다”…오인 민원·책임 추궁 우려",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12MEZuQUlDN1hyMDZEQV9CVy1xZ3N3ZjZGNHQ3c2xKTDNtbzdyU0FqYUp1ejdfaE1wZHdjSVBlSFA3Ulp3NE94UC1VYXI0Uk5YcXRYQg?oc=5",
+      "published": "2026-10-27T06:11:00+00:00"
+    },
+    {
+      "title": "보험연수원, 보험대리점 시험서 ‘AI 안경’ 사용 부정행위 적발",
+      "source": "한국보험신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9VTE5jSjRQOEFybWQ4WHJqZWdMODRZMWx3RmF1OUEwY0dSbGZqWnBlUjBxdVFKVm1UaFlKSV8yZFhQMUdENm52dE9SWjJvTE84RzdnZmp3ajhEMlVUMUJsaVJnYk4wX0E2SDI00gFvQVVfeXFMTUhySXRzWDU2cW1adnk0VW81SDZBSjBfOGppOHNYdEg1N1Q1ZlBYenAyTnNEQXNQWG9iQmdfNE95Q052MVNlanREcDczUko5NFdHNlFkWV9uZ0phby1MbTZNWTZSNUppNkdjcm9PUEZF?oc=5",
+      "published": "2026-10-27T05:48:14+00:00"
+    },
+    {
+      "title": "수능 앞두고 AI 스마트 안경 비상",
+      "source": "톱클래스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEdi03TEltOS1aN2NJNFNFdFdpbGRHc0E5anZwLUVtelJZVnZLNUlCWk9yQzBuTnlMWHp4TDRIczB6QmhLWXVBc3VsYU9WaEFjNFBRZ2Z6ODU1NlF6cWJYYTRqNzM3cUlWVDNiS9IBcEFVX3lxTE1ILU5LUVpCM2RRcVdiZFFlbUlMTkFSR09heUdXTWthSUdfWXJZdU5uZkFVV1lsZkVYMG9uYTJRM0hDdEhSRkRwR3ZVM3dJbkFXWGt4YktWUTdGTmkxRzNSYUNNczNWNUhBZzRfcUpZZXA?oc=5",
+      "published": "2026-10-27T05:46:51+00:00"
+    },
+    {
+      "title": "수능 앞두고 AI 스마트 안경 대책 논의",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE90N2oteHZhMnBKNmhHYlV0LXpqcVNyTFltdzdHY0RPY0ZZN1RvcFZSN3VQNWgxTDczd1dhZElFR3NMVmwzdlV6eTNWSQ?oc=5",
+      "published": "2026-10-27T05:45:37+00:00"
+    },
+    {
+      "title": "내신·대입까지 파고든 'AI 안경'…첫 전수조사",
+      "source": "EBS",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRFY4QnVFcTNyd3NadkFHcU1iUVVZSEdqSDhWc09WdnBJZk9wMWlraldPZ3YySlBldzNLLUVEbnpKeEVScUdPQ2VHWjFXVF9RZld4UTltTl9vYXRzeWZfMUNlMnMxalZzYVo0cTNQdm1iZElOdkhzM0hucVd4R2EyMS1helNvM1FfRTFoeldHME9ycjU5RVFNclZHM2M?oc=5",
+      "published": "2026-10-27T05:06:14+00:00"
+    },
+    {
+      "title": "中 선전서 ‘AI 스마트안경 산업박람회' 개막",
+      "source": "안경원라이프",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HWkpxQWVuR3pUM3VLSTl3VXhkdU5NY0l4clNnSTFrdGJOQWtSQ0JvbVVQWFlQSVNZbzdWRU9ibC1KVkIxTHgtSWwzU00zUHhMc25zT2VJZVo2azR6eUV2NEpjVWVwWllFY2xPaXNFQQ?oc=5",
+      "published": "2026-10-27T04:33:01+00:00"
+    },
+    {
+      "title": "내신도 AI 스마트안경 ‘비상’…교육부, 부정행위 전수조사",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9mNHlxLS1DNXdKMEJkVW0tOEIyRXVfVFROdXV2TGR6aXNBXzlEOWIzZmhpMUpjbm5CaEdEeGxtNXgtVlVMY0hTWXl5Ync2Y2VvdzVHdWhPcjJHZ3NvOTZvMkR6RzlLQkcyb1JuZ214MGVCRUwxMWfSAWZBVV95cUxOQmVkd2VUd0pyWEk4OC0xMF9sdVJzRVJKb0dqOVh2dU5xME1oZDlIcy1KWi0tT0FxVmFkaTZyNk5XUWp5ZFJNMXlLQW96OTdNbTZfMl9DNkhWWjFLYnl6UmhIVEdDbVE?oc=5",
+      "published": "2026-10-27T02:21:47+00:00"
+    },
+    {
+      "title": "AI 안경 부정행위 여파, 수능 앞두고 안경 바꾼다",
+      "source": "내외뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44QThZSGNfQWJuSDdnaS1qQlQyV3E1bW5rZVBMd2RaSnpGMXpNQ05URDQtaDM4TXkwb1N4UXN1MUhXZHU2Z0lVcm9MdTB0TEF5Y2U4NEczWXFpOUtaWTBDOGZxTElDX1lhaHdFSUd30gFwQVVfeXFMTnZJVFo5VFczbFZ4SGh5UzQ0a2tGSEtxcnhVeVNScGY0bWUyQk1VSGpRbFgtTnZ0N0hfWUhYQ0phOFVKMTFwekp6OC1RRUtHUUJnZnJGYUNtMWxlV21meHRieXd2dmQyUWNwMGxGRFdpZQ?oc=5",
+      "published": "2026-10-27T02:06:12+00:00"
+    },
+    {
+      "title": "AI 안경과 시험의 외주화[오후여담]",
+      "source": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE40UnlTMV9MSzJueUhqT21aQW9CeHRaNTZWRC1DQWFWS2pDX3BGQnBCYUNWQ1pYcTcyV2VVVU1QcGhlaXZfN3c1RXVVRmRvOThx?oc=5",
+      "published": "2026-10-27T01:56:28+00:00"
+    },
+    {
+      "title": "‘초가삼간’ 태울라...수능 코앞인데 ‘AI 안경’ 단속 강화",
+      "source": "더에듀",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1veGkyeW9QZ0ZsWEZRc0o5Smg1dVF6S3I5UzJuUVFuX1lHTkdiZElfZTE3N3hmOUNWUGZ5STNVX25LUnV5dnlvcVZSUFJVZ0MyNk9jZ1ViSmJseE0?oc=5",
+      "published": "2026-10-27T01:32:08+00:00"
+    },
+    {
+      "title": "초·중·고 'AI 안경 부정행위' 전수조사…중·고교 시험서도 2건 적발",
+      "source": "노컷뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5VbU5OWkRMaEdGdjUzb1lvR1FhbTROdnd2OWpKNXRqNzdtUzBLaGtoSU16eE83QndVd1pSU3BldEFXU3NVdEo2Qy04RS13OVdsb2c?oc=5",
+      "published": "2026-10-27T01:04:10+00:00"
+    },
+    {
+      "title": "중·고교 시험서도 ‘AI 안경’ 부정행위 2건…교육부 전수조사",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yNXBwcWRyUlZzQjVVU1hjUW5NTm81R3ZEQmg4bTZOS0VRUXVHNTk0blljOU5EQWkxalQ0Uk9GbnJhLWR4ZzZscmI0WVdpMjhNN0VCYUl4LXhqT2xGc2NDTTRvLXVFWHh2ckE?oc=5",
+      "published": "2026-10-27T01:02:00+00:00"
+    },
+    {
+      "title": "수능 'AI안경' 우려에…교육부, 교원 3단체 목소리 듣는다",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85djBaQ1B3amVudF9SOE9SR3hKb2RjeWpNMUJ6NW5LcFdOY2VJZEI4Smd5ZGZBeVlfZ09GNG0yckEtMlhMV0s4VkZ6NjE0bEUyZzlGbFRURWUyY1hDRDNWZNIBeEFVX3lxTFB6U0EtMmlONDVCdlRaUS1IdGVPWE1wSWV5dTdFM1NRaXNqV0xKcDQyYjgxQVhBRmpUUVl6a3hjZy1tdTd2d3VUMU1COXZJQ2ZRVng5UFJabFprcDBqSzkxZG83MEJlMTRtcEtpNlVULVlIeTJQUnlRTQ?oc=5",
+      "published": "2026-10-27T00:17:27+00:00"
+    },
+    {
+      "title": "수능 부정행위, AI 안경까지…감독 체계 전면 보완해야",
+      "source": "독립신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzZXczdUZ5YmU3X1pUWEZjOWcxa3hLbGgwSTdQSm4yOTZHdWt2bjIzZU1aV3Q1OWFvQTdod0ZLZ1htQzEtVjNlZWVmOHl1dXdzcXRra245b3BUUmJjTkp3dFczdzRGODJvMllv?oc=5",
+      "published": "2026-10-27T00:03:06+00:00"
+    },
+    {
+      "title": "수능 코앞인데 AI 안경 부정행위 비상…감독교사들 “육안 식별 한계”",
+      "source": "현대경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1aNjZEQlVuVHFWeHgtYWY4VVJjdWN2eHZYM2p0bkY3a0k0U3N6TjViNEYyNXhGdXFzYnhjb0hmcF9sb2RfQjJVSGtnS1ZPMXVRd0dPV3ZZVk5Kc0dGemZ2U0pSNGc2UzhNTzg4?oc=5",
+      "published": "2026-10-26T23:20:28+00:00"
+    },
+    {
+      "title": "휴대전화부터 AI 안경까지…진화하는 부정행위, 감독은 한계",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iYW9VWWs5LXZSNFlKT2I1ZEptS3d3OThiMUpQYW1iUWRFeVBWLTlFOF81aWNWM0dud0hGVzVYc2ZHd3hsbkV0Ti1JUnFZb1VKcW15TW14LUxZaUs3djE3btIBeEFVX3lxTFA3NEwwaGl5ZXpmMmxHR05oS0lLcEJoV2VQV3N3dXczSmUxSzYtM3JZVzlOQXFORzBGMDlCV0ZpSjNuQkpreXdfWXFOOFhTSTdzZ2pPbHM4bXBTTE1xZW1Vdmp0SFZvS0UwZDhaSW9TMFFUNWJFV09Bcw?oc=5",
+      "published": "2026-10-26T22:00:00+00:00"
+    },
+    {
+      "title": "경기교사노조 “스마트안경 대응 인력 확보 등 수능 감독 여건 개선해야”",
+      "source": "기호일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqeGNVREtPTzhNRUhfY1ZWa0FRdGZqRHVaUDAtcTRUbmRFbmE0T19wandBYVJ2NHJ1eWlDYThFYndIVmZQcTFkXzlMUTQ0THB2QnR4TkV3cTFZWG82aVNaQlo1bVItYkE2S1p0dXlFSQ?oc=5",
+      "published": "2026-10-26T21:02:14+00:00"
+    },
+    {
+      "title": "'스마트 안경'은 부정행위, 성적 향상 위한 '약물 복용'은?",
+      "source": "약사공론",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tSzdJTHlsUks4YWp0X09tZ21IY3B4LURmV2J5aUFTcnhoZnRONzRUWkJna1hvRVdPTDJnZGJwOTdQRUhMY3cyeHpRNm1JUjBHTkliV19lRENtbFdYY3REc3NFZnpfWXZ4Vy1SeQ?oc=5",
+      "published": "2026-10-26T20:52:00+00:00"
+    },
+    {
+      "title": "AI 안경 잡으라면서 책임은 교사 몫…수능 앞 교원단체 반발",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB4QnZyYVJyMG9PTm90Ym5DdWNfSU9HQTJ4bWNZUDhkdFF3NlNFS2VVN1dZam92UU5xb1BZal9GUXBoaGprZlVLWC1PZy10VVct0gFUQVVfeXFMT3F5NGZVU0x5MTZMVnJzWUNfZG5vTFhXWDgyS0owWlpnQTZ4LVlBS2Vqa2xLU2NCWkNoUG5RWHZDc1lyUlBjUkdOR2VGeXhYekw0Vmp6?oc=5",
+      "published": "2026-10-26T20:05:00+00:00"
+    },
+    {
+      "title": "수능 30번을 10초 만에...\"AI, 수학도 인간 추월할 것\"",
+      "source": "한경매거진",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02MWY2bWllVGJiLXItVzNQYXl1clh0VExuVXdOZ3lXT2Z6dlF1T3VLQ2VPbGhCSTFGU3gtcjB6d1A5bktCd0FDQlR5LW54MUVIRDVNUVh0RjFnWGNKaUpqdWQ0MldZMzJBeDZhTw?oc=5",
+      "published": "2026-10-26T12:05:00+00:00"
+    },
+    {
+      "title": "행여 AI안경 오해받을까봐…\"수능 때 렌즈 낀다\" 학생·교사 노심초사",
+      "source": "https://www.citytimes.co.kr/",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12VWxxcUtNSWk4ekMzTVE3S24zb0NiQmI0ajF0Y2hnanpJeFlqS2dvMTBBdkduQ1FkaE9HbUxRU1lQbEpZTnBPbkY3bmFqZTVmYS1xVUhIZlB1VE5QMFJGWS1iOW9BZDVGdUZ2TTJR?oc=5",
+      "published": "2026-10-26T08:59:00+00:00"
+    },
+    {
+      "title": "대학 논술서 스마트 안경 부정행위 적발…수능 10초 풀이 : 사회",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UandGYlpQRG9xZFdVMmpJRXBtMGZBd2t2WkUxOHpYVC11Sm5LVnJLYUFKZ253UzB6VkNDU3NuT0Vfam1ES1pVNUdURQ?oc=5",
+      "published": "2026-10-26T08:31:18+00:00"
+    },
+    {
+      "title": "수능 앞 ‘AI 스마트안경’ 비상…감독관 부담만 커진다",
+      "source": "전북일보 인터넷신문",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2WWZxN3NEMENHNXdnaV9tajBjVXNDYWtlLWZpMHpDcXBxcVRNbVNjeGFvT3lleEZIeWNpVjFoTVc0Mm1iNXB6dmMySEQ5X2VBWUtXVNIBWEFVX3lxTE9hYjVwTmlhTUR0RzhkQ0ZkM2xGTm5nQ1ZUaWUtQzdhX3o2cWlNenl1V3h1T1B6OEZOcVVVbnZNZTl4OVNmcXBpekRWTWxCRzY3MGhYbDFTdEc?oc=5",
+      "published": "2026-10-26T08:29:28+00:00"
+    },
+    {
+      "title": "교육부 “중·고교 ‘AI 안경’ 부정행위 전수조사”",
+      "source": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnbHpCbkNDZ1VPb1VUYmlhd0ljYlUyNWV5dm5nODlrUS1lRW1Zd215M2JjemUwOVJQbF9MU2xLTVNiRVJxWFI1NkJ3VnRBTzU1VmpBaXZ1OUota0E?oc=5",
+      "published": "2026-10-26T08:13:00+00:00"
+    },
+    {
+      "title": "“안경 자주 만지는데, 설마 내가 부정행위?” 수능 앞두고 날벼락…“차라리 렌즈를” 아우성 [이슈픽]",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQc0ZkaVp1UW0teGVhQzA4eUszOXBmeXFSZk1DZGMyZ3I5XzM5NENPVXJPeHRKMFRmTDBpckxTdUVVallWTVhrNUJvZHR6aGt1ZFk0Wk9vWDRmaEFKeGhMTjNRSDJrTFhLS2k5NXVwQm9OUGdxNm1ucDhZY0c3TTdjeTRxTQ?oc=5",
+      "published": "2026-10-26T07:59:19+00:00"
+    },
+    {
+      "title": "“안경 자주 만지는데, 설마 내가 부정행위?” 수능 앞두고 날벼락…“차라리 렌즈를” 아우성 [이슈픽]",
+      "source": "www.twig24.com",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9KRk5zUHJNSmFQR1V4VGNwTHA0M0czX2JJQjA1bVJNek8zTWFyb2tXSmR3SmRET0xybGlVcnNsR2c1Z2Vzb01rRDBCNndVOFl2ZjJaU0VITkRkZEIzanVGR29R?oc=5",
+      "published": "2026-10-26T07:59:00+00:00"
+    },
+    {
+      "title": "경기교사노조 “AI 안경 점검 등 수능 감독 부담·책임 전가 중단하라”",
+      "source": "경기일보",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE91WmRVbVo0SnpCLS10a3lGVno4T2pNQVF0YW0yS1ViT2lmRmQwN3FoQjE3c216NFFlTUlQU0JQdm9FQV91RkwwU3BsSWFOQ2x6VHNIQkpYdnkwN2c?oc=5",
+      "published": "2026-10-26T07:30:59+00:00"
+    },
+    {
+      "title": "“신체의 일부 같은 안경인데”…수능 커뮤니티에 ‘안경 교체’ 문의 쇄도",
+      "source": "시사저널",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA1aktuNVFfTzRwaFljZkNReENwQmJ1cWZpYnFsU09FS0MtcTFQU2tucXpDbEpQMGlwNk80WTVrZndyNXFVTHhjd0lxY2U4ZVUySUN2Z0ctQ3h6aFdjU3Z0aEt5dnpianFsMktzNEFxY9IBc0FVX3lxTFAyMTE3YTFNeHEzNEt6eGZ5emRGRmRVNWxKbF83eGxhMFkzX0NJa3ZMTGJIU0ZLdlR1Si1qT08wLVVMeGxIVjRCd3RUWERlTHg2MjZvbzhpX1RKOTF5Y1JDQUVTRDlsZW5xTlluRGl2ODhsdDA?oc=5",
+      "published": "2026-10-26T06:58:58+00:00"
+    },
+    {
+      "title": "대구의 굴뚝, '자동차부품'의 그늘…원청은 압박, 투자자는 외면",
+      "source": "노컷뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE53c3dzemdZT0xpaUJLZmFDWXdXMmtTa25KYzByaUp6OTlkUlIyc3QtRDlHYXplSFNNSmp5TzVvWUNPNDNLaS1DbEdsZ2t5blhEQWc?oc=5",
+      "published": "2026-10-26T06:54:17+00:00"
+    },
+    {
+      "title": "올해 국감 '명장면' 열전 : '불법도박 광고' AI로 재현, 군 수뇌부의 공개 사과, 법사위는 막말 충돌",
+      "source": "허프포스트코리아",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE41WjhQTXBWN1RjaUg3SzlQNkhaLS1hQTRESGxuTkxqdjlCUDRBZlpZcFd2ejZSRGZ3dHU5emF3LUhGNmNiODJIUlBCNktLT3J1OUs1UU4wSQ?oc=5",
+      "published": "2026-10-26T06:48:54+00:00"
+    },
+    {
+      "title": "“잠깐 안경 좀 벗어주세요” 이말까지 하라고?…AI안경 커닝에 교사에 뿔났다 [세상&]",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA4NkpLVWlDZXdiVGYtd29YYTlla2ZaUi1oQUFBX01raEgtZXhXQ3FPLTJjT0VLOHlPNnYyaUh0TXo2VUNRM1FCVzc5SFBSUGI2bWJHVDlB?oc=5",
+      "published": "2026-10-26T06:46:42+00:00"
+    },
+    {
+      "title": "[단독] 교육부 “중·고교 ‘AI 안경’ 부정행위 전수조사”",
+      "source": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QLVI3Y0xFbkxXRzdMN2JPRmJHMjVYdDZsVXh2NlpBR1paeU5VNGtidjlVYWJzQmNkT1pLbHNXREVia0tHa2tiMFVINFhLenV4dUZMX0FKdUxsV28?oc=5",
+      "published": "2026-10-26T06:10:00+00:00"
+    },
+    {
+      "title": "[미국 특징주] 카메라 뺀 '레이밴 메타 오디오' 349달러부터, 노림수는",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YSGdXTFFMSmp1X0NhU3hjR1hmSXE3ZnY1QmNfZEhkTEhVdzJkTVVpSnpPdFc5LTh4Sm9Qb3N5SDg2VkpnMEUyME1UT2hJeUN1VEFDUTROLVpHcGhQ?oc=5",
+      "published": "2026-10-26T05:38:00+00:00"
+    },
+    {
+      "title": "스마트안경 부정행위 비상…수험생들 렌즈 착용 고민",
+      "source": "https://www.2news.co.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NZ2d3aXROdVVrV1RNQVF1YWFicHpZQlVlaHFuOU43UjBpcDZUamR3bmV1WHlHSTR6U0U5QWRFcUdWQnRFVUZpd3N5ME1SU195QVd5bjdxVDJPYkt5OVlPQno4TFM5c2Q2?oc=5",
+      "published": "2026-10-26T05:27:00+00:00"
+    },
+    {
+      "title": "행여 AI안경 오해받을까봐…\"수능 때 렌즈 낀다\" 학생·교사 노심초사",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95QWQ3THhlWnZ0ZmxlcTMydkVnd0FETjJrRHZRcFFtTnJkWnpwbzNsLTVMU2Nha3k4UzZfVGk2MnBrdXY3UV9EUkluWm9wUU5uYkxBd1ZNOWRMNjdkaW56QjlJeG0?oc=5",
+      "published": "2026-10-26T05:23:38+00:00"
+    },
+    {
+      "title": "[社說] 안경업계에도 ‘미래전략 2035’가 필요하다",
+      "source": "안경원라이프",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9NR18wZW84Y01iRFZLNEhPeGtSTXhaV3hsRWZWWjNUZ05EcG1uOTl1Nzk4dUpNd2htYlhCMUJfWkVKa0d6MkpsRl9pTWRxVzBhNm1ZLVdzbGNGUWhXXzJkbGt1SnRzTHJfQTdLdUwxSQ?oc=5",
+      "published": "2026-10-26T04:48:26+00:00"
+    },
+    {
+      "title": "[AI 카드뉴스] AI 스마트 안경, 사생활을 위협하다",
+      "source": "네이트",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91ZU1wMFJGbDlCYjdYVU90S19LX0k0Mks3eWVjUU1GemNVZ0JmQjBrcmxMc0xIUTB0aVRVOEEyTU9NVTdyVThXV01qejVVLThta2Y5Ujc0YXVIM2FGcld4NjRXaEdLbDhDU1J2RA?oc=5",
+      "published": "2026-10-26T02:58:00+00:00"
+    },
+    {
+      "title": "[AI 카드뉴스] AI 스마트 안경, 사생활을 위협하다",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9OSjdrelZiTG1GWVE2bmloTzZFV3dBU1ptcGFNRFZ2M0hzZW55eGNBVGRnQ0Rnb2JKWkhKdnFJSzEzRVF4dkIwSEZlUXVieTZNMzZLNEpreHhtb21j?oc=5",
+      "published": "2026-10-26T02:48:00+00:00"
+    },
+    {
+      "title": "산업인력공단, 국가자격시험 ‘AI 안경 커닝’ 올해 첫 적발 [2026 국감]",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vOWZVZ0JXQXZ1eWt4S0lLWWJWb3NldVpMMzdOamdocXBKVlI0NklkZXdtanhZV3FIQVN4U2tFMnNvMF9BWHpxTkRXMDd0emJqa0dUVUtZb2szWUpkZEgxaFpCVQ?oc=5",
+      "published": "2026-10-26T02:01:11+00:00"
+    },
+    {
+      "title": "AI 안경까지 교사가 확인”…교사들 수능 감독체계 개선 촉구",
+      "source": "에듀플러스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BSnc0djlEa2lrUEZXdlhqdEhtSW8tYjJycjQ4dGh0VUZUbFdob2wxR3Q4T1VuT195a2VrOGFqQ01tMTRTTnlJYklMZmRYbHV2YlVYbWMzMHlhbUJYMzA3RERLZUxmV19Oam5jMkhB0gFyQVVfeXFMTUdtSUtHVklvZjB2TF93MUtXdU5qdWcxSTdUZWc3UE1uSWZNcjQ1QVVxQjE3SHdTMzNraVZhWnp3YU13d3FLLVBzdzVaVnZnUTFFNnVhZk9icm5uZXYyNk5hZmttaGJzUVhMYURCcVlGSG1R?oc=5",
+      "published": "2026-10-26T00:55:09+00:00"
+    },
+    {
+      "title": "경기교사노조 \"AI 안경 부정행위, 교사 개인 책임에 맡겨선 안 돼\"",
+      "source": "경기신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBKQ3paQTZKNXVGNkp0bjZMNy1sZkRMNUliX0lwVG9qS3ppQmRvdkxINjZ1NzVON3NoUkNjaWNpdXJwRHhDaFJuRWhCdGtHNHhyY2R3RlNGY2RWZ2ljZGZpWHdn?oc=5",
+      "published": "2026-10-26T00:43:28+00:00"
+    },
+    {
+      "title": "[국감] 국가 자격시험에 '스마트안경 부정행위' 5건 적발",
+      "source": "포커스데일리",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pVjNPa2JKWUFXbWlhMUV5RDBjald3QjhMbFJtTXJQNC1UUm9LeGtXeWJ2bWpTOG1EZ0dLQnRNajFLSmdvY1dJUl94OHlDTXNmRklGTkFwdzFnUS1UWnBfcG45eXh6dw?oc=5",
+      "published": "2026-10-26T00:17:48+00:00"
+    },
+    {
+      "title": "AI로 사채조직 쫓던 금감원, 등록 대부업체까지 '포착'",
+      "source": "세이프타임즈",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE45d2NQMThtMmhJTTZMeWtTWWtBQlN0N0dTc3VpTlFubXZqOWpNSlU4YlFOSlRrQ1JKVk5pUEpJNUxpMzRUVFlzY3BrRDNzSnpuYURoemRma2ltSDNsWEFkOEoyZnBua2hZaUs3V3NYONIBc0FVX3lxTE1idGFoVnAwN1ZIS0RZMmI0ek4tcWp0cDFSZjlDNVlhc3dZejl0bjFhV2Z5QUlFal84Q0hDTC1taUNRSWhwTGpSTUdoWTZaSWcwZ2Y0aDg4VGVpbEVMWUdIczNYZXF0TkE0Q3c4WlB0blB2c1k?oc=5",
+      "published": "2026-10-26T00:15:52+00:00"
+    },
+    {
+      "title": "[社說] ‘AI 안경’ 대입 부정행위, 형사고발로 엄벌해 입시 공정성 세워야",
+      "source": "교육연합신문",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yY21pNFNKUmNPRV92SVlOTXFUZDBrTHNMX1ROWFR5Nmcyd2dYRjE0WkQ5YThCWnJaQ1NiUTV1a3ZDTHVPcE90MlNFTUtkclNlY2M5bHJoaGE0cnJC?oc=5",
+      "published": "2026-10-26T00:00:00+00:00"
+    },
+    {
+      "title": "스마트 글래스는 왜 거울 앞에서 멈추는가",
+      "source": "패션포스트",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVYVJtUTFwelJacFJoM2JsVVlNU1NIWTFoRVdXNkhmdWNHbjlzQ1dLaVZqdnVQR3BXelF1akVfSE9YSjJyYWNJbVVvZDZNMEpEeUQySjN6VWNqVzBjOVRDeWtSc3FTWmo0aVBKc3hQSzhHa3NzUVE?oc=5",
+      "published": "2026-10-25T23:26:26+00:00"
+    },
+    {
+      "title": "\"원장님, 연세대 치대 출신인 줄\"…환자들 '화들짝' 놀란 이유",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HeEhDWHNlYkV3M2R4NFZIa1VWY0NURXZlVzZlWTNnUG8taE9mYVhwN1M2R3ZzNXBFdzk3a1owd1NibmRRdG9US1VHcW1XQ21FVHZDTXdSNmlFQQ?oc=5",
+      "published": "2026-10-25T23:00:09+00:00"
+    },
+    {
+      "title": "안경테까지 바꾼다…수능 앞두고 불안 확산",
+      "source": "SBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBBSFByZ1dhRmNJOVM1SEx0dk1vTkphOU9qX1ZQaTB5T3M4ekVFR3B5eGNsSmozdGFqLXRJNWc1Vld4V1k1Q21QUkNqaUV2b0xUNGxZZmM5bTdBNE5GZ0FzSjMwVHlBaUlsNGfSAWZBVV95cUxQc0VlZU83b0t4S2x4cVpLZktwajVJVHRHQkpJZjgwYndPdXpiM1d3c1VoRTdKcVJIQUdJWFZtS0ZiVVcwQVJZSHdkZlVERXRwYjVLSHprTkxTS1dYeVJiZGVPWklqemc?oc=5",
+      "published": "2026-10-25T22:53:34+00:00"
+    },
+    {
+      "title": "AI 스마트안경 시대, ‘사람 중심’ 시험 감독 기준 세워야[특별기고]",
+      "source": "한국대학신문",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpSmtHNmlLSTBJM2tWa0lZcWlSMTN5VGI4NHFiUWoweHpfRy1zbzNtUFlUeWJWbVhrT0VMd25hV0lCNkRENVB6MTBDSkdtZ2Y0cDJmUXV6Q1FadVBkN2J2U3dKdGJQUQ?oc=5",
+      "published": "2026-10-25T21:10:00+00:00"
+    },
+    {
+      "title": "‘AI안경 감독관이 판단’에 수험생 혼란… “오해 살라” 뿔테 기피",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PS3JOLU1FRmhDdzZTWHZmVW5iQmZuTU1JN2MwWDZjZFNkUDJBZXN4R0xQRzk0ZDRKYlBTMzF4TlVsS2lmZlZjcHZGS2tuSVZyTHdfRU5Kb1lvOGFseFBvLTBhMEpfUzl2MWtWcEEtSkxYUlpCbmfSAWZBVV95cUxPUnpOcWlOZlpVSkFldU14cHZMX2dNT2Y5d0hKdGNUdEhjMzJTZkxrQXNhMWV0U3BuZWl0LW53a1dwQVRyekhWbTBramkxVXpSd1J3Zk9qcktGRkV5cUwtMGhJX2llYnc?oc=5",
+      "published": "2026-10-25T19:30:00+00:00"
+    },
+    {
+      "title": "수시 학생부 전형 경쟁률 하락… “내년 대입 개편 영향”",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5oVUpjd09DY1owcUtZaGpkXzhJVC1pbWJfaHNwRm1LR0Nuc2dCcnZQcWM3NV9DelJ6STVXeF9BbWFXVndTQjd1SUljb2xyakhxYzVzZHp4bnlXQzJCdFAwVnJxanpYTHZfVlF4QjlxOG5aU3daYlHSAWZBVV95cUxPS2dRWmo0akd5Q2gxUVRMZFVCd1ZhQ1dJQk4xUkM3STBUaGx2Wk1jNGU4T1VITkRLZk8zTHNmMWt2T2h5ejAxa1FvdXZsWnBBZk85RUxOUUhnN2FIYzVNOTRPN2JmZ3c?oc=5",
+      "published": "2026-10-25T19:30:00+00:00"
+    },
+    {
+      "title": "수험생 덮친 ‘뿔테안경 공포’",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOV0hGSEUwbmhnNU9QYUhiaW9IOEtiSDZaaUpXeDNfeVpUSEZXRFlVWnhObjF4ODV1SUR4QWxTMlRTQVRLNDg5dFY2Z0lyelVONG9aMGpwX05CTjU2UVN2ZzdHSjU4ak9paWV4QXRvWG5tcW5LRnFVa1A3d2Q1Y2NONk5kaVN1V1lSeDF6WHNHeVI?oc=5",
+      "published": "2026-10-25T15:46:15+00:00"
+    }
+  ],
+  "news_spam_removed": 0,
+  "google_trends_matches": []
+}
