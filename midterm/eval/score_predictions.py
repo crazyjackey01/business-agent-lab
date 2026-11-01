@@ -1,188 +1,133 @@
-"""Did what the analyses said will happen come true? Checked by code, a week later.
+"""Next week's Google search interest: forecast by code, checked by code a week later. No model involved.
 
-Every analysis logs its own forecasts (data/predictions.jsonl; the Cloudflare version keeps
-them in KV and serves them at /api/predictions):
-  - each "what is next" sentence comes with a test: at least min_articles Google News
-    articles matching query in the 7 days after the analysis. The same count for the 7 days
-    before shows whether the bar was already met, i.e. whether it was an easy forecast.
-  - search_interest: Google search interest in the topic, next 7 days vs last 7 days, up /
-    down (more than 10% apart) or flat. Compared with always saying "flat" ("same as last
-    week"), because a forecast is only worth something if it beats that.
+Each analysis logs one forecast (data/predictions.jsonl). The topic's 5 years of weekly Google
+Trends data pick the method with the smallest past error (same as last week, 4-week mean,
+exponential smoothing, same week last year) and a range: the 10th-90th percentile of
+actual/predicted over the last two years. A forecast is up / down (more than 10% from this week)
+or flat.
 
-Both sides of a comparison come from one Trends response, because Trends rescales its index
-per request. A prediction stays pending until its week is over in the data.
+Once the week is over, this week and the forecast week are compared as daily averages from one
+Trends response, because Trends rescales its index per request. Reported: direction hits, range
+hits, and the hits from always saying "flat" ("same as last week"), since a forecast is only
+worth something if it beats that.
 
 Usage:
     python midterm/eval/score_predictions.py     # self-check, then data/eval/scored_predictions.json
 """
 import json
 import sys
-from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-import requests
+import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # midterm/ modules
+from eval.forecast import SES  # noqa: E402
 from eval.gtrends import interest  # noqa: E402
-from topic_trends import fetch_news, is_spam  # noqa: E402
+from eval.prediction_test import GOOGLE_MODELS, RECENT_TRAIN, google_forecasts, google_rows, score  # noqa: E402
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 PREDICTIONS = DATA / "predictions.jsonl"
 OUT = DATA / "eval" / "scored_predictions.json"
-WORKER_URL = "https://trend-signals.gimailft01.workers.dev/api/predictions"
-WINDOW_DAYS = 7
+WEEK_DAYS = 7
 FLAT_BAND = 0.10  # within 10% counts as "flat"
-DIRECTIONS = ("up", "flat", "down")
+MIN_ORIGINS = 26  # past forecasts needed to choose a method and a range
 
 
-def prediction_from(analysis):
-    """What an analysis said will happen, in checkable form, or None if it said nothing checkable."""
-    e = analysis.get("explanation") or {}
-    tests = []
-    for c in e.get("outlook") or []:
-        test = c.get("test") or {}
-        if test.get("query") and isinstance(test.get("min_articles"), int) and test["min_articles"] > 0:
-            tests.append({"claim": c["claim"], "confidence": c.get("confidence"), "query": str(test["query"]),
-                          "min_articles": test["min_articles"]})
-    si = e.get("search_interest") or {}
-    search = {"direction": si["direction"], "confidence": si.get("confidence")} if si.get("direction") in DIRECTIONS else None
-    if not tests and not search:
-        return None
-    made = datetime.fromisoformat(analysis["analyzed_at"])
-    return {"topic": analysis["topic"], "geo": analysis["geo"], "made_at": analysis["analyzed_at"],
-            "window_start": (made.date() + timedelta(days=1)).isoformat(), "window_days": WINDOW_DAYS,
-            "search_interest": search, "tests": tests}
+def direction_of(before, after):
+    """up / flat / down for after compared with before."""
+    if before == 0:
+        return "up" if after > 0 else "flat"
+    change = (after - before) / before
+    return "up" if change > FLAT_BAND else "down" if change < -FLAT_BAND else "flat"
 
 
-def log_prediction(analysis):
-    prediction = prediction_from(analysis)
-    if prediction:
+def forecast_from(series):
+    """{method, direction, change range, week} from {week start: index}, or {"note"} if history is short."""
+    dates = sorted(series)
+    first = next((i for i, d in enumerate(dates) if series[d] > 0), None)
+    if first is None:
+        return {"note": "no search interest in Google Trends"}
+    dates = dates[first:]
+    y = np.array([series[d] for d in dates], float)
+    if len(y) < 52 + 1 + MIN_ORIGINS or y[-1] == 0:
+        return {"note": "too little search history"}
+    rows = google_rows(y)
+    method = min(GOOGLE_MODELS, key=lambda m: score(rows, m)["mae"])
+    recent = [r for r in rows[-RECENT_TRAIN["google"]:] if r["pred"][method] > 0]
+    low, high = np.quantile([r["actual"] / r["pred"][method] for r in recent], [0.1, 0.9])
+    point = float(google_forecasts(y, SES(y), len(y) - 1)[method])
+    now = float(y[-1])
+    return {"method": method, "direction": direction_of(now, point),
+            "change": round(point / now - 1, 3), "change_low": round(float(point * low / now - 1), 3),
+            "change_high": round(float(point * high / now - 1), 3),
+            "week_start": (date.fromisoformat(dates[-1]) + timedelta(days=WEEK_DAYS)).isoformat(), "week_days": WEEK_DAYS}
+
+
+def log_prediction(topic, geo, made_at):
+    prediction = {"topic": topic, "geo": geo, "made_at": made_at, **forecast_from(interest(topic, "weekly", geo) or {})}
+    if "direction" in prediction:
         with PREDICTIONS.open("a", encoding="utf-8") as f:
             f.write(json.dumps(prediction, ensure_ascii=False) + "\n")
     return prediction
 
 
-def window_days(start, days):
-    return [start + timedelta(days=d) for d in range(days)]
-
-
-def direction_of(before, after):
-    """up / flat / down for the average of `after` compared with the average of `before`."""
-    b, a = sum(before) / len(before), sum(after) / len(after)
-    if b == 0:
-        return "up" if a > 0 else "flat"
-    change = (a - b) / b
-    return "up" if change > FLAT_BAND else "down" if change < -FLAT_BAND else "flat"
-
-
-def score_interest(forecast, start, days, series):
-    """The direction call against one Trends series, or None if the week is not in the data yet."""
-    after = [d.isoformat() for d in window_days(start, days)]
-    before = [d.isoformat() for d in window_days(start - timedelta(days=days), days)]
+def score_week(prediction, series):
+    """A scored copy of the prediction against one daily series, or None if the week is not in the data yet."""
+    start, days = date.fromisoformat(prediction["week_start"]), prediction["week_days"]
+    after = [(start + timedelta(days=d)).isoformat() for d in range(days)]
+    before = [(start - timedelta(days=days - d)).isoformat() for d in range(days)]
     if not series or max(series) < after[-1]:
         return None
     if any(d not in series for d in before + after):
-        return {**forecast, "actual": None, "hit": None, "flat_hit": None}
-    actual = direction_of([series[d] for d in before], [series[d] for d in after])
-    return {**forecast, "actual": actual, "hit": actual == forecast["direction"], "flat_hit": actual == "flat"}
-
-
-def count_articles(query, topic, lang, geo, start, days):
-    """Articles matching query published in the window, one query per day (each returns at most 100)."""
-    def one_day(day):
-        found = fetch_news(f"{query} after:{day - timedelta(days=1)} before:{day + timedelta(days=1)}", lang, geo)
-        return [a for a in found if a["published"][:10] == day.isoformat() and not is_spam(a["title"], topic)], len(found) >= 100
-
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(one_day, window_days(start, days)))
-    return len({a["url"] for articles, _ in results for a in articles}), any(capped for _, capped in results)
-
-
-def score_test(test, count, last_week, capped):
-    return {**test, "count": count, "last_week": last_week, "capped": capped, "passed": count >= test["min_articles"],
-            "already_met": last_week >= test["min_articles"]}
-
-
-def score(prediction, today):
-    """A scored copy of the prediction, or None while its week is not over."""
-    start = date.fromisoformat(prediction["window_start"])
-    days = prediction["window_days"]
-    if today < start + timedelta(days=days):
-        return None
-    geo = prediction["geo"]
-    lang = "ko" if geo == "KR" else "en"
-    search = prediction.get("search_interest")
-    if search:
-        search = score_interest(search, start, days, interest(prediction["topic"], "daily", geo))
-        if search is None:
-            return None
-    tests = []
-    for test in prediction.get("tests") or []:
-        count, capped = count_articles(test["query"], prediction["topic"], lang, geo, start, days)
-        last_week, capped_before = count_articles(test["query"], prediction["topic"], lang, geo, start - timedelta(days=days), days)
-        tests.append(score_test(test, count, last_week, capped or capped_before))
-    return {**prediction, "search_interest": search, "tests": tests}
+        return {**prediction, "actual": None, "actual_change": None, "hit": None, "flat_hit": None, "in_range": None}
+    b, a = float(np.mean([series[d] for d in before])), float(np.mean([series[d] for d in after]))
+    actual = direction_of(b, a)
+    change = round(a / b - 1, 3) if b else None
+    return {**prediction, "actual": actual, "actual_change": change, "hit": actual == prediction["direction"],
+            "flat_hit": actual == "flat",
+            "in_range": None if change is None else prediction["change_low"] <= change <= prediction["change_high"]}
 
 
 def totals(scored):
-    tests = [t for p in scored for t in p["tests"]]
-    calls = [p["search_interest"] for p in scored if p.get("search_interest") and p["search_interest"]["hit"] is not None]
-    return {"tests": len(tests), "tests_passed": sum(t["passed"] for t in tests),
-            "tests_already_met": sum(t["already_met"] for t in tests),
-            "search_calls": len(calls), "search_hits": sum(c["hit"] for c in calls),
-            "search_flat_hits": sum(c["flat_hit"] for c in calls)}
-
-
-def all_predictions():
-    """The local log plus what the Cloudflare version logged."""
-    rows = [json.loads(line) for line in PREDICTIONS.read_text(encoding="utf-8").splitlines() if line.strip()] if PREDICTIONS.exists() else []
-    try:
-        response = requests.get(WORKER_URL, timeout=30)
-        response.raise_for_status()
-        rows += response.json()
-    except (requests.RequestException, ValueError) as error:
-        print(f"could not read the Cloudflare predictions: {error}")
-    return list({(p["topic"], p["geo"], p["made_at"]): p for p in rows}.values())
+    done = [p for p in scored if p["hit"] is not None]
+    ranged = [p for p in done if p["in_range"] is not None]
+    return {"scored": len(done), "hits": sum(p["hit"] for p in done), "flat_hits": sum(p["flat_hit"] for p in done),
+            "ranged": len(ranged), "in_range": sum(p["in_range"] for p in ranged)}
 
 
 def self_check():
-    assert direction_of([10, 10], [12, 12]) == "up"
-    assert direction_of([10, 10], [10.5, 10.5]) == "flat"
-    assert direction_of([10, 10], [8, 8]) == "down"
-    assert direction_of([0, 0], [0, 0]) == "flat" and direction_of([0, 0], [1, 0]) == "up"
-    start = date(2026, 1, 8)
+    assert direction_of(10, 12) == "up" and direction_of(10, 10.5) == "flat" and direction_of(10, 8) == "down"
+    assert direction_of(0, 0) == "flat" and direction_of(0, 1) == "up"
+    # A steady series: the forecast is flat, its range holds "no change".
+    weeks = {(date(2024, 1, 7) + timedelta(weeks=w)).isoformat(): 50 + (w % 3) for w in range(120)}
+    f = forecast_from(weeks)
+    assert f["direction"] == "flat" and f["change_low"] <= 0 <= f["change_high"], f
+    assert f["week_start"] == (date(2024, 1, 7) + timedelta(weeks=120)).isoformat()
+    assert "note" in forecast_from({"2026-01-04": 10, "2026-01-11": 12})
+    assert "note" in forecast_from({"2026-01-04": 0})
+    # Leading zeros (before the term existed) don't count as history.
+    assert "note" in forecast_from({(date(2024, 1, 7) + timedelta(weeks=w)).isoformat(): 0 if w < 100 else 5 for w in range(120)})
+    # Scoring: this week averages 10, the forecast week 20.
+    p = {"direction": "up", "change_low": 0.5, "change_high": 1.5, "week_start": "2026-01-08", "week_days": 7}
     series = {(date(2026, 1, 1) + timedelta(days=d)).isoformat(): (10 if d < 7 else 20) for d in range(14)}
-    r = score_interest({"direction": "up"}, start, 7, series)
-    assert r["actual"] == "up" and r["hit"] is True and r["flat_hit"] is False
-    assert score_interest({"direction": "up"}, start, 8, series) is None  # week not in the data yet
-    t = score_test({"min_articles": 10}, 12, 15, False)
-    assert t["passed"] is True and t["already_met"] is True
-    assert score_test({"min_articles": 10}, 9, 2, False)["passed"] is False
-    analysis = {"topic": "x", "geo": "KR", "analyzed_at": "2026-01-07T12:00:00+00:00", "explanation": {
-        "search_interest": {"direction": "sideways"},
-        "outlook": [{"claim": "a", "test": {"query": "q", "min_articles": 5}}, {"claim": "b", "test": {"query": "q", "min_articles": "many"}},
-                    {"claim": "c"}]}}
-    p = prediction_from(analysis)
-    assert p["window_start"] == "2026-01-08" and [c["claim"] for c in p["tests"]] == ["a"] and p["search_interest"] is None
-    assert prediction_from({"explanation": {"outlook": [{"claim": "c"}]}}) is None
-    assert totals([{"tests": [t], "search_interest": r}])["search_hits"] == 1
+    r = score_week(p, series)
+    assert r["actual"] == "up" and r["hit"] and not r["flat_hit"] and r["in_range"] and r["actual_change"] == 1.0
+    assert score_week(p, {k: v for k, v in series.items() if k < "2026-01-14"}) is None  # week not over
+    assert totals([r]) == {"scored": 1, "hits": 1, "flat_hits": 0, "ranged": 1, "in_range": 1}
 
 
 def main():
     self_check()
+    rows = [json.loads(line) for line in PREDICTIONS.read_text(encoding="utf-8").splitlines() if line.strip()] if PREDICTIONS.exists() else []
     today = datetime.now().date()
     scored, pending = [], []
-    for p in all_predictions():
-        r = score(p, today)
+    for p in rows:
+        end = date.fromisoformat(p["week_start"]) + timedelta(days=p["week_days"])
+        r = score_week(p, interest(p["topic"], "daily", p["geo"])) if today >= end else None
         (scored if r else pending).append(r or p)
     for p in scored:
-        s = p.get("search_interest")
-        if s:
-            print(f"{p['topic']:12} {p['window_start']} search: said {s['direction']}, actual {s['actual']}")
-        for t in p["tests"]:
-            print(f"{p['topic']:12} {p['window_start']} {'PASS' if t['passed'] else 'FAIL'} {t['query']!r} >= {t['min_articles']}: "
-                  f"{t['count']} (week before: {t['last_week']})")
+        print(f"{p['topic']:12} week of {p['week_start']}: said {p['direction']}, actual {p['actual']} ({p['actual_change']})")
     summary = totals(scored)
     print(f"\n{len(scored)} scored, {len(pending)} pending; {summary}")
     OUT.write_text(json.dumps({"totals": summary, "scored": scored, "pending": pending}, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -47,17 +47,18 @@ EXAMPLE_ORIGIN = {"google": "2026-10-04", "wiki": "2026-10-11"}
 
 # Forecast rows: one per origin, {t, now, actual, pred: {model: value}} ----------------
 
+def google_forecasts(y, ses, t):
+    """Next-week forecast per model, made with data up to week t."""
+    return {"naive": y[t], "mean4": y[t - 3:t + 1].mean(),
+            "ses": ses.levels[int(np.argmin(ses.cum_sse[:, t])), t],
+            "seasonal": y[t - 51]}  # same week last year (the week after t, 52 weeks earlier)
+
+
 def google_rows(y):
     """Weekly series -> next-week forecasts at every origin with a year of history."""
     y = np.asarray(y, float)
     ses = SES(y)
-    rows = []
-    for t in range(52, len(y) - 1):
-        rows.append({"t": t, "now": y[t], "actual": y[t + 1], "pred": {
-            "naive": y[t], "mean4": y[t - 3:t + 1].mean(),
-            "ses": ses.levels[int(np.argmin(ses.cum_sse[:, t])), t],
-            "seasonal": y[t - 51]}})  # same week last year (the week after t, 52 weeks earlier)
-    return rows
+    return [{"t": t, "now": y[t], "actual": y[t + 1], "pred": google_forecasts(y, ses, t)} for t in range(52, len(y) - 1)]
 
 
 def wiki_rows(y):

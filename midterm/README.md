@@ -36,15 +36,16 @@ Two versions of the same app share one page template (`dashboard_template.html`)
 1. **Collect**: Google autocomplete for the topic plus each starting letter (ㄱ–ㅎ / a–z) shows
    what people type with it; news as in the table above. Keyword-stuffed gambling headlines
    are removed (for 스마트 안경 that was 72 of 180 Google News results).
-2. **Filter (Jev)**: for each article, "is this mainly about the topic?"; under 50% is dropped.
-3. **Measure (plain code)**: search-purpose shares (word lists; Jev labels what they miss),
+2. **Filter (plain code)**: an article is kept if its headline names the topic.
+3. **Measure (plain code)**: search-purpose shares (word lists; phrases on no list stay "other"),
    words suddenly frequent in the last 24 hours' headlines, dates in the news, article counts.
-4. **Write (Claude Sonnet 5.5)**: sees only those numbered facts and articles and must cite ids
+4. **Forecast (plain code)**: next week's Google search interest from 5 years of Trends data, using
+   whichever method had the smallest past error. Local version only.
+5. **Write (Claude Sonnet 5.5)**: sees only those numbered facts and articles and must cite ids
    for every sentence; sentences citing nothing or nonexistent ids are dropped. Wire-news style,
-   a summary plus at most 3 / 5 / 3 points.
-5. **Check (Jev)**: each sentence is rated supported / partly / unsupported against its own
-   sources, with a probability; a forecast is rated on whether its basis is in them. Unsupported
-   sentences are removed; the page shows a colored dot.
+   a summary plus at most 3 / 5 points. It does not forecast.
+6. **Check (Jev)**: each sentence is rated supported / partly / unsupported against its own
+   sources, with a probability. Unsupported sentences are removed; the page shows a colored dot.
 
 ### Leaving the box empty
 
@@ -58,10 +59,10 @@ writes one line per trend plus common themes, and Jev checks every sentence. Abo
 |---|---|---|
 | Find news (Cloudflare) | Gemini 3.5 Flash-Lite, then 3.6 / 3.8 Flash if it finds under 3 articles or is busy | free monthly allowance |
 | Write | Claude Sonnet 5.5 via OpenRouter | about $0.03 (95% of the total) |
-| Filter, sort, check | Jev 1.13 (TypeSafe) via OpenCode Zen | about $0.001 |
+| Check sentences; sort trending searches | Jev 1.13 (TypeSafe) via OpenCode Zen | about $0.001 |
 
 Jev can only answer with labels we give it, plus a probability, so it cannot invent text.
-It filters and checks what Sonnet writes; it does not stop Sonnet from making mistakes.
+It checks what Sonnet writes; it does not stop Sonnet from making mistakes.
 
 ## Run
 
@@ -99,10 +100,9 @@ Cloudflare, so the Worker uses paid `jev-1.13` (`JEV_MODEL`).
 
 ## Measurable validation (`eval/`)
 
-Three checks on the analysis itself, decided by code and people, not by a model: whether its
-forecasts came true a week later (each "what is next" sentence carries a Google News test, plus a
-search-direction call scored against Google Trends and "same as last week"), forecast accuracy
-on unseen data, and a blind test of Jev against a human. One command per test and the results:
+Three checks decided by code and people, not by a model: whether code's forecast of next week's
+searches came true (against Google Trends and "same as last week"), forecast accuracy on unseen
+data, and a blind test of Jev against a human. One command per test and the results:
 [`eval/README.md`](eval/README.md).
 
 On the page, the **지난 분석·예측 / History & accuracy** tab shows the results, every past
@@ -114,7 +114,8 @@ If the article counts look like a spike, a rough note under the summary says so.
 - Headlines and one-line summaries only, not full articles.
 - Google News caps each query at 100 articles and its date filter is about a day off, so busy
   days are undercounted; the analysis is told when that happened.
-- English autocomplete has a long "other" tail.
+- Word lists leave many autocomplete phrases as "other", especially on new topics and in English.
+- The headline filter drops articles that use another name for the topic.
 - No momentum on the Cloudflare version.
 
 ## Plan

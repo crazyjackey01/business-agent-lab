@@ -1,0 +1,3410 @@
+{
+  "topic": "갤럭시",
+  "lang": "ko",
+  "geo": "KR",
+  "collected_at": "2026-11-01T10:35:20+00:00",
+  "related_searches": [
+    {
+      "phrase": "갤럭시 폴드8",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s26",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 워치",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 폴드",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s26 울트라",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s27",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 폴드8 가격",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 z 폴드8",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 갤러리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 갤",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 글래스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 공장초기화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 구글 검색창 없애기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 공장초기화 하는법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 강제종료",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 굿락",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 강제 재부팅",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s25",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s23",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s26 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s24",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s25 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s27 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s22",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 듀오",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 esim 지원 모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 데이터 옮기기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 다크모드 해제",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디펜스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디펜스 공략",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 동영상 편집",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 esim 사용법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 동영상 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 로봇 파크",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 망함",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 레인저",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 fe 차이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 루틴",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 리 센느",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a17",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a37",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a18",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a36",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 ai 구독클럽",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a57",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a16",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 맥세이프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a35",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 온",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈4 프로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈4",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 온 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 배터리 효율",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 북",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어 쿠폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스마트태그2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 시리즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스크린타임 확인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 사전예약",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스마트태그",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 시리즈 총정리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스크린샷",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어 쿠폰 코드 (2026)",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치9",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 언팩",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 와이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 울트라 26",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치 울트라 2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 에어드랍",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프4",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 정장",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프5",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 전원 끄기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자동완성 끄기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자급제",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 전원 끄는 법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 초기화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 초기화 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신 폰 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전기를 꽂아 도 충전이 안되요",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전 안됨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전 표시는 뜨는데 충전이 안됨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최상단 이동 굿락",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 캠퍼스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 z 폴드8 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 카메라 무음",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀6",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 z플립8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀7",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 캡쳐 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 카메라 셔터음 제거",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s11",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s12",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 트라이폴드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s11 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 xr",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s10",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s9",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s10 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 테마",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핏3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 플립8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핏",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 와이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 플립",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드7",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 휴대폰 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 캡쳐",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 안꺼지게",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 녹화하는 법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면분할",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 휴지통 열기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 녹화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 데이터 옮기기",
+      "times_suggested": 1
+    }
+  ],
+  "news_momentum": {
+    "today": 35,
+    "previous_daily_average": 72.3,
+    "momentum": 0.48,
+    "per_day": [
+      35,
+      37,
+      117,
+      24,
+      86,
+      69,
+      101
+    ],
+    "capped_queries": 6,
+    "capped_windows": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "news": [
+    {
+      "title": "무선 이어폰 갤럭시 버즈 온, 나흘 만에 온라인 품절",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XTlBWWFlDWndYRGplejlwbGs5ZnBWZ3VuZ0VoUW50U1h4Ti1fQkl2bFZTV3NTVnV3RXZPWUlPYS1wVk5BU0wxSHEwRjluZWZrdUxGRlpaWjFyUQ?oc=5",
+      "published": "2026-11-01T09:45:11+00:00"
+    },
+    {
+      "title": "갤럭시 S27 시리즈의 충전 기술: 일반 버전은 25W를 유지하는 반면, 프로 및 울트라 버전은 60W로 향상되었습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa1lKYWJjSFIwMTJQZDdZb19RMk1SZ1dieE9GUHNITnJKc2pwc2tmci1CSlBzWHFNeUdMdmdxdklZSEVzZEpEb0ZUWlJYRS1KS0ZqUXFQVjRUdHIteXgzSmp2dVNUU1dyXzczdkxrYktVWEtRVGxDQzM0NkdOdHhZWmpuem9EME82cTFMNmZTMm9WTkxUZUdTNnY3ZDB1UEtJSlljSXZDTE14UWFWWHpmZjdyMW5qNmF2dERFcA?oc=5",
+      "published": "2026-11-01T09:12:50+00:00"
+    },
+    {
+      "title": "삼성은 아이폰 듀오와의 경쟁을 위해 갤럭시 Z 폴드9에 숨겨진 카메라를 다시 탑재할 예정이다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbzRtVENsLU9ubUhkWmRJbHpRd2Q4Y1gwcTkwalVPUkJwYlA0X29yRTdhVVdTVHBSQXM1UzMyRm83b0lwSXVBbVg4ZzlUWlotN3NRaFNQbnRaM25sT3MtUXdmTU9XNVVDdklSR291eFA3Y1ZKMWlVZXYwQ05CdHE0MkxvbG9HOHZIT0pxMDhxWVVfdWNDZC1ua3pHT0FWM3JiTFdKbHlTWQ?oc=5",
+      "published": "2026-11-01T07:53:55+00:00"
+    },
+    {
+      "title": "귀 막지 않는 이어폰 통했다…삼성 '갤럭시 버즈 온' 사흘 만에 완판",
+      "source": "미디어펜",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9CbDlEUll1bVozLVE2bkdTajNqVHdnY040MTY1QjRhQXpIZ2F0TERBeUxuMXg2aHUzR2F1aVhfZlB3S1BrQTBWR1c0RjJfOVYwSjhnVdIBWEFVX3lxTE92Z2dzWUg5c3o5WlFTU1FER0RXdWNnemV5bGxNU25rbElkNzZRX3ctcGViaWJuNnVKbU90Ui1wNk9RLUNsd1I0QmExYzMzQzBZSE5va3RhTW4?oc=5",
+      "published": "2026-11-01T06:16:28+00:00"
+    },
+    {
+      "title": "삼성D, 갤S27 프로에도 '프라이버시 OLED'…이달부터 생산",
+      "source": "데일리한국",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kb3VZZWVqbzhNYlZUWjR5ZXVJNDJsVWNtY3RiV1BnbTdjSDN2b1RBRlBINGM4aHRYblZrR3g4by1BMEFQS3lwN1I4OFBVaFRNVUxoMVlRVHBuWUFJVVVxQ01ocm9qRmRzYllMLURwONIBc0FVX3lxTE55VVAyamxmS0VSalNieF9aMDZ1Nm13cW5RN2hVNUVtNWxhdjBGWDU3dVpmM0tTY3Uza2ZqN1ZmdXFDQVR6bjZtWXU4dkw1dkJlSDZnY3k1N3BLRlRmUXFmbVl0bk5QY0NHMXY1d256UElFUzA?oc=5",
+      "published": "2026-11-01T06:00:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 이어 AI 가전까지…크리에이터 마케팅 확대",
+      "source": "메가경제",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HWndqaHRKY3FzR0RqR0ltQklkT0ZvSkVHdTZrdm4zb1hNY2RJZ29GS0cwamUxSmluREZDNk1TSmNBLWctWk05R0xZR1hQbDl5Z0toeXBDN1RSczgxaTM2SVRfdlNzeVdGcnVERV84OFVVd9IBckFVX3lxTE5HWndqaHRKY3FzR0RqR0ltQklkT0ZvSkVHdTZrdm4zb1hNY2RJZ29GS0cwamUxSmluREZDNk1TSmNBLWctWk05R0xZR1hQbDl5Z0toeXBDN1RSczgxaTM2SVRfdlNzeVdGcnVERV84OFVVdw?oc=5",
+      "published": "2026-11-01T05:08:32+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 버즈 온', 온라인 초도 물량 완판…오프라인 판매는 지속",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYcjJmdW5LbE1LNDVqaTk3VDZSNU9GTVdPOW96TFJuMTdJblUtVEM5Y0dzUEJLMlU2UE1BX1VFVk5MRXhqdHcxYXhudC1RQQ?oc=5",
+      "published": "2026-11-01T04:50:20+00:00"
+    },
+    {
+      "title": "\"없어서 못 판다\"...삼성 첫 클립형 이어폰 '갤럭시 버즈 온' 나흘 만에 완판",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YLWdsSnRuN2JYNk1rZU93eG0zMXRyal9UNE1CN3RpaU40THdXM2lTZnExLUlzdFZZYUtlMl9NcDZDNkJyNlhIRGZUSHZVcmZERlRtZ2ZVQkc3Zw?oc=5",
+      "published": "2026-11-01T04:26:11+00:00"
+    },
+    {
+      "title": "국감 끝나자 이제 821조 예산전쟁…미래대응기금·조희대 놓고 재격돌",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hS1dzTlZEQnVWc0c3Q1hUMzRwY21ObC1iZ1h6RFFpejZIekdZZE40aVlpc2MxVDhPYm5vMnVJVXVueUlBbHZycVVwSGFObDNsVlhELURKYzFvMEVR?oc=5",
+      "published": "2026-11-01T03:36:00+00:00"
+    },
+    {
+      "title": "갤럭시 버즈 온, 출시 사흘만 온라인 '완판'... 초기 흥행 불 붙었다",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52UlpHbkV3dTBXSS1OWmc4cVZCampaOUxMUDE2ZTR5cjFYMnBLS1NMSURXc0hhV2toTkdjMHB3b2VTUk1FMVkzaVlXRFBKM2h0cHlwWlNrS2E2RnU3RThHQWdpeDdtZmVudzdpWTJyLXpmX0HSAXNBVV95cUxOdlJaR25Fd3UwV0ktTlpnOHFWQmpqWjlMTFAxNmU0eXIxWDJwS0tTTElEV3NIYVdraE5HYzBwd29lU1JNRTFZM2lZV0RQSjNodHB5cFpTa0thNkZ1N0U4R0FnaXg3bWZlbnc3aVkyci16Zl9B?oc=5",
+      "published": "2026-11-01T03:01:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 출시 클립형 이어폰 '갤럭시 버즈 온' 온라인 초도 완판 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9fT08zVUY2ZTBHSXZ3QklBRF8wZVRyTVVpVHdFS3ZTREVodlcwYXl3N3BfTW9JVVF6X3AwN1Voa1pHSWpacGh1aFdUbWJJYUV6MXNjcnpHODdUMWJNeDkwcW9xYktaUWxoU2gyS9IBbEFVX3lxTE9fT08zVUY2ZTBHSXZ3QklBRF8wZVRyTVVpVHdFS3ZTREVodlcwYXl3N3BfTW9JVVF6X3AwN1Voa1pHSWpacGh1aFdUbWJJYUV6MXNjcnpHODdUMWJNeDkwcW9xYktaUWxoU2gySw?oc=5",
+      "published": "2026-11-01T01:53:23+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 ‘갤럭시 버즈 온’, 출시 사흘 만에 초도 물량 완판",
+      "source": "M이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9oN0JvVmxpSFYwN1lpZnQ1VVU2NnBlUFdlVVBlZUhGVHRpZFpTYVN1Vk9vTlFMTEZrbnA3dGdTU1JtaHJkMV9OandnNXR4eE9aZ1B0WWZxb21tVEM4RlhiRVZXRTd1STA?oc=5",
+      "published": "2026-11-01T01:52:10+00:00"
+    },
+    {
+      "title": "한컴, 'AI 팀' 앞세워 미국 시장 진출",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TRlY3ZWU3Q0pHYWFKUGlneHhlVEgwZlV0cUtJUFFicEJjSEUzZmt2ek9vU3FjdF9iOUE1ZHNtS05uV01aVkdaMFJkTEs5Tm9wZkJSdUtpeTRuNVZf?oc=5",
+      "published": "2026-11-01T01:33:06+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 ‘버즈 온’, 온라인 초도 물량 사흘 만에 동났다",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNHpsZlVRS2wyaE4yMHdYWWtFS3VqbTVvSjFOaEtWU3JEeVdWSFhJeGJGR3lmUWFDelRiTHU3alpqbFlOaDdYbU1hNWd1WUh3SDVKanFIdlRKZFhNbzdZQVF0QlNSbmRhdzBneUNPRXFzSjhmOGZhVndYTE1JS0lZLVJn0gGWAUFVX3lxTE9UTXB3cE5UaHJMZENQTm1aVFBBVmQ4YnJ2WWRWOG9TQVNhb2gwOVJZckJHOWU1Q1JkMkVWOWZLd2ZoNW5BUU9Lc0M1VEhrZVZYay1BclNLa2lPVm5NeDhBOUxnTnRWVFhjS0pWbVZCYW9JQS1CZkhnRkNycjRvSHFJenJGczI2cGkwa0NkOVFNSTAxOEx6UQ?oc=5",
+      "published": "2026-11-01T00:19:00+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 ‘버즈 온’, 온라인 초도 물량 사흘 만에 동났다",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVE1wd3BOVGhyTGRDUE5tWlRQQVZkOGJydllkVjhvU0FTYW9oMDlSWXJCRzllNUNSZDJFVjlmS3dmaDVuQVFPS3NDNVRIa2VWWGstQXJTS2tpT1ZuTXg4QTlMZ050VlRYY0tKVm1WQmFvSUEtQmZIZ0ZDcnI0b0hxSXpyRnMyNnBpMGtDZDlRTUkwMThMelHSAZYBQVVfeXFMT1RNcHdwTlRockxkQ1BObVpUUEFWZDhicnZZZFY4b1NBU2FvaDA5UllyQkc5ZTVDUmQyRVY5Zkt3Zmg1bkFRT0tzQzVUSGtlVlhrLUFyU0traU9Wbk14OEE5TGdOdFZUWGNLSlZtVkJhb0lBLUJmSGdGQ3JyNG9IcUl6ckZzMjZwaTBrQ2Q5UU1JMDE4THpR?oc=5",
+      "published": "2026-11-01T00:19:00+00:00"
+    },
+    {
+      "title": "외교부 \"정상외교 친교·문화교류만 부각해 평가절하 부적절\"",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43R3lqT29vczd6aDN1QkJRb3RvQUZjTGM2VGFtVG9MUkxMdkhWOFVOdzdzQXhnbU0tSVMtR0tZdmNmTEloOWViWWNvb0tiNVl2ZG94Mnd1bjl5amd0?oc=5",
+      "published": "2026-11-01T00:14:53+00:00"
+    },
+    {
+      "title": "부하 직원에 \"아이는 남편에게 보라 해\"…법원 '괴롭힘' 인정",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JSno4WEZQS2I5WFNJYmwxM1VFMVdCVXVOcllkcGVFcl8weEt0UXhNMGMwTDZEaFM1QjFlT1E2RW5VX0VKS2g0UWI5ZWZsYXVSZm1YM2ZVR3hKUjky?oc=5",
+      "published": "2026-11-01T00:00:07+00:00"
+    },
+    {
+      "title": "하프마라톤 세계신기록자 손목에 '갤워치8'…\"훈련·컨디션 관리 함께\"",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1TNlZHbURrUW53SnFEN0N5X2Z6aHlocUd6MktqSXUxUFJKWmJsQzBhMVZqQ3JBM1VsWVh5OXpYWXlQOHNxZWJEY3V2T3lzQm95akxYX2g0R0V3dkN1a01MNTNUVmNSOWFoLXZF0gFqQVVfeXFMTnRhQlJOUGhvUU5QcmJXYUdYVzFLZ2dvOENreEhuVFphWFZDNk1zcHNkWVF4aEtlVU5fenhTLU1NUWxaRlhHazM5X25uNkRpT3Y5bnBXU19VOHJkTVNVTGpQN2NhNUEyQ3A4UQ?oc=5",
+      "published": "2026-10-31T23:33:50+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 버즈 온', 출시 사흘 만에 초도 물량 완판",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZNkVmcFI3czhPU1R0dm92a29LM3UwU2tLbVVnU3RJOGlDYlhvTERmelZyeXdoZzUzdG9OQ2xTR0JhT3NEOGtEMTJpTV9Ib0M5VHpHNk5LOHM4UQ?oc=5",
+      "published": "2026-10-31T23:31:38+00:00"
+    },
+    {
+      "title": "“귀 안 막히니까 편하네” 삼성 ‘버즈 온’ 온라인 초도 물량 완판",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1sTVkwaHU1VTRLZE5GbzI4VkpfZVMyMDJ1Vk03UDJ3ZGN2eWtlOFRuV29rOEdDQlhoZzhENDFLYVpCcC1LbHJueTdESHlfd0lsVVpCOWxR?oc=5",
+      "published": "2026-10-31T23:29:15+00:00"
+    },
+    {
+      "title": "“귀 안 막히니까 편하네” 삼성 ‘버즈 온’ 온라인 초도 물량 완판",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTWEFZVzRDa1RIREZyUi02LUktOU91Wk1ZSkJXd3d1OTBUOG5ubWxvSng2UU5maEM2Z0NuYlBsWGZILWdMTnhpdzFhMHBWVWRYUVl1djFhcw?oc=5",
+      "published": "2026-10-31T23:29:15+00:00"
+    },
+    {
+      "title": "러닝할 때 딱이네…\"30만원에도 없어서 못 산다\"는 삼성 신제품",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzWmd1dXctV1RSUC15cEJERExIWllka0pUUDdwWEhFX1pQdEZRTWJhOUFMakdIM2lKRkJFemV0dW1jV0p2RmJQUWhyTmJON25hU19nc2JOc0pmQQ?oc=5",
+      "published": "2026-10-31T23:27:59+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 갤럭시 A18 LTE 출시로 중저가 스마트폰 수요 공략",
+      "source": "Traders Union",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZ2tPOTFPdmo4S2VDU0daR3U0Ry1QeTBaWnoyV255TnBtS01fcVFSbnAyZDZuYzdCQ0tGekVRYXBOWk83UUZGVUZZM3kyN0Nob2d3WE9CQW91S1N6N1VBVTg5NTlJb0dGYXRVckxMclJqN1FoNU12ZXZzS2tza1lXMFZROU1wTmRvQ2ltYkxldw?oc=5",
+      "published": "2026-10-31T23:23:20+00:00"
+    },
+    {
+      "title": "“스마트폰 비싸서 못 사는데” 삼성전자 한 건했다…40만원대 ‘초가성비’ 모델 출시",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vcUxpZGtFQVlaUG1DbTZ0VVNmYWxJdGpGYTNfUHEyT3VlWE1JZFl0VE53OExDX1M2dldBdFB2VmF4TVJFNVczR0FCUElSbFRKN3M40gFTQVVfeXFMT29xTGlka0VBWVpQbUNtNnRVU2ZhbEl0akZhM19QcTJPdWVYTUlkWXRUTnc4TENfUzZ2V0F0UHZWYXhNUkU1VzNHQUJQSVJsVEo3czg?oc=5",
+      "published": "2026-10-31T23:19:27+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 '버즈 온'…온라인 초도 물량 완판",
+      "source": "매일경제 마켓",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zNlhNTEpPQnNqM0paeTNzWkt6blpRbkdhOEZnWDRqWXZyNTRLcl9hS19yd0VOamRWRzNnYTNPaUpGQnowbDd0Mk9WclNwYlhEeEE?oc=5",
+      "published": "2026-10-31T23:00:05+00:00"
+    },
+    {
+      "title": "귀 안 막는 '갤럭시 버즈 온' 통했다…사흘 만에 초도물량 완판",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BWE1KUndhTEZfVFFMcXlsQThpeE55d1hWX21CTWU2Mm9vTTBoUnZ1YkZpVlFkbzAzVlE4Nld0ek0zSUxKd2pBU3ktYnVNQlFyc3BwWk9yaEFZLUU2b0RiMNIBeEFVX3lxTE04VVV5TWZxMDBhcXppVm9nRUpZbFg0RUdkazhUYkg5OUpJd1NkNk9feGtKRGt1SEFDZk81bk1NZHU5OFFsX1BLQmgtcTl4bHJNRkU1TFVqY0NIaE5tU241TjhMNFNLbE5lMDRYZ0gtQl9aeVdrOXBtUA?oc=5",
+      "published": "2026-10-31T23:00:00+00:00"
+    },
+    {
+      "title": "갤럭시 A18 LTE 국내 출시 … 카메라 스펙 등 기능과 가격은?",
+      "source": "분당신문",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1KTFVrVGRCYzhlSm9sTi1kT2JHR1g4NVc0azFUbnJSS04zVnFvOFFRZXRkV3ZUQmhjeTU2YWpuY0c2VTNoQ1JHcGdFTQ?oc=5",
+      "published": "2026-10-31T22:47:00+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰, 어떤가 봤더니",
+      "source": "브런치",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5valhpLTUySHZjVGF3UkRiU0c0LW56cWxnb3k2UER6R3ZBRE4xZ1BKeE9lckRKX0liOVJiaUx1S0p6ZFBORTFyRnJGTQ?oc=5",
+      "published": "2026-10-31T22:13:42+00:00"
+    },
+    {
+      "title": "메모리 호황 속 HBM4 경쟁 새 국면…삼성 추격·SK하이닉스 수성",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yY3M3Q2VHRXltLUZBSklibWhpTjJtYWd5ZGZqUHJfN18wZE1FY3pXazZFeGg2UW1Cb2FyX3RmZmYzLU12VkNIZlBPVjRCUW4zSllPdHlGb0dMTVVk?oc=5",
+      "published": "2026-10-31T21:05:01+00:00"
+    },
+    {
+      "title": "\"'골병라인' 넘어 '골로라인' 될라\"…3.7만가구 공급에 김포 주민 한숨",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fNENvaFM0RzV3YmJuMkFxVTYwQ24xV3VKbk1HZTQybC05TDh3Z3RJbldwUi1fbFVSQ1dybFgyRHlZSS1oMmYwREVTc0syY0g0T2J6ZHZlN00yYVJH?oc=5",
+      "published": "2026-10-31T21:05:00+00:00"
+    },
+    {
+      "title": "로스앤젤레스 갤럭시 vs 오스틴 경기 예측: 홈팀 전력 분석",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTWVydkxhdU9zQTNxekxuTzNCS2lZRGZWXzBuLUxva08ybU5ibjhyOFVLcTV1cmsxV1ZwSEQteTJIQkJaM2U5c0RVUzJ5WEpjMjYxQUtxRFlQdE1LM3VERG85RGlvUXJCWWRraXBOaEUzTkROUDhyd0ktVkdyWEFZV245SG9HNEphSHRJVXZHUlNCd2lMSTJiM2ZyRQ?oc=5",
+      "published": "2026-10-31T16:57:12+00:00"
+    },
+    {
+      "title": "삼성전자, 일상에 필요한 기능 담은 ‘갤럭시 A18 LTE’ 국내 출시",
+      "source": "스포츠 피플 타임즈",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00WjAxaThwcXZGdjlrWldpWHg3czVVd2FoYld2d3MwN3drclV6SGRQV2p6TnRYVEowQm1JT0NQbGo1YUxJNG5TRWQxYk9kWlJnR3VqR1czYWVWaU9yX1d6UGZtZWhiM3Rmb3pRRTNHaVlmTnpGS2ow0gF3QVVfeXFMTTRaMDFpOHBxdkZ2OWtaV2lYeDdzNVV3YWhiV3Z3czA3d2tyVXpIZFBXanpOdFhUSjBCbUlPQ1BsajVhTEk0blNFZDFiT2RaUmdHdWpHVzNhZVZpT3JfV3pQZm1laGIzdGZvelFFM0dpWWZOekZLajA?oc=5",
+      "published": "2026-10-31T15:25:31+00:00"
+    },
+    {
+      "title": "iPhone Duo 복사본이 아닙니다 Galaxy Z Fold8. 정반대입니다.",
+      "source": "Samsung Magazine",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA0U2xZbGJYZTE2c3FpSkprdVBrbUdDdzdSTnJndWFIV3ctdkdfeHdlZDlyNlhsVDE4VDN1dWVEMkJlRWNYTTk3NkFJdkxGTURpUlhUQ0FzUWxIbXVxM2JtQzRZWWJLMW96d3EyRlV3?oc=5",
+      "published": "2026-10-31T14:05:13+00:00"
+    },
+    {
+      "title": "갤럭시 디지털, 406만 달러 상당 HYPE 토큰 OKX로 이전... 매도 준비 관측",
+      "source": "민심뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uMlNkTEFSTDh5R3BOZUdUSVFyS21wUzhEQjJxOVlfVDFaNy1yRk1iWXV0N3hsMWx6akFHOTUxTFFDYUp4cEwwZFJPcXB4NzNtZl82VXhmeXI0dlRqa3JJSEJ0NG16N3BJN2FCQw?oc=5",
+      "published": "2026-10-31T13:30:39+00:00"
+    },
+    {
+      "title": "팬들이 먼저 원했다… 리센느, 삼성 '갤럭시 Z 폴드8' 모델로",
+      "source": "금강일보",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWEhTOGtreWhOaXNXMW1mN1hqek9qX1M2UU9qMXhZSUtWaDhMVGRhX3M4NnN0MTFURmw4QmZjcDVDci01dC1QVXJqT3FhWTF6RnNlWk5HbVBCSTh6UlJ0ZG1NVXpraFhP?oc=5",
+      "published": "2026-10-31T13:10:00+00:00"
+    },
+    {
+      "title": "갤럭시 S27 울트라는 업그레이드된 5,700mAh 배터리와 함께 글로벌 스냅드래곤 칩을 사용할 것으로 예상됩니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUTBXc0tIM01nR2NHb1ljTmlDc1kyOTFBQkE3T0R0QnFOMWgwSnNhMjNtNmlhdE12QXNlWEJ1bURjVnJLQXh4VGlfaUZSVDZyZWJJZTVOdGJuYVBEcXJnNW81a3VzamFkZmVpUDBsOF80dkVlM2lzMnhrUjRpZWNWYmw1YzhlLXRiOGZ4aDRVamVSdWRDRU96UEtCNkRSVDBhV1dDenFfUng3aHBUVnItSVZMcw?oc=5",
+      "published": "2026-10-31T09:23:35+00:00"
+    },
+    {
+      "title": "Z 폴드8과 아이폰 듀오 세상에서 갤럭시S26 울트라가 최고인 이유",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GUWdxdWZtN0FHdjR6VkFYamhWQ05VSFFWakVnRjF2MjlCMzBnNkRpMEY0WUxqZVNKTkhuTmhvVllVdVZOaEVYSDJZSWhYdHRvS0NoWEx4YWU0Z2RPbUZtSGtEZ00?oc=5",
+      "published": "2026-10-31T08:52:02+00:00"
+    },
+    {
+      "title": "갤럭시Z 폴드9만 3종? 삼성 2027년 폴더블 라인업 총정리",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fQURZZHRxZUVYeGxocjZkZC1rTUtrUnlUdGkyTnc3S3l1SDBiVmZvam85Vkx3SWxRY295NFhnMXA3WHM1U1NJTGNTSDB6UmVZdmFqNXo0cWtVQlZneGNXTmJ5RGk?oc=5",
+      "published": "2026-10-31T08:31:02+00:00"
+    },
+    {
+      "title": "갤럭시S27 프로, 울트라 기능 이렇게나 포함된다",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VMkpDOXlJcldROVRYWkphOHljRWNUckxsNWFtZ29yaHktQnc1dzlSR3BaMnJacEpYQmxQb2JZWjlWemhaZ1Z5UjdSeUVkVWlBRjkwN3dkaU5ocWtFVkRwWU1uZzg?oc=5",
+      "published": "2026-10-31T08:14:02+00:00"
+    },
+    {
+      "title": "Galaxy와 함께 그리는 새로운 현실, 렌즈 너머 세상을 담다",
+      "source": "한국공공정책신문",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE93a1kzMkdJVUlJMXN2cDRxMlNpQzkwdFpGaVNVVHlmQXJ1TW1Pb0p4d2NaaEZ2U3JYMUY4LU01RXgyWWM?oc=5",
+      "published": "2026-10-31T08:14:02+00:00"
+    },
+    {
+      "title": "때로는 이런 결과가 나오고, 때로는 저런 결과가 나오지만, 결국 그는 어떤 결과를 얻게 될까요? Galaxy S27 Ultra?",
+      "source": "Samsung Magazine",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9hUlg1cHgxSDlmOGgwNHRyemhva0ljb3Z2a01ObjhrRm5TSFVwTTMwYkplcDZFQXNaejFTSnBFWExuekJDVS0zUENRVnJhaDJrWF9BRklxdm41TVJsUm03UHdybC1LdF9QV09kTm02Wm1wX2dIbXd0TUJpWjQ1UQ?oc=5",
+      "published": "2026-10-31T07:59:39+00:00"
+    },
+    {
+      "title": "펼치면 17인치, 접으면 8인치... 삼성, 초대형 갤럭시 폴더블 개발중",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YNks4aWp1RVJ5VTJ5U00yZXZKSDdSU3czMXh3OEhPeDRiTzRzanZaVGNWcFVoREZNTF91ZTZ6aHVDMnRzNWV4el9jN0hpR2dfNE1fX05MZ0ozdXJqR2c2c1c0Q3Y?oc=5",
+      "published": "2026-10-31T07:41:02+00:00"
+    },
+    {
+      "title": "삼성, 유럽발 갤럭시S27 울트라에 삼성 CPU 사용하나?",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZazhqZDRLdXN5YjNMYUdJbmhVZHZVMUJYWVEwVkl4VlMzZFBNcUxESHNZRVVWdkdQVWV5UUZfSjdmU2NaSlR2MFJjdnRKeTl2dEhOa1RHV3Y5cmJ5NmI1SUJUUnc?oc=5",
+      "published": "2026-10-31T07:22:31+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 프리미엄 기능을 담은 ‘갤럭시 S26 EE’ 공개",
+      "source": "컨슈머뉴스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iaFZHcVYtdXoyNWtpdVozRVV4WXE5aGhzQmpTRll4NXlpQlBsWDNvYm5vaW53Y181czhVVEk1UlppX01jV1lkQU9OVnBoN1RnUF9JSTVFejRnSS1EMDhVMVJaZzZ6RjZ2MFNZeFlMTlQ?oc=5",
+      "published": "2026-10-31T07:02:03+00:00"
+    },
+    {
+      "title": "삼성 갤럭시Z폴드9 울트라, 2027년 출시 전망…화면·카메라 대폭 강화..8인치 화면에 2억 화소 카메라",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB5clZsa2lERThNX2d3TVRLc0NCTV92SHR2SDVPSk1oc1lqUGpzLW82VmNHMEsya3U4RFJZaHh2OXpJbThzUmw4N29zRQ?oc=5",
+      "published": "2026-10-31T06:44:00+00:00"
+    },
+    {
+      "title": "삼성의 ‘혁신’ 갤럭시들...”환경도 신경쓰겠다”는데",
+      "source": "더칼럼니스트",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9abGxlWk5EMjJBUURkT1lTZV9qdl9iSl9Ta2Q3eW9mQUtPQmtlalZwS2k3SWlob1QzMFdvdERsc2VZXzROZ2Q3QWhXbldwYXd0UHkw?oc=5",
+      "published": "2026-10-31T06:25:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 A18 LTE·코리아 그랜드 페스티벌로 '소비자·소상공인 구매' 문턱 낮춘다",
+      "source": "데일리팝",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBEbUVMQnk1N1ZPY0tDYzBRQjBDa2ZhamMzdk53czRSc09xeFd0Z291dlJSLU9JS0ZfR0tKZ0lqWXNBbTI4eXd6NklNakxhendHRVp6anMzZHFOY2RuU3lVZ21aMmhCd1lPakE?oc=5",
+      "published": "2026-10-31T05:05:00+00:00"
+    },
+    {
+      "title": "갤럭시 폴드8 역대급 가격 할인",
+      "source": "판다랭크",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1ac1otdHVzVEpYWURHUDZlTmc1VlIxbmI2aFZ3V1VKbjJBMURXdHFtMTBZcnJra0lxdURCZm1sdWl2U3FPdmd3?oc=5",
+      "published": "2026-10-31T04:42:07+00:00"
+    },
+    {
+      "title": "[기자수첩] '머스크'를 말하는 갤럭시코퍼레이션, '도전' 정당화 할 역량은 어디에",
+      "source": "뉴스후플러스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DeXR5ZmFlbEVuajVaQ1ZQUHViMEE0TklvRGxKbWFoaDR6cTBJZlFXTmctV2VSXzAwUzRjWjZOZXVVVWwwZnZobm9wRzJ2UDJzVWhUZkNVYlJLeFRxYUV6aFJzMnkzcU1XT1QwU1dB?oc=5",
+      "published": "2026-10-31T04:39:10+00:00"
+    },
+    {
+      "title": "삼성은 17인치 접이식 태블릿을 연구 중입니다. 이는 크기 면에서 획기적인 발전이며, 미래 기기 경쟁의 시작을 알리는 신호탄입니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMnlOMzljZHpHUUtpZEtnTFBaUzUtaHBsMUQxZTR6OElab0NTNVhBVng3dnZrS05vdDdsemJqai00d3JGRlI0ODhCRHgtRThfeUkyRGIyY3cxVkRSWDN1cWE2WGZCbjFoY1hHZ0lKV3lwOER5R2d5aUczaGJCVXZfX1cxelF0NlBqYXg5Y1dwd0JkcVNxb1BESGNJN3hISUhGb0dmZU9YdFJUNlZqa3lpZE85bUNTeXVpZTJidQ?oc=5",
+      "published": "2026-10-31T04:18:59+00:00"
+    },
+    {
+      "title": "[넾다세일]삼성 공식 갤럭시 Z폴드8 256GB 자급제 SM-F971N",
+      "source": "판다랭크",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE84a21oWHdNeVVtcENZZno2T1kyT3hPbEJLdVZvcDhsSDJYZHYtRl9nemVWQ0l4cUtpS2NUWXJiTzVFVFBkMWpR?oc=5",
+      "published": "2026-10-31T04:11:46+00:00"
+    },
+    {
+      "title": "갤럭시폰의 부진에도 불구하고 삼성은 800억 달러가 넘는 사상 최고 수익을 기록했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMm5NNF84OVpra09DMmZ4U25jZVpRNGpBazU2NHdNWllvQXI4cW9ERENMM1BpYlhXYkE0RnVpcGZvbXhObVJiczRtOVd0LW5GVElCN05WNmJ1ejByX0V1Ymt3TVZjdkp1VkJtb05sTE82LVJOUDRtZkNVNDhHNlNCWUxad1RyNjN4OWowNWg0bXcwdw?oc=5",
+      "published": "2026-10-31T04:08:56+00:00"
+    },
+    {
+      "title": "갤럭시 잘 팔리는데 4조원 증발…삼성폰에 무슨 일이",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoTE9iTk5ZUnFvcWJjRmZVYVpJVDd5alFDaXdZVXFNMzhTeUhHTE9tUkxXS0ItQ3FMS2MyLXFndUNWNHZvdG5HY0tVdmNCcUZWRUhWb0lHVXJmRzNRU2JwVdIBeEFVX3lxTE4wN1VVSFVwSnQtanQtSVlwMFhOTGs3TW9BSTcyX2xGb0JWLTFqTGFWSFF2RUJwVENCSDQ4dC1iOFJrejJmREZ3eWd1QS15ZXdYdGhvQTd4QU5oLVk3WWxQZWg0OWhxdmtwZGFoVmI5bXl4WF8xRVhMLQ?oc=5",
+      "published": "2026-10-31T03:00:00+00:00"
+    },
+    {
+      "title": "[공식] 삼성전자 갤럭시 버즈4 프로 블루투스 이어폰 SM-R640 블랙",
+      "source": "판다랭크",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9FUlNjUDJRMUd3SmNqODZoZGZub0dmbmhQLTRSTnNSaUZCbi10MFkxdzdHeV9nS3pRcEQ4Tmt0bUVvVU8ycnFr?oc=5",
+      "published": "2026-10-31T02:58:52+00:00"
+    },
+    {
+      "title": "삼성전자, LTE 스마트폰 '갤럭시 A18 LTE' 국내 출시",
+      "source": "디지털경제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50aHJ3Wmk1TGtZTlNWVHVyZ1BTZ01CM0c5S1BDRnVUQXhVRHdvMDZuRTdCWF94Z3lVd2pxQzAwXzBQU0N3eTZXN2pMNUhyT3EzeEM3RTQ2N3l5MmhTcldwUWk0aWJjcFZETHc?oc=5",
+      "published": "2026-10-31T02:15:51+00:00"
+    },
+    {
+      "title": "갤럭시 S27 배터리에 대한 중요 정보가 유출되었습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBUQXVrX0ZvQ1dNVDU1bmFFNnVqZWdXOTJwR3EtNHcxREZTTzhfR1dWMTV6QVp1ajE4SWR0bzExclpCTzBzVHp6cUU2YVF2RkcyWGs5bUxNckw0OXJCclg4R0JOY042VlIzWG5CUUpWS3d1a0JNT0E?oc=5",
+      "published": "2026-10-31T02:09:58+00:00"
+    },
+    {
+      "title": "삼성, Galaxy A17에 One UI 9.0 배포하며 보급형 지원 확대",
+      "source": "Foro3D",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb0xZRkZsSFA5S0t6TGYzaWZDZUFoekdOUDBmd1ljQ3l1dk1uUE4zT0VoVVBsdG1ZdTZIbm85WkRMRXlHb2hYTnZRNmtlYVpCNzlMVUl3T0tzSTNKUUdYYjZCd1pqelRVMEhDOWNERUhaQXBocE44czM5NlRuSjlyNnB4YWVlcDZmMUJ0R0pHZy1sekpHLUxrNE9jVFluVkNrMGg5MFluSTRFSUFCdWRN?oc=5",
+      "published": "2026-10-31T01:24:49+00:00"
+    },
+    {
+      "title": "삼성전자, 일상에 필요한 기능 담은 ‘갤럭시 A18 LTE’ 국내 출시",
+      "source": "톱뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JbWNYWHhrX0RGZXR1QVA2dXFMQlVFd0lKZ1U0UWZ6M1lOUzhUWWUwdlBCTFlkQmw1SHpNRDM2TG1NdGpHRXpYbkFmNmtsSzRvUVIwQmNlWG9RMm1vOEpUc1Rwcm9Iak5QeEpxNnl0dw?oc=5",
+      "published": "2026-10-30T23:53:00+00:00"
+    },
+    {
+      "title": "'놀뭐' 유재석, 김광규에 갤럭시 Z 폴드8 선물…주우재 옷까지 챙겼다",
+      "source": "싱글리스트",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9qS0NGWHIzUndDeVpFZ19GbGlqZnJhSy16cHBZWWhreVpFVEg0T2VEd2J4Tk9aM3R5UkItLXR5WWhId2lELUFoT0xGR05RbzJnVEtKR2JHN1pWeDRQQTB6Tng1dzIzUQ?oc=5",
+      "published": "2026-10-30T23:33:45+00:00"
+    },
+    {
+      "title": "리센느 소속사 더뮤즈, 직원 사칭 사기 경고···\"법적 조치 착수\"",
+      "source": "글로벌E",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE85bWMzV0VDNzc5UXRHNHRSSXg1NnYwQnRiTlBJUG43NjFONjNMZElTN0RKRWJMYl9qTW9ZMUJzZExwLWtIYnE0MXZDd2tfTXZHWklEck56X0RKYUxZZWhwNkJpQnVVaGtJSkJV?oc=5",
+      "published": "2026-10-30T23:25:17+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시·TV 2분기째 적자…반도체 호황의 역풍",
+      "source": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WSzRsOWhsODBUN2V2SU9oekJ5MzAyanFsV3VXWHhINDhGRDhSdHQ4ZURfcWhuc3k5WjJpa3l4dU42TWFwTTFJSU0tLTd1RVBZZGlpdkRScVlNOVFRSmw2WlE4X0hETG8?oc=5",
+      "published": "2026-10-30T23:00:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시Z폴드9 울트라, 얼마나 달라지나",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1EbW52UWh5TTZvdmRlYXltT3hGU1pzZkJEUGloUlJ3TXY5TDV4MHh6UVdQM21XZXdkWElndDl4MTVWZEZ6dUdlNzlFRnpWTnFiZUNaM2tn?oc=5",
+      "published": "2026-10-30T22:59:14+00:00"
+    },
+    {
+      "title": "삼성, 갤럭시 Z 폴드 9 플러스와 폴드 9 FE 테스트",
+      "source": "VOI.ID",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBnS193SjRnc0JpMDNBdlNVRXo1eTlObTNOa0pRNGd2eXZWWjZJNTJ5QUdqTmNzbWpndndSa2xBTUltQmtsTnlVVXlnWdIBQkFVX3lxTE1FeGhBa2l6bUdVVUJrdUpBZXJuZ0VxTnRxLTFvWnVQMWtBaDFzZUxxc1c2MXpXbk5tcnNQS0JIaUxLUQ?oc=5",
+      "published": "2026-10-30T21:33:06+00:00"
+    },
+    {
+      "title": "삼성, 2027년 출시를 목표로 새로운 갤럭시 Z 트라이폴드 준비",
+      "source": "VOI.ID",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE16bjZldVdtaVdpbDJvMXlON29qbWMzb1M0X0dmSnAzZ1lIWWlzdEFsLXAtYWJIZ2MtcDdvSHhrS2tNWXY3QjVBalJUNNIBQkFVX3lxTE14TWJDY0QwbGxKQ3RqZEdvekE3dll0X2RxSlZUWkpwd2h0RkFaZ1A2dmxjX3c3TlNQdHpnbTZEQ2hPQQ?oc=5",
+      "published": "2026-10-30T21:22:30+00:00"
+    },
+    {
+      "title": "바코드 없는 빵도 1초 만에 인식…기산전자, AI 결제 솔루션 출시 · 주요 내용은?",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB4V1dHaTdSS2w2MklDWE1nNzBJZEc1eHMxTGUwM2FJZnhEVDg4WVNIOTRPRDExSWhZbFpMWEM2NUVBalk0RENzdkxpZnkyS0FCOE1EZjZxd0dhVk9s?oc=5",
+      "published": "2026-10-30T21:00:00+00:00"
+    },
+    {
+      "title": "갤럭시 워치 수면무호흡 탐지, 유무 판별에서 시간당 호흡 방해 3단계 분류로 바뀐다",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE91S0JRMjJ6MHdiVmU4OVY3NWg1dHA5b2pCSmdkZTZ2ZDhjT3R5VEFMVWJib2xjei01VXVKLUhaQXpSclNqVDNQTGFGck9LRG81YUlOZWxn?oc=5",
+      "published": "2026-10-30T20:00:00+00:00"
+    },
+    {
+      "title": "\"40만 원대에 제미나이·서클투서치 탑재\"… '갤럭시 A18 LTE' 상륙 |",
+      "source": "한국목재신문",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0zNUVIbkJ4djFEeTFRaVRBZTZGOEtTMkNVVGllZDZySGFhZi1NX2ZnUXB2TDhyMjcySDBhaHVMTFdvbmcxZjQwQ2ZwZkpVYVJzUXNYbDZTVVBGMVpLMGVDaFRweXNwN2c0N1RRSXdMSVNoZw?oc=5",
+      "published": "2026-10-30T18:00:56+00:00"
+    },
+    {
+      "title": "Galaxy와 함께 그리는 새로운 현실, 렌즈 너머 세상을 담다:시대일보",
+      "source": "시대일보",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9mM18tN2U0Z1VFbG40dURFOUhkekExbVhuanl3elk1ZXBwTUxlMlFXdmN1eWE3SDZjWk5ucVJFVDBPTjk1dk41Y01WZU4zcW9TLTgyNFdJb3I1eHg1dV9zMnk2d0V4elXSAWdBVV95cUxPZjNfLTdlNGdVRWxuNHVERTlIZHpBMW1Ybmp5d3pZNWVwcE1MZTJRV3ZjdXlhN0g2Y1pObnFSRVQwT045NXZONWNNVmVOM3FvUy04MjRXSW9yNXh4NXVfczJ5NndFeHpV?oc=5",
+      "published": "2026-10-30T13:24:14+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 국내 출시",
+      "source": "컨슈머뉴스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1lenFnOWNZNlV1djRUd21YVFJfS2lMSWRaQXVrNUIyVTV2aGlNU1BaX3pXQWd3Um8ycU95N0VOWVdZR0otR2ZpaUdneGpaN2tMeGRnSEw4NVN4b2xYZ0xUMEVpbUpVdWlrbXRFaGRKX08?oc=5",
+      "published": "2026-10-30T13:02:18+00:00"
+    },
+    {
+      "title": "네이버-삼성전자, 리센느와 ‘Galaxy Night’ 쇼핑라이브에서 단독 진행",
+      "source": "머스트 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wdmZXWFNGTVNiR0ozQU84UEprUHRGeWoxU3AtVEpnZVdwTkxXZDlqem9VQWgzamFhRGtsRGNhclRpMDY3b1dia1h6U2J3MzV5ODdZY21B?oc=5",
+      "published": "2026-10-30T12:04:58+00:00"
+    },
+    {
+      "title": "삼성, 샤오미, 오포, 비보와 같은 주요 제조사들은 언제 안드로이드 17 업데이트를 출시할까요?",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWkV5T1BqNFJKZmJNTFluOHQ1bDE5Y0dZcnNwblNxQlJFeEdTWnpFV2FsOHFtOGVMTFQ0NHVMc1psSlNQN2F4dWF2Q0MzeG50N0YzQlh3MnJkb3djQk0xam10d3Y0SXpSNUNHMDBfLVBJRUtIQnJ6TmtnYXVNeGhtRlo0QzhJQWxYTFZkSzRZVTFCWmJzbFlUQ2pYRzZ4U2xZMjcwdDhnMXJLd1BQckJ0QTlUTQ?oc=5",
+      "published": "2026-10-30T10:50:43+00:00"
+    },
+    {
+      "title": "삼성은 갤럭시 Z 폴드8 울트라의 고급형 버전을 출시했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUFNyVmhkNGtKWV9RdWt5Tkd5M3VZMkN4YTRyR1pXVHFodVRNckpORHdNT01ESVl4Q1pFdWQ0LXFJMEJqUmZJb3gzcFVwcXo5b2ZySV9lMFNDemRHWXVqXzQ3Vk5sRjdUSTNzOXFWclFpV3hsdURzWmItc2pQWmw4OWRRSzZpVEhx?oc=5",
+      "published": "2026-10-30T10:42:45+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 A18 LTE’ 국내 출시…가격 42만5700원",
+      "source": "K뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TNEptWnNLWkRuUkpjOFV1MzNaWEZFSTBqRmNxRzJOUWdDTUxBYjZRX2RaUTJQclc3U1RyWEtmdUstd0JYM3hyRzk0YnJINTByYmx4MjFENk02RVZwaWYwcm1lVjVQVWvSAWtBVV95cUxObHZ2WURKWkVuMGZIb01qRVBfTlBUTENuTGxNMTgzWkxsbkxaLXYtNGNnUlA1QUlVNHNpLXdMM1ZlNDl4bGE2eHN2M181SFB3RWNGU3BvMElqTTlGT1NUU1RxREh6Vm9TcTNHTQ?oc=5",
+      "published": "2026-10-30T10:14:46+00:00"
+    },
+    {
+      "title": "삼성전자, AI와 대화면 갖춘 ‘갤럭시 A18 LTE’ 국내 공식 출시",
+      "source": "뉴스N연합",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE52RlNiSU1HSkZvaVJqQmRKTWNsV20weFdmUDVUWGxfNHVsWUt2c0kzMHg4eWxkT3hYdy1NYXQ3ZndkdkRsdGp3bnRn?oc=5",
+      "published": "2026-10-30T10:12:42+00:00"
+    },
+    {
+      "title": "걸그룹 리센느 내세운 갤럭시 Z 폴드8…삼성·네이버, 쇼핑라이브로 1030 공략",
+      "source": "콕스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QZDVhSEE5N0lIQmRjSmpYd01kd0U3aDV2cmZIdU1XcFlNbmdEY09Rd1lpX1dXRlE4d0dMMHNPaDFaV1o2ZjExU2l4bmEyeERoTDdFTE9IUVJQRGRtV0c3YmEwT0ZBTXB4M3c?oc=5",
+      "published": "2026-10-30T10:08:27+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 핏 4 피트니스 트래커는 여러 가지 건강 추적 기능 업그레이드와 새로운 인터페이스를 공개했습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdVh6U1BMbDRHZVhCVERnY0RIdWlWMUdaajVsTXFrYUd6N01rc0FsYXBVa1l2bWdzcDgtOEFIRHIxX0NXS0JqRWJaOURmNlJZNk5GYldGd3hKaDZKRVd2WElUNG9kamRTYlNFYVVuSW9USmZsejRwblpoMi1Ed2JIeHBadmVMUkt6U3ZFZ3Y4TzN3aGJHOXFqREwwYmE5dWszSHlVODA3UnpTVWRHdHl5V3BUd1U?oc=5",
+      "published": "2026-10-30T10:07:10+00:00"
+    },
+    {
+      "title": "네이버 쇼핑라이브, 리센느 공연과 갤럭시 Z 폴드8 소개",
+      "source": "어패럴뉴스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NNG9EYUVWbXI2SU5DNWM3LV9QbjdOTGdSWlpEelkzeTIyRlcwOGhYeTI3bnNuRXpXT0NqbTJlNEJpVDgwT1drcFRPM2QxbTlTNHYyc182Umt0MUhDc2E1YlJnT1JvamI0aGlfa01qMEVoalZNS3FmQQ?oc=5",
+      "published": "2026-10-30T10:02:32+00:00"
+    },
+    {
+      "title": "휴대폰 사용 기간은 7년인데, 어떤 지원을 받을 수 있나요? Galaxy Watch예상보다 짧을 수도 있습니다.",
+      "source": "Samsung Magazine",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01U1prSkU0V243TXR3MFIzRjcxQk9aSnhkTURaZ0lNZkRKNVRfWWF2OTBZQWVLU1l6cFZGOFZiVjhOWUZUV1NPNFo1c08weW5Oa2lveE5IZW1LOVdtdk9yZ2NqTmtvSkh4LTA4UHRjUQ?oc=5",
+      "published": "2026-10-30T09:57:39+00:00"
+    },
+    {
+      "title": "아이폰 듀오, 갤럭시 S26 울트라, 그리고 아주 특이한 휴대폰이 올해 최고의 발명품으로 선정되었습니다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWjdMZDlqeEpIVEk2b0dJejUxc2MtZnNRb2YzMVpFblJ1VkhaQUI2UHdUQWVlOG1rT2UxNncxV18wdm1HdGFYRFpxR2NLa1dFdWtqODRYS2NFaU9wTXZsUFoyRnhZcF9BbWkwTnROai1TTmlmZnJ1LVc3d3NBcFItR0lVRkp0MlNZU0ZhdUY0YTBiU25vYnkxajhIZDNPRTRWMGQ4MFhRd2pxaXdXOGZHbnQ0OFIxZw?oc=5",
+      "published": "2026-10-30T09:23:42+00:00"
+    },
+    {
+      "title": "[숏폼] 지문마다 앱 다르게 실행하려면",
+      "source": "IT동아",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9zRVA1VFZwSTZGeUdGcVEwSXpld1dzNDIzaGJPVDh1Mlh2XzZXOV9JNEFPODA2bDFQdHhDTXRNY3NfZw?oc=5",
+      "published": "2026-10-30T09:03:28+00:00"
+    },
+    {
+      "title": "네이버·삼성전자, 리센느와 ‘Galaxy Night’ 쇼핑라이브...갤럭시 Z 폴드8 특가 판매",
+      "source": "워크투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4teWx6VHRPVTFQWTBIeVQxMXFUMW8yWWlCRmFUdkpzUVFkbFAwLVpVVkNpbVVXZkRWaUpjeWVXckFZRkI3Nno3RUdrRHF5clF5eEtpQmx6ZXVfTDJrRFFRTnUtTnUwMWdNZzdZbQ?oc=5",
+      "published": "2026-10-30T08:58:52+00:00"
+    },
+    {
+      "title": "한산한 日 갤럭시 하라주쿠매장…\"성능 좋은데 가격 부담\"",
+      "source": "MTN 머니투데이방송",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53bGw3eEM4VTZ5dXNqdlBSM2ViNFIwM3JNdTV6OWstRTdQaXhIT0JNMmRkaUJwSmtTY0lhZjltZGM2RU1FNkhVdDlVaTlXb1FhdTRKbVB2dG40SWZV?oc=5",
+      "published": "2026-10-30T08:51:01+00:00"
+    },
+    {
+      "title": "[산업 뉴스브리핑] 삼성전자, 실용성 높인 '갤럭시 A18 LTE' 출시",
+      "source": "아시아타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Kb21vczd4ZF9HeTlNYWJHZ0IyZmpxa19IM2RlVDhwb09vNjBCc2VOYzIzNlN3SXpwWmh1bDBCNUJTR2VWRnlRQjctRGwxcGVYSFp1TVlKRmtPYlQ4RHc?oc=5",
+      "published": "2026-10-30T08:47:00+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시 탭 S12 Ultra 태블릿PC 살펴보기 : 테크/과학",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9UdG9UVFNNeU1jWFBIeEpYNnV2eFU2bXpUYlF4U2FaUHExdG1LTXlkRS1KM0w1TUFJS3R0Y3pfY3R4ZktlbC14akdDaw?oc=5",
+      "published": "2026-10-30T08:41:17+00:00"
+    },
+    {
+      "title": "삼성전자, 6.7인치 대화면 가성비폰 '갤럭시 A18 LTE' 국내 출시",
+      "source": "팍스경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TN19TSWJua1FxLV94UlFaU3dZajNLMW43Q3Y5UF8xTVhYR3UzTS1CMVNiTFlwWjktdjhZV3pjb0NPUkhrQ0trelNVV0QwUGlFU241cnRWektzUUZqYXNuUFpOV1NrOWM?oc=5",
+      "published": "2026-10-30T08:24:08+00:00"
+    },
+    {
+      "title": "삼성전자·네이버, K팝 공연 결합한 갤럭시 쇼핑라이브 진행",
+      "source": "뉴스톱",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXUjBVUkZLdXRJWHducDNDdjIyaDdiRHJZeXpSU1VWWUZKN01lNE95anpVOXVib2w0X2ZfdkVBTGxFYkY5X01COU15djk4c01wdy11R0tCYUNNZVdmbDh0bGJ3aE5OcGN2MXlpQmNJYw?oc=5",
+      "published": "2026-10-30T08:18:48+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시",
+      "source": "뉴스인사이드",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9adFBvOUk1RlpUZ2Q1V21Va0luU01jUzNfZldMaW1LZVRad3dZRFhRSVFvdkZQY3hrQ3RZRzhFRk1XOVhua0RBNnJpbERmVDFUVGVROU53clh5Wl94ZkRaLW9kV3FMR3NsMEhBeWpR?oc=5",
+      "published": "2026-10-30T08:10:16+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 A18 LTE’ 국내 출시…제미나이·서클 투 서치 지원",
+      "source": "직썰",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE81XzlXc2FQOWVXSmV4OXpBVnRyd1VBdHlVSjJKaVd4OTBOT0JwWW4zdzBpTHh3RXVKWjlDVWJhVWhZbEZFQ3JZSElyV3Q3d3o3ZzNOdEpzb1o1YjFGdzdDd3JhNGtUalBI0gFsQVVfeXFMUFg5TUh3SDZfMm1VbkNydlFJUGptZ0VLQURCM01iMnBHSldyODV0SE9NYmEzek53TFdMQUZtaEdmeVQwMVZCMzhkdGJHY1VTZldBaC1fbGtwdEh5d3pFNEM0R2ZWUXVMV1kwSU1M?oc=5",
+      "published": "2026-10-30T08:08:17+00:00"
+    },
+    {
+      "title": "인증 결과는 우리가 우려했던 바를 확인시켜 주었다. Galaxy S27 달팽이처럼 느린 속도로 돌진할 것이다",
+      "source": "Samsung Magazine",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54aXJieFk1YktoclE4Wk1UcWI0NTZxVEdnQlo1ejZTd2FXazdRbDdlS3VCVmtEdXNlQk9QM3RxY3o0WHJpSEJ5clFnaWZkc1NKREljV2RGek5WalA2T0hkV1c3R2RxNlRRMVhOVmFn?oc=5",
+      "published": "2026-10-30T08:01:35+00:00"
+    },
+    {
+      "title": "잘 접혀야 고객 잡는다… 폴더블폰, ‘내구성’이 승부수",
+      "source": "시사위크",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5GVXFfWVNsOWJvN0R4aFl0NWtxZXVjWE1RS0ZRZU1EQnhuMmt4MTE3Q3p4dHdlcS03UGlvYk1PeE80LUJlX0RHdzdTMGt3S3N2bTlyOFlkQy1wQlBsMWJpc0diMEFlWF9uYnNjcldNd9IBb0FVX3lxTE5GVXFfWVNsOWJvN0R4aFl0NWtxZXVjWE1RS0ZRZU1EQnhuMmt4MTE3Q3p4dHdlcS03UGlvYk1PeE80LUJlX0RHdzdTMGt3S3N2bTlyOFlkQy1wQlBsMWJpc0diMEFlWF9uYnNjcldNdw?oc=5",
+      "published": "2026-10-30T07:55:48+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시… 보급형에도 AI 기능 확대",
+      "source": "비즈트리뷴",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SU0JweklaMThweEFPLWZEQUU1WVRqT1M4TjVwZnl6bVI4THc0YjI4R1RETTlacWpZTDhyUWQ1UU1oSlBCZHV4ZFkzNVNOYWZ3Ym5URlhzTzluR0dfU3dYcmtOMEtGT2luZ0x5QnVKS3g?oc=5",
+      "published": "2026-10-30T07:47:00+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 ‘갤럭시 A18 LTE’ 국내 출시..일상에 필요한 기능 담았다",
+      "source": "한강타임즈",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1WMkRTMnlaeG8tV3hwaUhtUktIMnNuUUQzaEEzQlFUdHViaTNtSEdRM2dMQWJCSmx0dV9JeTZpTjJtV1Zld0tibndqRDhnQTdMTHpCNS1mNXVidV9Pc3FqS1hVZVdFMEdOVnhj?oc=5",
+      "published": "2026-10-30T07:46:09+00:00"
+    },
+    {
+      "title": "네이버·삼성전자, 리센느 출연 '갤럭시 나이트' 쇼핑라이브 단독 진행",
+      "source": "파이낸셜신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CdEUwWDZWaURPSDhVOWpCazBTVUZzNDQ3TTlMU2VkclhJLTJnTlVkcWxjY3N6NjZ6UzNiaG53NFdjRHpOU1E2QXFjZDV1ZmRPajMzUXEtd05kRXNTOG91YUVqMFljR2lRd1dj?oc=5",
+      "published": "2026-10-30T07:43:31+00:00"
+    },
+    {
+      "title": "[테크 안테나] 삼성전자 SK하이닉스 라온로보틱스",
+      "source": "데일리한국",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9SbnkzUHRuVEZUSEFZeEliVE5HSFh1YkRxNmZsYlJadGFKaml2VWlHSVdxT2p1TEhzWlI4NjRrN2hBR1htb1VfQmF1aWlFRUhLLTExRnh4SUtXc0J6cTFHenU4eDBVUnRoZDZCRzhXZ9IBc0FVX3lxTE9VdERaWlljanduVEhIdWdVVWdDekVWY2tyVXdScUFuZ1c3bW5LSEticXBCejNwQ3JET085RWhmcnF6aXVGMW51TUdUN21NSWZka0JWV3AxQkJXazVwcl9kUnpXX0lDRWpCcWxUOEsxMGVmUnc?oc=5",
+      "published": "2026-10-30T07:38:45+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 '버즈 온'…온라인 초도 물량 완판",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PYkVMeUVDWHJIdExrX2dfQlh4S0hYZmZadTFadlJUVWQ2eWVFU0xpaVFUbTBkOUl5eTRMX2JwVzFsQy1tLTduVFpLdWExdlZQVlYxNi1rcU9lcFHSAWBBVV95cUxNdFFRVTQybjlPeWhpSnZ6dEpldW5kVHFSU2g0czdkcml5N2VERWw0Q3VkWmNpX0FZUVp0cDd3Y181LVpSNlFfemxjNmlhVXV0TnVJc0oxaDZBS3JOc05TdVY?oc=5",
+      "published": "2026-10-30T07:36:00+00:00"
+    },
+    {
+      "title": "[급등락주 짚어보기] PHP 보안 취약점에 SGA솔루션즈 상한가…진양화학·형지그룹주도 급등 · 시장 영향은?",
+      "source": "서플 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1kYTlyWEtxVjlSaEg1bzNCT3lMM0dBTzBYcnVkUG9GRzlVaTZSWVFJOUNEOFVwd1Bxa1ZmLVhHbnVRaEFNR2g4c3hKTjVEOUNRRE5rMkZvajdmZHFI?oc=5",
+      "published": "2026-10-30T07:25:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 생태계' 혁신...'중저가폰·수면 관리' 강화",
+      "source": "테크M",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjVEFFWnBSOGhEdV84MGFSbXROUnB2RDF5ajNmSnJxandzaW1RSnlCOVJaNzZLMXNCaGgxbHptTTQ1aFZHVWE4WXlKdW9fLWg1REdVNlk3SnVxa3JMT2xTWW03alRVb0dSUlHSAWpBVV95cUxQY1RBRVpwUjhoRHVfODBhUm10TlJwdkQxeWozZkpycWp3c2ltUUp5QjlSWjc2SzFzQmhoMWx6bU00NWhWR1VhOFl5SnVvXy1oNURHVTZZN0p1cWtyTE9sU1ltN2pUVW9HUlJR?oc=5",
+      "published": "2026-10-30T07:05:03+00:00"
+    },
+    {
+      "title": "삼성전자, 가성비 AI 스마트폰 '갤럭시 A18 LTE' 국내 출시",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBiYzI2QzhiVG1QbWpaX3l3ZWtVb2xZZnNxOVNkWHhxbldRenJlcVIyS1A5c2pweUpweGlTNTE3ZFlZOEtlQlBFWkNLOUxwc3RtYThQWUV3?oc=5",
+      "published": "2026-10-30T06:57:10+00:00"
+    },
+    {
+      "title": "삼성전자, 일상에 필요한 기능 담은 ‘갤럭시 A18 LTE’ 국내 출시",
+      "source": "리버티코리아포스트",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hNng1V3I2OEJlMm9HcU9zSFJNQm51NENXRUVEQnViNFdHYndlVUlSUUhtSnBEbDhBSDI2ZThPRVNuemZaTU5IRmlLdG5Iam8wMlVyZDFLbjJ4Y3lWNFZOZDY1MzRqNzTSAWdBVV95cUxPYTZ4NVdyNjhCZTJvR3FPc0hSTUJudTRDV0VFREJ1YjRXR2J3ZVVJUlFIbUpwRGw4QUgyNmU4T0VTbnpmWk1OSEZpS3RuSGpvMDJVcmQxS24yeGN5VjRWTmQ2NTM0ajc0?oc=5",
+      "published": "2026-10-30T06:50:06+00:00"
+    },
+    {
+      "title": "갤럭시 A16·A35, 미국서 One UI 9 업데이트 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5HQjhSejRGQkhzLTdQTExZNE1YcUowYi00aUpabU9adHloa2s3RlJmT01HRThMRWhjQlZ3YURqUktNN1JxUGFqWQ?oc=5",
+      "published": "2026-10-30T06:35:47+00:00"
+    },
+    {
+      "title": "네이버, 리센느와 ‘갤럭시 나이트’ 개최…폴드8 특가 판매",
+      "source": "한스경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GbHN0TElwdmxDSm5UaDBlaXRRMmwxZ2hCVUFra0hPcWhCb2E0SWdNWTl3VTg3RGxCYm1abVdKSjdoY3N3UmRFTFExYUgxcEJ5MkZSRGMyV2gxcEdscDhreGVRek54QThQYmgw?oc=5",
+      "published": "2026-10-30T06:30:00+00:00"
+    },
+    {
+      "title": "갤럭시디지털(GLXY), 거래·수탁·스테이킹 한곳에...은행 설립 인가 신청",
+      "source": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBoUVlObGJVa0JaTzhRZG15bFhyWExDcmRqYkVUZ09HN2lwdHhLQ1Z0UkwyckZ5MzJsV0NiLVZ6YmZRQVI0dFRSRkpR?oc=5",
+      "published": "2026-10-30T06:10:00+00:00"
+    },
+    {
+      "title": "[단독] 삼성 첫 스마트글래스 올해 12월 중순 출시… 한국·미국서 먼저 나온다",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYTBRVVpEdWp2Y00zU0laOTFWV0ctbHllLThONXJMcDZwWXlzWktWVHJOaHNRX3EtSE1jVS1faDBndWh5Q3hzZ0lKVVgtaGtWMWxZUUNXeE11LVBWb1RQZm01ZEN2VUhxWXZsc19lV3JMcHhOdnZDdUJWSmh6RWRuR3ZB0gGWAUFVX3lxTE9SRlpmOGgzRmhJUUREcXlmUjBHbFlFRHNRZmhXX0FGX3VjOTQ0NGN6Q2ZjNTRSbktxUVBUcWxkblR0blZiOENDdWZ2Y3JVV251QlFqSXBZd1hVTmZxODZoSzREcm5VRzdhekdIdF9RMzk2aE5BV05pVVlOWHVVZmhCcEV2c3ZOR3lncDk5TV9QMDVBQnVUdw?oc=5",
+      "published": "2026-10-30T05:58:00+00:00"
+    },
+    {
+      "title": "갤럭시 A18 LTE 국내 출시, 42만5700원…6.7형 화면·AI 검색 지원",
+      "source": "미디어원",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XeUREaTEwVEM3TzJuOUJxQjU0Y0lYaGMyQ0t4ZmxjcGNQUnRXVTRPYXliVVVQekozYlNmQXhVYzM4SF9FZjk5XzYyVm8zUXZqQzA0dk9ta1dCZFl1YU5lMnkxVEhTUWk4RTBQTjZKTkpYbDA?oc=5",
+      "published": "2026-10-30T05:48:28+00:00"
+    },
+    {
+      "title": "삼성전자, AI 탑재 보급형 ‘갤럭시 A18’ 출시",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01VVp0QjllbVJoaV9xLTl2SVEyNEE1dFlXbW85ZW1NRFFrb0dWRnJxM2xVZXFnYVpVYkR1UmoxZjFMWTJqX3VtTEVzNWlGQ05wVkpYbHFIWER2bW52MnNhZDVJZ09WZi1DdW13VjU1VVFCWlJU0gF0QVVfeXFMTTVVWnRCOWVtUmhpX3EtOXZJUTI0QTV0WVdtbzllbU1EUWtvR1ZGcnEzbFVlcWdhWlViRHVSajFmMUxZMmpfdW1MRXM1aUZDTnBWSlhscUhYRHZtbnYyc2FkNUlnT1ZmLUN1bXdWNTVVUUJaUlQ?oc=5",
+      "published": "2026-10-30T05:47:33+00:00"
+    },
+    {
+      "title": "삼성전자, AI 탑재 '갤럭시 A18 LTE' 국내 출시",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pY2tRQTE5bUhIbkZjM2tCMmxyb18yLTV6S3Z1d0thSlk1blZYMEVDNkFnX0ZCN1VXeUg0ZkhDY1pNd05lZlZlWXJFOA?oc=5",
+      "published": "2026-10-30T05:36:29+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 A18 LTE' 출시…AI∙대화면∙대용량 배터리 탑재",
+      "source": "아이티비즈",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2MWd0bnI1VnZBSjhJX2EwZ3ZrVUItQk1EWkJuZUxIa1lqRm9XZnRkbVdLMFl4aklnQXkxbk1ZVk9tRms2Wlh2blJ1dFBndjROOFBTb1Z4TFhyVENlcHhpWHdkWjJ1NmM?oc=5",
+      "published": "2026-10-30T05:28:15+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시…AI에 5,000만 화소 카메라까지",
+      "source": "뉴스탭",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xbXhyMlRaZ0p4ZXB2RjdtMUVabEh5VHlwaFNteERaU0ZXN0F1SHpGYjVVeGVvcnVzQzJOV0ZJZU9yeV9Lek10NXllWnlCQk1wbGFoS1Yya2FKYWNKdEsyVDIyNFQ4eG5qQl94VA?oc=5",
+      "published": "2026-10-30T05:27:11+00:00"
+    },
+    {
+      "title": "네이버·삼성전자, 리센느와 ‘갤럭시 나이트’ 쇼핑라이브…Z 폴드8 체험 콘텐츠 선보인다",
+      "source": "나눔경제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1la2VYUXdaMEZFS3Z6cWhnVjFXd0gzOWJZX1JZcVN4OGJkUGdJd05xSWp6MHFVa2J4NUcyeVlyMWV1MS1YaTJ1MGFXbkhRZnFEaTNYbmtkTWNfR2t1Y1BGMHpKc3RQbUZmcUFWQg?oc=5",
+      "published": "2026-10-30T05:25:39+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 A18 LTE' 국내 출시…가격 42만5700원",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBwVVdEcVpoUE9td0JqbzVSandNZW9tUjQzZ0xhWDd3MEFsbUlRdFlfTXp2eFp2THVHMGt6NGJ6eVo0Qjd3b3IyODFRTjJwZw?oc=5",
+      "published": "2026-10-30T05:17:13+00:00"
+    },
+    {
+      "title": "네이버, 삼성전자와 '갤럭시 나이트' 쇼핑라이브…걸그룹 리센느 출연",
+      "source": "핀포인트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kOF8xMzhRaTllcVk1RkdqX1ZSZ1hZWi1GSmlvclZKdXNRX2NUUkVBd2NKd0pJY2hiUHgtci15SGFPYjB5b01BQTNZaW9QLVNYSm9vMFhJMTlNUTlzeXB6cUpLTVFMM1ZGWFJkbzMwc1lEUDZlaEFn0gF3QVVfeXFMTmQ4XzEzOFFpOWVxWTVGR2pfVlJnWFlaLUZKaW9yVkp1c1FfY1RSRUF3Y0p3SkljaGJQeC1yLXlIYU9iMHlvTUFBM1lpb1AtU1hKb28wWEkxOU1ROXN5cHpxSktNUUwzVkZYUmRvMzBzWURQNmVoQWc?oc=5",
+      "published": "2026-10-30T05:15:57+00:00"
+    },
+    {
+      "title": "리센느, 네이버 쇼핑라이브 출격⋯\"갤럭시 Z 폴드8 특가 혜택\"",
+      "source": "브릿지경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Qb2xUYW9XTG5tZlFQZjdiNy0xZGs5NW9rUXo1bGJhcnl2YXhCLXhXZjRhcGpmQ2VjbEhqb1dKTmh6TlBEXzU2c0IyYkhpbjFYZ2JDUndrYkZoZw?oc=5",
+      "published": "2026-10-30T04:59:00+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1DOFpSOGVSYTlqc3JRVnB0b3ltclN0Yk1SRVpvVjB5Wmx0TXY1eTR0dXpmcGl5QktlSG9xYW0yVEgzdGFUVnlFdXFWemhqdw?oc=5",
+      "published": "2026-10-30T04:44:59+00:00"
+    },
+    {
+      "title": "네이버·삼성전자, 리센느와 ‘Galaxy Night’ 쇼핑라이브 단독 진행",
+      "source": "우먼타임스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hOWx3a3V3aWdmUVFhSENDcHQ1TmZjTDVvbTVKNWJ0SVFYUk1XWVFrRXNOM05jRTF3RWxITEJ3d0RRNENJRWl2ZllBTGppaUs4MDg3Zm4zVkp5Y0g4OElPWjNVSGtzYUIxZER2QUdoeEbSAXRBVV95cUxPbTAzMDdkTHctX2g2eW1NTVViWlRzaVpRZFBNTW5TVS1rMzJoczV4cGpGQXB5eFZkald3Z2NPOFNPcHctOWU3ajZQUjM4QkdteDVscXpXM1BoQ3MwWUhvaUhnT2RPZ2NGLVE2UV9Vejk1dzNTUg?oc=5",
+      "published": "2026-10-30T04:34:19+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 A18, 한국 생산·엑시노스 탑재",
+      "source": "디일렉",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GbjNYQkNDTjVBbHVIYWNCay1sNkM1dTZMZmlRVlRLSFAyQVJhNU9NZ3l2YXhWeEFXZWRnbXh6TmlDNElXbTJpYzVXWnZwSThhU0F6ZkxMYWdIS2ZlN05CNVJKdktEdw?oc=5",
+      "published": "2026-10-30T04:29:35+00:00"
+    },
+    {
+      "title": "네이버, 삼성전자와 '갤럭시 나이트' 쇼핑라이브 진행…리센느 출연",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vZUszd1lrRTZMLTZ4czdEVWZmcy1Pc1NSYzhkY2FFZlEyZE0zTmVaVFpPaF9reXdRZENZby1HOTRVUHNpUnR3Q0UwSmd5eExiUWMyWDB2OUtLbV9M?oc=5",
+      "published": "2026-10-30T04:29:00+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시…대화면·AI 기능 탑재",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMjU4UU1ueHBsWmZXc0s1NC1GZ1VOa3c4Uk9EQUxLZUpraDdWcnJPb1pwRzd0Q21sWlhDT0dsNGVGbjFWRXJ6STk0Wi1BRzdYLThFbVMwVWVYbkhNMGR0RHJGSXpzbE5xSktrNnVNb2ZlOTg4VVpaWUxQOGgwc1gydzRR0gGWAUFVX3lxTFBOQzh6dHh3N1MzZ1diSmVvVEFWVC10eWR5dmhYczZVWkw5MDA3U2xPOFhSMzRsaUkyS2JWYjFjT3VZbmc4aEV3WksyVmFGb0NPUmRtV0M5dGo1Z0RuLTdpVzU5RjhhTVhzWmxYdXVqWkVxQ2d1TUpJUUVwR2tzQ1RvWUNhU0R4dVptai02dlhWVWpzam5NZw?oc=5",
+      "published": "2026-10-30T04:13:00+00:00"
+    },
+    {
+      "title": "갤럭시 S24 울트라가 One UI 9 업데이트 이후 배터리 소모가 심해지고 있나요?",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYTBqenFBWllNb0luWGNvU2JfejZDX2RvT2dqeEtJa1I2SW9TYl9TR0NGNnktQXd3MVY0UFRkbzEyOEVheXQ2WVV1QUlTYkpsRVlfWmpKa3RLY04xZnlGQVAwMEZZdklJaFRkM3RSbjN5bEtpa0ZxNlUzczRrSnl3Vng3bnEtbHJJRm1n?oc=5",
+      "published": "2026-10-30T03:51:39+00:00"
+    },
+    {
+      "title": "6.7인치 대화면에 AI 넣어 40만원대… 삼성전자 '갤럭시 A18 LTE' 출시",
+      "source": "그린포스트코리아",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBScE83aE96NEpaQmU5OGl3ZU01Z19UT1N4SEFaNGY0Zk14RGdvekIyWVhQdGF1RE0xY0ZndDBJMWRqbWpZU2Q5YWpJc3Frb3NmUEFMalgweExqY3cxU3hVQ2V2dnZDbE9KaEtCS2ozaU5GRThPWFHSAXpBVV95cUxOWmJhajNEc2o5b0pXWGFnZzlES0U1QmRKelZOU0FRMUVTMkpLVFBNTXRxaGlpMHRxbTZ5QU1ycDY4SWRiZ19tQllKY2hWY1IxMFZRM0tLWC15Q191WUlReFl5QkVfeks5TVNVR052M3BnRkQwZU9VZGhVQQ?oc=5",
+      "published": "2026-10-30T03:47:21+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시 스마트태그2 살펴보기 위치 추적기 구매 가이드 : 테크/과학",
+      "source": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oalRzNlJpWHpsWWNxQmZsQzRxbDU3SjU1TVFSa3hiSVljekNuQ3JHell6SXRkMktFUHYwcU1Rc1FYU0d0ZWZqdmw5Yw?oc=5",
+      "published": "2026-10-30T03:41:18+00:00"
+    },
+    {
+      "title": "삼성전자, 일상에 필요한 기능 담은 '갤럭시 A18 LTE' 국내 출시",
+      "source": "KIPOST",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40WnFkRFpaY2hZV3pRVEhsYU9hYnQ3TjlBOVQtb2FDUmZwVDI5VmJCVVh4MExBTWxUU0hGaXZFRUU3TVZScE8zLTRPc3RQczV4dmFPaEIxYlFTTG5FQWVFN0ZwUlozMUh0WHhKSNIBbEFVX3lxTE40WnFkRFpaY2hZV3pRVEhsYU9hYnQ3TjlBOVQtb2FDUmZwVDI5VmJCVVh4MExBTWxUU0hGaXZFRUU3TVZScE8zLTRPc3RQczV4dmFPaEIxYlFTTG5FQWVFN0ZwUlozMUh0WHhKSA?oc=5",
+      "published": "2026-10-30T03:23:49+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시…대화면·AI 기능 탑재",
+      "source": "투데이e코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FMWlwdXc5UnVEUFpBYjd1ZWJfRFg1OFR6QS12a1VuQkZlOWlPUTdobF93RDVaWDdsWklVdlg1YkdMMERIMWFNSko5d1g4LVBrbDJZYllvU2J2dzM0NHBLelVoczROUGs?oc=5",
+      "published": "2026-10-30T03:00:22+00:00"
+    },
+    {
+      "title": "리센느 공연 보고 갤럭시 쇼핑…네이버·삼성전자 라이브",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WcHJ3b2JWSEJZb3dqZkhwRjR2ZDI4cThLeTVfN1A4Tl9XcURNUkEtWUpxbDl5dGtOM0Z1cnA0RXdMZlZNZEhGVHJtX3EybTVuR2FsWnd1Z2xTSG_SAWBBVV95cUxPeENUanplVFllZFFtU3k1S0VoNnUyTGpEUDEzczBHNGUzZ3RremlMTDdEbGJFZm5BZFRvdFJvcmhYamhUakxkaTNhbG9lYV9kd3I3RWFhNDAwaGQ0SF9kUE8?oc=5",
+      "published": "2026-10-30T02:28:38+00:00"
+    },
+    {
+      "title": "네이버·삼성전자, 리센느 공연 결합 쇼핑라이브…갤럭시 판매 확대",
+      "source": "뉴스락",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BRzNhN2FPOG82M0NNaTVuaW5mY2tOWVlUOVA2aVQ2NHd0MFJ6VFBKaXJCMTEwYW9UWVJfeUlqMHBzWHhJenhEYVpMQkl1M0dScEFDbWZHOTdLQlExVnhtdnJISDFSMnNNcUR0aw?oc=5",
+      "published": "2026-10-30T02:22:13+00:00"
+    },
+    {
+      "title": "삼성전자 보급형 '갤럭시 A18 LTE' 국내 출시, 가격 42만5700원",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4tYmxtUGJnbi15cUhmTkIzTGV6Z2huT19CNVVjX2pqTDVaTEpFR0pQVUxlZjJLR3pNdEVLWlhGcjhjZmJZVEtiRFRMQjdYbmdETW9GNUZlOFlkMmN2aXBaNklnYnZ0cHBIeWdoWGw3djRJUXc?oc=5",
+      "published": "2026-10-30T02:11:22+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 ‘갤럭시 A18’ 출시…AI 기능 지원",
+      "source": "뉴스토마토",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9YeXdGRFpCdFdEWXB6eWNwMVJ5YkdXMEtWYjY5cGl5Ti00empRQUJMV2YxYkNZaG1KNUNLNkctbk1tOVdLY2FrN1l2dGdDdGNDeWdjM1ZETmUta2xkS1VmSA?oc=5",
+      "published": "2026-10-30T02:08:56+00:00"
+    },
+    {
+      "title": "삼성전자, 대화면에 AI까지 담은 '갤럭시 A18 LTE' 출시…가격은 10만원 올라",
+      "source": "뉴스웍스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ENjl4aFJ4dlBSckxxdU84ZkJnZlk3cjQxR1NyZGI1ZmRybERxTThUeG8tQVk2SXFqd0VTZ2xNcmpHMmtTUmktd2xsZVBESmxxMUxmd0VnMGdtT0VRSmU1RmtSc2dhQkhWZWV0dE5FRdIBc0FVX3lxTE84aEllaktXMDY0WkpzZjlic1lfN2dxYUFBUVV5Nl82RDE3VTRwOVl3bDVSMk5iWWdCV1BRRnpTZkFRWDJ0bW4zTnZwbmQ2T05kamM4MUphMzREVWhfQ1NBRkc4cS14XzdPdFFUUkViMjg4MlE?oc=5",
+      "published": "2026-10-30T01:55:25+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 모델 리센느, 네이버 쇼핑라이브 진출",
+      "source": "월요신문",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6NmR5ZE1BdE9OOXZjWlRqcWZuaDRSLTVEYV9tSVlzc21CdkQwQ0VkeGtXSmlnZHpVa19QcXg3bld6M2VYc0xhcGdsWDVHVXdQX181VkM3V0MwM004LWxJazJyNUJJaVhtVnc?oc=5",
+      "published": "2026-10-30T01:54:50+00:00"
+    },
+    {
+      "title": "네이버 쇼핑라이브에 뜬 리센느…'갤럭시 나이트' 개최",
+      "source": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MVTZENjZMUFZzem0zYlpMMnctSzF6R3NJTE5aeEU2aWM4M2VrMXlwVFNUNkEyWVNKU2VWeklrb05qSExLc3hFMnVGaEt0bUdjSlRKYnhBc3hlQQ?oc=5",
+      "published": "2026-10-30T01:47:14+00:00"
+    },
+    {
+      "title": "삼성, AI 품은 42만원대 갤럭시 출시…중저가폰 경쟁력 강화",
+      "source": "충청시사신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ibG1yOGVMdGktUERhZEtpZlFrRXdZOWpLNUt3U21MajJ2T1Zja2JDY29yOVVEd2Z0WlFSaWVWVWZCY2xHQTctdmJkZW45TXRBdnJuRkJwOTdQMWVoSHFpMmJoYndET0ZMMENz?oc=5",
+      "published": "2026-10-30T01:46:04+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 '갤럭시A18 LTE' 출시…AI 기능까지 담았다.",
+      "source": "현대경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YRVlQWEtBQ2NDOXpCbHVZaGxjbVNQNGltYktzZFpQSDRfeWZWX3FkZTZsaHVDQ245NXJIXy1aOGltUHRSUkQ1ZGdITUo0ZHNtUlpNV28xY0U2ODAwUklWcTlINWJQUnVzaU9F?oc=5",
+      "published": "2026-10-30T01:43:41+00:00"
+    },
+    {
+      "title": "[포토] 삼성전자, '갤럭시 A18 LTE' 국내 출시",
+      "source": "중앙신문",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNeGkxT29xYno5MUwxUkdfZkhTSGRlbHJRVFIyOE5ucURvWm9aTm9hZDJpcmNrZXc5NktnZkJBNzdaTGhGN2ZrMnJwWVJGNkI1MWZxMVJfQjE5ckI4Rkl5SDNwWXhFU1FHOWZxMG9wN2FYLXAzdGtvWWFPNGNQbmxUc1RVY19senQ4bFowSEkxX2E3bUdUQlJscWZpYjJIQW5KZTJfZ2M0dVpxWDljNDFKUHE1cHBMQzBZQTFpemJ3U2dZVzV5MlhVTjJNc1JmWVhVekV3dnkzZHljX3JoUm9yU3pMYk5vbmc2bnJTdmlRbXdRTy0zVlh1NHY5OExyRFFMZURwNQ?oc=5",
+      "published": "2026-10-30T01:42:33+00:00"
+    },
+    {
+      "title": "[포토] 삼성전자, '갤럭시 A18 LTE' 국내 출시",
+      "source": "중앙신문",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOX3YxMHBvOXk5QVJRRnlfYjhtV2w2RDRJQldOZmwtZjJ0alpkU3BUNm5EX2ctcnBXdUF4dkV3Wkl1OUMxOFMwcW83X2R3U1F3SFlma0x2UWh2NmtlaHpEa2dHOGxZdEdFLUdpT18zSlJReEhzZmhjTkl5NFU1aDRvZnVCcjdRdWhWZmVHTkhsdlRRMUV4XzI0UWcwMFhzRlVUVnIwblVxcVVBb05RQjVFck5Tbmo0RldxTHBvU0llMUp6UE9qb282YVNpcHVHaFNpdDFSTnFlSldXQ2tYWXJ1Q3Nlcjh3Qk1nMW1saElRN3FQc19PNWdreV9zemlsX2JiUHhFVw?oc=5",
+      "published": "2026-10-30T01:42:33+00:00"
+    },
+    {
+      "title": "삼성전자, 11월 한 달 가전·갤럭시 할인…소상공인 특가도",
+      "source": "인사이트코리아",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00T1lTdmFoU2daVDFnbzhQYmtMS09Yd19GV3FPRzZMbjRzQ0dXbVdmVmE4U2NpYkg5R0N4VFB3THZWd3ZNQ1RZcDhlLWRVdUdBQVJhTDJ0enNIejJFUmMzUmNtc2tCcWlwV0V4SHFJRTdnR2_SAXdBVV95cUxPMkNpdkNfdnRRUWoxXzJYVUlhNDhyaEtkdEtqbVpWcXgtSHkwSWNfeVZKbTlZaUVOejBPUmZTdFhXRmNkRmdZcVhDWHBMQU02cllNNFJlZkZ0WGlQSzdTYzd0ZVRObUFrZjZYazRfdTZ6QXBBc1Jxbw?oc=5",
+      "published": "2026-10-30T01:41:46+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 A18 LTE’ 국내 출시…출고가 42만5700원",
+      "source": "베이비타임즈",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90RDZ5Q1NlV1E3NFRqX08wd1g3VEd0TXQ2VDBUcnlBOU1hWElGWFkzdl9Bb2tjU2lJMG1TaFhGTzdpbWc3X1YxNkQ3ME1pQ1FCTWgwMGRvNzRkdllWblRFSDJoMHhqTzZFaWlZVw?oc=5",
+      "published": "2026-10-30T01:40:00+00:00"
+    },
+    {
+      "title": "[Tech 뷰] 삼성전자, ‘갤럭시 A18 LTE’ 국내 선보여",
+      "source": "뷰어스",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE42SVdGOVNZam1UeG5EcWwxZkhBNnVVbUE2SDYtTXNyR1ZUMGRaRkgtMWJwdlNrd3llUlNkTlR1eml6VlVoTGNNNE8wVWZ5YmtadWZpVktPOWI?oc=5",
+      "published": "2026-10-30T01:35:56+00:00"
+    },
+    {
+      "title": "42만원대 LTE폰에 AI 탑재···삼성전자, ‘갤럭시A18’ 국내 출시",
+      "source": "이뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxcG9ZSVFRMnhjai02TnA2ZHV3LTFYWGF1WFcycXhRWGxaUDNweC1QWjdiR0otYmxseWlkYmpkd0ZVanMyOGhyQjdGR0JqTmNZU1pmeDh1XzVfV241aGJMWlRzUzI4OU5SZEVPMU8yZjjSAXRBVV95cUxNdXJoQ3RmZmdfS1R6X1pxd0U2Q0t1UDlDV1B0VXJpc0kxeEFNbzhtRTF5QVNwWGRWa3h5MUJNeDZIbjlsRWRWUTR3ckJmTTlQNzJpUVcxNUt0UkNYVmtHZXhwZFhURmpqNXJBVVQzT2YyRkowSQ?oc=5",
+      "published": "2026-10-30T01:33:26+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 보급형 AI폰 ‘갤럭시 A18 LTE’ 출시",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJN1NiM3B2WFFTQ3FGb0k3OUNVazdLMUNDcVlOajBWVTlLV1dLTWVMeXRkTEZwVWstRHNzOTdvWkpkVnRLMWsxRzJvRW01RDZtVWJoMFBGUTh4cHFQQnRud1dBSFIzWldXY2pB?oc=5",
+      "published": "2026-10-30T01:28:47+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 A18 LTE’ 선봬…제미나이·서클 투 서치 지원",
+      "source": "더파워",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBnNEhCdHNYWDlmSHEwdVJyaDFrZzZ5dVNNZ3l5bTlqWnB6dlZWWUVqYml4WExGQ1ZLbWVQVkd4VFYyRmUtbEoyMU15RDgwRkViaEVjbHpyRkgxRGFfNlBWRDVkTTdvazlDWE1tQTlJR3lKd3pQOUdZSFNvVTE?oc=5",
+      "published": "2026-10-30T01:27:52+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 LTE폰 ‘갤럭시 A18’ 30일 출시",
+      "source": "소셜밸류",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82bUVpd0lwaTJvdVN2WGZWYVdsdmlETzY4VGhWcjFOYVpYOExOdUJ1X1kxX0lZZFd4dlhLa3RLeVpJS0pBUVFFQ3FtMkxJNVBNN0cySHpIQTZTeFItRklvbEt6c9IBbEFVX3lxTE4wamhpWHIwWEl2MnNHVVZrakZIZHh5YmZFWlRJSHY2N1BiVVdWOTZWZ2l1LW5GNlZOUEx2cUlrcU9XcndfY3lVT3NJemtuLUVpc0Y3TnZid2lrZ2d5R3MxdFVKSGxFNFIyaVB3WQ?oc=5",
+      "published": "2026-10-30T01:20:18+00:00"
+    },
+    {
+      "title": "삼성전자, 6.7인치 대화면·AI 기능 '갤럭시 A18 LTE' 출시",
+      "source": "브레이크뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5CS1VyV0FMaE9UQ1RpdENFR1dINDZiZzFSVlVLYkJYV1hmMU1iUGU3TnRlSldOMzkzZUgyTmlSeXY4eHVxa213?oc=5",
+      "published": "2026-10-30T01:13:00+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 워치9' 10월 보안 패치 배포…보안 취약점 62개 수정",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB1RmhhUklzX01OT2NIZE5IQjdFa2hWUHJQWmdULTlLNVFnNm5DZ2dzcFBCUU9YM0ZpeXM4aElpTHpYRTBNZk9HTQ?oc=5",
+      "published": "2026-10-30T01:10:57+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 국내 출시…대화면·AI·5000mAh 배터리 탑재",
+      "source": "나눔경제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sMEw4TEE0NG9mNTV6eFVYNUVaS3k2aFlidkpIQjlXdy1ZSkEtTkMzd3lXY1JDOHA0ckZRN1FpYTRUTTA5cjJxRFNEdVB1b0VlUXl5cEx2ZGgtX1pBUW80M1UtOUZWZHhIVWVQTg?oc=5",
+      "published": "2026-10-30T01:10:14+00:00"
+    },
+    {
+      "title": "네이버, 삼성전자와 갤럭시 Z 폴드8 쇼핑라이브…'리센느' 공연 결합",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9xeThTR2dNVlAzN3BVSDlER3ZhTEJCaGdfYS1jSXVFZ1h1UWpNblg2WXFleDVCaHdYWHlyTjVIS3ZmOWJ4R3ViTk13b1JRQQ?oc=5",
+      "published": "2026-10-30T01:09:26+00:00"
+    },
+    {
+      "title": "삼성전자, 실속형 스마트폰 ‘갤럭시 A18 LTE’ 출시 … 42만원대 가격 경쟁력",
+      "source": "워크투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZMmNlbFBoOUplWjQwQmpHRi03elZXQjFNN0dtQzMydHFBVzhPdGRiLWd1YXFGcXpHZUE4a08wZFFLbmdiNWo1MEU3V0xTNHY1b004MDlEcm04MGc1cVJnbURFZExrTk9lRkhVUg?oc=5",
+      "published": "2026-10-30T01:09:00+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 중저가폰 '갤럭시A18 LTE' 국내 출시",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DN3Fubk5jelBTeXFrV2ZfR2x5V2t1QWdjT0lZNHYxSzg3Z3FjUW5WLXFrSzRQSnJyN1hFNXhsN3J3Y3RWeHdfeVI5NGQ4OUxDazROdE90VXc0QQ?oc=5",
+      "published": "2026-10-30T00:58:50+00:00"
+    },
+    {
+      "title": "갤럭시Z 폴드8 울트라에 골드 입혔다…삼성, 중국 전용 'W27' 공개",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1wNkdDWGZUV0h5RjF6dFR6MDNWaDZkNmNGMTlCNjlRc0VHTF9FYUlIVHp5VUdOYWFTRThBR0VSUTAwTnkxX25HVQ?oc=5",
+      "published": "2026-10-30T00:58:38+00:00"
+    },
+    {
+      "title": "﻿삼성전자, 코리아 그랜드 페스티벌 동참… AI 가전·갤럭시 할인부터 소상공인 특별전까지",
+      "source": "비즈니스리포트",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1rX2ZuZ2J6U3JOT20yZUhFWWhLS1lkb2t0dmt4eW5HWmtJVnhaNEhhaloxOWN5d0JuZnVOMFNLV0wzd0VVQ2RmbER4YkpER3JRaHBOVms1cVdBamp4dHI0M3g5TTNROFBNblJQNkhwUQ?oc=5",
+      "published": "2026-10-30T00:51:39+00:00"
+    },
+    {
+      "title": "삼성전자, 11월 가전·갤럭시 할인…소상공인 최대 50%",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DNVhqWE5kdG4tOHFud0ZvNGVtRmQ0MEhEemtGTGJST0ZsMlZnV1BHZ3B2MGNZbW5vQjJSbERiNGN5OGE1SXVGR2RiaEZMSmZiYkM5WlNjd2ZoU1h3?oc=5",
+      "published": "2026-10-30T00:41:00+00:00"
+    },
+    {
+      "title": "삼성전자, AI·대용량 배터리 갖춘 '갤럭시 A18 LTE' 출시",
+      "source": "데이터뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jNjdYUFd0SmFuWmNEbkJudi1Va2QzbDFhU25nRkhXRWFYaFFHTUxacEMtd1R6dXVNTEhIWDRKRzV4LW91SjN0ZEQycWM0b2xYTXlHZ2dUaUdybEUxWUZV?oc=5",
+      "published": "2026-10-30T00:39:47+00:00"
+    },
+    {
+      "title": "[IT라운지] '갤럭시 Z폴드8' 쇼핑 라이브·'크리젠랩' 매출 급증·카모 '행안부장관상'·네이버 '대통령 표창'-'뉴스 큐레이션 다양화'·'바이탈케어' 홍콩진출·아르고 'N배송 운영'·'넾페스타 성수' 개막·에너닷 '광주지사 설립'",
+      "source": "뉴스웍스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9BU1hNMlBmVDBRT3JMNFNZUE96NTZGNzkwMVZvS1g4MHVNaV95c3J5cW51NHhkX0h5TlVWR0pRZXhGb1ZMdU1DSlNLLWtlSHJFOFp5dTBCQmpoRVdjRUFJQ0JueFdmSjF6REtHT19ha9IBc0FVX3lxTFBVWVRxYmh3NXRZdTF6WFdyYmtRaGgtbUhsUloxM1NyU3RTU3hYMFVfNTBIOXJIcWdyLVlwd21LWlNZQ1U4bDZ5WEx3dGlYeFRiUE9sVlQzdGoxTDJPS3haWl9wQWhFV0xqbll5M3dWTWl1OFU?oc=5",
+      "published": "2026-10-30T00:38:51+00:00"
+    },
+    {
+      "title": "구미시, '갤럭시 사진공모전' 시상...구미 부문 대상에 '금오산 반영'",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA3MW5EaWlEOURyXy0tbTZUTXl6RmxRY1BZTlNvNjExTG5wZnVRUVRndHVrZngyaThpaXhHMF9Rc0FrMkZpZGc1bTJyMA?oc=5",
+      "published": "2026-10-30T00:35:21+00:00"
+    },
+    {
+      "title": "삼성전자, 11월 가전·갤럭시 할인…소상공인엔 '최대 반값'",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xR3I3MFlkaGE2Q0xCQ1BqR3JrZk02V3kxY21hODFNcXpqb3NQWlF1RnRUUnNWWGd5dmlMV1djRkdwVmFGRkJYSXVKcXhYUmlqTFJBSWJuMm44UdIBVEFVX3lxTE5ZMUlMSkU0bTNxUzJPMEhKWl9DaTF3bjB4OHBnTkZRNmhTc3dYLXM0N29rWmFEeml4aHhXcnlpUUlzWGpLcGdtRXMtOW5qdHJEQmRJRw?oc=5",
+      "published": "2026-10-30T00:33:30+00:00"
+    },
+    {
+      "title": "삼성전자, 11월 가전·갤럭시 할인…소상공인엔 '최대 반값'",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZMUlMSkU0bTNxUzJPMEhKWl9DaTF3bjB4OHBnTkZRNmhTc3dYLXM0N29rWmFEeml4aHhXcnlpUUlzWGpLcGdtRXMtOW5qdHJEQmRJR9IBVEFVX3lxTE5ZMUlMSkU0bTNxUzJPMEhKWl9DaTF3bjB4OHBnTkZRNmhTc3dYLXM0N29rWmFEeml4aHhXcnlpUUlzWGpLcGdtRXMtOW5qdHJEQmRJRw?oc=5",
+      "published": "2026-10-30T00:33:00+00:00"
+    },
+    {
+      "title": "삼성전자, AI 기능 갖춘 40만원대 갤럭시 선보여",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81bEtKcXU1eGNuUXU1TUhadmF2UVVST2ZxWmRaZUpLVHpJdGhVNnpNbXhpTTRXR3RodDdkSlZPY3ZNOVQ0djZHa1BXakNnNWJHTWFaMEowZFdBY2F3?oc=5",
+      "published": "2026-10-30T00:32:00+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 ‘갤럭시 A18 LTE’ 출시…AI·대화면 갖춰",
+      "source": "아이티데일리",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qQWFJTDJWelBhdHk1OG42ZWppcTJSYVlKTEd2aWE5ZUU4T1BsUE84bXJ0ckM0MFltU1lGb3dpQlZOX2RGbnAySlBJb3B5MGZ6Z0pGRVNJNVhEY0ZOYlBxaHpDV1RnUHVs?oc=5",
+      "published": "2026-10-30T00:27:59+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 '갤럭시 A18 LTE' 출시…AI·대화면 탑재",
+      "source": "더트래커",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1KWTExcVEyZ3BQNTVXcW9nb04ta3MtQ3FkeGx3NzJKTHRSV3ZPdzNSWkZoc1VjTGs2UFo1UDV5dU9jUmUwRlBXVzNxQ2FnY1BzWmlNRXBKaW8?oc=5",
+      "published": "2026-10-30T00:27:58+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 A18 LTE’ 국내 출시…AI 기능 지원",
+      "source": "FETV",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hbUdSbldqa2p5LUxrNnRjSGoyZTJ1YUxqTlMwTlhXWXZ5Zm0yTnRmZHVPUWZJLXdYYzh4ZGprZWhabWpSYmE5QjQzanItZjUzODdtdEVCMUNCWjYwcExOTnhlQkl6X2Rf?oc=5",
+      "published": "2026-10-30T00:22:28+00:00"
+    },
+    {
+      "title": "삼성전자, 보급형 스마트폰 ‘갤럭시 A18 LTE’ 출시…가격 42만5700원",
+      "source": "인더뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Ia1h1SzVoNWdjS3VoNVd0WkNyZldNcjBpRTFiUk45RnBaSG1Eb25DeXNxc1RMOWpKbUx5QjFRQ1ZIRDJ6QVdfU2hCODFDb3NicEVCelFPRFRPV3ZhYktMVU9Mcng?oc=5",
+      "published": "2026-10-30T00:18:14+00:00"
+    },
+    {
+      "title": "삼성전자, 코리아 그랜드 페스티벌 동참…11월 가전·갤럭시 할인 행사",
+      "source": "핸드메이커",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE11X3NjcjBSV2J0elZUdkNZOXh1cTVXV1h0TFNvbW9ncFJ0ZFh5anp5MlYyMUZ0dmNKVVFYSFZxU20tQ1JOSEtSbVJUYmZRQ202cVBtMzVYMGh1REpRd0JTQXhiQ0U0bUnSAWtBVV95cUxQcF9JVGswYzB6NUFPWDJGNkktNzNwRF9IWnd1aG9WOGphYV93RjNyWml4dXZVYTJOS1ZyTWxpakJGMm1NdkZZbUVZOTN1RDBYWDFKTzRkMGNETkhmN2xpVDVIWkk3SlRONzc2cw?oc=5",
+      "published": "2026-10-30T00:17:33+00:00"
+    },
+    {
+      "title": "삼성전자 ‘코리아 그랜드 페스티벌’ 진행·‘갤럭시 A18 LTE’ 국내 출시",
+      "source": "여성소비자신문",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OaExESzNBNkZVZ0tFLWxKbmRKNG5HLWtYb2ZkTnh6LS1LUUo3NzVQT09CSTEtWUttdmh3X1hvUXc2eklwWjhpY0lTN0dIeDh4dVB0emwzWWRqTGZFSXBJeWxxY0F4UQ?oc=5",
+      "published": "2026-10-30T00:13:28+00:00"
+    },
+    {
+      "title": "'희망이 펼쳐진다'…BTS 제이홉, '갤럭시Z 폴드8' 캠페인 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1qN0ZPNkhoU084QW40cTNPbkxwRTdWdk1jclo0UlZFd1NQNlpYVk1xaDRhWHhXc0RQR3hJN1pFa2lTTGptQ1RIMA?oc=5",
+      "published": "2026-10-30T00:13:02+00:00"
+    },
+    {
+      "title": "삼성전자, 보급형 스마트폰 ’갤럭시 A18 LTE’ 출시",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBVSmRXRy0yWmtFRHZ5X2tMRDhKS29pTE42bWRLbmZDbG5DOG9hbmlqZGxSaklPQ3VOOWU4UEptZ0Jlb1E5S1h1STJXdHRkQTlwYVJtT0dkbUtMVGx4dWlTMHNBc1JFd3M?oc=5",
+      "published": "2026-10-30T00:11:00+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 실속폰 '갤럭시A18 LTE' 국내 출시",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tczhpR1dZSExlY3ZRYzVuZ2JKbFZxRV9fLXdBOUcyUmEtQjc5UG5HMGQ5X0JmazlDejY3dmJxLUE3NmlBT0ttWk1kSnZmTFRNV2ItWVhRMnNXUdIBVEFVX3lxTE04QjRvdFFXcVg2U2xmaGtyVTZhRGd1VGUybFJ5V0lZOGlWWTNxaC1qTVVuaGU3WEpDaWRvVVlpb3ZLWHpJVzRXY2lGM0duRWdLQ3JpVQ?oc=5",
+      "published": "2026-10-30T00:07:51+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 실속폰 '갤럭시A18 LTE' 국내 출시",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE04QjRvdFFXcVg2U2xmaGtyVTZhRGd1VGUybFJ5V0lZOGlWWTNxaC1qTVVuaGU3WEpDaWRvVVlpb3ZLWHpJVzRXY2lGM0duRWdLQ3JpVdIBVEFVX3lxTE04QjRvdFFXcVg2U2xmaGtyVTZhRGd1VGUybFJ5V0lZOGlWWTNxaC1qTVVuaGU3WEpDaWRvVVlpb3ZLWHpJVzRXY2lGM0duRWdLQ3JpVQ?oc=5",
+      "published": "2026-10-30T00:07:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 A18 LTE' 국내 출시…가격 42만5천700원",
+      "source": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9yYllQZUczTDcxekxsTnEzampDdFFkWFdMcTZLUUdXLWtsQ1B2VE5EcHBjUFVNUWVGTjBXakFGTUJNWUhHaVB2RG1ybDBJdXlKUTUya0U4aWc0YmxENEthNkJ4RE1vQzJKNHJUclVweFo?oc=5",
+      "published": "2026-10-30T00:06:01+00:00"
+    },
+    {
+      "title": "'코리아 그랜드 페스티벌' 삼성 갤럭시Z폴드 반값",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XM1ZBWWZWdEItYTZOUHpYdTdSV1E2eVVQY29IR0dKM3BadGUta2k3WHhmZTh3TE9lS21OR2hHWUFFbmFhSkx5UnNuM0F2REtSQnIxa3NqTzh1WHZXbi04aGRHSUNMdWdkWU9hcXFnd28?oc=5",
+      "published": "2026-10-30T00:01:30+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 A18 LTE' 30일 출시… 대화면·AI 탑재 40만원대 실속형",
+      "source": "서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91cE1QaFBGQjNnbDFhX2hJaHNwUG1iX2M4SWxQMUQtckZKdTZPcTN6bnU3TW5GT0hBT1lZWXh2NkNJNnNpZi1pSTRNVmpvdVoxd0xmNEJic0psM25JUzdiX1BPTkFReWpvRE9B?oc=5",
+      "published": "2026-10-29T23:57:31+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 '갤럭시 A18 LTE' 출시…AI·대화면·트리플 카메라 탑재",
+      "source": "뉴스드림",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XMXRScUZ3R0ExSlcyakdodXNsc1ZOMHR0T2pBblphRkNab0kydkI2UHNjRVZpVlMwS1l2VjJOU05XbGFWNUFWaGRFRTZ6YTV4QW1Db0RwQ3VrY2lqNHhpSlRrVlRrZGk2dEJZ0gFuQVVfeXFMTlVyVGtFMk52dVdsYWpLdmJQdjZBMzNjWHB1ZU9UaVpsUGxWSUNfZXYzNnNYc0RGRXI1QXJRNFJXNjZQM3B2aEFuRVRUdUJuSEFGdW5zMFF2SjlEcjBXYWEyWjNoWUE5Wm1YM3VMSlE?oc=5",
+      "published": "2026-10-29T23:55:58+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 A18 LTE' 출시",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZG1SUkJvaHZxTDZCLTM0TXlJQlJhMUFIbU1HcDM5bDh1VUVROFh5eVM4UTdfMUtmVnZTU0V6OHRrcFJ1TnVZaHc5bw?oc=5",
+      "published": "2026-10-29T23:51:28+00:00"
+    },
+    {
+      "title": "갤럭시 태블릿 업데이트 스타트 끊었다…탭 S11, 원 UI 9.0 업데이트 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1rMl9STUVuUDd4UWxUVjBNVmRNX3E0S3NjRW9MckZVaFBkcFhIN05mTDlySzhSYmhmQkE4U0E2a0oxNUI5YWlqQg?oc=5",
+      "published": "2026-10-29T23:50:52+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 '갤럭시 A18 LTE' 출시…AI 기능 탑재 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01bmNKSlo2Q3Jqc01ELVRxYXIwclBfQllrRTMxbVdNR3hSQzlIcG50dVduTDNjNWlaX2ZDRFlCSXZQUG40RnMwbjVKeWJZUWNJOGw1V3FCSFpNalNlVDJEWUNIR1pnWUnSAWxBVV95cUxPYzJZc0V2R0NYaVFfa2xrbDFJZDZGM1AtOTdqRWxrVDhQYTZieFU5NThyQktOSWVxTVVoMXJqNXFCMjdBN1lOVVhjZGNvX04yMGJXV3JRWHZrMjkwY0NLSWM2ekVVWFoyZnFYZ2E?oc=5",
+      "published": "2026-10-29T23:47:44+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 '갤럭시 A18 LTE' 출시…AI 기능 탑재 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uemtabVFvUHVHYjg5eGRiaGs0ZnpuamtIMTlaTldsdHAyNVJxWlBUVDBEX1VUd3lETERQazRkVFBYU3hvaWQyZzNqOWRPQmFZaGtFOVI4ZFF3UnktU2o4LXUzeE0tdXpIdm1KRjN6V2hzb2dnaTFXbHhn0gF6QVVfeXFMTW56a1ptUW9QdUdiODl4ZGJoazRmem5qa0gxOVpOV2x0cDI1UnFaUFRUMERfVVR3eURMRFBrNGRUUFhTeG9pZDJnM2o5ZE9CYVloa0U5UjhkUXdSeS1TajgtdTN4TS11ekh2bUpGM3pXaHNvZ2dpMVdseGc?oc=5",
+      "published": "2026-10-29T23:47:44+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 '갤럭시 A18 LTE' 출시…AI 기능 탑재",
+      "source": "디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBoMlZpdnJad1VJYkNBcXpSZU1kVExzZUlIQUE2X25sbThtVzhteFhueEo3dVZtUDdwMURha3otU0FJcXVsQy01SXpfcTBmeTFDeFlxemEyWG1nQ05pUnNXcWRBcWpwSU1nT3VRV2txOWlsQWc?oc=5",
+      "published": "2026-10-29T23:45:27+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 AI 보급형폰 ‘갤럭시 A18 LTE’ 국내 출시",
+      "source": "진일보 | 전남일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51NFN5ZkpoU0I5MTRZXzdZMEY1em9US2tsSHoxcHBsdG9Wb3l5MjF6elVnS3djeW1xVjU3TUF5eGprVWFLcGp6M1BZVHhKSUZKd0tCTk1qRWFfNXpZU21BX2NBYXZCZEM3TWdObnl3NA?oc=5",
+      "published": "2026-10-29T23:42:56+00:00"
+    },
+    {
+      "title": "\"갤Z폴드8 울트라, 중국 가서 확 바뀌었다\"…갤럭시 W27 공개",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NcDVIUUM4VDFQMjBFRWdaN1FKRjFQQU9MMmthWGZHTFpMYzg4WUlTTTVIb21fa2pYWVh1czNnalB3bDJCcVAtaHR4X2ZyRkhjZ0U3VUNn?oc=5",
+      "published": "2026-10-29T23:39:45+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 갤럭시 A18 LTE 출시…AI 기능 탑재",
+      "source": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ieDBWalNpYVBSUnNSQkY3NlNrTkRZNllOanhOSVQ2b1VTUml2bWRuZDNtU3d3UHRNVkwyQl8zS1Jqd21KUlVHUnBUbjdwYkZzWGVBV3pNQlNDd9IBWEFVX3lxTE9DZW44NW05WjdOU2RSQkFiQndyOTkxMmJzalhncDJpZURkX3BaODlQRGFIV2tNQzVmM2pKZ2pzM1BVSVA3a205U3hubWF5Y3doLUVDMmlYV1o?oc=5",
+      "published": "2026-10-29T23:39:44+00:00"
+    },
+    {
+      "title": "삼성전자, 11월 한달간 코리아 페스티벌…가전·모바일 할인",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00TEhCVzlJc3J0WE05Y0hjcVlvRjh3eGVsdUpKRUh5RF80b1VtOGRNNTJlNUoyNW1GQWR6OWtLcHdTalpHM0NWQlhYQzhEUWVtdTUwQ1BidGRPdndtM2t0RdIBYEFVX3lxTE00TEhCVzlJc3J0WE05Y0hjcVlvRjh3eGVsdUpKRUh5RF80b1VtOGRNNTJlNUoyNW1GQWR6OWtLcHdTalpHM0NWQlhYQzhEUWVtdTUwQ1BidGRPdndtM2t0RQ?oc=5",
+      "published": "2026-10-29T23:38:49+00:00"
+    },
+    {
+      "title": "삼성전자, 40만 원대 스마트폰 '갤럭시 A18 LTE' 출시",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSE84RG5RSjB6djZSVGc2dHphRG9MYUVCSFY0bFFKS3huMmxOeFpyNnRLZTZkSzNldU9yZjYtNkVHY0dBUGxQZXNDWmU3SlhsalptYzJEVkVTbWFocWNBMkFYUHdMOUhVeGtiRWVFQjVjMTdSa3lwUXlkRERSWV9WRTZnM3o?oc=5",
+      "published": "2026-10-29T23:37:44+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 보급형 스마트폰 '갤럭시 A18 LTE' 출시",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzRWZNV1NmdU81dEtFVDV2ZmxxSFpnUWxKZEtMaDExMGhBT01kbXRkbWdra1J0U3pvNFo3UFkzTktxOVlvaTB4RFZLb0NoSUl0UWxpNlpnc1JhS0XSAWBBVV95cUxOTTZ1UXFlRUtncXJKSjZsaDE2WkpZVmhRbWJvQ3ppWTdVRDczSlg0RVRRQ1dtUGNmempCc0g1M0dJSzNQXzF3Z3NMX1lfNGZPSWw5eDhES3h2N2lWWG1aRGo?oc=5",
+      "published": "2026-10-29T23:33:45+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 A18 LTE’ 국내 출시…AI 기능·대화면 탑재",
+      "source": "한국NGO신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qZUlWVkx2NS1ZWUlLbGhscUpHWXBOOHJ4N1otSnBfa3BrZEV2alBfTS1YcndLUEktTURfaGtvMnlwSU51RFVZTFB4eTB1R25rNlI4WlVfeUVLV3NYaHFTRmM1cGxQdmlJ?oc=5",
+      "published": "2026-10-29T23:30:35+00:00"
+    },
+    {
+      "title": "삼성, 42만원대 '갤럭시 A18 LTE' 출시…대화면에 AI 기능 탑재",
+      "source": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81eXk1aHVNVVd0MUpHb1dHcE16NFVib0E3S0hjYzJBWEo2SFNTZk0xRGtOM0RaeVBmTS1rbHpPNW1RT1pEcUNuNkR2SUluUmRHeEI2cF9Yc25sMXVlSlE3Z9IBeEFVX3lxTE1ZSFRDdUdoYlBkYnBNVWk3VXJaTl80eTI2aG0wYUV2cnZReTdRLXpqQnRDUmcybWxKSDNIeDlYODdGMGl2LWJiTnFhMk5YTVVLalpyLW9kRHY2NU9kQ2FBajROQUVfdWtRQzNCZjBWam5SNFVHWlhFVg?oc=5",
+      "published": "2026-10-29T23:30:03+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 '갤럭시 A18 LTE' 출시…AI 기능 지원",
+      "source": "지피코리아",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLbG9QRHFQTmZwT2pEVHdzMXlVUTBwYXAwYVUxSW5tMEN6eUQ4SGVLNzRfYUlqRS04NGRickdyaGhOUjRhdllOMi1GakVaTThaUFd6YzdIWEJ6a3NJcUVlcHRqWTFMOWlKTmfSAW5BVV95cUxQM0J6dzV0dm5xY0JVUndPTTRhdHN4cm5WVDdsdE50bmRMdW1hRl9yNy1FVXBubXZ6bXRMZFlGN05mVXdLYkRHRUV1VUVqcFFLSDllbHJlOG9zUGxLUE9QenJDVnhmUGRJTXNIYzJMQQ?oc=5",
+      "published": "2026-10-29T23:29:26+00:00"
+    },
+    {
+      "title": "삼성전자, 40만원대 AI 스마트폰 '갤럭시 A18 LTE' 국내 출시",
+      "source": "www.ebn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5zMW1qdkQxeExBcjRXU1M5dkhQMzJQNWhDVF9RaGR4Nm1nOTMwWGppWmd4MjBiOHpqQzRqaG1ud0dYZ3NFZE5zX2lCV3dlcHZlbmFZdUUzSzBoVEQzMElHeVh0THlqMDlS?oc=5",
+      "published": "2026-10-29T23:23:15+00:00"
+    },
+    {
+      "title": "삼성전자, 42만원대 갤럭시 A18 LTE 출시…보급형 시장 공략",
+      "source": "데일리안",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUnJTUzVlRFZHamxiQS0xNWtiQU9Od3E3d3FobGxiT2d6dk9PYTE3a1ZLdUdfbTIxVEloazVJTmR2M3BMQ3paSmd3RVBkMUIteUpDRmFHcFVObEdtLXNvaHBOVGxxYlN5bDBGZHJHWDNCU3lWT2I1Mzg2dVJrWEcwRFBIVG1odW93WW84eGxnd0lSWktjV3BBamtOZUt4S1paSzhNVndmMGJuS2d2eGEwekViZEtRcFhPNGV4enBVclZpR21HNHF5eEhTUWNlcnl3ajgtX2VOM2xJaWlnZ3hJMUV4QQ?oc=5",
+      "published": "2026-10-29T23:19:00+00:00"
+    },
+    {
+      "title": "42만원대에 AI 검색…삼성 ‘갤럭시 A18 LTE’ 출시",
+      "source": "경북매일",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GX2J3N3F4aHBlVnljdngxM2IwRWdxeG42THR5eFl3TzRuUktRdEs0S1drYjFfeFg2aklIN1pZX25kM24wUEkzVGtUbHI0eElnU3pILTlVODhmUQ?oc=5",
+      "published": "2026-10-29T23:10:00+00:00"
+    },
+    {
+      "title": "룰라의 역전승보다 삼성 갤럭시가 더 중요한가",
+      "source": "미디어스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuUUZaYng3a2J0RkpaQWt5cExLY2lGZllxdlZYTlNLT3BCU0tKNzRlZkV3ekdodE5BamkyVFZ0eWhGQWhsaUE2dmw3V0Y0Y1llQUViWUhQUVM5cFZzSWZ1U25lWkdaT1RNOE5ndtIBcEFVX3lxTE16RnAwczVEYXE1clNEb05leHEwNkdybFBpOW1lYmxybVhRRG5YbWlCUzhvZy02X2wyLUFudGNwV2ZMVHZlWTU5cWtheVRoWDZIbEVrbFJEalVnXzdZSnFiY3Zia1FPRm5BZFE1b1ZVYWo?oc=5",
+      "published": "2026-10-29T22:49:00+00:00"
+    },
+    {
+      "title": "359만원 ‘트라이폴드폰’ 박수 칠 때 떠난다…삼성, 갤럭시 Z 트라이폴드 국내 판매 종료",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rdE9NYWxsRXd1eFNWc0N4YVRDaGdsbU1WXzVnd2hzOU1WY01Qb1NYak1YcEdGVDFwS2kyTG5waERsaHctNWRUelVadDY2QjVIZU1JWEtXR25jSkJuaVh1SzY5UQ?oc=5",
+      "published": "2026-10-29T13:50:38+00:00"
+    },
+    {
+      "title": "\"삼성 폴더블폰과 비교하니…\" 접는 아이폰의 '치명적 한계'",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE80TE13RXBlWlZEMS1vampFZXlDUVNiRHhBZk9DWmI5OFc3QWFCUlFydHRPZWJqRkx3cWdnc09Ua3M3LVhSVDYzVEEtOVNlcV9zaHJJN0wyS3BpZw?oc=5",
+      "published": "2026-10-29T13:00:03+00:00"
+    },
+    {
+      "title": "갤럭시S27 배터리 더 오래가나... 개선된 엑시노스 모뎀 탑재",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBram4xbDA2dXJYV3JJYU82WGcwb05pYVF6Nm5fX3FkN2MwS01DejlWazNQQ1gxR2htN3Y1WUhiYmNwY195akhjYXU0ODJ2TWhEV3pZZWtlX3pvQWZtMzl5TUpOSkU?oc=5",
+      "published": "2026-10-29T08:39:19+00:00"
+    },
+    {
+      "title": "[숏폼] 갤럭시 손 안쓰고 전화받는 법",
+      "source": "IT동아",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE85REtPMHNVekNUNFNGY3dKeUs3ZVNTcUM3TlpTazA2MVQtaGk5NUdJbUxqTEhEUlZSaXY1UzNTZElLQQ?oc=5",
+      "published": "2026-10-29T08:28:59+00:00"
+    },
+    {
+      "title": "Galaxy와 함께 그리는 새로운 현실, 렌즈 너머 세상을 담다",
+      "source": "OMATE 시니어",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE14RE9HamI3ZkZtdTBySWhnN190WHp1dEl4Zk9uRXhPUkd3RWVNelByNHdseVVXNDdRYmhadTZDQWU0dmZTSG42cWNmbWh6YXBTSVdfMlNjUnZ4MEVMcm1DeVFCU04?oc=5",
+      "published": "2026-10-29T07:34:39+00:00"
+    },
+    {
+      "title": "퀄컴 최신 AP '성능 부진' 평가 잇달아, 삼성전자 갤럭시S27 울트라에도 자체 AP 엑시노스 탑재하나",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1XRy0zZmxRamw0QkxUY3UwUnlDTEZuUnk3a0N6RWN2R3hzN2Q2T01JWmhReXh6SjV0eEg3RzlfRGRjeU1zczFsVzQzdWpsSDd4UjkyM1h4N3REN0l5RVJHSVhjWWgyclVseWh2RXprdHVHV2M?oc=5",
+      "published": "2026-10-29T07:05:42+00:00"
+    },
+    {
+      "title": "우리은행 “실물카드·환전·앱 설치 없이 해외 결제”…갤럭시폰으로 글로벌 결제시장 공략",
+      "source": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEQTFUX0RWV001LTBfRHViQ1NXamsyY0FCU2tVLVNQQnJkZVNXWHVWN0FpcFQyXzVHWWl2Sy1DM3hRZm1wa3dVNlZVR1RjVDU2c1VpUGNB?oc=5",
+      "published": "2026-10-29T06:44:00+00:00"
+    },
+    {
+      "title": "[삼성전자 3분기 실적] MX, 폴더블로 적자폭 축소…연말 성수기 수익성 방어 '총력'",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBhZmJrdm9uYlBNNm1zRnJ3VUY5Ukc4b0VNOEJMaUlzNTIzUkw0SGMtc3V6c0Vwd2U1TVdRam1ITjFNZWRZRTViSkpXVG5yQQ?oc=5",
+      "published": "2026-10-29T05:59:48+00:00"
+    },
+    {
+      "title": "이어폰에 말하면 AI가 응답…갤럭시 버즈 온, 미국 출시 확대",
+      "source": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBlSTREMFYzMjNkaHRwNjlGZ0V4bjM3SVRISXN1TVRpRzZxUmZjOUxmMGNxN3VRVE4xZ3Z3czU4RmJnN0JvNFlMNFVB?oc=5",
+      "published": "2026-10-29T02:44:50+00:00"
+    },
+    {
+      "title": "삼성은 갤럭시 Z 폴드9 라인업을 확장할 수도 있다.",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE45b3lOdl9BemJxaGdTUUNTQlRNVXlWZWI3NnNaNVlxV3RTWkN1SkVLVUozLUVxOFp4NUM3ajJidWJkM09SMXdyNGIxU1dXM3RiN2FfY2FXalZET2F6UmtiYkJhVUlIaVZjTFRKZy1Nc3VWYTA5c3NZ?oc=5",
+      "published": "2026-10-29T02:34:45+00:00"
+    },
+    {
+      "title": "'노카드·노캐시·노앱' 갤럭시폰만 들고 이틀… 정진완 우리은행장이 직접 써본 삼성월렛 머니, 300만 찍고 해외로",
+      "source": "녹색경제신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sOEJQVmw1YzROMDRyVG1UeXdFMjNURElCZDV0UjdFQmpRNnJfTFp6RlB4VDlVb2laYXNDT1NIWEtDSHh1ajFqY3h5b0IwWmtPMUEtcTRRanBOY0tSUEY0YTUtbHR5Skhu?oc=5",
+      "published": "2026-10-29T02:22:11+00:00"
+    },
+    {
+      "title": "[컨콜] 삼성전자 \"갤럭시 Z 폴드8 효과에 매출 성장\"…프리미엄 전략 강화",
+      "source": "www.ebn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BSVIyLUQ2alZBUTZjMHB1ZWtMeEQyZjFDTE5FWFg1czB3bXVvMDRpUnlMeW5qMUlSdm5kWFhScER5RFh6TFU1RG00VFB5bUlxcDVSbTZoS2xjVEUzLXdmZS1VeVVreFVo?oc=5",
+      "published": "2026-10-29T01:48:43+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시Z폴드8 흥행에도 3분기 적자 전환",
+      "source": "https://www.2news.co.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1PVHdVUnJSdGZ5ZHlCVzNKTDlpd1F1aWR1M3hZaVRzOTZENGgwSWVWa2doZTlubTlFME9zSy1BZFhlRGdWYkhudG5mRE01UGJzWWhEd2N0Y2JFRXFVbTNzMzRCeEt4amJh?oc=5",
+      "published": "2026-10-29T01:46:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 버즈 온, 11월 초 미국 출시 확정…가격은 229달러",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE93RGs5UDh6RlFuWWx3UUNGX0hVbnFZSndoY01wdUhIN08xX0s0bWFDREdXelE0bjhKR3hLTUhQaEQ3U3ZuOERNUQ?oc=5",
+      "published": "2026-10-29T00:48:26+00:00"
+    },
+    {
+      "title": "삼성 최신 보급형 '갤럭시 A08' 인도 상륙…가격 26만원",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBtbjlhcjBIbXdmc0lyLU9jNEp1N0UtU0Y2OHJKbWw4cnRmSlpMaEVENUxrbHBfT2NXZGJ3SEhKNkhURDI3dnlTaA?oc=5",
+      "published": "2026-10-29T00:27:45+00:00"
+    },
+    {
+      "title": "\"극적역전승 뒤에 갤럭시\" '룰라의 군대' 유세 적중 [여의도 Pick!]",
+      "source": "MTN 머니투데이방송",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1JZXhRanVyNHRTZ3NTTnZ1ZmxoZHZsSUZzVFdkbXpHOTV4Tjg0XzliakRNekVzeWp4aXJqbTYtOWVQSXh3X0ZIemhHdGJOb2U0ZlAwZ2RnWXBwdTg2SUU0?oc=5",
+      "published": "2026-10-29T00:17:33+00:00"
+    },
+    {
+      "title": "\"극적역전승 뒤에 갤럭시\" '룰라의 군대' 유세 적중 [여의도 Pick!]",
+      "source": "MTN 머니투데이방송",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43ZlVJM3NhNnBUSXVNbFp2TFMzSVpuUnRVUTZqam1PVG5wQzQzX1R4a2tMUHFnQy1XV2ZqTHNVdHBoalJpcHoxSDN5ekNndnpyR2pESkxfREp6Q01a?oc=5",
+      "published": "2026-10-29T00:17:33+00:00"
+    },
+    {
+      "title": "삼성, 갤럭시 A54 베타 종료…원 UI 9.0 정식 업데이트 배포 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE93ZDhKZkV6NE85ZWczTENmajJRYkgySzQyR3M2ZXVuM2lvRGNuRGtyU1g2bjQ1LXE1RHRrNEhlTDBOWW5HaXJNcQ?oc=5",
+      "published": "2026-10-28T23:59:58+00:00"
+    },
+    {
+      "title": "“갤럭시 워치·링 수면 무호흡 기능 고도화”..삼성전자, 식약처 허가 획득 의미는?",
+      "source": "데일리카",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5NZXl6UnhvekN0QktTNFY3a2Uxc2FYMjVNa2p5R1R0eS03bXR5NFJkdGl6YmEtMUZGM1FsR1FsMnY4bEdLYTVMdHRDa0dkLWU3SXZIRDhSanZTYzNkVTJ6b3JJVnRsNHV3NFU4M01IZFFLQkljbnc?oc=5",
+      "published": "2026-10-28T23:53:38+00:00"
+    },
+    {
+      "title": "비트코인(BTC) 약세장 종료?...갤럭시 \"12만 5,000달러 되찾을 여건 유리\"",
+      "source": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE43czdWTWNHNlY5MW9YWmRrVVdCcmcyakVzUFgtT3gyMGM5V3g1OFVXcFlRektnNW9waUNUMS1pYTJTaFhCVG5GT0tn?oc=5",
+      "published": "2026-10-28T22:00:00+00:00"
+    },
+    {
+      "title": "“앱등이 꺼드럭의 업보”…금 간 아이폰에 애플-삼성 팬덤 갈등",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSzdta2FQS1NxdFR2dTRNZG1HQS1vZ0laZURuN1hWMUVoWmlMU1RMb0NxLWpKU0VCOVJ0Zk1yMTVsdkJEQjZ1dy05VkR1Y1ZUNEVDWWhn?oc=5",
+      "published": "2026-10-28T20:00:00+00:00"
+    },
+    {
+      "title": "[현장+] 갤럭시코퍼레이션, 로봇은 춤췄지만 '엔터테크' 경쟁력은?",
+      "source": "뉴스후플러스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5rZk9Oc2lodlNfSVYyNHdMNERkUjdIc1licUd1ZGp4Y3EybkZZNWVUd0NxVjJVbXJla2lmbDAzZnRTbG9tMDlQOVhMazNmVGxMNnJuWTY4WTRFMVRTYnI0U1JoeG5mQlBmVWd2SUpn?oc=5",
+      "published": "2026-10-28T20:00:00+00:00"
+    },
+    {
+      "title": "‘SNS로 역전’ 룰라의 첫 폰은 갤럭시",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00T3JpRlhVdXNyVGRteFFqWnFyWklFdG9jNTNaOHRkVS1LYTE0QzNPTUJGTmhqdTFNOUR4eVhnQk5UWTljVFVFOTJWdm93S0RYUEtQLUdrMzhXWVA0d25HNGNmaTlPaUdkMHVycS1QQQ?oc=5",
+      "published": "2026-10-28T15:09:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 ‘게임 하드캐리’ 광고하고 성능은 3분의1로 묶었다…과징금 201억",
+      "source": "뉴스필드",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQQmdhTzh3MEY3VnRFeGUwaFpVbXNZejZGd3FNT3lDeHNrZVBzTVJVd2UzdUtiVXBSdFNPRS1QdUZYd2c1T1pNODk0NTR0T1YxTkYwd1R3YTJnSmFnZTNiU2xaanMzNnc1YmRGMVg2NVF0LWdZVE5FMUQ0T3NvMnBsa2U2LWotMkhyRUgtUkJEMmpNUXNJZEg2SXJrYndOaHVvRkJwYk5pSlhVSTlPNFdnZ2tscWpfUmo3Ymd4cGpnaVVzbThhMjlTZDVROENSMFUtM0xIcXNmdE1WNTdYdkI2QlJydmpWWUZJVXhTMWo4czFPVmZFVW1OX3BZNld3bU1sS0JMN0hTQ1NLclhlU2tKRUVwaHpQQnNkaXBhUEJlallZbHJ0UEdtcmIzNS1OVThDaGFOeQ?oc=5",
+      "published": "2026-10-28T13:34:53+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 찐팬' K팝 아티스트 리센느와 '갤럭시 Z 폴드8' 신규 캠페인 전개",
+      "source": "일간대한뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkWVpncElSZFZRVHBKcDBfdDdIRnhFLVBjVUdpazdqZ09BaUdDRmpCcXVyMm9naEZMM1NZWThZSU1SVExJekZzenZXN0MxaU43T0xlV3NTZFEwRnJsZG1PcGdnRVFCVEE?oc=5",
+      "published": "2026-10-28T11:47:21+00:00"
+    },
+    {
+      "title": "우리銀·삼성전자, 갤럭시폰으로 전 세계 결제시장 석권한다 外",
+      "source": "리얼캐스트",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Vb1VLWmR5RGx1YWpMUktTMUVIM1JRN0VMVVFvVmxrSm5STF9wV2xRUkJtY3pwYXFpS2tZZ3FGaFhyT0FzNXMtUmFoZFMzR2JLcDRjQ3UwekJkbzY1ZVFYRnFlMm83aEZa?oc=5",
+      "published": "2026-10-28T10:41:35+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 호흡 분석 기능 국내 허가",
+      "source": "데이터솜",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE90RkgxMUhvNEpFeWE2VXNleFZpZ2dZRERWTnJYQlhPbHBpbzlCVTZ0UHpBMlJPaXJ2VmZveVFnci1Ba2ZYZzZjUGRCU3BQUlRDYzBvZWpGQlhCa2FxdmtCU21SQ1JpY3lTYThlMzRlQ0bSAXBBVV95cUxPdEZIMTFIbzRKRXlhNlVzZXhWaWdnWUREVk5yWEJYT2xwaW85QlU2dFB6QTJST2lydlZmb3lRZ3ItQWtmWGc2Y1BkQlNwUFJUQ2Mwb2VqRkJYQmthcXZrQlNtUkNSaWN5U2E4ZTM0ZUNG?oc=5",
+      "published": "2026-10-28T09:52:18+00:00"
+    },
+    {
+      "title": "[기업] 갤럭시 워치로 수면 모호흡 분석...\"식약처 허가\"",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NTUpqNkQteG5nazdaRy1MdG9WZGs3ZjJOUGlUa2FodlBDQVI2YnozekZaZDg2X0J5LWNxVlI3bXhTVV8xbk9SQWNiV0lCRXBLZ1I1dklZcTNWWHhLUmc?oc=5",
+      "published": "2026-10-28T09:17:00+00:00"
+    },
+    {
+      "title": "갤럭시폰으로 210개국 결제…우리銀·삼성 '맞손'",
+      "source": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GVWZ5eWExdXJvUE5kYklJOHU2VzdsdUNUdmQ2VU1xcnJwX2V0YTcxUlRXQUFKaURFNllPVFM3VmthUWNTLVUxc2JJSEhUZzByY1hFUjV5MzM0V3FzQWt6QVc1ZEg?oc=5",
+      "published": "2026-10-28T09:01:39+00:00"
+    },
+    {
+      "title": "갤럭시Z 폴드8 와이드 반응 좋았나…삼성, 후속 모델 2종 검토 중",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9BRHhIaGR2bS05S1FsSFIxOWNJY0l5ZXE0MDIteWRxdEhaRG81MjJneDNmMEdRUUhIek9RVk0tQktNQ3p6R1FNNA?oc=5",
+      "published": "2026-10-28T08:47:38+00:00"
+    },
+    {
+      "title": "Z 폴드9 두 종류 나온다? 프리미엄 & 저가형 모두 검토중",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tTzBsdndOMDhZdzFPZGFkWGRVWERTc2hqQXNXc3FIRmJ5b1AtbWF3WUdSWjFuQ1g1amhCU2hTQlRIVkVQWGpuTy1MNDJpZzAtUmdnSXFEV3lWbWpvSTFlSmdmNHE?oc=5",
+      "published": "2026-10-28T08:42:01+00:00"
+    },
+    {
+      "title": "갤럭시 하나로 세계 어디서나 결제",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWV1hWam91WWp6a2J0WmpHaHVSM1hSbTdJYzVYZlRZN2VHZ09oTWh1dE5MVFdBeTk2OVNMd1ZRRWpIbUJMM056RmdHOFduaDMycFFrckFpb2tidXpSLTNQMVd6WWxtTFRR?oc=5",
+      "published": "2026-10-28T08:36:35+00:00"
+    },
+    {
+      "title": "삼성 '갤럭시 A17' One UI 9.0 글로벌 배포 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE82LVBQWGkxakxtVFVuREoxYkJnc2dnSV9ZWXNSa250ZERlWTBMVXdzNkI4XzNEdDR3MlZ6aGtpbWJ3ZkNwSnNtZw?oc=5",
+      "published": "2026-10-28T08:21:39+00:00"
+    },
+    {
+      "title": "우리銀·삼성전자, 갤럭시폰으로 세계 결제시장 석권 노린다",
+      "source": "재외동포신문",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CVTNDUXJ4TGRJcVpnVmxubXlnSHRVWWtza0wweG1ad2lWSU44azdXNDJBX2dLUmY5WUprVmxjR2xpbi1xUkMtRm1MYWJBX3hFVG9aeWpsVzZMckdGZFdiZXR1eVFGSTJ5RF9JMQ?oc=5",
+      "published": "2026-10-28T08:18:18+00:00"
+    },
+    {
+      "title": "우리은행·삼성전자, 갤럭시폰으로 전 세계 결제시장 확장 나서",
+      "source": "시사뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5QekdrUXBWYzUtbWMwdVY4Z1ByN1VWRThLdHV5bkhsdXM4UVVMTzNHaHE5dXdtd1BlTzBXMWl3U0pIRzAxMjNybzhNanpHS1BoekkxdlRoQWJ0ODBSYUVNUDRScw?oc=5",
+      "published": "2026-10-28T08:07:41+00:00"
+    },
+    {
+      "title": "[뉴스락 현장] 결제는 갤럭시로, 고객은 우리은행으로… 정진완의 '삼성월렛' 승부수",
+      "source": "뉴스락",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1VXzd5RW1MTk83Skhid0pqOEcwcEV5RGVWYWpCYllFMnYxYUF0dVJVU3Z1Mng1YTZPdkp5OEVTSWk4UVdYWEY3M2Z5WlJmdkQ1aWpRRUtOdXh2ZlFLZXB6SHUzSFgwXzBLSFNvYw?oc=5",
+      "published": "2026-10-28T08:03:24+00:00"
+    },
+    {
+      "title": "\"위챗페이 안 깔아도 된다\"… 갤럭시폰 하나로 중국서 QR 결제",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBnZGNDVHhwOU9aYWF0U3hQcG9YeHhiQXFDbTVfRzJLNTV2WE9rX1pLcmY0eE9XbzlZem9oTG14QjNkXzNYQ0NnRDdGTVNtT2J3TlotQjAzSkk5OGV4cWl3SEtvQktxeVhYX3FKMkh30gFzQVVfeXFMTWpjMkp3SkhsU1A3R0NvMm9pakhqNFY5ZXpPX2ZCQjdCSjJxMWNWOXl4cV9sVkJBamVHMllKbTU3Y3I3OVlSTnotMXYxWlY3VVQ1aHlTT2EwdEJhUnVMeVhDOGp4R1RPZFRpYkNqUDZVSTMzcw?oc=5",
+      "published": "2026-10-28T07:55:00+00:00"
+    },
+    {
+      "title": "우리은행 “세계 마스터카드 가맹점에서 갤럭시폰으로 결제하세요”",
+      "source": "CNB뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA1RHF5am1CaXdOY3FTMXhzdW9SQUcyc0JWRFhNaHJidks3Nm1nTVUzN25rVWpNVER6bk4ybnN6RDFlWm1ub2JrX2xMVDdHZzZIVGk2YTJ4Q1lJTDQ4aE5OZHpJTkFsellBdldF?oc=5",
+      "published": "2026-10-28T07:54:46+00:00"
+    },
+    {
+      "title": "“갤럭시폰 하나면 끝”…우리은행·삼성, 글로벌 결제시장 공략 맞손",
+      "source": "인사이트코리아",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zU25GNlZlTUY0YWVOMjhjY2pmUnJwVVo2V1ZJeXV3b1R3S0ItTFRJeUcxWmpoNlRfeTFuQWREQ2VBdzB6SlRsVTdtbThNUHRtbE5yWFZzaGl3Qnk5aUFxZEpPWlpKbnV1am9vOG9NeU5KbkXSAXdBVV95cUxQOEIxeTNsN2NOcGRhMTlqNnlVTlBCMTRGVEhJSHItTXZyUWY1dmpITnVmNW9yeWx3UzVMR3otcFNaak5CZG1PaVFzMlUwQ0NvWVQ4dFJISF81dWw3UTZKU1pNcUp0ZlJSenJvLUtQN2dFQUctZDFESQ?oc=5",
+      "published": "2026-10-28T07:54:38+00:00"
+    },
+    {
+      "title": "[Tech 뷰] 리센느, 삼성전자 ‘갤럭시 Z 폴드8’ 알린다",
+      "source": "뷰어스",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lN3lMRWx2Z1pIUVJYOGNnWlVvamRWVnI5aXBoVjN1VEd6Y3kwLU5pYXpNTWp1WkRvRmEyR0h0RUhURGpWa1pwd1JKZW11c1ZqSU5hRnppaXM?oc=5",
+      "published": "2026-10-28T07:46:00+00:00"
+    },
+    {
+      "title": "중장년 여행도 간편하게 ‘갤럭시 하나면 해외 결제 끝’",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IbU1kOG51OFV0dnhmc0ItMzN1M0g3aGdGdHlfdTBFamlQTXNMQzhHT09MMVlmOW1sa2VTdjY2VnVJYUFmeVVjZG9sRWxSdW5WajZhUXBHbW9nUQ?oc=5",
+      "published": "2026-10-28T07:41:00+00:00"
+    },
+    {
+      "title": "[현장] 정진완 우리은행장 \"해외서 갤럭시폰·여권만 있으면 집에 돌아온다\" By EBN",
+      "source": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5MSHFzanpvd2lLMUZQcHpQYml5QkNKYXcwR1JPeFVwX2JBVm13ZldDODlWU05zT1RMeFFKdzhKYzRaUW5GM2VhcFFiZjFrdjhoVER0WnU1WFJBLTFtczFaWkpGUEhrQ0p3VlNWakRkN0Q?oc=5",
+      "published": "2026-10-28T07:37:00+00:00"
+    },
+    {
+      "title": "[현장] 정진완 우리은행장 \"갤럭시폰으로 전 세계 결제\"…보안 '이상 무'",
+      "source": "FETV",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JWmdOSlVQXzZ4VVVTel9yUlBQbXZ0TkFXNEtFdWdKT3Q3YlY2bUFsMUtkS1NBZEhZS01Kd0lXRlBYR2FQMFBSbkE3VDJnVm1oYnlqMi1fNmdhdnhENHk3bk9KbFZVRWxr?oc=5",
+      "published": "2026-10-28T07:22:06+00:00"
+    },
+    {
+      "title": "[현장] 우리은행, 갤럭시폰 타고 국외 시장 노크…\"새 결제 경험 구현\"",
+      "source": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMd0c5OVRiZDVaaWw0dFRJZ0gwVzlQd1IxeHFYcXRzWFY0SkpDN0ZjV1JZYjloYThYSFFJcm1DVVlIQjBERlVtb2NZZktPNVotbW1GQzNaZmVrUnY5eFE?oc=5",
+      "published": "2026-10-28T07:10:00+00:00"
+    },
+    {
+      "title": "삼성전자 '갤럭시 성능 제한' 숨겼다 … 과징금 201억원",
+      "source": "세이프타임즈",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9GVlV4UncxcEJQRGVGWnZFb3JPeGIwcHQ0Z0RHa1c2RDV3UEZiUXRCQVJkVllQV1E2VHJEYmllSWM5RG45bzBPV3Zzb2ozWUJvX0dKM2ItOEZGS2psakhrTXNsYXJfcU12b0V5MF92QdIBc0FVX3lxTE4taVJseHpnR1FqNS16QVNhRUE4bFJTMy1CcDZoSUVfVHlUV1otaS1Day0tSEZ1N1VfaTFzMWNZT2ltQnctbm9HUFNzeEpOa0tjZ3A4T0xHcGRKLWZTUXR0N1pYakpDQXV5U052cnA4aGZwUmc?oc=5",
+      "published": "2026-10-28T07:02:56+00:00"
+    },
+    {
+      "title": "삼성, '갤럭시Z 폴드7·플립7' 국내 모델 대상 신규 업데이트 출시",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE01QWRZNVcwVWg3emR3RldLYXdhZmlBRmNxejF2bmhXb0YzM3VHSHhLZC1CUFd0N2NodkhFTzRvTHlXTWU1UHloZg?oc=5",
+      "published": "2026-10-28T06:56:07+00:00"
+    },
+    {
+      "title": "우리은행·삼성전자, 갤럭시폰으로 해외 결제시장 공략",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBRemtBMnlTRzI2UXBHRG1JRkwtS19Oa0paMnJEQXZXdlV2MjZzN0I5eEFPeFpOemQ5a0k1NklxQmtYc2FrbVhzODBMd1ZJRjF1OC1NVUpkSGhCYmlza2J3UnNzTzdORWhENXVr?oc=5",
+      "published": "2026-10-28T06:53:26+00:00"
+    },
+    {
+      "title": "정진완 우리은행장 \"갤럭시 폰으로 중국서 보안 걱정 없이 결제하세요\"",
+      "source": "데일리브리프",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1wZlZRTVBxTnlCUjBrb2VNUElWaGt0cEpxeUpORWpQbkYxZHJraG0xTFlPQjVRZ3hIdVl1eW5qTlRRNG0zNnRJZ3Nkd2Y3ejZ3MkZCZi1lMkoyUEtuSllkS1czS3VGNnBxdUllWWxR?oc=5",
+      "published": "2026-10-28T06:53:07+00:00"
+    },
+    {
+      "title": "\"그립감 좋다\" 한 마디에 대박 난 아이돌…결국 광고 따냈다",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tWktyejBKNXIxNlhTMHh2aEhKcTZQMlRWWmluZFNlWElWaFZlcnFkLVpSejVaeXpoWWZpRTNXOTVOUTkxMG5oT1N6SkRfZkJQWlJkOTVoUHQ1UQ?oc=5",
+      "published": "2026-10-28T06:51:56+00:00"
+    },
+    {
+      "title": "삼성전자 '갤럭시 워치' 수면 무호흡 기능, 미국 FDA이어 식약처 허가",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUFR3M0llVUU0SENKOXZveHo4NlVqYWpqdGdNdFJKcDhsYXVKSW05TWtwWjBEV0dCRlRYV2dGWWFfQWxCc2x2UzdQZjRRUHQ5TU1jbHBfdEdfanA0NEZDRHJPRnA3WXhvSWNNU3lmb3U?oc=5",
+      "published": "2026-10-28T06:41:10+00:00"
+    },
+    {
+      "title": "삼성전자, 리센느 통해 ‘갤럭시 Z 폴드8’ 사용 경험 알린다",
+      "source": "매일일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xU2szbWZEeUZHcDE4MndRYk9CX3dqU05iOHF3OE9Zdll1cnB1TWVlOE5EeVFaa09oOFZuZXdRbzNhaWZMSl9QcGZidFRPajF5SGRZa2pWanVmbU16c21YOGNRSWc?oc=5",
+      "published": "2026-10-28T06:35:07+00:00"
+    },
+    {
+      "title": "우리은행, 삼성전자 갤럭시폰 하나로 전 세계 간편결제 현실화…텐센트·마스터카드 제휴로 210개국 활용 가능",
+      "source": "대한경제",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0wOGhJWC1ueVZmZXE5c0VKNTZsbUhvUEV2ZUZUamZkT0dseFRMV2JLYmtZTmVnb3lKSlVlRmE5QUdqd1RVdDljSEQxUkd6M1hrNlNiLWJrclE3aEQtWWVCUlFWM0FndEstMFNuYkl5YzVPMzBD?oc=5",
+      "published": "2026-10-28T06:33:11+00:00"
+    },
+    {
+      "title": "정진완 우리은행장 \"갤럭시폰 하나로 전 세계 결제…카드 없는 시대 앞당길 것\"",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvSDF6ZWJER1ljZmozQ1VTYUQwVHFvcUJPZVk4WjhFd0lsNlpRZTZIVkg5R1JLQ3E3NklPcnM3Z1ZoZGQtcDRfZjhUQmVVYzlIN181RnVjUi1jVmRl?oc=5",
+      "published": "2026-10-28T06:31:00+00:00"
+    },
+    {
+      "title": "\"환전·카드·현지 결제앱 없이 갤럭시 하나로\" … 우리은행·삼성, 글로벌 결제시장 공략",
+      "source": "뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOXo0bGdVVFRfM012ZnJvbkh3UE9aS3p5S3R0ZW5UOWdEZTg0TjZTQzgzN1ExMWdsQkdmNDFBODgzWGpwbHk0MWluZXpYdWU3MG1KVzNaU1pzX25Tek5yWlZCT3hlaGZ2OHBPR0ZMMVBLQjZkYnA1N2lsaF9EU2JjdtIBgAFBVV95cUxNOXo0bGdVVFRfM012ZnJvbkh3UE9aS3p5S3R0ZW5UOWdEZTg0TjZTQzgzN1ExMWdsQkdmNDFBODgzWGpwbHk0MWluZXpYdWU3MG1KVzNaU1pzX25Tek5yWlZCT3hlaGZ2OHBPR0ZMMVBLQjZkYnA1N2lsaF9EU2Jjdg?oc=5",
+      "published": "2026-10-28T06:28:00+00:00"
+    },
+    {
+      "title": "우리은행·삼성전자, 갤럭시폰 하나로 210개국 결제…글로벌 결제시장 공략",
+      "source": "더글로벌기빙뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aTWF0Y01ZQ0JPRGZFLWdTeTVvNW9BeWl1Vm1hTVphdlJoTzN0NU1TTm9VeWtIR00zQXpOeC14b2tRS0NmZTl3aWtPandkTThZcVQ1Qw?oc=5",
+      "published": "2026-10-28T06:24:00+00:00"
+    },
+    {
+      "title": "갤럭시워치 ‘수면 무호흡’ 분석 기능, 美FDA 이어 식약처 허가",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1tamtmOU9mWmNKMENnTjRERV91Q292TnR0cHVBdGJHbDF3Yko2MWZpZzBFX2QtTFExTUxfSzYxX1h5TXZOZndzbEc3ZEpNaDh0b2sxNnlJRXpKWlpQcFJINDFGNzBadURjRElvelRSTnNiZHN3c0HSAWZBVV95cUxOeEtTbUR3MXVSblpaZ1JBSHI5aDdnbXZHa3NpZzNKY29mdXlUbkF6MGJkWVlkSzNYU2RSUm5MZnlFaUEzSm9TVUV5NUppRGNfRXBuSksxaW1nd3dfZE9USW9lUGtmc3c?oc=5",
+      "published": "2026-10-28T06:19:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 무호흡 기능 고도화…FDA이어 식약처 허가 획득",
+      "source": "MEDI:GATE NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80TFlEaTQ1Wnl3blN5MG1XSEI4MVhvQWgzeGdUVnlPME1MaXZrNGVYSFNMY3Awal9xRW9hejBqV0V3NWl1YjBoZ2dKaktyYXNNUEVkSEpPMA?oc=5",
+      "published": "2026-10-28T06:14:00+00:00"
+    },
+    {
+      "title": "삼성전자, 수면 무호흡 기능 국내 허가… 11월부터 갤럭시 워치·링에 적용",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZkRxU3h1UWdlazhXQVFWY3Y1RjZOTk1FUThBQ1lJNVZoZTEycW82Z3g3Z2QzMUpIWEZGeUFJbmVqM0ZuQzVEdHQ2MVhxOXQ3VVRzbjhTV0NfZUNsVVVPUjB2bjdMVU5TR3dNY29jclJ2Q2YzSGpQRzJEMVkxc25fajJ30gGWAUFVX3lxTE1fTkhVS2hsczNFMk1MRmdFd3RiOEhrbmZiLXZxRlpCSHgtWUs5V1dubEExdFl5bHRSS21xdDhXT1hRUTkzdFU3ZW1mbjNFSXBjVVVQbGczY3MtWi01c3NQbEtXcmdkb251MUNTaFRmR1lqaHcwQzVUTmRCSHowVDQyVVBiNzl0cllvby0tQTNydHRDM3BPQQ?oc=5",
+      "published": "2026-10-28T06:12:00+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 워치, AI로 수면 중 호흡 장애 수준 분석",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1fUEdfeXNqVFI1OTUzeVNDQXc4RENQaFFkZzk2ZG9QOVRmRkQ1ZWpMN1FQdWJWZTdqSEJSVXpNSzhkeU14NTZxTlZRWXJISEhjYlFlWG9TcS1OY1A3bENxNjBuWExSNG8?oc=5",
+      "published": "2026-10-28T06:08:00+00:00"
+    },
+    {
+      "title": "우리은행·삼성전자, 갤럭시폰으로 전 세계 결제 시스템 가동",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNXpubnhrLUtZcUJxNzVIMU5nbDFZRzBpVkRDNUdWWkw5Vl9haWd3SmY5YzM2c2M1cmhOX0MydUFiM3FvX2tfOXUwbWVkWlZBcF83bWM3OVFpTEFqV2llSVlfTk9BNmFuZGVSSnpvSElURkxUc2FOQUx3ZFp5ekVlU0hDT3JfSFFraEdkeDRB?oc=5",
+      "published": "2026-10-28T06:05:56+00:00"
+    },
+    {
+      "title": "우리은행·삼성전자, 갤럭시폰 하나로 전 세계 결제시장 공략 나선다",
+      "source": "데일리e뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0Q01TWGtCUkRwS0laRmxJRnE0MlJHc2lCVGRiYnZsZHdHdzZjN1ZqNW02QW5EWGZYMW9UU3hWUzZPTHZ4OEtHb2VFOWVmaFFoaGo0RjdGdFY1TUpQODRBckRCdGdFbVVVTzlHVjQtUQ?oc=5",
+      "published": "2026-10-28T06:00:00+00:00"
+    },
+    {
+      "title": "\"갤럭시폰만 있으면 해외 어디서나 간편결제\"…우리은행, 삼성월렛 머니로 결제 혁신",
+      "source": "파이낸셜신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5VdmE5d01IMUpqTWtGcnpJREhjMkI2aE1Ybl8tTHhhMVg0bW0yV012UU90LWJHV0lVdTE1bTB1WWwzb29qUFBkX2I0X3I4VHFKWmJBanVUNXk4YzQ0TmllbTNqOExHOGJ2OFFB?oc=5",
+      "published": "2026-10-28T06:00:00+00:00"
+    },
+    {
+      "title": "공정위 “삼성, 갤럭시 게임 성능 제한 숨겼다” 201억 과징금...삼성 “법적대응”",
+      "source": "미주중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42dWVBNVd4aGJWRFZ1TExQRjV4SUd2M2xhQ2hTdng1ZUI0VEN0bFE3RWx4cnhha0xTRXZVbHhsSzd4cUYyakVaXzQ4a1NocFF0MUJkS2pEbGVLemRydXRDWVpB?oc=5",
+      "published": "2026-10-28T05:35:00+00:00"
+    },
+    {
+      "title": "“푹 잤는데 왜 피곤하지”…갤럭시, 수면 중 호흡장애 감지한다",
+      "source": "조세일보",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIVlNMTjhyWFBlc1hIUUlXbXBTZGdEUDdDbl9xQXJEdFA5VlFnNEctVkk1dFdaZ0xnRmlKNUR6NFgtSFVjdkNWS0pmLURoTTdqLVZ3WnppcUM3WXZnZXlV?oc=5",
+      "published": "2026-10-28T05:13:04+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 무호흡 기능 고도화",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1oU2NpVUxqYkVUYkQwdGMyTzk3alhmOWdtZGx2WnJ2U2l4Qzg1MzZUcUVCZXE5RTg5ODhNaXVtZm01Yk5JOVlHdUxnd2tZemFXMnQ5cDgtaEFLNDBVNDlqbFEwbVNYeDUzOTNN?oc=5",
+      "published": "2026-10-28T04:30:08+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 Z 폴드8 ‘찐팬 마케팅’…리센느와 1020 여성 공략",
+      "source": "나눔경제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBaTG1tTnliWmJmVTB2NGFXOEVrQm5TM19GNFpkU2oyVGFzWFF3MHJVaFlzc3NqbTd3QXZXaE9pU2xjcDdGUUlVRTdiTktqVnE4NnJmT2NndXJCOHVBTW9PeFMxVXJOY3l4MW00Rw?oc=5",
+      "published": "2026-10-28T04:24:28+00:00"
+    },
+    {
+      "title": "갤럭시 링까지 수면 무호흡 분석…호흡 장애 빈도도 확인",
+      "source": "매일일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LMXNkX0ZwYnJEODJLa0dNUS1RblhhSXpyYm1ZSUJ6dDJDaTM5dEM3VmZTQjYzREFtN1N6Q2U4YWFhcXZUVFNLTU9ZY0Z4OHFQY2FHbjVvMGNGbHdNUWJxaGFBcW4?oc=5",
+      "published": "2026-10-28T04:14:57+00:00"
+    },
+    {
+      "title": "갤럭시 워치, AI로 수면 중 호흡 장애 분석…3단계로 세분화",
+      "source": "아이티데일리",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sV0pWVTIxRGFTcU9vZW5JdG5iN0FYaWJ6aDR6N1JLMXJPbHNMd25IeFZOYlozMWRhZVZZN3BUbGlseEhxUWFBSkx5Vk14X3RHMVcwd2tuNUVHVlRucUdDd0Nfa2tJamZ4?oc=5",
+      "published": "2026-10-28T03:12:58+00:00"
+    },
+    {
+      "title": "갤럭시워치 ‘수면 무호흡 분석’ 정교해진다",
+      "source": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB5eTBCaUFFRDJkTDBfTlRmOGJSQ1ZMc2I0emVqdEYyWk5tZTUzLUNJWm5JN01hdDBxSGVla3lTSjBOYlhMN0E4cWtuV0llNXFS?oc=5",
+      "published": "2026-10-28T02:50:01+00:00"
+    },
+    {
+      "title": "삼성전자, 걸그룹 리센느와 '갤럭시 Z 폴드8' 브랜드 캠페인",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBicjdvbzdqeFBnQkxXMkJSbkZUWF9GNFh5eVZQUk9pV3BnY3p6VEU1VnlvUndwSXdlbGU0YVZ0ZHh5R2xzb2ZkVWdfSDRURkhfRmFEejVEMllqQXQxV2pRSmtZMGVQRldMNDhMNzMzRVFCaGc?oc=5",
+      "published": "2026-10-28T02:07:28+00:00"
+    },
+    {
+      "title": "갤럭시 워치, 수면 중 호흡 장애 3단계 분석",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JVUxVV1p2bnpLdXVIbFF2OEtDWUV1NUFOcDBTZ1AxZHZqOFExNUo0aUU5dTFqd25nTHZOMzgtMWlQM0p3djlzRGotOU9OVEhQbWJPUnhjWEZMRXJ1T2EyOU9GTm5ZMmhrODBJLXpFa1rSAXRBVV95cUxPTHp0UV9UYzg4R2JIYjhMcUFVYU9QdHB5T2tuYXktOTF1Rk9PSlhfWHF5eG9EVnQxQzZWYmc0Z09VOWYtYllDN3RHWkJwdFVpZXc4eDFuZ1RWc09fUk54SXRyRzRSdFY0SjJWRi0tV3hObUhuVw?oc=5",
+      "published": "2026-10-28T02:04:36+00:00"
+    },
+    {
+      "title": "혁신 아이콘 '삼성 폴드8 x 모델 리센느' 성사...대세 만남에 팬들 '화색'",
+      "source": "반론보도닷컴",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5PX2pIQXFIM3R5QnFjSkdvcl83aUJmamlFREI1bG9uUE5rSXZ3NWhYYW9hVTVxRlVfNV9uNmYtTVZwdG9SUno0TUhRTmhXaHo3VnR3U1hYNFBZRlFwTzk4YkV3QjBST1Zqd2tzREViV0_SAXBBVV95cUxOT19qSEFxSDN0eUJxY0pHb3JfN2lCZmppRURCNWxvblBOa0l2dzVoWGFvYVU1cUZVXzVfbjZmLU1WcHRvUlJ6NE1IUU5oV2h6N1Z0d1NYWDRQWUZRcE85OGJFd0IwUk9Wandrc0RFYldP?oc=5",
+      "published": "2026-10-28T02:04:34+00:00"
+    },
+    {
+      "title": "차세대 '갤럭시S27 울트라' 케이스 벌써 아마존 등장…디자인 바뀔까",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5rbVE5NktSVWNTRlJ6QmxEdG5tSVRJdVlYOEdnLVo4NDJsc2w1cnJxR0F6VEoycVgtOWdkYldkOFhhRVYzX1VXaQ?oc=5",
+      "published": "2026-10-28T01:58:54+00:00"
+    },
+    {
+      "title": "삼성전자, '리센느'와 갤럭시 Z 폴드8 캠페인…1020 여성 마케팅 강화",
+      "source": "파이낸셜신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BZU9aU25fLTBNQXgzaUVPWVFJVzkzWHJUTkpiSTNjWjVmeXJQSmN5WXRoMjBUXzcwOEdaOXp3eHRPNTluNHEtdC1IeU1uc0xyNXRCaGFJRGFObDhIVkd0OGFqcE9iQWZIcV9v?oc=5",
+      "published": "2026-10-28T01:46:26+00:00"
+    },
+    {
+      "title": "\"잠든 사이 AI 분석\"…갤럭시워치 수면케어 고도화",
+      "source": "경제타임스",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE53azBlaXV1WVQ4RUQ2SzNqYlJBS2JyX0pRMG5nMlpqOXJYS1cwaV96ZW9oQ0I1Zkp0Qjl4bnVqRzBSUXV5emNGM1g1V1I4YnIwajhfRWdHdG4?oc=5",
+      "published": "2026-10-28T01:43:46+00:00"
+    },
+    {
+      "title": "첫 개인폰 갤럭시S26 룰라 대통령, 이재명처럼 'SNS 소통' 강화한다고",
+      "source": "이코노미스트",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84VUNPS0s4Z2Q4aERPVHNjU3FuV3BzYVdOeFpBMnZVUFg5eC1lNHd3TWF3U1ZLRGxkNFVXRlhsMU9qdlJTMldkR2NzMEZXVm95cXkySVpSSFV2R0JkdkluSHZR?oc=5",
+      "published": "2026-10-28T01:39:00+00:00"
+    },
+    {
+      "title": "삼성, 보급형 '갤럭시 M17·F17' One UI 9.0 배포…인도서 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9XNFdDMGYyX210MUplN0NKSUlSYndoRHdZbDRRTXNGSjQ2dWhfb0JMcmIzSEpLNnhzSW51NFBSUXBUMVBHUG1MTw?oc=5",
+      "published": "2026-10-28T01:33:06+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 무호흡 분석 고도화…식약처 허가 획득",
+      "source": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NQk9BZUdXVTBDTm9NRGVGYXVmSEFvVENVMGxUTTVqWDAzQ1BscHRPSHJiWWNxUzFJM2xNX2RvWDBzQTNONEtSWFJybXhjM0VMWk1yOGN6R0FMSGVEajBsZGhlamQ?oc=5",
+      "published": "2026-10-28T01:26:06+00:00"
+    },
+    {
+      "title": "팬덤 요청에 리센느와 손잡은 삼성전자…‘갤럭시 찐팬’ 마케팅",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hNEpoS19zT1BKMHZOdU9qcVVVNTQ3T191ZDBOY0pFZTFNMktxQ1A4NVh0NVVNa0pfNzZjNDJuQVBiOG5ZYnRfTkxXZFItWnNQNnhSb2lRaU1McEpUWElSVnBpdC1wczk1LUN3?oc=5",
+      "published": "2026-10-28T01:21:07+00:00"
+    },
+    {
+      "title": "대세 걸그룹 리센느, 알고 보니 '갤럭시 찐팬'…삼성 폴드8 얼굴 됐다",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YczJELUEwdHhZaHMxZFJxck5wQjdQVVlRMkpIY0dVMTNQT1pXdnhRZjdHbTFmbWo2T3FzcG1zcXREZ041aXNtZDd0Y3I1Zm83UWV5emNfcGw1dw?oc=5",
+      "published": "2026-10-28T01:08:37+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 무호흡 기능 고도화…식약처 허가 획득",
+      "source": "메트로신문",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBHd2UtV2RPQUNzZU5YZGNoNkpzRjlkOUJYOEpyQkZVN1FNWlJGcmR2SXlxajF5dmJ0ZmtsVW1aTXM1QXMzU1ktNUh4Z240NW4zX2R1OXdwU1V2REM0RUx5Xw?oc=5",
+      "published": "2026-10-28T01:06:13+00:00"
+    },
+    {
+      "title": "삼성, 갤럭시 워치·링 '수면 무호흡' 고도화…호흡 장애 3단계 분석",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0yZlZoT0x4ZWl5Y25haUx1RUdXVVZ3U1pmaWdaNmFKTDFsUm1VT25mbmRVQ0ZMeWVEZUJFcDZPV2RndDdiaUVGN2NXMWduZw?oc=5",
+      "published": "2026-10-28T01:03:28+00:00"
+    },
+    {
+      "title": "삼성전자 '갤럭시 찐팬' 리센느와 Z폴드8 캠페인 … 팬 요청에 화답",
+      "source": "뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBSUHFpcGNaOWlaR19tZDg0MDJXOTRoLWZ0ZXFtV25mbXl1c0hSSW1wOGVnQ3RMenZCcnNERTVQcVlkZWZybVJoVF9SLTlrWnJDUHNhdHhoXzdRRHpXM1FzZ2tiWkJ2Z1dkSmt2RFY0N1lXcEJxd2JKOUpJWdIBgAFBVV95cUxOamh6ZmpXWm5fTWRtZVB0Q1NHQVZZcUJtcGJjXzJpZDZhZHhiQUwzYVByZk5oemhMRlRMYmNycFAtZ1p1ZEhKYTVib052RWlFMmNla0djOXU4WjMxc29TUXptak0yYkY4OG4tYkVteTBvSkQ1M1FCeDd0LWpDSGdNdg?oc=5",
+      "published": "2026-10-28T00:56:00+00:00"
+    },
+    {
+      "title": "갤럭시 '게임 성능 제한' 과징금…삼성전자 \"법적 대응\"",
+      "source": "동행미디어 시대",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1rSHF0NmRsei1BUDFfNF9hUHpMblJVWjVHSnhfYTUxTnl5aVdwaG9GbEppMm93WlpfSFZzY3VERFlCUlBhUVRybkFHcDJFaHdTcTg4YktuX1diaGtMSVE?oc=5",
+      "published": "2026-10-28T00:54:55+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 무호흡 분석 기능 고도화",
+      "source": "폴리뉴스 Polinews",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lUDBNX2dIZ0E1WlgzeE5CbHhxZm5IWW1YMllfSnFBY1VET0dNemlsQk85ZGFIc04yZk81a0JHLVdwWkdMQkE5LTBuT190U21zcDNOYUpBSnBodVctUVJZVExGamlMdl9KY1d2ZzJB?oc=5",
+      "published": "2026-10-28T00:53:20+00:00"
+    },
+    {
+      "title": "삼성전자, 걸그룹 리센느와 '갤럭시Z폴드8' 캠페인",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBUS3AtNk5QcUlVcVlZZWFZbDFMUnJhT256MXM2VTFLRHZPTXljSmhQd3lyYTZacENEUDRERDJIT2tpMVBVeGNvcE8wb3d2UQ?oc=5",
+      "published": "2026-10-28T00:50:41+00:00"
+    },
+    {
+      "title": "팬들이 원한 협업을 캠페인으로…삼성전자, 리센느와 ‘갤럭시Z 폴드8’ 알린다",
+      "source": "아이티데일리",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vM3FjRGU2RFJZVm9vblk1VE9CdUZzQlptVkRkWVc3MV9VWXRLa2xBU3ZlRjZFY1U5bzUyT0U0ODJYUVFKSXR3bXdfUXlXd1NEN1pMTHNnb2RyaG1SLThiSnpiNXgzc1ow?oc=5",
+      "published": "2026-10-28T00:42:34+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 ‘수면 무호흡 분석’ 고도화…11월 국내 적용",
+      "source": "브릿지경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsNFBWZ0tSX2YtMFMtVkdpTHRtVXBLa2RSS1B1WnZqX2J6SHdUWDhwaGpFcXZmRjRjVWNPMW5hemk1SlpES1lKaHVzLWpHSWFSYWpIaFlxQ2Iydw?oc=5",
+      "published": "2026-10-28T00:37:00+00:00"
+    },
+    {
+      "title": "삼성전자, 리센느와 '갤럭시 Z 폴드8' 캠페인",
+      "source": "디일렉",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1EZ2ZjNlpnT2xwUG1neHpHbG9NTFZjOE9BcF82WlV2c3U1MW1pZUR5SUVCLUtMUkwyLXhMLWppQkdiQldUUld1M3NSNjNGOHBzZE5fMi1qajltRDc1Y0NqR2lXR2M3UQ?oc=5",
+      "published": "2026-10-28T00:31:07+00:00"
+    },
+    {
+      "title": "[테크스냅] 삼성전자, 리센느 손잡고 갤럭시 Z 폴드8 알린다",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IWW0tb0VhQmpqbXVOUzM2UHhwSGJBRFAtUWVpbjdHOVI1cm1CMVhmd3ZQdDJvb044WGNaQURvN0xmRS0xTVIzS1l6SzU1eV9Rb0JtSklvdGI5bTjSAWBBVV95cUxNNWI1T3MtRGlldnUyS3YzcnFxZ0theUZqR3g0d1c5VHNBZWFLOWdQX3hObi1sejNUQkFGV1ZWZ2R0a0hJMnRtaUphT2xaeGlVbFE5eHdOQzV5N1hCUlFhcXg?oc=5",
+      "published": "2026-10-28T00:26:16+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 워치, 수면 무호흡 분석 고도화…식약처 허가",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5VS0Z5QWViUi1pZmhqNE8tZ1BqWXJjUmtYd2dETjN2UFlTNERKeXljajYyRE1qYUtsaEJlSFhfNmM2Tko4eE9tZWhEZDhITkJteE9JNGNnMmY0UGw5VThQdzdXTzQ?oc=5",
+      "published": "2026-10-28T00:14:13+00:00"
+    },
+    {
+      "title": "갤럭시디지털 \"비트코인 약세장 6월에 종료…지금이 매집할 때\" |",
+      "source": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Ob0VTdkNoM0VGcHg0T205OVVVTUVFNXR6MDk3YW5ySWFGSUpZeHNOZm8xdmhlaXBHUnBqTTlpS0lFMFJQSXhRWmc3Y2NfdnZLRXFaZU10d2FUMDJQdFZQdG1YTDE0b3V6ZUYzc1lrcFpzdjUy?oc=5",
+      "published": "2026-10-28T00:08:59+00:00"
+    },
+    {
+      "title": "팬들 목소리에 응답한 삼성전자…리센느와 `갤럭시 Z 폴드8` 마케팅 전개",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBjTDB0aGlubVllRW4tVEcxLXhmWGdlLWpUTG81QjlRUmVEN2YxQ2U3M2dmWXFPendURnNiU3FvSFYwVmRDcFJMbGhCUU5wV1Rpc2RxemNqc0hTejZ3cVFFLVhmYTI?oc=5",
+      "published": "2026-10-27T23:58:45+00:00"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 찐팬’ 리센느와 ‘갤럭시 Z 폴드8’ 캠페인",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4xYmwzbjN2OVlJeGZpWWVPZ1ZPTEhHNkV5cFpMTmZMRHM0RkdmYWp1NGFZUmhfU3dCUDRyQ2JBLXVQQzc5di1FSXdEMGlNWFI0azlTcg?oc=5",
+      "published": "2026-10-27T23:47:00+00:00"
+    },
+    {
+      "title": "삼성전자, AI로 수면 중 호흡 장애 3단계 분석…갤럭시 워치·링 식약처 허가 획득",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kNGdpQWlVbmpKYzZUWHFIT1VRQUJXQmZHR2JrMlhZS0pITk5PMk0wbkdXa2NLbHhvcUlhclhBdnRhV0d0ZTNBWjZXeThjWkp2bkVCMXAzZk14dTRRMXhtTjdWZk9oVkE?oc=5",
+      "published": "2026-10-27T23:43:55+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 워치·링, AI로 수면 중 무호흡 정밀 감지",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10LUplMGtRVzdHTDA3bFFDT2kwVElnZ2FOdlRMUktuZ3laaTVfM1BzOEYxZTlBcV9PRHVqZG10UmcyOVFrUWNnbkNhX3JGVWxid0NrTmgzc3FQWnh6WnJ5MQ?oc=5",
+      "published": "2026-10-27T23:42:44+00:00"
+    },
+    {
+      "title": "\"갤럭시 모델로 써달라\" 팬심 통했다…삼성전자, 리센느와 '폴드8' 캠페인",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB2LWZfaGtCZU03dXlucmNjZXdNNkl0V3hUMXR4MkNac2VYM2J0Ti1aT2FKQ0Q0MlZwRXlzQ09mR1hQU3Z6Umowb3drSQ?oc=5",
+      "published": "2026-10-27T23:35:20+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 웨어러블 기기 수면 무호흡 기능 고도화",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOdkk1X094RE1DVFFGYUpFMDJLY09wRm5ISWp0Y3BMeDdUengzbFV0TmJqUFpMcXo4dzh3X2tQNHY1czlDYzdSY1B2dGVqV2ZyckFQRVhEQlNpQW1R?oc=5",
+      "published": "2026-10-27T23:33:00+00:00"
+    },
+    {
+      "title": "삼성전자, 리센느와 갤럭시 Z 폴드8 캠페인…1020 여성 공략",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeW94ckFaX2F4TG5tUFpDeXVwV1M2VHZLRmxlcnN2OGxJZjFNUGJrc25HeW1sSjQwVk83SE1peHZiYlJlZzlyUllVSEZ4RF9XWjJnUVc1c195VkxuNGtDQXR5TGlwVmtxc1lHejBBakxyaUxPd0tkbWNxQUVwNXhoemJKSEI5dw?oc=5",
+      "published": "2026-10-27T23:33:00+00:00"
+    },
+    {
+      "title": "삼성전자, 리센느와 갤럭시Z폴드8 캠페인",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WYVpmY2tNcFkxWTcyOFVKTDJjQ0pMOXd3eGhXRmdMNzJUSGhtb0NHT3dycy1EeWltN0hYX0ZDZ1o2NjlDNk5hTldkajI0cFBDNlZRUTB3?oc=5",
+      "published": "2026-10-27T23:22:04+00:00"
+    },
+    {
+      "title": "갤럭시 워치로 수면 무호흡 관리한다…기능 고도화에 식약처도 허가",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT2d3Y0xsY2ZMUFNlTDdMNDhBS1djVUJJRUFvZS0xTW5KcVkyOXUtQi11OFpJWE1JbldEcmNLemRWQUR4bzMyOG15X2tZcWliVjRNdmtFbldHdGhqOHNrSHp6WG5RU3dhYkpvcVNobURtRXhYVllDR01FRnpFdHZfLWFuQ0VmZw?oc=5",
+      "published": "2026-10-27T23:21:34+00:00"
+    },
+    {
+      "title": "삼성전자, 걸그룹 리센느와 찐팬 '갤럭시Z폴드8' 캠페인 전개",
+      "source": "글로벌E",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE05WUt0SVI2NzNqbW9udmFmYjJOMkNHTTJYcWpLNGdqZFFfeEFHaDU5VENLYUhhSUNLemgyU2FLakx5SGE0SEtoVy1kSXhtalA4YV9zcXZVejNYQjBWWC05N3FPdFpGci1xeFE40gFvQVVfeXFMT0Q0dXY1X0ZMbDRWNG9DMHlieHo3YTZRTm9UQk5fMlpFYXpkMjA0OUVTejZ5UDNyZzJUczU3LTNEZWdiSmJFdjd6VTR1V0pHZGkwQk5hRWNBWlA5YTZ1MzJ1aENRVVJwN1FOUlJ1VkZV?oc=5",
+      "published": "2026-10-27T23:11:36+00:00"
+    },
+    {
+      "title": "\"갤럭시 찐팬이 모델로\"…삼성전자, 리센느와 '갤럭시 Z 폴드8' 캠페인 전개",
+      "source": "뉴스탭",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE43RzhsYl84eFR6LS1uVzA5anVleE1tT1V5UHQxQVhRNlNDbmNqYXBSSEhfZnNLLWstTV9FbXd1N0dCSUJieTZuOXdBZTc3UF96TnFaLWJheUpkVWZORTFWLVRDeWtHbzYxV3dHSA?oc=5",
+      "published": "2026-10-27T23:10:47+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 워치 수면 무호흡 기능 고도화",
+      "source": "한국NGO신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5Vlg0N1NLWVJLdU1jNjhXYVJucGN4aFNvWnBLR0dNYWNmWWF1S09Bb0x0dWZsdGM4cHZtNC1zdFQtLXNwV0F6dWdrWlBXTm85Uzc0M2Z0VC1TaDVlbmktZ0RkZXVjbkpy?oc=5",
+      "published": "2026-10-27T23:07:41+00:00"
+    },
+    {
+      "title": "아이폰 듀오 상륙…갤럭시 지원금 10만원↑",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84TlRZTVBtTnJoc2xSX3ZndDZUUms1cHZ0UG1VZVJXNEF4ZTduZjZxYjJuVG50RXQzT3BHbTZQY3phZ01uMnRkLW1hS0JMNkpCQjdCS2tPRXFWcHZ1NHBBUjNJbWJ1MExjMHpRMVhtWS3SAXRBVV95cUxQR3A1RFlyQ0lZTkRFNnkwWHdZbm40STFzR0RXVnAxTlFrUjY1S0ZCTVd6TUJnTUhGdWZSbXI1RmlidWNNSlhselk0Qm5hZjBQOGFtNEN3NkVGV2RmeFp0MzFkUVJabnBFTVVlQ21OVW5Uc2w1Tw?oc=5",
+      "published": "2026-10-27T22:00:00+00:00"
+    },
+    {
+      "title": "삼성에 과징금 201억 때린 공정위...갤럭시에 무슨 일이 [Pick코노미]",
+      "source": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lTV85RkhIeGd2VkwzZ3VFSUZFdGVYVDREYTVBa0pzUGV2T1oyUVpRaEQzdW01d2VXeFdCWHNTVWU1Y1BzUC0tN0dYSTgzVDhBVFHSAVNBVV95cUxOcmx5dTZJOU00MDkzcjJxOFZBSXkyNS11SWptNXRuLVpnQnNybzc3aDNBb2tEYlE3eWd0elJoQTljNnNjY2dvUzlKN0dKWXVKX3U0dw?oc=5",
+      "published": "2026-10-27T21:37:03+00:00"
+    },
+    {
+      "title": "왓츠앱으로 브라질 대선 뒤집은 룰라…첫 '개인폰'은 갤럭시 S26(종합)",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ISkxJay1tVTFVVEs0SmNQd3JRdzlqUGpHbEVSUXBlOUxQS2ppNFBoMmdFRXlYWm9ST2ZJUHdPUUVoN0R3WEotRmJYUTJFTnRCTjYtR0JTQ1hneFnSAWBBVV95cUxOdEl5YlR6TjQxNnJiSmpRUlkwaEtWQlZJT0hKcWZKZlhVYkJXVk5VSXAzdTViZGxhanlLVzhGeFBzOWtLZm1odGctN1FhQXFRenpmbm8zQ1NQMHBRUVp4VWs?oc=5",
+      "published": "2026-10-27T18:35:21+00:00"
+    },
+    {
+      "title": "공정위, ‘갤럭시 기만 광고’ 과징금 200억… 삼성 “법적 대응”",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBhcXdTcEQ0R3pmRThjWHF3dkJObjNxd1FkNGJjd1VvUURNMkV2bUhnb1hKOXp1VDNlVmF3QV9CUTFfa2t2ZnJLWkVzeXV6REloNWgwVUxycXJBZ1FEZUR6eUZjUm5QZWRBcHNBOXBiUQ?oc=5",
+      "published": "2026-10-27T15:45:28+00:00"
+    },
+    {
+      "title": "공정위 “삼성, 갤럭시 게임 성능 제한 숨겼다” 201억 과징금...삼성 “법적대응”",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12dlRaWm1uV2M1SjRLT2prSGRWUm1RRnBUbFQ0MThleDEzNy1DV0hJd0VVR3JXWDZvLVFkQTVNcmJUVEdQeGd6UzI2dHVlRVY3OUI3cGdR?oc=5",
+      "published": "2026-10-27T15:02:00+00:00"
+    },
+    {
+      "title": "'4선 성공' 브라질 대통령의 '인생 첫 폰'은 갤럭시 S26 울트라[영상] - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41emJFTzBsQjF1ZFZZa2QtMWJVZGhZeFd1Wm9HZGpENURYMHhXMEJLSVVObDhSQzloRHFIRmxMTGp5ZUk2TDdRaTZQa0JCWldsT255bEhEVU12cWFVb3hQbWJsQTdMekVu0gFuQVVfeXFMTkVGaXQ1R1ljdzc2X3REYmZMZmFOanQzamEyYnZsLVdYZHBTWl95RTRKaGVkcll0THhaUEtPYTgwSmJGcHljWnozNUYzcldpOC1iSGxkZUdjSS0xVXQ4WjRTcjQwNmxlQlJZNnNHT1E?oc=5",
+      "published": "2026-10-27T12:37:48+00:00"
+    },
+    {
+      "title": "룰라의 첫 스마트폰은 삼성 갤럭시‥'디지털 군대'가 판 뒤집었다",
+      "source": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBscHRoQlJyN3dKbElVczBoR1NfQVJWZkJDdHdsRlRpTTJpQ1Z2NU5BZ3FQMHotZUUyU3JJbmdod3d3UThNX3pLMmNHd2N3OXd3T1lxcEdLOEJpU250aXVfemxsNkEyeVNzWnQ1UFNoMmJBR3lKZ3ZOQdIBeEFVX3lxTFB6VXRUdXVnS2NaUVo3dE56NUE0R2JIMldtcmJJX25wV1JyT3JxWUdvdjRYc0hNTVV3cGZXaEFhaXFiYjQ2Tmp1T1htVzBYNVB1eE1QNzViN3dQb1Q1TFdDNXpRNzBZcG5QQ2xMM2k5RzYyMFZIRXBmRQ?oc=5",
+      "published": "2026-10-27T11:36:11+00:00"
+    },
+    {
+      "title": "지금이 비트코인을 축적할 적기라고 갤럭시가 전했다",
+      "source": "CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOFNHQ3NWZlJDSlQ1SHFqZTlMejFhaDZXUzN6MW5SWTBDVTVHcmJ1dnVaSUlENFd6SDYxQWFjZzFlRHJFZ0I0NFp3RGVDeUJrVXRlUUlFYkJsYVBCN2Y3Y3ZKcW5ESC14ZHBESFU1cF9YNjVyb0xITVBRSmxXdktjTnBTX3dicmN5UDQ4UGhFanBxQWVuWUdhTUlqS2M?oc=5",
+      "published": "2026-10-27T11:32:15+00:00"
+    },
+    {
+      "title": "공정위, 4년만 '갤럭시' 과징금 201억... 삼성 \"법적 대응\" 반발",
+      "source": "OhmyNews",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAwTUJjdHpRODhkV2N5Yk1Bc1J3Z2dOX3hnRGpSQ002aTZqaGNVYlV0WXA4ZWZjc0F0MW1DNHkzZUdrendIa2lzZGFMNmpHSEVyU3NNTjdNMExjSWJIVXlTbVVBTTBRcFphSGh3bHJLNDJtb0Y0RWhJ?oc=5",
+      "published": "2026-10-27T09:42:00+00:00"
+    },
+    {
+      "title": "“4년 전 고쳤는데”…공정위, 갤럭시폰 과징금에 삼성 \"소송 예고\"",
+      "source": "한경매거진",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5zbWxWLThqdnUya3YxdklZRmR0YnRJUUZ3TWVENkFHcnhCRHFxZ1NubjhBZjBES0pHV1ZweTNOWlVzT1dqSWxKMlNucDRqalBQNkkxUmhlQVdaWF9lWm9VdTFheTMxbU1jaUlYWA?oc=5",
+      "published": "2026-10-27T09:37:00+00:00"
+    },
+    {
+      "title": "'역전승' 룰라, 온라인 승부에 '갤럭시 S26' 들었다…생애 첫 스마트폰",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZQmpaZVNjazZwcTdSUG9HNWw5ZG11d2V6SUJXTG1CeGxpN0R3VjBCemhZRWpDNjVac0RNdk9CeWQ1QzhhNjhjNzBycExaTFBtVGdzNU82WWc3Zmll?oc=5",
+      "published": "2026-10-27T08:21:52+00:00"
+    },
+    {
+      "title": "공정위, ‘갤럭시 게임성능 제한’ 미고지에 201억 과징금…삼성 “법적 대응”",
+      "source": "채널A",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBiZ0tfQi1nbzMtdXFfY1pQOXNMaUNlT0Y2VDFZVTExOUZpbFFsc0JVaHZHM1ZlUGIxY2VVY1hVRzdlWXVOUjI0dHZwQkZiSTlGUHZiV3prNTB6WVBJSGfSAWNBVV95cUxQdkdSNjZvSTlYSEY4eFE2Y3R3NUppb2thaWh1X2hzNVRCMTJ4RlctYy1PSHczdndwZkJESHAwWkF0cHR0cUZicGtwQS1NUXlaaldjODE4c3BxWnkxYi0xbDRzblE?oc=5",
+      "published": "2026-10-27T07:47:00+00:00"
+    },
+    {
+      "title": "공정위, 갤럭시 S21 등 'GOS 논란' 삼성전자에 과징금 200억원 부과",
+      "source": "조세금융신문",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE52NTcwcDlOT0ZYdm9tQ282ZkRzYW54T1lqdTVBd2RneEdHelM3ZVh2X3dJdFBWQ1gwTmJ2WktyTzdqZk1DanpkQ0tkaWZBMHk3eW1WaGxYYXA0VlFsYkFrenlhZw?oc=5",
+      "published": "2026-10-27T07:38:57+00:00"
+    },
+    {
+      "title": "S27 플러스와 울트라에서는 빠지고, S27 프로에는 들어가는 기능들",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zSXFLSGlfZ3c2a3Z1a2dTbXJKX1pock1HcVlGdDRQZzR6SC1EX0k5Y29yTzJpRDZhSUZwV3M0bE5YZ3lyZkhvZ0hJR2RFZjZXWlhlRHVETFZXZVVURTBtVzF4Zmk?oc=5",
+      "published": "2026-10-27T07:22:41+00:00"
+    },
+    {
+      "title": "삼성전자 “귀 막지 않아도 저음·통화 품질 잡았다”…'갤럭시 버즈 온' 개발기 공개",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB5a2ExM0FIaGg0bk5CMkVkY2twVld4SWxmeTFMV204a0VwRngxN0NsbG9nRllYY0NkS2lxRGtYZGEwdUtwSWFxeFVzcjNhUWNiTjVmcnB4S3FiSGNURG42TUp3SFJUTWRZTjJr?oc=5",
+      "published": "2026-10-27T07:00:00+00:00"
+    },
+    {
+      "title": "삼성전자에 과징금 201억 원…갤럭시 게임 성능 제한 미고지",
+      "source": "대전인터넷신문",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBEQmNnMlk4cXhXNzltaGE1eXdUbVR6ZF9tV19kQk5hSERLMDdSZmJxdzNoT2RzTFhkSXV0bFNUd0lnWnJLbjVjSVVCajFyWFRrWnNEeEtGTHpHSTlD?oc=5",
+      "published": "2026-10-27T06:59:51+00:00"
+    },
+    {
+      "title": "갤럭시S21·S22 등 '게임 성능 제한'에 과징금 200억...삼성전자 반발",
+      "source": "금융소비자뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwRE80bXhVc1dzUUVGQzBJbHZzaE9hSWFOLTdiUWJBYUVTT2xmY3J2TVlHbkF5MHo4OEQzWGJ6NXdKTmxyemFMd3FqdjY3anQ2YTkzVWhYU2tsNmVsSzdiUHNtaXRUN1pBb3c?oc=5",
+      "published": "2026-10-27T06:54:00+00:00"
+    },
+    {
+      "title": "공정위 갤럭시 GOS 부당 광고에 201억 과징금, 삼성전자 '법적 대응' 예고",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBXaThnVzVQQ1M0VWlwbFZ2dm1fa2lHTWtENm1yRmRwcXVQUHhHdnQtZHN2OXQ4d3V0TXB2X2hhME5NSEVMVDJ5OWprMHdFSEVPLVF4azJfbF9VMTdURVMtb25DakJGdS1lOGc1UnVQX2ZiZDA?oc=5",
+      "published": "2026-10-27T06:52:47+00:00"
+    },
+    {
+      "title": "갤럭시 성능 제한 숨겼다...삼성전자, 과징금 201억원",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE90VUJnUHRQTnk0YXVSRXZ1YmZVazZwaFhJa1hRa2NyY3FsVGVZSERVT1JFU1BtZFdvRjhMTkV3S2I5NlhJRE1yenRZZDRTZ2s1eEF6Xy1B?oc=5",
+      "published": "2026-10-27T06:52:15+00:00"
+    },
+    {
+      "title": "\"GOS 알리지 않은 건 기만적\"...공정위, 삼성전자에 과징금 200억",
+      "source": "JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wWUxCU3dBQzZGeWZ1T2VpTy1CRFpHOU51bWVmeVdFb2RQN1FnRmFmbURBMjdmV2Z1ZHBfdWZzN3VMRFBMb0ZYX0RKYzRTTlY2aGp4Zw?oc=5",
+      "published": "2026-10-27T06:43:00+00:00"
+    },
+    {
+      "title": "삼성전자 갤럭시S27 울트라 최대 100달러 인상 전망, 노태문 반도체값 상승에 가격·부품 전략 어떻게",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80VHd1NXI3RFllaXpNSTBCUDdZclh6UzQxTmhtUVdxM1lEaXVSMzRoOERUOHlSa3doSVJkcW50anZTTHEwek9tWDVvOGp6X2JDdC1GdHVpVVU3d0NOUFB1R1JxenJ2dHV2MDJkRkxfS00zdlU?oc=5",
+      "published": "2026-10-27T06:34:22+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 성능 제한 숨긴 광고에 과징금 200억원...“법적 대응”",
+      "source": "M이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yeVNjU0lnNlJYNGw5eVRZeEYyVi05eFd5QzhwdlJLREN2NDBIYzhSM0ExbjJKYUJTeEZFZTNqUGpTeU8zNmN4eF9pa0wzLXhFWUc4WTN6Vmc4a1VrWVZlWkdDYk1sSU0?oc=5",
+      "published": "2026-10-27T06:30:53+00:00"
+    },
+    {
+      "title": "'갤럭시폰 성능 제한' GOS 사태 4년 만에 삼성전자에 과징금 200억 제재…삼성 '법적 대응할 것'(종합)",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNN2dGZWpIZzVTZzlnZFU0THVrZHg2ZDNQUGg1OUpYaG5lR01YWU1PYlV1WFdBS05UWURYTThfNTVfMXdDNERTbExFRENZSjRvenpOS0RycGpsLTlSa3ZQNDRFdDFPUkFIZW95bjJyQ1J6YjNXa1RRb1ZBYVh3eVlsSHJ3?oc=5",
+      "published": "2026-10-27T06:27:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 GOS 제재에 이의 제기…성능 최적화는 정상적 조치",
+      "source": "팝콘뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aZDd2dFh1alFnb0tSdU1ob0o4d2MzTGNxSXF0MFQ4UEVQNWZqVXNTdXVFSExKUm1COGlwYWluUmRHT19ZaVJjZ2xsOXNTMTJVQ1F1N3U5bEVnR2lVLUYteVNPcDV6RjdLX1JPR2F6UdIBckFVX3lxTE8tWUNSS0htTl9QbEd3TGZjM2FNajBLcWJDNVlqcVBnZThRMUw3X0t4S0kzSTM3MFhCNnpwZnk2U1NtSVlKbWFDNFktTzBoZTZlOU1yZ1p2Wko3X2VDWFZBamJpdWVybVh5dE9pNTcwODRLZw?oc=5",
+      "published": "2026-10-27T06:24:00+00:00"
+    },
+    {
+      "title": "갤럭시 '기만광고'에 과징금 201억…삼성 반발",
+      "source": "SBS Biz",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95YmhrdVFmY0ptWjRfQV9SSDZCcFE3MThaT3VzTDhxc3RBQXI4MjBjcUx4T2xDYXpETmdldFJRa0FmbU1IQVQ0ZWJLSDF6SWtRTkNR0gFYQVVfeXFMT0dXQkVPR1hoZzc0cjM4U0h4LVpuUXE3RzlQaEN3RUhvX2djSDZZZVJOU1hvaVdJTk0yRnhISDJFWUpUUEpKdjJuZE9hQ00xMDJFUXlQQlk4VA?oc=5",
+      "published": "2026-10-27T06:10:00+00:00"
+    },
+    {
+      "title": "공정위, '갤럭시 GOS' 논란에 과징금 200억… 삼성 \"법적 대응\"",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE04N2hkZGtURTdtal8tUzNRelBVclEzQVlhcmRlUWRxbWo1czdKaG9EUEMyMjdicjVfS0RaejZrWlRZUUdtRWNsSXd4VGJLX3k3Rk9sR2pyQ1BHdw?oc=5",
+      "published": "2026-10-27T06:09:08+00:00"
+    },
+    {
+      "title": "갤럭시 '성능 제한' 논란 4년 만에 제재…삼성전자에 과징금 201억원",
+      "source": "경북도민일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByelZYaGJpbVJab1BEQnc0eUtWZVBoOUhDcTFocWRLeXRzMFI3VU9WcV9oWERnRGVyMGJHNzJ5LXdERzRKNVVLWUYtV3VsQ1RsY0ZkZFMybDFRRTVyTGZXbWR3MWw5LW1fZGc?oc=5",
+      "published": "2026-10-27T06:02:30+00:00"
+    },
+    {
+      "title": "삼성전자, 공정위에 소송 예고…\"갤럭시 '기만광고' 판단 유감\" [전문]",
+      "source": "데일리브리프",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9rV3pPQ1FoSFg5aUw1d0s1TDNlRFBGdXg5bWdlc0FnTkFBeFd6WFVzU00yVG5YNVJuZkJGOHIxdmlwaFNKZDVSOWc5aGVWTHNUM25hLWU1T0JBZm5uRmhhelc3dEV0WHFUby04X3hR?oc=5",
+      "published": "2026-10-27T05:37:45+00:00"
+    },
+    {
+      "title": "공정위, '갤럭시 게임 성능 제한' 숨긴 삼성전자에 과징금 201억원",
+      "source": "법률방송뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5VaTFLV3N5X2kxeXFYRXI2LWVTcURQaVBham9ZWC1nYncxaUZkV1BzS2xyRHZyUmdwNjFicUJUeXlOYW43Nl9JdDI0SHZWbTEyVVloOERKZy1COVNxd3hTMnlkRXk?oc=5",
+      "published": "2026-10-27T05:35:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 GOS 과징금에 \"이해 어려운 결정\"…소송 예고",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5RcXQzOEpacHlvdXVjRWpoQ3lWNll0OGdnRE45M0R2dHhXMERJbWdfLVZxbWtTZENMN3dXLW12aHJWLUVCT1M4enNEdw?oc=5",
+      "published": "2026-10-27T05:30:19+00:00"
+    },
+    {
+      "title": "[비즈톡톡] 삼성 스마트폰 사업의 고민… 갤럭시A 줄이면 점유율 걱정, S27 출시 당길 수 없는데",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYmVWYXg2M3I0NHh5LXJjNnR3Y2pBRVJzZVlnZ0txLWFBdXRieHJfX1NWLW16WVZuSWthcXZoZWt6cEstLTF1bnVwMlltS0dQTjVGODJja25IbGx4bEoxWkRXbmU1Nmk5ZFpMdVRhT1dMSHNpSWkxZVBzbk94RVI1OW930gGWAUFVX3lxTE5lRi1rLTh3Q0pxOVcyR09semk4Q0FFR2Zvb3RoSlhBR1FOR2ZJQ0Roc3BJY0ktTjV3MVdLSXBDS1BNc2tXM0lISGRqOEVQcjkxZUYtLTRLcWMzOFdHOWlxNnF1WXQxUmYycUxGZlZ4eE9VQ29KN3BBQjdibG8wdTZHWGtncTQ1LW9jSHNpZ2RCLXhVZUJnQQ?oc=5",
+      "published": "2026-10-27T05:25:00+00:00"
+    },
+    {
+      "title": "삼성전자 '갤럭시 기만광고 어떻게 했길래' 과징금 200억",
+      "source": "이코노미스트",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qOThXdVBmemJZZ3FHa21hNTVjVmxBTlpTQ1plNk5NSTdZY3JONndpS0RCVlZ6RTFkek1sckhHQ2VsY29ibGpkT2E3T2VaZTFIUHRvcUJWTk1nWVY0ZFdyQnJR?oc=5",
+      "published": "2026-10-27T05:24:00+00:00"
+    },
+    {
+      "title": "[더테크 픽] 삼성전자, 갤럭시 게임 성능 제한 숨겼다…공정위 과징금 200억원",
+      "source": "더테크",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45NjhGNVYwSmkzajZwQ2pac0lRZGJqdGhTSUNxTkU3REtrOUV1aldPaVZWVjAtX1I1czFSOC1zZ3ZBRUhmQ3VLZHZkbFlrQ3ZVV0lsbDVZNmkzbmxOclc3eUNlYw?oc=5",
+      "published": "2026-10-27T05:18:33+00:00"
+    },
+    {
+      "title": "삼성전자 \"갤럭시 GOS 기만 광고 아냐\"…공정위 과징금 불복소송 예고",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5MSmlZamt6THpFYVNzd3ZXQS1YYm52UzhTY3BELUlITXM2cUF5NVpxRGRIc1RqQUN2ODhZaHVGbXQwV1QyUTNXbUVza0ZRTTZBOERib3Zscm9zcW1yZ3FHMA?oc=5",
+      "published": "2026-10-27T05:18:01+00:00"
+    },
+    {
+      "title": "갤럭시 고사양 게임 '기만광고' 과징금 200억...삼성전자 불복 소송",
+      "source": "티제이비",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE41SWpjdTE4Z3dPSExEQWhMejRXejNMbE5XTlE5QzJLR1MyeDdydGJ2a3B5bW90WWN2ai0zVTlHN2RfSHpaaUZ5cDg0eDk5LTI2cV9wZUZGZVhfRndvcm5KY0Jid2hOdy14N3c?oc=5",
+      "published": "2026-10-27T05:14:24+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 ‘기만광고’ 201억 과징금 불복...“소송으로 다툴 것”",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5iQjgwQkZNWWtPVjQ2ZmNvWUJ1c0d4bVdVZ3QxOHh5dXV0cGNLOWJOYlRmT0EyeEY4YkI1dmh0Vk5ueWpmeFFPUS13bERuSVUtOV8weA?oc=5",
+      "published": "2026-10-27T05:05:00+00:00"
+    },
+    {
+      "title": "갤럭시 ’성능 제한’ 미고지에 공정위 과징금 200억…삼성 “유감“ 반박",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Fb2dMY09hRnNSM2tQcF9jTWtha0dDXzdlYnRJQklwa2pQMVB5eW9YTlp1ZEN1dDZKby1kX1YyYUM5c05SVHowWGVIbGVOc2RsWEEzdUd2Um9sN0hoNmdqX1hOeTZWNUE?oc=5",
+      "published": "2026-10-27T05:03:00+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 국내 판매 시작",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE13RTRSN3NFdHprNDlFYnppNDdCd2E4MUU3amI0SEk2UjV3WXlUbXJlaVdmQjRNZWc5RzZRMjRRcmt5SUFFdERNbw?oc=5",
+      "published": "2026-10-27T04:59:14+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 성능 제한 논란에 200억 과징금 '반발'",
+      "source": "세이프타임즈",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PMWI5UkFXcTltUllaS1p5ZUppaVl2RUpWTHR2LW9TY0M3Q2NwZTh3SVR0bFNJUnZJNmhsTF9Ld3lFRHFuY0xNV1k3X1A1Wkt0dnVvT3QyZ1VTSnNqNTBOaFk0WXhtaXBrQUZQYlJvd9IBc0FVX3lxTE12YW82QW5DNUpWWXpCdWw3T1ZPMUVxOFdoamE3QWJrR1dlalg5X3ZaUEdCSFFCZjZYTUd6Zl9ZSHZDak4wMkxRbG1wVjB2NFZYTDlXRnBqTVQ4N3VCdzk4WERuQVJvdnljUnhtRTRaVGYxODg?oc=5",
+      "published": "2026-10-27T04:54:32+00:00"
+    },
+    {
+      "title": "갤럭시폰 '성능 제한' 숨겼다…200억 과징금 맞은 삼성전자의 항변 [지금이뉴스]",
+      "source": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xaXZIWllrM0FyWFhLQXJfNGRfazdxclZhM2N6QlJaZWlFSWlCc29JaDJxcHppUTJZNzR6SVV6VktiVGcxTjlsV0hUaTd3dkVwNkZUbDBmaEtQYUROdlE?oc=5",
+      "published": "2026-10-27T04:50:00+00:00"
+    },
+    {
+      "title": "공정위, 갤럭시 ‘기만광고’ 과징금 200억원…삼성 “이해 어려워”",
+      "source": "시사저널",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01LU9DUHYybHd1eF9JSVhfNjN4VV9xSUhtbXJ2QjNDa0Q1M2Q5V2lRY0FCalNYamptaXMxdzY0YnJ5Wl9KaGVsWVVGYUJDS0lzYnpSZ1pJN1IxeWVDTHNTV195ZFR1UjBmWkVwNVBlONIBc0FVX3lxTFBlajdENENaZWVLak9qMG8wTGI0V1BFNXB5eE1QV3UyRERNbGxvcVhwaVdBREc3QjYzaG1vaEROZ1NnR1VxRTRnOXJDR1A2N0xlSEtxNVFFeVRKeEVkRnRuVV83VUQxMkRVb2RROHJiNmdJbWM?oc=5",
+      "published": "2026-10-27T04:46:27+00:00"
+    },
+    {
+      "title": "삼성전자 “GOS 기만광고 판단 동의 못 해”… 공정위 제재에 대응 예고",
+      "source": "법률신문",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QNlR1dVpIR1FWeURnTFdkODZQNGZDODNtZDJnSXdxOG9xQVpqOFB4SkUtbmV4ZzMzY2hDMGUwdWduNjFDODAyMVJleEJjczZvTzBuZG56OTNCSWFXOG5FOGFqRkJjQmNHY202Wkdn0gFyQVVfeXFMT09ZRlk4a3Vjc24zV2o0dEZlWWlGb2FXQ3NGUW5oWi1URDNFdGotcVpqTHpmRHRLemZza1BWM09BOU9JX1Z1bWxDem51SklfZjZLVTNISThaRkd2Y0xOTzhEUU9QbmJ2cUhzTWhuOWtfN29n?oc=5",
+      "published": "2026-10-27T04:45:33+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 S21·S22·탭S8 게임성능 과대 광고…공정위 과징금 200억 철퇴",
+      "source": "스트레이트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBMTFUeDRGY0xLRHNxU01fdFUtbFlmbFdCQmdZdVVISmctekRCeUdaTHZQZnIwdldHbUNmRGRGUmp0cDlQOF9BN3I0LVBQS3FBQUFPLVlDQ0NpbVZPV2FId1BTeTlQVnlkZGxZRnVTVGhEMlHSAXdBVV95cUxPTHB0OHRabXRNanBpN210WGZIMTN0d1B3YTVmNkl5dTZvelhkV05TeW5RNVh0V29ZblBiNFV2ZG5wT3F6MEE2MThrb09VUVVSOTBLRV9xUnp1Ykpiem91enJGaHNRLUJWNk9nbmlvc0N3Y0lKZUt0SQ?oc=5",
+      "published": "2026-10-27T04:40:38+00:00"
+    },
+    {
+      "title": "4년 전 `갤럭시 GOS 논란` 과징금으로…삼성전자 201억원 제재",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6aG5GcjZBT2RmQU1TMWZBQndtbklGbjV1a050UmlKZEg4eDRDNzJzdTNBdlp0bDRWc24wWlRMV0xES1UwZkQ0REhZeVNJVDFCdHluLXp2WUIwanpPdUFXczgxQ2I?oc=5",
+      "published": "2026-10-27T04:31:40+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 이어폰 ‘갤럭시 버즈 온’ 출시",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14ZUZLdGtuTGlfZlFteDEtdXZZRGVFaFVyamdfaVh4X1l0ZHQ5WVQwcEo2RTAwcGctbV91RXJVdDUtR3BadkNpLTFlRWVYNVQtZGFUTXlHU3loTHZ0cWpfdi1Bem9QVUthOG04?oc=5",
+      "published": "2026-10-27T04:28:41+00:00"
+    },
+    {
+      "title": "클립형 무선 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE85bXNKYW05QlVBbTlydDBvdUowQ051LWJ6MzBCeEJxdDhRZXRvcmIzRDV6R0ZOTFMzallaVjRtN3l4VW4xaGpYRkRkRQ?oc=5",
+      "published": "2026-10-27T03:56:31+00:00"
+    },
+    {
+      "title": "갤럭시 스마트폰서 고사양 게임 시 최대 성능 제한됐는데도 안 알려...공정위, 삼성전자에 과징금 201억원 부과",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZEIzUUgxWmlyU1dCMm82LTFSSTZoTU5kZ2pTa252QTVUbnhtQk1vd0FHRjVwa0pNbnVOcVlNQUw5bWl4U2tkOXpfaWV5RkhtQVNFRDRfTEdqRkg1NkxCVFI5Mk1NOGtIR2JVX0J5LVdPUlRIOUtwRmFwRDlwbEsxaW96VGVkY0dCRkJiVExB?oc=5",
+      "published": "2026-10-27T03:51:14+00:00"
+    },
+    {
+      "title": "갤럭시 게임 성능 자랑하더니…삼성전자 과징금 200억",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSR244OFA2UUF1NERPa3kxbHJtWHVLRTR0VjF6UWdBUlJNbFBzTU16NTNCQ0VBbTFFRm9KTGJoLVJLaUdmSEFhaTJITEVSenMteUxpTTUxUE9oSHJCb21LMm4xaTdJMmM?oc=5",
+      "published": "2026-10-27T03:36:00+00:00"
+    },
+    {
+      "title": "4년 전 갤럭시 성능 제한(GOS) 논란, 결국 기만 광고로…공정위, 삼성에 201억 과징금",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFByRzJwbGxSTzB3RnZZNHJxQ1RIUXRiR0wxTFgzalNvQUJuejJsdmdnM1hGTURqTFhsZ09BdlJoWmFsQnBVcjlhLWFxdGpLQ2pBT0xSM1Bn?oc=5",
+      "published": "2026-10-27T03:01:00+00:00"
+    },
+    {
+      "title": "공정위, 갤럭시 '게임 성능제한' 안 알린 삼성전자에 과징금 200억…삼성 “법 절차 통해 적극 소명할 것”",
+      "source": "MTN 머니투데이방송",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE55NmlmZmRtbDZjWndxMnFvWkZEaEw3TmVSUU45UW9Rc2g4RUIzcEd6UklteE9LVTN2dllnR01rd3ZOTUFoRnlKRDZqT1RFcURVMVo0aTdyTkRLMllPQVow?oc=5",
+      "published": "2026-10-27T03:00:30+00:00"
+    },
+    {
+      "title": "갤럭시 게임성능 기만광고…공정위, 삼성전자에 201억 과징금",
+      "source": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1lRkNQNGRBYjN3M1plNmlLNkhIbEE0QWk5SWU5dy1kVjkxcmxLUTYwRlI2ckZQei1XOFlfeGtzekpJQUN5YUtXR2Y0MEtpWUlrSy1IVUlzSW15cEx2R1ZwMDdyaWE5OUxMYVhpQVBxUEk?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "갤럭시 광고 ’성능 제한’ 미고지…삼성전자에 과징금 200억",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9rME15NkducGtLVEZHb24wd21GM0gtN2hXal9fV3lQNmVzdlV3ME9xaEZRQTR0ZkI3NlNYMnpRSjUwQl8xWGpLZWQ2bmJJNWxNakdTcTRRb01rak1LRWhic1dURGMyX3c?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "공정위, 삼성전자 '갤럭시' 성능 제한 미고지 과징금",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE96cE1pUWZXWkE2aWprVmtDTTZJbWFIbHR1WjJ6UjlvSThUTTdkZTNqNm11S2NiV0FEUXZOWG9YajVVX1ZVclJwSzc4SFVzQQ?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "'갤럭시폰 성능 제한' GOS 사태 4년 만에 삼성전자 제재…과징금 200억",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXZzl2UWJRbVFCMHhOay10ZlMtUE5UanNwRWIwbS1vVUg4NnVBOTlkRlhvV0pScGhtU0dKZXo1STBkS08xSVh4QjBWWW80Tko0S2V5TmtaVkpjVF9QZ1N3bA?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "공정위, ‘갤럭시 성능 제한’ 숨긴 삼성전자에 과징금… 삼전 “법적 절차 통해 소명”",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLN2VodGpSc2ZHY0tXWHM0bGcxUk8tQlByV2xwV0MtSnc4bjlfNDlvOG9Hd1dpbWgxQXI0aElPOWhPME1CbHk5M2VXbHRDSF9hWnpYQ3lic0ItTTVMX0dNa3VDd1p2cUgyMTIwWmxEaw?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "삼성전자, 갤럭시 게임 성능 제한 숨겼다…과징금 201억 부과",
+      "source": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9raHRva1I4UDJoeGtZVm9nZ2J0U01rYnpsNU1vZmtkNEVLSE5ycXIwVHFhR0FXLVkwa1Z3OTIwZ2FvUm5mbXJPTTZsTktnU1FPRGMwTmRWY3AxTEJXbU5KTTZDRjFrd0pyaTd2blRR?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "공정위, 갤럭시 고의 성능 저하에 과징금 200억···삼성전자 \"법적 대응\"",
+      "source": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GZHNfTVFWazJmY3hOa1ZyMFROWG84dV9EMW1LNDVPdzl3VWhTNFZ2ZFNybmhSS2h4Tm5yNEk1WUNvZGlRMUkxVkdUNUdwLUNoV2pIeGFtZlFRV0RKX0I1X0MzTExhY1pEa3c?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "갤럭시 '게임 성능 제한' 누락 광고…삼성전자에 과징금 201억",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1fcTA2aU5tN3pNTjc5VkVmVy1uaUVsR1RHdl8wVXUxeWlOeVYxbHY2WUZON21oUDNDNVZGM2ZMM1JQUVVDZThTemF1TGl3VHM0QkQ5VQ?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "공정위 \"갤럭시 GOS는 기만광고\"…과징금 201억 부과",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE95WFkwMjl3aU9WRzBmV1FlMWFxTVpzZnduQ3UweXgxcXI2UWg0YzB6SkpsX2l2dmFla0hkMHA5Y04tY2xOQlNXSXQtRQ?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "\"모바일 게임 끝판왕\"이라더니… 성능 제한 숨긴 갤럭시 광고에 과징금 200억",
+      "source": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzY1FzazF0Z1E1ZThlamFGYnBxTTEzdDgyNkdPWUdmZXk2eTZMVjdNZi02cV9xOWREN2Y3SmRoMk00SHpaUmhPTjNBMzlwT1hESkRYd1FtMlNWOHB6N1pGNjRsb0lnakpROXdfTktn0gFzQVVfeXFMTXVMcVZQcWcwRmI2b1RNczJaSUNIdTlqTjNvVjI2WVU3cW95RUNlWmpIQzBBSEF0Z2tPWlJMMndCUW5ZcTQ2LUpVc0xlbmJPQko2ZjFIbGduaE1yYkxicEoxMmh0Z1RsOHBBdFI0c0J1dXpmSQ?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "공정위, '갤럭시 GOS' 논란에 200억 과징금…삼성전자, 소송 예고 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBwLUVlX3pPTmNPLUptaXgzTkNQRWZYWkpSUXJGNnQtMXgzWmZBc1RBZWVjZ0FBU3pTMWRlZV8tOE5JelhxMHp2Y1B3VndUeEZpTGd3bHdPSTVlSWdBaXhWYllkWE1mcFEtcVRmSkhDZGlQNkVOalNPb9IBfkFVX3lxTE95RERYVnNKbkM3QU4xZ3JOVzVqYTRPSWk2U1FIUVE0ZTZmZlVEYjhNVzdnc194UndaQy05Q1diMmw3ZlhyZXpNYzJJMGpJSVVSUlZ2dGVqSllJcnBFb1doUFdSMFNtamRCZjViQWlEb3Yxdm1Gekg3dHRtajBuUQ?oc=5",
+      "published": "2026-10-27T03:00:00+00:00"
+    },
+    {
+      "title": "이번엔 사과를 썰었다! 삼성전자 갤럭시 15년째 애플 아이폰 긁는 광고 : 풍자가 부메랑으로 돌아오진 않을까",
+      "source": "허프포스트코리아",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FemRkTllhaU9uaFhudlRLU0RtMkE4TXh1dy1memh4cWF4Sk80WHQ1UmJFQW9PcDZWYXdUTF9fajZaMHB0ZkNNbHRUblRjN1ZEdTlRNnNDMA?oc=5",
+      "published": "2026-10-27T02:53:47+00:00"
+    },
+    {
+      "title": "공정위, '갤럭시 기만광고' 삼성전자에 과징금 200억",
+      "source": "SBS Biz",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1rWGNHSkl6eER4ZHVOWHd4bHM2OUdoeThNYzFENHlpV1hrQjMwLTUwZS1HX0QtOWtLR3FGY2RlQy1ILXB3STVNV1lRVTJYek1SM0Fz0gFYQVVfeXFMTVd0dWM2M1FqSktPX0V1TWV5dkFZSjk1MFBfM3RmNmlOcWVjVFNRS0YwaUUtTnc0N2pMcG5VX21uVUw0VVhOMGs5R0locWMxV2dySG1lY1BzNg?oc=5",
+      "published": "2026-10-27T02:52:00+00:00"
+    },
+    {
+      "title": "화면은 아이폰, 활용성은 갤럭시…폴더블 승자는",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBNEJnZ2h2RHluaUYtR1VIM1AtRC1VYXNacUltcE9zWHdVbHBuMEdXV3MzMHZGU3pUSVVVS29McHJPWlQxMjBDa3NURzIyY3Z6UUU0WUh3eTZwU1NvamRDTzI1QXFuWmYyQWxoVDZibXfSAXRBVV95cUxNMmVEMDlfc05XVGl6N0tmZlNlLVUwdDNReE81RzhaQTBTVGVBTlk2dDBKTW9hSkZvWVNWLUd2TDJWVzlBVEw4QXZIaU1oVEhFVmtoaXRFTmJjT19nM2FLQWo5RHhueVV0V0xEVF92ZUFVSkNDTA?oc=5",
+      "published": "2026-10-27T02:33:25+00:00"
+    },
+    {
+      "title": "갤럭시코퍼레이션, 두바이서 휴머노이드 로봇 엔터테인먼트 사업 공개",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE90ZkhKLW5KaTE2ZXBlemROVW1CUkpnbHRYOGkwcXFEam9qYUxnRnFMczV6WnVxUnEzWml3TGg3aEZnU3pfYlNmNlNKWHo5VGRqNzVvd2VMMTZhdw?oc=5",
+      "published": "2026-10-27T02:23:42+00:00"
+    },
+    {
+      "title": "갤럭시코퍼레이션, 두바이 영화관에 로봇 아레나 개관",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1wellJWTdhdk9PT2lqX2Z0UW1xekZjTUllMVFQU1RXSVdsNzlqdDBjVXd5WnphcmFVeXRNQkt3VUI0MEFaYUM2cWJJdlB5bTVwcXYwV3YzanI2ek9yMndTOTlZMmFYbmI2aDFvMHBuaU9qWU1iOFHSAWZBVV95cUxQbzJDWXpyR1JPM1Y5X1J4VERnTnF2NWpWNVhRdG5hc3Ixa05uZ0JtNDk3dWFTWDNEaVNyZFBmYk9XVjI4YjUyYXJ3SE82VFBlN1FUV0xiSDVucWt3SFNrQVdRX2FBWWc?oc=5",
+      "published": "2026-10-27T02:20:00+00:00"
+    },
+    {
+      "title": "삼성전자, 중국 위챗페이와 결제 동맹…갤럭시 고객 잡는 금융 전략",
+      "source": "S저널",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WMUsyeEVOWWtCUnVaaDVFd1drbE84QXFvZDE3RTZHdVlkaHBsMWZmYzRKaW1IZ2FRMTR3QjNob0ExcWg0bHY5ZTBNRDk4azJwOWxCamVqR0JLMERpZWx6WHdvMEFoUUFWcEU0aDFB?oc=5",
+      "published": "2026-10-27T01:53:40+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 Z 폴드8, 美 컨슈머리포트 ‘추천 제품’ 선정",
+      "source": "PRESS9",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53X0VfNVdlWk1Qek05dmtQU2E1TWtLQlFwdWlFaVBqc0RTa2VSMmhneVVMSTU3NW1tVUJTM2ViUlVaWUc5MkZVOVU5Z1NnMW9BVDBwMHlWNm9oNUdtRThHYzlHbmdJQQ?oc=5",
+      "published": "2026-10-27T01:28:09+00:00"
+    },
+    {
+      "title": "갤럭시Z 폴드8 시리즈, 10월 두 번째 업데이트",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE14cFR4X0N5bzJ0TG5ZcDBmRWdEcHhUenRSUUxZN29meGV1Y1U4akhzWEFuTC1Ndy1raG5qZ2s0V1FXS3JGdzFXcA?oc=5",
+      "published": "2026-10-27T01:15:17+00:00"
+    },
+    {
+      "title": "[체험기] “귀는 편안하게, 두 손은 자유롭게!” ‘갤럭시 버즈 온’과 함께한 하루 – 삼성전자 뉴스룸",
+      "source": "samsung.com",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOTDNrZ1ZaNVRIbkFBdWlQZ0ZoQk1nN2F3YllxS1F0ZUNDZmJhYVJaVEN2a2d0MFVJMkxUYlpiYUhHdk5mb2VyZmhjU3NEU2dqM2trekZOZHM4Z2pGVWtSNGYxTWZfUnp2YmsydzhSTTFjOWdleHBmdFVhYTdrSGVKbkhfT3NKNDlPeFBGRkNhNEU5UlN6NHFEckNsNHAzM1NJR3RiSWlXeld3aGdKZ3cwdlZ2dWNyTXctSnNBbWhWT0Exbk5JVFFvWFlyZWhaQnQzYVRCMVVTVGg1WXBVTk51SVE1QlFHcHh1Nk5wakNBR01GdGRkdlVaS25vQXZvLXRkRko1VWJxNU10dVhWNEFyOGdobHBVcGRWZGhCQ0J1NUcxZw?oc=5",
+      "published": "2026-10-26T23:00:00+00:00"
+    },
+    {
+      "title": "삼성갤럭시 '1위', 야구는 'LG트윈스'…'2026 국가브랜드경쟁력'은? - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yMkpoSmVmRlU5V3NVX0RzN1lmazNseGFUekdmLXZlakZjdzE2U2RzU2htREtDNTJFMGpnRm5CMXpjRXhONldObjRlNXgyOTVmNmptUmM1OHdEbGhwTmY1d3lvSGdCMU45d0FkMNIBckFVX3lxTE13ckpNUnAtMGQ2QmE3cTNNTUlkVTllYW51djFyWmozVDBTTm90UXpZSUI0cWhDMS1RYmx4UGZQUTdzUDdyM0lzdDJMUXo3dFB5NS02b0NiMW84UDE2bFlOX2VraWY2d1F0cVI5VEpOTm1rdw?oc=5",
+      "published": "2026-10-26T19:00:01+00:00"
+    },
+    {
+      "title": "삼성, 보급형 갤럭시A 시리즈 1000만 대 덜 만드나… 칩값 급등에 공급망 긴장",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMWdoQzFoUkR3V05SN19Uenp3amZNelU3TVhVZW9SNS1lS2lyTXp3N3lieWpSMmRKMExGME93RGhZbnMzalNrTHQ0clZxc3pMaXlRSnNfRWttTGtTQ1dyMDh3cnZwNjBueVZTcmFzbFlMS1hFVnVoVFpiOTJ6ck5iTjdkcGE5bjQ?oc=5",
+      "published": "2026-10-26T18:15:00+00:00"
+    },
+    {
+      "title": "삼성전자, 시리즈 최초 클립형 무선 이어폰 '갤럭시 버즈 온' 국내 출시",
+      "source": "livesnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE94ZEVLYmJzMGpyRFBPMmRGenFTcGNmMzNqODR5OEpYRl9Qb1FBa3FLU2ExaVoxa21RclE0a1g1SGgyS2tYZ3J0eTZDZ0Zkb2FHMWlBU0o1bTI3Vk56UDFZT2x3?oc=5",
+      "published": "2026-10-26T18:05:14+00:00"
+    },
+    {
+      "title": "삼성 갤럭시 1위… 60개 업종 중 34개는 하락",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50NkhYSHJRdkhKcEJqNC1zdXhnQXdIdWFBX09iU2tQT25IR2xia2l4TDVxS1o2SlRKY2pDeVNtSVBGeTBNVHl4Q09LTGlBb0lQX2U0QXRIc01YRWh6X1FVM0hnLWRfSTl6QkRnSUpQT1JaNW5ySGfSAWZBVV95cUxOVWhmbkN6TlhadDAzTFlhc0JxeVk2UExyUzJNazVUTFVHOWFWSzF6cEpXWjZ2eFl0WWV6V0hrTUJqUWlxbjdWemZBYTMwRzllbUtuSkxPV3pVc2JYNHFMSkVoVmpzNVE?oc=5",
+      "published": "2026-10-26T15:30:00+00:00"
+    },
+    {
+      "title": "갤럭시디지털 \"비트코인 약세장 끝났다…지금이 매수 적기\"",
+      "source": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KQW1IVmIxV2NXUV9vcV9jZ2FNdnRlemI4dEhYM2Z0SzMxOTgxbnE2Z0ZxeHJ2S3lHVWNWektsOHVxdmFtZHpPOWtqTFY1em9a?oc=5",
+      "published": "2026-10-26T14:10:19+00:00"
+    },
+    {
+      "title": "삼성전자 ‘갤럭시 버즈 온’ 출시",
+      "source": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5pWEpjaDRyT1N4MkxZNU9nVkFRRG9MTmwxb1I3WWk4SUNvbkpjYm1WNTRNSGtaanpKdThOV1N5a0JIN2J2a0lYWndvTVdKZjNpYVJoc29GUGJ6ZXZkWTBaelBjUDc4MlhPWVh2Rjc5Wm9vNExYcDEwWWs0Zw?oc=5",
+      "published": "2026-10-26T13:02:53+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "중부일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56cFdFZXBmMHhOSi1HMGVYYzNFZHAxSlpXRnpmLWxBZUhaeTNBNWhCdDJkSHZPWGpWNE1WVzJNMGo1dXRXRFd5QS16NGZtSjZPY1h2M3VRZ3I0QjViRU1RZmpZaXZiTkxGcGNlaC1iOA?oc=5",
+      "published": "2026-10-26T10:42:00+00:00"
+    },
+    {
+      "title": "고려아연 지속가능경영보고서, ‘2026 갤럭시 어워즈’ 금상",
+      "source": "스트레이트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8tTW1qdFF6Ul9mbDREcWpXMGZpR3EzRG9raEdmZWZrWTBqNHk4RFJlenlDN2xsOV8zME1CU2tITHNJVk5jWm00QUVFNUpBc19GYjh3X3FSTG10RTJ6cVJvTVMtWHJBaERlSlhYNXo4cGFHQUHSAXdBVV95cUxOeEtLUU5JYmVuQWp4TkRWTHJ1Y3JOT0N2cnNoNUlZd0YxME44bUJ3UGdZWklncDlsQ29zaUhSX0g2RDZtTER3ZkFOTXM4NjZsZ0pNWnkwNEE5R3FHMmg5clNjZVp5c1BXVlRQYTNEamc0TjhVWTJQWQ?oc=5",
+      "published": "2026-10-26T09:13:53+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "더글로벌기빙뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9WbkoxOGtUalpmYnZhNU9kbFl1QWk5bWlGS1pONFJfbFZHelc4blE5NFRUVW1pS2NEUDJCc2pfbFJBTXJnV29TdkRqZ1o5dkJBdU9VUw?oc=5",
+      "published": "2026-10-26T08:42:00+00:00"
+    },
+    {
+      "title": "삼성, 클립형 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ZeUp5QVRabDhzYkwwdV9ra01La194cWZlOFBxOUI0a3JxeFJhbEtqWEowMHhEWHNIZmRXY0thNHF2dWVLZUlrR2VRa0NsZHVBeWxpV1dfbzU3Zw?oc=5",
+      "published": "2026-10-26T08:24:59+00:00"
+    },
+    {
+      "title": "고려아연, 지속가능경영보고서로 ‘2026 갤럭시 어워즈’ 금상",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOHlEV1UzMzZ1VTJsTW1Rdnk4MmZBWEM2TUxsSnhYdm0xbk1sUGhYWDhBMXltbUIwMk9NVHBsaGJXV1pPS1F4YnJDajcxeHFlMnoxTy00ZzFCaXRhaGRPblNHWmZRNlNVOHVZTDk5NzFxSXpZTFlOdU1NX2JPLWlERkJ5d1RlZw?oc=5",
+      "published": "2026-10-26T07:45:30+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 국내 출시",
+      "source": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5HcHl0MzZjUGxHNDVGbE13M0FtamUzTzBZSWw1WFZZWjY1RDRFVXhhMWlhN3I2UklKRDBTX21FSEMwUG1YTWRrUmM2emt0eFFDNE02eDlxbkVvMlJQQVpGSXdHRHM?oc=5",
+      "published": "2026-10-26T07:39:31+00:00"
+    },
+    {
+      "title": "“갤럭시A 20% 감산”…삼성, 칩플레이션 대응",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAxVHF3UjVLRXZoSkJpV2dNMVVtczUwQ0hwY0dwUzZ3SlEwQXZKVUxCeDBRemoyNUcySExxMzRGN21Xb3l3U2ViTGhBc2R4QQ?oc=5",
+      "published": "2026-10-26T07:00:00+00:00"
+    },
+    {
+      "title": "“권한 더 주고, 보안 더 철저히” 삼성 갤럭시 S26, AI폰 기준 세웠다",
+      "source": "비즈한국",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1TWGlWOVdKMkl2b3p4cXlfNHV2OUU1eEUySzRhUEFtaE5NRDJWMlczVW94Nkw4Ul9xbVNTMW1QYVR2MXQzWC1xWnBOUm9OVy16T0tBWA?oc=5",
+      "published": "2026-10-26T07:00:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "디일렉",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBnRWhQNktEbEs0Mnp6MEI1bU1oanlyaThNYnktLXVIMzZMTnlxOTlseVhqU1JEZG5LeWxzLUFERzQ5bGhFUjJIdm01aWc2NEhKMTFCZUdBSmYzODJrRjJhcjR0WTIwdw?oc=5",
+      "published": "2026-10-26T06:57:37+00:00"
+    },
+    {
+      "title": "[MLS] '손흥민 득점 취소' LAFC, LA 갤럭시와 2-2 무승부…PO 진출 확정",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UQ2NnZXRwc2gzZVJUWmw0bHBjeUxzMnhRa1JRTHlQcWJ0aTN5dzR1Rm1uU2Zwb0UxcFdwUkNObjhlMjN4bXMyVWJFXzFRNGlpb0loa3NqdHhJQTlX?oc=5",
+      "published": "2026-10-26T06:57:00+00:00"
+    },
+    {
+      "title": "고려아연 지속가능경영보고서, 국제 ‘2026 갤럭시 어워즈’ 금상 수상",
+      "source": "뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9hNnZLUTc1ZTNNVFZuWXR4UFFjUGhyeGhxamM4aGppVk1OUGJzbzN0bGtWUEF4b3pxWnFJVDd1ZmdSa2w4cW1ZWERQME9RY0txVU56SGxoUWplSWM3VDlPVEZvb2VKTDhxd3F1M0tydWNZOFcwTWx4cmt3TdIBgAFBVV95cUxOM2U4UXd2OVRoTUxjcXFkSVF3T1hUQnZOdnB6bVhEeEkzWWhReEx4WEduSHNpV0s0LTlQSHRVQWxmNDY2VmtQWjFsTnRvT2lzcHcyYVBBendPeExrUG1nbHhmUUtxdUFFTm05QVVyeFdCNU9wS3k4S0hfUlZIbkV5bw?oc=5",
+      "published": "2026-10-26T06:55:00+00:00"
+    },
+    {
+      "title": "고려아연 지속가능경영보고서, 갤럭시 어워즈 한국 부문 금상",
+      "source": "페로타임즈",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tYnNTaGtTY1U5eU5MaDNDUnl2NkloMllUbVZxdnZ6VF9ZZkJWR2VhYnVkcG1hSTJwUFBJZG9aanhtQ21meGNmRmVmdndQMGlVOHctOFcyREN5ZnBiVUxNQjZoU3RPak1GTWFOSA?oc=5",
+      "published": "2026-10-26T06:41:42+00:00"
+    },
+    {
+      "title": "갤럭시코퍼레이션, 두바이몰에 로봇파크 2호점 오픈…중동 엔터테크 시장 공략",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tR3RqSmtGWFlIRTYtcTZJM3lxLU1LWERhMlJaQWdDYlFFb2lRMmxLVF9CV2dGdlpsc01fTTljYjlhM1BmU3I1XzJxaXVES1VGU05FWnhn?oc=5",
+      "published": "2026-10-26T06:39:41+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "경기일보",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tbC1lb0JaQlVGRmFnVlhpSjVfQ050YUN1OG84eFBLbl9lN0FGMGZkV2gxaGJMb2pSSnZzdmZ2aW1JdC1Gd0o1TGROelhlczc2NERSRlZ3SmRsQkU?oc=5",
+      "published": "2026-10-26T06:38:53+00:00"
+    },
+    {
+      "title": "고려아연 지속가능경영보고서, 美 갤럭시 어워즈 금상",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1LQkJlRDRQZjc2S0tHWG5RR21JQnlTdUhON21oVXFveHdhaEk3UlktcmpndmVHTWtRMXFDN2FzcThGcTFqYmM2MnZONFNNb25wMlBzMw?oc=5",
+      "published": "2026-10-26T06:36:00+00:00"
+    },
+    {
+      "title": "삼성, 갤럭시 A 생산량 20% 줄인다…메모리 가격 급등에 플래그십 집중",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9adFV4eW56MG9MRFl5Y2RRUmhfamp2cG1RbW1hSU9rV0tKVG0yX1R1LWo4eHdibXRTWnNoWGdPQ19WYTJFVVNrVQ?oc=5",
+      "published": "2026-10-26T06:34:05+00:00"
+    },
+    {
+      "title": "갤럭시 Z 폴드8, 가을 독서 나들이 활용도 높여",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Ma25OT3FFUWF6MWJsTnhfcHhVS2RYa0RFUTZob3FYNzgzYkFOcGxtZnNZbWlLRmZPQlFYNzUwSFZjOTdIdnZjbHZkNEQ0MkRUbkFoQUV4N3d4TlpvejNKVXAycjFNWWlBaDEw?oc=5",
+      "published": "2026-10-26T06:18:15+00:00"
+    },
+    {
+      "title": "삼성전자, 삼성 ‘버즈 온’ 29만 9000원에 출시…귀 안 막는 갤럭시 버즈 뜬다",
+      "source": "경기신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zSlhrd25vaHdDVmw1MGNMa1hYa0o4YVdJemRKU19TMHJBSG8wQXVqVFhzdnZRTVFGaTRyYmJLal9ZTDZRT3Yta2NLZXhoWWY4LXpMUzZDbEtGZ3hMeVpmYzRB?oc=5",
+      "published": "2026-10-26T06:07:09+00:00"
+    },
+    {
+      "title": "갤럭시코퍼레이션, 두바이몰에 로봇 아레나…영화관이 공연장으로",
+      "source": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5DNDF6WnhyakJYZ3A2QUdITmJ6djZIZ0xRM2xrd0xyMjN2dmdFRGhjbVdiNU1oeDlGRVJqRlFELXRGeEZ4Z3BtdXl6SGd6Y3B1ZThWOE9OOWdnQjNxeERhN2RQakI?oc=5",
+      "published": "2026-10-26T06:01:43+00:00"
+    },
+    {
+      "title": "삼성 첫 오버이어 헤드폰 '갤럭시 스튜디오' 출시 임박",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBURG5CZzJ0aHBzSDlIczlmSmM3U3c4MDFGYXVrQ1k2andPa1p0RlFsb2hNQmxVMHIzTlBYSDdzN25ja2czWFhrR0dpMnNtVEZsTWZ1S1V3?oc=5",
+      "published": "2026-10-26T06:00:54+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 ‘갤럭시 버즈 온’ 27일 출시…가격 29만9000원",
+      "source": "투데이e코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlLUUzQnBJYW9lSUlUNUx1cC1NWXBQYS1ZdWFCSHo1NWgzeXpRR2dZdzB5eTBWZ2ZGSWZ2VmZVeVd1SmxnQW8xeGtYTk53M3NYejFmMTFlUnphRkhiZy1EUnpMYmdVYWM?oc=5",
+      "published": "2026-10-26T05:51:48+00:00"
+    },
+    {
+      "title": "삼성전자, 귀 막지 않는 ‘갤럭시 버즈 온’ 출시… 클립형 이어폰 시장 공략",
+      "source": "비즈트리뷴",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyakxjcDZMWi1ybUVRUWg4STdUUXo5bEZKMF9qOGgtcTlHMnlIdFpab2hVS3dVZ21RMVg3UUFhS0Y3c1pnbldfdHVnX01iVGYyT2tGNV9nT092YURTeDNnSU5uLWZ4OEZ1RGQ1ZXROVEM?oc=5",
+      "published": "2026-10-26T05:50:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 출시… 29만9000원",
+      "source": "매일산업뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tYW9iYW9QclFjOWNRQXJ0eVJJWGUtclFrdElDV3hTRndwMlUwU1RaWHVHUGFMY1dzbk1fTC1wRVk0dC1Ha3dWOS1NdnRiZTVRd2NGR0ZUSFZnem1GSERtc3pzUQ?oc=5",
+      "published": "2026-10-26T05:43:43+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 '갤럭시 버즈 온' 27일부터 갤럭시 유저 만난다",
+      "source": "The PR 더피알",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE55S3EtbjhORVZ2U2xRcmJsbTctTmdLaHBRNS1oUjYxTm8wWkhDOUpKbWswaHBXX09pdTJFazhaR0d5cnF0X0dOWGNPalhtdGlmSTl3aWxxQkx2aTZwS1VDZFlZb1F0cTRGcEHSAW5BVV95cUxPMHlZX05oRURnSmM2SzQ4YzlRTFdIdkVyZmtZNEJnT250a01fWDU4eE5LLTdDbWdrRWQwNU84dkpQUjNpNnhwZm9QRVhEb0RIM0RhLTJkYjNBVEtNR190N1hBTFB5TVVULXhnZFZGZw?oc=5",
+      "published": "2026-10-26T05:31:27+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 출시",
+      "source": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9RNEJZU2c4dnFjOWlOWHlfRWtqeUJVLW1SNlM5SWV0Wmt6VTUxSU1LNVY5YmlJc21DMHJLMkJ3MGRSVS10WjdTQ2dzSXl2V0VnVURhcHc4d05talE0SGxlNC1WRmZqanR3SUl3?oc=5",
+      "published": "2026-10-26T05:07:38+00:00"
+    },
+    {
+      "title": "삼성전자, 귀막지 않는 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "뉴스톱",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ENmdNSTNnVldyVnJzY3VxaEpLWVVoNEJNbkZFOEFnc2NxMklpWi1mWjJhaWpsWm9xUlZQVEIyWVJPN1BXS3RyUm5nMHRhV0dKWmRBb0V3bF9ReHpCeFVXeTVkTGlaNHhSR1VOaF9RVQ?oc=5",
+      "published": "2026-10-26T05:04:07+00:00"
+    },
+    {
+      "title": "손흥민의 LA FC, LA 갤럭시와 비기며 플레이오프행 티켓 획득",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTWNoUVQ0V1o5YzVOVzZLdk5Fb2NFa2piX1JXNTI4TDJYRVVhOF8zWUpRZG53N3BuUmNaXzFqcW9Sc2RxdmxYdXNRR3R3ZS1xMkhaQnZQNTF3N2IyUkJ5emxrbTJEMEU4RG0tQUNfTXpsWkhfNUp1MmQ3b0QweDhmNThHMzZNcXZNOE40?oc=5",
+      "published": "2026-10-26T05:01:19+00:00"
+    },
+    {
+      "title": "[전자는 지금] 삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 국내 출시 外",
+      "source": "딜사이트",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9vOERwbG1sRmNSaHg3Mnp5dW5SSGx4R3ViUXBDM05hLVhFaE1TSk0tOF9Va2oxUy0weXRoVjFTLWJEcEJCTGNkd2Z4SlZjSkU?oc=5",
+      "published": "2026-10-26T04:46:49+00:00"
+    },
+    {
+      "title": "삼성전자, 소리 누출 줄인 클립형 ‘갤럭시 버즈 온’ 출시",
+      "source": "매일일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5CdDNUU21sS2N5WDdiRnRHaE1pNHAzbEk0X3IzZTJGWTk0QVNXUDBQMmtUWUJPMWJCM0Y4LVEzTGJjblVCRE12NHhha3Z2X0JoZ081SnV3Vl9JUllUY25ValAwR0Q?oc=5",
+      "published": "2026-10-26T04:40:15+00:00"
+    },
+    {
+      "title": "손흥민 ‘골 취소’ LAFC, LA갤럭시와 2-2 무승부",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uNDNRUkFIeEVzVlBXaFp2NDk0cDA3dGxSNnc5R3drUWpKZkZlM0dPVjRsdlpBdVBLbm50cUpPQUFUZGZGY18wQ1ROOF9zdHZ1Wm9ZdGdnY2pSck1iNGRaOUV2dDI?oc=5",
+      "published": "2026-10-26T04:37:00+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 판매",
+      "source": "NSP통신",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1OERmUGFWZTlhNjAyTGRjaDJVZlY1eWlicU9mYUhSZVFzZk9ibEFCemVKMXRpdEZTaGloeTI1cWF2QVFMVG5sZXNMRHFtN1B2cGlfN2h0cXlySU9ycUFObA?oc=5",
+      "published": "2026-10-26T04:34:06+00:00"
+    },
+    {
+      "title": "[S-트렌드] '무선 이어폰' 시장 주춤한 데 오픈형은 성장…삼성전자, 갤럭시 버즈 온으로 승부수",
+      "source": "S저널",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1xbFZKMjBHZG01QmlfYW5aVEt4SW93YWV5a2RWbFdrQVRaVG5QeEtiMm56eGl3cTdkRFBUWUoyc2d0SHNNQmNjVktTY3BZdWRGUHBCSjlPN1dLWjVsb2FPRFNoR2h2bndoNkdzenVB?oc=5",
+      "published": "2026-10-26T04:07:52+00:00"
+    },
+    {
+      "title": "‘손흥민 골 취소’ LAFC, LA 더비서 2-2 무승부…PO 진출 확정",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wdjQ4RGZkdDBoMGlsaC1XTk1hVVB3YzJjSGJMSk10RTRJem9pbTVaQzVQUTVERV9yOHNnVHh1SGpiSDZsTUJNMkJsUFVJNVViMFIxRUQ3WlF6cFJpVk1rbUQtQUVMMEowckVZd2E0bHc2SWRw0gFmQVVfeXFMT21nS1RlcDhYU25yNXlNV1hORkdyX29vQ1h5NGpEdGJrN1NmZnJvRFRtVWJXcHhTX0NxR1NWMnhLT1NvdW9ZZV9jY3dMZ3NYa3VQQTdRak5pQ01HTWlzX203OE1ReV9n?oc=5",
+      "published": "2026-10-26T03:49:42+00:00"
+    },
+    {
+      "title": "손흥민의 ‘도움 신기록’은 다음으로…LA 갤럭시와 ‘엘 트라피코’서 풀타임 소화, LAFC는 무승부로 PO 확정",
+      "source": "스포츠경향",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnSTl5eThKYUhRVU9pSnY1SUxBTnczekkyMjEydFVTUjd0bTNOMFBmcEV0eE5PZTR5SXpWU2RyZWk2TWlSeXFGajFfMGRnWTd6cVFXdnhCNnJNQnhDQWfSAWNBVV95cUxNcUxueE5Uem5FQ3pGN3pFdm1PT0VTWnV0eDdlYlJqRW9ydmEyM2Z2czVDNkdQNy1rMGtzWk1YNFl3WjRZSDdmZy02a2VPWV92cThySGlzMGxzcnZScEYxSEJwT2c?oc=5",
+      "published": "2026-10-26T03:27:00+00:00"
+    },
+    {
+      "title": "'손흥민 골 취소' LA FC, LA 갤럭시와 무승부…MLS컵 진출 확정",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Ma1Mybkl6d19fanJ5dkYyS1pjSDY0UzJoMjZaUzdqdHNZRGVnbER1U2h4UlVLWXZncjg0QnotQmFiUDRLMU92ZTZZb1ZGTEhqMTIwZngwUEJCd1Q4ZDRKbQ?oc=5",
+      "published": "2026-10-26T03:25:12+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "뉴스저널리즘",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CMzNuU1RzY2lHZVdJVER4LTdBVnl6UW5FYzQ3QWRRRWQyMTJLRnhZMVJCTmpuS25jOF9vT0x2WHZuUC1iaS1RdlFWNUNKRHd6NFhsUURINXFZVTUtYVMzeWktTHZRNzltcWFr?oc=5",
+      "published": "2026-10-26T03:24:23+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 출시",
+      "source": "이지경제",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBaN3Z5MHV6T2hSWENhc2luUy1pTFdkM0FESTNseHIwbTh2MFJGTHUyZ2h5dU5pai1ETGVSWU5jdlJpVXVRNDAwRTlyQmlKaUhZUlIwNkRacXQ1M2E0SmxfaExKdk9lVWdyU1Z2NVhB?oc=5",
+      "published": "2026-10-26T02:33:16+00:00"
+    },
+    {
+      "title": "\"귀 막지 않는 클립형\"…삼성전자, '갤럭시 버즈 온' 국내 출시",
+      "source": "굿모닝경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEZjJ3MGRfa1JhTWY1NWUxc1kzdXRVdkg4NUE3NW5xWjN6UXZwcE5Pbk0yeGJ6WXUwX0VLWm80UEJvUVJoM19qVGZWZ2JBcHNVd21JenB3R194bXpTTlZhSVc3V3RzbzhRLU4xMw?oc=5",
+      "published": "2026-10-26T02:31:36+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 국내 출시…29만9000원",
+      "source": "빅데이터뉴스",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5hLTdxMWpBbXZncGxTY3JnWGd5aHZOdkhURURiOGhpVzdZdXFCeTJaOW9uTUppZUtSQ1JIdkZxYjEzQnJTclFLdzlTWkFEWWluSEV2ZHN0c0tkaEI4UHdxb01hX185N0NIYmVJTkQ0OGJUWjR2eGkxa0JfeXA?oc=5",
+      "published": "2026-10-26T02:29:31+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vbkhVTE5tZkRIcXpmVWs3TTZhMk5VYmx0aXBXNkNKV1o3bW9Ic0ZUSnh0THRkZDZFWmJsMHVha3d5MXdsME9jYVl3aTk0enNNY0hfY2diUWZidEM5LXl5U0QxdGxpUHEzZXc?oc=5",
+      "published": "2026-10-26T02:22:13+00:00"
+    },
+    {
+      "title": "삼성, 첫 클립형 무선이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tdnJkWjhIT0g5d3I5QTJPOGhUVTRXdTBNaVk0THFYaWFrZFp1Y2otZ1pEclBuWDA4X1p6c2g0cUxWLUVINHd2TnVoYW80eHJCd0ttQTRKaVQwTkc2MjlCcQ?oc=5",
+      "published": "2026-10-26T02:21:47+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "베이비타임즈",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5zbjB6X2cyeW9pZGlKR3M0TlZlU2NDbUc3QUF6RFRNRmJwa1Qwdk15bkxFTjFPTEhfUnRnS0NVelloLV9GT1pMSUJCMFplTnM3SFFOVmNHV2tkQnJtaUNCR2Z6dkhuUjU2aDdOdQ?oc=5",
+      "published": "2026-10-26T02:19:18+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+      "source": "아이티데일리",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41T21DRFVvX1JYdUlBei04dU9LV0dFWTBMVzVnYWRPbktIa2Nkdlh2TE1va3l3aFFLd0h4cDBYU0kxRWllNE9Ra19yMTdZcnZUdjJDcTlObVMxNWwxTGJkRmZBeUU4SFU5?oc=5",
+      "published": "2026-10-26T02:17:10+00:00"
+    },
+    {
+      "title": "삼성 ‘갤럭시 버즈 온’·LG ‘스템 냉장고’ 출시… 편의·AI 기술 극대화",
+      "source": "천지일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vZnBfOTE4YkJ3aE9qUndVX1lwVlFPLWx4NVkweklwdTJ0Yzd4bS1fbEpHZUJ2X2VwMDFSQzFmS0h3LXBHTjI2QV84cXNZWVBLLTI4R1RKNDBocVpLMUk2NEwzSWZWN0I1TlE?oc=5",
+      "published": "2026-10-26T02:14:50+00:00"
+    },
+    {
+      "title": "삼성전자, 귓바퀴에 거는 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 출시..차별점은?",
+      "source": "데일리카",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WRnpyN29kNFBqc29yR0xJdTg2VWtzYkxldkxCbzktLURKQ050V1dBNE1LYTZrcmNXaWE1RmRuQXh0cDBxaUtjcHd4VVFmaEtQcVlHWks5QWNaWGI0THROemRKTHpIUmxGVXAyYjBFLXQzZXI5SkE?oc=5",
+      "published": "2026-10-26T02:14:35+00:00"
+    },
+    {
+      "title": "'이게 왜 취소야!' 손흥민, 10호 골 뺏겼다...논란의 심판 판정으로 득점 삭제→LAFC, 갤럭시에 0-1 끌려가(전반 종료) - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ORGJkX1JUWUdvSUJDc1dVRWtsa2J5U1RwVUdFVHZGdmVaOXIyZG9PTG92emV5ZHpEWDlhZHZiUG1TSUhyVzRYbVZRSlpzRUVvSW82WTdUUGpHOFVBcW9hOFE1Zm96OUtvRWfSAW9BVV95cUxQYWRRWndoY0pSd2NoTUd6X3pYUXh4T3lkZjd2M1JHckgycnAwR2VGMTBsdWozUUstUjk5VjloS3VfbDdOd0taX2RWbXNNN1ZtQ0VpS3h2OVd2cHJ4ODdhdFEzQjRKbEgwbkFvdks5Qmc?oc=5",
+      "published": "2026-10-26T02:07:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "뉴스드림",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZdjZyTFRnQ09LVXJ0dW5hTEZNYkIzaXluRmJPT3gxQ0FfM1ZvZ0FqeldsYVNCYVNlZzh3ZEd3MXJvTlU5N19WQm41VXI0SEpoSkkxSE9ZT2ZyUmFBQkt6NWlmNURGanAtYmxn0gFuQVVfeXFMUFp3akVHNUFVeDZRb1NJbEdyRVBlZUFOOUNGaEo1RHhSSUJTM2pzRmhxT3JwYzhtNzJzV1I1RnhnMjNqR2R3ZFVMaEk0a1ZmQnMzWEJWU0ZrMlFRWEIzN25hcFIwRS16S3YxdkdRMkE?oc=5",
+      "published": "2026-10-26T01:49:47+00:00"
+    },
+    {
+      "title": "갤럭시 버즈, 이제 귀에 ‘꽂지 않고 건다’⋯삼성 첫 클립형 ‘버즈 온’ 27일 출격",
+      "source": "엠투데이",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81MmtsRGdOZkRBTVNVR01FM0p0TzAwbVdEcnpHVHAzZUFKN3UtMWRTWHg5RFVzTFVHbW5hUFp4QU5KTFNIRjV0aDFkbXNMM3A4cFFlaTA4UjBkTGFvdndtVDViQ1NvZ0FZOTFXcTFRRQ?oc=5",
+      "published": "2026-10-26T01:46:27+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 ‘갤럭시 버즈 온’ 선보여",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzby1xaWc3bnhpcUljcjI4bjFEdUdVdWx6azctOVZzcTA1RXAzQy1yRWg0blJyanZyNG1uTDFmNHJnS0tXR3BTMmNVYXZWeUtCblZWRllEdGxwT0VzQl9ua1FNd2VsNlZFRFFhUkZua0TSAXRBVV95cUxPTTZaeF8teE84Y0RkRTl0Z3hZdF92Xzc4bUtRN01mR3p5N2EzT24tOU9kQXF5NXBSZnp1Zk4tcmc0Xzh1aHY5S2FwSzNfQ2N1b2lyZ185T2p1RS05b21sM2YzSkp3RHV4cFhMeFZCQUJaTzY5TA?oc=5",
+      "published": "2026-10-26T01:31:29+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 출시…운동 중에도 착용감 안정",
+      "source": "나눔경제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBteXNJOThXd0RtbDNkQmRWcC16X3kzb3FVbWxLb2NqWFcwMW9reURHeEdHYVNlTmRhZ0NIQ2FPeXRrOUl3bUtISTFLRXlDVGljdXN1LWZKa3Fnd2N4R096TGg4dUFlMG1RQjl6ag?oc=5",
+      "published": "2026-10-26T01:17:42+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+      "source": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqa2pZeGx6TUp6YWRNZ19jOVZwbkVwcmJPcE53cXZJNzdXY2l1Tk84c1RyOXo4aUpLUW1yU00zVl9QcWhfRUpkS1I0RExvU3ZVY3VPNkVBSXM3OGRQR2dacEVPTUFmb0pia1lEOW13?oc=5",
+      "published": "2026-10-26T01:14:28+00:00"
+    },
+    {
+      "title": "삼성 ‘갤럭시 버즈 온’ 27일 출시…시리즈 최초 클립형 무선 이어폰 선보여",
+      "source": "ER 이코노믹리뷰",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3MmJIU0JOeWxKUGhFRHl5V0VUX2pKTTNvdlJQZjhabTdQNy1PZ1h6MVFMdW5OWl8zcEU1YlVKMkZVZjBFOFBHd3ZBUWFsTzF2c1NCLVVxaUJYYkczT0NQc1p5ZlhQV1JyRWsxVw?oc=5",
+      "published": "2026-10-26T01:14:27+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "스트레이트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1WFhzYkw2ZjlSQ2lkMENobG1wbjg4ZkRPVnBKdGdZTWd2OHFpZll1NERXM1dOWFV0N1p6ZGd1aTFqcDhwZmRUSGtydnZhd3E0X2lTeW1qUnpvSDFMZ040Nzc5WkFHUEFyMnRCNXV4LWZLZVHSAXdBVV95cUxPNjdVVHppSVdRci0xb2lhenNxV2x3anFQcDBFX0k4MVZlaVNjcE90N2hTZmlSektqUmNhTkFBb1NQN0w5RTIxOVd6WWR3bHZJeE1VN1dsdW5SM1FGTUFTZ2gxR0FkWmFJTVZpMXRwTE0zUGk1SkNYOA?oc=5",
+      "published": "2026-10-26T01:13:33+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 '갤럭시 버즈 온' 27일 출시…29만9000원",
+      "source": "비욘드포스트",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1lZkk1RWk4QnpmOUJVS3h1akctTnB5UHdZZnh5TWQxSndXekItaWdWU3JLYmprWkRuWC1zUDFaNmJoZGxCVEQ5RW5OVVA1Q1dMelBiNWZsLWtSOUZ3X1o2a3pFd0Zub0U5cHQzcWdCeHpfZlUzUnlEel9Caw?oc=5",
+      "published": "2026-10-26T01:12:54+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "뉴스웨이브",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9mcE1JMkZxLWoyMjJKcFRqZUZvLWdNU21penR2cGVPYW5iQjZEQkh3OVZIbEM1dXBTOFA5NDRrcmhBejdvOXJKa05rY3JtZlA5dUVKSnNCMjZEdnhwb0Vacmk3X214aElYblE?oc=5",
+      "published": "2026-10-26T00:55:20+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시 - 조선비즈",
+      "source": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYUJ2UjNHamJUdUhKenFycVRWdWQ3dXYyTHM4LTJuUmlLckZhUHhNN3NHTUc5dUU5NmF3RE1ncXdtU0dHd0d4UWl0S3R0Qk42enE0bS01QkpOQ3lkS2lPaVRZRXBGdmgtaXdSdlRHZUVkSl93dzFDZ0d2VFltVVo0SmJB0gGWAUFVX3lxTE9Lc01uSWI5X3FjWlZqTGxLN3lRUkVmOGxsVHdGMDZ3d2wzVlNUVWlqWnpBMWVGWDJ5ZzBQalhndTMxRmNqR25jcFBkb2wxSkxjc1ZWRVNzMzFva0NaSEZlZzdqTlhUTmZyT1VLVUFMNnhCdkIySjNXV0pQenc1bEtrUlpHYjZkUTdVRlVfWml4azB5ZmNHUQ?oc=5",
+      "published": "2026-10-26T00:53:00+00:00"
+    },
+    {
+      "title": "삼성전자 ‘갤럭시 버즈 온’ 출시…첫 클립형 무선 이어폰",
+      "source": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9PbnNsQVpfSkMzOFR5ZzZjeGsyTm9ON20zLWpGenRmMjNBX21BWXpDR1NtR05PbVJyWXJ3OWZIZ25Pd29ac1JOeGc4d1FobGRjSGwyZ1lKX05xZTZ3R2c?oc=5",
+      "published": "2026-10-26T00:52:00+00:00"
+    },
+    {
+      "title": "귀 안막고 AI까지 연동…첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "뉴스;트리",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNR1k1c2tFeW01LUhPUzdfaHZtRWVtU1FxZUhmWFI5RGN5d0ZNRTFTOGlnY05wd21uajlqcHhhQmt3dy1uUlJkcHhteldrTUxlT01SM2gyQzJicHE4?oc=5",
+      "published": "2026-10-26T00:46:03+00:00"
+    },
+    {
+      "title": "'운동할 때 착용감 최고'…삼성전자, 첫 클립형 '갤럭시 버즈 온' 출시",
+      "source": "뉴스웍스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9DNWlNWW9PM2t6Ti1EdmF3R1FwUlotTzFuMG4zZ1YzUi1PYVZOQl96SEQ3MnFIb2NuZzdmRDdyaEZJc2dNT2FLM0xua3JCQWZhQlJGSFlUNjM0UmZ4eFV2NjFRd0xhZE44YzNYTE5uWdIBc0FVX3lxTE9iRThxRFVxMDlrTkhsRXY3QjJiUFB5eHF1OFpRNU1QaS04WXpVa3dpdnpELVcyTnAyc08teGRBOVVlZ0E5VlIzbGR0cVZUS2FZbWc5eE5OTkZEYzd5b0FPTHZPeUpLeW9VN1NZdU1EUjdWanc?oc=5",
+      "published": "2026-10-26T00:44:28+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "SR타임스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1bUFGQWMyaHVoUm9YNEJXb3ZPMmtXb1pXM2x5di1iUDhWYzlRaENraEoyOWl1WHk1SW5aT0ROb0RscEw5VkRIT1IzNjNTQmdER2g0SXl3bkZqVlJRU0hDZkphWkhXc2xt?oc=5",
+      "published": "2026-10-26T00:39:16+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 출시",
+      "source": "인더스트리뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3d3IyWGx3T3prX2NBV0tGMDY4aGQzb2JabGpkSW5WZF9UZ2VMd2I0cFFVdDdpSElNQmZ4YTBJc3lmelZWU0tpc0hQVVpUTEVPM2VnaG5SSTBfWlhrZzBXMkVGb29JMGgyemtGZ3lPWnNpdw?oc=5",
+      "published": "2026-10-26T00:36:55+00:00"
+    },
+    {
+      "title": "﻿삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 국내 출시",
+      "source": "정보통신신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XTFNRYUd4cVViNmNEU0FXQllaQk1NUzFOUUZrRHRQcmFqN29YM2R5cERraVZnOHdjblg4a0dodHNxMXRubFR3QUhmV3NOYzhncDF4amk0S1E4RzRjWVluZjVVdHd6dm9C0gFsQVVfeXFMTm5kOXREOXlhdEpaSXBDM2xlZ09ZUjR0SjdGakk4ZkNQRlJ4dzNiSmJZdEZHNW1xajFvaDAwX1ljOGVHdlhuLUx0YzAwbWJKMldzbEszckdPSG1SNGJzUkExQjR5UHU2dGhWYWhO?oc=5",
+      "published": "2026-10-26T00:36:35+00:00"
+    },
+    {
+      "title": "대박이다! '도움왕+구단 역사상 최다 AS 도전' 손흥민, LA갤럭시와의 '엘 트라피코' 전격 선발 출전...공격형 미드필더로 선봉 [MLS 라인업]",
+      "source": "마이데일리",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TZ0dUQW5tVEpreEdBUHZHTDFlb1NMdDk0NUZraGJxeXFyaFRfSWJmS3pMT2tTQmhLck9teWxfX0Jqb01wSjVSX0hRYWYxdTgzOUNjVEtNaTBweDZwaEtUTQ?oc=5",
+      "published": "2026-10-26T00:32:51+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "뉴스웰",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0yTkhxM2N5aTVHNmgwRFk1OUdhdWJ4dFNPcHhSTVJEOW50Vk54c0VsNkd3UXBVTk5Raks2MFVVOGlIZG56MHA3ZzZpN0N2SHkwaFBXc1VNWHpJeTc5dWhiUXZRb0ZCblZHM1hzVw?oc=5",
+      "published": "2026-10-26T00:30:52+00:00"
+    },
+    {
+      "title": "삼성전자, 귀 막지 않는 이어폰 '갤럭시 버즈 온' 29.9만원 출시",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBjTzZ0bXBERTctakg1eENmMWFBU0N0SlNXS0hiT2FxdWNXSkwwc1JTdnFJOUNKeDQ5MWZrRk9ldFhuTjAxWVhueVRsWQ?oc=5",
+      "published": "2026-10-26T00:30:33+00:00"
+    },
+    {
+      "title": "삼성전자, 주변 소리 듣는 클립형 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "스마트비즈",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwTEFSSDl0bGNuN3BkSmVXY0Vuck1tUFlSdm1sNVRUN1BRNm9vWVNlYWt2UW5zdmNPZFNBREJqQjRSOU0yc2tyd29NVGhPM0FwZzBWXzlXNmVVY19NSnc3dUhWejMxMXZGV2NZSQ?oc=5",
+      "published": "2026-10-26T00:27:37+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "팝콘뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xRGpIb0V0SzJlU0lIWU01OExwRHBxN08yc0NJNVdvdy1KV2FkUHNOSEZlLXhXYUZTLVZlNkR3NjVnd0dKdk4xbXlTdTJaS1V2QlRlYko2cEJhV2s1dWE2YzBRUi10Y1l5dm1ReFZkSdIBckFVX3lxTE12ZTdTeU1UYW1CY0hnam9nRmxza25BMFRLXzRwUENLNnpPbjBMeEE1UnJMUjBfbU5IR1AzLXgxMTR1YW5HcldPeFdxNVV3SmFuM1BjQUlDc2VyMVk5MUMxMjhWNWQ2X2tZOWZhUFRvVy1EQQ?oc=5",
+      "published": "2026-10-26T00:27:15+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 국내 출시",
+      "source": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPRjlVQ09jaWZHR2RZb3JZZXVUczZUd3AxcURwV1pUYlh2Yno5anhVdFk1QmI5YzNQeFR6UlVRcW9RYVNWeXdjRnVDRkNRcW90N0xaTUozQW1SNWx4ODVvdkpYWVNEUk13a1ZCdHFpZ2xaT2c?oc=5",
+      "published": "2026-10-26T00:27:09+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 국내 출시",
+      "source": "FETV",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBpMTNWdUhWUnBTb1ZaUEprcmZraHpoUkJpTjR5S2JhNl9nVDYzaXNmVTZvaTJnVnFpNDhXVjNfTEduMVptMWJsVHdlSktrRzdXVkl0bGNka3pVTS1fQUJLSGF4LXppU2lZ?oc=5",
+      "published": "2026-10-26T00:25:55+00:00"
+    },
+    {
+      "title": "귀 막지 않는 클립형 ‘갤럭시 버즈 온’…27일 국내 출시",
+      "source": "포커스타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA3cktwZkpFRE1OcDNaUDVmS3BxUzd4Qkxtc3duTWdmQy1KUmF2VkQxbXFiZk1XM0dNV1AzSlVUWDREUTN5TTE2WS16amFSOXByQVU1MmNGSDk?oc=5",
+      "published": "2026-10-26T00:23:23+00:00"
+    },
+    {
+      "title": "귀 막지 않고 듣는다…삼성 첫 클립형 ‘갤럭시 버즈 온’",
+      "source": "뉴스퀘스트",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ZcXphYkZmYzFHSTVCdjdNUFh1R2xFYXpPa2UtODZSUTRpVklSTjlSMm5FaUxqQ3pNR01mTzR2UjRodEZuSG02MDBMOUU1QW5jRGRySkJTQmliMDdLTGtxVEFLZ3ZKNV8zQ1dSR2NkMA?oc=5",
+      "published": "2026-10-26T00:18:30+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EVnVvX0NBT1RLTzFRekhkUnRJNXd6MEtDM2NFT0hWRW9JUzN2MXBOT3dGdnBJMnNsdl84cFpBRnplNlk2WDVxWjhiOE80dw?oc=5",
+      "published": "2026-10-26T00:17:38+00:00"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 '갤럭시 버즈 온' 해외 판매 시작?",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBLMkRGQnRiVHhJZ3FhcW05dkRSVEthT1h2YjliMTl6VC1nVC02OVlYYWV3WXVjRlF3NTJfUGdWOTctc1cweko1eg?oc=5",
+      "published": "2026-10-26T00:15:20+00:00"
+    },
+    {
+      "title": "귀 막지 않는 무선 이어폰…삼성 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "진일보 | 전남일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wRXp0cEpkRVZiWFlXWGgxVy0waENCcTdfMzVhMmFGNGFMNjI5U0pWQXRFSGxyQXlfTThIam5lVE9aMnlpMUVqVjFKRUlXY1hnSXNRdHpMX1lHNzNiSm85bnJOTW0welphRFBLdnY4RQ?oc=5",
+      "published": "2026-10-26T00:15:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdjR3ZHV5ejZwU3pkUkdwc3BGYmRMUEJMM1NaYzQ1dm0yd1V4WmV5NXd3Z2VNTURGbXVTZXhocU1XTnZUaEtPRjFibW5LWktQSFBVNGdZNld4cEV1dXotdks2RkJqVVVGRmMzMHNHVWFxcUk2M25GUExKVmdZQkM0Qw?oc=5",
+      "published": "2026-10-26T00:13:28+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1SWmVKb190a2VXZFBBRW90dGhSSTRSZmxfNEFwZGNsNTB5NnVwOW9WZjdvZVJDQm9yMVRjQ09uLVBLVktJS211UTY4LTEzVExTNUZabXZzUVlXZmVNdTFPcHI4Zjc?oc=5",
+      "published": "2026-10-26T00:12:08+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "데이터뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9yVU43eGd0RXlZRkZZcWJUMHFORXdTdEVtQlFta09OMHUzLWgyM3FnTFE0YUJxVDFNVGJzNlVnRWRWaHlUVTFiMUc0eXZ1UVdxNXdmN0wwTlRUVnFVZUtz?oc=5",
+      "published": "2026-10-26T00:06:59+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBST1MySm91dWl2WDZsTGIyTE5TUnZaM2hETjlJc1ZxNWk5dDlIeFJtMjRpWG5QQlFoQk1GLWozVnBfZ0hRazdEVVlvRGZaYkFBT0IwOXBfOUdrMGcxYkxNNnpBNGJEMVdBdThV?oc=5",
+      "published": "2026-10-26T00:06:53+00:00"
+    },
+    {
+      "title": "'클립형' 삼성 갤럭시버즈 온 국내 출시...30만원",
+      "source": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA0WTFaUEttZ1NLQU5xTFc4aFNwbmpOQkVKNFFQcnpHYmhIN2FKQkUwWWI0SlVacTBEckhtRV9EZk9BeTBoUTJhd2RBMkEwb182VTRRM1VB?oc=5",
+      "published": "2026-10-26T00:06:06+00:00"
+    },
+    {
+      "title": "삼성전자, 귀 열어두는 클립형 이어폰 ‘갤럭시 버즈 온’ 출시",
+      "source": "워크투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsVG9uQk5DWEJHLVpvWFY2b0JTZW1Wa21qT0pGWVl0RENZUXNnV1M0RVdsTXB3Tm55bHo2YUJKQmpxN3BlNFZrcjB2bHZUUVZxTzFaS1c2ZzdmTnd6bWpxaTNDMHdqLXBkMGRneA?oc=5",
+      "published": "2026-10-26T00:02:00+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 `갤럭시 버즈 온` 27일 출시",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0eThZY0hzb1lkY3hhaGMzd2tGS3NrbGJlSVZmTmFmcXRtR01iRmVEc0VxSXRJcUdZR3BvMmdfTDRmdWU1Wl9xOUI5TEZhVnpETUFDcksyek52WDRldUs4UzFR?oc=5",
+      "published": "2026-10-26T00:00:10+00:00"
+    },
+    {
+      "title": "갤럭시S27 탑재 '엑시노스 2700' 성능 이 정도였나?…스냅드래곤보다 최대 20% 앞서",
+      "source": "케이벤치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE44cFdLNURBQkEzdmhKN1JBNW1xT0dEVzU4YXBhWTV5Qk5MOXZaUDQ5a2lJU25QX2JJZjlBaTZxZUUwNUtnbHA1Yg?oc=5",
+      "published": "2026-10-25T23:57:18+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선이어폰 '갤럭시 버즈 온' 출시…29만9천원",
+      "source": "지피코리아",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBuSzBaazFrWHZieW8zUzJKVHIwRjNuVzlwOGZZazRWeXJINjRHU0pYYUh0TjZzZTlLWktVNk9XSXhrRVNVZnU3MjdLUjFWOWlkbnpVVENqeFZtLW9sVE9zdm1fem4tRVd6cGfSAW5BVV95cUxNNXdreUtSRGdicktiS3dNMW85MFltbmtsU0hUbXZPNTVZQXFXQXctQnJzYnRmXzRab2tWdXNFYWFoTHZWanE0VGZGcGtIb3FUNGdPTGZUV1NQcEZ6dDg2LWh5WHpwVWNPLWNNempoUQ?oc=5",
+      "published": "2026-10-25T23:56:09+00:00"
+    },
+    {
+      "title": "삼성전자, 귀 안 막는 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+      "source": "데일리안",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOM3FRTXhZaHlEQmFGSE16dTdsWkE1WkFNaEZENDFsNEdIMjZSem0ycTFGNmN2UFFtZW5Mbno4VDZHZTJqa3BqeDRwdmtDRjBSTk40WWNPZG5JQTViVS1TcjQwRU55b1N3UXdfMWNNcklZNDA0MDZhS1BFWDNEeXkwU3R4UlBvVHlqcHpzdzNMeEJfMXpTRnlCenotQzZmT1FmYVlCQUEtX1NYTl95MHVBT3VyOVA5cng5aHlwT042bXE4elo3Mlo3cUVPZTNHUU1RZGtuZF9yR2ROS2JWMkFUUi1aVkdqSEEyZDlLVnhOcXlId2cxUnNEbFhETUJLTkJjZzFEa1Z3UGE1SVdo?oc=5",
+      "published": "2026-10-25T23:53:00+00:00"
+    },
+    {
+      "title": "삼성, 클립형 무선 이어폰 ’버즈 온’ 출시…“운동 중에도 안정적“",
+      "source": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00SVlsNVh0bG9tWG9mWGpSazA1S2N6TWpJbHBjQTM4ajFGajRDSWdEamZQcGQ4R3phcU5EWlN0TGdnRGVZb3I5UHJQRWt3dTVlbzE0VUJ4RjZFSXlRa2JQeEhrTGc3Zjg?oc=5",
+      "published": "2026-10-25T23:52:00+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 디자인 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "브릿지경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XdjJWMTlZMGZMSm9QUGdEOW4yMl9zZUpabllGWUc1YUk3Z2lmVWxqUXlSU01ySTBidVh1TE1Kc3BKeUZaRkZnOHBFdThjdE0xc0t6dEVzYTZiZw?oc=5",
+      "published": "2026-10-25T23:47:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 출시",
+      "source": "신아일보",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05YkJfRWE1WlY2eUNKX01ILXVMZkFwX05HSXdkaUo2ZWFUeFhnaFVNMVlZZGxnZVhINXNyd1NYUjBOczZDR2w1R0VEcVhZaDlnejBsaEsydmRIb3VZamZLZ2NlNFFxaHM5elpnRDNDWDQ?oc=5",
+      "published": "2026-10-25T23:46:42+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
+      "source": "한국NGO신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wbkZfVjlZY3JiY1hqdDVLZk5QcFl1eVR4eWp5X1VnSDVGemZFSHpfWUFzTkVpX1FNUVNoNm1XT0VLTmluek9JUHZuWVZyM25SanlXUHdYZEN4c0djNnQtUzFyQXdybXkt?oc=5",
+      "published": "2026-10-25T23:45:08+00:00"
+    },
+    {
+      "title": "귀 안 막고 듣는 삼성 첫 클립형 이어폰…‘갤럭시 버즈 온’ 27일 출시",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuN1duWFR1NEEzMWNhOWRTMGFmMjlHak5KUml4U0t0VlZNSTRPcDJuZUhmekYwZi14bVlQUWJhTUJOaGtDazUyeVpPRjRPcVE2MVBSUWVKRFRCVDhVMDV3Ym11Y2hRTWxHU0hzNmstYnVmeVdIT1HSAWZBVV95cUxOd2ItUDJjLXFvaGk2cXpmQlQyOFpUV2ljWTRiM1JnVmwtSlBjRmNyd1FXM3BGaDdPMWhQcTN4aFZqb3hGZUtWQjF5XzFNei1oVGdMYmRrdHVBcEdNbFc5NG1zMXlVZVE?oc=5",
+      "published": "2026-10-25T23:42:42+00:00"
+    },
+    {
+      "title": "\"운동할 때 착용하면 딱\"…삼성, 클립형 무선 이어폰 '갤럭시 버즈 온' 출격 - 머니투데이",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FZkpHZE0yMEpLZ05taGFTUEwtLXVpdFkyN1JObUk4QmZRME43LUMwUE1kTW1jUFp4bDBmdFlUTWJFZUdTbno3enphT1oyb2FPQnFhNC1Eb0N4TnR2RFRNNnQ3Q0FCeDDSAWxBVV95cUxOZURNTTFZcGI5V0lzYTJUZlUyZENTQmxvNXM1cGVxUDQzQ2hObXlabTdjVDg3NDRmVGxrQW5NNUFDYXFLakpKUWRiZ29TRFBtRmdldTdfMUpuaVM5SkhTVTF1NWRJRTBRVW5rVzA?oc=5",
+      "published": "2026-10-25T23:38:30+00:00"
+    },
+    {
+      "title": "귀 안 막고 듣는 삼성 첫 클립형 이어폰…‘갤럭시 버즈 온’ 출시",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Jemo4b3h4b01EelAwdVh5MzBmcWgyc2ItaHhhWFpDZ05QZEFZeUgtaG1TRHB6UXYwNURTcFlibGV1cU1GQU5mVUNYUUtZSUQwVmxIME0yVkfSAVRBVV95cUxNVlp6b2dReVBlc0JzU2UzeE95X1luVHpUTENualZZUDRJcVBEREFLMmE0RVpTcVJxamg2bEFob2JldWdOblBfYmhPVzRKUERzVG5nZVc?oc=5",
+      "published": "2026-10-25T23:36:41+00:00"
+    },
+    {
+      "title": "삼성, 첫 클립형 무선 이어폰 '버즈 온' 국내 출시",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOMV9RTlVyajJJTk1jTmhHbEdVNUVMZkZZNHN4WmduekJfY1gyR1RGR1Q3ZmpCYUhhN3EwNXpxZXNGYV9uUUR3am5sSUpTNkpua1BHT0tWVFpzSWPSAWBBVV95cUxNTWhvZFdQd3dtdVZMLWQ4ZG5SUHF3MWFWNXU4S1N2aGdPeXNfVVFITm5uRHRaT3RiR0d1WU1OZjI2MF9rZVZVcXNRLTdVd0ZJR201cS1QbmtEdlhQWV9TVFY?oc=5",
+      "published": "2026-10-25T23:36:15+00:00"
+    },
+    {
+      "title": "삼성전자, 귀에 거는 ‘갤럭시 버즈 온’ 27일 출시",
+      "source": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE42OHZMYldTSUZIRmI2bUNHcXFkR0pfWDVmcXVWeVNaclh1dThnWHZUUEViVi1VakZ4U25iVlJuanBKRHNNWC1OLV83dGhpRmE2U0MyUw?oc=5",
+      "published": "2026-10-25T23:30:00+00:00"
+    },
+    {
+      "title": "삼성전자, '갤럭시 버즈 온' 27일 출시",
+      "source": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9UT3V5cGxONTJpN1Eyek1yT1IzODlGenBVS0FraFFKV1BoOV9hckFwNkp4UG1INFRvUEhldy1rbzNvbVVTdTByUlVEcw?oc=5",
+      "published": "2026-10-25T23:20:31+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 출시…29만9000원",
+      "source": "이슈밸리",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1yd3hVTmdaSlZudUpLWmhBdXlPeEhmTGtJbl81eTBnR3p1MmdETWlDSUJoQkM5Q2ZoV3NUbDdDSTZWQVJhRm1UZ21NaWkta1VxVmtZQ1JqSEtVenlhR1JGeG1TSGlhUExRdDdXR3p3?oc=5",
+      "published": "2026-10-25T23:20:17+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 국내 출시",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZMlRtNmdIVVhQRUZUelZ0dENTWjhObXFkcTBBSzlvbVoydzlvc21KSmtJX0gzd2lieFN4RFBqOHJnalp1TU1IOFdKSG4tRk1fUWFvMmJKbTlDUdIBVEFVX3lxTFB1QUZmS2ZJSnRzekZOWE9mTDdHS3BfZWczbW82Qzd4QldzdUx2QUxyTzdXcHREZUZnYUJ4RUlFUGlScm9NMUdwbk5hV3A5Vk9mMGJ5Xw?oc=5",
+      "published": "2026-10-25T23:19:26+00:00"
+    },
+    {
+      "title": "리센느, 삼성 갤럭시와 손잡았다…글로벌 브랜드가 주목한 대세",
+      "source": "YTN star",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9iVHFKNGY1MWhoQzdqRmV0bWJMcVNvWEd6MXZEV2d1UjhubEhpNTZrYjhjUWhnYmN1eDNoYmwzY2lGaURJZkwyRkVaM0pvZ2RlcUZnYnBXSzhRWllmeXlV?oc=5",
+      "published": "2026-10-25T23:18:00+00:00"
+    },
+    {
+      "title": "리센느, 삼성 갤럭시와 손잡았다…글로벌 브랜드가 주목한 대세",
+      "source": "YTN star",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0Y0hlUXE4S1VtZ0Y4WFBsLU1mbDFUUGVKcWZqckhnUnpCWjJhX3NidHQ5SzRSTzI2RmJWQnZZRWFKSWNFNWFGS2M2OHRJVUJZbnFpVlhEaDFZVnNFR1h3OHplNUk?oc=5",
+      "published": "2026-10-25T23:18:00+00:00"
+    },
+    {
+      "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hWFJJa2lQdk5UVjRrWnVGQV9vT0NVeEpUcVZueUUySE42d2hFRnpkU1RYckxZMFEtREZUYVlvdDNZZjZtdUs5WHBjN29sWkJTYm5ZcFFyOVZvNlRO?oc=5",
+      "published": "2026-10-25T23:13:00+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 신제품 '갤럭시 버즈 온' 출시",
+      "source": "핀포인트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3Ri1DUlp6djhkYnNuTlYwb1lWenRVcWh6bzEtcFItRUoxX2tTckZFWFZJSXJhM3BwZFA0MTl3em1wdFN1Z0RNRW9hb1hnZzhmVDFiUElsQjdaYzVucXhUQzdDMll2T0cxOFF2Znp4T0lob3fSAXdBVV95cUxPVHFIMXdDcnJoS0UyRFp0SzF6bzkzLWJ3SGhyZ2kxY3NoSDBqZi1sWU8xVUlRaFRvTXl0QjV2Nmt1bmE2UjBSVkJIejNXNXBLcDZmdmNCOEdfcGlZQ0owc1dfQmpQNk1QaFQyV29WQmUxczRMQlhGUQ?oc=5",
+      "published": "2026-10-25T23:09:45+00:00"
+    },
+    {
+      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시 – 삼성전자 뉴스룸",
+      "source": "samsung.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQdThLRHk3THlNYmEwS3BZcVlkU3B5SG0zZHJ2MVpjY0tUNDg2ZXFNTi1sandNQlJSTTdYblNkS0Ffd0g3VFJrRl9UOXlfc0E3dHM5bGRleXQya092NXVETC10OFdPbl9tWDAyU2Y3U1E5R3BWaV80YjFGbjNpNUc1b3pDWU85bjZPdGtMX2I2S3N2dFczNEJJdHZFV0Q4OTZiVmZLMkJjMU04U25FTXFIdGQxYzdlb2RXbGp0SzhKTnZxT0FvOFN5YkJlVGZBWllLa3lNR0JMQjRZMWVxY09wZ0NfdTdqWmtqVzhNbHhCMnY2N19fU1A5R3FHaHpYVVg2RTJKYUk4RTlCWEFFemw3MUpCQ0ExbDdLaWg4Y3d5dkQyRGJEamE5cnpZNDlaalNnNkRrOUxVc001Vkk?oc=5",
+      "published": "2026-10-25T23:00:00+00:00"
+    },
+    {
+      "title": "[2026 국가브랜드경쟁력지수] 삼성 갤럭시 NBCI 단독 1위…제주삼다수 1점차로 2위",
+      "source": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUNUItNk42MjFLanpWSmVHeWU4SnlPVGhOQWQ4NFd3eVVNODZ6OHRXZjQyRUgyWXA0WnlWWkd1bFhwMTlUUU9ha1BodldEWURhTzRySmln?oc=5",
+      "published": "2026-10-25T15:01:01+00:00"
+    }
+  ],
+  "news_spam_removed": 0,
+  "google_trends_matches": []
+}

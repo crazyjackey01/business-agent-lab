@@ -1,5 +1,5 @@
 {
- "made_at": "2026-11-01T10:01+00:00",
+ "made_at": "2026-11-01T10:36+00:00",
  "prediction_test": {
   "rows": [
    {
@@ -205,45 +205,25 @@
  },
  "prediction_log": [
   {
-   "topic": "전기차",
+   "topic": "갤럭시",
    "geo": "KR",
-   "made_at": "2026-11-01T10:01:11+00:00",
-   "window_start": "2026-11-02",
-   "window_days": 7,
-   "search_interest": {
-    "direction": "flat",
-    "confidence": "low"
-   },
-   "tests": [
-    {
-     "claim": "중국산 전기차의 국내 점유율과 국산차 대응을 둘러싼 보도가 다음 주에도 이어질 가능성이 높다.",
-     "confidence": "medium",
-     "query": "중국산 전기차",
-     "min_articles": 40
-    },
-    {
-     "claim": "시장 전망 리포트성 기사가 계속 나올 전망이다.",
-     "confidence": "medium",
-     "query": "전기차 시장 전망",
-     "min_articles": 50
-    },
-    {
-     "claim": "12월 1일 E-pit 운영 일원화를 앞두고 현대차·기아 충전사업 관련 후속 보도가 나올 수 있다.",
-     "confidence": "low",
-     "query": "E-pit 충전",
-     "min_articles": 10
-    }
-   ],
+   "made_at": "2026-11-01T10:35:31+00:00",
+   "method": "naive",
+   "direction": "flat",
+   "change": 0.0,
+   "change_low": -0.098,
+   "change_high": 0.108,
+   "week_start": "2026-11-01",
+   "week_days": 7,
    "status": "pending"
   }
  ],
  "prediction_totals": {
-  "tests": 0,
-  "tests_passed": 0,
-  "tests_already_met": 0,
-  "search_calls": 0,
-  "search_hits": 0,
-  "search_flat_hits": 0
+  "scored": 0,
+  "hits": 0,
+  "flat_hits": 0,
+  "ranged": 0,
+  "in_range": 0
  },
  "jev_agreement": null
 }

@@ -2,11 +2,10 @@
 //   GET  /             dashboard with a search box (same template as the Python version)
 //   POST /api/analyze  {topic, region, password} -> collect + analyze + save, returns the analysis
 // Analyses and the general-trends snapshot are kept in Workers KV (binding ANALYSES).
-//   GET  /api/predictions  every logged prediction, for eval/score_predictions.py (Python scores them)
 // Eval results come from the Python side (python midterm/eval/summary.py before deploying).
 import template from "../../dashboard_template.html";
 import evalSummary from "../../data/eval/summary.json";
-import { analyze, analyzeOverview, predictionFrom } from "./analyze.js";
+import { analyze, analyzeOverview } from "./analyze.js";
 import { collectSnapshot, collectTopic } from "./collect.js";
 
 const MAX_TOPIC_LENGTH = 60;
@@ -96,9 +95,6 @@ async function runSearch(request, env) {
     const data = await collectTopic(ctx, topic, lang, geo);
     const result = await analyze(ctx, data);
     result.usage = ctx.usage;
-    result.prediction = predictionFrom(result);
-    // Kept separately: the analysis key is overwritten by the next search of the same topic.
-    if (result.prediction) await env.ANALYSES.put(`prediction:${result.analyzed_at}:${slug(topic)}:${geo}`, JSON.stringify(result.prediction));
     await env.ANALYSES.put(`analysis:${slug(topic)}:${geo}`, JSON.stringify(result), {
       metadata: { analyzed_at: result.analyzed_at },
     });
@@ -106,11 +102,6 @@ async function runSearch(request, env) {
   } catch (error) {
     return json({ error: `${error.name}: ${error.message}` }, 500);
   }
-}
-
-async function allPredictions(env) {
-  const { keys } = await env.ANALYSES.list({ prefix: "prediction:" });
-  return (await Promise.all(keys.map(k => env.ANALYSES.get(k.name, "json")))).filter(Boolean);
 }
 
 async function runOverview(env, geo) {
@@ -132,7 +123,6 @@ export default {
     const url = new URL(request.url);
     if (request.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) return page(env);
     if (request.method === "POST" && url.pathname === "/api/analyze") return runSearch(request, env);
-    if (request.method === "GET" && url.pathname === "/api/predictions") return json(await allPredictions(env));
     return json({ error: "not found" }, 404);
   },
 };

@@ -80,24 +80,16 @@ export function scheduledEvents(news, limit = 15) {
 
 // Explanation ----------------------------------------------------------------------
 
-const SYSTEM_PROMPT = `You are a careful trend analyst. You explain why people are searching for a topic,
-what is happening, and what is likely to happen next.
+const SYSTEM_PROMPT = `You are a careful trend analyst. You explain why people are searching for a topic
+and what is happening.
 
 Rules:
 - Use ONLY the evidence given. Each evidence item has an id like [D1] (measured data) or [S4] (a news headline).
 - Every claim must list the ids that support it in "cites". A claim with no support must not be written.
 - Headlines tell you what was reported, not the full story. Say "reported" when that matters.
-- "outlook" items are forecasts. Base each one on a scheduled event or a measured trend in the evidence,
-  give a confidence (low / medium / high), and say in "basis" which evidence it extends.
-  Do not forecast prices or anything the evidence does not touch.
-- Each "outlook" item also needs a "test", so it can be checked a week from now: "query" is 1-4 search
-  words for what the forecast is about, "min_articles" is the number of Google News articles matching
-  them over the next 7 days at which the forecast came true. Pick a number a false forecast would miss,
-  not one that is easy to reach anyway.
-- "search_interest" is your forecast of Google search interest in the topic over the next 7 days compared
-  with the last 7: "up" (more than 10% higher), "down" (more than 10% lower) or "flat".
+- Do not forecast. Forecasts are calculated separately from search data.
 - Be brief. "summary": one or two sentences answering "why is this being searched now?".
-  At most 3 why_people_search, 5 what_is_happening, 3 outlook items, each one or two short
+  At most 3 why_people_search and 5 what_is_happening items, each one or two short
   sentences. Do not repeat a number the reader already sees in the data (like intent shares)
   unless it is the point. Prefer the most important facts over covering everything.
 - Style: write like a Korean wire-news brief (연합뉴스 style). Short declarative sentences.
@@ -105,16 +97,13 @@ Rules:
   "~것으로 보입니다", "관심이 모였습니다", "주목받았습니다", "~라는 점에서", "다양한", "본격화".
   Do not describe the data source in the sentence ("자동완성에서", "보도에 따르면") unless needed;
   the citation already shows where it came from. Use "~했다/~이다" endings, not "~습니다".
-- Write every claim, basis and caveat in {language}.
+- Write every claim and caveat in {language}.
 
 Reply with JSON only, in this shape:
 {
   "summary": {"claim": "...", "cites": ["D2", "S1"]},
   "why_people_search": [{"claim": "...", "cites": ["D1", "S3"]}],
   "what_is_happening": [{"claim": "...", "cites": ["S1", "S2"]}],
-  "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"],
-               "test": {"query": "...", "min_articles": 10}}],
-  "search_interest": {"direction": "flat", "confidence": "medium"},
   "caveats": ["..."]
 }`;
 
@@ -176,13 +165,6 @@ const CHECK_LABELS = {
   partly: "The core is in the evidence, but the claim adds something it does not say (an exaggeration, a cause, a trend measured only once).",
   unsupported: "The cited evidence does not say this, or is about something else.",
 };
-// A forecast always says more than its sources, so the labels above would rate nearly every
-// forecast "partly". Forecasts are rated on whether the basis they rest on is really there.
-const OUTLOOK_CHECK_LABELS = {
-  supported: "The basis of the forecast is in the cited evidence, and the forecast follows reasonably from it.",
-  partly: "Some of the basis is in the cited evidence, but the forecast also leans on something it does not say.",
-  unsupported: "The cited evidence does not contain the basis, or is about something else.",
-};
 const UNCERTAIN_BELOW = 0.6; // Jev confidence under this is shown as uncertain
 
 function claimText(n, section, c, evidence) {
@@ -194,10 +176,10 @@ function claimText(n, section, c, evidence) {
 async function ratingsFromJev(env, items, evidence) {
   const state = "Claims written by an analyst, each with the exact evidence it cites:\n\n"
     + items.map(([section, c], n) => claimText(n, section, c, evidence)).join("\n\n");
-  const questions = Object.fromEntries(items.map(([section], n) => [`c${n}`, {
+  const questions = Object.fromEntries(items.map((_, n) => [`c${n}`, {
     type: "choice",
-    instructions: section === "outlook" ? `Does the cited evidence support the basis of forecast ${n}?` : `Does the cited evidence support Claim ${n}?`,
-    criteria: section === "outlook" ? OUTLOOK_CHECK_LABELS : CHECK_LABELS,
+    instructions: `Does the cited evidence support Claim ${n}?`,
+    criteria: CHECK_LABELS,
   }]));
   const answers = await askJev(env, state, questions, "check");
   const ratings = new Map();
@@ -257,19 +239,6 @@ async function checkClaims(env, result, evidence, language, sections = SECTIONS)
   return removed;
 }
 
-// What an analysis said will happen, in the shape eval/score_predictions.py scores.
-export function predictionFrom(analysis) {
-  const e = analysis.explanation || {};
-  const tests = (e.outlook || []).filter(c => c.test?.query && Number.isInteger(c.test.min_articles) && c.test.min_articles > 0)
-    .map(c => ({ claim: c.claim, confidence: c.confidence, query: String(c.test.query), min_articles: c.test.min_articles }));
-  const direction = e.search_interest?.direction;
-  const search = ["up", "flat", "down"].includes(direction) ? { direction, confidence: e.search_interest.confidence } : null;
-  if (!tests.length && !search) return null;
-  const start = new Date(Date.parse(analysis.analyzed_at) + 86400000).toISOString().slice(0, 10);
-  return { topic: analysis.topic, geo: analysis.geo, made_at: analysis.analyzed_at, window_start: start, window_days: 7,
-    search_interest: search, tests };
-}
-
 async function explain(env, topic, evidence, language) {
   const evidenceText = Object.entries(evidence).map(([k, v]) => `[${k}] ${v}`).join("\n");
   const reply = parseJsonReply(await requestModel(env, [
@@ -284,7 +253,6 @@ async function explain(env, topic, evidence, language) {
     dropped += n;
   }
   result.caveats = reply.caveats || [];
-  result.search_interest = reply.search_interest || null;
   result.unsupported_claims_removed = dropped;
   [result.summary] = keepSupported(reply.summary ? [reply.summary] : [], evidence)[0];
   result.summary = result.summary ? [result.summary] : [];

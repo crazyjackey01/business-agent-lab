@@ -1,4 +1,4 @@
-"""Connect what people search for with what is happening, and what is likely next.
+"""Connect what people search for with what is happening.
 
 Input: the latest result from topic_trends.py for a topic (or a fresh run).
 
@@ -6,11 +6,12 @@ Two layers, so the conclusions rest on facts and not on guesses:
 
   1. Measured facts (plain code, no AI):
      - search intent: what people want from the topic (buying, how-to, investing, ...),
-       from autocomplete phrases; Jev sorts every phrase (intent.py)
+       from autocomplete phrases, sorted with word lists (intent.py)
      - news drivers: words significantly more frequent in the last 24 hours' headlines
        (log-odds with a Dirichlet prior, eval/fightin.py)
      - scheduled events: dates and launch/event words found in headlines
      - coverage trend: daily article counts and momentum, across saved runs too
+     - forecast: next week's Google search interest (eval/score_predictions.py)
   2. Explanation (language model through OpenRouter):
      The model gets only the facts above, each with an id ([D1], [S3], ...).
      Every claim it makes must cite ids. Claims that cite nothing, or cite ids
@@ -141,24 +142,16 @@ def coverage_history(topic):
 
 # Model explanation --------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are a careful trend analyst. You explain why people are searching for a topic,
-what is happening, and what is likely to happen next.
+SYSTEM_PROMPT = """You are a careful trend analyst. You explain why people are searching for a topic
+and what is happening.
 
 Rules:
 - Use ONLY the evidence given. Each evidence item has an id like [D1] (measured data) or [S4] (a news headline).
 - Every claim must list the ids that support it in "cites". A claim with no support must not be written.
 - Headlines tell you what was reported, not the full story. Say "reported" when that matters.
-- "outlook" items are forecasts. Base each one on a scheduled event or a measured trend in the evidence,
-  give a confidence (low / medium / high), and say in "basis" which evidence it extends.
-  Do not forecast prices or anything the evidence does not touch.
-- Each "outlook" item also needs a "test", so it can be checked a week from now: "query" is 1-4 search
-  words for what the forecast is about, "min_articles" is the number of Google News articles matching
-  them over the next 7 days at which the forecast came true. Pick a number a false forecast would miss,
-  not one that is easy to reach anyway.
-- "search_interest" is your forecast of Google search interest in the topic over the next 7 days compared
-  with the last 7: "up" (more than 10% higher), "down" (more than 10% lower) or "flat".
+- Do not forecast. Forecasts are calculated separately from search data.
 - Be brief. "summary": one or two sentences answering "why is this being searched now?".
-  At most 3 why_people_search, 5 what_is_happening, 3 outlook items, each one or two short
+  At most 3 why_people_search and 5 what_is_happening items, each one or two short
   sentences. Do not repeat a number the reader already sees in the data (like intent shares)
   unless it is the point. Prefer the most important facts over covering everything.
 - Style: write like a Korean wire-news brief (연합뉴스 style). Short declarative sentences.
@@ -166,16 +159,13 @@ Rules:
   "~것으로 보입니다", "관심이 모였습니다", "주목받았습니다", "~라는 점에서", "다양한", "본격화".
   Do not describe the data source in the sentence ("자동완성에서", "보도에 따르면") unless needed;
   the citation already shows where it came from. Use "~했다/~이다" endings, not "~습니다".
-- Write every claim, basis and caveat in {language}.
+- Write every claim and caveat in {language}.
 
 Reply with JSON only, in this shape:
 {
   "summary": {"claim": "...", "cites": ["D2", "S1"]},
   "why_people_search": [{"claim": "...", "cites": ["D1", "S3"]}],
   "what_is_happening": [{"claim": "...", "cites": ["S1", "S2"]}],
-  "outlook": [{"claim": "...", "basis": "...", "confidence": "medium", "cites": ["S5", "D2"],
-               "test": {"query": "...", "min_articles": 10}}],
-  "search_interest": {"direction": "flat", "confidence": "medium"},
   "caveats": ["..."]
 }"""
 
@@ -248,7 +238,6 @@ def explain(topic, evidence, language):
         result[section], n = keep_supported(reply.get(section), evidence)
         dropped += n
     result["caveats"] = reply.get("caveats", [])
-    result["search_interest"] = reply.get("search_interest")
     result["unsupported_claims_removed"] = dropped
     result["summary"], _ = keep_supported([reply["summary"]] if reply.get("summary") else [], evidence)
     result["failed_check_removed"] = check_claims(result, evidence, language, ("summary",) + SECTIONS)
@@ -273,8 +262,8 @@ CHECK_LABELS = {
               "(an exaggeration, a cause, a trend measured only once).",
     "unsupported": "The cited evidence does not say this, or is about something else.",
 }
-# A forecast always says more than its sources, so the labels above would rate nearly every
-# forecast "partly". Forecasts are rated on whether the basis they rest on is really there.
+# Older runs have writer-made forecasts, which the human check can still sample. A forecast always
+# says more than its sources, so they are rated on whether the basis they rest on is really there.
 OUTLOOK_CHECK_LABELS = {
     "supported": "The basis of the forecast is in the cited evidence, and the forecast follows reasonably from it.",
     "partly": "Some of the basis is in the cited evidence, but the forecast also leans on something it does not say.",
@@ -453,9 +442,11 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
 
 
 def save_analysis(analysis):
-    # What this analysis said will happen goes in the prediction log; eval/score_predictions.py
-    # checks it against Google a week later.
-    analysis["prediction"] = log_prediction(analysis)
+    # Code forecasts next week's search interest; eval/score_predictions.py checks it later.
+    try:
+        analysis["prediction"] = log_prediction(analysis["topic"], analysis["geo"], analysis["analyzed_at"])
+    except Exception as error:  # a forecast failure must not lose the analysis
+        analysis["prediction"] = {"note": str(error)}
     ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
     slug = re.sub(r"[^\w]+", "-", analysis["topic"]).strip("-").lower()
     path = ANALYSIS_DIR / f"{slug}_{datetime.now():%Y-%m-%d_%H%M}.json"
@@ -480,6 +471,8 @@ def print_analysis(a):
     for section, label in [("why_people_search", "Why people search it"),
                            ("what_is_happening", "What is happening"),
                            ("outlook", "What is likely next")]:
+        if not e[section]:
+            continue
         print(f"\n{label}")
         for c in e[section]:
             extra = f" [{c.get('confidence', '')}] basis: {c.get('basis', '')}" if section == "outlook" else ""

@@ -37,7 +37,7 @@ python midterm/eval/spike.py                 # the rough spike note, on saved to
 python midterm/eval/gtrends.py               # Google Trends search interest (unofficial endpoints, cached)
 python midterm/eval/prediction_test.py       # holdout prediction accuracy (Google weekly, Wikipedia 7-day)
 python midterm/eval/forecast.py              # 7-day pageview forecasts, rolling backtest
-python midterm/eval/score_predictions.py     # did each analysis's forecasts come true? (local log + Worker's)
+python midterm/eval/score_predictions.py     # did code's forecast of next week's searches come true?
 python midterm/eval/jev_agreement.py export|score   # blind hand-label CSV, Cohen's kappa
 python midterm/eval/summary.py              # collect all results -> data/eval/summary.json (page + Worker)
 ```
@@ -50,15 +50,14 @@ was right; results are in midterm/eval/README.md.
 - The API key lives only in `.env` (git-ignored). Never put keys in tracked files.
 - The professor grades the git history: commit after each meaningful change with a clear message.
 - Pipeline: `collect_trends.py` / `topic_trends.py` collect → `data/` JSON →
-  `analyze_topic.py` (Jev relevance filter → measured facts → Sonnet writes with citations →
-  Jev checks each claim; `jev_api.py`) →
+  `analyze_topic.py` (headline filter → measured facts → Sonnet writes with citations →
+  Jev checks each claim; `jev_api.py`; code forecasts in `eval/score_predictions.py`) →
   `build_dashboard.py` fills `dashboard_template.html` with every saved analysis and the eval
   summary (history tab). Elements with `data-how` explain on hover how that part was made.
   `app.py` serves the same template with `live: true`, which shows a search box that
   POSTs to `/api/analyze` and runs the whole pipeline for the typed topic.
-- Search purpose lives in `intent.py` / `worker/src/intent.js`: Jev sorts every autocomplete
-  phrase, with short category descriptions (short = fewer tokens; Jev re-reads them per phrase). Jev batches are
-  capped at 100 questions: it refuses requests over ~60k tokens. Worker model calls are in
+- Search purpose lives in `intent.py` / `worker/src/intent.js`: word lists, no model; keep both lists identical.
+  Jev batches are capped at 100 questions: it refuses requests over ~60k tokens. Worker model calls are in
   `worker/src/models.js`.
 - Empty topic = overview mode: `overview.py` / `analyzeOverview` (Google Trends + Jev categories
   + cited explanation). The page renders it with `overviewSection` in the template.

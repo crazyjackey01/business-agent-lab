@@ -1,41 +1,39 @@
 # Measurable validation
 
-Three checks, each asking something about the analysis itself. Right or wrong is decided by
-code and by people; no language model scores its own work. Run everything from the
-`business-agent-lab` folder with the venv active. Every module runs its own assert-based
+Three checks, decided by code and by people; no language model scores anything. Run everything
+from the `business-agent-lab` folder with the venv active. Every module runs its own assert-based
 self-check first. After changing results, run `python midterm/eval/summary.py`: it collects
 them for the page (the Cloudflare site needs a redeploy to show them).
 
 | Check | Question | Status (2026-11-01) |
 |---|---|---|
-| Live predictions | Did what the analysis said will happen come true? | logging; first results from 2026-11-09 |
+| Live predictions | Did code's forecast of next week's searches come true? | logging; first results from 2026-11-08 |
 | Forecast accuracy | Can search interest be forecast better than a simple guess? | on Google, no |
 | Jev vs a human | Does Jev's source check agree with a person? | waiting for blind labels |
 
 ## 1. Live predictions: `eval/score_predictions.py`
 
-Every analysis now writes down what it expects, in a form code can check (local version:
-`data/predictions.jsonl`; Cloudflare version: KV, served at `/api/predictions`):
+Each analysis logs one forecast to `data/predictions.jsonl`, made entirely by code. The topic's
+5 years of weekly Google Trends data choose the method with the smallest past error (same as last
+week, 4-week mean, exponential smoothing, same week last year), and a range from the 10th-90th
+percentile of actual/predicted over the last two years. The forecast is up / down (more than 10%
+from this week) or flat.
 
-- **Each "what is next" sentence has a test:** a Google News search and a minimum article
-  count for the following 7 days, chosen by the writer before the week starts. Code counts the
-  real articles. The same count for the week before is reported, so an easy bar is visible
-  ("already met").
-- **`search_interest`:** Google search interest in the topic, next 7 days vs last 7: up / down
-  (more than 10% apart) or flat. It is compared with always saying "flat", because a forecast
-  is only worth something if it beats "same as last week". Both weeks come from one Trends
-  response, since Trends rescales its index per request.
+Once the week is over, code compares this week and the forecast week as daily averages from one
+Trends response, since Trends rescales its index per request. It reports direction hits, range hits,
+and the hits from always saying "flat", because a forecast is only worth something if it beats that.
 
-**Run:** `python midterm/eval/score_predictions.py` → `data/eval/scored_predictions.json`.
-Anything whose week is not over stays pending.
+**Run:** `python midterm/eval/score_predictions.py` → `data/eval/scored_predictions.json`
 
-Limits: the writer chooses the bar, so it can pick an easy one; "already met" shows how often.
-Google News shows at most 100 articles per query, so counts are per day and a capped day is
-flagged. Each analysis's score is one small sample until many have accumulated.
+Limits: the forecast is often "flat", because no method beats "same as last week" on this data
+(section 2), so the direction score may simply equal the baseline; all four demo topics that could be
+forecast said flat on 2026-11-01. Topics with under about 18 months of history get no forecast (피지컬 AI
+today). The Cloudflare version has none: Google refuses its servers, as it does for Google News.
 
-The old log only forecast Wikipedia pageviews, which tested nothing the analysis said. Its
-final result, kept in `data/eval/old_wikipedia_*`: **3 of 5** forecasts inside their 80% range
-(week of 2026-10-19; the file also holds one duplicate 전기차 row, also outside).
+Two earlier logs are kept: `data/eval/old_wikipedia_*` forecast Wikipedia pageviews, which tested
+nothing the analysis said (3 of 5 inside their 80% range, week of 2026-10-19; the file also holds a
+duplicate 전기차 row, also outside), and `data/eval/old_writer_predictions.jsonl` is the single
+forecast the writer model made in the short-lived version where it forecast with a Google News test.
 
 **Google Trends** gives a relative 0–100 index of how much people searched a term, not raw
 counts (Google publishes none; Keyword Planner gives monthly ranges with an Ads account).
@@ -133,6 +131,7 @@ Don't open `data/eval/jev_agreement_key.json` before labelling: it holds Jev's a
   Forecasts are now rated on whether their basis is in the evidence: 13 of 22 "partly" on
   the same forecasts. Whether that is right is what the new labels will show.
 - Jev re-rates the sample under the current rules, and claims from the old round are excluded.
+- The writer no longer forecasts, so forecasts in the sample come from older runs.
 - Claims Jev removes are now saved and sampled, so the test can also catch wrongly removed
   claims. None exist yet in the sample, because older runs did not save them.
 
@@ -154,9 +153,13 @@ not a validation result.
 
 ## Not covered
 
-- **The Cloudflare Worker** has no daily counts, so no spike note, and uses share-ratio drivers
-  and no re-applied spam filter. It does share the forecast rules, Jev's rules and the
-  prediction log; scoring runs in Python.
+- **The Cloudflare Worker** has no daily counts, so no spike note and no forecast, and it uses
+  share-ratio drivers and no re-applied spam filter. It shares the word lists, headline filter and Jev's rules.
+- **Word lists and the headline filter have no ground truth yet.** Against Jev's labels on 423 phrases
+  from three topics the lists were not built from, they catch 32-48% and agree 78-91% when they do; the rest
+  stay "other". The filter keeps 184 of 240 headlines Jev kept and rejects 230 of 305 it dropped, and it
+  drops articles that use another name (a "버즈 온" headline under 갤럭시). Jev is not a reference for
+  truth either, since it has not passed its own test.
 - Removed from validation on 2026-11-01 (see git history): news-vs-search correlation (the 100-article
   cap hit most days, e.g. 74 of 90 for 전기차) and number grounding (it only showed that a
   number exists in the sources, not that it is used correctly).

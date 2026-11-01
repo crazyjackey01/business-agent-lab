@@ -1,0 +1,1449 @@
+{
+  "topic": "갤럭시",
+  "geo": "KR",
+  "source_collected_at": "2026-11-01T10:35:20+00:00",
+  "analyzed_at": "2026-11-01T10:35:31+00:00",
+  "facts": {
+    "coverage": {
+      "today": 35,
+      "previous_daily_average": 72.3,
+      "momentum": 0.48,
+      "per_day": [
+        35,
+        37,
+        117,
+        24,
+        86,
+        69,
+        101
+      ],
+      "capped_queries": 6,
+      "capped_windows": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "spike": {
+      "today": 35,
+      "baseline": [
+        37,
+        117,
+        24,
+        86,
+        69,
+        101
+      ],
+      "baseline_mean": 72.33,
+      "baseline_variance": 1319.87,
+      "model": "negative binomial",
+      "p_value": 0.8706579521980139,
+      "robust_z": -0.9100272151668348,
+      "verdict": "uncertain (capped)"
+    },
+    "spam_removed": 0,
+    "intent": [
+      {
+        "intent": "other",
+        "share": 0.36,
+        "examples": [
+          "갤럭시 워치",
+          "갤럭시 폴드",
+          "갤럭시 갤",
+          "갤럭시 글래스",
+          "갤럭시 구글 검색창 없애기"
+        ]
+      },
+      {
+        "intent": "product_info",
+        "share": 0.33,
+        "examples": [
+          "갤럭시 폴드8",
+          "갤럭시 s26",
+          "갤럭시 s26 울트라",
+          "갤럭시 s27",
+          "갤럭시 z 폴드8"
+        ]
+      },
+      {
+        "intent": "how_to",
+        "share": 0.17,
+        "examples": [
+          "갤럭시 공장초기화",
+          "갤럭시 공장초기화 하는법",
+          "갤럭시 강제종료",
+          "갤럭시 강제 재부팅",
+          "갤럭시 데이터 옮기기"
+        ]
+      },
+      {
+        "intent": "buying",
+        "share": 0.09,
+        "examples": [
+          "갤럭시 폴드8 가격",
+          "갤럭시 가격",
+          "갤럭시 s26 가격",
+          "갤럭시 링 가격",
+          "갤럭시 ai 구독클럽"
+        ]
+      },
+      {
+        "intent": "problems",
+        "share": 0.03,
+        "examples": [
+          "갤럭시 링 망함",
+          "갤럭시 충전기를 꽂아 도 충전이 안되요",
+          "갤럭시 충전 안됨",
+          "갤럭시 충전 표시는 뜨는데 충전이 안됨"
+        ]
+      },
+      {
+        "intent": "news",
+        "share": 0.02,
+        "examples": [
+          "갤럭시 갤러리",
+          "갤럭시 디시",
+          "갤럭시 버즈 온 디시"
+        ]
+      },
+      {
+        "intent": "technology",
+        "share": 0.01,
+        "examples": [
+          "갤럭시 배터리 효율"
+        ]
+      }
+    ],
+    "intent_method": "word lists",
+    "drivers": [
+      {
+        "word": "완판",
+        "headlines_today": 8,
+        "share_today": 0.44,
+        "share_before": 0.0,
+        "z": 3.88
+      },
+      {
+        "word": "만에",
+        "headlines_today": 6,
+        "share_today": 0.33,
+        "share_before": 0.007,
+        "z": 3.68
+      },
+      {
+        "word": "사흘",
+        "headlines_today": 5,
+        "share_today": 0.28,
+        "share_before": 0.0,
+        "z": 3.06
+      },
+      {
+        "word": "온라인",
+        "headlines_today": 4,
+        "share_today": 0.22,
+        "share_before": 0.002,
+        "z": 3.05
+      },
+      {
+        "word": "초도",
+        "headlines_today": 4,
+        "share_today": 0.22,
+        "share_before": 0.0,
+        "z": 2.74
+      },
+      {
+        "word": "물량",
+        "headlines_today": 3,
+        "share_today": 0.17,
+        "share_before": 0.0,
+        "z": 2.37
+      },
+      {
+        "word": "통했다",
+        "headlines_today": 2,
+        "share_today": 0.11,
+        "share_before": 0.002,
+        "z": 2.12
+      }
+    ],
+    "events": [
+      {
+        "title": "삼성전자, 40만원대 LTE폰 ‘갤럭시 A18’ 30일 출시",
+        "source": "소셜밸류",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82bUVpd0lwaTJvdVN2WGZWYVdsdmlETzY4VGhWcjFOYVpYOExOdUJ1X1kxX0lZZFd4dlhLa3RLeVpJS0pBUVFFQ3FtMkxJNVBNN0cySHpIQTZTeFItRklvbEt6c9IBbEFVX3lxTE4wamhpWHIwWEl2MnNHVVZrakZIZHh5YmZFWlRJSHY2N1BiVVdWOTZWZ2l1LW5GNlZOUEx2cUlrcU9XcndfY3lVT3NJemtuLUVpc0Y3TnZid2lrZ2d5R3MxdFVKSGxFNFIyaVB3WQ?oc=5",
+        "published": "2026-10-30T01:20:18+00:00",
+        "dates_mentioned": [
+          "30일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, '갤럭시 A18 LTE' 30일 출시… 대화면·AI 탑재 40만원대 실속형",
+        "source": "서울뉴스통신",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91cE1QaFBGQjNnbDFhX2hJaHNwUG1iX2M4SWxQMUQtckZKdTZPcTN6bnU3TW5GT0hBT1lZWXh2NkNJNnNpZi1pSTRNVmpvdVoxd0xmNEJic0psM25JUzdiX1BPTkFReWpvRE9B?oc=5",
+        "published": "2026-10-29T23:57:31+00:00",
+        "dates_mentioned": [
+          "30일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "더글로벌기빙뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9WbkoxOGtUalpmYnZhNU9kbFl1QWk5bWlGS1pONFJfbFZHelc4blE5NFRUVW1pS2NEUDJCc2pfbFJBTXJnV29TdkRqZ1o5dkJBdU9VUw?oc=5",
+        "published": "2026-10-26T08:42:00+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 ‘갤럭시 버즈 온’ 27일 출시…가격 29만9000원",
+        "source": "투데이e코노믹",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlLUUzQnBJYW9lSUlUNUx1cC1NWXBQYS1ZdWFCSHo1NWgzeXpRR2dZdzB5eTBWZ2ZGSWZ2VmZVeVd1SmxnQW8xeGtYTk53M3NYejFmMTFlUnphRkhiZy1EUnpMYmdVYWM?oc=5",
+        "published": "2026-10-26T05:51:48+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 출시… 29만9000원",
+        "source": "매일산업뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tYW9iYW9QclFjOWNRQXJ0eVJJWGUtclFrdElDV3hTRndwMlUwU1RaWHVHUGFMY1dzbk1fTC1wRVk0dC1Ha3dWOS1NdnRiZTVRd2NGR0ZUSFZnem1GSERtc3pzUQ?oc=5",
+        "published": "2026-10-26T05:43:43+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "뉴스저널리즘",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CMzNuU1RzY2lHZVdJVER4LTdBVnl6UW5FYzQ3QWRRRWQyMTJLRnhZMVJCTmpuS25jOF9vT0x2WHZuUC1iaS1RdlFWNUNKRHd6NFhsUURINXFZVTUtYVMzeWktTHZRNzltcWFr?oc=5",
+        "published": "2026-10-26T03:24:23+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "서울파이낸스",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vbkhVTE5tZkRIcXpmVWs3TTZhMk5VYmx0aXBXNkNKV1o3bW9Ic0ZUSnh0THRkZDZFWmJsMHVha3d5MXdsME9jYVl3aTk0enNNY0hfY2diUWZidEM5LXl5U0QxdGxpUHEzZXc?oc=5",
+        "published": "2026-10-26T02:22:13+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성, 첫 클립형 무선이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "아시아경제",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tdnJkWjhIT0g5d3I5QTJPOGhUVTRXdTBNaVk0THFYaWFrZFp1Y2otZ1pEclBuWDA4X1p6c2g0cUxWLUVINHd2TnVoYW80eHJCd0ttQTRKaVQwTkc2MjlCcQ?oc=5",
+        "published": "2026-10-26T02:21:47+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+        "source": "아이티데일리",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41T21DRFVvX1JYdUlBei04dU9LV0dFWTBMVzVnYWRPbktIa2Nkdlh2TE1va3l3aFFLd0h4cDBYU0kxRWllNE9Ra19yMTdZcnZUdjJDcTlObVMxNWwxTGJkRmZBeUU4SFU5?oc=5",
+        "published": "2026-10-26T02:17:10+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "뉴스드림",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZdjZyTFRnQ09LVXJ0dW5hTEZNYkIzaXluRmJPT3gxQ0FfM1ZvZ0FqeldsYVNCYVNlZzh3ZEd3MXJvTlU5N19WQm41VXI0SEpoSkkxSE9ZT2ZyUmFBQkt6NWlmNURGanAtYmxn0gFuQVVfeXFMUFp3akVHNUFVeDZRb1NJbEdyRVBlZUFOOUNGaEo1RHhSSUJTM2pzRmhxT3JwYzhtNzJzV1I1RnhnMjNqR2R3ZFVMaEk0a1ZmQnMzWEJWU0ZrMlFRWEIzN25hcFIwRS16S3YxdkdRMkE?oc=5",
+        "published": "2026-10-26T01:49:47+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+        "source": "아시아투데이",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqa2pZeGx6TUp6YWRNZ19jOVZwbkVwcmJPcE53cXZJNzdXY2l1Tk84c1RyOXo4aUpLUW1yU00zVl9QcWhfRUpkS1I0RExvU3ZVY3VPNkVBSXM3OGRQR2dacEVPTUFmb0pia1lEOW13?oc=5",
+        "published": "2026-10-26T01:14:28+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성 ‘갤럭시 버즈 온’ 27일 출시…시리즈 최초 클립형 무선 이어폰 선보여",
+        "source": "ER 이코노믹리뷰",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3MmJIU0JOeWxKUGhFRHl5V0VUX2pKTTNvdlJQZjhabTdQNy1PZ1h6MVFMdW5OWl8zcEU1YlVKMkZVZjBFOFBHd3ZBUWFsTzF2c1NCLVVxaUJYYkczT0NQc1p5ZlhQV1JyRWsxVw?oc=5",
+        "published": "2026-10-26T01:14:27+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "스트레이트뉴스",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1WFhzYkw2ZjlSQ2lkMENobG1wbjg4ZkRPVnBKdGdZTWd2OHFpZll1NERXM1dOWFV0N1p6ZGd1aTFqcDhwZmRUSGtydnZhd3E0X2lTeW1qUnpvSDFMZ040Nzc5WkFHUEFyMnRCNXV4LWZLZVHSAXdBVV95cUxPNjdVVHppSVdRci0xb2lhenNxV2x3anFQcDBFX0k4MVZlaVNjcE90N2hTZmlSektqUmNhTkFBb1NQN0w5RTIxOVd6WWR3bHZJeE1VN1dsdW5SM1FGTUFTZ2gxR0FkWmFJTVZpMXRwTE0zUGk1SkNYOA?oc=5",
+        "published": "2026-10-26T01:13:33+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "삼성전자, 첫 클립형 '갤럭시 버즈 온' 27일 출시…29만9000원",
+        "source": "비욘드포스트",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1lZkk1RWk4QnpmOUJVS3h1akctTnB5UHdZZnh5TWQxSndXekItaWdWU3JLYmprWkRuWC1zUDFaNmJoZGxCVEQ5RW5OVVA1Q1dMelBiNWZsLWtSOUZ3X1o2a3pFd0Zub0U5cHQzcWdCeHpfZlUzUnlEel9Caw?oc=5",
+        "published": "2026-10-26T01:12:54+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      },
+      {
+        "title": "귀 안막고 AI까지 연동…첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+        "source": "뉴스;트리",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNR1k1c2tFeW01LUhPUzdfaHZtRWVtU1FxZUhmWFI5RGN5d0ZNRTFTOGlnY05wd21uajlqcHhhQmt3dy1uUlJkcHhteldrTUxlT01SM2gyQzJicHE4?oc=5",
+        "published": "2026-10-26T00:46:03+00:00",
+        "dates_mentioned": [
+          "27일"
+        ],
+        "event_words": [
+          "출시"
+        ]
+      }
+    ],
+    "relevance": {
+      "method": "headline",
+      "kept": 420,
+      "dropped": [
+        {
+          "title": "삼성D, 갤S27 프로에도 '프라이버시 OLED'…이달부터 생산",
+          "source": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kb3VZZWVqbzhNYlZUWjR5ZXVJNDJsVWNtY3RiV1BnbTdjSDN2b1RBRlBINGM4aHRYblZrR3g4by1BMEFQS3lwN1I4OFBVaFRNVUxoMVlRVHBuWUFJVVVxQ01ocm9qRmRzYllMLURwONIBc0FVX3lxTE55VVAyamxmS0VSalNieF9aMDZ1Nm13cW5RN2hVNUVtNWxhdjBGWDU3dVpmM0tTY3Uza2ZqN1ZmdXFDQVR6bjZtWXU4dkw1dkJlSDZnY3k1N3BLRlRmUXFmbVl0bk5QY0NHMXY1d256UElFUzA?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "국감 끝나자 이제 821조 예산전쟁…미래대응기금·조희대 놓고 재격돌",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hS1dzTlZEQnVWc0c3Q1hUMzRwY21ObC1iZ1h6RFFpejZIekdZZE40aVlpc2MxVDhPYm5vMnVJVXVueUlBbHZycVVwSGFObDNsVlhELURKYzFvMEVR?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "한컴, 'AI 팀' 앞세워 미국 시장 진출",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TRlY3ZWU3Q0pHYWFKUGlneHhlVEgwZlV0cUtJUFFicEJjSEUzZmt2ek9vU3FjdF9iOUE1ZHNtS05uV01aVkdaMFJkTEs5Tm9wZkJSdUtpeTRuNVZf?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성 첫 클립형 이어폰 ‘버즈 온’, 온라인 초도 물량 사흘 만에 동났다",
+          "source": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNHpsZlVRS2wyaE4yMHdYWWtFS3VqbTVvSjFOaEtWU3JEeVdWSFhJeGJGR3lmUWFDelRiTHU3alpqbFlOaDdYbU1hNWd1WUh3SDVKanFIdlRKZFhNbzdZQVF0QlNSbmRhdzBneUNPRXFzSjhmOGZhVndYTE1JS0lZLVJn0gGWAUFVX3lxTE9UTXB3cE5UaHJMZENQTm1aVFBBVmQ4YnJ2WWRWOG9TQVNhb2gwOVJZckJHOWU1Q1JkMkVWOWZLd2ZoNW5BUU9Lc0M1VEhrZVZYay1BclNLa2lPVm5NeDhBOUxnTnRWVFhjS0pWbVZCYW9JQS1CZkhnRkNycjRvSHFJenJGczI2cGkwa0NkOVFNSTAxOEx6UQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성 첫 클립형 이어폰 ‘버즈 온’, 온라인 초도 물량 사흘 만에 동났다",
+          "source": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVE1wd3BOVGhyTGRDUE5tWlRQQVZkOGJydllkVjhvU0FTYW9oMDlSWXJCRzllNUNSZDJFVjlmS3dmaDVuQVFPS3NDNVRIa2VWWGstQXJTS2tpT1ZuTXg4QTlMZ050VlRYY0tKVm1WQmFvSUEtQmZIZ0ZDcnI0b0hxSXpyRnMyNnBpMGtDZDlRTUkwMThMelHSAZYBQVVfeXFMT1RNcHdwTlRockxkQ1BObVpUUEFWZDhicnZZZFY4b1NBU2FvaDA5UllyQkc5ZTVDUmQyRVY5Zkt3Zmg1bkFRT0tzQzVUSGtlVlhrLUFyU0traU9Wbk14OEE5TGdOdFZUWGNLSlZtVkJhb0lBLUJmSGdGQ3JyNG9IcUl6ckZzMjZwaTBrQ2Q5UU1JMDE4THpR?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "외교부 \"정상외교 친교·문화교류만 부각해 평가절하 부적절\"",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43R3lqT29vczd6aDN1QkJRb3RvQUZjTGM2VGFtVG9MUkxMdkhWOFVOdzdzQXhnbU0tSVMtR0tZdmNmTEloOWViWWNvb0tiNVl2ZG94Mnd1bjl5amd0?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "부하 직원에 \"아이는 남편에게 보라 해\"…법원 '괴롭힘' 인정",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JSno4WEZQS2I5WFNJYmwxM1VFMVdCVXVOcllkcGVFcl8weEt0UXhNMGMwTDZEaFM1QjFlT1E2RW5VX0VKS2g0UWI5ZWZsYXVSZm1YM2ZVR3hKUjky?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "하프마라톤 세계신기록자 손목에 '갤워치8'…\"훈련·컨디션 관리 함께\"",
+          "source": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1TNlZHbURrUW53SnFEN0N5X2Z6aHlocUd6MktqSXUxUFJKWmJsQzBhMVZqQ3JBM1VsWVh5OXpYWXlQOHNxZWJEY3V2T3lzQm95akxYX2g0R0V3dkN1a01MNTNUVmNSOWFoLXZF0gFqQVVfeXFMTnRhQlJOUGhvUU5QcmJXYUdYVzFLZ2dvOENreEhuVFphWFZDNk1zcHNkWVF4aEtlVU5fenhTLU1NUWxaRlhHazM5X25uNkRpT3Y5bnBXU19VOHJkTVNVTGpQN2NhNUEyQ3A4UQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "“귀 안 막히니까 편하네” 삼성 ‘버즈 온’ 온라인 초도 물량 완판",
+          "source": "헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1sTVkwaHU1VTRLZE5GbzI4VkpfZVMyMDJ1Vk03UDJ3ZGN2eWtlOFRuV29rOEdDQlhoZzhENDFLYVpCcC1LbHJueTdESHlfd0lsVVpCOWxR?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "“귀 안 막히니까 편하네” 삼성 ‘버즈 온’ 온라인 초도 물량 완판",
+          "source": "헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTWEFZVzRDa1RIREZyUi02LUktOU91Wk1ZSkJXd3d1OTBUOG5ubWxvSng2UU5maEM2Z0NuYlBsWGZILWdMTnhpdzFhMHBWVWRYUVl1djFhcw?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "러닝할 때 딱이네…\"30만원에도 없어서 못 산다\"는 삼성 신제품",
+          "source": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzWmd1dXctV1RSUC15cEJERExIWllka0pUUDdwWEhFX1pQdEZRTWJhOUFMakdIM2lKRkJFemV0dW1jV0p2RmJQUWhyTmJON25hU19nc2JOc0pmQQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "“스마트폰 비싸서 못 사는데” 삼성전자 한 건했다…40만원대 ‘초가성비’ 모델 출시",
+          "source": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vcUxpZGtFQVlaUG1DbTZ0VVNmYWxJdGpGYTNfUHEyT3VlWE1JZFl0VE53OExDX1M2dldBdFB2VmF4TVJFNVczR0FCUElSbFRKN3M40gFTQVVfeXFMT29xTGlka0VBWVpQbUNtNnRVU2ZhbEl0akZhM19QcTJPdWVYTUlkWXRUTnc4TENfUzZ2V0F0UHZWYXhNUkU1VzNHQUJQSVJsVEo3czg?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성 첫 클립형 이어폰 '버즈 온'…온라인 초도 물량 완판",
+          "source": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zNlhNTEpPQnNqM0paeTNzWkt6blpRbkdhOEZnWDRqWXZyNTRLcl9hS19yd0VOamRWRzNnYTNPaUpGQnowbDd0Mk9WclNwYlhEeEE?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성 첫 클립형 이어폰, 어떤가 봤더니",
+          "source": "브런치",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5valhpLTUySHZjVGF3UkRiU0c0LW56cWxnb3k2UER6R3ZBRE4xZ1BKeE9lckRKX0liOVJiaUx1S0p6ZFBORTFyRnJGTQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "메모리 호황 속 HBM4 경쟁 새 국면…삼성 추격·SK하이닉스 수성",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yY3M3Q2VHRXltLUZBSklibWhpTjJtYWd5ZGZqUHJfN18wZE1FY3pXazZFeGg2UW1Cb2FyX3RmZmYzLU12VkNIZlBPVjRCUW4zSllPdHlGb0dMTVVk?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "\"'골병라인' 넘어 '골로라인' 될라\"…3.7만가구 공급에 김포 주민 한숨",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fNENvaFM0RzV3YmJuMkFxVTYwQ24xV3VKbk1HZTQybC05TDh3Z3RJbldwUi1fbFVSQ1dybFgyRHlZSS1oMmYwREVTc0syY0g0T2J6ZHZlN00yYVJH?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "iPhone Duo 복사본이 아닙니다 Galaxy Z Fold8. 정반대입니다.",
+          "source": "Samsung Magazine",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA0U2xZbGJYZTE2c3FpSkprdVBrbUdDdzdSTnJndWFIV3ctdkdfeHdlZDlyNlhsVDE4VDN1dWVEMkJlRWNYTTk3NkFJdkxGTURpUlhUQ0FzUWxIbXVxM2JtQzRZWWJLMW96d3EyRlV3?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "Galaxy와 함께 그리는 새로운 현실, 렌즈 너머 세상을 담다",
+          "source": "한국공공정책신문",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE93a1kzMkdJVUlJMXN2cDRxMlNpQzkwdFpGaVNVVHlmQXJ1TW1Pb0p4d2NaaEZ2U3JYMUY4LU01RXgyWWM?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "때로는 이런 결과가 나오고, 때로는 저런 결과가 나오지만, 결국 그는 어떤 결과를 얻게 될까요? Galaxy S27 Ultra?",
+          "source": "Samsung Magazine",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9hUlg1cHgxSDlmOGgwNHRyemhva0ljb3Z2a01ObjhrRm5TSFVwTTMwYkplcDZFQXNaejFTSnBFWExuekJDVS0zUENRVnJhaDJrWF9BRklxdm41TVJsUm03UHdybC1LdF9QV09kTm02Wm1wX2dIbXd0TUJpWjQ1UQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성은 17인치 접이식 태블릿을 연구 중입니다. 이는 크기 면에서 획기적인 발전이며, 미래 기기 경쟁의 시작을 알리는 신호탄입니다.",
+          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMnlOMzljZHpHUUtpZEtnTFBaUzUtaHBsMUQxZTR6OElab0NTNVhBVng3dnZrS05vdDdsemJqai00d3JGRlI0ODhCRHgtRThfeUkyRGIyY3cxVkRSWDN1cWE2WGZCbjFoY1hHZ0lKV3lwOER5R2d5aUczaGJCVXZfX1cxelF0NlBqYXg5Y1dwd0JkcVNxb1BESGNJN3hISUhGb0dmZU9YdFJUNlZqa3lpZE85bUNTeXVpZTJidQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성, Galaxy A17에 One UI 9.0 배포하며 보급형 지원 확대",
+          "source": "Foro3D",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb0xZRkZsSFA5S0t6TGYzaWZDZUFoekdOUDBmd1ljQ3l1dk1uUE4zT0VoVVBsdG1ZdTZIbm85WkRMRXlHb2hYTnZRNmtlYVpCNzlMVUl3T0tzSTNKUUdYYjZCd1pqelRVMEhDOWNERUhaQXBocE44czM5NlRuSjlyNnB4YWVlcDZmMUJ0R0pHZy1sekpHLUxrNE9jVFluVkNrMGg5MFluSTRFSUFCdWRN?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "리센느 소속사 더뮤즈, 직원 사칭 사기 경고···\"법적 조치 착수\"",
+          "source": "글로벌E",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE85bWMzV0VDNzc5UXRHNHRSSXg1NnYwQnRiTlBJUG43NjFONjNMZElTN0RKRWJMYl9qTW9ZMUJzZExwLWtIYnE0MXZDd2tfTXZHWklEck56X0RKYUxZZWhwNkJpQnVVaGtJSkJV?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "바코드 없는 빵도 1초 만에 인식…기산전자, AI 결제 솔루션 출시 · 주요 내용은?",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB4V1dHaTdSS2w2MklDWE1nNzBJZEc1eHMxTGUwM2FJZnhEVDg4WVNIOTRPRDExSWhZbFpMWEM2NUVBalk0RENzdkxpZnkyS0FCOE1EZjZxd0dhVk9s?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "Galaxy와 함께 그리는 새로운 현실, 렌즈 너머 세상을 담다:시대일보",
+          "source": "시대일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9mM18tN2U0Z1VFbG40dURFOUhkekExbVhuanl3elk1ZXBwTUxlMlFXdmN1eWE3SDZjWk5ucVJFVDBPTjk1dk41Y01WZU4zcW9TLTgyNFdJb3I1eHg1dV9zMnk2d0V4elXSAWdBVV95cUxPZjNfLTdlNGdVRWxuNHVERTlIZHpBMW1Ybmp5d3pZNWVwcE1MZTJRV3ZjdXlhN0g2Y1pObnFSRVQwT045NXZONWNNVmVOM3FvUy04MjRXSW9yNXh4NXVfczJ5NndFeHpV?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "네이버-삼성전자, 리센느와 ‘Galaxy Night’ 쇼핑라이브에서 단독 진행",
+          "source": "머스트 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wdmZXWFNGTVNiR0ozQU84UEprUHRGeWoxU3AtVEpnZVdwTkxXZDlqem9VQWgzamFhRGtsRGNhclRpMDY3b1dia1h6U2J3MzV5ODdZY21B?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성, 샤오미, 오포, 비보와 같은 주요 제조사들은 언제 안드로이드 17 업데이트를 출시할까요?",
+          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWkV5T1BqNFJKZmJNTFluOHQ1bDE5Y0dZcnNwblNxQlJFeEdTWnpFV2FsOHFtOGVMTFQ0NHVMc1psSlNQN2F4dWF2Q0MzeG50N0YzQlh3MnJkb3djQk0xam10d3Y0SXpSNUNHMDBfLVBJRUtIQnJ6TmtnYXVNeGhtRlo0QzhJQWxYTFZkSzRZVTFCWmJzbFlUQ2pYRzZ4U2xZMjcwdDhnMXJLd1BQckJ0QTlUTQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "휴대폰 사용 기간은 7년인데, 어떤 지원을 받을 수 있나요? Galaxy Watch예상보다 짧을 수도 있습니다.",
+          "source": "Samsung Magazine",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01U1prSkU0V243TXR3MFIzRjcxQk9aSnhkTURaZ0lNZkRKNVRfWWF2OTBZQWVLU1l6cFZGOFZiVjhOWUZUV1NPNFo1c08weW5Oa2lveE5IZW1LOVdtdk9yZ2NqTmtvSkh4LTA4UHRjUQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "[숏폼] 지문마다 앱 다르게 실행하려면",
+          "source": "IT동아",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9zRVA1VFZwSTZGeUdGcVEwSXpld1dzNDIzaGJPVDh1Mlh2XzZXOV9JNEFPODA2bDFQdHhDTXRNY3NfZw?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "인증 결과는 우리가 우려했던 바를 확인시켜 주었다. Galaxy S27 달팽이처럼 느린 속도로 돌진할 것이다",
+          "source": "Samsung Magazine",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54aXJieFk1YktoclE4Wk1UcWI0NTZxVEdnQlo1ejZTd2FXazdRbDdlS3VCVmtEdXNlQk9QM3RxY3o0WHJpSEJ5clFnaWZkc1NKREljV2RGek5WalA2T0hkV1c3R2RxNlRRMVhOVmFn?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "잘 접혀야 고객 잡는다… 폴더블폰, ‘내구성’이 승부수",
+          "source": "시사위크",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5GVXFfWVNsOWJvN0R4aFl0NWtxZXVjWE1RS0ZRZU1EQnhuMmt4MTE3Q3p4dHdlcS03UGlvYk1PeE80LUJlX0RHdzdTMGt3S3N2bTlyOFlkQy1wQlBsMWJpc0diMEFlWF9uYnNjcldNd9IBb0FVX3lxTE5GVXFfWVNsOWJvN0R4aFl0NWtxZXVjWE1RS0ZRZU1EQnhuMmt4MTE3Q3p4dHdlcS03UGlvYk1PeE80LUJlX0RHdzdTMGt3S3N2bTlyOFlkQy1wQlBsMWJpc0diMEFlWF9uYnNjcldNdw?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "[테크 안테나] 삼성전자 SK하이닉스 라온로보틱스",
+          "source": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9SbnkzUHRuVEZUSEFZeEliVE5HSFh1YkRxNmZsYlJadGFKaml2VWlHSVdxT2p1TEhzWlI4NjRrN2hBR1htb1VfQmF1aWlFRUhLLTExRnh4SUtXc0J6cTFHenU4eDBVUnRoZDZCRzhXZ9IBc0FVX3lxTE9VdERaWlljanduVEhIdWdVVWdDekVWY2tyVXdScUFuZ1c3bW5LSEticXBCejNwQ3JET085RWhmcnF6aXVGMW51TUdUN21NSWZka0JWV3AxQkJXazVwcl9kUnpXX0lDRWpCcWxUOEsxMGVmUnc?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성 첫 클립형 이어폰 '버즈 온'…온라인 초도 물량 완판",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PYkVMeUVDWHJIdExrX2dfQlh4S0hYZmZadTFadlJUVWQ2eWVFU0xpaVFUbTBkOUl5eTRMX2JwVzFsQy1tLTduVFpLdWExdlZQVlYxNi1rcU9lcFHSAWBBVV95cUxNdFFRVTQybjlPeWhpSnZ6dEpldW5kVHFSU2g0czdkcml5N2VERWw0Q3VkWmNpX0FZUVp0cDd3Y181LVpSNlFfemxjNmlhVXV0TnVJc0oxaDZBS3JOc05TdVY?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "[급등락주 짚어보기] PHP 보안 취약점에 SGA솔루션즈 상한가…진양화학·형지그룹주도 급등 · 시장 영향은?",
+          "source": "서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1kYTlyWEtxVjlSaEg1bzNCT3lMM0dBTzBYcnVkUG9GRzlVaTZSWVFJOUNEOFVwd1Bxa1ZmLVhHbnVRaEFNR2g4c3hKTjVEOUNRRE5rMkZvajdmZHFI?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "[단독] 삼성 첫 스마트글래스 올해 12월 중순 출시… 한국·미국서 먼저 나온다",
+          "source": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYTBRVVpEdWp2Y00zU0laOTFWV0ctbHllLThONXJMcDZwWXlzWktWVHJOaHNRX3EtSE1jVS1faDBndWh5Q3hzZ0lKVVgtaGtWMWxZUUNXeE11LVBWb1RQZm01ZEN2VUhxWXZsc19lV3JMcHhOdnZDdUJWSmh6RWRuR3ZB0gGWAUFVX3lxTE9SRlpmOGgzRmhJUUREcXlmUjBHbFlFRHNRZmhXX0FGX3VjOTQ0NGN6Q2ZjNTRSbktxUVBUcWxkblR0blZiOENDdWZ2Y3JVV251QlFqSXBZd1hVTmZxODZoSzREcm5VRzdhekdIdF9RMzk2aE5BV05pVVlOWHVVZmhCcEV2c3ZOR3lncDk5TV9QMDVBQnVUdw?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "네이버·삼성전자, 리센느와 ‘Galaxy Night’ 쇼핑라이브 단독 진행",
+          "source": "우먼타임스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hOWx3a3V3aWdmUVFhSENDcHQ1TmZjTDVvbTVKNWJ0SVFYUk1XWVFrRXNOM05jRTF3RWxITEJ3d0RRNENJRWl2ZllBTGppaUs4MDg3Zm4zVkp5Y0g4OElPWjNVSGtzYUIxZER2QUdoeEbSAXRBVV95cUxPbTAzMDdkTHctX2g2eW1NTVViWlRzaVpRZFBNTW5TVS1rMzJoczV4cGpGQXB5eFZkald3Z2NPOFNPcHctOWU3ajZQUjM4QkdteDVscXpXM1BoQ3MwWUhvaUhnT2RPZ2NGLVE2UV9Vejk1dzNTUg?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성전자, 11월 한달간 코리아 페스티벌…가전·모바일 할인",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00TEhCVzlJc3J0WE05Y0hjcVlvRjh3eGVsdUpKRUh5RF80b1VtOGRNNTJlNUoyNW1GQWR6OWtLcHdTalpHM0NWQlhYQzhEUWVtdTUwQ1BidGRPdndtM2t0RdIBYEFVX3lxTE00TEhCVzlJc3J0WE05Y0hjcVlvRjh3eGVsdUpKRUh5RF80b1VtOGRNNTJlNUoyNW1GQWR6OWtLcHdTalpHM0NWQlhYQzhEUWVtdTUwQ1BidGRPdndtM2t0RQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "\"삼성 폴더블폰과 비교하니…\" 접는 아이폰의 '치명적 한계'",
+          "source": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE80TE13RXBlWlZEMS1vampFZXlDUVNiRHhBZk9DWmI5OFc3QWFCUlFydHRPZWJqRkx3cWdnc09Ua3M3LVhSVDYzVEEtOVNlcV9zaHJJN0wyS3BpZw?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "Galaxy와 함께 그리는 새로운 현실, 렌즈 너머 세상을 담다",
+          "source": "OMATE 시니어",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE14RE9HamI3ZkZtdTBySWhnN190WHp1dEl4Zk9uRXhPUkd3RWVNelByNHdseVVXNDdRYmhadTZDQWU0dmZTSG42cWNmbWh6YXBTSVdfMlNjUnZ4MEVMcm1DeVFCU04?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "[삼성전자 3분기 실적] MX, 폴더블로 적자폭 축소…연말 성수기 수익성 방어 '총력'",
+          "source": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBhZmJrdm9uYlBNNm1zRnJ3VUY5Ukc4b0VNOEJMaUlzNTIzUkw0SGMtc3V6c0Vwd2U1TVdRam1ITjFNZWRZRTViSkpXVG5yQQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "“앱등이 꺼드럭의 업보”…금 간 아이폰에 애플-삼성 팬덤 갈등",
+          "source": "중앙일보",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSzdta2FQS1NxdFR2dTRNZG1HQS1vZ0laZURuN1hWMUVoWmlMU1RMb0NxLWpKU0VCOVJ0Zk1yMTVsdkJEQjZ1dy05VkR1Y1ZUNEVDWWhn?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "Z 폴드9 두 종류 나온다? 프리미엄 & 저가형 모두 검토중",
+          "source": "베타뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tTzBsdndOMDhZdzFPZGFkWGRVWERTc2hqQXNXc3FIRmJ5b1AtbWF3WUdSWjFuQ1g1amhCU2hTQlRIVkVQWGpuTy1MNDJpZzAtUmdnSXFEV3lWbWpvSTFlSmdmNHE?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "\"그립감 좋다\" 한 마디에 대박 난 아이돌…결국 광고 따냈다",
+          "source": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tWktyejBKNXIxNlhTMHh2aEhKcTZQMlRWWmluZFNlWElWaFZlcnFkLVpSejVaeXpoWWZpRTNXOTVOUTkxMG5oT1N6SkRfZkJQWlJkOTVoUHQ1UQ?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "혁신 아이콘 '삼성 폴드8 x 모델 리센느' 성사...대세 만남에 팬들 '화색'",
+          "source": "반론보도닷컴",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5PX2pIQXFIM3R5QnFjSkdvcl83aUJmamlFREI1bG9uUE5rSXZ3NWhYYW9hVTVxRlVfNV9uNmYtTVZwdG9SUno0TUhRTmhXaHo3VnR3U1hYNFBZRlFwTzk4YkV3QjBST1Zqd2tzREViV0_SAXBBVV95cUxOT19qSEFxSDN0eUJxY0pHb3JfN2lCZmppRURCNWxvblBOa0l2dzVoWGFvYVU1cUZVXzVfbjZmLU1WcHRvUlJ6NE1IUU5oV2h6N1Z0d1NYWDRQWUZRcE85OGJFd0IwUk9Wandrc0RFYldP?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "S27 플러스와 울트라에서는 빠지고, S27 프로에는 들어가는 기능들",
+          "source": "베타뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zSXFLSGlfZ3c2a3Z1a2dTbXJKX1pock1HcVlGdDRQZzR6SC1EX0k5Y29yTzJpRDZhSUZwV3M0bE5YZ3lyZkhvZ0hJR2RFZjZXWlhlRHVETFZXZVVURTBtVzF4Zmk?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "\"GOS 알리지 않은 건 기만적\"...공정위, 삼성전자에 과징금 200억",
+          "source": "JTBC",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wWUxCU3dBQzZGeWZ1T2VpTy1CRFpHOU51bWVmeVdFb2RQN1FnRmFmbURBMjdmV2Z1ZHBfdWZzN3VMRFBMb0ZYX0RKYzRTTlY2aGp4Zw?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성전자 “GOS 기만광고 판단 동의 못 해”… 공정위 제재에 대응 예고",
+          "source": "법률신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QNlR1dVpIR1FWeURnTFdkODZQNGZDODNtZDJnSXdxOG9xQVpqOFB4SkUtbmV4ZzMzY2hDMGUwdWduNjFDODAyMVJleEJjczZvTzBuZG56OTNCSWFXOG5FOGFqRkJjQmNHY202Wkdn0gFyQVVfeXFMT09ZRlk4a3Vjc24zV2o0dEZlWWlGb2FXQ3NGUW5oWi1URDNFdGotcVpqTHpmRHRLemZza1BWM09BOU9JX1Z1bWxDem51SklfZjZLVTNISThaRkd2Y0xOTzhEUU9QbmJ2cUhzTWhuOWtfN29n?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "‘손흥민 골 취소’ LAFC, LA 더비서 2-2 무승부…PO 진출 확정",
+          "source": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wdjQ4RGZkdDBoMGlsaC1XTk1hVVB3YzJjSGJMSk10RTRJem9pbTVaQzVQUTVERV9yOHNnVHh1SGpiSDZsTUJNMkJsUFVJNVViMFIxRUQ3WlF6cFJpVk1rbUQtQUVMMEowckVZd2E0bHc2SWRw0gFmQVVfeXFMT21nS1RlcDhYU25yNXlNV1hORkdyX29vQ1h5NGpEdGJrN1NmZnJvRFRtVWJXcHhTX0NxR1NWMnhLT1NvdW9ZZV9jY3dMZ3NYa3VQQTdRak5pQ01HTWlzX203OE1ReV9n?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성, 클립형 무선 이어폰 ’버즈 온’ 출시…“운동 중에도 안정적“",
+          "source": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00SVlsNVh0bG9tWG9mWGpSazA1S2N6TWpJbHBjQTM4ajFGajRDSWdEamZQcGQ4R3phcU5EWlN0TGdnRGVZb3I5UHJQRWt3dTVlbzE0VUJ4RjZFSXlRa2JQeEhrTGc3Zjg?oc=5",
+          "relevance": null
+        },
+        {
+          "title": "삼성, 첫 클립형 무선 이어폰 '버즈 온' 국내 출시",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOMV9RTlVyajJJTk1jTmhHbEdVNUVMZkZZNHN4WmduekJfY1gyR1RGR1Q3ZmpCYUhhN3EwNXpxZXNGYV9uUUR3am5sSUpTNkpua1BHT0tWVFpzSWPSAWBBVV95cUxNTWhvZFdQd3dtdVZMLWQ4ZG5SUHF3MWFWNXU4S1N2aGdPeXNfVVFITm5uRHRaT3RiR0d1WU1OZjI2MF9rZVZVcXNRLTdVd0ZJR201cS1QbmtEdlhQWV9TVFY?oc=5",
+          "relevance": null
+        }
+      ]
+    },
+    "trends_matches": [],
+    "history": [
+      {
+        "collected_at": "2026-10-11T17:22:20+00:00",
+        "today": 37,
+        "momentum": 0.83
+      },
+      {
+        "collected_at": "2026-11-01T10:35:20+00:00",
+        "today": 35,
+        "momentum": 0.48
+      }
+    ]
+  },
+  "evidence": {
+    "D1": "News articles per 24-hour window for the last 7 days, newest first: [35, 37, 117, 24, 86, 69, 101]. ",
+    "D2": "Search intent from Google autocomplete (share of suggestions): other 36% (e.g. 갤럭시 워치, 갤럭시 폴드, 갤럭시 갤); product_info 33% (e.g. 갤럭시 폴드8, 갤럭시 s26, 갤럭시 s26 울트라); how_to 17% (e.g. 갤럭시 공장초기화, 갤럭시 공장초기화 하는법, 갤럭시 강제종료); buying 9% (e.g. 갤럭시 폴드8 가격, 갤럭시 가격, 갤럭시 s26 가격); problems 3% (e.g. 갤럭시 링 망함, 갤럭시 충전기를 꽂아 도 충전이 안되요, 갤럭시 충전 안됨); news 2% (e.g. 갤럭시 갤러리, 갤럭시 디시, 갤럭시 버즈 온 디시); technology 1% (e.g. 갤럭시 배터리 효율)",
+    "D3": "Words significantly more frequent in the last 24 hours' headlines than earlier (log-odds z > 1.96): 완판 in 8 headlines (z=3.88); 만에 in 6 headlines (z=3.68); 사흘 in 5 headlines (z=3.06); 온라인 in 4 headlines (z=3.05); 초도 in 4 headlines (z=2.74); 물량 in 3 headlines (z=2.37); 통했다 in 2 headlines (z=2.12)",
+    "D5": "Momentum in earlier runs, oldest first: 2026-10-11T17:22 0.83; 2026-11-01T10:35 0.48",
+    "S1": "2026-10-30 | 소셜밸류 | 삼성전자, 40만원대 LTE폰 ‘갤럭시 A18’ 30일 출시",
+    "S2": "2026-10-29 | 서울뉴스통신 | 삼성전자, '갤럭시 A18 LTE' 30일 출시… 대화면·AI 탑재 40만원대 실속형",
+    "S3": "2026-10-26 | 더글로벌기빙뉴스 | 삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S4": "2026-10-26 | 투데이e코노믹 | 삼성전자, 첫 클립형 ‘갤럭시 버즈 온’ 27일 출시…가격 29만9000원",
+    "S5": "2026-10-26 | 매일산업뉴스 | 삼성전자, 첫 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 출시… 29만9000원",
+    "S6": "2026-10-26 | 뉴스저널리즘 | 삼성전자, 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S7": "2026-10-26 | 서울파이낸스 | 삼성전자, 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S8": "2026-10-26 | 아시아경제 | 삼성, 첫 클립형 무선이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S9": "2026-10-26 | 아이티데일리 | 삼성전자, 첫 클립형 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+    "S10": "2026-10-26 | 뉴스드림 | 삼성전자, 첫 클립형 무선 이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S11": "2026-10-26 | 아시아투데이 | 삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 27일 출시",
+    "S12": "2026-10-26 | ER 이코노믹리뷰 | 삼성 ‘갤럭시 버즈 온’ 27일 출시…시리즈 최초 클립형 무선 이어폰 선보여",
+    "S13": "2026-10-26 | 스트레이트뉴스 | 삼성전자, 첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S14": "2026-10-26 | 비욘드포스트 | 삼성전자, 첫 클립형 '갤럭시 버즈 온' 27일 출시…29만9000원",
+    "S15": "2026-10-26 | 뉴스;트리 | 귀 안막고 AI까지 연동…첫 클립형 이어폰 '갤럭시 버즈 온' 27일 출시",
+    "S16": "2026-11-01 | 파이낸셜뉴스 | 무선 이어폰 갤럭시 버즈 온, 나흘 만에 온라인 품절",
+    "S17": "2026-11-01 | Vietnam.vn | 갤럭시 S27 시리즈의 충전 기술: 일반 버전은 25W를 유지하는 반면, 프로 및 울트라 버전은 60W로 향상되었습니다.",
+    "S18": "2026-11-01 | Vietnam.vn | 삼성은 아이폰 듀오와의 경쟁을 위해 갤럭시 Z 폴드9에 숨겨진 카메라를 다시 탑재할 예정이다.",
+    "S19": "2026-11-01 | 미디어펜 | 귀 막지 않는 이어폰 통했다…삼성 '갤럭시 버즈 온' 사흘 만에 완판",
+    "S20": "2026-11-01 | 메가경제 | 삼성전자, 갤럭시 이어 AI 가전까지…크리에이터 마케팅 확대",
+    "S21": "2026-11-01 | 전자신문 | 삼성 '갤럭시 버즈 온', 온라인 초도 물량 완판…오프라인 판매는 지속",
+    "S22": "2026-11-01 | 파이낸셜뉴스 | \"없어서 못 판다\"...삼성 첫 클립형 이어폰 '갤럭시 버즈 온' 나흘 만에 완판",
+    "S23": "2026-11-01 | 한국일보 | 갤럭시 버즈 온, 출시 사흘만 온라인 '완판'... 초기 흥행 불 붙었다",
+    "S24": "2026-11-01 | 머니투데이 | 삼성전자, 첫 출시 클립형 이어폰 '갤럭시 버즈 온' 온라인 초도 완판 - 머니투데이",
+    "S25": "2026-11-01 | M이코노미뉴스 | 삼성 첫 클립형 이어폰 ‘갤럭시 버즈 온’, 출시 사흘 만에 초도 물량 완판",
+    "S26": "2026-10-31 | 뉴스1 | 삼성 '갤럭시 버즈 온', 출시 사흘 만에 초도 물량 완판",
+    "S27": "2026-10-31 | Traders Union | 삼성전자, 40만원대 갤럭시 A18 LTE 출시로 중저가 스마트폰 수요 공략",
+    "S28": "2026-10-31 | 뉴시스 | 귀 안 막는 '갤럭시 버즈 온' 통했다…사흘 만에 초도물량 완판",
+    "S29": "2026-10-31 | 분당신문 | 갤럭시 A18 LTE 국내 출시 … 카메라 스펙 등 기능과 가격은?",
+    "S30": "2026-10-31 | Vietnam.vn | 로스앤젤레스 갤럭시 vs 오스틴 경기 예측: 홈팀 전력 분석",
+    "S31": "2026-10-31 | 스포츠 피플 타임즈 | 삼성전자, 일상에 필요한 기능 담은 ‘갤럭시 A18 LTE’ 국내 출시",
+    "S32": "2026-10-31 | 민심뉴스 | 갤럭시 디지털, 406만 달러 상당 HYPE 토큰 OKX로 이전... 매도 준비 관측",
+    "S33": "2026-10-31 | 금강일보 | 팬들이 먼저 원했다… 리센느, 삼성 '갤럭시 Z 폴드8' 모델로",
+    "S34": "2026-10-31 | Vietnam.vn | 갤럭시 S27 울트라는 업그레이드된 5,700mAh 배터리와 함께 글로벌 스냅드래곤 칩을 사용할 것으로 예상됩니다.",
+    "S35": "2026-10-31 | 베타뉴스 | Z 폴드8과 아이폰 듀오 세상에서 갤럭시S26 울트라가 최고인 이유",
+    "S36": "2026-10-31 | 베타뉴스 | 갤럭시Z 폴드9만 3종? 삼성 2027년 폴더블 라인업 총정리",
+    "S37": "2026-10-31 | 베타뉴스 | 갤럭시S27 프로, 울트라 기능 이렇게나 포함된다",
+    "S38": "2026-10-31 | 베타뉴스 | 펼치면 17인치, 접으면 8인치... 삼성, 초대형 갤럭시 폴더블 개발중",
+    "S39": "2026-10-31 | 베타뉴스 | 삼성, 유럽발 갤럭시S27 울트라에 삼성 CPU 사용하나?",
+    "S40": "2026-10-31 | 컨슈머뉴스 | 삼성전자, 갤럭시 프리미엄 기능을 담은 ‘갤럭시 S26 EE’ 공개"
+  },
+  "evidence_links": {
+    "S1": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82bUVpd0lwaTJvdVN2WGZWYVdsdmlETzY4VGhWcjFOYVpYOExOdUJ1X1kxX0lZZFd4dlhLa3RLeVpJS0pBUVFFQ3FtMkxJNVBNN0cySHpIQTZTeFItRklvbEt6c9IBbEFVX3lxTE4wamhpWHIwWEl2MnNHVVZrakZIZHh5YmZFWlRJSHY2N1BiVVdWOTZWZ2l1LW5GNlZOUEx2cUlrcU9XcndfY3lVT3NJemtuLUVpc0Y3TnZid2lrZ2d5R3MxdFVKSGxFNFIyaVB3WQ?oc=5",
+    "S2": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91cE1QaFBGQjNnbDFhX2hJaHNwUG1iX2M4SWxQMUQtckZKdTZPcTN6bnU3TW5GT0hBT1lZWXh2NkNJNnNpZi1pSTRNVmpvdVoxd0xmNEJic0psM25JUzdiX1BPTkFReWpvRE9B?oc=5",
+    "S3": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9WbkoxOGtUalpmYnZhNU9kbFl1QWk5bWlGS1pONFJfbFZHelc4blE5NFRUVW1pS2NEUDJCc2pfbFJBTXJnV29TdkRqZ1o5dkJBdU9VUw?oc=5",
+    "S4": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlLUUzQnBJYW9lSUlUNUx1cC1NWXBQYS1ZdWFCSHo1NWgzeXpRR2dZdzB5eTBWZ2ZGSWZ2VmZVeVd1SmxnQW8xeGtYTk53M3NYejFmMTFlUnphRkhiZy1EUnpMYmdVYWM?oc=5",
+    "S5": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tYW9iYW9QclFjOWNRQXJ0eVJJWGUtclFrdElDV3hTRndwMlUwU1RaWHVHUGFMY1dzbk1fTC1wRVk0dC1Ha3dWOS1NdnRiZTVRd2NGR0ZUSFZnem1GSERtc3pzUQ?oc=5",
+    "S6": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CMzNuU1RzY2lHZVdJVER4LTdBVnl6UW5FYzQ3QWRRRWQyMTJLRnhZMVJCTmpuS25jOF9vT0x2WHZuUC1iaS1RdlFWNUNKRHd6NFhsUURINXFZVTUtYVMzeWktTHZRNzltcWFr?oc=5",
+    "S7": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vbkhVTE5tZkRIcXpmVWs3TTZhMk5VYmx0aXBXNkNKV1o3bW9Ic0ZUSnh0THRkZDZFWmJsMHVha3d5MXdsME9jYVl3aTk0enNNY0hfY2diUWZidEM5LXl5U0QxdGxpUHEzZXc?oc=5",
+    "S8": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tdnJkWjhIT0g5d3I5QTJPOGhUVTRXdTBNaVk0THFYaWFrZFp1Y2otZ1pEclBuWDA4X1p6c2g0cUxWLUVINHd2TnVoYW80eHJCd0ttQTRKaVQwTkc2MjlCcQ?oc=5",
+    "S9": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41T21DRFVvX1JYdUlBei04dU9LV0dFWTBMVzVnYWRPbktIa2Nkdlh2TE1va3l3aFFLd0h4cDBYU0kxRWllNE9Ra19yMTdZcnZUdjJDcTlObVMxNWwxTGJkRmZBeUU4SFU5?oc=5",
+    "S10": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZdjZyTFRnQ09LVXJ0dW5hTEZNYkIzaXluRmJPT3gxQ0FfM1ZvZ0FqeldsYVNCYVNlZzh3ZEd3MXJvTlU5N19WQm41VXI0SEpoSkkxSE9ZT2ZyUmFBQkt6NWlmNURGanAtYmxn0gFuQVVfeXFMUFp3akVHNUFVeDZRb1NJbEdyRVBlZUFOOUNGaEo1RHhSSUJTM2pzRmhxT3JwYzhtNzJzV1I1RnhnMjNqR2R3ZFVMaEk0a1ZmQnMzWEJWU0ZrMlFRWEIzN25hcFIwRS16S3YxdkdRMkE?oc=5",
+    "S11": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqa2pZeGx6TUp6YWRNZ19jOVZwbkVwcmJPcE53cXZJNzdXY2l1Tk84c1RyOXo4aUpLUW1yU00zVl9QcWhfRUpkS1I0RExvU3ZVY3VPNkVBSXM3OGRQR2dacEVPTUFmb0pia1lEOW13?oc=5",
+    "S12": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3MmJIU0JOeWxKUGhFRHl5V0VUX2pKTTNvdlJQZjhabTdQNy1PZ1h6MVFMdW5OWl8zcEU1YlVKMkZVZjBFOFBHd3ZBUWFsTzF2c1NCLVVxaUJYYkczT0NQc1p5ZlhQV1JyRWsxVw?oc=5",
+    "S13": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1WFhzYkw2ZjlSQ2lkMENobG1wbjg4ZkRPVnBKdGdZTWd2OHFpZll1NERXM1dOWFV0N1p6ZGd1aTFqcDhwZmRUSGtydnZhd3E0X2lTeW1qUnpvSDFMZ040Nzc5WkFHUEFyMnRCNXV4LWZLZVHSAXdBVV95cUxPNjdVVHppSVdRci0xb2lhenNxV2x3anFQcDBFX0k4MVZlaVNjcE90N2hTZmlSektqUmNhTkFBb1NQN0w5RTIxOVd6WWR3bHZJeE1VN1dsdW5SM1FGTUFTZ2gxR0FkWmFJTVZpMXRwTE0zUGk1SkNYOA?oc=5",
+    "S14": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1lZkk1RWk4QnpmOUJVS3h1akctTnB5UHdZZnh5TWQxSndXekItaWdWU3JLYmprWkRuWC1zUDFaNmJoZGxCVEQ5RW5OVVA1Q1dMelBiNWZsLWtSOUZ3X1o2a3pFd0Zub0U5cHQzcWdCeHpfZlUzUnlEel9Caw?oc=5",
+    "S15": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNR1k1c2tFeW01LUhPUzdfaHZtRWVtU1FxZUhmWFI5RGN5d0ZNRTFTOGlnY05wd21uajlqcHhhQmt3dy1uUlJkcHhteldrTUxlT01SM2gyQzJicHE4?oc=5",
+    "S16": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XTlBWWFlDWndYRGplejlwbGs5ZnBWZ3VuZ0VoUW50U1h4Ti1fQkl2bFZTV3NTVnV3RXZPWUlPYS1wVk5BU0wxSHEwRjluZWZrdUxGRlpaWjFyUQ?oc=5",
+    "S17": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa1lKYWJjSFIwMTJQZDdZb19RMk1SZ1dieE9GUHNITnJKc2pwc2tmci1CSlBzWHFNeUdMdmdxdklZSEVzZEpEb0ZUWlJYRS1KS0ZqUXFQVjRUdHIteXgzSmp2dVNUU1dyXzczdkxrYktVWEtRVGxDQzM0NkdOdHhZWmpuem9EME82cTFMNmZTMm9WTkxUZUdTNnY3ZDB1UEtJSlljSXZDTE14UWFWWHpmZjdyMW5qNmF2dERFcA?oc=5",
+    "S18": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbzRtVENsLU9ubUhkWmRJbHpRd2Q4Y1gwcTkwalVPUkJwYlA0X29yRTdhVVdTVHBSQXM1UzMyRm83b0lwSXVBbVg4ZzlUWlotN3NRaFNQbnRaM25sT3MtUXdmTU9XNVVDdklSR291eFA3Y1ZKMWlVZXYwQ05CdHE0MkxvbG9HOHZIT0pxMDhxWVVfdWNDZC1ua3pHT0FWM3JiTFdKbHlTWQ?oc=5",
+    "S19": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9CbDlEUll1bVozLVE2bkdTajNqVHdnY040MTY1QjRhQXpIZ2F0TERBeUxuMXg2aHUzR2F1aVhfZlB3S1BrQTBWR1c0RjJfOVYwSjhnVdIBWEFVX3lxTE92Z2dzWUg5c3o5WlFTU1FER0RXdWNnemV5bGxNU25rbElkNzZRX3ctcGViaWJuNnVKbU90Ui1wNk9RLUNsd1I0QmExYzMzQzBZSE5va3RhTW4?oc=5",
+    "S20": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HWndqaHRKY3FzR0RqR0ltQklkT0ZvSkVHdTZrdm4zb1hNY2RJZ29GS0cwamUxSmluREZDNk1TSmNBLWctWk05R0xZR1hQbDl5Z0toeXBDN1RSczgxaTM2SVRfdlNzeVdGcnVERV84OFVVd9IBckFVX3lxTE5HWndqaHRKY3FzR0RqR0ltQklkT0ZvSkVHdTZrdm4zb1hNY2RJZ29GS0cwamUxSmluREZDNk1TSmNBLWctWk05R0xZR1hQbDl5Z0toeXBDN1RSczgxaTM2SVRfdlNzeVdGcnVERV84OFVVdw?oc=5",
+    "S21": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYcjJmdW5LbE1LNDVqaTk3VDZSNU9GTVdPOW96TFJuMTdJblUtVEM5Y0dzUEJLMlU2UE1BX1VFVk5MRXhqdHcxYXhudC1RQQ?oc=5",
+    "S22": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YLWdsSnRuN2JYNk1rZU93eG0zMXRyal9UNE1CN3RpaU40THdXM2lTZnExLUlzdFZZYUtlMl9NcDZDNkJyNlhIRGZUSHZVcmZERlRtZ2ZVQkc3Zw?oc=5",
+    "S23": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52UlpHbkV3dTBXSS1OWmc4cVZCampaOUxMUDE2ZTR5cjFYMnBLS1NMSURXc0hhV2toTkdjMHB3b2VTUk1FMVkzaVlXRFBKM2h0cHlwWlNrS2E2RnU3RThHQWdpeDdtZmVudzdpWTJyLXpmX0HSAXNBVV95cUxOdlJaR25Fd3UwV0ktTlpnOHFWQmpqWjlMTFAxNmU0eXIxWDJwS0tTTElEV3NIYVdraE5HYzBwd29lU1JNRTFZM2lZV0RQSjNodHB5cFpTa0thNkZ1N0U4R0FnaXg3bWZlbnc3aVkyci16Zl9B?oc=5",
+    "S24": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9fT08zVUY2ZTBHSXZ3QklBRF8wZVRyTVVpVHdFS3ZTREVodlcwYXl3N3BfTW9JVVF6X3AwN1Voa1pHSWpacGh1aFdUbWJJYUV6MXNjcnpHODdUMWJNeDkwcW9xYktaUWxoU2gyS9IBbEFVX3lxTE9fT08zVUY2ZTBHSXZ3QklBRF8wZVRyTVVpVHdFS3ZTREVodlcwYXl3N3BfTW9JVVF6X3AwN1Voa1pHSWpacGh1aFdUbWJJYUV6MXNjcnpHODdUMWJNeDkwcW9xYktaUWxoU2gySw?oc=5",
+    "S25": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9oN0JvVmxpSFYwN1lpZnQ1VVU2NnBlUFdlVVBlZUhGVHRpZFpTYVN1Vk9vTlFMTEZrbnA3dGdTU1JtaHJkMV9OandnNXR4eE9aZ1B0WWZxb21tVEM4RlhiRVZXRTd1STA?oc=5",
+    "S26": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZNkVmcFI3czhPU1R0dm92a29LM3UwU2tLbVVnU3RJOGlDYlhvTERmelZyeXdoZzUzdG9OQ2xTR0JhT3NEOGtEMTJpTV9Ib0M5VHpHNk5LOHM4UQ?oc=5",
+    "S27": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZ2tPOTFPdmo4S2VDU0daR3U0Ry1QeTBaWnoyV255TnBtS01fcVFSbnAyZDZuYzdCQ0tGekVRYXBOWk83UUZGVUZZM3kyN0Nob2d3WE9CQW91S1N6N1VBVTg5NTlJb0dGYXRVckxMclJqN1FoNU12ZXZzS2tza1lXMFZROU1wTmRvQ2ltYkxldw?oc=5",
+    "S28": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BWE1KUndhTEZfVFFMcXlsQThpeE55d1hWX21CTWU2Mm9vTTBoUnZ1YkZpVlFkbzAzVlE4Nld0ek0zSUxKd2pBU3ktYnVNQlFyc3BwWk9yaEFZLUU2b0RiMNIBeEFVX3lxTE04VVV5TWZxMDBhcXppVm9nRUpZbFg0RUdkazhUYkg5OUpJd1NkNk9feGtKRGt1SEFDZk81bk1NZHU5OFFsX1BLQmgtcTl4bHJNRkU1TFVqY0NIaE5tU241TjhMNFNLbE5lMDRYZ0gtQl9aeVdrOXBtUA?oc=5",
+    "S29": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1KTFVrVGRCYzhlSm9sTi1kT2JHR1g4NVc0azFUbnJSS04zVnFvOFFRZXRkV3ZUQmhjeTU2YWpuY0c2VTNoQ1JHcGdFTQ?oc=5",
+    "S30": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTWVydkxhdU9zQTNxekxuTzNCS2lZRGZWXzBuLUxva08ybU5ibjhyOFVLcTV1cmsxV1ZwSEQteTJIQkJaM2U5c0RVUzJ5WEpjMjYxQUtxRFlQdE1LM3VERG85RGlvUXJCWWRraXBOaEUzTkROUDhyd0ktVkdyWEFZV245SG9HNEphSHRJVXZHUlNCd2lMSTJiM2ZyRQ?oc=5",
+    "S31": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00WjAxaThwcXZGdjlrWldpWHg3czVVd2FoYld2d3MwN3drclV6SGRQV2p6TnRYVEowQm1JT0NQbGo1YUxJNG5TRWQxYk9kWlJnR3VqR1czYWVWaU9yX1d6UGZtZWhiM3Rmb3pRRTNHaVlmTnpGS2ow0gF3QVVfeXFMTTRaMDFpOHBxdkZ2OWtaV2lYeDdzNVV3YWhiV3Z3czA3d2tyVXpIZFBXanpOdFhUSjBCbUlPQ1BsajVhTEk0blNFZDFiT2RaUmdHdWpHVzNhZVZpT3JfV3pQZm1laGIzdGZvelFFM0dpWWZOekZLajA?oc=5",
+    "S32": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uMlNkTEFSTDh5R3BOZUdUSVFyS21wUzhEQjJxOVlfVDFaNy1yRk1iWXV0N3hsMWx6akFHOTUxTFFDYUp4cEwwZFJPcXB4NzNtZl82VXhmeXI0dlRqa3JJSEJ0NG16N3BJN2FCQw?oc=5",
+    "S33": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWEhTOGtreWhOaXNXMW1mN1hqek9qX1M2UU9qMXhZSUtWaDhMVGRhX3M4NnN0MTFURmw4QmZjcDVDci01dC1QVXJqT3FhWTF6RnNlWk5HbVBCSTh6UlJ0ZG1NVXpraFhP?oc=5",
+    "S34": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUTBXc0tIM01nR2NHb1ljTmlDc1kyOTFBQkE3T0R0QnFOMWgwSnNhMjNtNmlhdE12QXNlWEJ1bURjVnJLQXh4VGlfaUZSVDZyZWJJZTVOdGJuYVBEcXJnNW81a3VzamFkZmVpUDBsOF80dkVlM2lzMnhrUjRpZWNWYmw1YzhlLXRiOGZ4aDRVamVSdWRDRU96UEtCNkRSVDBhV1dDenFfUng3aHBUVnItSVZMcw?oc=5",
+    "S35": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GUWdxdWZtN0FHdjR6VkFYamhWQ05VSFFWakVnRjF2MjlCMzBnNkRpMEY0WUxqZVNKTkhuTmhvVllVdVZOaEVYSDJZSWhYdHRvS0NoWEx4YWU0Z2RPbUZtSGtEZ00?oc=5",
+    "S36": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fQURZZHRxZUVYeGxocjZkZC1rTUtrUnlUdGkyTnc3S3l1SDBiVmZvam85Vkx3SWxRY295NFhnMXA3WHM1U1NJTGNTSDB6UmVZdmFqNXo0cWtVQlZneGNXTmJ5RGk?oc=5",
+    "S37": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VMkpDOXlJcldROVRYWkphOHljRWNUckxsNWFtZ29yaHktQnc1dzlSR3BaMnJacEpYQmxQb2JZWjlWemhaZ1Z5UjdSeUVkVWlBRjkwN3dkaU5ocWtFVkRwWU1uZzg?oc=5",
+    "S38": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YNks4aWp1RVJ5VTJ5U00yZXZKSDdSU3czMXh3OEhPeDRiTzRzanZaVGNWcFVoREZNTF91ZTZ6aHVDMnRzNWV4el9jN0hpR2dfNE1fX05MZ0ozdXJqR2c2c1c0Q3Y?oc=5",
+    "S39": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZazhqZDRLdXN5YjNMYUdJbmhVZHZVMUJYWVEwVkl4VlMzZFBNcUxESHNZRVVWdkdQVWV5UUZfSjdmU2NaSlR2MFJjdnRKeTl2dEhOa1RHV3Y5cmJ5NmI1SUJUUnc?oc=5",
+    "S40": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iaFZHcVYtdXoyNWtpdVozRVV4WXE5aGhzQmpTRll4NXlpQlBsWDNvYm5vaW53Y181czhVVEk1UlppX01jV1lkQU9OVnBoN1RnUF9JSTVFejRnSS1EMDhVMVJaZzZ6RjZ2MFNZeFlMTlQ?oc=5"
+  },
+  "related_searches": [
+    {
+      "phrase": "갤럭시 폴드8",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s26",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 워치",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 폴드",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s26 울트라",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 s27",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 폴드8 가격",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 z 폴드8",
+      "times_suggested": 2
+    },
+    {
+      "phrase": "갤럭시 갤러리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 갤",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 글래스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 공장초기화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 구글 검색창 없애기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 공장초기화 하는법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 강제종료",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 굿락",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 강제 재부팅",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s25",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s23",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s26 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s24",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s25 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s27 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 s22",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 듀오",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 esim 지원 모델",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 데이터 옮기기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 다크모드 해제",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디펜스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 디펜스 공략",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 동영상 편집",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 esim 사용법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 동영상 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 로봇 파크",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 망함",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 레인저",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 fe 차이",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 루틴",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 링 2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 리 센느",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a17",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a37",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a18",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a36",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 ai 구독클럽",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a57",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a16",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 맥세이프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 a35",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 온",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈4 프로",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈4",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 온 디시",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 배터리 효율",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 북",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 버즈 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어 쿠폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스마트태그2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 시리즈",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스크린타임 확인",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 사전예약",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스마트태그",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 시리즈 총정리",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스크린샷",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 스토어 쿠폰 코드 (2026)",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치9",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 언팩",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 와이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 울트라 26",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 워치 울트라 2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 에어드랍",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프4",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 정장",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프5",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프2",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 점프",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 전원 끄기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자동완성 끄기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 자급제",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 전원 끄는 법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 초기화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 초기화 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신 폰 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전기를 꽂아 도 충전이 안되요",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최신",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전 안됨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 충전 표시는 뜨는데 충전이 안됨",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 최상단 이동 굿락",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 캠퍼스",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 z 폴드8 가격",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 카메라 무음",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀6",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 z플립8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀7",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 캡쳐 방법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 카메라 셔터음 제거",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 퀀텀",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s11",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s12",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 트라이폴드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s11 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 xr",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s10",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s9",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 탭 s10 fe",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 테마",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핏3",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 플립8",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 울트라",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핏",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드8 와이드",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 플립",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 폴드7",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 휴대폰 찾기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 캡쳐",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 안꺼지게",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 녹화하는 법",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면분할",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 휴지통 열기",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 배경화면",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 화면 녹화",
+      "times_suggested": 1
+    },
+    {
+      "phrase": "갤럭시 핸드폰 데이터 옮기기",
+      "times_suggested": 1
+    }
+  ],
+  "explanation": {
+    "why_people_search": [
+      {
+        "claim": "신제품 정보와 가격을 찾는 검색이 많다. 자동완성 제안에는 폴드8, S26, 해당 모델의 가격이 포함됐다.",
+        "cites": [
+          "D2"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.56,
+        "check_uncertain": true
+      },
+      {
+        "claim": "갤럭시 버즈 온은 29만9000원에 출시됐고 온라인 품절 소식이 나오면서 구매 가능 여부와 재입고에 대한 관심이 커졌다.",
+        "cites": [
+          "S4",
+          "S16",
+          "S21"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.76,
+        "check_uncertain": false
+      },
+      {
+        "claim": "공장초기화, 강제종료 등 사용법 검색도 자동완성 제안의 17%를 차지했다.",
+        "cites": [
+          "D2"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.97,
+        "check_uncertain": false
+      }
+    ],
+    "what_is_happening": [
+      {
+        "claim": "삼성전자가 10월 27일 첫 클립형 무선 이어폰 '갤럭시 버즈 온'을 출시했다. 가격은 29만9000원이다.",
+        "cites": [
+          "S3",
+          "S4"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.89,
+        "check_uncertain": false
+      },
+      {
+        "claim": "갤럭시 버즈 온은 출시 사흘 만에 온라인 초도 물량이 완판된 것으로 보도됐다. 오프라인 판매는 계속된다.",
+        "cites": [
+          "S21",
+          "S26",
+          "S28"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.97,
+        "check_uncertain": false
+      },
+      {
+        "claim": "일부 매체는 출시 나흘 만에 품절·완판됐다고 전했다.",
+        "cites": [
+          "S16",
+          "S22"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.88,
+        "check_uncertain": false
+      },
+      {
+        "claim": "삼성전자는 10월 30일 40만원대 LTE폰 '갤럭시 A18'을 출시했다. 대화면과 AI 기능을 탑재한 실속형 모델이다.",
+        "cites": [
+          "S1",
+          "S2"
+        ],
+        "check": "supported",
+        "check_reason": "",
+        "check_confidence": 0.85,
+        "check_uncertain": false
+      },
+      {
+        "claim": "갤럭시 S27, Z 폴드9 등 차기 모델 관련 보도도 이어졌다.",
+        "cites": [
+          "S36",
+          "S37",
+          "S18"
+        ],
+        "check": "partly",
+        "check_reason": "",
+        "check_confidence": 0.3,
+        "check_uncertain": true
+      }
+    ],
+    "outlook": [],
+    "caveats": [
+      "일일 기사 수는 최근 7일간 24~117건 사이에서 등락했다. 단기 증감만으로 추세를 판단하기 어렵다.",
+      "'완판'은 온라인 초도 물량 기준이다. 판매량은 헤드라인에 나오지 않는다.",
+      "차기 모델의 사양은 대부분 예상·개발 중 보도다. 확정 정보가 아니다.",
+      "스포츠팀, 금융 업체 등 삼성과 무관한 '갤럭시' 기사도 섞여 있다."
+    ],
+    "unsupported_claims_removed": 0,
+    "summary": {
+      "claim": "삼성전자 첫 클립형 이어폰 '갤럭시 버즈 온'이 출시 사흘 만에 온라인 초도 물량이 완판됐다는 보도가 이어지며 검색이 늘었다. 40만원대 '갤럭시 A18 LTE' 출시도 겹쳤다.",
+      "cites": [
+        "S19",
+        "S21",
+        "S26",
+        "S1"
+      ],
+      "check": "partly",
+      "check_reason": "",
+      "check_confidence": 0.42,
+      "check_uncertain": true
+    },
+    "checked_by": "jev",
+    "failed_check_removed": 0
+  },
+  "prediction": {
+    "topic": "갤럭시",
+    "geo": "KR",
+    "made_at": "2026-11-01T10:35:31+00:00",
+    "method": "naive",
+    "direction": "flat",
+    "change": 0.0,
+    "change_low": -0.098,
+    "change_high": 0.108,
+    "week_start": "2026-11-01",
+    "week_days": 7
+  }
+}
