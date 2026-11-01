@@ -292,7 +292,8 @@ const STR = {
     card_kappa: (k, a) => [k < 0.2 ? "AI 검사기는 사람과 자주 달랐다" : k < 0.6 ? "AI 검사기는 사람과 어느 정도 같았다" : "AI 검사기는 사람과 대체로 같았다",
       `${pct(a)} 같음`, "문장 30개를 사람이 직접 판정해 AI 검사기(Jev)와 비교했다. 우연을 뺀 일치도 κ = " + k.toFixed(2)],
     how_cov: "주별 구글 트렌드 5년치, 일별 위키백과 조회수 3년치. 예측 방법은 앞부분 데이터로만 고르고, 마지막 1년 / 180일로 채점했다.",
-    how_kappa: "사람이 0–1로 점수를 매겼다 (0.6 초과 = 일치, 0.4–0.6 = 일부, 0.4 미만 = 불일치). ",
+    how_kappa: "사람이 Jev의 답을 보지 않고 문장 30개를 일치 / 일부 / 불일치로 직접 판정한 뒤 비교한다. κ는 우연히 맞는 만큼을 뺀 일치도다: 1 = 완벽, 0 = 우연 수준.",
+    card_kappa_wait: ["AI 검사기(Jev)는 다시 시험 중이다", "판정 대기", "지난 시험은 사람이 Jev의 답을 볼 수 있어서 버렸다. Jev 규칙을 고치고 문장 30개로 다시 시험한다."],
     past_title: "지난 분석", past_note: "누르면 다시 볼 수 있다.",
     
     log_title: "예측 기록", log_note: "분석할 때마다 다음 7일 관심도(위키백과 조회수)를 미리 적어 두고, 7일이 지나면 맞았는지 확인한다.",
@@ -363,7 +364,8 @@ const STR = {
     card_kappa: (k, a) => [k < 0.2 ? "The AI checker often disagreed with a human" : k < 0.6 ? "The AI checker partly agreed with a human" : "The AI checker mostly agreed with a human",
       `${pct(a)} same`, "a human judged 30 sentences and was compared with the AI checker (Jev). Agreement beyond chance κ = " + k.toFixed(2)],
     how_cov: "5 years of weekly Google Trends and 3 years of daily Wikipedia views. Methods were chosen on the earlier data only and scored on the last year / 180 days.",
-    how_kappa: "The human scored each sentence 0–1 (above 0.6 = matches, 0.4–0.6 = partly, below 0.4 = doesn't).",
+    how_kappa: "A human judges 30 sentences as matches / partly / doesn't match without seeing Jev's answers, then they are compared. κ is agreement after removing what chance gives: 1 = perfect, 0 = chance level.",
+    card_kappa_wait: ["The AI checker (Jev) is being retested", "waiting", "The last test was dropped because the human could see Jev's answers. Jev's rules were fixed and it is being retested on 30 sentences."],
     past_title: "Past analyses", past_note: "Click one to open it again.",
     
     log_title: "Prediction log", log_note: "Each analysis writes down a forecast of the next 7 days of interest (Wikipedia views); after 7 days it is checked against what really happened.",
@@ -631,7 +633,7 @@ function evalCards(ev) {
     `<div class="card"${how(explain)}><strong>${esc(verdict)}</strong><b>${esc(big)}</b><span>${esc(label)}</span></div>`;
   return `<div class="cards">
     ${pt?.mean_coverage_80 != null ? card(t("card_cov", pt.mean_coverage_80), t("how_cov")) : ""}
-    ${k ? card(t("card_kappa", k.kappa, k.agreement), t("how_kappa")) : ""}
+    ${card(k ? t("card_kappa", k.kappa, k.agreement) : t("card_kappa_wait"), t("how_kappa"))}
   </div>`;
 }
 

@@ -1,0 +1,182 @@
+{
+ "1": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "outlook",
+  "jev_label": "supported",
+  "jev_confidence": 0.5
+ },
+ "2": {
+  "run": "피지컬-ai_2026-10-19_2055.json",
+  "section": "outlook",
+  "jev_label": "supported",
+  "jev_confidence": 0.34
+ },
+ "3": {
+  "run": "갤럭시_2026-10-12_0244.json",
+  "section": "why_people_search",
+  "jev_label": "supported",
+  "jev_confidence": 0.8
+ },
+ "4": {
+  "run": "피지컬-ai_2026-10-19_2055.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.83
+ },
+ "5": {
+  "run": "피지컬-ai_2026-10-19_2055.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.96
+ },
+ "6": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.62
+ },
+ "7": {
+  "run": "전기차_2026-10-19_2103.json",
+  "section": "outlook",
+  "jev_label": "partly",
+  "jev_confidence": 0.38
+ },
+ "8": {
+  "run": "갤럭시_2026-10-12_0244.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.73
+ },
+ "9": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "why_people_search",
+  "jev_label": "partly",
+  "jev_confidence": 0.77
+ },
+ "10": {
+  "run": "전기차_2026-10-19_2103.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.86
+ },
+ "11": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "outlook",
+  "jev_label": "partly",
+  "jev_confidence": 0.88
+ },
+ "12": {
+  "run": "전기차_2026-10-19_2103.json",
+  "section": "summary",
+  "jev_label": "supported",
+  "jev_confidence": 0.35
+ },
+ "13": {
+  "run": "갤럭시_2026-10-12_0221.json",
+  "section": "why_people_search",
+  "jev_label": "supported",
+  "jev_confidence": 0.82
+ },
+ "14": {
+  "run": "피지컬-ai_2026-10-19_2055.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.98
+ },
+ "15": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.89
+ },
+ "16": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.4
+ },
+ "17": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 1
+ },
+ "18": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.74
+ },
+ "19": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.8
+ },
+ "20": {
+  "run": "전기차_2026-10-19_2103.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.64
+ },
+ "21": {
+  "run": "전기차_2026-10-19_2103.json",
+  "section": "what_is_happening",
+  "jev_label": "partly",
+  "jev_confidence": 0.37
+ },
+ "22": {
+  "run": "피지컬-ai_2026-10-19_2055.json",
+  "section": "why_people_search",
+  "jev_label": "partly",
+  "jev_confidence": 0.92
+ },
+ "23": {
+  "run": "갤럭시_2026-10-12_0244.json",
+  "section": "outlook",
+  "jev_label": "partly",
+  "jev_confidence": 0.42
+ },
+ "24": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.97
+ },
+ "25": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.8
+ },
+ "26": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "why_people_search",
+  "jev_label": "supported",
+  "jev_confidence": 0.85
+ },
+ "27": {
+  "run": "스마트-안경_2026-10-12_0109.json",
+  "section": "why_people_search",
+  "jev_label": "partly",
+  "jev_confidence": 0.58
+ },
+ "28": {
+  "run": "갤럭시_2026-10-12_0221.json",
+  "section": "summary",
+  "jev_label": "partly",
+  "jev_confidence": 0.89
+ },
+ "29": {
+  "run": "전기차_2026-10-19_2103.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.73
+ },
+ "30": {
+  "run": "전기차_2026-10-11_2335.json",
+  "section": "what_is_happening",
+  "jev_label": "supported",
+  "jev_confidence": 0.97
+ }
+}

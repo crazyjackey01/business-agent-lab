@@ -1,17 +1,20 @@
-"""Does Jev's claim check agree with a human? Cohen's kappa and a calibration table.
+"""Does Jev's claim check agree with a human? A blind test: Cohen's kappa and a calibration table.
 
-Step 1 (export): 30 random Jev-checked claims, with the evidence each one cites, go to
-data/eval/jev_agreement.csv. Fill the human_label column with supported / partly /
-unsupported (open it in Excel or Google Sheets; it is UTF-8 with a BOM for Korean).
-Step 2 (score): Cohen's kappa between your labels and Jev's, a confusion table, and a
-calibration table: for each band of Jev's confidence, how often you agreed.
+Step 1 (export): picks 30 claims and asks Jev to rate them now, under the current rules.
+data/eval/jev_agreement.csv holds the claims and the evidence each cites, with NO Jev answer
+in it; Jev's answers go to jev_agreement_key.json, so don't open that before labelling.
+Step 2: fill human_label with s / p / u (supported, partly, unsupported), using only the
+cited evidence. A forecast is "supported" if its basis is in the evidence, not if it came true.
+second_label is optional: a second person's labels show how far two humans agree at all.
+Step 3 (score): kappa, a confusion table, agreement for forecasts vs other claims, and
+agreement per band of Jev's confidence.
 
-Limit: claims Jev rated "unsupported" were removed before saving, so the sample holds
-only claims Jev kept. Kappa here measures agreement on kept claims, not how often Jev
-wrongly removed a good one.
+Claims labelled in the earlier round (not blind; see jev_agreement_old_not_blind.csv) are
+excluded. Claims Jev removed are saved since this change, and all of them enter the sample
+(up to a third of it), so it can also show when Jev removes a good claim.
 
 Usage:
-    python midterm/eval/jev_agreement.py export      # writes the CSV (won't overwrite your labels)
+    python midterm/eval/jev_agreement.py export      # won't overwrite existing labels
     python midterm/eval/jev_agreement.py score       # after labelling
 """
 import csv
@@ -22,11 +25,16 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # midterm/ modules
+
 MIDTERM = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = MIDTERM / "data" / "analysis"
 OUT = MIDTERM / "data" / "eval"
 CSV = OUT / "jev_agreement.csv"
+KEY = OUT / "jev_agreement_key.json"
+OLD_CSV = OUT / "jev_agreement_old_not_blind.csv"
 LABELS = ("supported", "partly", "unsupported")
+SHORT = {"s": "supported", "p": "partly", "u": "unsupported"}
 SECTIONS = ("summary", "why_people_search", "what_is_happening", "outlook")
 BANDS = ((0.0, 0.6), (0.6, 0.8), (0.8, 1.01))
 
@@ -55,69 +63,113 @@ def all_runs():
     return runs
 
 
-def jev_checked_claims():
+def written_claims():
+    """Every claim Jev has seen, with the run it came from; those it removed are flagged."""
     rows = []
     for label, run in sorted(all_runs().items()):
         e = run.get("explanation") or {}
         if e.get("checked_by") != "jev":
             continue
-        for section in SECTIONS:
-            items = [e[section]] if section == "summary" and e.get(section) else e.get(section) or []
-            if section == "summary" and not e.get(section):
-                items = []
-            for c in items:
-                if c.get("check") in LABELS and c.get("check_confidence") is not None:
-                    rows.append({
-                        "run": label, "topic": run.get("topic"), "section": section, "claim": c["claim"],
-                        "cited_evidence": " || ".join(f"[{x}] {run['evidence'].get(x, '')}" for x in c["cites"]),
-                        "jev_label": c["check"], "jev_confidence": c["check_confidence"], "human_label": "",
-                    })
+        claims = [("summary", e["summary"])] if e.get("summary") else []
+        claims += [(section, c) for section in SECTIONS[1:] for c in e.get(section) or []]
+        claims = [(section, c, False) for section, c in claims] + [(c["section"], c, True) for c in e.get("removed_claims", [])]
+        rows += [{"run": run, "run_name": label, "section": section, "claim": c, "removed": removed}
+                 for section, c, removed in claims]
     return rows
 
 
-def export(n=30, seed=7):
-    if CSV.exists() and any(r["human_label"] for r in csv.DictReader(CSV.open(encoding="utf-8-sig"))):
+def pick(rows, n, seed):
+    """All removed claims (up to a third of the sample), the rest at random."""
+    rng = random.Random(seed)
+    removed = [r for r in rows if r["removed"]]
+    kept = [r for r in rows if not r["removed"]]
+    chosen = rng.sample(removed, min(n // 3, len(removed)))
+    chosen += rng.sample(kept, min(n - len(chosen), len(kept)))
+    rng.shuffle(chosen)
+    return chosen
+
+
+def rate_now(sample):
+    """Jev's rating of each sampled claim under the current rules. Ratings saved in old runs used older ones."""
+    from analyze_topic import ratings_from_jev  # needs the API key, so only when exporting
+    by_run = {}
+    for r in sample:
+        by_run.setdefault(r["run_name"], []).append(r)
+    for rows in by_run.values():
+        ratings = ratings_from_jev([(r["section"], r["claim"]) for r in rows], rows[0]["run"]["evidence"])
+        for n, r in enumerate(rows):
+            r["jev"] = ratings.get(n)
+
+
+def export(n=30, seed=11):
+    if CSV.exists() and any(r["human_label"].strip() for r in csv.DictReader(CSV.open(encoding="utf-8-sig"))):
         print(f"{CSV.name} already has labels; not overwriting")
         return
-    rows = jev_checked_claims()
-    sample = random.Random(seed).sample(rows, min(n, len(rows)))
-    OUT.mkdir(parents=True, exist_ok=True)
+    seen = {r["claim"] for r in csv.DictReader(OLD_CSV.open(encoding="utf-8-sig"))} if OLD_CSV.exists() else set()
+    rows = [r for r in written_claims() if r["claim"]["claim"] not in seen
+            and all(x in r["run"]["evidence"] for x in r["claim"].get("cites", []))]
+    sample = pick(rows, n, seed)
+    rate_now(sample)
+    sample = [r for r in sample if r["jev"]]  # Jev left a question unanswered: nothing to compare
     with CSV.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["id", *sample[0].keys()])
-        writer.writeheader()
+        writer = csv.writer(f)
+        writer.writerow(["id", "topic", "section", "claim", "cited_evidence", "human_label", "second_label"])
         for i, r in enumerate(sample, 1):
-            writer.writerow({"id": i, **r})
-    print(f"wrote {len(sample)} of {len(rows)} Jev-checked claims to data/eval/{CSV.name}; "
-          f"Jev labels in the sample: {dict(Counter(r['jev_label'] for r in sample))}")
+            c = r["claim"]
+            text = c["claim"] + (f" (basis: {c['basis']})" if c.get("basis") else "")
+            cited = " || ".join(f"[{x}] {r['run']['evidence'][x]}" for x in c["cites"])
+            writer.writerow([i, r["run"].get("topic"), r["section"], text, cited, "", ""])
+    KEY.write_text(json.dumps({str(i): {"run": r["run_name"], "section": r["section"], "jev_label": r["jev"]["rating"],
+                                        "jev_confidence": r["jev"]["confidence"]} for i, r in enumerate(sample, 1)},
+                              ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"wrote {len(sample)} of {len(rows)} claims to data/eval/{CSV.name}; Jev's answers are in {KEY.name} (don't open it yet)")
+
+
+def read_label(value):
+    value = value.strip().lower()
+    return SHORT.get(value, value)
+
+
+def agreement(pairs):
+    return round(sum(a == b for a, b in pairs) / len(pairs), 2) if pairs else None
 
 
 def score():
+    key = json.loads(KEY.read_text(encoding="utf-8"))
     rows = [r for r in csv.DictReader(CSV.open(encoding="utf-8-sig")) if r["human_label"].strip()]
-    bad = [r["id"] for r in rows if r["human_label"].strip() not in LABELS]
-    if bad:
-        sys.exit(f"human_label must be one of {LABELS}; fix rows {bad}")
     if not rows:
         sys.exit("no human labels yet: fill the human_label column first")
-    human = [r["human_label"].strip() for r in rows]
-    jev = [r["jev_label"] for r in rows]
+    bad = [r["id"] for r in rows if read_label(r["human_label"]) not in LABELS]
+    if bad:
+        sys.exit(f"human_label must be s, p or u; fix rows {bad}")
+    human = [read_label(r["human_label"]) for r in rows]
+    answers = [key[r["id"]] for r in rows]
+    jev = [a["jev_label"] for a in answers]
     kappa = cohens_kappa(human, jev)
-    agree = sum(h == j for h, j in zip(human, jev)) / len(rows)
+    agree = agreement(list(zip(human, jev)))
     print(f"{len(rows)} labelled claims: agreement {agree:.0%}, Cohen's kappa {kappa:.2f}\n")
+    confusion = {j: {h: sum(1 for a, b in zip(jev, human) if a == j and b == h) for h in LABELS} for j in LABELS}
     print("confusion (rows: Jev, columns: you)")
     print("            " + "".join(f"{l:>12}" for l in LABELS))
     for j in LABELS:
-        print(f"{j:>12}" + "".join(f"{sum(1 for a, b in zip(jev, human) if a == j and b == h):>12}" for h in LABELS))
+        print(f"{j:>12}" + "".join(f"{confusion[j][h]:>12}" for h in LABELS))
+    forecasts = [(h, a["jev_label"]) for h, a in zip(human, answers) if a["section"] == "outlook"]
+    others = [(h, a["jev_label"]) for h, a in zip(human, answers) if a["section"] != "outlook"]
+    print(f"\nagreement: forecasts {agreement(forecasts)} (n={len(forecasts)}), other claims {agreement(others)} (n={len(others)})")
     print("\ncalibration: Jev confidence band -> how often you agreed")
     table = []
     for lo, hi in BANDS:
-        band = [h == r["jev_label"] for h, r in zip(human, rows) if lo <= float(r["jev_confidence"]) < hi]
-        table.append({"band": f"{lo:.1f}-{min(hi, 1):.1f}", "n": len(band),
-                      "agreement": round(sum(band) / len(band), 2) if band else None})
-        print(f"  {table[-1]['band']}: n={len(band):2}  agreement {'-' if not band else f'{sum(band) / len(band):.0%}'}")
+        band = [(h, a["jev_label"]) for h, a in zip(human, answers) if lo <= a["jev_confidence"] < hi]
+        table.append({"band": f"{lo:.1f}-{min(hi, 1):.1f}", "n": len(band), "agreement": agreement(band)})
+        print(f"  {table[-1]['band']}: n={len(band):2}  agreement {table[-1]['agreement']}")
+    two = [(read_label(r["human_label"]), read_label(r["second_label"])) for r in rows if r.get("second_label", "").strip()]
+    human_kappa = round(cohens_kappa(*zip(*two)), 3) if two else None
+    if two:
+        print(f"\ntwo humans: {len(two)} claims, kappa {human_kappa}")
     (OUT / "jev_agreement.json").write_text(json.dumps(
-        {"n": len(rows), "agreement": round(agree, 3), "kappa": round(kappa, 3), "calibration": table,
-         "confusion_jev_by_human": {j: {h: sum(1 for a, b in zip(jev, human) if a == j and b == h) for h in LABELS}
-                                    for j in LABELS}},
+        {"n": len(rows), "agreement": agree, "kappa": round(kappa, 3), "calibration": table,
+         "confusion_jev_by_human": confusion, "agreement_forecasts": agreement(forecasts),
+         "agreement_other_claims": agreement(others), "human_kappa": human_kappa, "human_pairs": len(two)},
         indent=2), encoding="utf-8")
 
 
@@ -127,6 +179,11 @@ def self_check():
     b = ["y"] * 20 + ["n"] * 5 + ["y"] * 10 + ["n"] * 15
     assert abs(cohens_kappa(a, b) - 0.4) < 1e-9
     assert cohens_kappa(["x", "y"], ["x", "y"]) == 1.0
+    # Removed claims all enter the sample, up to a third of it.
+    rows = [{"removed": i < 5} for i in range(50)]
+    assert sum(r["removed"] for r in pick(rows, 30, 1)) == 5
+    assert sum(r["removed"] for r in pick([{"removed": True}] * 20 + [{"removed": False}] * 20, 30, 1)) == 10
+    assert read_label(" S ") == "supported" and read_label("0.8") == "0.8"
 
 
 if __name__ == "__main__":

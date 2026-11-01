@@ -168,6 +168,13 @@ const CHECK_LABELS = {
   partly: "The core is in the evidence, but the claim adds something it does not say (an exaggeration, a cause, a trend measured only once).",
   unsupported: "The cited evidence does not say this, or is about something else.",
 };
+// A forecast always says more than its sources, so the labels above would rate nearly every
+// forecast "partly". Forecasts are rated on whether the basis they rest on is really there.
+const OUTLOOK_CHECK_LABELS = {
+  supported: "The basis of the forecast is in the cited evidence, and the forecast follows reasonably from it.",
+  partly: "Some of the basis is in the cited evidence, but the forecast also leans on something it does not say.",
+  unsupported: "The cited evidence does not contain the basis, or is about something else.",
+};
 const UNCERTAIN_BELOW = 0.6; // Jev confidence under this is shown as uncertain
 
 function claimText(n, section, c, evidence) {
@@ -179,10 +186,10 @@ function claimText(n, section, c, evidence) {
 async function ratingsFromJev(env, items, evidence) {
   const state = "Claims written by an analyst, each with the exact evidence it cites:\n\n"
     + items.map(([section, c], n) => claimText(n, section, c, evidence)).join("\n\n");
-  const questions = Object.fromEntries(items.map((_, n) => [`c${n}`, {
+  const questions = Object.fromEntries(items.map(([section], n) => [`c${n}`, {
     type: "choice",
-    instructions: `Does the cited evidence support Claim ${n}? For a forecast, judge whether its basis is really in the evidence, not whether the future is certain.`,
-    criteria: CHECK_LABELS,
+    instructions: section === "outlook" ? `Does the cited evidence support the basis of forecast ${n}?` : `Does the cited evidence support Claim ${n}?`,
+    criteria: section === "outlook" ? OUTLOOK_CHECK_LABELS : CHECK_LABELS,
   }]));
   const answers = await askJev(env, state, questions, "check");
   const ratings = new Map();
@@ -229,8 +236,12 @@ async function checkClaims(env, result, evidence, language, sections = SECTIONS)
     result[section] = result[section].flatMap(c => {
       const n = items.findIndex(([, item]) => item === c);
       const check = ratings.get(n) || { rating: "unchecked", reason: "" };
-      if (check.rating === "unsupported") { removed++; return []; }
       const confidence = check.confidence ?? null;
+      if (check.rating === "unsupported") {
+        removed++;
+        (result.removed_claims ||= []).push({ ...c, section, check: "unsupported", check_confidence: confidence });
+        return [];
+      }
       return [{ ...c, check: check.rating, check_reason: check.reason || "", check_confidence: confidence,
         check_uncertain: confidence !== null && confidence < UNCERTAIN_BELOW }];
     });

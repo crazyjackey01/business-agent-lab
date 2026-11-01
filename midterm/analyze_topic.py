@@ -273,6 +273,13 @@ CHECK_LABELS = {
               "(an exaggeration, a cause, a trend measured only once).",
     "unsupported": "The cited evidence does not say this, or is about something else.",
 }
+# A forecast always says more than its sources, so the labels above would rate nearly every
+# forecast "partly". Forecasts are rated on whether the basis they rest on is really there.
+OUTLOOK_CHECK_LABELS = {
+    "supported": "The basis of the forecast is in the cited evidence, and the forecast follows reasonably from it.",
+    "partly": "Some of the basis is in the cited evidence, but the forecast also leans on something it does not say.",
+    "unsupported": "The cited evidence does not contain the basis, or is about something else.",
+}
 UNCERTAIN_BELOW = 0.6  # Jev confidence under this is shown as uncertain
 
 
@@ -296,11 +303,11 @@ def ratings_from_jev(items, evidence):
     questions = {
         f"c{n}": {
             "type": "choice",
-            "instructions": f"Does the cited evidence support Claim {n}? For a forecast, judge whether its "
-                            "basis is really in the evidence, not whether the future is certain.",
-            "criteria": CHECK_LABELS,
+            "instructions": f"Does the cited evidence support the basis of forecast {n}?" if section == "outlook"
+                            else f"Does the cited evidence support Claim {n}?",
+            "criteria": OUTLOOK_CHECK_LABELS if section == "outlook" else CHECK_LABELS,
         }
-        for n in range(len(items))
+        for n, (section, _) in enumerate(items)
     }
     answers = jev_api.ask(state, questions)
     ratings = {}
@@ -348,10 +355,13 @@ def check_claims(result, evidence, language, sections=SECTIONS):
         for c in result[section]:
             n = next(i for i, (_, item) in enumerate(items) if item is c)
             check = ratings.get(n, {"rating": "unchecked", "reason": ""})
+            confidence = check.get("confidence")
             if check["rating"] == "unsupported":
                 removed += 1
+                # Kept aside so the human check (eval/jev_agreement.py) can also see what Jev removed.
+                result.setdefault("removed_claims", []).append(
+                    {**c, "section": section, "check": "unsupported", "check_confidence": confidence})
                 continue
-            confidence = check.get("confidence")
             kept.append({**c, "check": check["rating"], "check_reason": check.get("reason", ""),
                          "check_confidence": confidence,
                          "check_uncertain": confidence is not None and confidence < UNCERTAIN_BELOW})
