@@ -1,0 +1,43 @@
+{
+  "n": 30,
+  "agreement": 0.53,
+  "kappa": -0.094,
+  "calibration": [
+    {
+      "band": "0.0-0.6",
+      "n": 8,
+      "agreement": 0.38
+    },
+    {
+      "band": "0.6-0.8",
+      "n": 6,
+      "agreement": 0.5
+    },
+    {
+      "band": "0.8-1.0",
+      "n": 16,
+      "agreement": 0.62
+    }
+  ],
+  "confusion_jev_by_human": {
+    "supported": {
+      "supported": 15,
+      "partly": 3,
+      "unsupported": 4
+    },
+    "partly": {
+      "supported": 7,
+      "partly": 1,
+      "unsupported": 0
+    },
+    "unsupported": {
+      "supported": 0,
+      "partly": 0,
+      "unsupported": 0
+    }
+  },
+  "agreement_forecasts": 0.2,
+  "agreement_other_claims": 0.6,
+  "human_kappa": null,
+  "human_pairs": 0
+}

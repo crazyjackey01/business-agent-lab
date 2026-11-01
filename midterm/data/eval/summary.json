@@ -1,5 +1,5 @@
 {
- "made_at": "2026-11-01T10:36+00:00",
+ "made_at": "2026-11-01T12:18+00:00",
  "prediction_test": {
   "rows": [
    {
@@ -7,21 +7,21 @@
     "topic": "전기차",
     "model": "ses",
     "n": 52,
-    "mape": 7.9,
-    "mase": 1.055,
-    "coverage_80": 0.827,
-    "direction": 0.577,
-    "direction_p": 0.1659,
+    "mape": 7.8,
+    "mase": 1.059,
+    "coverage_80": 0.846,
+    "direction": 0.519,
+    "direction_p": 0.4449,
     "example": {
      "made_with_data_up_to": "2026-10-04",
      "model": "ses",
-     "predicted": 55.8,
+     "predicted": 51.0,
      "interval_80": [
-      47.6,
-      63.5
+      43.0,
+      58.2
      ],
-     "actual": 54.0,
-     "naive_predicted": 53.0
+     "actual": 48.0,
+     "naive_predicted": 48.0
     }
    },
    {
@@ -29,21 +29,21 @@
     "topic": "갤럭시",
     "model": "naive",
     "n": 52,
-    "mape": 9.2,
+    "mape": 11.0,
     "mase": 1.0,
-    "coverage_80": 0.596,
+    "coverage_80": 0.558,
     "direction": null,
     "direction_p": null,
     "example": {
      "made_with_data_up_to": "2026-10-04",
      "model": "naive",
-     "predicted": 56.0,
+     "predicted": 48.0,
      "interval_80": [
-      51.8,
-      60.1
+      43.6,
+      52.3
      ],
-     "actual": 55.0,
-     "naive_predicted": 56.0
+     "actual": 45.0,
+     "naive_predicted": 48.0
     }
    },
    {
@@ -51,43 +51,21 @@
     "topic": "스마트 안경",
     "model": "mean4",
     "n": 52,
-    "mape": 26.7,
-    "mase": 1.011,
-    "coverage_80": 0.942,
-    "direction": 0.608,
-    "direction_p": 0.0804,
-    "example": {
-     "made_with_data_up_to": "2026-10-04",
-     "model": "mean4",
-     "predicted": 26.0,
-     "interval_80": [
-      0.0,
-      62.9
-     ],
-     "actual": 100.0,
-     "naive_predicted": 33.0
-    }
-   },
-   {
-    "source": "google",
-    "topic": "피지컬 AI",
-    "model": "mean4",
-    "n": 52,
-    "mape": 38.5,
-    "mase": 1.114,
+    "mape": 24.8,
+    "mase": 1.005,
     "coverage_80": 0.981,
     "direction": 0.5,
-    "direction_p": 0.5551,
+    "direction_p": 0.5561,
     "example": {
      "made_with_data_up_to": "2026-10-04",
      "model": "mean4",
-     "predicted": 15.5,
+     "predicted": 24.2,
      "interval_80": [
       0.0,
-      44.0
+      75.2
      ],
-     "actual": 19.0,
-     "naive_predicted": 14.0
+     "actual": 100.0,
+     "naive_predicted": 23.0
     }
    },
    {
@@ -95,7 +73,7 @@
     "topic": "physical AI",
     "model": "naive",
     "n": 52,
-    "mape": 14.9,
+    "mape": 14.6,
     "mase": 1.0,
     "coverage_80": 0.981,
     "direction": null,
@@ -103,13 +81,13 @@
     "example": {
      "made_with_data_up_to": "2026-10-04",
      "model": "naive",
-     "predicted": 17.0,
+     "predicted": 23.0,
      "interval_80": [
-      11.3,
-      25.5
+      15.6,
+      34.5
      ],
-     "actual": 16.0,
-     "naive_predicted": 17.0
+     "actual": 22.0,
+     "naive_predicted": 23.0
     }
    },
    {
@@ -117,9 +95,9 @@
     "topic": "전기차",
     "model": "naive",
     "n": 180,
-    "mape": 40.2,
+    "mape": 42.5,
     "mase": 1.0,
-    "coverage_80": 0.6,
+    "coverage_80": 0.594,
     "direction": null,
     "direction_p": null,
     "example": {
@@ -127,8 +105,8 @@
      "model": "naive",
      "predicted": 35.0,
      "interval_80": [
-      23.0,
-      49.3
+      23.7,
+      49.7
      ],
      "actual": 40.0,
      "naive_predicted": 35.0
@@ -139,18 +117,18 @@
     "topic": "갤럭시",
     "model": "ses",
     "n": 180,
-    "mape": 50.0,
-    "mase": 0.878,
-    "coverage_80": 0.489,
-    "direction": 0.622,
-    "direction_p": 0.0006,
+    "mape": 54.5,
+    "mase": 0.845,
+    "coverage_80": 0.5,
+    "direction": 0.65,
+    "direction_p": 0.0,
     "example": {
      "made_with_data_up_to": "2026-10-11",
      "model": "ses",
      "predicted": 361.1,
      "interval_80": [
-      252.4,
-      509.8
+      251.3,
+      508.7
      ],
      "actual": 389.0,
      "naive_predicted": 142.0
@@ -161,18 +139,18 @@
     "topic": "스마트 안경",
     "model": "decay",
     "n": 180,
-    "mape": 34.3,
-    "mase": 1.223,
-    "coverage_80": 0.778,
-    "direction": 0.55,
-    "direction_p": 0.1025,
+    "mape": 38.3,
+    "mase": 1.292,
+    "coverage_80": 0.728,
+    "direction": 0.528,
+    "direction_p": 0.2512,
     "example": {
      "made_with_data_up_to": "2026-10-11",
      "model": "decay",
      "predicted": 45.3,
      "interval_80": [
       27.8,
-      74.6
+      74.0
      ],
      "actual": 152.0,
      "naive_predicted": 99.0
@@ -185,7 +163,7 @@
     "n": 180,
     "mape": 41.7,
     "mase": 1.0,
-    "coverage_80": 0.611,
+    "coverage_80": 0.594,
     "direction": null,
     "direction_p": null,
     "example": {
@@ -193,15 +171,15 @@
      "model": "naive",
      "predicted": 293.0,
      "interval_80": [
-      203.6,
-      493.7
+      208.0,
+      483.4
      ],
      "actual": 303.0,
      "naive_predicted": 293.0
     }
    }
   ],
-  "mean_coverage_80": 0.756
+  "mean_coverage_80": 0.723
  },
  "prediction_log": [
   {
@@ -225,5 +203,47 @@
   "ranged": 0,
   "in_range": 0
  },
- "jev_agreement": null
+ "jev_agreement": {
+  "n": 30,
+  "agreement": 0.53,
+  "kappa": -0.094,
+  "calibration": [
+   {
+    "band": "0.0-0.6",
+    "n": 8,
+    "agreement": 0.38
+   },
+   {
+    "band": "0.6-0.8",
+    "n": 6,
+    "agreement": 0.5
+   },
+   {
+    "band": "0.8-1.0",
+    "n": 16,
+    "agreement": 0.62
+   }
+  ],
+  "confusion_jev_by_human": {
+   "supported": {
+    "supported": 15,
+    "partly": 3,
+    "unsupported": 4
+   },
+   "partly": {
+    "supported": 7,
+    "partly": 1,
+    "unsupported": 0
+   },
+   "unsupported": {
+    "supported": 0,
+    "partly": 0,
+    "unsupported": 0
+   }
+  },
+  "agreement_forecasts": 0.2,
+  "agreement_other_claims": 0.6,
+  "human_kappa": null,
+  "human_pairs": 0
+ }
 }

@@ -1,5 +1,5 @@
 {
-  "made_at": "2026-10-19T12:18:49+00:00",
+  "made_at": "2026-11-01T12:16:45+00:00",
   "results": {
     "google": {
       "전기차": {
@@ -7,274 +7,189 @@
         "holdout_origins": 52,
         "chosen_model": "ses",
         "train_mae": {
-          "naive": 5.0,
-          "mean4": 5.15,
-          "ses": 4.68,
-          "seasonal": 10.42
+          "naive": 4.5,
+          "mean4": 4.69,
+          "ses": 4.35,
+          "seasonal": 9.75
         },
         "interval_ratio_from_training": [
-          0.853,
-          1.138
+          0.843,
+          1.141
         ],
         "holdout": {
           "n": 52,
-          "mae": 5.74,
-          "mase": 1.055,
-          "mape": 7.9,
+          "mae": 5.13,
+          "mase": 1.059,
+          "mape": 7.8,
           "direction": {
             "calls": 52,
-            "hits": 30,
-            "hit_rate": 0.577,
-            "p_vs_coin": 0.1659
+            "hits": 27,
+            "hit_rate": 0.519,
+            "p_vs_coin": 0.4449
           },
-          "coverage_80": 0.827,
+          "coverage_80": 0.846,
           "model": "ses"
         },
         "holdout_all_models": {
           "naive": {
             "n": 52,
-            "mae": 5.44,
+            "mae": 4.85,
             "mase": 1.0,
-            "mape": 7.3
+            "mape": 7.1
           },
           "mean4": {
             "n": 52,
-            "mae": 6.8,
-            "mase": 1.249,
-            "mape": 9.5,
+            "mae": 5.98,
+            "mase": 1.234,
+            "mape": 9.2,
             "direction": {
-              "calls": 51,
-              "hits": 30,
-              "hit_rate": 0.588,
-              "p_vs_coin": 0.1312
+              "calls": 50,
+              "hits": 27,
+              "hit_rate": 0.54,
+              "p_vs_coin": 0.3359
             }
           },
           "ses": {
             "n": 52,
-            "mae": 5.74,
-            "mase": 1.055,
-            "mape": 7.9,
+            "mae": 5.13,
+            "mase": 1.059,
+            "mape": 7.8,
             "direction": {
               "calls": 52,
-              "hits": 30,
-              "hit_rate": 0.577,
-              "p_vs_coin": 0.1659
+              "hits": 27,
+              "hit_rate": 0.519,
+              "p_vs_coin": 0.4449
             }
           },
           "seasonal": {
             "n": 52,
-            "mae": 22.13,
-            "mase": 4.067,
-            "mape": 28.6,
+            "mae": 20.06,
+            "mase": 4.139,
+            "mape": 28.3,
             "direction": {
-              "calls": 51,
-              "hits": 28,
-              "hit_rate": 0.549,
-              "p_vs_coin": 0.2879
+              "calls": 50,
+              "hits": 30,
+              "hit_rate": 0.6,
+              "p_vs_coin": 0.1013
             }
           }
         },
         "example": {
           "made_with_data_up_to": "2026-10-04",
           "model": "ses",
-          "predicted": 55.8,
+          "predicted": 51.0,
           "interval_80": [
-            47.6,
-            63.5
+            43.0,
+            58.2
           ],
-          "actual": 54.0,
-          "naive_predicted": 53.0
+          "actual": 48.0,
+          "naive_predicted": 48.0
         },
-        "history": "2021-10-17..2026-10-11 (261 points)"
+        "history": "2021-10-31..2026-10-25 (261 points)"
       },
       "갤럭시": {
         "train_origins": 156,
         "holdout_origins": 52,
         "chosen_model": "naive",
         "train_mae": {
-          "naive": 3.74,
-          "mean4": 5.71,
-          "ses": 3.78,
-          "seasonal": 9.26
+          "naive": 3.17,
+          "mean4": 4.89,
+          "ses": 3.19,
+          "seasonal": 7.88
         },
         "interval_ratio_from_training": [
-          0.925,
-          1.073
+          0.908,
+          1.089
         ],
         "holdout": {
           "n": 52,
-          "mae": 6.31,
+          "mae": 6.79,
           "mase": 1.0,
-          "mape": 9.2,
-          "coverage_80": 0.596,
+          "mape": 11.0,
+          "coverage_80": 0.558,
           "model": "naive"
         },
         "holdout_all_models": {
           "naive": {
             "n": 52,
-            "mae": 6.31,
+            "mae": 6.79,
             "mase": 1.0,
-            "mape": 9.2
+            "mape": 11.0
           },
           "mean4": {
             "n": 52,
-            "mae": 7.37,
-            "mase": 1.168,
-            "mape": 11.0,
+            "mae": 7.51,
+            "mase": 1.106,
+            "mape": 12.4,
             "direction": {
-              "calls": 51,
-              "hits": 30,
-              "hit_rate": 0.588,
-              "p_vs_coin": 0.1312
+              "calls": 52,
+              "hits": 28,
+              "hit_rate": 0.538,
+              "p_vs_coin": 0.3389
             }
           },
           "ses": {
             "n": 52,
-            "mae": 6.29,
-            "mase": 0.997,
-            "mape": 9.2,
+            "mae": 6.78,
+            "mase": 0.999,
+            "mape": 11.0,
             "direction": {
               "calls": 52,
-              "hits": 30,
-              "hit_rate": 0.577,
-              "p_vs_coin": 0.1659
+              "hits": 27,
+              "hit_rate": 0.519,
+              "p_vs_coin": 0.4449
             }
           },
           "seasonal": {
             "n": 52,
-            "mae": 11.35,
-            "mase": 1.799,
-            "mape": 17.7,
+            "mae": 10.35,
+            "mase": 1.524,
+            "mape": 18.1,
             "direction": {
-              "calls": 49,
-              "hits": 26,
-              "hit_rate": 0.531,
-              "p_vs_coin": 0.3877
+              "calls": 50,
+              "hits": 31,
+              "hit_rate": 0.62,
+              "p_vs_coin": 0.0595
             }
           }
         },
         "example": {
           "made_with_data_up_to": "2026-10-04",
           "model": "naive",
-          "predicted": 56.0,
+          "predicted": 48.0,
           "interval_80": [
-            51.8,
-            60.1
+            43.6,
+            52.3
           ],
-          "actual": 55.0,
-          "naive_predicted": 56.0
+          "actual": 45.0,
+          "naive_predicted": 48.0
         },
-        "history": "2021-10-17..2026-10-11 (261 points)"
+        "history": "2021-10-31..2026-10-25 (261 points)"
       },
       "스마트 안경": {
-        "train_origins": 139,
+        "train_origins": 153,
         "holdout_origins": 52,
         "chosen_model": "mean4",
         "train_mae": {
-          "naive": 2.86,
-          "mean4": 2.23,
-          "ses": 2.24,
-          "seasonal": 3.2
+          "naive": 2.42,
+          "mean4": 2.09,
+          "ses": 2.13,
+          "seasonal": 3.12
         },
         "interval_ratio_from_training": [
           0.0,
-          2.418
+          3.1
         ],
         "holdout": {
           "n": 52,
-          "mae": 6.39,
-          "mase": 1.011,
-          "mape": 26.7,
+          "mae": 7.13,
+          "mase": 1.005,
+          "mape": 24.8,
           "direction": {
-            "calls": 51,
-            "hits": 31,
-            "hit_rate": 0.608,
-            "p_vs_coin": 0.0804
-          },
-          "coverage_80": 0.942,
-          "model": "mean4"
-        },
-        "holdout_all_models": {
-          "naive": {
-            "n": 52,
-            "mae": 6.33,
-            "mase": 1.0,
-            "mape": 30.3
-          },
-          "mean4": {
-            "n": 52,
-            "mae": 6.39,
-            "mase": 1.011,
-            "mape": 26.7,
-            "direction": {
-              "calls": 51,
-              "hits": 31,
-              "hit_rate": 0.608,
-              "p_vs_coin": 0.0804
-            }
-          },
-          "ses": {
-            "n": 52,
-            "mae": 6.09,
-            "mase": 0.962,
-            "mape": 24.7,
-            "direction": {
-              "calls": 52,
-              "hits": 30,
-              "hit_rate": 0.577,
-              "p_vs_coin": 0.1659
-            }
-          },
-          "seasonal": {
-            "n": 52,
-            "mae": 13.31,
-            "mase": 2.103,
-            "mape": 63.7,
-            "direction": {
-              "calls": 50,
-              "hits": 29,
-              "hit_rate": 0.58,
-              "p_vs_coin": 0.1611
-            }
-          }
-        },
-        "example": {
-          "made_with_data_up_to": "2026-10-04",
-          "model": "mean4",
-          "predicted": 26.0,
-          "interval_80": [
-            0.0,
-            62.9
-          ],
-          "actual": 100.0,
-          "naive_predicted": 33.0
-        },
-        "history": "2022-02-13..2026-10-11 (244 points)"
-      },
-      "피지컬 AI": {
-        "train_origins": 112,
-        "holdout_origins": 52,
-        "chosen_model": "mean4",
-        "train_mae": {
-          "naive": 0.58,
-          "mean4": 0.52,
-          "ses": 0.52,
-          "seasonal": 0.97
-        },
-        "interval_ratio_from_training": [
-          0.0,
-          2.838
-        ],
-        "holdout": {
-          "n": 52,
-          "mae": 10.58,
-          "mase": 1.114,
-          "mape": 38.5,
-          "direction": {
-            "calls": 52,
-            "hits": 26,
+            "calls": 50,
+            "hits": 25,
             "hit_rate": 0.5,
-            "p_vs_coin": 0.5551
+            "p_vs_coin": 0.5561
           },
           "coverage_80": 0.981,
           "model": "mean4"
@@ -282,106 +197,110 @@
         "holdout_all_models": {
           "naive": {
             "n": 52,
-            "mae": 9.5,
+            "mae": 7.1,
             "mase": 1.0,
-            "mape": 30.9
+            "mape": 29.4
           },
           "mean4": {
             "n": 52,
-            "mae": 10.58,
-            "mase": 1.114,
-            "mape": 38.5,
+            "mae": 7.13,
+            "mase": 1.005,
+            "mape": 24.8,
             "direction": {
-              "calls": 52,
-              "hits": 26,
+              "calls": 50,
+              "hits": 25,
               "hit_rate": 0.5,
-              "p_vs_coin": 0.5551
+              "p_vs_coin": 0.5561
             }
           },
           "ses": {
             "n": 52,
-            "mae": 9.89,
-            "mase": 1.041,
-            "mape": 33.1,
+            "mae": 6.57,
+            "mase": 0.926,
+            "mape": 24.1,
             "direction": {
               "calls": 52,
-              "hits": 25,
-              "hit_rate": 0.481,
-              "p_vs_coin": 0.6611
+              "hits": 28,
+              "hit_rate": 0.538,
+              "p_vs_coin": 0.3389
             }
           },
           "seasonal": {
             "n": 52,
-            "mae": 26.54,
-            "mase": 2.794,
-            "mape": 89.4,
+            "mae": 15.81,
+            "mase": 2.228,
+            "mape": 62.2,
             "direction": {
-              "calls": 52,
-              "hits": 24,
-              "hit_rate": 0.462,
-              "p_vs_coin": 0.7558
+              "calls": 51,
+              "hits": 25,
+              "hit_rate": 0.49,
+              "p_vs_coin": 0.6101
             }
           }
         },
         "example": {
           "made_with_data_up_to": "2026-10-04",
           "model": "mean4",
-          "predicted": 15.5,
+          "predicted": 24.2,
           "interval_80": [
             0.0,
-            44.0
+            75.2
           ],
-          "actual": 19.0,
-          "naive_predicted": 14.0
+          "actual": 100.0,
+          "naive_predicted": 23.0
         },
-        "history": "2022-08-21..2026-10-11 (217 points)"
+        "history": "2021-11-21..2026-10-25 (258 points)"
+      },
+      "피지컬 AI": {
+        "note": "only 24 forecast origins; need more than 72",
+        "history": "2025-05-11..2026-10-25 (77 points)"
       },
       "physical AI": {
-        "train_origins": 116,
+        "train_origins": 106,
         "holdout_origins": 52,
         "chosen_model": "naive",
         "train_mae": {
-          "naive": 1.28,
-          "mean4": 1.66,
-          "ses": 1.4,
-          "seasonal": 5.34
+          "naive": 1.37,
+          "mean4": 1.81,
+          "ses": 1.49,
+          "seasonal": 5.82
         },
         "interval_ratio_from_training": [
-          0.667,
+          0.679,
           1.5
         ],
         "holdout": {
           "n": 52,
-          "mae": 6.27,
+          "mae": 6.15,
           "mase": 1.0,
-          "mape": 14.9,
+          "mape": 14.6,
           "coverage_80": 0.981,
           "model": "naive"
         },
         "holdout_all_models": {
           "naive": {
             "n": 52,
-            "mae": 6.27,
+            "mae": 6.15,
             "mase": 1.0,
-            "mape": 14.9
+            "mape": 14.6
           },
           "mean4": {
             "n": 52,
-            "mae": 9.3,
-            "mase": 1.484,
-            "mape": 24.6,
+            "mae": 8.88,
+            "mase": 1.443,
+            "mape": 24.3,
             "direction": {
-              "calls": 51,
+              "calls": 52,
               "hits": 24,
-              "hit_rate": 0.471,
-              "p_vs_coin": 0.7121
+              "hit_rate": 0.462,
+              "p_vs_coin": 0.7558
             }
           },
           "ses": {
             "n": 52,
-            "mae": 6.61,
-            "mase": 1.055,
-            "mape": 15.7,
+            "mae": 6.22,
+            "mase": 1.01,
+            "mape": 14.8,
             "direction": {
               "calls": 52,
               "hits": 23,
@@ -391,29 +310,29 @@
           },
           "seasonal": {
             "n": 52,
-            "mae": 36.31,
-            "mase": 5.791,
-            "mape": 70.4,
+            "mae": 35.15,
+            "mase": 5.712,
+            "mape": 67.7,
             "direction": {
-              "calls": 52,
-              "hits": 22,
-              "hit_rate": 0.423,
-              "p_vs_coin": 0.8942
+              "calls": 51,
+              "hits": 23,
+              "hit_rate": 0.451,
+              "p_vs_coin": 0.7995
             }
           }
         },
         "example": {
           "made_with_data_up_to": "2026-10-04",
           "model": "naive",
-          "predicted": 17.0,
+          "predicted": 23.0,
           "interval_80": [
-            11.3,
-            25.5
+            15.6,
+            34.5
           ],
-          "actual": 16.0,
-          "naive_predicted": 17.0
+          "actual": 22.0,
+          "naive_predicted": 23.0
         },
-        "history": "2022-07-24..2026-10-11 (221 points)"
+        "history": "2022-10-16..2026-10-25 (211 points)"
       }
     },
     "wiki": {
@@ -422,64 +341,64 @@
         "holdout_origins": 180,
         "chosen_model": "naive",
         "train_mae": {
-          "naive": 25.85,
-          "mean28": 33.42,
-          "ses": 28.4,
-          "decay": 30.19
+          "naive": 24.76,
+          "mean28": 33.1,
+          "ses": 26.72,
+          "decay": 28.49
         },
         "interval_ratio_from_training": [
-          0.657,
-          1.409
+          0.678,
+          1.42
         ],
         "holdout": {
           "n": 180,
-          "mae": 11.17,
+          "mae": 11.29,
           "mase": 1.0,
-          "mape": 40.2,
-          "coverage_80": 0.6,
+          "mape": 42.5,
+          "coverage_80": 0.594,
           "model": "naive"
         },
         "holdout_all_models": {
           "naive": {
             "n": 180,
-            "mae": 11.17,
+            "mae": 11.29,
             "mase": 1.0,
-            "mape": 40.2
+            "mape": 42.5
           },
           "mean28": {
             "n": 180,
-            "mae": 14.08,
-            "mase": 1.261,
-            "mape": 46.2,
+            "mae": 11.59,
+            "mase": 1.027,
+            "mape": 43.3,
             "direction": {
               "calls": 179,
-              "hits": 109,
-              "hit_rate": 0.609,
-              "p_vs_coin": 0.0022
+              "hits": 103,
+              "hit_rate": 0.575,
+              "p_vs_coin": 0.0258
             }
           },
           "ses": {
             "n": 180,
-            "mae": 12.29,
-            "mase": 1.101,
-            "mape": 43.0,
+            "mae": 12.11,
+            "mase": 1.073,
+            "mape": 44.4,
             "direction": {
               "calls": 180,
-              "hits": 94,
-              "hit_rate": 0.522,
-              "p_vs_coin": 0.301
+              "hits": 92,
+              "hit_rate": 0.511,
+              "p_vs_coin": 0.4116
             }
           },
           "decay": {
             "n": 180,
-            "mae": 12.28,
-            "mase": 1.1,
-            "mape": 41.7,
+            "mae": 12.64,
+            "mase": 1.12,
+            "mape": 45.6,
             "direction": {
               "calls": 180,
-              "hits": 96,
-              "hit_rate": 0.533,
-              "p_vs_coin": 0.2062
+              "hits": 95,
+              "hit_rate": 0.528,
+              "p_vs_coin": 0.2512
             }
           }
         },
@@ -488,54 +407,54 @@
           "model": "naive",
           "predicted": 35.0,
           "interval_80": [
-            23.0,
-            49.3
+            23.7,
+            49.7
           ],
           "actual": 40.0,
           "naive_predicted": 35.0
         },
-        "history": "2023-10-19..2026-10-18 (1096 points)"
+        "history": "2023-11-01..2026-10-31 (1096 points)"
       },
       "갤럭시": {
         "train_origins": 550,
         "holdout_origins": 180,
         "chosen_model": "ses",
         "train_mae": {
-          "naive": 29.42,
-          "mean28": 31.37,
-          "ses": 28.18,
-          "decay": 29.29
+          "naive": 30.54,
+          "mean28": 32.33,
+          "ses": 29.09,
+          "decay": 30.17
         },
         "interval_ratio_from_training": [
-          0.699,
-          1.412
+          0.696,
+          1.409
         ],
         "holdout": {
           "n": 180,
-          "mae": 132.56,
-          "mase": 0.878,
-          "mape": 50.0,
+          "mae": 143.12,
+          "mase": 0.845,
+          "mape": 54.5,
           "direction": {
             "calls": 180,
-            "hits": 112,
-            "hit_rate": 0.622,
-            "p_vs_coin": 0.0006
+            "hits": 117,
+            "hit_rate": 0.65,
+            "p_vs_coin": 0.0
           },
-          "coverage_80": 0.489,
+          "coverage_80": 0.5,
           "model": "ses"
         },
         "holdout_all_models": {
           "naive": {
             "n": 180,
-            "mae": 150.99,
+            "mae": 169.46,
             "mase": 1.0,
-            "mape": 58.2
+            "mape": 66.6
           },
           "mean28": {
             "n": 180,
-            "mae": 137.75,
-            "mase": 0.912,
-            "mape": 49.9,
+            "mae": 149.19,
+            "mase": 0.88,
+            "mape": 56.1,
             "direction": {
               "calls": 180,
               "hits": 115,
@@ -545,26 +464,26 @@
           },
           "ses": {
             "n": 180,
-            "mae": 132.56,
-            "mase": 0.878,
-            "mape": 50.0,
+            "mae": 143.12,
+            "mase": 0.845,
+            "mape": 54.5,
+            "direction": {
+              "calls": 180,
+              "hits": 117,
+              "hit_rate": 0.65,
+              "p_vs_coin": 0.0
+            }
+          },
+          "decay": {
+            "n": 180,
+            "mae": 149.12,
+            "mase": 0.88,
+            "mape": 54.4,
             "direction": {
               "calls": 180,
               "hits": 112,
               "hit_rate": 0.622,
               "p_vs_coin": 0.0006
-            }
-          },
-          "decay": {
-            "n": 180,
-            "mae": 136.91,
-            "mase": 0.907,
-            "mape": 49.6,
-            "direction": {
-              "calls": 180,
-              "hits": 107,
-              "hit_rate": 0.594,
-              "p_vs_coin": 0.0068
             }
           }
         },
@@ -573,83 +492,83 @@
           "model": "ses",
           "predicted": 361.1,
           "interval_80": [
-            252.4,
-            509.8
+            251.3,
+            508.7
           ],
           "actual": 389.0,
           "naive_predicted": 142.0
         },
-        "history": "2023-10-19..2026-10-18 (1096 points)"
+        "history": "2023-11-01..2026-10-31 (1096 points)"
       },
       "스마트 안경": {
         "train_origins": 550,
         "holdout_origins": 180,
         "chosen_model": "decay",
         "train_mae": {
-          "naive": 18.42,
-          "mean28": 19.06,
-          "ses": 18.11,
-          "decay": 17.63
+          "naive": 18.28,
+          "mean28": 19.07,
+          "ses": 17.99,
+          "decay": 17.51
         },
         "interval_ratio_from_training": [
           0.614,
-          1.648
+          1.635
         ],
         "holdout": {
           "n": 180,
-          "mae": 26.76,
-          "mase": 1.223,
-          "mape": 34.3,
+          "mae": 31.11,
+          "mase": 1.292,
+          "mape": 38.3,
           "direction": {
             "calls": 180,
-            "hits": 99,
-            "hit_rate": 0.55,
-            "p_vs_coin": 0.1025
+            "hits": 95,
+            "hit_rate": 0.528,
+            "p_vs_coin": 0.2512
           },
-          "coverage_80": 0.778,
+          "coverage_80": 0.728,
           "model": "decay"
         },
         "holdout_all_models": {
           "naive": {
             "n": 180,
-            "mae": 21.89,
+            "mae": 24.08,
             "mase": 1.0,
-            "mape": 27.5
+            "mape": 29.3
           },
           "mean28": {
             "n": 180,
-            "mae": 29.14,
-            "mase": 1.331,
-            "mape": 41.6,
+            "mae": 31.29,
+            "mase": 1.299,
+            "mape": 42.6,
             "direction": {
               "calls": 178,
-              "hits": 87,
-              "hit_rate": 0.489,
-              "p_vs_coin": 0.646
+              "hits": 95,
+              "hit_rate": 0.534,
+              "p_vs_coin": 0.2049
             }
           },
           "ses": {
             "n": 180,
-            "mae": 22.35,
-            "mase": 1.021,
-            "mape": 28.6,
+            "mae": 24.94,
+            "mase": 1.035,
+            "mape": 30.8,
             "direction": {
               "calls": 180,
-              "hits": 99,
-              "hit_rate": 0.55,
-              "p_vs_coin": 0.1025
+              "hits": 94,
+              "hit_rate": 0.522,
+              "p_vs_coin": 0.301
             }
           },
           "decay": {
             "n": 180,
-            "mae": 26.76,
-            "mase": 1.223,
-            "mape": 34.3,
+            "mae": 31.11,
+            "mase": 1.292,
+            "mape": 38.3,
             "direction": {
               "calls": 180,
-              "hits": 99,
-              "hit_rate": 0.55,
-              "p_vs_coin": 0.1025
+              "hits": 95,
+              "hit_rate": 0.528,
+              "p_vs_coin": 0.2512
             }
           }
         },
@@ -659,76 +578,76 @@
           "predicted": 45.3,
           "interval_80": [
             27.8,
-            74.6
+            74.0
           ],
           "actual": 152.0,
           "naive_predicted": 99.0
         },
-        "history": "2024-01-10..2026-10-18 (1013 points)"
+        "history": "2024-01-10..2026-10-31 (1026 points)"
       },
       "피지컬 AI": {
-        "train_origins": 122,
+        "train_origins": 135,
         "holdout_origins": 180,
         "chosen_model": "naive",
         "train_mae": {
-          "naive": 450.93,
-          "mean28": 541.39,
-          "ses": 589.16,
-          "decay": 714.25
+          "naive": 432.8,
+          "mean28": 524.52,
+          "ses": 554.71,
+          "decay": 667.75
         },
         "interval_ratio_from_training": [
-          0.695,
-          1.685
+          0.71,
+          1.65
         ],
         "holdout": {
           "n": 180,
-          "mae": 445.48,
+          "mae": 430.87,
           "mase": 1.0,
           "mape": 41.7,
-          "coverage_80": 0.611,
+          "coverage_80": 0.594,
           "model": "naive"
         },
         "holdout_all_models": {
           "naive": {
             "n": 180,
-            "mae": 445.48,
+            "mae": 430.87,
             "mase": 1.0,
             "mape": 41.7
           },
           "mean28": {
             "n": 180,
-            "mae": 452.21,
-            "mase": 1.015,
-            "mape": 58.4,
+            "mae": 428.87,
+            "mase": 0.995,
+            "mape": 57.3,
             "direction": {
               "calls": 180,
-              "hits": 103,
-              "hit_rate": 0.572,
-              "p_vs_coin": 0.0311
+              "hits": 109,
+              "hit_rate": 0.606,
+              "p_vs_coin": 0.0028
             }
           },
           "ses": {
             "n": 180,
-            "mae": 431.0,
-            "mase": 0.967,
-            "mape": 37.9,
+            "mae": 419.36,
+            "mase": 0.973,
+            "mape": 38.3,
             "direction": {
               "calls": 180,
-              "hits": 120,
-              "hit_rate": 0.667,
+              "hits": 117,
+              "hit_rate": 0.65,
               "p_vs_coin": 0.0
             }
           },
           "decay": {
             "n": 180,
-            "mae": 403.97,
-            "mase": 0.907,
-            "mape": 36.2,
+            "mae": 392.33,
+            "mase": 0.911,
+            "mape": 36.6,
             "direction": {
               "calls": 180,
-              "hits": 119,
-              "hit_rate": 0.661,
-              "p_vs_coin": 0.0
+              "hits": 116,
+              "hit_rate": 0.644,
+              "p_vs_coin": 0.0001
             }
           }
         },
@@ -737,17 +656,17 @@
           "model": "naive",
           "predicted": 293.0,
           "interval_80": [
-            203.6,
-            493.7
+            208.0,
+            483.4
           ],
           "actual": 303.0,
           "naive_predicted": 293.0
         },
-        "history": "2025-10-19..2026-10-18 (365 points)"
+        "history": "2025-10-19..2026-10-31 (378 points)"
       },
       "physical AI": {
-        "note": "only 21 forecast origins; need more than 200",
-        "history": "2026-07-27..2026-10-18 (84 points)"
+        "note": "only 34 forecast origins; need more than 200",
+        "history": "2026-07-27..2026-10-31 (97 points)"
       }
     }
   }

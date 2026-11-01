@@ -1,0 +1,440 @@
+{
+  "made_at": "2026-11-01T12:16:47+00:00",
+  "topics": {
+    "전기차": {
+      "origins": 730,
+      "all": {
+        "naive": {
+          "mae": 21.4,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.645,
+            1.419
+          ]
+        },
+        "mean28": {
+          "mae": 27.8,
+          "mase": 1.297,
+          "direction_hit": 0.567,
+          "ratio_q10_q90": [
+            0.557,
+            1.453
+          ]
+        },
+        "ses": {
+          "mae": 23.1,
+          "mase": 1.078,
+          "direction_hit": 0.511,
+          "ratio_q10_q90": [
+            0.661,
+            1.522
+          ]
+        },
+        "decay": {
+          "mae": 24.6,
+          "mase": 1.147,
+          "direction_hit": 0.529,
+          "ratio_q10_q90": [
+            0.617,
+            1.507
+          ]
+        }
+      },
+      "post_spike_origins": 191,
+      "post_spike": {
+        "naive": {
+          "mae": 24.2,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.483,
+            1.448
+          ]
+        },
+        "mean28": {
+          "mae": 23.7,
+          "mase": 0.979,
+          "direction_hit": 0.665,
+          "ratio_q10_q90": [
+            0.518,
+            1.47
+          ]
+        },
+        "ses": {
+          "mae": 23.8,
+          "mase": 0.985,
+          "direction_hit": 0.508,
+          "ratio_q10_q90": [
+            0.539,
+            1.485
+          ]
+        },
+        "decay": {
+          "mae": 29.4,
+          "mase": 1.217,
+          "direction_hit": 0.576,
+          "ratio_q10_q90": [
+            0.519,
+            1.455
+          ]
+        }
+      },
+      "half_life_error_days": {
+        "n": 144,
+        "median": 1.6,
+        "mean": 4.1
+      },
+      "days": 1096,
+      "under_two_years": false
+    },
+    "갤럭시": {
+      "origins": 730,
+      "all": {
+        "naive": {
+          "mae": 64.8,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.65,
+            1.537
+          ]
+        },
+        "mean28": {
+          "mae": 61.1,
+          "mase": 0.944,
+          "direction_hit": 0.581,
+          "ratio_q10_q90": [
+            0.607,
+            1.596
+          ]
+        },
+        "ses": {
+          "mae": 57.2,
+          "mase": 0.883,
+          "direction_hit": 0.593,
+          "ratio_q10_q90": [
+            0.647,
+            1.459
+          ]
+        },
+        "decay": {
+          "mae": 59.5,
+          "mase": 0.918,
+          "direction_hit": 0.579,
+          "ratio_q10_q90": [
+            0.654,
+            1.555
+          ]
+        }
+      },
+      "post_spike_origins": 210,
+      "post_spike": {
+        "naive": {
+          "mae": 108.3,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.558,
+            1.802
+          ]
+        },
+        "mean28": {
+          "mae": 85.0,
+          "mase": 0.785,
+          "direction_hit": 0.657,
+          "ratio_q10_q90": [
+            0.603,
+            1.659
+          ]
+        },
+        "ses": {
+          "mae": 88.3,
+          "mase": 0.816,
+          "direction_hit": 0.686,
+          "ratio_q10_q90": [
+            0.572,
+            1.535
+          ]
+        },
+        "decay": {
+          "mae": 96.3,
+          "mase": 0.889,
+          "direction_hit": 0.638,
+          "ratio_q10_q90": [
+            0.601,
+            1.764
+          ]
+        }
+      },
+      "half_life_error_days": {
+        "n": 173,
+        "median": 1.1,
+        "mean": 4.8
+      },
+      "days": 1096,
+      "under_two_years": false
+    },
+    "스마트 안경": {
+      "origins": 730,
+      "all": {
+        "naive": {
+          "mae": 19.7,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.63,
+            1.671
+          ]
+        },
+        "mean28": {
+          "mae": 22.1,
+          "mase": 1.12,
+          "direction_hit": 0.582,
+          "ratio_q10_q90": [
+            0.575,
+            1.671
+          ]
+        },
+        "ses": {
+          "mae": 19.7,
+          "mase": 1.0,
+          "direction_hit": 0.564,
+          "ratio_q10_q90": [
+            0.647,
+            1.652
+          ]
+        },
+        "decay": {
+          "mae": 20.9,
+          "mase": 1.059,
+          "direction_hit": 0.562,
+          "ratio_q10_q90": [
+            0.621,
+            1.73
+          ]
+        }
+      },
+      "post_spike_origins": 202,
+      "post_spike": {
+        "naive": {
+          "mae": 29.1,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.535,
+            1.558
+          ]
+        },
+        "mean28": {
+          "mae": 29.3,
+          "mase": 1.006,
+          "direction_hit": 0.624,
+          "ratio_q10_q90": [
+            0.576,
+            1.805
+          ]
+        },
+        "ses": {
+          "mae": 28.0,
+          "mase": 0.962,
+          "direction_hit": 0.619,
+          "ratio_q10_q90": [
+            0.545,
+            1.537
+          ]
+        },
+        "decay": {
+          "mae": 32.2,
+          "mase": 1.107,
+          "direction_hit": 0.609,
+          "ratio_q10_q90": [
+            0.514,
+            1.729
+          ]
+        }
+      },
+      "half_life_error_days": {
+        "n": 165,
+        "median": 1.3,
+        "mean": 7.6
+      },
+      "days": 1026,
+      "under_two_years": false
+    },
+    "피지컬 AI": {
+      "origins": 315,
+      "all": {
+        "naive": {
+          "mae": 431.7,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.61,
+            1.699
+          ]
+        },
+        "mean28": {
+          "mae": 469.9,
+          "mase": 1.088,
+          "direction_hit": 0.571,
+          "ratio_q10_q90": [
+            0.466,
+            1.753
+          ]
+        },
+        "ses": {
+          "mae": 477.4,
+          "mase": 1.106,
+          "direction_hit": 0.641,
+          "ratio_q10_q90": [
+            0.628,
+            1.916
+          ]
+        },
+        "decay": {
+          "mae": 510.4,
+          "mase": 1.182,
+          "direction_hit": 0.632,
+          "ratio_q10_q90": [
+            0.601,
+            1.922
+          ]
+        }
+      },
+      "post_spike_origins": 73,
+      "post_spike": {
+        "naive": {
+          "mae": 879.4,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.439,
+            2.0
+          ]
+        },
+        "mean28": {
+          "mae": 859.1,
+          "mase": 0.977,
+          "direction_hit": 0.658,
+          "ratio_q10_q90": [
+            0.484,
+            3.223
+          ]
+        },
+        "ses": {
+          "mae": 896.0,
+          "mase": 1.019,
+          "direction_hit": 0.781,
+          "ratio_q10_q90": [
+            0.508,
+            2.833
+          ]
+        },
+        "decay": {
+          "mae": 1038.4,
+          "mase": 1.181,
+          "direction_hit": 0.74,
+          "ratio_q10_q90": [
+            0.464,
+            6.919
+          ]
+        }
+      },
+      "half_life_error_days": {
+        "n": 65,
+        "median": 1.5,
+        "mean": 12.4
+      },
+      "days": 378,
+      "under_two_years": true
+    },
+    "physical AI": {
+      "origins": 109,
+      "all": {
+        "naive": {
+          "mae": 9.2,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.622,
+            1.553
+          ]
+        },
+        "mean28": {
+          "mae": 8.7,
+          "mase": 0.948,
+          "direction_hit": 0.558,
+          "ratio_q10_q90": [
+            0.809,
+            2.15
+          ]
+        },
+        "ses": {
+          "mae": 9.4,
+          "mase": 1.023,
+          "direction_hit": 0.522,
+          "ratio_q10_q90": [
+            0.661,
+            1.746
+          ]
+        },
+        "decay": {
+          "mae": 10.1,
+          "mase": 1.103,
+          "direction_hit": 0.544,
+          "ratio_q10_q90": [
+            0.634,
+            1.746
+          ]
+        }
+      },
+      "post_spike_origins": 20,
+      "post_spike": {
+        "naive": {
+          "mae": 13.7,
+          "mase": 1.0,
+          "direction_hit": null,
+          "ratio_q10_q90": [
+            0.637,
+            1.741
+          ]
+        },
+        "mean28": {
+          "mae": 9.8,
+          "mase": 0.718,
+          "direction_hit": 0.632,
+          "ratio_q10_q90": [
+            0.919,
+            1.96
+          ]
+        },
+        "ses": {
+          "mae": 12.9,
+          "mase": 0.944,
+          "direction_hit": 0.5,
+          "ratio_q10_q90": [
+            0.748,
+            2.142
+          ]
+        },
+        "decay": {
+          "mae": 16.9,
+          "mase": 1.238,
+          "direction_hit": 0.6,
+          "ratio_q10_q90": [
+            0.625,
+            1.885
+          ]
+        }
+      },
+      "half_life_error_days": {
+        "n": 16,
+        "median": 3.7,
+        "mean": 3.5
+      },
+      "days": 172,
+      "under_two_years": true
+    }
+  }
+}

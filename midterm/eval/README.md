@@ -9,7 +9,7 @@ them for the page (the Cloudflare site needs a redeploy to show them).
 |---|---|---|
 | Live predictions | Did code's forecast of next week's searches come true? | logging; first results from 2026-11-08 |
 | Forecast accuracy | Can search interest be forecast better than a simple guess? | on Google, no |
-| Jev vs a human | Does Jev's source check agree with a person? | waiting for blind labels |
+| Jev vs a human | Does Jev's source check agree with a person? | no: kappa −0.09 on 30 blind labels |
 
 ## 1. Live predictions: `eval/score_predictions.py`
 
@@ -54,34 +54,33 @@ direction hit rate with a one-sided binomial test against a coin flip.
 
 | source | topic | model (chosen on training) | holdout n | MASE vs naive | MAPE | 80% coverage | direction hit (p vs coin) |
 |---|---|---|---|---|---|---|---|
-| Google weekly | 전기차 | ses | 52 | 1.055 | 7.9% | 83% | 58% (0.17) |
-| Google weekly | 갤럭시 | naive | 52 | 1.000 | 9.2% | 60% | - |
-| Google weekly | 스마트 안경 | mean4 | 52 | 1.011 | 26.7% | 94% | 61% (0.08) |
-| Google weekly | 피지컬 AI | mean4 | 52 | 1.114 | 38.5% | 98% | 50% (0.56) |
-| Google weekly | physical AI | naive | 52 | 1.000 | 14.9% | 98% | - |
-| Wikipedia 7-day | 전기차 | naive | 180 | 1.000 | 40.2% | 60% | - |
-| Wikipedia 7-day | 갤럭시 | ses | 180 | **0.878** | 50.0% | 49% | **62% (0.0006)** |
-| Wikipedia 7-day | 스마트 안경 | decay | 180 | 1.223 | 34.3% | 78% | 55% (0.10) |
-| Wikipedia 7-day | 피지컬 AI | naive | 180 | 1.000 | 41.7% | 61% | - |
-| Wikipedia 7-day | physical AI | too little history (21 origins) | | | | | |
+| Google weekly | 전기차 | ses | 52 | 1.059 | 7.8% | 85% | 52% (0.44) |
+| Google weekly | 갤럭시 | naive | 52 | 1.000 | 11.0% | 56% | - |
+| Google weekly | 스마트 안경 | mean4 | 52 | 1.005 | 24.8% | 98% | 50% (0.56) |
+| Google weekly | 피지컬 AI | too little history (24 origins, since the term appeared) | | | | | |
+| Google weekly | physical AI | naive | 52 | 1.000 | 14.6% | 98% | - |
+| Wikipedia 7-day | 전기차 | naive | 180 | 1.000 | 42.5% | 59% | - |
+| Wikipedia 7-day | 갤럭시 | ses | 180 | **0.845** | 54.5% | 50% | **65% (p < 0.001)** |
+| Wikipedia 7-day | 스마트 안경 | decay | 180 | 1.292 | 38.3% | 73% | 53% (0.25) |
+| Wikipedia 7-day | 피지컬 AI | naive | 180 | 1.000 | 41.7% | 59% | - |
+| Wikipedia 7-day | physical AI | too little history (34 origins) | | | | | |
 
-When naive is chosen there is no up/down call (it always predicts "no change").
+Rerun 2026-11-01. When naive is chosen there is no up/down call (it always predicts "no change").
 
-One real forecast per topic, made with data up to a week before the latest data:
+One real forecast per topic, made from a fixed earlier date:
 
 | source | topic | data up to | predicted | 80% interval | actual |
 |---|---|---|---|---|---|
-| Google | 전기차 | 2026-10-04 | 55.8 | 47.6–63.5 | 54 ✓ |
-| Google | 갤럭시 | 2026-10-04 | 56.0 | 51.8–60.1 | 55 ✓ |
-| Google | 스마트 안경 | 2026-10-04 | 26.0 | 0–62.9 | **100 ✗** (sudden jump) |
-| Google | 피지컬 AI | 2026-10-04 | 15.5 | 0–44.0 | 19 ✓ |
-| Google | physical AI | 2026-10-04 | 17.0 | 11.3–25.5 | 16 ✓ |
-| Wikipedia | 전기차 | 2026-10-11 | 35 | 23–49 | 40 ✓ |
-| Wikipedia | 갤럭시 | 2026-10-11 | 361 | 252–510 | 389 ✓ (naive said 142) |
-| Wikipedia | 스마트 안경 | 2026-10-11 | 45 | 28–75 | **152 ✗** |
-| Wikipedia | 피지컬 AI | 2026-10-11 | 293 | 204–494 | 303 ✓ |
+| Google | 전기차 | 2026-10-04 | 51.0 | 43.0–58.2 | 48 ✓ |
+| Google | 갤럭시 | 2026-10-04 | 48.0 | 43.6–52.3 | 45 ✓ |
+| Google | 스마트 안경 | 2026-10-04 | 24.2 | 0–75.2 | **100 ✗** (sudden jump) |
+| Google | physical AI | 2026-10-04 | 23.0 | 15.6–34.5 | 22 ✓ |
+| Wikipedia | 전기차 | 2026-10-11 | 35 | 24–50 | 40 ✓ |
+| Wikipedia | 갤럭시 | 2026-10-11 | 361 | 251–509 | 389 ✓ (naive said 142) |
+| Wikipedia | 스마트 안경 | 2026-10-11 | 45 | 28–74 | **152 ✗** |
+| Wikipedia | 피지컬 AI | 2026-10-11 | 293 | 208–483 | 303 ✓ |
 
-7 of 9 inside the interval; both misses are the same 스마트 안경 jump, which no past data
+6 of 8 inside the interval; both misses are the same 스마트 안경 jump, which no past data
 announced.
 
 ### Backtest on Wikipedia pageviews: `eval/forecast.py`
@@ -97,16 +96,14 @@ vs the last 7 days, and half-life error after spikes.
 
 | topic | history | origins | naive MAE | mean28 MASE | ses MASE | decay MASE | best |
 |---|---|---|---|---|---|---|---|
-| 갤럭시 | 3.0 y | 730 | 59.4 | 0.970 | **0.908** | 0.940 | ses |
-| physical AI | 0.4 y ⚠ | 96 | 9.2 | **0.934** | 1.042 | 1.141 | mean28 |
-| 스마트 안경 | 2.8 y | 730 | 19.3 | 1.118 | **0.994** | 1.031 | ses |
-| 전기차 | 3.0 y | 730 | 22.2 | 1.289 | 1.099 | 1.159 | naive |
-| 피지컬 AI | 1.0 y ⚠ | 302 | 447.7 | 1.091 | 1.105 | 1.182 | naive |
+| 갤럭시 | 3.0 y | 730 | 64.8 | 0.944 | **0.883** | 0.918 | ses |
+| physical AI | 0.5 y ⚠ | 109 | 9.2 | **0.948** | 1.023 | 1.103 | mean28 |
+| 스마트 안경 | 2.8 y | 730 | 19.7 | 1.120 | 1.000 | 1.059 | naive |
+| 전기차 | 3.0 y | 730 | 21.4 | 1.297 | 1.078 | 1.147 | naive |
+| 피지컬 AI | 1.0 y ⚠ | 315 | 431.7 | 1.088 | 1.106 | 1.182 | naive |
 
-⚠ under the 2 years asked for: those Wikipedia articles are new. Direction hit rates are
-0.49–0.65 (a coin flip is 0.5). The decay model predicts half-lives within a median of
-1.1–2.2 days but never beats naive overall; right after spikes the 28-day mean does better
-(post-spike MASE 0.71–0.98 on four topics).
+⚠ under the 2 years asked for: those Wikipedia articles are new. Rerun 2026-11-01; details in
+`data/eval/backtest_2026-11-01.md`.
 
 ## 3. Jev vs a human: `eval/jev_agreement.py`
 
@@ -115,6 +112,21 @@ Cohen's kappa (agreement after removing what chance gives; 1 perfect, 0 chance l
 confusion table, forecasts vs other claims, and agreement per band of Jev's confidence.
 
 **Run:**
+**Result (2026-11-01, 30 claims, one labeller):** agreement 53%, kappa −0.09, so no better than
+chance. Both rated 22 of 30 "supported", which is why chance agreement is already 57%.
+
+| Jev \ human | supported | partly | unsupported |
+|---|---|---|---|
+| supported | 15 | 3 | 4 |
+| partly | 7 | 1 | 0 |
+| unsupported | 0 | 0 | 0 |
+
+Jev never said "unsupported", so it passed all 4 claims the human rejected, and the human accepted
+7 of the 8 it called "partly". Forecasts agreed on 1 of 5, other claims on 15 of 25. Agreement by
+Jev's confidence: 38% (n=8), 50% (n=6), 62% (n=16), too few to call calibrated. With no second
+labeller this cannot show which side is right. Several rejected claims closely restate their headlines
+(#15, #20), so the two may be using different standards, such as whether the headline is enough.
+
 1. `python midterm/eval/jev_agreement.py export` (already done: 30 claims in `data/eval/jev_agreement.csv`)
 2. Fill `human_label` with `s`, `p` or `u`, using only the cited evidence. Optional:
    `second_label` from a second person shows how far two humans agree at all.
