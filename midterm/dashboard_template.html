@@ -293,8 +293,8 @@ const STR = {
     col_topic: "주제", col_week: "예측한 주", col_pred: "예측", col_result: "결과",
     // History tab
     ev_title: "이 서비스는 얼마나 믿을 만한가?", ev_note: "맞고 틀림은 AI가 아니라 코드와 사람이 판정한다. 카드에 마우스를 올리면 방법이 보인다.",
-    card_kappa: (k, a) => [k < 0.2 ? "AI 검사기는 사람과 자주 달랐다" : k < 0.6 ? "AI 검사기는 사람과 어느 정도 같았다" : "AI 검사기는 사람과 대체로 같았다",
-      `${pct(a)} 같음`, "문장 30개를 사람이 직접 판정해 AI 검사기(Jev)와 비교했다. 우연을 뺀 일치도 κ = " + k.toFixed(2)],
+    card_kappa: (k, a, n) => [k < 0.2 ? "AI 검사기는 사람과 자주 달랐다" : k < 0.6 ? "AI 검사기는 사람과 어느 정도 같았다" : "AI 검사기는 사람과 대체로 같았다",
+      `${pct(a)} 같음`, `문장 ${n}개를 사람이 직접 판정해 AI 검사기(Jev)와 비교했다. 우연을 뺀 일치도 κ = ${k.toFixed(2)}`],
     how_cov: "주별 구글 트렌드 5년치, 일별 위키백과 조회수 3년치. 예측 방법은 앞부분 데이터로만 고르고, 마지막 1년 / 180일로 채점했다.",
     how_kappa: "사람이 Jev의 답을 보지 않고 문장 30개를 일치 / 일부 / 불일치로 직접 판정한 뒤 비교한다. κ는 우연히 맞는 만큼을 뺀 일치도다: 1 = 완벽, 0 = 우연 수준.",
     card_kappa_wait: ["AI 검사기(Jev)는 다시 시험 중이다", "판정 대기", "지난 시험은 사람이 Jev의 답을 볼 수 있어서 버렸다. Jev 규칙을 고치고 문장 30개로 다시 시험한다."],
@@ -304,7 +304,7 @@ const STR = {
     pt_title: "예측 정확도 (모델이 보지 못한 기간)",
     col_source: "데이터", col_error: "평균 오차", col_inrange: "범위 안", col_example: "예시: 예측 → 실제",
     src_google: "구글 검색량 (다음 주)", src_wiki: "위키백과 (다음 7일)", 
-    kappa_title: "AI 검사기 vs 사람 (문장 30개)", jev_rows: "AI 검사기 ↓ / 사람 →",
+    kappa_title: "AI 검사기 vs 사람", kappa_round: (r, n, k, ex) => `${r}회차: 문장 ${n}개, κ = ${k} (예시 ${ex}개 사용)`, kappa_learn: (n, w, wo) => `사람 라벨 ${n}개로 시험: Jev에게 예시로 보여 주면 κ = ${w}, 안 보여 주면 κ = ${wo}. 라벨이 60개 이상이고 뚜렷이 나아져야 실제 검사에 쓴다.`, jev_rows: "AI 검사기 ↓ / 사람 →",
   },
   en: {
     brand: "Trend Signals", topic_ph: "Topic to analyze (e.g. physical AI) · empty = trending now", password: "Password",
@@ -367,8 +367,8 @@ const STR = {
     col_topic: "Topic", col_week: "Week", col_pred: "Forecast", col_result: "Result",
     // History tab
     ev_title: "How much can you trust this?", ev_note: "Right or wrong is decided by code and people, not by an AI. Hover a card to see the method.",
-    card_kappa: (k, a) => [k < 0.2 ? "The AI checker often disagreed with a human" : k < 0.6 ? "The AI checker partly agreed with a human" : "The AI checker mostly agreed with a human",
-      `${pct(a)} same`, "a human judged 30 sentences and was compared with the AI checker (Jev). Agreement beyond chance κ = " + k.toFixed(2)],
+    card_kappa: (k, a, n) => [k < 0.2 ? "The AI checker often disagreed with a human" : k < 0.6 ? "The AI checker partly agreed with a human" : "The AI checker mostly agreed with a human",
+      `${pct(a)} same`, `a human judged ${n} sentences and was compared with the AI checker (Jev). Agreement beyond chance κ = ${k.toFixed(2)}`],
     how_cov: "5 years of weekly Google Trends and 3 years of daily Wikipedia views. Methods were chosen on the earlier data only and scored on the last year / 180 days.",
     how_kappa: "A human judges 30 sentences as matches / partly / doesn't match without seeing Jev's answers, then they are compared. κ is agreement after removing what chance gives: 1 = perfect, 0 = chance level.",
     card_kappa_wait: ["The AI checker (Jev) is being retested", "waiting", "The last test was dropped because the human could see Jev's answers. Jev's rules were fixed and it is being retested on 30 sentences."],
@@ -378,7 +378,7 @@ const STR = {
     pt_title: "Forecast accuracy (period the model never saw)",
     col_source: "Data", col_error: "Average error", col_inrange: "In range", col_example: "Example: forecast → actual",
     src_google: "Google searches (next week)", src_wiki: "Wikipedia (next 7 days)", 
-    kappa_title: "AI checker vs a human (30 sentences)", jev_rows: "AI checker ↓ / human →",
+    kappa_title: "AI checker vs a human", kappa_round: (r, n, k, ex) => `Round ${r}: ${n} sentences, κ = ${k} (${ex} examples used)`, kappa_learn: (n, w, wo) => `Test on ${n} human labels: κ = ${w} when Jev is shown them as examples, ${wo} when not. They are used in the real check only with 60+ labels and a clear gain.`, jev_rows: "AI checker ↓ / human →",
   },
 };
 const t = (k, ...a) => { const v = STR[LANG][k] ?? STR.ko[k]; return typeof v === "function" ? v(...a) : v; };
@@ -645,7 +645,7 @@ function evalCards(ev) {
   return `<div class="cards">
     ${card(done?.scored ? t("card_search", done.hits, done.flat_hits, done.scored) : t("card_search_wait", pending), t("how_search"))}
     ${pt?.mean_coverage_80 != null ? card(t("card_cov", pt.mean_coverage_80, Math.min(...cover), Math.max(...cover), google.filter(r => r.mase < 1).length, google.length), t("how_cov")) : ""}
-    ${card(k ? t("card_kappa", k.kappa, k.agreement) : t("card_kappa_wait"), t("how_kappa"))}
+    ${card(k ? t("card_kappa", k.kappa, k.agreement, k.n) : t("card_kappa_wait"), t("how_kappa"))}
   </div>`;
 }
 
@@ -684,12 +684,14 @@ function predictionTest(pt) {
       <th class="num">${t("col_error")}</th><th class="num">${t("col_inrange")}</th><th>${t("col_example")}</th></tr>${rows}</table></div>`;
 }
 
-function kappaTable(k) {
+function kappaTable(k, ev) {
   if (!k?.confusion_jev_by_human) return "";
   const labels = ["supported", "partly", "unsupported"];
   const rows = labels.filter(j => labels.some(h => k.confusion_jev_by_human[j][h])).map(j =>
     `<tr><th>${t(j)}</th>${labels.map(h => `<td class="num${j === h ? " sig" : ""}">${k.confusion_jev_by_human[j][h]}</td>`).join("")}</tr>`).join("");
-  return `<h3>${t("kappa_title")}</h3><div class="scroll-x"><table class="ev"><tr><th>${t("jev_rows")}</th>${labels.map(h => `<th class="num">${t(h)}</th>`).join("")}</tr>${rows}</table></div>`;
+  return `<h3>${t("kappa_title")}</h3><div class="scroll-x"><table class="ev"><tr><th>${t("jev_rows")}</th>${labels.map(h => `<th class="num">${t(h)}</th>`).join("")}</tr>${rows}</table></div>
+    ${(k.rounds || []).map(r => `<p class="muted">${esc(t("kappa_round", r.round, r.n, r.kappa, r.examples_used))}</p>`).join("")}
+    ${ev.jev_learn ? `<p class="muted">${esc(t("kappa_learn", ev.jev_learn.n, ev.jev_learn.kappa_with, ev.jev_learn.kappa_without))}</p>` : ""}`;
 }
 
 function renderHistory() {
@@ -700,7 +702,7 @@ function renderHistory() {
     <div class="hist-sec"><h2 class="sec">${t("past_title")}</h2>${results.length ? `<p class="muted">${t("past_note")}</p>` : ""}${pastAnalyses()}</div>
     ${ev ? predictionLog(ev.prediction_log) : ""}
     ${ev ? `<div class="hist-sec"><details class="how details"><summary>${t("details")}</summary>
-      ${predictionTest(ev.prediction_test)}${kappaTable(ev.jev_agreement)}</details></div>` : ""}`;
+      ${predictionTest(ev.prediction_test)}${kappaTable(ev.jev_agreement, ev)}</details></div>` : ""}`;
   document.querySelectorAll("ul.history button").forEach(b => b.addEventListener("click", () => {
     current = results[+b.dataset.i]; renderTopic(); show("topic");
   }));

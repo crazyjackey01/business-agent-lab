@@ -15,7 +15,7 @@ function recordUsage(env, row) {
 
 // Jev writes no text: it answers questions whose possible answers we fix in advance.
 export async function askJev(env, state, questions, step) {
-  const ids = Object.keys(questions), answers = {};
+  const ids = Object.keys(questions), answers = {}, model = env.JEV_MODEL || "jev-1.13-free";
   // One batch at a time, and wait on 429.
   for (let i = 0; i < ids.length; i += JEV_MAX_QUESTIONS) {
     const batch = ids.slice(i, i + JEV_MAX_QUESTIONS);
@@ -24,7 +24,7 @@ export async function askJev(env, state, questions, step) {
         method: "POST",
         headers: { Authorization: `Bearer ${env.OPENCODE_API_KEY}`, "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: env.JEV_MODEL || "jev-1.13-free", state,
+          model, state,
           questions: Object.fromEntries(batch.map(id => [id, questions[id]])),
         }),
       });
@@ -35,7 +35,6 @@ export async function askJev(env, state, questions, step) {
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data.answers) throw new Error(`Jev HTTP ${response.status}: ${data.error?.message || "no answers"}`);
       Object.assign(answers, data.answers);
-      const model = env.JEV_MODEL || "jev-1.13-free";
       recordUsage(env, {
         step, model, questions: batch.length,
         input_tokens: data.usage?.input_tokens || 0, output_tokens: data.usage?.output_tokens || 0,
@@ -45,6 +44,11 @@ export async function askJev(env, state, questions, step) {
     }
   }
   return answers;
+}
+
+export function examplesText(examples) {
+  const rated = examples.map((e, i) => `Example ${i}: ${e.claim}\n  Cited evidence: ${e.evidence}\n  Reviewer's rating: ${e.label}`).join("\n\n");
+  return `Claims a human reviewer already rated. Rate the claims below by the same standard:\n\n${rated}\n\n`;
 }
 
 export async function requestModel(env, messages, step) {

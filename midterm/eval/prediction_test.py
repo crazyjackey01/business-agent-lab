@@ -50,7 +50,7 @@ EXAMPLE_ORIGIN = {"google": "2026-10-04", "wiki": "2026-10-11"}
 def google_forecasts(y, ses, t):
     """Next-week forecast per model, made with data up to week t."""
     return {"naive": y[t], "mean4": y[t - 3:t + 1].mean(),
-            "ses": ses.levels[int(np.argmin(ses.cum_sse[:, t])), t],
+            "ses": ses.level(t),
             "seasonal": y[t - 51]}  # same week last year (the week after t, 52 weeks earlier)
 
 

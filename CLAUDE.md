@@ -38,7 +38,7 @@ python midterm/eval/gtrends.py               # Google Trends search interest (un
 python midterm/eval/prediction_test.py       # holdout prediction accuracy (Google weekly, Wikipedia 7-day)
 python midterm/eval/forecast.py              # 7-day pageview forecasts, rolling backtest
 python midterm/eval/score_predictions.py     # did code's forecast of next week's searches come true?
-python midterm/eval/jev_agreement.py export|score   # blind hand-label CSV, Cohen's kappa
+python midterm/eval/jev_agreement.py export|score|learn   # blind label rounds, kappa, test labels as Jev examples
 python midterm/eval/summary.py              # collect all results -> data/eval/summary.json (page + Worker)
 ```
 

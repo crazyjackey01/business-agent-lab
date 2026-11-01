@@ -36,8 +36,16 @@
       "unsupported": 0
     }
   },
-  "agreement_forecasts": 0.2,
-  "agreement_other_claims": 0.6,
   "human_kappa": null,
-  "human_pairs": 0
+  "human_pairs": 0,
+  "rounds": [
+    {
+      "round": 1,
+      "date": "2026-11-01",
+      "n": 30,
+      "kappa": -0.094,
+      "agreement": 0.53,
+      "examples_used": 0
+    }
+  ]
 }

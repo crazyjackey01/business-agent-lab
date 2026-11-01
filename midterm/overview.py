@@ -9,9 +9,9 @@ they have in common; every claim is checked against its evidence.
 from datetime import datetime, timedelta, timezone
 
 import jev_api
-from analyze_topic import check_claims, keep_supported, parse_json_reply
+from analyze_topic import check_claims, keep_supported
 from collect_trends import fetch_google_trends, fetch_wikipedia_top
-from model_api import ModelRequestError, MODEL, request_model
+from model_api import ModelRequestError, MODEL, parse_json_reply, request_model
 
 TREND_CATEGORIES = {
     "breaking_news": "an accident, disaster, crime or sudden news event",

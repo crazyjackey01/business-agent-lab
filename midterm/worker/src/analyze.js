@@ -6,7 +6,8 @@
 //      otherwise by a second text-model call
 import { dayIn } from "./collect.js";
 import { searchIntent } from "./intent.js";
-import { DEFAULT_MODEL, askJev, parseJsonReply, requestModel } from "./models.js";
+import jevExamples from "../../data/eval/jev_examples.json";
+import { DEFAULT_MODEL, askJev, examplesText, parseJsonReply, requestModel } from "./models.js";
 
 const isAscii = s => /^[\x00-\x7f]*$/.test(s);
 
@@ -113,11 +114,10 @@ Rate it:
 - "partly": the core is in the evidence but the claim adds something the evidence does not say
   (an exaggeration, a cause, a trend over time that was measured only once).
 - "unsupported": the cited evidence does not say it, or is about something else.
-For forecasts ("outlook"), judge whether the basis is really in the evidence, not whether the future is certain.
 Reply with JSON only: {"checks": [{"id": 0, "rating": "supported", "reason": "..."}]}
 Write each reason in {language}, one short sentence.`;
 
-const SECTIONS = ["why_people_search", "what_is_happening", "outlook"];
+const SECTIONS = ["why_people_search", "what_is_happening"];
 
 // Number every fact and headline so the model can cite them.
 export function buildEvidence(facts, news, maxHeadlines = 40) {
@@ -166,15 +166,17 @@ const CHECK_LABELS = {
   unsupported: "The cited evidence does not say this, or is about something else.",
 };
 const UNCERTAIN_BELOW = 0.6; // Jev confidence under this is shown as uncertain
+const MAX_EXAMPLES = 60; // newest kept: Jev refuses requests over ~60k tokens
 
 function claimText(n, section, c, evidence) {
   const cited = c.cites.map(x => `    [${x}] ${evidence[x]}`).join("\n");
-  const claim = c.claim + (c.basis ? ` (basis: ${c.basis})` : "");
-  return `Claim ${n} (${section}): ${claim}\n  Cited evidence:\n${cited}`;
+  return `Claim ${n} (${section}): ${c.claim}\n  Cited evidence:\n${cited}`;
 }
 
 async function ratingsFromJev(env, items, evidence) {
-  const state = "Claims written by an analyst, each with the exact evidence it cites:\n\n"
+  // Human-labelled claims, only once eval/jev_agreement.py learn has shown they help.
+  const examples = jevExamples.use ? jevExamples.examples.slice(-MAX_EXAMPLES) : [];
+  const state = (examples.length ? examplesText(examples) : "") + "Claims written by an analyst, each with the exact evidence it cites:\n\n"
     + items.map(([section, c], n) => claimText(n, section, c, evidence)).join("\n\n");
   const questions = Object.fromEntries(items.map((_, n) => [`c${n}`, {
     type: "choice",
@@ -200,7 +202,7 @@ async function ratingsFromModel(env, items, evidence, language) {
   return new Map(checks.filter(c => /^\d+$/.test(String(c.id))).map(c => [+c.id, { ...c, by: "model" }]));
 }
 
-async function checkClaims(env, result, evidence, language, sections = SECTIONS) {
+async function checkClaims(env, result, evidence, language, sections) {
   const items = sections.flatMap(section => result[section].map(c => [section, c]));
   if (!items.length) return 0;
   let ratings = null;
@@ -222,20 +224,18 @@ async function checkClaims(env, result, evidence, language, sections = SECTIONS)
   result.checked_by = ratings.size ? [...ratings.values()][0].by : "none";
 
   let removed = 0;
-  for (const section of sections) {
-    result[section] = result[section].flatMap(c => {
-      const n = items.findIndex(([, item]) => item === c);
-      const check = ratings.get(n) || { rating: "unchecked", reason: "" };
-      const confidence = check.confidence ?? null;
-      if (check.rating === "unsupported") {
-        removed++;
-        (result.removed_claims ||= []).push({ ...c, section, check: "unsupported", check_confidence: confidence });
-        return [];
-      }
-      return [{ ...c, check: check.rating, check_reason: check.reason || "", check_confidence: confidence,
-        check_uncertain: confidence !== null && confidence < UNCERTAIN_BELOW }];
-    });
-  }
+  for (const section of sections) result[section] = [];
+  items.forEach(([section, c], n) => {
+    const check = ratings.get(n) || { rating: "unchecked", reason: "" };
+    const confidence = check.confidence ?? null;
+    if (check.rating === "unsupported") {
+      removed++;
+      (result.removed_claims ||= []).push({ ...c, section, check: "unsupported", check_confidence: confidence });
+      return;
+    }
+    result[section].push({ ...c, check: check.rating, check_reason: check.reason || "", check_confidence: confidence,
+      check_uncertain: confidence !== null && confidence < UNCERTAIN_BELOW });
+  });
   return removed;
 }
 
@@ -254,8 +254,7 @@ async function explain(env, topic, evidence, language) {
   }
   result.caveats = reply.caveats || [];
   result.unsupported_claims_removed = dropped;
-  [result.summary] = keepSupported(reply.summary ? [reply.summary] : [], evidence)[0];
-  result.summary = result.summary ? [result.summary] : [];
+  result.summary = keepSupported(reply.summary ? [reply.summary] : [], evidence)[0];
   result.failed_check_removed = await checkClaims(env, result, evidence, language, ["summary", ...SECTIONS]);
   result.summary = result.summary[0] || null;
   return result;
@@ -293,7 +292,7 @@ export async function analyze(env, data) {
     relevance: {
       method: relevance.method,
       kept: relevance.kept.length,
-      dropped: relevance.dropped.map(a => ({ title: a.title, source: a.source, url: a.url, relevance: a.relevance })),
+      dropped: relevance.dropped.map(a => ({ title: a.title, source: a.source, url: a.url })),
     },
   };
   const [evidence, links] = buildEvidence(facts, data.news);

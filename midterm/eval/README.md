@@ -9,7 +9,7 @@ them for the page (the Cloudflare site needs a redeploy to show them).
 |---|---|---|
 | Live predictions | Did code's forecast of next week's searches come true? | logging; first results from 2026-11-08 |
 | Forecast accuracy | Can search interest be forecast better than a simple guess? | on Google, no |
-| Jev vs a human | Does Jev's source check agree with a person? | no: kappa −0.09 on 30 blind labels |
+| Jev vs a human | Does Jev's source check agree with a person? | no: kappa −0.09 on 30 blind labels; showing it labels hasn't helped yet |
 
 ## 1. Live predictions: `eval/score_predictions.py`
 
@@ -111,7 +111,6 @@ vs the last 7 days, and half-life error after spikes.
 Cohen's kappa (agreement after removing what chance gives; 1 perfect, 0 chance level), with a
 confusion table, forecasts vs other claims, and agreement per band of Jev's confidence.
 
-**Run:**
 **Result (2026-11-01, 30 claims, one labeller):** agreement 53%, kappa −0.09, so no better than
 chance. Both rated 22 of 30 "supported", which is why chance agreement is already 57%.
 
@@ -122,15 +121,31 @@ chance. Both rated 22 of 30 "supported", which is why chance agreement is alread
 | unsupported | 0 | 0 | 0 |
 
 Jev never said "unsupported", so it passed all 4 claims the human rejected, and the human accepted
-7 of the 8 it called "partly". Forecasts agreed on 1 of 5, other claims on 15 of 25. Agreement by
+7 of the 8 it called "partly". Forecasts agreed on 1 of 5, other claims on 15 of 25, and the forecasts are no longer written. Agreement by
 Jev's confidence: 38% (n=8), 50% (n=6), 62% (n=16), too few to call calibrated. With no second
 labeller this cannot show which side is right. Several rejected claims closely restate their headlines
 (#15, #20), so the two may be using different standards, such as whether the headline is enough.
 
-1. `python midterm/eval/jev_agreement.py export` (already done: 30 claims in `data/eval/jev_agreement.csv`)
+**What else was tested on these labels (2026-11-01):**
+- Jev re-rated the same claims with the same label 29 of 30 times (kappa 0.92), so this is a steady
+  difference in standards, not randomness.
+- Saying "supported" every time would agree 73% of the time at kappa 0, higher than Jev on both.
+- Nothing tried predicts the human's rejections yet: Jev's P(supported) gives AUC 0.38 (95% CI 0.17-0.60),
+  and how much of the claim's text is in its evidence, the number of citations, claim length and
+  unmatched numbers give 0.49-0.56. 8 non-"supported" labels are too few to say more.
+
+**Getting better with labels.** Jev is a hosted model, so it can't be retrained; what labels can do is
+show it how a human rated earlier claims. Each round:
+1. `python midterm/eval/jev_agreement.py export`: new claims, rated by Jev before you label them.
 2. Fill `human_label` with `s`, `p` or `u`, using only the cited evidence. Optional:
    `second_label` from a second person shows how far two humans agree at all.
-3. `python midterm/eval/jev_agreement.py score`
+3. `python midterm/eval/jev_agreement.py score`: adds the round to the history and the labels to
+   `data/eval/jev_examples.json`.
+4. `python midterm/eval/jev_agreement.py learn`: tests the pool on labels held out from what Jev is
+   shown. Examples go live in the Python app and the Worker (redeploy) only with 60+ labels and a kappa
+   gain of at least 0.1; the next round's blind score shows whether that held up on new claims.
+
+Current result: 25 labels (the 5 forecasts stay out), kappa −0.06 with examples, −0.02 without, so they are off.
 
 Don't open `data/eval/jev_agreement_key.json` before labelling: it holds Jev's answers.
 
@@ -143,7 +158,7 @@ Don't open `data/eval/jev_agreement_key.json` before labelling: it holds Jev's a
   Forecasts are now rated on whether their basis is in the evidence: 13 of 22 "partly" on
   the same forecasts. Whether that is right is what the new labels will show.
 - Jev re-rates the sample under the current rules, and claims from the old round are excluded.
-- The writer no longer forecasts, so forecasts in the sample come from older runs.
+- The writer no longer forecasts, so only the first round's sample has forecasts.
 - Claims Jev removes are now saved and sampled, so the test can also catch wrongly removed
   claims. None exist yet in the sample, because older runs did not save them.
 

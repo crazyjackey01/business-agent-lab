@@ -1,21 +1,26 @@
-"""Does Jev's claim check agree with a human? A blind test: Cohen's kappa and a calibration table.
+"""Does Jev's claim check agree with a human, and does it get closer as labels pile up?
 
-Step 1 (export): picks 30 claims and asks Jev to rate them now, under the current rules.
-data/eval/jev_agreement.csv holds the claims and the evidence each cites, with NO Jev answer
-in it; Jev's answers go to jev_agreement_key.json, so don't open that before labelling.
-Step 2: fill human_label with s / p / u (supported, partly, unsupported), using only the
-cited evidence. A forecast is "supported" if its basis is in the evidence, not if it came true.
-second_label is optional: a second person's labels show how far two humans agree at all.
-Step 3 (score): kappa, a confusion table, agreement for forecasts vs other claims, and
-agreement per band of Jev's confidence.
+A blind test in rounds, each measured on claims Jev has never seen as examples:
+1. export: picks 30 new claims and asks Jev to rate them now. data/eval/jev_agreement.csv holds the
+   claims and the evidence each cites, with NO Jev answer in it; Jev's answers go to
+   jev_agreement_key.json, so don't open that before labelling.
+2. Fill human_label with s / p / u (supported, partly, unsupported), using only the cited evidence.
+   second_label is optional: a second person's labels show how far two humans agree at all.
+3. score: kappa, a confusion table and agreement per band of Jev's confidence. The round joins the
+   history in jev_agreement.json and its labels join the pool in jev_examples.json.
+4. learn: tests whether showing Jev the pool helps, on labels held out from what it is shown (5 folds).
+   The real checker only uses the examples if they clearly beat no examples; later rounds then show
+   whether that held up on new claims.
 
-Claims labelled in the earlier round (not blind; see jev_agreement_old_not_blind.csv) are
-excluded. Claims Jev removed are saved since this change, and all of them enter the sample
-(up to a third of it), so it can also show when Jev removes a good claim.
+Claims labelled in the earlier round (not blind; see jev_agreement_old_not_blind.csv) are excluded.
+Claims Jev removed are saved, and all of them enter the sample (up to a third of it), so it can
+also show when Jev removes a good claim. The first round's forecasts are not in the pool, since the
+writer no longer forecasts.
 
 Usage:
-    python midterm/eval/jev_agreement.py export      # won't overwrite existing labels
+    python midterm/eval/jev_agreement.py export      # won't replace labels that aren't scored yet
     python midterm/eval/jev_agreement.py score       # after labelling
+    python midterm/eval/jev_agreement.py learn       # about 10 Jev calls
 """
 import csv
 import json
@@ -23,20 +28,25 @@ import random
 import subprocess
 import sys
 from collections import Counter
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # midterm/ modules
+from analyze_topic import EXAMPLES_FILE, SECTIONS, ratings_from_jev  # noqa: E402
 
 MIDTERM = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = MIDTERM / "data" / "analysis"
 OUT = MIDTERM / "data" / "eval"
 CSV = OUT / "jev_agreement.csv"
 KEY = OUT / "jev_agreement_key.json"
+RESULT = OUT / "jev_agreement.json"
 OLD_CSV = OUT / "jev_agreement_old_not_blind.csv"
 LABELS = ("supported", "partly", "unsupported")
 SHORT = {"s": "supported", "p": "partly", "u": "unsupported"}
-SECTIONS = ("summary", "why_people_search", "what_is_happening", "outlook")
 BANDS = ((0.0, 0.6), (0.6, 0.8), (0.8, 1.01))
+FOLDS = 5
+MIN_LABELS = 60  # fewer than this and kappa is too noisy to change what the real checker does
+MIN_GAIN = 0.1  # re-rating the same claims moved kappa by about 0.03, so a gain must clear well above that
 
 
 def cohens_kappa(a, b):
@@ -71,8 +81,9 @@ def written_claims():
         if e.get("checked_by") != "jev":
             continue
         claims = [("summary", e["summary"])] if e.get("summary") else []
-        claims += [(section, c) for section in SECTIONS[1:] for c in e.get(section) or []]
-        claims = [(section, c, False) for section, c in claims] + [(c["section"], c, True) for c in e.get("removed_claims", [])]
+        claims += [(section, c) for section in SECTIONS for c in e.get(section) or []]
+        claims = [(section, c, False) for section, c in claims] + [
+            (c["section"], c, True) for c in e.get("removed_claims", []) if c["section"] != "outlook"]
         rows += [{"run": run, "run_name": label, "section": section, "claim": c, "removed": removed}
                  for section, c, removed in claims]
     return rows
@@ -91,7 +102,6 @@ def pick(rows, n, seed):
 
 def rate_now(sample):
     """Jev's rating of each sampled claim under the current rules. Ratings saved in old runs used older ones."""
-    from analyze_topic import ratings_from_jev  # needs the API key, so only when exporting
     by_run = {}
     for r in sample:
         by_run.setdefault(r["run_name"], []).append(r)
@@ -101,28 +111,49 @@ def rate_now(sample):
             r["jev"] = ratings.get(n)
 
 
-def export(n=30, seed=11):
-    if CSV.exists() and any(r["human_label"].strip() for r in csv.DictReader(CSV.open(encoding="utf-8-sig"))):
-        print(f"{CSV.name} already has labels; not overwriting")
+def load_pool():
+    return json.loads(EXAMPLES_FILE.read_text(encoding="utf-8")) if EXAMPLES_FILE.exists() else {"use": False, "examples": []}
+
+
+def load_rounds():
+    return json.loads(RESULT.read_text(encoding="utf-8")).get("rounds", []) if RESULT.exists() else []
+
+
+def csv_rows():
+    return [r for r in csv.DictReader(CSV.open(encoding="utf-8-sig")) if r["human_label"].strip()] if CSV.exists() else []
+
+
+def export(n=30):
+    answers = json.loads(KEY.read_text(encoding="utf-8")) if KEY.exists() else {}
+    current = next(iter(answers.values()), {}).get("round", 1)
+    if csv_rows() and current not in [r["round"] for r in load_rounds()]:
+        print(f"{CSV.name} has labels that aren't scored yet; run score first")
         return
-    seen = {r["claim"] for r in csv.DictReader(OLD_CSV.open(encoding="utf-8-sig"))} if OLD_CSV.exists() else set()
+    pool = load_pool()
+    seen = {e["claim"] for e in pool["examples"]}
+    seen |= {r["claim"] for r in csv.DictReader(OLD_CSV.open(encoding="utf-8-sig"))} if OLD_CSV.exists() else set()
     rows = [r for r in written_claims() if r["claim"]["claim"] not in seen
             and all(x in r["run"]["evidence"] for x in r["claim"].get("cites", []))]
-    sample = pick(rows, n, seed)
+    round_no = max([r["round"] for r in load_rounds()], default=0) + 1
+    sample = pick(rows, n, seed=10 + round_no)
     rate_now(sample)
     sample = [r for r in sample if r["jev"]]  # Jev left a question unanswered: nothing to compare
+    if not sample:
+        print("no new claims to label: run more analyses first")
+        return
     with CSV.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["id", "topic", "section", "claim", "cited_evidence", "human_label", "second_label"])
         for i, r in enumerate(sample, 1):
-            c = r["claim"]
-            text = c["claim"] + (f" (basis: {c['basis']})" if c.get("basis") else "")
-            cited = " || ".join(f"[{x}] {r['run']['evidence'][x]}" for x in c["cites"])
-            writer.writerow([i, r["run"].get("topic"), r["section"], text, cited, "", ""])
+            cited = " || ".join(f"[{x}] {r['run']['evidence'][x]}" for x in r["claim"]["cites"])
+            writer.writerow([i, r["run"].get("topic"), r["section"], r["claim"]["claim"], cited, "", ""])
+    examples_used = len(pool["examples"]) if pool["use"] else 0
     KEY.write_text(json.dumps({str(i): {"run": r["run_name"], "section": r["section"], "jev_label": r["jev"]["rating"],
-                                        "jev_confidence": r["jev"]["confidence"]} for i, r in enumerate(sample, 1)},
+                                        "jev_confidence": r["jev"]["confidence"], "round": round_no,
+                                        "examples_used": examples_used} for i, r in enumerate(sample, 1)},
                               ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"wrote {len(sample)} of {len(rows)} claims to data/eval/{CSV.name}; Jev's answers are in {KEY.name} (don't open it yet)")
+    print(f"round {round_no}: wrote {len(sample)} of {len(rows)} claims to data/eval/{CSV.name}; "
+          f"Jev's answers are in {KEY.name} (don't open it yet)")
 
 
 def read_label(value):
@@ -134,9 +165,16 @@ def agreement(pairs):
     return round(sum(a == b for a, b in pairs) / len(pairs), 2) if pairs else None
 
 
+def merge_round(pool, round_no, rows):
+    """The pool with this round's labels; scoring a round twice replaces them. Forecasts stay out."""
+    new = [{"round": round_no, "section": r["section"], "claim": r["claim"], "evidence": r["cited_evidence"],
+            "label": read_label(r["human_label"])} for r in rows if r["section"] != "outlook"]
+    return {**pool, "examples": [e for e in pool["examples"] if e["round"] != round_no] + new}
+
+
 def score():
     key = json.loads(KEY.read_text(encoding="utf-8"))
-    rows = [r for r in csv.DictReader(CSV.open(encoding="utf-8-sig")) if r["human_label"].strip()]
+    rows = csv_rows()
     if not rows:
         sys.exit("no human labels yet: fill the human_label column first")
     bad = [r["id"] for r in rows if read_label(r["human_label"]) not in LABELS]
@@ -153,9 +191,6 @@ def score():
     print("            " + "".join(f"{l:>12}" for l in LABELS))
     for j in LABELS:
         print(f"{j:>12}" + "".join(f"{confusion[j][h]:>12}" for h in LABELS))
-    forecasts = [(h, a["jev_label"]) for h, a in zip(human, answers) if a["section"] == "outlook"]
-    others = [(h, a["jev_label"]) for h, a in zip(human, answers) if a["section"] != "outlook"]
-    print(f"\nagreement: forecasts {agreement(forecasts)} (n={len(forecasts)}), other claims {agreement(others)} (n={len(others)})")
     print("\ncalibration: Jev confidence band -> how often you agreed")
     table = []
     for lo, hi in BANDS:
@@ -166,11 +201,50 @@ def score():
     human_kappa = round(cohens_kappa(*zip(*two)), 3) if two else None
     if two:
         print(f"\ntwo humans: {len(two)} claims, kappa {human_kappa}")
-    (OUT / "jev_agreement.json").write_text(json.dumps(
+    round_no = answers[0].get("round", 1)
+    rounds = [r for r in load_rounds() if r["round"] != round_no] + [
+        {"round": round_no, "date": date.today().isoformat(), "n": len(rows), "kappa": round(kappa, 3),
+         "agreement": agree, "examples_used": answers[0].get("examples_used", 0)}]
+    RESULT.write_text(json.dumps(
         {"n": len(rows), "agreement": agree, "kappa": round(kappa, 3), "calibration": table,
-         "confusion_jev_by_human": confusion, "agreement_forecasts": agreement(forecasts),
-         "agreement_other_claims": agreement(others), "human_kappa": human_kappa, "human_pairs": len(two)},
+         "confusion_jev_by_human": confusion, "human_kappa": human_kappa, "human_pairs": len(two), "rounds": rounds},
         indent=2), encoding="utf-8")
+    EXAMPLES_FILE.write_text(json.dumps(merge_round(load_pool(), round_no, rows), ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"\nround {round_no} saved; labels added to {EXAMPLES_FILE.name}")
+
+
+def folds_of(rows, seed=3):
+    rows = list(rows)
+    random.Random(seed).shuffle(rows)
+    return [rows[i::FOLDS] for i in range(FOLDS)]
+
+
+def examples_help(n, with_examples, without_examples):
+    return n >= MIN_LABELS and with_examples - without_examples >= MIN_GAIN
+
+
+def rate_labelled(rows, examples):
+    """Jev's rating of pool rows, with or without examples; {pool row index in `rows`: rating}."""
+    items = [(r["section"], {"claim": r["claim"], "cites": [f"r{n}"]}) for n, r in enumerate(rows)]
+    return ratings_from_jev(items, {f"r{n}": r["evidence"] for n, r in enumerate(rows)}, examples=examples)
+
+
+def learn():
+    pool = load_pool()
+    folds = folds_of(pool["examples"])
+    pairs = {"with": [], "without": []}
+    for k, fold in enumerate(folds):
+        shown = [e for j, f in enumerate(folds) if j != k for e in f]
+        for name, examples in (("with", shown), ("without", [])):
+            ratings = rate_labelled(fold, examples)
+            pairs[name] += [(fold[n]["label"], r["rating"]) for n, r in ratings.items()]
+    with_k, without_k = (round(cohens_kappa(*zip(*pairs[name])), 3) for name in ("with", "without"))
+    n = len(pool["examples"])
+    use = examples_help(n, with_k, without_k)
+    pool.update(use=use, learn={"date": date.today().isoformat(), "n": n, "kappa_with": with_k, "kappa_without": without_k})
+    EXAMPLES_FILE.write_text(json.dumps(pool, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{n} labels: kappa {with_k} with examples, {without_k} without -> examples {'ON' if use else 'off'}"
+          + (f" (needs at least {MIN_LABELS} labels)" if n < MIN_LABELS else ""))
 
 
 def self_check():
@@ -184,8 +258,19 @@ def self_check():
     assert sum(r["removed"] for r in pick(rows, 30, 1)) == 5
     assert sum(r["removed"] for r in pick([{"removed": True}] * 20 + [{"removed": False}] * 20, 30, 1)) == 10
     assert read_label(" S ") == "supported" and read_label("0.8") == "0.8"
+    # Scoring a round twice replaces its labels, and forecasts stay out of the pool.
+    labelled = [{"section": "what_is_happening", "claim": "c", "cited_evidence": "e", "human_label": "s"},
+                {"section": "outlook", "claim": "f", "cited_evidence": "e", "human_label": "p"}]
+    pool = merge_round({"use": False, "examples": [{"round": 1, "claim": "old"}]}, 2, labelled)
+    pool = merge_round(pool, 2, labelled)
+    assert [e["claim"] for e in pool["examples"]] == ["old", "c"] and pool["examples"][1]["label"] == "supported"
+    # A claim is never shown as an example while it is being rated.
+    folds = folds_of(range(23))
+    assert sorted(x for f in folds for x in f) == list(range(23)) and all(f for f in folds)
+    # Examples go live only with enough labels and a clear gain.
+    assert examples_help(60, 0.3, 0.1) and not examples_help(59, 0.3, 0.1) and not examples_help(60, 0.15, 0.1)
 
 
 if __name__ == "__main__":
     self_check()
-    {"export": export, "score": score}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: sys.exit(__doc__))()
+    {"export": export, "score": score, "learn": learn}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: sys.exit(__doc__))()

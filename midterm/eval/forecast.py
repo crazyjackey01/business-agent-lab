@@ -65,9 +65,8 @@ class SES:
         self.levels = np.array([r[0] for r in runs])
         self.cum_sse = np.cumsum(np.array([r[1] ** 2 for r in runs]), axis=1)
 
-    def forecast(self, t):
-        best = int(np.argmin(self.cum_sse[:, t]))
-        return self.levels[best, t] * H, float(ALPHAS[best])
+    def level(self, t):
+        return self.levels[int(np.argmin(self.cum_sse[:, t])), t]
 
 
 # Spikes and decay --------------------------------------------------------------
@@ -129,7 +128,7 @@ def backtest(y):
     for t in range(first, len(y) - H):
         last7 = y[t - H + 1:t + 1].sum()
         actual = y[t + 1:t + 1 + H].sum()
-        pred = {"naive": last7, "mean28": y[t - 27:t + 1].mean() * H, "ses": ses.forecast(t)[0]}
+        pred = {"naive": last7, "mean28": y[t - 27:t + 1].mean() * H, "ses": ses.level(t) * H}
         pred["decay"], half_life, peak = pred["ses"], None, recent_peak(y, flags, t)
         if peak is not None:
             d, half_life, baseline = decay_forecast(y, t, peak)
@@ -174,8 +173,6 @@ def summarize(rows):
                                  "mean": round(float(np.mean(hl)), 1) if hl else None},
     }
 
-
-# Live forecast + prediction log ---------------------------------------------------
 
 # Self-check and report --------------------------------------------------------------
 

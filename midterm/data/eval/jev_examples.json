@@ -1,0 +1,186 @@
+{
+ "use": false,
+ "examples": [
+  {
+   "round": 1,
+   "section": "why_people_search",
+   "claim": "S27 관련 검색이 늘었다. 최신 헤드라인에서 's27'은 이전보다 6.4배 자주 등장했다.",
+   "evidence": "[D3] Words much more common in today's headlines than earlier (lift = times more common, new = absent before): s27 in 5 headlines (6.4x); 울트라 in 3 headlines (2.2x); 삼성 in 6 headlines (1.2x) || [S18] 2026-10-11 | Vietnam.vn | 갤럭시 S27 울트라는 업그레이드된 M16 OLED 디스플레이를 탑재했으며, 눈의 피로를 줄이기 위해 DC 디밍 기술을 적용했습니다. || [S23] 2026-10-11 | Vietnam.vn | 갤럭시 S27 프로 및 S27 울트라 사양 분석: 카메라 변경 사항 및 하드웨어 순위",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "로바이가 중국 링커봇과 피지컬 AI 제어 기술 업무협약을 체결했다. 마음AI는 과기정통부 장관상을 받았다. 티로보틱스는 102억원 규모 자율제조 R&D에 참여한다고 보도됐다.",
+   "evidence": "[S38] 2026-10-19 | 바이라인네트워크 | 로바이, 중국 링커봇과 피지컬 AI 제어 기술 업무협약 체결 || [S25] 2026-10-19 | 디일렉 | 로바이, 피지컬 AI '로봇 자가지도 학습' 상용화 도전 || [S11] 2026-10-19 | 베타뉴스 | 마음AI, 과학기술정보통신부 장관상 수상…피지컬AI 기술 경쟁력 부각 || [S16] 2026-10-19 | 티스토리 | 티로보틱스, 102억원 규모 피지컬 AI 기반 자율제조 R&D 참여",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "EY한영이 '피지컬 AI 포럼 2026'을 열어 제조·물류 현장 적용 전략을 공유했다.",
+   "evidence": "[S4] 2026-10-19 | 이투데이 | EY한영, '피지컬 AI 포럼 2026' 개최…제조·물류 현장 적용 전략 공유 || [D3] Words much more common in today's headlines than earlier (lift = times more common, new = absent before): ey한영 in 6 headlines (new); 가전 in 6 headlines (new); lg전자 in 6 headlines (new); 로바 in 5 headlines (new); 링커봇 in 5 headlines (new); 혁신기업 in 5 headlines (new); 뉴욕 in 5 headlines (new); 소통 in 4 headlines (new); 애로 in 3 headlines (new); ai·자율제조 in 3 headlines (new); 21일 in 3 headlines (new); 장관상 in 3 headlines (new)",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "수요와 활용 측면의 소식도 있습니다. 중국 국경절 기간 로봇·스마트안경 매출이 전년의 2배로 늘었다고 보도됐고, 택배·물류 현장 도입 기사와 ZenaTech의 안전 안경 공개 소식이 있었습니다.",
+   "evidence": "[S14] 2026-10-08 | 파이낸셜뉴스 | 로봇·스마트안경 매출 2배 는 중국 국경절 || [S16] 2026-10-08 | 뉴스1 | 中국경절 21억명 이동…로봇·스마트안경 매출 전년의 2배 || [S7] 2026-10-09 | 물류신문 | 국내 택배현장 스마트안경 도입되면 '어떤 변화'가 || [S13] 2026-10-08 | 물류신문 | 라스트마일 배송기사, 스마트폰 내려놓다 ‘그 후는’ || [S6] 2026-10-09 | Investing.com 한국어 | ZenaTech, AI 기반 스마트 안전 안경 ’Stacklens’ 공개",
+   "label": "partly"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "IT조선은 삼성전자가 메모리값 급등으로 수익성 압박을 받아 S27 가격 인상을 검토한다고 보도했다. 해외 매체는 램 비용 급등으로 삼성이 휴대폰 생산을 최대 30% 줄일 수 있다고 전했다.",
+   "evidence": "[S35] 2026-10-10 | IT조선 | 삼성전자 S27 가격 인상 검토…메모리값 급등에 수익성 압박 || [S24] 2026-10-11 | VOI.ID | RAM 비용이 급등, 삼성은 휴대폰 생산을 30%까지 줄일 수 있습니다.",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "why_people_search",
+   "claim": "중국 국경절 연휴에 스마트안경 판매가 전년의 2배로 늘었다고 보도되면서 제품 자체와 시장에 대한 관심도 커졌습니다. 삼성 등 기업 진출 기사도 관심을 더합니다.",
+   "evidence": "[S14] 2026-10-08 | 파이낸셜뉴스 | 로봇·스마트안경 매출 2배 는 중국 국경절 || [S16] 2026-10-08 | 뉴스1 | 中국경절 21억명 이동…로봇·스마트안경 매출 전년의 2배 || [S11] 2026-10-08 | 연합뉴스 | 中국경절연휴 영화수입 12년만 최저…로봇·스마트안경 판매는↑(종합) || [S10] 2026-10-08 | 더팩트 | [미스터리경제] '삼성도 출격' 스마트글래스, 왜 현실엔 한 명도 없을까? (영상)",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "중국 승용차의 수출 비중은 38%로 1년 새 두 배가 됐다고 보도됐다. 최근 24시간 헤드라인에서 '중국차'가 4건 등장해 유의하게 늘었다.",
+   "evidence": "[S23] 2026-10-11 | 서울경제TV | 중국차, 전체 판매 중 수출 비중 38%…1년 새 두 배 || [S39] 2026-10-10 | 핀포인트뉴스 | 중국 승용차 수출 비중 38%로 급등…전기차 앞세워 해외 공략 박차 || [S40] 2026-10-10 | 연합뉴스 | 중국차, 10대 중 4대 해외로…본고장 유럽서도 10대 중 1대 || [D3] Words significantly more frequent in the last 24 hours' headlines than earlier (log-odds z > 1.96): 중국차 in 4 headlines (z=2.19)",
+   "label": "unsupported"
+  },
+  {
+   "round": 1,
+   "section": "summary",
+   "claim": "최근 24시간 전기차 관련 기사는 72건으로 통계상 '정상' 범위다. 중국 전기차의 해외 점유율 확대와 안전성 논란, 충전 인프라 기사가 겹쳤다.",
+   "evidence": "[D1] News articles per 24-hour window for the last 7 days, newest first: [72, 38, 49, 68, 27, 50, 15]. Spike test (negative binomial fit to the earlier days, decided by statistics, not by you): last 24 hours 72 vs baseline mean 41.17, p = 0.0688, verdict: normal. State this verdict as given. Do NOT call it a surge, spike, jump or 급증/급등/폭증; describe it as the verdict says. || [D3] Words significantly more frequent in the last 24 hours' headlines than earlier (log-odds z > 1.96): 중국차 in 4 headlines (z=2.19) || [S9] 2026-10-11 | 미주중앙일보 | 브레이크 부러진 2억원대 화웨이 럭셔리차…中전기차 안전성 도마에 || [S39] 2026-10-10 | 핀포인트뉴스 | 중국 승용차 수출 비중 38%로 급등…전기차 앞세워 해외 공략 박차 || [S4] 2026-10-11 | 경향신문 | 10%에서 70%까지 단 ‘4분30초’…전기차 충전 ‘속도전’, 이젠 인프라로 ‘2차전’",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "why_people_search",
+   "claim": "구매 목적 검색이 많다. 갤럭시 폴드8, S26, 워치가 대표 연관어이다.",
+   "evidence": "[D2] Search intent from Google autocomplete (share of suggestions): buying 67% (e.g. 갤럭시 폴드8, 갤럭시 s26, 갤럭시 워치); technology 16% (e.g. 갤럭시 갤러리, 갤럭시 개발자모드, 갤럭시 광고 차단 설정); learning 6% (e.g. 갤럭시 캠퍼스, 갤럭시 디펜스 공략, 갤럭시 동영상 편집); news 5% (e.g. 갤럭시 글래스 출시일, 갤럭시 디시, 갤럭시 돌비 애트모스 디시); problems 4% (e.g. 갤럭시 강제종료, 갤럭시 굿락, 갤럭시 강제 재부팅); definition 1% (e.g. 갤럭시 시리즈, 갤럭시 태그); other 1% (e.g. 갤럭시 동영상 배경화면); companies 1% (e.g. 갤럭시 로보파크)",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "최근 24시간 기사 수는 120건으로 기준 평균 68.33건을 웃돌았다. 통계 판정은 '불확실'(p=0.0656)이다.",
+   "evidence": "[D1] News articles per 24-hour window for the last 7 days, newest first: [120, 41, 23, 82, 85, 72, 107]. Spike test (negative binomial fit to the earlier days, decided by statistics, not by you): last 24 hours 120 vs baseline mean 68.33, p = 0.0656, verdict: uncertain (capped). State this verdict as given. Do NOT call it a surge, spike, jump or 급증/급등/폭증; describe it as the verdict says.",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "중국산 전기차 시제품에서 브레이크 페달 고장이 발생했으며 안전성 우려가 제기됐다.",
+   "evidence": "[S17] 2026-10-11 | Vietnam.vn | 중국산 전기차 시제품, 3차례 시험 주행 중 브레이크 페달 고장 발생. || [S14] 2026-10-11 | 미주중앙일보 | 브레이크 부러진 2억원대 화웨이 럭셔리차…中전기차 안전성 도마에",
+   "label": "unsupported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "글로벌 자동차 업계가 유럽 전기차 시장 공략을 가속화하고 있다고 보도됐다.",
+   "evidence": "[S40] 2026-10-11 | 메트로신문 | 글로벌 車 업계, 유럽 전기차 시장 공략 고삐…파리모터쇼서 신차·고성능 모델 공개",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "대전시가 수소전기차 50대 추가 보급에 16억2500만원을 지원한다고 보도됐다.",
+   "evidence": "[S11] 2026-10-11 | 매일일보 | 대전시, 수소전기차 50대 추가 보급에 16억2500만원 지원 || [S12] 2026-10-11 | 세종포스트 | 대전시 수소전기차 50대 추가 보급… 12일부터 접수 || [S16] 2026-10-11 | 충청신문 | 대전시, 수소전기차 50대 추가 보급…대당 3250만원 지원",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "의료 분야에서는 투명 OLED 스마트 안경으로 감마파를 자극해 알츠하이머 예방·관리 가능성을 제시한 임상 결과가 보도됐습니다.",
+   "evidence": "[S1] 2026-10-11 | 스포츠경향 | 뇌 자극하는 ‘투명 OLED 안경’ 개발, 알츠하이머 예방·관리 길 열어 || [S34] 2026-10-07 | 시사저널 | 안경으로 알츠하이머병 예방·관리 가능성 제시 || [S37] 2026-10-06 | MEDI:GATE NEWS | 분당서울대병원, 투명 OLED 스마트 안경으로 감마파 자극 임상 결과 발표",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "전기차 충전 속도가 10%에서 70%까지 4분30초에 달한다는 인프라 중심 기사가 나왔다.",
+   "evidence": "[S5] 2026-10-11 | 경향신문 | 10%에서 70%까지 단 ‘4분30초’…전기차 충전 ‘속도전’, 이젠 인프라로 ‘2차전’",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "화웨이 럭셔리차 브레이크 파손과 중국산 시제품 브레이크 페달 고장이 보도되며 중국 전기차 안전성이 쟁점이 됐다.",
+   "evidence": "[S9] 2026-10-11 | 미주중앙일보 | 브레이크 부러진 2억원대 화웨이 럭셔리차…中전기차 안전성 도마에 || [S10] 2026-10-11 | Vietnam.vn | 중국산 전기차 시제품, 3차례 시험 주행 중 브레이크 페달 고장 발생.",
+   "label": "unsupported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "BYD, 테슬라, 지커가 한국 전기차 시장을 잠식하고 있다고 보도됐다. BYD는 국내에서 가격 경쟁력으로 거론된다.",
+   "evidence": "[S36] 2026-10-11 | 인터내셔널포커스 | 중국차는 꺼린다더니…테슬라·BYD·지커, 한국 전기차 시장 잠식 || [S17] 2026-10-11 | Daum | “중국차가 이 가격?”…BYD 전기차, 국내 시장서 주목받는다 || [S35] 2026-10-11 | 브릿지경제 | 관세 무색한 中 전기차⋯ 글로벌 5대 중 1대, 선봉엔 BYD",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "why_people_search",
+   "claim": "기업 협력과 정부 포상, 지자체 간담회, 입법 움직임 보도가 이어졌다. 산업 적용 사례와 정책 방향을 확인하려는 검색 수요로 이어졌다.",
+   "evidence": "[S11] 2026-10-19 | 베타뉴스 | 마음AI, 과학기술정보통신부 장관상 수상…피지컬AI 기술 경쟁력 부각 || [S9] 2026-10-19 | 국제뉴스 | 전북도, 피지컬AI 혁신기업 간담회 개최…기업 애로 청취 · 협력 논의 || [S36] 2026-10-19 | 브릿지경제 | 피지컬 AI부터 중소기업 AX까지…여야, 맞춤형 지원 입법 움직임 || [D2] Search intent from Google autocomplete (share of suggestions): definition 17% (e.g. 피지컬 ai 로봇, 피지컬 ai 예시, 피지컬 ai 뜻); investing 16% (e.g. 피지컬 ai 관련주, 피지컬 ai 대장주, 피지컬 ai etf); technology 12% (e.g. 피지컬 ai 기술, 피지컬 ai 데이터, 피지컬 ai 드론); news 10% (e.g. 피지컬 ai 글로벌 얼라이언스, 피지컬 ai 뉴스, 피지컬 ai 디시); outlook 9% (e.g. 피지컬 ai 전망, 피지컬 ai 동향, 피지컬 ai 메가 트렌드); learning 8% (e.g. 피지컬 ai 교육, 피지컬 ai 공부, 피지컬 ai 논문); companies 7% (e.g. 피지컬 ai 기업, 피지컬 ai 랩실, 피지컬 ai 스타트업); events 6% (e.g. 피지컬 ai 대회, 피지컬 ai 세미나, 피지컬 ai 제조 ax 캠퍼스); jobs 4% (e.g. 피지컬 ai 신입사원이 되다, 피지컬 ai 채용, 피지컬 ai 취업); industries 3% (e.g. 피지컬 ai 물류, 피지컬 ai 방산, 피지컬 ai 산업); problems 3% (e.g. 피지컬 ai 단점, 피지컬 ai 반대, 피지컬 ai 보안); buying 2% (e.g. 피지컬 ai 로봇 가격, 피지컬 ai 키트); other 1% (e.g. 피지컬 ai 아이콘); how_to 1% (e.g. 피지컬 ai 코딩); policy 1% (e.g. 피지컬 ai 특별법)",
+   "label": "partly"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "BYD 전기차가 국내 시장에서 주목받고 있다고 보도됐다.",
+   "evidence": "[S26] 2026-10-11 | Daum | “중국차가 이 가격?”…BYD 전기차, 국내 시장서 주목받는다",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "렉서스가 새로운 ES를 13일에 출시하며 전기·하이브리드 9개 트림을 제공한다고 보도됐다.",
+   "evidence": "[S1] 2026-10-11 | 제주교통복지신문 | 렉서스 올 뉴 ES 13일 출시…전기차·하이브리드 9개 그레이드",
+   "label": "partly"
+  },
+  {
+   "round": 1,
+   "section": "why_people_search",
+   "claim": "검색 의도에서 구매 관련이 가장 큽니다. 자동완성 제안의 38%가 가격, 후기, 시력 교정 같은 구매 관련어입니다. 제품을 사려는 관심이 검색의 중심에 있습니다.",
+   "evidence": "[D2] Search intent from Google autocomplete (share of suggestions): buying 38% (e.g. 스마트 안경 가격, 스마트 안경 후기, 스마트 안경 시력 교정); technology 24% (e.g. 스마트 안경 기능, 스마트 안경 게임, 스마트 안경 녹화); news 11% (e.g. 스마트 안경 시험 디시, 스마트 안경 디시, 스마트 안경 기사); problems 8% (e.g. 스마트 안경 단점, 스마트 안경 문제점, 스마트 안경 부정행위); definition 5% (e.g. 스마트 안경 나무위키, 스마트 안경 번역, 스마트 안경 종류); companies 5% (e.g. 스마트 안경 메타, 스마트 안경 브랜드, 스마트 안경 삼성); learning 3% (e.g. 스마트 안경 사용법, 스마트 안경 토익); investing 2% (e.g. 스마트 안경 관련주); industries 2% (e.g. 스마트 안경 골프); policy 2% (e.g. 스마트 안경 수능); events 2% (e.g. 스마트 안경 시험장)",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "why_people_search",
+   "claim": "수능·시험 부정행위 우려가 검색을 자극하고 있습니다. 교육부 장관이 수능에서 AI 안경이 적발되면 응시 자격을 박탈하겠다고 밝힌 것으로 보도됐고, 연세대 논술 당일에는 스마트글래스 소문이 번졌다고 보도됐습니다. 자동완성에도 '시험', '부정행위', '수능', '시험장'이 나타납니다.",
+   "evidence": "[S23] 2026-10-07 | 서울뉴스통신 | 최교진 교육부 장관 \"AI 안경 수능 부정행위 적발 시 내년까지 응시 자격 박탈 추진\" || [S24] 2026-10-07 | 뉴시스 | 최교진 \"수능서 AI 안경 적발 시 이듬해 응시자격도 박탈\" || [S27] 2026-10-07 | 이데일리 | 최교진 “AI 안경 부정행위 적발 땐 2년간 수능 응시 제한” || [S28] 2026-10-07 | 서울경제 | 최교진 “수능서 ‘AI 안경’ 적발 땐 2년간 응시자격 박탈” || [S2] 2026-10-10 | 교육을 비추다 | “글라스 한놈 걸렸네”…연세대 논술 당일 번진 스마트글래스 소문, 사실이라면 무엇이 무너지나 || [D2] Search intent from Google autocomplete (share of suggestions): buying 38% (e.g. 스마트 안경 가격, 스마트 안경 후기, 스마트 안경 시력 교정); technology 24% (e.g. 스마트 안경 기능, 스마트 안경 게임, 스마트 안경 녹화); news 11% (e.g. 스마트 안경 시험 디시, 스마트 안경 디시, 스마트 안경 기사); problems 8% (e.g. 스마트 안경 단점, 스마트 안경 문제점, 스마트 안경 부정행위); definition 5% (e.g. 스마트 안경 나무위키, 스마트 안경 번역, 스마트 안경 종류); companies 5% (e.g. 스마트 안경 메타, 스마트 안경 브랜드, 스마트 안경 삼성); learning 3% (e.g. 스마트 안경 사용법, 스마트 안경 토익); investing 2% (e.g. 스마트 안경 관련주); industries 2% (e.g. 스마트 안경 골프); policy 2% (e.g. 스마트 안경 수능); events 2% (e.g. 스마트 안경 시험장)",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "summary",
+   "claim": "갤럭시 관련 기사는 갤럭시 탭 S12 출시 직후 정점을 지나 줄었고, 최근에는 갤럭시 S27 사양·가격 보도가 늘었다. 검색 의도는 구매 쪽이 압도적이다.",
+   "evidence": "[D1] News articles per 24-hour window for the last 7 days, newest first: [38, 31, 28, 47, 42, 105, 12]. Last 24 hours 38 vs earlier average 44.2 -> momentum 0.86. || [D2] Search intent from Google autocomplete (share of suggestions): buying 67% (e.g. 갤럭시 폴드8, 갤럭시 s26, 갤럭시 워치); technology 16% (e.g. 갤럭시 갤러리, 갤럭시 개발자모드, 갤럭시 광고 차단 설정); learning 6% (e.g. 갤럭시 캠퍼스, 갤럭시 디펜스 공략, 갤럭시 동영상 편집); news 5% (e.g. 갤럭시 글래스 출시일, 갤럭시 디시, 갤럭시 돌비 애트모스 디시); problems 4% (e.g. 갤럭시 강제종료, 갤럭시 굿락, 갤럭시 강제 재부팅); definition 1% (e.g. 갤럭시 시리즈, 갤럭시 태그); other 1% (e.g. 갤럭시 동영상 배경화면); companies 1% (e.g. 갤럭시 로보파크) || [D3] Words much more common in today's headlines than earlier (lift = times more common, new = absent before): s27 in 5 headlines (6.7x); 울트라 in 3 headlines (2.3x); 삼성 in 6 headlines (1.3x) || [S1] 2026-10-06 | 한경매거진&북 | 더 얇아진 '갤럭시 탭 S12' 7일 출시…최대 23시간 사용 || [S34] 2026-10-10 | IT조선 | 삼성전자 S27 가격 인상 검토…메모리값 급등에 수익성 압박",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "충전 인프라가 관심 대상이다. 국가 PnC(충전 인증·결제 자동화)는 2027년 2월 목표이고, 경남도의원은 충전시설 관리체계 개선 건의안을 발의했다. 현대차·채비는 가정용 충전 구독 서비스를 내놨다.",
+   "evidence": "[S2] 2026-10-11 | 비건뉴스 | 전기차 충전 인증·결제 자동화…국가 PnC 2027년 2월 목표 || [S33] 2026-10-11 | 브릿지경제 | 강민승 경남도의원, ‘전기자동차 충전시설 운영·관리체계 개선 촉구 대정부 건의안’ 발의 || [S8] 2026-10-11 | 경남일보 | 강민승 도의원 “전기차 충전기 늘었지만 관리엔 구멍” || [S14] 2026-10-11 | Naver Blog | “월 7만원대로 내 집에 충전소” 현대차·채비, 가정용 충전 구독 ‘마이홈차저’ 출시[재율 아빠 자동차 산업 업계 소식]",
+   "label": "supported"
+  },
+  {
+   "round": 1,
+   "section": "what_is_happening",
+   "claim": "VinFast가 인도에서 올해의 전기차 제조업체상을 받았다고 보도됐다.",
+   "evidence": "[S27] 2026-10-11 | Vietnam.vn | VinFast India는 2026년 HT Auto Leaderboard Awards에서 \"올해의 전기차 제조업체\"로 선정되는 영예를 안았습니다.",
+   "label": "partly"
+  }
+ ],
+ "learn": {
+  "date": "2026-11-01",
+  "n": 25,
+  "kappa_with": -0.062,
+  "kappa_without": -0.02
+ }
+}

@@ -40,16 +40,10 @@ def api_key():
     return key
 
 
-def request_model(messages, tools=None):
-    """Send the conversation (and the tool definitions) to the model.
-
-    Returns the model's reply message as a dict. The reply has either
-    "content" (text for the user) or "tool_calls" (functions the model asks us to run).
-    """
+def request_model(messages):
+    """Send the conversation to the model. Returns its reply message as a dict, text in "content"."""
     # max_tokens caps the reply; without it OpenRouter reserves credit for a 65k-token reply.
     body = {"model": MODEL, "messages": messages, "max_tokens": MAX_REPLY_TOKENS}
-    if tools:
-        body["tools"] = tools
     headers = {"Authorization": f"Bearer {api_key()}"}
 
     for attempt in range(3):

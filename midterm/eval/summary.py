@@ -54,6 +54,7 @@ def summary():
         "prediction_log": prediction_log(scored),
         "prediction_totals": (scored or {}).get("totals"),
         "jev_agreement": _load("jev_agreement.json"),
+        "jev_learn": (_load("jev_examples.json") or {}).get("learn"),
     }
 
 

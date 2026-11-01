@@ -234,7 +234,7 @@ def explain(topic, evidence, language):
     reply = parse_json_reply(request_model(messages).get("content"))
 
     result, dropped = {}, 0
-    for section in ("why_people_search", "what_is_happening", "outlook"):
+    for section in SECTIONS:
         result[section], n = keep_supported(reply.get(section), evidence)
         dropped += n
     result["caveats"] = reply.get("caveats", [])
@@ -251,7 +251,6 @@ Rate it:
 - "partly": the core is in the evidence but the claim adds something the evidence does not say
   (an exaggeration, a cause, a trend over time that was measured only once).
 - "unsupported": the cited evidence does not say it, or is about something else.
-For forecasts ("outlook"), judge whether the basis is really in the evidence, not whether the future is certain.
 Reply with JSON only: {"checks": [{"id": 0, "rating": "supported", "reason": "..."}]}
 Write each reason in {language}, one short sentence."""
 
@@ -262,41 +261,41 @@ CHECK_LABELS = {
               "(an exaggeration, a cause, a trend measured only once).",
     "unsupported": "The cited evidence does not say this, or is about something else.",
 }
-# Older runs have writer-made forecasts, which the human check can still sample. A forecast always
-# says more than its sources, so they are rated on whether the basis they rest on is really there.
-OUTLOOK_CHECK_LABELS = {
-    "supported": "The basis of the forecast is in the cited evidence, and the forecast follows reasonably from it.",
-    "partly": "Some of the basis is in the cited evidence, but the forecast also leans on something it does not say.",
-    "unsupported": "The cited evidence does not contain the basis, or is about something else.",
-}
 UNCERTAIN_BELOW = 0.6  # Jev confidence under this is shown as uncertain
 
 
-SECTIONS = ("why_people_search", "what_is_happening", "outlook")
+SECTIONS = ("why_people_search", "what_is_happening")
+EXAMPLES_FILE = HERE / "data" / "eval" / "jev_examples.json"
+MAX_EXAMPLES = 60  # newest kept: Jev refuses requests over ~60k tokens
 
 
-def claim_items(result, sections=SECTIONS):
-    return [(section, c) for section in sections for c in result[section]]
+def active_examples():
+    """Human-labelled claims for Jev, only once eval/jev_agreement.py learn has shown they help."""
+    if not EXAMPLES_FILE.exists():
+        return []
+    pool = json.loads(EXAMPLES_FILE.read_text(encoding="utf-8"))
+    return pool["examples"][-MAX_EXAMPLES:] if pool["use"] else []
+
+
+def examples_text(examples):
+    rated = "\n\n".join(f"Example {i}: {e['claim']}\n  Cited evidence: {e['evidence']}\n  Reviewer's rating: {e['label']}"
+                         for i, e in enumerate(examples))
+    return f"Claims a human reviewer already rated. Rate the claims below by the same standard:\n\n{rated}\n\n"
 
 
 def claim_text(n, section, c, evidence):
     cited = "\n".join(f"    [{x}] {evidence[x]}" for x in c["cites"])
-    claim = c["claim"] + (f" (basis: {c['basis']})" if c.get("basis") else "")
-    return f"Claim {n} ({section}): {claim}\n  Cited evidence:\n{cited}"
+    return f"Claim {n} ({section}): {c['claim']}\n  Cited evidence:\n{cited}"
 
 
-def ratings_from_jev(items, evidence):
+def ratings_from_jev(items, evidence, examples=None):
     """Jev rates every claim; each question names its claim in the shared state."""
-    state = "Claims written by an analyst, each with the exact evidence it cites:\n\n" + "\n\n".join(
+    examples = active_examples() if examples is None else examples
+    state = (examples_text(examples) if examples else "") + "Claims written by an analyst, each with the exact evidence it cites:\n\n" + "\n\n".join(
         claim_text(n, section, c, evidence) for n, (section, c) in enumerate(items))
     questions = {
-        f"c{n}": {
-            "type": "choice",
-            "instructions": f"Does the cited evidence support the basis of forecast {n}?" if section == "outlook"
-                            else f"Does the cited evidence support Claim {n}?",
-            "criteria": OUTLOOK_CHECK_LABELS if section == "outlook" else CHECK_LABELS,
-        }
-        for n, (section, _) in enumerate(items)
+        f"c{n}": {"type": "choice", "instructions": f"Does the cited evidence support Claim {n}?", "criteria": CHECK_LABELS}
+        for n in range(len(items))
     }
     answers = jev_api.ask(state, questions)
     ratings = {}
@@ -319,9 +318,9 @@ def ratings_from_model(items, evidence, language):
     return {int(c["id"]): {**c, "by": "model"} for c in checks if str(c.get("id", "")).isdigit()}
 
 
-def check_claims(result, evidence, language, sections=SECTIONS):
+def check_claims(result, evidence, language, sections):
     """Second pass: rate every claim against its cited evidence. Returns how many were removed."""
-    items = claim_items(result, sections)
+    items = [(section, c) for section in sections for c in result[section]]
     if not items:
         return 0
     ratings = None
@@ -339,22 +338,20 @@ def check_claims(result, evidence, language, sections=SECTIONS):
     result["checked_by"] = next(iter(ratings.values()))["by"] if ratings else "none"
 
     removed = 0
-    for section in sections:
-        kept = []
-        for c in result[section]:
-            n = next(i for i, (_, item) in enumerate(items) if item is c)
-            check = ratings.get(n, {"rating": "unchecked", "reason": ""})
-            confidence = check.get("confidence")
-            if check["rating"] == "unsupported":
-                removed += 1
-                # Kept aside so the human check (eval/jev_agreement.py) can also see what Jev removed.
-                result.setdefault("removed_claims", []).append(
-                    {**c, "section": section, "check": "unsupported", "check_confidence": confidence})
-                continue
-            kept.append({**c, "check": check["rating"], "check_reason": check.get("reason", ""),
-                         "check_confidence": confidence,
-                         "check_uncertain": confidence is not None and confidence < UNCERTAIN_BELOW})
-        result[section] = kept
+    kept = {section: [] for section in sections}
+    for n, (section, c) in enumerate(items):
+        check = ratings.get(n, {"rating": "unchecked", "reason": ""})
+        confidence = check.get("confidence")
+        if check["rating"] == "unsupported":
+            removed += 1
+            # Kept aside so the human check (eval/jev_agreement.py) can also see what Jev removed.
+            result.setdefault("removed_claims", []).append(
+                {**c, "section": section, "check": "unsupported", "check_confidence": confidence})
+            continue
+        kept[section].append({**c, "check": check["rating"], "check_reason": check.get("reason", ""),
+                              "check_confidence": confidence,
+                              "check_uncertain": confidence is not None and confidence < UNCERTAIN_BELOW})
+    result.update(kept)
     return removed
 
 
@@ -376,7 +373,7 @@ def relevant_news(news, topic):
     kept = [a for a in news if mentions_topic(a["title"], topic)]
     if len(kept) < MIN_KEPT:
         return news, [], "not filtered"
-    return kept, [{**a, "relevance": None} for a in news if not mentions_topic(a["title"], topic)], "headline"
+    return kept, [a for a in news if not mentions_topic(a["title"], topic)], "headline"
 
 
 # Run ----------------------------------------------------------------------------
@@ -416,8 +413,7 @@ def analyze(topic, lang="ko", geo="KR", refresh=False):
         "relevance": {
             "method": relevance_method,
             "kept": len(kept),
-            "dropped": [{"title": a["title"], "source": a["source"], "url": a["url"],
-                         "relevance": a["relevance"]} for a in dropped],
+            "dropped": [{"title": a["title"], "source": a["source"], "url": a["url"]} for a in dropped],
         },
         "trends_matches": data["google_trends_matches"],
         "history": coverage_history(topic),
@@ -468,18 +464,13 @@ def print_analysis(a):
     if "error" in e:
         print(f"\nExplanation failed: {e['error']}")
         return
-    for section, label in [("why_people_search", "Why people search it"),
-                           ("what_is_happening", "What is happening"),
-                           ("outlook", "What is likely next")]:
-        if not e[section]:
-            continue
+    for section, label in [("why_people_search", "Why people search it"), ("what_is_happening", "What is happening")]:
         print(f"\n{label}")
         for c in e[section]:
-            extra = f" [{c.get('confidence', '')}] basis: {c.get('basis', '')}" if section == "outlook" else ""
             conf = f" {int(c['check_confidence'] * 100)}%" if c.get("check_confidence") is not None else ""
             mark = "" if c.get("check") == "supported" and not c.get("check_uncertain") else \
                 f" <{c.get('check')}{conf}{', uncertain' if c.get('check_uncertain') else ''}: {c.get('check_reason')}>"
-            print(f"  - {c['claim']}  ({', '.join(c['cites'])}){extra}{mark}")
+            print(f"  - {c['claim']}  ({', '.join(c['cites'])}){mark}")
     if e["unsupported_claims_removed"]:
         print(f"\n({e['unsupported_claims_removed']} claim(s) without valid citations were removed)")
     print(f"\n(claims checked by: {e.get('checked_by', 'none')})")

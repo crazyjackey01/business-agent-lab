@@ -65,32 +65,27 @@ class Handler(BaseHTTPRequestHandler):
 
         topic = " ".join(str(request.get("topic", "")).split())
         if not topic:  # no topic: what is everyone searching for right now?
-            return self.run_overview("US" if request.get("region") == "US" else "KR")
+            geo = "US" if request.get("region") == "US" else "KR"
+            return self.run_search(f"overview: {geo}", lambda: analyze_overview(geo))
         if len(topic) > MAX_TOPIC_LENGTH:
             return self.send_json(400, {"error": f"type a topic of 1-{MAX_TOPIC_LENGTH} characters"})
         lang, geo = guess_region(topic)
         if request.get("region") in ("KR", "US"):
             lang, geo = ("ko", "KR") if request["region"] == "KR" else ("en", "US")
 
-        if not search_lock.acquire(blocking=False):
-            return self.send_json(429, {"error": "another search is running, try again in a moment"})
-        try:
-            print(f"searching: {topic} ({geo})")
+        def search():
             result = analyze(topic, lang, geo, refresh=True)
             save_analysis(result)
-        except Exception as error:  # show any failure on the page instead of a dead request
-            return self.send_json(500, {"error": f"{type(error).__name__}: {error}"})
-        finally:
-            search_lock.release()
-        self.send_json(200, result)
+            return result
+        self.run_search(f"searching: {topic} ({geo})", search)
 
-    def run_overview(self, geo):
+    def run_search(self, label, search):
         if not search_lock.acquire(blocking=False):
             return self.send_json(429, {"error": "another search is running, try again in a moment"})
         try:
-            print(f"overview: {geo}")
-            result = analyze_overview(geo)
-        except Exception as error:
+            print(label)
+            result = search()
+        except Exception as error:  # show any failure on the page instead of a dead request
             return self.send_json(500, {"error": f"{type(error).__name__}: {error}"})
         finally:
             search_lock.release()
