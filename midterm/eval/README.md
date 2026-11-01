@@ -28,7 +28,7 @@ and the hits from always saying "flat", because a forecast is only worth somethi
 Limits: the forecast is often "flat", because no method beats "same as last week" on this data
 (section 2), so the direction score may simply equal the baseline; all four demo topics that could be
 forecast said flat on 2026-11-01. Topics with under about 18 months of history get no forecast (피지컬 AI
-today). The Cloudflare version has none: Google refuses its servers, as it does for Google News.
+today). The Cloudflare version has none: the forecasting code is Python only, and Google refuses Cloudflare for Google News, so its Trends data may not be reachable there either (not tested).
 
 Two earlier logs are kept: `data/eval/old_wikipedia_*` forecast Wikipedia pageviews, which tested
 nothing the analysis said (3 of 5 inside their 80% range, week of 2026-10-19; the file also holds a

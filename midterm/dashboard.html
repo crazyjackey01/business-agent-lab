@@ -289,7 +289,7 @@ const STR = {
     card_search: (h, f, n) => ["검색량 방향을 맞혔나", `${h}/${n}`, `늘어남·비슷함·줄어듦 예측. 항상 '비슷함'이라고 했다면 ${f}/${n}`],
     card_search_wait: n => ["검색량 방향을 맞혔나", "채점 대기", n ? `예측 ${n}개가 해당 주가 끝난 뒤 채점된다` : "아직 예측이 없다. 분석을 실행하면 코드가 다음 주를 예측해 기록한다."],
     how_search: "구글 트렌드에서 이번 주와 예측한 주의 일별 평균을 비교한다. 10% 넘게 달라지면 늘어남·줄어듦, 아니면 비슷함이다. 예측과 채점 모두 코드가 한다.",
-    log_title: "예측 기록", log_note: "분석마다 코드가 다음 주 구글 검색량을 예측해 적어 두고, 그 주가 끝나면 실제 값과 비교한다. 클라우드 버전은 구글 트렌드에 접속할 수 없어 예측이 없다.",
+    log_title: "예측 기록", log_note: "분석마다 코드가 다음 주 구글 검색량을 예측해 적어 두고, 그 주가 끝나면 실제 값과 비교한다. 예측은 로컬 버전에서만 만든다.",
     col_topic: "주제", col_week: "예측한 주", col_pred: "예측", col_result: "결과",
     // History tab
     ev_title: "이 서비스는 얼마나 믿을 만한가?", ev_note: "맞고 틀림은 AI가 아니라 코드와 사람이 판정한다. 카드에 마우스를 올리면 방법이 보인다.",
@@ -363,7 +363,7 @@ const STR = {
     card_search: (h, f, n) => ["Did it call the search direction?", `${h}/${n}`, `up / same / down calls. Always saying 'same' would get ${f}/${n}`],
     card_search_wait: n => ["Did it call the search direction?", "waiting", n ? `${n} forecast(s) will be scored when their week ends` : "No forecasts yet. Run an analysis and code forecasts next week."],
     how_search: "Google Trends, daily averages of this week and the forecast week. More than 10% apart is up or down, otherwise about the same. Code makes and scores the forecast.",
-    log_title: "Prediction log", log_note: "For each analysis, code forecasts next week's Google searches, then compares with the real value when the week ends. The cloud version can't reach Google Trends, so it has no forecasts.",
+    log_title: "Prediction log", log_note: "For each analysis, code forecasts next week's Google searches, then compares with the real value when the week ends. Forecasts are only made by the local version.",
     col_topic: "Topic", col_week: "Week", col_pred: "Forecast", col_result: "Result",
     // History tab
     ev_title: "How much can you trust this?", ev_note: "Right or wrong is decided by code and people, not by an AI. Hover a card to see the method.",
