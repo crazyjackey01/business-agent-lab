@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Knowledge bundle
+
+Start with [knowledge/index.md](knowledge/index.md) and read the pages relevant to your task.
+Original files stay the source of truth. When your work changes something a page documents,
+update that page in the same change.
+
 ## Project layout
 
 Class repo for an agents course. Python, one shared venv and `.env` at the repo root.
